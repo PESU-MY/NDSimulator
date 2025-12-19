@@ -61,7 +61,8 @@ class DamageProfile:
             'is_split': False, 'is_elemental': False,
             'burst_buff_enabled': True,
             'force_full_burst': False, 
-            'is_skill_damage': False
+            'is_skill_damage': False,
+            'enable_core_hit': False  # 追加: スキルで明示的にコアヒットさせたい場合のフラグ
         }
         if kwargs:
             profile.update(kwargs)
@@ -206,23 +207,17 @@ class BuffManager:
             if stack['shot_life'] > 0:
                 stack['shot_life'] -= 1
     
-    # --- 追加: デバッグ用メソッド ---
     def get_active_buffs_debug(self, current_frame):
         parts = []
-        # 通常バフ
         for b_type, b_list in self.buffs.items():
             active_list = [b for b in b_list if b['end_frame'] >= current_frame or b['shot_life'] > 0]
             if active_list:
                 total = sum(b['val'] for b in active_list)
-                # 簡易表示: バフ名:合計値 (例: atk_buff_rate:0.75)
                 parts.append(f"{b_type}:{total:.2f}")
-        
-        # スタックバフ
         for name, stack in self.active_stacks.items():
             if stack['end_frame'] >= current_frame or stack['shot_life'] > 0:
                 val = stack['unit_value'] * stack['count']
                 parts.append(f"[{name} x{stack['count']} (Val:{val:.2f})]")
-        
         return " | ".join(parts) if parts else "None"
 
 class BurstCharacter:
@@ -400,18 +395,24 @@ class NikkeSimulator:
         
         hit_prob = min(1.0, (self.enemy_size / current_hit_size) ** 2)
         
-        fixed_core_rate = bm.get_total_value('core_hit_rate_fixed', frame)
-        if fixed_core_rate > 0:
-            core_prob = 1.0
-        else:
-            core_prob = min(1.0, (self.enemy_core_size / current_hit_size) ** 2)
-            
-        if core_prob > hit_prob: core_prob = hit_prob
+        # --- 変更: コアヒット判定条件の厳格化 ---
+        # 通常攻撃、または明示的に許可されたスキルのみコアヒット判定を行う
+        can_core_hit = profile.get('is_weapon_attack', False) or profile.get('enable_core_hit', False)
         
+        is_core = False
+        if can_core_hit:
+            fixed_core_rate = bm.get_total_value('core_hit_rate_fixed', frame)
+            if fixed_core_rate > 0:
+                core_prob = 1.0
+            else:
+                core_prob = min(1.0, (self.enemy_core_size / current_hit_size) ** 2)
+                
+            if core_prob > hit_prob: core_prob = hit_prob
+            is_core = random.random() < (core_prob / hit_prob)
+        # ------------------------------------
+
         is_hit = random.random() < hit_prob
         if not is_hit: return 0.0
-        
-        is_core = random.random() < (core_prob / hit_prob)
         
         if is_core:
             core_dmg_buff = bm.get_total_value('core_dmg_buff', frame)
@@ -491,7 +492,6 @@ class NikkeSimulator:
             return 0
         
         if skill.effect_type == 'cumulative_stages':
-            # === trigger_all_stages 対応: 条件を満たしたら全ステージの効果を一括発動 ===
             if skill.kwargs.get('trigger_all_stages'):
                 for stage_data in skill.stages:
                     if isinstance(stage_data, Skill):
@@ -516,7 +516,6 @@ class NikkeSimulator:
                         dmg += self.apply_skill_effect(temp_skill, frame, is_full_burst, attacker_element)
                 return dmg
 
-            # 通常の段階式
             skill.current_usage_count += 1
             max_apply_idx = min(len(skill.stages), skill.current_usage_count)
             for i in range(max_apply_idx):
@@ -738,7 +737,6 @@ class NikkeSimulator:
             
             dmg = self.calculate_strict_damage(self.BASE_ATK, self.weapon.multiplier, prof, is_full_burst, frame, self.weapon.element)
             
-            # === 追加: バフ情報のデバッグ文字列取得 ===
             buff_debug_str = self.buff_manager.get_active_buffs_debug(frame)
             
             print(f"[Shoot] 時間:{frame/60:>6.2f}s | 弾数:{self.current_ammo:>3}/{self.current_max_ammo:<3} | ペレット:{current_pellets:>2} | Dmg:{dmg:10,.0f} | Buffs: {buff_debug_str}")
@@ -747,7 +745,6 @@ class NikkeSimulator:
             self.damage_breakdown['Weapon Attack'] += dmg
             damage_this_frame += dmg
             
-            # バフ消費（トリガーの前）
             self.buff_manager.decrement_shot_buffs()
             
             d, t1 = self.process_trigger('shot_count', self.total_shots, frame, is_full_burst)
