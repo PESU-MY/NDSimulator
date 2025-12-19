@@ -632,12 +632,27 @@ class NikkeSimulator:
                 elif trigger_type == 'on_burst_enter': is_triggered = True
                 elif trigger_type == 'on_burst_3_enter': is_triggered = True # 追加
                 elif trigger_type == 'on_start': is_triggered = True
-                elif trigger_type == 'pellet_hit' and val >= skill.trigger_value: is_triggered = True 
-                
+                # --- 追加: pellet_hit 等の判定 ---
+                if trigger_type == 'pellet_hit' and val >= skill.trigger_value: is_triggered = True 
+
                 if is_triggered: triggered_skills.append(skill)
         
         for skill in triggered_skills:
-            if 'buff' in skill.effect_type or skill.effect_type == 'cumulative_stages':
+            # === 【重要変更点2】 trigger_all_stages 対応 ===
+            if skill.kwargs.get('trigger_all_stages'):
+                # ステージ制だが、条件を満たしたら「全ステージ」の効果を一気に発動する
+                for stage in skill.stages:
+                     # 辞書形式かSkillオブジェクトかで分岐処理
+                    if isinstance(stage, dict):
+                        # 簡易的にSkillオブジェクト化して適用
+                        temp_kwargs = stage.get('kwargs', {}).copy()
+                        temp_skill = Skill("Temp", "manual", 0, stage.get('effect_type', 'buff'), **temp_kwargs)
+                        total_dmg += self.apply_skill_effect(temp_skill, frame, is_full_burst, attacker_element)
+                    else:
+                        total_dmg += self.apply_skill_effect(stage, frame, is_full_burst, attacker_element)
+            
+            # 既存の処理 (cumulative_stages など)
+            elif 'buff' in skill.effect_type or skill.effect_type == 'cumulative_stages':
                 total_dmg += self.apply_skill_effect(skill, frame, is_full_burst, attacker_element)
             elif skill.effect_type == 'convert_hp_to_atk':
                 total_dmg += self.apply_skill_effect(skill, frame, is_full_burst, attacker_element)
@@ -714,24 +729,31 @@ class NikkeSimulator:
                 current_pellets = pellet_fixed
             
             self.cumulative_pellet_hits += current_pellets
-            
+            # --- 射撃ダメージ計算 ---
             dmg = self.calculate_strict_damage(self.BASE_ATK, self.weapon.multiplier, prof, is_full_burst, frame, self.weapon.element)
             
+            # ログ出力
             print(f"[Shoot] 時間:{frame/60:>6.2f}s | 弾数:{self.current_ammo:>3}/{self.current_max_ammo:<3} | ペレット:{current_pellets:>2} | Dmg:{dmg:10,.0f}")
 
             self.total_damage += dmg
             self.damage_breakdown['Weapon Attack'] += dmg
             damage_this_frame += dmg
             
+            # === 【重要変更点1】 バフの消費(decrement)をトリガー処理の「前」に移動 ===
+            # これにより、このあと付与される新規バフがいきなり減るのを防ぎます
+            self.buff_manager.decrement_shot_buffs()
+
+            # --- トリガー処理 ---
             d, t1 = self.process_trigger('shot_count', self.total_shots, frame, is_full_burst)
             damage_this_frame += d
             d, t2 = self.process_trigger('ammo_empty', self.current_ammo, frame, is_full_burst)
             damage_this_frame += d
             d, t3 = self.process_trigger('pellet_hit', self.cumulative_pellet_hits, frame, is_full_burst)
             damage_this_frame += d
-            if t3:
-                self.cumulative_pellet_hits = 0 
             
+            if t3:
+                self.cumulative_pellet_hits = 0
+
             self.buff_manager.decrement_shot_buffs()
 
         if self.weapon.type in ["RL", "SR", "CHARGE"]:

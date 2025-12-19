@@ -11,7 +11,7 @@
     "damage_rate": 0.613,
     "windup_frames": 12,
     "winddown_frames": 54,
-    "charge_mult": 2.5,
+    "charge_mult": 2.5
   },
   "skills": [
     {

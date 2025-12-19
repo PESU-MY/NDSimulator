@@ -22,13 +22,6 @@ def load_character_full_setup(char_file_path):
     if os.path.exists(weapon_file_path):
         with open(weapon_file_path, 'r', encoding='utf-8') as f:
             weapon_data = json.load(f)
-    else:
-        # デフォルト武器設定 (RL基準フォールバック)
-        weapon_data = {
-            "name": f"{char_name} Weapon", "type": "RL", "weapon_class": "RL",
-            "multiplier": 0.613, "max_ammo": 6, "reload_frames": 120,
-            "windup_frames": 12, "winddown_frames": 10, "charge_time": 60, "charge_mult": 2.5
-        }
     
     # 基本項目の設定
     weapon_data['name'] = f"{char_name}'s {weapon_data['weapon_class']}"
