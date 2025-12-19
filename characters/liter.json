@@ -1,0 +1,48 @@
+{
+  "name": "Liter",
+  "weapon_type": "SMG",
+  "element": "Iron",
+  "stats": {
+    "base_atk": 21307,
+    "max_ammo": 120,
+    "reload_time": 1.5,
+    "damage_rate": 0.0873
+  },
+  "skills": [
+    {
+      "name": "Liter S1 (Passive: Burst CD)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "stages": [
+        {"effect_type": "cooldown_reduction", "value": 2.34},
+        {"effect_type": "cooldown_reduction", "value": 2.70},
+        {"effect_type": "cooldown_reduction", "value": 3.17}
+      ]
+    },
+    {
+      "name": "Liter S1 (Passive: Burst Buff)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "stages": [
+        {"effect_type": "buff", "buff_type": "max_ammo_rate", "value": 0.4517, "duration": 5},
+        {"effect_type": "buff", "buff_type": "crit_dmg_buff", "value": 0.1246, "duration": 5},
+        {"effect_type": "buff", "buff_type": "atk_buff_rate", "value": 0.1442, "duration": 5}
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Liter Burst Skill",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 20,
+    "effect_type": "buff",
+    "target": "allies",
+    "buff_type": "atk_buff_rate",
+    "value": 0.66,
+    "duration": 5
+  }
+}

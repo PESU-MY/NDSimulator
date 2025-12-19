@@ -1,0 +1,12 @@
+{
+  "name": "Standard SG",
+  "type": "RAPID",
+  "weapon_class": "SG",
+  "multiplier": 1.821,
+  "max_ammo": 9,
+  "reload_frames": 120,
+  "windup_frames": 12,
+  "winddown_frames": 10,
+  "fire_interval": 40,
+  "hit_size": 20
+}

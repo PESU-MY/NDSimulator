@@ -1,0 +1,14 @@
+{
+  "name": "SnowWhite Burst",
+  "type": "CHARGE",
+  "weapon_class": "AR",
+  "multiplier": 4.995,
+  "max_ammo": 1,
+  "reload_frames": 0,
+  "windup_frames": 12,
+  "winddown_frames": 10,
+  "charge_time": 300,
+  "charge_mult": 10.0,
+  "hit_size": 1,
+  "is_pierce": true
+}

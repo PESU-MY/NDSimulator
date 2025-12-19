@@ -1,0 +1,97 @@
+{
+  "name": "シンデレラ",
+  "weapon_type": "RL",
+  "element": "Electric",
+  "class": "Defender",
+  "squad": "Old Tales",
+  "stats": {
+    "base_atk": 17059,
+    "max_ammo": 24,
+    "reload_time": 2.0,
+    "damage_rate": 0.3211,
+    "windup_frames": 9,
+    "winddown_frames": 10,
+    "charge_mult": 2.0
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 汚れなきガラス",
+      "trigger_type": "on_burst_3_enter",
+      "trigger_value": 0,
+      "effect_type": "convert_hp_to_atk",
+      "kwargs": {
+        "value": 0.0271,
+        "duration": 10
+      }
+    },
+    {
+      "name": "Skill 1: チャージ速度UP",
+      "trigger_type": "shot_count",
+      "trigger_value": 1, 
+      "effect_type": "buff",
+      "kwargs": {
+        "buff_type": "charge_speed_rate",
+        "value": 1.0,
+        "duration": 99999,
+        "remove_on_reload": true 
+      }
+    },
+    {
+      "name": "Skill 1: 追加ダメージ",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "kwargs": {
+        "multiplier": 1.366,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "Skill 2: 美しさスタック",
+      "trigger_type": "time_interval",
+      "trigger_value": 3.0,
+      "effect_type": "stack_buff",
+      "kwargs": {
+        "stack_name": "Beauty",
+        "buff_type": "max_hp_rate",
+        "value": 0.016,
+        "max_stack": 12,
+        "duration": 99999
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: ガラスの靴・フルコンタクト",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40,
+    "effect_type": "cumulative_stages",
+    "target": "enemy",
+    "stages": [
+      {
+        "effect_type": "damage",
+        "kwargs": {
+          "multiplier": 13.6592,
+          "loop_count": 10,
+          "profile": {
+            "is_skill_damage": true
+          }
+        }
+      },
+      {
+        "effect_type": "damage",
+        "kwargs": {
+          "multiplier": 2.89,
+          "copy_stack_count": "Beauty",
+          "loop_count": 10,
+          "profile": {
+            "is_skill_damage": true,
+            "force_full_burst": true
+          }
+        }
+      }
+    ]
+  }
+}

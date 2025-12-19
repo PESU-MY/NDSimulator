@@ -1,0 +1,12 @@
+{
+  "name": "Standard SMG",
+  "type": "RAPID",
+  "weapon_class": "SMG",
+  "multiplier": 0.0873,
+  "max_ammo": 120,
+  "reload_frames": 60,
+  "windup_frames": 12,
+  "winddown_frames": 10,
+  "fire_interval": 3,
+  "hit_size": 9
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Standard RL",
+  "type": "CHARGE",
+  "weapon_class": "RL",
+  "multiplier": 0.613,
+  "max_ammo": 6,
+  "reload_frames": 120,
+  "windup_frames": 12,
+  "winddown_frames": 10,
+  "charge_time": 60,
+  "charge_mult": 2.5,
+  "hit_size": 1
+}

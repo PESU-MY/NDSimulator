@@ -1,0 +1,114 @@
+{
+  "name": "Raven",
+  "weapon_type": "RL",
+  "element": "Iron",
+  "class": "Attacker",
+  "squad": "Matis",
+  "stats": {
+    "base_atk": 25554,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "windup_frames": 12,
+    "winddown_frames": 54,
+    "charge_mult": 2.5,
+  },
+  "skills": [
+    {
+      "name": "S1: Shockwave (DoT)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "stack_dot",
+      "target": "enemy",
+      "kwargs": {
+        "multiplier": 0.6846,
+        "duration": 5,
+        "interval": 1,
+        "stack_name": "Raven_DoT",
+        "max_stack": 10,
+        "profile": { "is_dot": true, "is_elemental": true }
+      }
+    },
+    {
+      "name": "S1: Shockwave (Self Buff)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.4752,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: Blue Blade (Start - Sharp Senses)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "part_dmg_buff",
+        "value": 0.2112,
+        "duration": 9999,
+        "tag": "sharp_senses"
+      }
+    },
+    {
+      "name": "S2: Blue Blade (Burst - Sharp Senses)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "part_dmg_buff",
+        "value": 0.2112,
+        "duration": 5,
+        "tag": "sharp_senses"
+      }
+    },
+    {
+      "name": "S2: Blue Blade (Part Break - Focused Fire)",
+      "trigger_type": "part_break",
+      "trigger_value": 0,
+      "condition": {
+        "not_has_tag": "an_mode"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "remove_tags": ["sharp_senses"],
+      "kwargs": {
+        "buff_type": "dot_dmg_buff",
+        "value": 0.4732,
+        "duration": 15,
+        "tag": "focused_fire"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: Tempest",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40,
+    "effect_type": "cumulative_stages",
+    "target": "allies",
+    "stages": [
+      {
+        "effect_type": "damage",
+        "multiplier": 4.923,
+        "profile": { "force_full_burst": true, "is_elemental": true }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "remove_tags": ["focused_fire"],
+        "kwargs": {
+            "buff_type": "dot_dmg_buff",
+            "value": 0.8944,
+            "duration": 10,
+            "tag": "an_mode"
+        }
+      }
+    ]
+  }
+}

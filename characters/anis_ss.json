@@ -1,0 +1,100 @@
+{
+  "name": "Anis: Sparkling Summer",
+  "weapon_type": "SG",
+  "element": "Electric",
+  "class": "Supporter",
+  "squad": "Counters",
+  "stats": {
+    "base_atk": 21307,
+    "max_ammo": 5,
+    "reload_time": 2.0,
+    "damage_rate": 2.592,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+"skills": [
+    {
+      "name": "S1: Sparkling Boost",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": { "type": "element", "value": "Electric" }, 
+      "stages": [
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "atk_buff_fixed",
+            "value": 11785,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "value": 0.4928,
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: Sparkling Missile",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "stages": [
+        {
+          "effect_type": "damage",
+          "multiplier": 3.8242,
+          "profile": { "is_skill_damage": true }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "part_dmg_buff",
+            "value": 0.0691,
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: Sparkling Wave",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "stages": [
+      {
+        "effect_type": "buff",
+        "kwargs": {
+            "buff_type": "max_ammo_rate",
+            "value": -0.7392,
+            "duration": 10
+        }
+      },
+      {
+        "effect_type": "buff",
+        "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "value": 0.2772,
+            "duration": 10
+        }
+      },
+      {
+        "effect_type": "buff",
+        "kwargs": {
+            "buff_type": "elemental_buff",
+            "value": 0.4224,
+            "duration": 10
+        }
+      }
+    ]
+  }
+}

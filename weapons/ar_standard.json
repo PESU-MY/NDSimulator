@@ -1,0 +1,12 @@
+{
+  "name": "Standard AR",
+  "type": "RAPID",
+  "weapon_class": "AR",
+  "multiplier": 0.1365,
+  "max_ammo": 60,
+  "reload_frames": 60,
+  "windup_frames": 12,
+  "winddown_frames": 10,
+  "fire_interval": 5,
+  "hit_size": 6
+}

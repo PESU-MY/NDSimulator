@@ -1,0 +1,132 @@
+{
+  "name": "ドロシー：セレンディピティ",
+  "weapon_type": "SG",
+  "element": "Water",
+  "class": "Attacker",
+  "squad": "Inherit",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 1.5,
+    "damage_rate": 2.015,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "S1: Flash (80 hits)",
+      "trigger_type": "pellet_hit",
+      "trigger_value": 80,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "stages": [
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "is_pierce",
+            "value": 1,
+            "duration": 0,
+            "shot_duration": 4
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "hit_rate_buff",
+            "value": 0.9818, 
+            "duration": 0,
+            "shot_duration": 4
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "atk_dmg_buff",
+            "value": 0.72,
+            "duration": 0,
+            "shot_duration": 4
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "pellet_count_fixed",
+            "value": 1,
+            "duration": 0,
+            "shot_duration": 4
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: Light Wing (Start)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "pierce_dmg_buff",
+        "value": 0.5508,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S2: Light Wing (Full Burst)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "stages": [
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.7524,
+            "duration": 10 
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "hit_rate_buff",
+            "value": 0.4068, 
+            "duration": 10 
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: False Salvation",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "stages": [
+      {
+        "effect_type": "buff",
+        "kwargs": {
+            "buff_type": "attack_speed_rate",
+            "value": 0.65,
+            "duration": 15
+          }
+      },
+      {
+        "effect_type": "buff",
+        "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.8812,
+            "duration": 15
+          }
+      },
+      {
+        "effect_type": "buff",
+        "kwargs": {
+            "buff_type": "pellet_count_add",
+            "value": 5,
+            "duration": 15
+          }
+      }
+    ]
+  }
+}
