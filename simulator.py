@@ -20,13 +20,11 @@ class WeaponConfig:
         self.windup_frames = data.get('windup_frames', 12)
         self.winddown_frames = data.get('winddown_frames', 10)
         
-        # --- 変更: 命中サイズ (Hit Size) ---
         default_hit_sizes = {
             "RL": 1, "SR": 1, "MG": 1,
             "SMG": 9, "AR": 6, "SG": 20
         }
         self.hit_size = data.get('hit_size', default_hit_sizes.get(self.weapon_class, 5))
-        # --------------------------------
         
         self.is_pierce = data.get('is_pierce', False)
         self.disable_reload_buffs = data.get('disable_reload_buffs', False)
@@ -54,7 +52,6 @@ class DamageProfile:
     @staticmethod
     def create(**kwargs):
         profile = {
-            # hit_rate等は動的に計算するため初期値はダミー
             'crit_rate': 0.15,
             'charge_mult': 1.0,
             'is_weapon_attack': False, 'range_bonus_active': False,
@@ -208,6 +205,25 @@ class BuffManager:
         for name, stack in self.active_stacks.items():
             if stack['shot_life'] > 0:
                 stack['shot_life'] -= 1
+    
+    # --- 追加: デバッグ用メソッド ---
+    def get_active_buffs_debug(self, current_frame):
+        parts = []
+        # 通常バフ
+        for b_type, b_list in self.buffs.items():
+            active_list = [b for b in b_list if b['end_frame'] >= current_frame or b['shot_life'] > 0]
+            if active_list:
+                total = sum(b['val'] for b in active_list)
+                # 簡易表示: バフ名:合計値 (例: atk_buff_rate:0.75)
+                parts.append(f"{b_type}:{total:.2f}")
+        
+        # スタックバフ
+        for name, stack in self.active_stacks.items():
+            if stack['end_frame'] >= current_frame or stack['shot_life'] > 0:
+                val = stack['unit_value'] * stack['count']
+                parts.append(f"[{name} x{stack['count']} (Val:{val:.2f})]")
+        
+        return " | ".join(parts) if parts else "None"
 
 class BurstCharacter:
     def __init__(self, name, stage, cooldown_sec, skill=None, element="Iron", weapon_type="AR", base_atk=10000, base_hp=1000000):
@@ -236,10 +252,8 @@ class NikkeSimulator:
         self.ENEMY_DEF = 0 
         self.enemy_element = enemy_element
         
-        # --- 追加: 敵サイズ情報 ---
         self.enemy_core_size = enemy_core_size
         self.enemy_size = enemy_size
-        # -----------------------
         
         self.part_break_mode = part_break_mode
         self.character_name = character_name
@@ -360,7 +374,6 @@ class NikkeSimulator:
     def calculate_strict_damage(self, base_atk, mult, profile, is_full_burst, frame, attacker_element="None"):
         bm = self.buff_manager
         
-        # 1. 攻撃力計算
         atk_rate = bm.get_total_value('atk_buff_rate', frame)
         atk_fixed = bm.get_total_value('atk_buff_fixed', frame)
         final_atk = (base_atk * (1.0 + atk_rate)) + atk_fixed
@@ -381,19 +394,13 @@ class NikkeSimulator:
             if is_full_burst or profile.get('force_full_burst', False): bucket_val += 0.50
         if profile['range_bonus_active']: bucket_val += 0.30
         
-        # --- 変更: 命中率とコアヒット率の計算 ---
-        # 命中サイズ (Hit Size)
         base_hit_size = self.weapon.hit_size
-        
-        # 命中率バフ (Hit Size減少)
         hit_rate_buff = bm.get_total_value('hit_rate_buff', frame)
         current_hit_size = max(0.01, base_hit_size * (1.0 - hit_rate_buff))
         
-        # 命中判定 (敵サイズ / 命中サイズ)^2
         hit_prob = min(1.0, (self.enemy_size / current_hit_size) ** 2)
         
-        # コアヒット判定
-        fixed_core_rate = bm.get_total_value('core_hit_rate_fixed', frame) # 固定コアヒット率 (ドロシーS1等)
+        fixed_core_rate = bm.get_total_value('core_hit_rate_fixed', frame)
         if fixed_core_rate > 0:
             core_prob = 1.0
         else:
@@ -401,11 +408,10 @@ class NikkeSimulator:
             
         if core_prob > hit_prob: core_prob = hit_prob
         
-        # 判定
         is_hit = random.random() < hit_prob
         if not is_hit: return 0.0
         
-        is_core = random.random() < (core_prob / hit_prob) # 命中した中でのコア率
+        is_core = random.random() < (core_prob / hit_prob)
         
         if is_core:
             core_dmg_buff = bm.get_total_value('core_dmg_buff', frame)
@@ -485,6 +491,32 @@ class NikkeSimulator:
             return 0
         
         if skill.effect_type == 'cumulative_stages':
+            # === trigger_all_stages 対応: 条件を満たしたら全ステージの効果を一括発動 ===
+            if skill.kwargs.get('trigger_all_stages'):
+                for stage_data in skill.stages:
+                    if isinstance(stage_data, Skill):
+                        stage_data.target = skill.target
+                        stage_data.owner_name = skill.owner_name
+                        dmg += self.apply_skill_effect(stage_data, frame, is_full_burst, attacker_element)
+                    elif isinstance(stage_data, dict):
+                        init_kwargs = stage_data.get('kwargs', {}).copy()
+                        for k, v in stage_data.items():
+                            if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs']:
+                                init_kwargs[k] = v
+                        
+                        temp_skill = Skill(
+                            name=f"{skill.name}_Stage", 
+                            trigger_type="manual", 
+                            trigger_value=0,
+                            effect_type=stage_data.get('effect_type', 'buff'), 
+                            **init_kwargs
+                        )
+                        temp_skill.target = skill.target
+                        temp_skill.owner_name = skill.owner_name
+                        dmg += self.apply_skill_effect(temp_skill, frame, is_full_burst, attacker_element)
+                return dmg
+
+            # 通常の段階式
             skill.current_usage_count += 1
             max_apply_idx = min(len(skill.stages), skill.current_usage_count)
             for i in range(max_apply_idx):
@@ -630,35 +662,15 @@ class NikkeSimulator:
                 elif trigger_type == 'time_interval' and val % (skill.trigger_value * self.FPS) == 0: is_triggered = True
                 elif trigger_type == 'ammo_empty' and val == 0: is_triggered = True
                 elif trigger_type == 'on_burst_enter': is_triggered = True
-                elif trigger_type == 'on_burst_3_enter': is_triggered = True # 追加
+                elif trigger_type == 'on_burst_3_enter': is_triggered = True
                 elif trigger_type == 'on_start': is_triggered = True
-                # --- 追加: pellet_hit 等の判定 ---
-                if trigger_type == 'pellet_hit' and val >= skill.trigger_value: is_triggered = True 
-
+                elif trigger_type == 'pellet_hit' and val >= skill.trigger_value: is_triggered = True 
+                
                 if is_triggered: triggered_skills.append(skill)
         
         for skill in triggered_skills:
-            # === 【重要変更点2】 trigger_all_stages 対応 ===
-            if skill.kwargs.get('trigger_all_stages'):
-                # ステージ制だが、条件を満たしたら「全ステージ」の効果を一気に発動する
-                for stage in skill.stages:
-                     # 辞書形式かSkillオブジェクトかで分岐処理
-                    if isinstance(stage, dict):
-                        # 簡易的にSkillオブジェクト化して適用
-                        temp_kwargs = stage.get('kwargs', {}).copy()
-                        temp_skill = Skill("Temp", "manual", 0, stage.get('effect_type', 'buff'), **temp_kwargs)
-                        total_dmg += self.apply_skill_effect(temp_skill, frame, is_full_burst, attacker_element)
-                    else:
-                        total_dmg += self.apply_skill_effect(stage, frame, is_full_burst, attacker_element)
+            total_dmg += self.apply_skill_effect(skill, frame, is_full_burst, attacker_element)
             
-            # 既存の処理 (cumulative_stages など)
-            elif 'buff' in skill.effect_type or skill.effect_type == 'cumulative_stages':
-                total_dmg += self.apply_skill_effect(skill, frame, is_full_burst, attacker_element)
-            elif skill.effect_type == 'convert_hp_to_atk':
-                total_dmg += self.apply_skill_effect(skill, frame, is_full_burst, attacker_element)
-        for skill in triggered_skills:
-            if 'buff' not in skill.effect_type and skill.effect_type != 'cumulative_stages' and skill.effect_type != 'convert_hp_to_atk':
-                total_dmg += self.apply_skill_effect(skill, frame, is_full_burst, attacker_element)
         return total_dmg, len(triggered_skills) > 0
 
     def update_cooldowns(self):
@@ -679,10 +691,8 @@ class NikkeSimulator:
                 char.current_cooldown = char.base_cooldown * self.FPS
                 char.has_used_burst = True
                 
-                # --- 追加: バースト3突入時トリガー (スキル発動前) ---
                 if self.burst_state == "BURST_3":
                     self.process_trigger('on_burst_3_enter', 0, frame, is_full_burst, attacker_char=char)
-                # -----------------------------------------------
                 
                 if char.skill: self.apply_skill_effect(char.skill, frame, is_full_burst, char.element)
                 self.process_trigger('on_use_burst_skill', 0, frame, is_full_burst, attacker_char=char)
@@ -702,7 +712,6 @@ class NikkeSimulator:
             self.mg_warmup_frames -= self.mg_decay_rate
             self.mg_warmup_frames = max(0, self.mg_warmup_frames)
 
-        # 共通: 射撃実行時の処理
         def perform_shoot(interval_mult=1):
             nonlocal damage_this_frame
             self.total_shots += 1
@@ -710,11 +719,8 @@ class NikkeSimulator:
             force_fb = getattr(self.weapon, 'force_full_burst', False)
             if isinstance(self.weapon, dict): force_fb = self.weapon.get('force_full_burst', False)
             
-            # --- 修正: core_hit_rate 引数を削除 ---
-            # 以前: core_hit_rate=self.weapon.core_hit_rate,
             prof = DamageProfile.create(
                 is_weapon_attack=True, range_bonus_active=False, 
-                # core_hit_rate は動的に計算されるため、プロファイル作成時は不要（またはNone）
                 is_charge_attack=(self.weapon.type in ["RL", "SR", "CHARGE"]), 
                 charge_mult=self.weapon.charge_mult if self.weapon.type in ["RL", "SR", "CHARGE"] else 1.0, 
                 force_full_burst=force_fb, is_pierce=self.weapon.is_pierce
@@ -729,32 +735,30 @@ class NikkeSimulator:
                 current_pellets = pellet_fixed
             
             self.cumulative_pellet_hits += current_pellets
-            # --- 射撃ダメージ計算 ---
+            
             dmg = self.calculate_strict_damage(self.BASE_ATK, self.weapon.multiplier, prof, is_full_burst, frame, self.weapon.element)
             
-            # ログ出力
-            print(f"[Shoot] 時間:{frame/60:>6.2f}s | 弾数:{self.current_ammo:>3}/{self.current_max_ammo:<3} | ペレット:{current_pellets:>2} | Dmg:{dmg:10,.0f}")
+            # === 追加: バフ情報のデバッグ文字列取得 ===
+            buff_debug_str = self.buff_manager.get_active_buffs_debug(frame)
+            
+            print(f"[Shoot] 時間:{frame/60:>6.2f}s | 弾数:{self.current_ammo:>3}/{self.current_max_ammo:<3} | ペレット:{current_pellets:>2} | Dmg:{dmg:10,.0f} | Buffs: {buff_debug_str}")
 
             self.total_damage += dmg
             self.damage_breakdown['Weapon Attack'] += dmg
             damage_this_frame += dmg
             
-            # === 【重要変更点1】 バフの消費(decrement)をトリガー処理の「前」に移動 ===
-            # これにより、このあと付与される新規バフがいきなり減るのを防ぎます
+            # バフ消費（トリガーの前）
             self.buff_manager.decrement_shot_buffs()
-
-            # --- トリガー処理 ---
+            
             d, t1 = self.process_trigger('shot_count', self.total_shots, frame, is_full_burst)
             damage_this_frame += d
             d, t2 = self.process_trigger('ammo_empty', self.current_ammo, frame, is_full_burst)
             damage_this_frame += d
             d, t3 = self.process_trigger('pellet_hit', self.cumulative_pellet_hits, frame, is_full_burst)
             damage_this_frame += d
-            
             if t3:
-                self.cumulative_pellet_hits = 0
-
-            self.buff_manager.decrement_shot_buffs()
+                self.cumulative_pellet_hits = 0 
+            
 
         if self.weapon.type in ["RL", "SR", "CHARGE"]:
             if self.state == "READY":

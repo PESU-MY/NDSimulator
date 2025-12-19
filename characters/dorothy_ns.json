@@ -9,7 +9,9 @@
     "reload_time": 1.5,
     "damage_rate": 2.015,
     "windup_frames": 12,
-    "winddown_frames": 10
+    "winddown_frames": 10,
+    "base_atk": 25554,
+    "base_hp": 583734
   },
   "skills": [
     {
@@ -35,7 +37,7 @@
           "effect_type": "buff",
           "kwargs": {
             "buff_type": "hit_rate_buff",
-            "value": 0.9818,
+            "value": 0.9818, 
             "duration": 0,
             "shot_duration": 4
           }
@@ -99,43 +101,43 @@
           }
         }
       ]
-    },
-    {
-      "name": "Burst: False Salvation",
-      "trigger_type": "manual",
-      "trigger_value": 0,
-      "cooldown": 40,
-      "effect_type": "cumulative_stages",
-      "target": "self",
-      "kwargs": {
-        "trigger_all_stages": true
-      },
-      "stages": [
-        {
-          "effect_type": "buff",
-          "kwargs": {
-              "buff_type": "attack_speed_rate",
-              "value": 0.65,
-              "duration": 15
-            }
-        },
-        {
-          "effect_type": "buff",
-          "kwargs": {
-              "buff_type": "atk_buff_rate",
-              "value": 0.8812,
-              "duration": 15
-            }
-        },
-        {
-          "effect_type": "buff",
-          "kwargs": {
-              "buff_type": "pellet_count_add",
-              "value": 5,
-              "duration": 15
-            }
-        }
-      ]
     }
-  ]
+  ],
+  "burst_skill": {
+    "name": "Burst: False Salvation",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "kwargs": {
+            "buff_type": "attack_speed_rate",
+            "value": 0.65,
+            "duration": 15
+          }
+      },
+      {
+        "effect_type": "buff",
+        "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.8812,
+            "duration": 15
+          }
+      },
+      {
+        "effect_type": "buff",
+        "kwargs": {
+            "buff_type": "pellet_count_add",
+            "value": 5,
+            "duration": 15
+          }
+      }
+    ]
+  }
 }

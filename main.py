@@ -126,6 +126,12 @@ b3_dummy = BurstCharacter("B3_Dummy", 3, 40, None, element="Fire", weapon_type="
 
 rotation = [[b1], [b2], [b3_dorothy, b3_dummy]]
 
+print(f"B3 Dorothy Skill Loaded: {b3_dorothy.skill}")
+if b3_dorothy.skill:
+    print(f"Skill Name: {b3_dorothy.skill.name}")
+    print(f"Kwargs: {b3_dorothy.skill.kwargs}")
+
+
 sim = NikkeSimulator(
     weapon_config=dorothy_setup['weapon_config'],
     skills=dorothy_setup['passive_skills']+[passive_cd_reduction],
