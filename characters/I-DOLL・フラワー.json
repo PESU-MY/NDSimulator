@@ -44,7 +44,7 @@
     "effect_type": "damage",
     "target": "enemy",
     "kwargs": {
-      "value": 3.3061
+      "multiplier": 3.3061
     },
     "stages": [],
     "cooldown": 20.0

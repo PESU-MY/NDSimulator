@@ -1,0 +1,212 @@
+{
+  "name": "アスカ：WILLE",
+  "weapon_type": "MG",
+  "element": "Wind",
+  "class": "Attacker",
+  "squad": "WILLE",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.33,
+    "damage_rate": 0.0547,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "S1: アンチA.T.フィールド (通常)",
+      "trigger_type": "shot_count",
+      "trigger_value": 50,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "multiplier": 4.7186,
+        "profile": {
+          "is_skill_damage": true
+        }
+      },
+      "description": "50回命中時に発動（常時）"
+    },
+    {
+      "name": "S1: アンチA.T.フィールド (殲滅態勢)",
+      "trigger_type": "shot_count",
+      "trigger_value": 10,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "condition": {
+        "has_tag": "annihilation_mode"
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "multiplier": 0.1562,
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        },
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "stack_name": "AntiATField",
+            "buff_type": "taken_dmg_debuff",
+            "value": 0.0083,
+            "max_stack": 30,
+            "duration": 30,
+            "tag": "anti_at_field"
+          },
+          "description": "殲滅態勢時のみ：10回ごとにデバフスタック付与"
+        }
+      ]
+    },
+    {
+      "name": "S2: 緊急修復 (バフ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "condition": {
+        "has_tag": "annihilation_mode"
+      },
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.3097,
+        "duration": 10.0
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 殲滅態勢",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_mode",
+          "value": 1,
+          "duration": 9.0,
+          "tag": "annihilation_mode"
+        },
+        "description": "殲滅態勢タグ付与"
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "weapon_dmg_buff",
+          "value": -0.4,
+          "duration": 9.0
+        }
+      },
+      {
+        "effect_type": "ammo_charge",
+        "target": "self",
+        "kwargs": {
+          "rate": 0.2004
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 0.4467,
+          "duration": 9.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_dmg_buff",
+          "value": 0.3436,
+          "duration": 9.0
+        }
+      },
+      {
+        "effect_type": "delayed_action",
+        "target": "self",
+        "kwargs": {
+          "duration": 9.0
+        },
+        "description": "9秒後（殲滅終了時）の処理",
+        "sub_effect": {
+          "effect_type": "cumulative_stages",
+          "kwargs": {
+            "trigger_all_stages": true
+          },
+          "stages": [
+            {
+              "effect_type": "damage",
+              "target": "enemy",
+              "kwargs": {
+                "multiplier": 0.0632,
+                "scale_by_target_stack": true,
+                "stack_name": "AntiATField",
+                "profile": {
+                  "is_skill_damage": true
+                }
+              },
+              "description": "殲滅攻撃（スタック数比例）"
+            },
+            {
+              "effect_type": "buff",
+              "target": "self",
+              "remove_tags": ["anti_at_field"],
+              "kwargs": { "buff_type": "dummy_clean", "value": 0, "duration": 0 },
+              "description": "アンチA.T.フィールド解除（スタック0）"
+            },
+            {
+              "effect_type": "buff",
+              "target": "self",
+              "kwargs": {
+                "buff_type": "mg_warmup_speed",
+                "value": -0.5,
+                "duration": 3.0
+              }
+            },
+            {
+              "effect_type": "set_current_ammo",
+              "target": "self",
+              "kwargs": {
+                "value": 0
+              }
+            },
+            {
+              "effect_type": "buff",
+              "target": "self",
+              "kwargs": {
+                "buff_type": "dummy_heal",
+                "value": 0.0377,
+                "duration": 3.0,
+                "interval": 1.0
+              }
+            },
+            {
+              "effect_type": "buff",
+              "target": "self",
+              "kwargs": {
+                "buff_type": "reload_speed_fixed_value",
+                "value": 0.6,
+                "shot_duration": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

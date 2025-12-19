@@ -1,0 +1,54 @@
+{
+  "name": "I-DOLL・サン",
+  "weapon_type": "AR",
+  "element": "Iron",
+  "class": "Supporter",
+  "squad": "リプレイス",
+  "stats": {
+    "base_atk": 25554.0,
+    "base_hp": 583734.0,
+    "max_ammo": 60,
+    "reload_time": 1.5,
+    "damage_rate": 0.1471,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "サンシャイン",
+      "trigger_type": "shot_count",
+      "trigger_value": 10,
+      "effect_type": "def_buff",
+      "target": "self",
+      "kwargs": {},
+      "stages": []
+    },
+    {
+      "name": "サンライト",
+      "trigger_type": "part_break",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 9.09,
+        "duration": 5
+      },
+      "stages": []
+    }
+  ],
+  "burst_skill": {
+    "name": "サンセット",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "max_ammo_rate",
+      "value": 787.5,
+      "duration": 10
+    },
+    "stages": [],
+    "cooldown": 40.0
+  }
+}

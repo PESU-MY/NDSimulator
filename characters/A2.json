@@ -1,0 +1,102 @@
+{
+  "name": "A2",
+  "weapon_type": "RL",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "YoRHa",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 1.5,
+    "damage_rate": 0.6765,
+    "windup_frames": 26,
+    "winddown_frames": 36
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 出力上昇",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "charge_dmg_buff",
+            "value": 1.1035,
+            "duration": 15
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "explosion_range_buff",
+            "value": 1.0026,
+            "duration": 15
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: フルチャージ攻撃",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "kwargs": {
+            "multiplier": 0.301,
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "part_dmg_buff",
+            "value": 0.4088,
+            "duration": 3
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: Bモード",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 0.1519,
+          "duration": 15
+        }
+      },
+      {
+        "effect_type": "buff",
+        "kwargs": {
+          "buff_type": "charge_speed_rate",
+          "value": 0.3588,
+          "duration": 15
+        }
+      }
+    ]
+  }
+}
