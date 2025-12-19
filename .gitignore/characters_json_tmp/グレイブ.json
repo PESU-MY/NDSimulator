@@ -1,0 +1,140 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1791,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "グレイブ",
+  "weapon_type": "AR",
+  "element": "Fire",
+  "class": "Supporter",
+  "manufacturer": "ピルグリム",
+  "squad": "オールドテイルズ",
+  "burst_skill": {
+    "name": "Burst: ライターズ・スポイラー",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_dmg_buff",
+          "value": 0.48200000000000004,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "pierce_dmg_buff",
+          "value": 0.3998,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "max_ammo_rate",
+          "value": 0.0,
+          "duration": 10.0
+        }
+      }
+    ],
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: ヒートラジエーション",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S1: ヒートラジエーション",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "charge_speed_rate",
+            "value": 0.3896,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "pierce_dmg_buff",
+            "value": 0.484,
+            "duration": 99999
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: オーバーヒート",
+      "trigger_type": "shot_count",
+      "trigger_value": 15,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.1548,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: オーバーヒート",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.2066,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_dmg_buff",
+            "value": 0.308,
+            "duration": 99999
+          }
+        }
+      ]
+    }
+  ]
+}

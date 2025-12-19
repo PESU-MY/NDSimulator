@@ -91,7 +91,7 @@
     "trigger_value": 0,
     "cooldown": 40,
     "effect_type": "cumulative_stages",
-    "target": "allies",
+    "target": "self",
     "stages": [
       {
         "effect_type": "damage",

@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 300,
+    "reload_time": 3.0,
+    "damage_rate": 0.058600000000000006,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ルドミラ：ウィンターオーナー",
+  "weapon_type": "MG",
+  "element": "Water",
+  "class": "Attacker",
+  "manufacturer": "テトラ",
+  "squad": "アンリミテッド",
+  "burst_skill": {
+    "name": "Burst: 導きの灯火",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 0.6254,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "reload_speed_rate",
+          "value": 0.672,
+          "duration": 20.0
+        }
+      }
+    ],
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: 女王の眼光",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 1.5843,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: 雪嵐",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 1.0964,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: 雪嵐",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.146,
+        "duration": 10
+      }
+    }
+  ]
+}

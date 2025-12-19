@@ -1,0 +1,69 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 120,
+    "reload_time": 1.0,
+    "damage_rate": 0.1012,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "リトルマーメイド",
+  "weapon_type": "SMG",
+  "element": "Wind",
+  "class": "Supporter",
+  "manufacturer": "ピルグリム",
+  "squad": "オールドテイルズ",
+  "burst_skill": {
+    "name": "Burst: セイレーンソング",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.1728,
+      "duration": 10.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: バブルオーダー",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "cooldown_reduction",
+        "value": 7.48,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S1: バブルオーダー",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.04,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: バブルウェーブ",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.6335999999999999,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

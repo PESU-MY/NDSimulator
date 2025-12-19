@@ -1,0 +1,69 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ヘルム",
+  "weapon_type": "SR",
+  "element": "Water",
+  "class": "Attacker",
+  "manufacturer": "エリシオン",
+  "squad": "イージス",
+  "burst_skill": {
+    "name": "Burst: イージスキャノン",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 0.5445,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: 陣頭指揮",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.1464,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: 砲門開放",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.0308,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S2: 砲門開放",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.1185,
+        "duration": 10.0
+      }
+    }
+  ]
+}

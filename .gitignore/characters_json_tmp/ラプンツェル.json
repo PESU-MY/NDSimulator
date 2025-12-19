@@ -1,0 +1,56 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.3,
+    "damage_rate": 0.6295000000000001,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ラプンツェル",
+  "weapon_type": "RL",
+  "element": "Iron",
+  "class": "Supporter",
+  "manufacturer": "ピルグリム",
+  "squad": "パイオニア",
+  "burst_skill": {
+    "name": "Burst: ガーデンオブシャングリラ",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "max_hp_rate",
+      "value": 0.4083,
+      "duration": 10
+    },
+    "cooldown": 60.0
+  },
+  "skills": [
+    {
+      "name": "S1: サクリファイス",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0403,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: ディヴァインブレス",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0819,
+        "duration": 15.0
+      }
+    }
+  ]
+}

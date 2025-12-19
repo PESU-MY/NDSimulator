@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 120,
+    "reload_time": 1.0,
+    "damage_rate": 0.081,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "サクラ",
+  "weapon_type": "SMG",
+  "element": "Water",
+  "class": "Supporter",
+  "manufacturer": "アブノーマル",
+  "squad": "WILLE",
+  "burst_skill": {
+    "name": "Burst: 応急手当",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "max_hp_rate",
+      "value": 0.1003,
+      "duration": 10.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": []
+}

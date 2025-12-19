@@ -1,0 +1,45 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "アンカー",
+  "weapon_type": "RL",
+  "element": "Wind",
+  "class": "Defender",
+  "manufacturer": "エリシオン",
+  "squad": "イージス",
+  "burst_skill": {
+    "name": "Burst: CIWS",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 3.0444999999999998,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: GS",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 0.2382,
+        "duration": 5.0
+      }
+    }
+  ]
+}

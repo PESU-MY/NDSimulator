@@ -1,0 +1,57 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.3,
+    "damage_rate": 0.1429,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "フォルクヴァン",
+  "weapon_type": "AR",
+  "element": "Water",
+  "class": "Defender",
+  "manufacturer": "テトラ",
+  "squad": "ライフトニック",
+  "burst_skill": {
+    "name": "Burst: スプリント",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 0.6581,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: スターティングホイッスル",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.1371,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: ペースダウン",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.4496,
+        "duration": 10.0
+      }
+    }
+  ]
+}

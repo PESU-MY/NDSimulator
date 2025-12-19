@@ -1,0 +1,68 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 300,
+    "reload_time": 2.5,
+    "damage_rate": 0.0557,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "キロ",
+  "weapon_type": "MG",
+  "element": "Fire",
+  "class": "Defender",
+  "manufacturer": "ミシリス",
+  "squad": "ヘビーグラム",
+  "burst_skill": {
+    "name": "Burst: プライオリタイズ",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "max_hp_rate",
+      "value": 0.48,
+      "duration": 20.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: ナノコーティング",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.2112,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S1: ナノコーティング",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.2112,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S2: 自己修復",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0285,
+        "duration": 10
+      }
+    }
+  ]
+}

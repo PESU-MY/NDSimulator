@@ -1,0 +1,61 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ドロシー",
+  "weapon_type": "AR",
+  "element": "Water",
+  "class": "Supporter",
+  "manufacturer": "ピルグリム",
+  "squad": "インヘルト",
+  "burst_skill": {
+    "name": "Burst: 失楽園",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "cooldown_reduction",
+          "value": 0.0,
+          "duration": 10
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "is_pierce",
+          "value": 1.0,
+          "duration": 10.0
+        }
+      }
+    ],
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 聖火",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "cooldown_reduction",
+        "value": 1.56,
+        "duration": 10
+      }
+    }
+  ]
+}

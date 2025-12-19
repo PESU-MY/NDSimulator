@@ -1,0 +1,56 @@
+{
+  "name": "I-DOLL・オーシャン",
+  "weapon_type": "SMG",
+  "element": "Water",
+  "class": "Supporter",
+  "squad": "リプレイス",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.5,
+    "damage_rate": 0.0873,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "Skill 1: オーシャンシャワー",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "dummy_heal",
+        "value": 0.486,
+        "duration": 0
+      },
+      "stages": []
+    },
+    {
+      "name": "Skill 2: オーシャンクレンジング",
+      "trigger_type": "time_interval",
+      "trigger_value": 15,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "dummy_heal",
+        "value": 0.0969,
+        "duration": 0
+      },
+      "stages": []
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: オーシャンダイブ",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "allies",
+    "kwargs": {
+      "buff_type": "dummy_heal",
+      "value": 0.297,
+      "duration": 0
+    },
+    "stages": [],
+    "cooldown": 20.0
+  }
+}

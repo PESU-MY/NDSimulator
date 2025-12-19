@@ -1,0 +1,57 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 120,
+    "reload_time": 2.0,
+    "damage_rate": 0.09359999999999999,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ソルジャーO.W.",
+  "weapon_type": "SMG",
+  "element": "Fire",
+  "class": "Supporter",
+  "manufacturer": "エリシオン",
+  "squad": "不明",
+  "burst_skill": {
+    "name": "Burst: オウルフェザー",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "max_ammo_rate",
+      "value": 2.8,
+      "duration": 10
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: オウルクロー",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.7559999999999999,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: オウルウィンド",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 1.2856999999999998,
+        "duration": 5.0
+      }
+    }
+  ]
+}

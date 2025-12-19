@@ -1,0 +1,83 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "モリー",
+  "weapon_type": "AR",
+  "element": "Wind",
+  "class": "Defender",
+  "manufacturer": "ミシリス",
+  "squad": "インキュベーター",
+  "burst_skill": {
+    "name": "Burst: 弱者の生存術",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "max_hp_rate",
+      "value": 0.1009,
+      "duration": 10.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: モグラ隠れ",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.4012,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S1: モグラ隠れ",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.4012,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S1: モグラ隠れ",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0506,
+        "duration": 99999,
+        "max_stack": 5,
+        "stack_name": "Stack_max_hp_rate"
+      }
+    },
+    {
+      "name": "S2: 必死のサポート",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.2323,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

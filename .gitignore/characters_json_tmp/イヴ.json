@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "イヴ",
+  "weapon_type": "AR",
+  "element": "Iron",
+  "class": "Attacker",
+  "manufacturer": "アブノーマル",
+  "squad": "第7空挺部隊",
+  "burst_skill": {
+    "name": "Burst: カウンターチェーン",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 4.5714,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: インパクトエグゾスパイン",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.6,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S1: インパクトエグゾスパイン",
+      "trigger_type": "shot_count",
+      "trigger_value": 44,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 2.4,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: イーグルアイエグゾスパイン",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.5,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "max_ammo_rate",
+            "value": 0.25,
+            "duration": 99999
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 120,
+    "reload_time": 1.5,
+    "damage_rate": 0.0873,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "マキマ",
+  "weapon_type": "SMG",
+  "element": "Water",
+  "class": "Defender",
+  "manufacturer": "アブノーマル",
+  "squad": "デビルハンター",
+  "burst_skill": {
+    "name": "Burst: 静かにできる？",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "is_pierce",
+          "value": 1.0,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "self",
+        "kwargs": {
+          "multiplier": 0.34020000000000006,
+          "profile": {
+            "is_skill_damage": true
+          }
+        }
+      }
+    ],
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 私に活躍見せられそう？",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "value": 0.3696,
+            "duration": 10.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "def_buff_rate",
+            "value": 0.1478,
+            "duration": 10.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 気づかれたようだね",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "cooldown_reduction",
+        "value": 11.58,
+        "duration": 10
+      }
+    }
+  ]
+}

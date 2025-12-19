@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ミルク：ブルーミングバニー",
+  "weapon_type": "SR",
+  "element": "Iron",
+  "class": "Attacker",
+  "manufacturer": "テトラ",
+  "squad": "カフェ・スウィーティー",
+  "burst_skill": {
+    "name": "Burst: 恥ずかしさ大爆発",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "pierce_dmg_buff",
+          "value": 1.1764000000000001,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 2.2,
+          "duration": 10.0
+        }
+      }
+    ],
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: やせ我慢",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "is_pierce",
+        "value": 1.0,
+        "duration": 6.0
+      }
+    },
+    {
+      "name": "S1: やせ我慢",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "multiplier": 2.9,
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "value": 0.0,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 1.187,
+            "duration": 40.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 怒り爆発",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "pierce_dmg_buff",
+        "value": 0.647,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S2: 怒り爆発",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 4.477,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

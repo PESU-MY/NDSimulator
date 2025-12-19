@@ -1,0 +1,45 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.2,
+    "damage_rate": 0.1407,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ジュリア",
+  "weapon_type": "AR",
+  "element": "Iron",
+  "class": "Attacker",
+  "manufacturer": "ミシリス",
+  "squad": "マスターハンド",
+  "burst_skill": {
+    "name": "Burst: クライマックス",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 5.445,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: デクレッシェンド",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.26039999999999996,
+        "duration": 10
+      }
+    }
+  ]
+}

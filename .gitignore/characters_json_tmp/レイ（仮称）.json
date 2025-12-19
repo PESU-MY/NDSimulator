@@ -1,0 +1,83 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.5,
+    "damage_rate": 0.1471,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "レイ（仮称）",
+  "weapon_type": "AR",
+  "element": "Wind",
+  "class": "Attacker",
+  "manufacturer": "アブノーマル",
+  "squad": "NERV",
+  "burst_skill": {
+    "name": "Burst: 攻撃態勢",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 9.902000000000001,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: 殲滅支援",
+      "trigger_type": "shot_count",
+      "trigger_value": 18,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 5.9064,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S1: 殲滅支援",
+      "trigger_type": "shot_count",
+      "trigger_value": 7,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 2.8637,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S1: 殲滅支援",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.17600000000000002,
+        "duration": 9.0
+      }
+    },
+    {
+      "name": "S2: 整備補給",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.1161,
+        "duration": 10.0
+      }
+    }
+  ]
+}

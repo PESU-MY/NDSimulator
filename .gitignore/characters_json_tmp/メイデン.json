@@ -1,0 +1,57 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 0.67,
+    "damage_rate": 2.316,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "メイデン",
+  "weapon_type": "SG",
+  "element": "Electric",
+  "class": "Attacker",
+  "manufacturer": "エリシオン",
+  "squad": "エクスターナー",
+  "burst_skill": {
+    "name": "Burst: 言霊：確かな言葉",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 4.5787,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: 言霊：技巧の言",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.2666,
+        "duration": 20.0
+      }
+    },
+    {
+      "name": "S2: 言霊：必中の言",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_dmg_buff",
+        "value": 1.5284,
+        "duration": 10
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.142,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "トーブ",
+  "weapon_type": "AR",
+  "element": "Water",
+  "class": "Supporter",
+  "manufacturer": "ミシリス",
+  "squad": "アンリミテッド",
+  "skills": [
+    {
+      "name": "S1: 代用弾丸",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "max_ammo_rate",
+            "value": 2.0,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "crit_dmg_buff",
+            "value": 0.0524,
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 改造成功",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.0332,
+        "duration": 99999
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.33,
+    "damage_rate": 0.6311,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ラプラス",
+  "weapon_type": "RL",
+  "element": "Iron",
+  "class": "Attacker",
+  "manufacturer": "ミシリス",
+  "squad": "メティス",
+  "burst_skill": {
+    "name": "Burst: ラプラスバスター",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "stack_buff",
+    "target": "enemy",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.11900000000000001,
+      "duration": 10,
+      "max_stack": 5,
+      "stack_name": "Stack_atk_buff_rate"
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S2: ヒーローボンバー",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.8166,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: ヒーローボンバー",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.1478,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

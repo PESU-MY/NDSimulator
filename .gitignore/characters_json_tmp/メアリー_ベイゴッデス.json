@@ -1,0 +1,70 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 1.5,
+    "damage_rate": 0.6595,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "メアリー：ベイゴッデス",
+  "weapon_type": "SR",
+  "element": "Water",
+  "class": "Supporter",
+  "manufacturer": "テトラ",
+  "squad": "セラフィム",
+  "burst_skill": {
+    "name": "Burst: 静かな水面",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "max_hp_rate",
+      "value": 0.2787,
+      "duration": 10.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S2: 足を濡らす波",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "elemental_buff",
+            "value": 0.20850000000000002,
+            "duration": 3.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "elemental_buff",
+            "value": 0.1388,
+            "duration": 5.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "elemental_buff",
+            "value": 0.0836,
+            "duration": 10.0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -19,6 +19,9 @@ class WeaponConfig:
         self.reload_frames = data.get('reload_frames', 60)
         self.windup_frames = data.get('windup_frames', 12)
         self.winddown_frames = data.get('winddown_frames', 10)
+        self.pellet_count = data.get('pellet_count', 1)
+        self.fire_interval = data.get('fire_interval', 5)
+        self.reset_ammo_on_revert = data.get('reset_ammo_on_revert', True)
         
         default_hit_sizes = {
             "RL": 1, "SR": 1, "MG": 1,
@@ -32,7 +35,6 @@ class WeaponConfig:
         self.disable_attack_speed_buffs = data.get('disable_attack_speed_buffs', False)
         self.charge_time = data.get('charge_time', 0)
         self.charge_mult = data.get('charge_mult', 1.0)
-        self.fire_interval = data.get('fire_interval', 5)
         self.mg_warmup_map = []
         self.mg_max_warmup = 0
         if self.type == "MG" and 'warmup_table' in data:
@@ -62,7 +64,7 @@ class DamageProfile:
             'burst_buff_enabled': True,
             'force_full_burst': False, 
             'is_skill_damage': False,
-            'enable_core_hit': False  # 追加: スキルで明示的にコアヒットさせたい場合のフラグ
+            'enable_core_hit': False 
         }
         if kwargs:
             profile.update(kwargs)
@@ -84,6 +86,10 @@ class Skill:
         
         self.stages = kwargs.get('stages', [])
         self.max_stage = kwargs.get('max_stage', len(self.stages))
+        
+        # 遅延アクション用
+        self.sub_effect = kwargs.get('sub_effect', None)
+        
         self.current_usage_count = 0
         self.owner_name = None
 
@@ -92,7 +98,7 @@ class BuffManager:
         self.buffs = {}
         self.active_stacks = {}
 
-    def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False):
+    def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False, stack_amount=1):
         buff_data = {
             'val': value, 
             'end_frame': current_frame + duration_frames, 
@@ -105,7 +111,7 @@ class BuffManager:
         if stack_name:
             if stack_name in self.active_stacks:
                 stack_data = self.active_stacks[stack_name]
-                stack_data['count'] = min(stack_data['max_stack'], stack_data['count'] + 1)
+                stack_data['count'] = min(stack_data['max_stack'], stack_data['count'] + stack_amount)
                 stack_data['end_frame'] = current_frame + duration_frames
                 stack_data['unit_value'] = value 
                 stack_data['tag'] = tag
@@ -114,13 +120,13 @@ class BuffManager:
                 return stack_data['count']
             else:
                 self.active_stacks[stack_name] = {
-                    'count': 1, 'max_stack': max_stack, 'buff_type': buff_type,
+                    'count': min(max_stack, stack_amount), 'max_stack': max_stack, 'buff_type': buff_type,
                     'unit_value': value, 'end_frame': current_frame + duration_frames,
                     'tag': tag,
                     'shot_life': shot_duration,
                     'remove_on_reload': remove_on_reload
                 }
-                return 1
+                return stack_amount
         else:
             if buff_type not in self.buffs: self.buffs[buff_type] = []
             existing_buff = None
@@ -134,6 +140,15 @@ class BuffManager:
             else:
                 self.buffs[buff_type].append(buff_data)
             return 1
+
+    def set_stack_count(self, stack_name, count, max_stack=100):
+        if stack_name in self.active_stacks:
+            self.active_stacks[stack_name]['count'] = min(self.active_stacks[stack_name]['max_stack'], count)
+        else:
+            self.active_stacks[stack_name] = {
+                'count': min(max_stack, count), 'max_stack': max_stack, 'buff_type': 'counter',
+                'unit_value': 0, 'end_frame': 99999999, 'tag': None, 'shot_life': 0, 'remove_on_reload': False
+            }
 
     def remove_buffs_by_tag(self, tag, current_frame):
         if not tag: return
@@ -287,6 +302,9 @@ class NikkeSimulator:
         self.total_damage = 0
         self.active_dots = {}
         self.cumulative_pellet_hits = 0 
+        self.cumulative_crit_hits = 0 
+        
+        self.scheduled_actions = [] # 遅延アクション予約リスト
         
         self.damage_breakdown = {'Weapon Attack': 0}
         
@@ -305,6 +323,14 @@ class NikkeSimulator:
         for char in self.all_burst_chars:
             self.history[f'ct_{char.name}'] = []
 
+    def get_character_stats(self, name):
+        if name == self.character_name or name == 'Main':
+             return self.BASE_ATK, self.BASE_HP
+        for char in self.all_burst_chars:
+            if char.name == name:
+                return char.base_atk, char.base_hp
+        return 0, 0
+
     def check_target_condition(self, condition, frame):
         if not condition: return True
         my_name = self.character_name
@@ -317,6 +343,8 @@ class NikkeSimulator:
             if my_element != cond_value: return False
         elif cond_type == "weapon_type":
             if my_weapon != cond_value: return False
+        elif cond_type == "class":
+             return True
         elif cond_type == "highest_atk":
             target_count = condition.get('count', 1)
             all_chars = []
@@ -334,6 +362,9 @@ class NikkeSimulator:
                     if char.has_used_burst: found = True
                     break
             if not found: return False
+        elif cond_type == "has_barrier":
+            if not self.buff_manager.has_active_tag("barrier", frame):
+                return False
         return True
 
     def calculate_reduced_frame(self, original_frame, rate_buff, fixed_buff):
@@ -377,7 +408,7 @@ class NikkeSimulator:
         current_def = 0 if profile['is_ignore_def'] else self.ENEMY_DEF
         effective_def = current_def * (1.0 - def_debuff)
         raw_damage_diff = final_atk - effective_def
-        if raw_damage_diff <= 0: return 1.0
+        if raw_damage_diff <= 0: return 1.0, False
         
         layer_atk = raw_damage_diff
         
@@ -395,8 +426,6 @@ class NikkeSimulator:
         
         hit_prob = min(1.0, (self.enemy_size / current_hit_size) ** 2)
         
-        # --- 変更: コアヒット判定条件の厳格化 ---
-        # 通常攻撃、または明示的に許可されたスキルのみコアヒット判定を行う
         can_core_hit = profile.get('is_weapon_attack', False) or profile.get('enable_core_hit', False)
         
         is_core = False
@@ -409,18 +438,19 @@ class NikkeSimulator:
                 
             if core_prob > hit_prob: core_prob = hit_prob
             is_core = random.random() < (core_prob / hit_prob)
-        # ------------------------------------
 
         is_hit = random.random() < hit_prob
-        if not is_hit: return 0.0
+        if not is_hit: return 0.0, False
         
         if is_core:
             core_dmg_buff = bm.get_total_value('core_dmg_buff', frame)
             bucket_val += 1.0 + core_dmg_buff
             
         crit_rate = profile['crit_rate'] + bm.get_total_value('crit_rate_buff', frame)
+        is_crit_hit = False
         if random.random() < crit_rate:
             bucket_val += (0.50 + bm.get_total_value('crit_dmg_buff', frame))
+            is_crit_hit = True
             
         layer_crit = bucket_val
         
@@ -457,7 +487,7 @@ class NikkeSimulator:
             elem_buff = bm.get_total_value('elemental_buff', frame)
             layer_elem += 0.10 + elem_buff
             
-        return layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem
+        return layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem, is_crit_hit
 
     def should_apply_skill(self, skill, frame):
         is_target_valid = True
@@ -471,6 +501,16 @@ class NikkeSimulator:
                 tag = skill.condition["not_has_tag"]
                 if self.buff_manager.has_active_tag(tag, frame):
                     return False
+            # --- スタック数範囲チェック ---
+            if "stack_min" in skill.condition or "stack_max" in skill.condition:
+                stack_name = skill.condition.get("stack_name")
+                if stack_name:
+                    count = self.buff_manager.get_stack_count(stack_name, frame)
+                    min_v = skill.condition.get("stack_min", -999)
+                    max_v = skill.condition.get("stack_max", 999)
+                    if not (min_v <= count <= max_v):
+                        return False
+            # --------------------------------
         return True
 
     def apply_skill_effect(self, skill, frame, is_full_burst, attacker_element="None"):
@@ -483,12 +523,30 @@ class NikkeSimulator:
 
         dmg = 0
         
+        kwargs = skill.kwargs.copy()
+        
+        if kwargs.get('scale_by_caster_stats'):
+            owner_name = skill.owner_name
+            base_atk, base_hp = self.get_character_stats(owner_name)
+            
+            ratio = kwargs.get('value', 0)
+            stat_type = kwargs.get('stat_type', 'current') 
+            
+            calc_atk = base_atk
+            if stat_type == 'current' and (owner_name == self.character_name or owner_name == 'Main'):
+                 atk_rate = self.buff_manager.get_total_value('atk_buff_rate', frame)
+                 atk_fixed = self.buff_manager.get_total_value('atk_buff_fixed', frame)
+                 calc_atk = (base_atk * (1.0 + atk_rate)) + atk_fixed
+            
+            if calc_atk > 0:
+                kwargs['value'] = calc_atk * ratio
+
         if skill.effect_type == 'convert_hp_to_atk':
             rate = skill.kwargs.get('value', 0)
             max_hp_rate = self.buff_manager.get_total_value('max_hp_rate', frame)
             current_max_hp = self.BASE_HP * (1.0 + max_hp_rate)
             atk_increase = current_max_hp * rate
-            self.buff_manager.add_buff('atk_buff_fixed', atk_increase, skill.kwargs['duration'] * self.FPS, frame, source=skill.name)
+            self.buff_manager.add_buff('atk_buff_fixed', atk_increase, skill.kwargs.get('duration', 0) * self.FPS, frame, source=skill.name)
             return 0
         
         if skill.effect_type == 'cumulative_stages':
@@ -542,47 +600,54 @@ class NikkeSimulator:
                     dmg += self.apply_skill_effect(temp_skill, frame, is_full_burst, attacker_element)
         
         elif skill.effect_type == 'stack_buff':
-            stack_name = skill.kwargs.get('stack_name', skill.name)
-            max_stack = skill.kwargs.get('max_stack', 1)
-            tag = skill.kwargs.get('tag')
-            self.buff_manager.add_buff(skill.kwargs['buff_type'], skill.kwargs['value'], skill.kwargs['duration'] * self.FPS, frame, source=skill.name, stack_name=stack_name, max_stack=max_stack, tag=tag, shot_duration=skill.kwargs.get('shot_duration', 0), remove_on_reload=skill.kwargs.get('remove_on_reload', False))
+            stack_name = kwargs.get('stack_name', skill.name)
+            max_stack = kwargs.get('max_stack', 1)
+            stack_amount = kwargs.get('stack_amount', 1)
+            tag = kwargs.get('tag')
+            self.buff_manager.add_buff(kwargs['buff_type'], kwargs['value'], kwargs.get('duration', 0) * self.FPS, frame, source=skill.name, stack_name=stack_name, max_stack=max_stack, tag=tag, shot_duration=kwargs.get('shot_duration', 0), remove_on_reload=kwargs.get('remove_on_reload', False), stack_amount=stack_amount)
 
         elif skill.effect_type == 'stack_dot':
-            stack_name = skill.kwargs.get('stack_name', skill.name)
-            max_stack = skill.kwargs.get('max_stack', 1)
-            raw_profile = skill.kwargs.get('profile', {})
+            stack_name = kwargs.get('stack_name', skill.name)
+            max_stack = kwargs.get('max_stack', 1)
+            raw_profile = kwargs.get('profile', {})
             full_profile = DamageProfile.create(**raw_profile)
             
             if stack_name in self.active_dots:
                 dot = self.active_dots[stack_name]
                 dot['count'] = min(max_stack, dot['count'] + 1)
-                dot['end_frame'] = frame + (skill.kwargs['duration'] * self.FPS)
+                dot['end_frame'] = frame + (kwargs.get('duration', 0) * self.FPS)
                 dot['profile'] = full_profile
             else:
                 self.active_dots[stack_name] = {
-                    'end_frame': frame + (skill.kwargs['duration'] * self.FPS),
-                    'multiplier': skill.kwargs['multiplier'], 
+                    'end_frame': frame + (kwargs.get('duration', 0) * self.FPS),
+                    'multiplier': kwargs['multiplier'], 
                     'profile': full_profile,
                     'count': 1, 'max_stack': max_stack, 'element': attacker_element
                 }
 
         elif skill.effect_type == 'buff':
-            tag = skill.kwargs.get('tag')
-            self.buff_manager.add_buff(skill.kwargs['buff_type'], skill.kwargs['value'], skill.kwargs['duration'] * self.FPS, frame, source=skill.name, tag=tag, shot_duration=skill.kwargs.get('shot_duration', 0), remove_on_reload=skill.kwargs.get('remove_on_reload', False))
+            tag = kwargs.get('tag')
+            if kwargs['buff_type'] == 'barrier': tag = 'barrier'
+            
+            self.buff_manager.add_buff(kwargs['buff_type'], kwargs['value'], kwargs.get('duration', 0) * self.FPS, frame, source=skill.name, tag=tag, shot_duration=kwargs.get('shot_duration', 0), remove_on_reload=kwargs.get('remove_on_reload', False))
+            
+            if kwargs['buff_type'] in ['dummy_heal', 'barrier']:
+                if kwargs['buff_type'] == 'dummy_heal':
+                    self.process_trigger('on_receive_heal', 0, frame, is_full_burst, attacker_char=None)
         
         elif skill.effect_type == 'damage':
-            raw_profile = skill.kwargs.get('profile', {})
+            raw_profile = kwargs.get('profile', {})
             full_profile = DamageProfile.create(**raw_profile)
             
-            loop_count = skill.kwargs.get('loop_count', 1)
+            loop_count = kwargs.get('loop_count', 1)
             
-            if skill.kwargs.get('copy_stack_count'):
-                stack_name = skill.kwargs.get('copy_stack_count')
+            if kwargs.get('copy_stack_count'):
+                stack_name = kwargs.get('copy_stack_count')
                 current_stack = self.buff_manager.get_stack_count(stack_name, frame)
                 loop_count = current_stack
                 
             for _ in range(loop_count):
-                dmg_val = self.calculate_strict_damage(self.BASE_ATK, skill.kwargs['multiplier'], full_profile, is_full_burst, frame, attacker_element)
+                dmg_val, _ = self.calculate_strict_damage(self.BASE_ATK, kwargs['multiplier'], full_profile, is_full_burst, frame, attacker_element)
                 dmg += dmg_val
                 
             print(f"[Skill] 時間:{frame/60:>6.2f}s | 名前:{skill.name:<25} | Dmg:{dmg:10,.0f} | Hits:{loop_count}")
@@ -591,50 +656,92 @@ class NikkeSimulator:
             if skill.name in self.damage_breakdown: self.damage_breakdown[skill.name] += dmg
         
         elif skill.effect_type == 'dot':
-            raw_profile = skill.kwargs.get('profile', {})
+            raw_profile = kwargs.get('profile', {})
             full_profile = DamageProfile.create(**raw_profile)
             self.active_dots[skill.name] = {
-                'end_frame': frame + (skill.kwargs['duration'] * self.FPS),
-                'multiplier': skill.kwargs['multiplier'], 
+                'end_frame': frame + (kwargs.get('duration', 0) * self.FPS),
+                'multiplier': kwargs['multiplier'], 
                 'profile': full_profile,
                 'count': 1, 'max_stack': 1, 'element': attacker_element
             }
 
         elif skill.effect_type == 'ammo_charge':
-            charge_amount = skill.kwargs.get('fixed_value', 0)
+            charge_amount = kwargs.get('fixed_value', 0)
             if self.current_ammo < self.current_max_ammo:
                 self.current_ammo = min(self.current_max_ammo, self.current_ammo + charge_amount)
         elif skill.effect_type == 'weapon_change':
-            new_weapon_data = skill.kwargs.get('weapon_data')
-            duration = skill.kwargs.get('duration', 0)
+            new_weapon_data = kwargs.get('weapon_data')
+            duration = kwargs.get('duration', 0)
             if new_weapon_data:
                 self.is_weapon_changed = True
-                self.weapon_change_ammo_specified = 'max_ammo' in new_weapon_data
-                self.weapon = WeaponConfig(new_weapon_data)
-                if self.weapon_change_ammo_specified:
-                    self.current_max_ammo = self.weapon.max_ammo 
+                
+                if 'max_ammo' in new_weapon_data:
+                    self.weapon_change_ammo_specified = True
+                    self.weapon = WeaponConfig(new_weapon_data)
+                    self.current_max_ammo = self.weapon.max_ammo
                     self.current_ammo = self.current_max_ammo
+                else:
+                    self.weapon_change_ammo_specified = False
+                    temp_data = new_weapon_data.copy()
+                    temp_data['max_ammo'] = self.current_max_ammo
+                    self.weapon = WeaponConfig(temp_data)
+                
                 if duration > 0: self.weapon_change_end_frame = frame + (duration * self.FPS)
                 else: self.weapon_change_end_frame = 0
                 self.state = "READY"; self.state_timer = 0
         elif skill.effect_type == 'cooldown_reduction':
-            reduce_sec = skill.kwargs.get('value', 0)
+            reduce_sec = kwargs.get('value', 0)
             reduce_frames = reduce_sec * self.FPS
             for char in self.all_burst_chars:
                 if char.current_cooldown > 0: char.current_cooldown = max(0, char.current_cooldown - reduce_frames)
+        # --- 追加: スタック数直接設定 ---
+        elif skill.effect_type == 'set_stack':
+            stack_name = kwargs.get('stack_name')
+            count = kwargs.get('value', 0)
+            if stack_name:
+                self.buff_manager.set_stack_count(stack_name, count)
+        # --- 追加: 遅延実行 ---
+        elif skill.effect_type == 'delayed_action':
+            duration_sec = kwargs.get('duration', 0)
+            exec_frame = frame + int(duration_sec * self.FPS)
+            
+            # 内部スキルデータの作成
+            sub_data = skill.sub_effect
+            if sub_data:
+                init_kwargs = sub_data.get('kwargs', {}).copy()
+                act_skill = Skill(
+                    name=f"Delayed_{skill.name}", 
+                    trigger_type="manual", trigger_value=0,
+                    effect_type=sub_data.get('effect_type', 'buff'), 
+                    **init_kwargs
+                )
+                act_skill.target = skill.target
+                act_skill.owner_name = skill.owner_name
+                
+                self.scheduled_actions.append({
+                    'frame': exec_frame,
+                    'skill': act_skill
+                })
+        # -----------------------------
         return dmg
 
     def revert_weapon(self, frame):
         if not self.is_weapon_changed: return
+        
+        should_reset = getattr(self.weapon, 'reset_ammo_on_revert', True)
+        
         self.weapon = self.original_weapon
         self.is_weapon_changed = False
         self.weapon_change_end_frame = 0
-        if self.weapon_change_ammo_specified:
-            self.update_max_ammo(frame)
+        
+        self.update_max_ammo(frame)
+        
+        if self.weapon_change_ammo_specified and should_reset:
             self.current_ammo = self.current_max_ammo
         else:
-            self.update_max_ammo(frame)
-            if self.current_ammo > self.current_max_ammo: self.current_ammo = self.current_max_ammo
+            if self.current_ammo > self.current_max_ammo:
+                self.current_ammo = self.current_max_ammo
+                
         self.state = "READY"; self.state_timer = 0
 
     def process_trigger(self, trigger_type, val, frame, is_full_burst, attacker_char=None):
@@ -656,14 +763,27 @@ class NikkeSimulator:
                     if current_count >= skill.trigger_value: is_triggered = True
                 elif trigger_type == 'part_break': 
                     is_triggered = True
-                elif skill.trigger_value <= 0 and trigger_type in ['shot_count', 'time_interval', 'pellet_hit']: is_triggered = False 
+                elif skill.trigger_value <= 0 and trigger_type in ['shot_count', 'time_interval', 'pellet_hit', 'critical_hit']: is_triggered = False 
                 elif trigger_type == 'shot_count' and val > 0 and val % skill.trigger_value == 0: is_triggered = True
                 elif trigger_type == 'time_interval' and val % (skill.trigger_value * self.FPS) == 0: is_triggered = True
                 elif trigger_type == 'ammo_empty' and val == 0: is_triggered = True
                 elif trigger_type == 'on_burst_enter': is_triggered = True
                 elif trigger_type == 'on_burst_3_enter': is_triggered = True
                 elif trigger_type == 'on_start': is_triggered = True
+                elif trigger_type == 'on_burst_end': is_triggered = True
                 elif trigger_type == 'pellet_hit' and val >= skill.trigger_value: is_triggered = True 
+                elif trigger_type == 'critical_hit' and val >= skill.trigger_value: is_triggered = True
+                elif trigger_type == 'on_receive_heal': is_triggered = True 
+                # --- 追加: 可変インターバル判定 ---
+                elif trigger_type == 'variable_interval':
+                    intervals = skill.kwargs.get('intervals', {})
+                    stack_name = skill.kwargs.get('stack_name')
+                    if stack_name:
+                        current_stack = self.buff_manager.get_stack_count(stack_name, frame)
+                        interval = intervals.get(str(current_stack))
+                        if interval and val % interval == 0:
+                            is_triggered = True
+                # ------------------------------
                 
                 if is_triggered: triggered_skills.append(skill)
         
@@ -703,7 +823,9 @@ class NikkeSimulator:
                     self.process_trigger('on_burst_enter', 0, frame, True)
         elif self.burst_state == "FULL":
             self.burst_timer += 1
-            if self.burst_timer >= 10 * self.FPS: self.burst_state = "GEN"; self.burst_timer = 0
+            if self.burst_timer >= 10 * self.FPS: 
+                self.process_trigger('on_burst_end', 0, frame, False)
+                self.burst_state = "GEN"; self.burst_timer = 0
 
     def tick_weapon_action(self, frame, is_full_burst):
         damage_this_frame = 0
@@ -729,21 +851,39 @@ class NikkeSimulator:
             pellet_add = self.buff_manager.get_total_value('pellet_count_add', frame)
             pellet_fixed = self.buff_manager.get_total_value('pellet_count_fixed', frame)
             
-            current_pellets = base_pellets + pellet_add
+            base_pellets_from_config = getattr(self.weapon, 'pellet_count', 1)
+            
+            current_pellets = base_pellets_from_config + pellet_add
             if pellet_fixed > 0:
                 current_pellets = pellet_fixed
             
-            self.cumulative_pellet_hits += current_pellets
+            current_pellets = int(max(1, current_pellets))
             
-            dmg = self.calculate_strict_damage(self.BASE_ATK, self.weapon.multiplier, prof, is_full_burst, frame, self.weapon.element)
+            per_pellet_multiplier = self.weapon.multiplier / current_pellets
+
+            total_shot_dmg = 0
+            hit_count = 0
+            crit_count = 0
+            
+            for _ in range(current_pellets):
+                dmg, is_crit = self.calculate_strict_damage(self.BASE_ATK, per_pellet_multiplier, prof, is_full_burst, frame, self.weapon.element)
+                
+                total_shot_dmg += dmg
+                if dmg > 0:
+                    hit_count += 1
+                if is_crit:
+                    crit_count += 1
+            
+            self.cumulative_pellet_hits += hit_count
+            self.cumulative_crit_hits += crit_count
             
             buff_debug_str = self.buff_manager.get_active_buffs_debug(frame)
             
-            print(f"[Shoot] 時間:{frame/60:>6.2f}s | 弾数:{self.current_ammo:>3}/{self.current_max_ammo:<3} | ペレット:{current_pellets:>2} | Dmg:{dmg:10,.0f} | Buffs: {buff_debug_str}")
+            print(f"[Shoot] 時間:{frame/60:>6.2f}s | 弾数:{self.current_ammo:>3}/{self.current_max_ammo:<3} | ペレット:{current_pellets:>2} (Hit:{hit_count}) | Dmg:{total_shot_dmg:10,.0f} | Buffs: {buff_debug_str}")
 
-            self.total_damage += dmg
-            self.damage_breakdown['Weapon Attack'] += dmg
-            damage_this_frame += dmg
+            self.total_damage += total_shot_dmg
+            self.damage_breakdown['Weapon Attack'] += total_shot_dmg
+            damage_this_frame += total_shot_dmg
             
             self.buff_manager.decrement_shot_buffs()
             
@@ -753,8 +893,12 @@ class NikkeSimulator:
             damage_this_frame += d
             d, t3 = self.process_trigger('pellet_hit', self.cumulative_pellet_hits, frame, is_full_burst)
             damage_this_frame += d
+            d, t4 = self.process_trigger('critical_hit', self.cumulative_crit_hits, frame, is_full_burst)
+            damage_this_frame += d
             if t3:
                 self.cumulative_pellet_hits = 0 
+            if t4:
+                self.cumulative_crit_hits = 0
             
 
         if self.weapon.type in ["RL", "SR", "CHARGE"]:
@@ -845,10 +989,24 @@ class NikkeSimulator:
     def tick(self, frame):
         self.tick_burst_state(frame)
         self.update_cooldowns()
+        
+        # --- 追加: 遅延アクションの実行 ---
+        executed_indices = []
+        is_full_burst = (self.burst_state == "FULL")
+        for i, action in enumerate(self.scheduled_actions):
+            if frame >= action['frame']:
+                skill = action['skill']
+                self.apply_skill_effect(skill, frame, is_full_burst, self.weapon.element)
+                executed_indices.append(i)
+        
+        # 実行済みを削除 (後ろから)
+        for i in reversed(executed_indices):
+            self.scheduled_actions.pop(i)
+        # --------------------------------
+        
         if self.is_weapon_changed and self.weapon_change_end_frame > 0:
             if frame >= self.weapon_change_end_frame: self.revert_weapon(frame)
         self.update_max_ammo(frame)
-        is_full_burst = (self.burst_state == "FULL")
         damage_this_frame = 0
         if frame % 60 == 0:
             for name, dot in list(self.active_dots.items()):
@@ -857,7 +1015,7 @@ class NikkeSimulator:
                     profile = dot.get('profile')
                     if not profile: profile = DamageProfile.create()
                     
-                    dmg = self.calculate_strict_damage(self.BASE_ATK, total_mult, profile, is_full_burst, frame, dot.get('element', 'None'))
+                    dmg, _ = self.calculate_strict_damage(self.BASE_ATK, total_mult, profile, is_full_burst, frame, dot.get('element', 'None'))
                     
                     print(f"[Time {frame/60:>5.1f}s] DoT Damage: {name:<25} | Damage: {dmg:10,.0f} | Stacks: {dot.get('count', 1)}")
 
@@ -875,6 +1033,10 @@ class NikkeSimulator:
             
         d, t = self.process_trigger('time_interval', frame, frame, is_full_burst)
         damage_this_frame += d
+        # --- 追加 ---
+        d, t = self.process_trigger('variable_interval', frame, frame, is_full_burst)
+        damage_this_frame += d
+        # -----------
         
         damage_this_frame += self.tick_weapon_action(frame, is_full_burst)
         self.history['frame'].append(frame/60)

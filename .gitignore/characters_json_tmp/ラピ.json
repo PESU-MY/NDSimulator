@@ -1,0 +1,57 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ラピ",
+  "weapon_type": "AR",
+  "element": "Fire",
+  "class": "Attacker",
+  "manufacturer": "エリシオン",
+  "squad": "カウンターズ",
+  "burst_skill": {
+    "name": "Burst: 多弾頭ミサイル",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.6075,
+      "duration": 10.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: フォーメーションF.F",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.2181,
+        "duration": 20.0
+      }
+    },
+    {
+      "name": "S2: ミサイル",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 5.2897,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

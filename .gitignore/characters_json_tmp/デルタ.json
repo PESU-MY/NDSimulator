@@ -1,0 +1,56 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 1.5,
+    "damage_rate": 0.6595,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "デルタ",
+  "weapon_type": "SR",
+  "element": "Wind",
+  "class": "Defender",
+  "manufacturer": "エリシオン",
+  "squad": "スカウティング",
+  "burst_skill": {
+    "name": "Burst: リメンバーミー",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "max_hp_rate",
+      "value": 0.9168000000000001,
+      "duration": 10.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: リコレクション",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0882,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: ラストメモリー",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 0.5142,
+        "duration": 20.0
+      }
+    }
+  ]
+}

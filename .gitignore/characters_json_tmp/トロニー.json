@@ -1,0 +1,97 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "トロニー",
+  "weapon_type": "SR",
+  "element": "Fire",
+  "class": "Attacker",
+  "manufacturer": "ミシリス",
+  "squad": "エレクトリックショック",
+  "burst_skill": {
+    "name": "Burst: メガT.Rony",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 1.0137,
+      "duration": 10.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: T.Ronyボンバー",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "self",
+          "kwargs": {
+            "multiplier": 15.36,
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "self",
+          "kwargs": {
+            "multiplier": 0.0,
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "multiplier": 0.0,
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 効率アップ",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "damage",
+        "value": 0.5184000000000001,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: 効率アップ",
+      "trigger_type": "shot_count",
+      "trigger_value": 5,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 0.0959,
+        "duration": 10.0
+      }
+    }
+  ]
+}

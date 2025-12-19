@@ -9,9 +9,7 @@
     "reload_time": 1.5,
     "damage_rate": 2.015,
     "windup_frames": 12,
-    "winddown_frames": 10,
-    "base_atk": 25554,
-    "base_hp": 583734
+    "winddown_frames": 10
   },
   "skills": [
     {

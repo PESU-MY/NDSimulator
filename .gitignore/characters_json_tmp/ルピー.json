@@ -1,0 +1,56 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ルピー",
+  "weapon_type": "AR",
+  "element": "Iron",
+  "class": "Attacker",
+  "manufacturer": "テトラ",
+  "squad": "タレント",
+  "burst_skill": {
+    "name": "Burst: シングルペイメント",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.198,
+      "duration": 5.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: プライズ",
+      "trigger_type": "shot_count",
+      "trigger_value": 100,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.022400000000000003,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: マイレージ",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.138,
+        "duration": 10
+      }
+    }
+  ]
+}

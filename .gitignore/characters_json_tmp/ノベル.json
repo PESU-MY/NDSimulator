@@ -1,0 +1,61 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 120,
+    "reload_time": 1.0,
+    "damage_rate": 0.081,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ノベル",
+  "weapon_type": "SMG",
+  "element": "Iron",
+  "class": "Defender",
+  "manufacturer": "テトラ",
+  "squad": "プロトコール",
+  "skills": [
+    {
+      "name": "S1: 怪しいのであります！",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "self",
+          "kwargs": {
+            "multiplier": 0.5236,
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "def_buff_rate",
+            "value": 0.0705,
+            "duration": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 探偵グッズであります！",
+      "trigger_type": "shot_count",
+      "trigger_value": 100,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 0.135,
+        "duration": 10
+      }
+    }
+  ]
+}

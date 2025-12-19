@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 1.5,
+    "damage_rate": 2.015,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "メアリー",
+  "weapon_type": "SG",
+  "element": "Water",
+  "class": "Supporter",
+  "manufacturer": "テトラ",
+  "squad": "セラフィム",
+  "burst_skill": {
+    "name": "Burst: 白衣の天使",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "def_buff_rate",
+      "value": 0.198,
+      "duration": 10.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: CPR",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.084,
+        "duration": 10
+      }
+    }
+  ]
+}

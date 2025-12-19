@@ -1,0 +1,57 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 0.67,
+    "damage_rate": 2.316,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "プロダクト23",
+  "weapon_type": "SG",
+  "element": "Wind",
+  "class": "Supporter",
+  "manufacturer": "ミシリス",
+  "squad": "不明",
+  "burst_skill": {
+    "name": "Burst: 命令：特殊弾丸",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "def_buff_rate",
+      "value": 0.4875,
+      "duration": 5.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 命令：出力補強",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 0.081,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: 命令：応急措置",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.16149999999999998,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "エヌ : ミラクルフェアリー",
+  "weapon_type": "RL",
+  "element": "Wind",
+  "class": "Supporter",
+  "manufacturer": "ミシリス",
+  "squad": "リコール＆リリーズ",
+  "burst_skill": {
+    "name": "Burst: 青い蝶の夢",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "max_hp_rate",
+          "value": 0.3861,
+          "duration": 10
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 0.7722,
+          "duration": 10.0
+        }
+      }
+    ],
+    "cooldown": 60.0
+  },
+  "skills": [
+    {
+      "name": "S1: 踊る妖精",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.060700000000000004,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

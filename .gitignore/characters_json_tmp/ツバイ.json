@@ -1,0 +1,73 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 1.5,
+    "damage_rate": 1.0075,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ツバイ",
+  "weapon_type": "SG",
+  "element": "Electric",
+  "class": "Supporter",
+  "manufacturer": "エリシオン",
+  "squad": "スクールサークル",
+  "burst_skill": {
+    "name": "Burst: 過充電方程式",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "pierce_dmg_buff",
+      "value": 0.1548,
+      "duration": 10.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 貫通力計算式",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "pierce_dmg_buff",
+            "value": 0.20129999999999998,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "pierce_dmg_buff",
+            "value": 0.10060000000000001,
+            "duration": 10.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 構造分析",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.1863,
+        "duration": 10
+      }
+    }
+  ]
+}

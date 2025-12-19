@@ -1,0 +1,96 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ウンファ：タクティカル・アップ",
+  "weapon_type": "SR",
+  "element": "Fire",
+  "class": "Attacker",
+  "manufacturer": "エリシオン",
+  "squad": "アブソルート",
+  "skills": [
+    {
+      "name": "S1: カモフラージュスカーフ",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "self",
+          "kwargs": {
+            "multiplier": 0.0,
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "def_buff_rate",
+            "value": 0.4224,
+            "duration": 99999
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: フォーメーションAS",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "crit_rate_buff",
+            "value": 0.0816,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "charge_dmg_buff",
+            "value": 0.4181,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.4224,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "def_buff_rate",
+            "value": 0.3097,
+            "duration": 99999
+          }
+        }
+      ]
+    }
+  ]
+}

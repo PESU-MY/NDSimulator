@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "クレア",
+  "weapon_type": "RL",
+  "element": "Electric",
+  "class": "Supporter",
+  "manufacturer": "アブノーマル",
+  "squad": "B.S.T.",
+  "skills": []
+}

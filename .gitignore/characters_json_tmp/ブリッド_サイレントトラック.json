@@ -1,0 +1,58 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 1.5,
+    "damage_rate": 2.015,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ブリッド：サイレントトラック",
+  "weapon_type": "SG",
+  "element": "Fire",
+  "class": "Supporter",
+  "manufacturer": "エリシオン",
+  "squad": "インフィニティレール",
+  "burst_skill": {
+    "name": "Burst: 最大力行",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.6652,
+      "duration": 10
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 出発進行",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 6.36,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: 前途良好",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 4.05,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 1.5,
+    "damage_rate": 2.015,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ドロシー：セレンディピティ",
+  "weapon_type": "SG",
+  "element": "Water",
+  "class": "Attacker",
+  "manufacturer": "ピルグリム",
+  "squad": "インヘルト",
+  "burst_skill": {
+    "name": "Burst: 偽救",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 0.8812000000000001,
+          "duration": 15.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "pellet_count_add",
+          "value": 5.0,
+          "duration": 15.0
+        }
+      }
+    ],
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: 閃耀",
+      "trigger_type": "shot_count",
+      "trigger_value": 80,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "is_pierce",
+            "value": 1.0,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "hit_rate_buff",
+            "value": 0.9818000000000001,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_dmg_buff",
+            "value": 0.72,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "pellet_count_fixed",
+            "value": 1,
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 閃耀",
+      "trigger_type": "shot_count",
+      "trigger_value": 160,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "pierce_radius_buff",
+        "value": 0.0,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: 光翼",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "pierce_dmg_buff",
+        "value": 0.5508,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S2: 光翼",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.7524,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "hit_rate_buff",
+            "value": 0.4068,
+            "duration": 99999
+          }
+        }
+      ]
+    }
+  ]
+}

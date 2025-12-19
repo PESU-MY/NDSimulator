@@ -1,0 +1,41 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ナガ",
+  "weapon_type": "不明",
+  "element": "Electric",
+  "class": "Supporter",
+  "manufacturer": "ミシリス",
+  "squad": "ダージリンパール",
+  "burst_skill": {
+    "name": "Burst: 友だちと一緒なら！",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.3102,
+      "duration": 10
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S2: 友情のサポート",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0958,
+        "duration": 10
+      }
+    }
+  ]
+}

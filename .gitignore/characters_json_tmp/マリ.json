@@ -1,0 +1,85 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "マリ",
+  "weapon_type": "SR",
+  "element": "Electric",
+  "class": "Supporter",
+  "manufacturer": "アブノーマル",
+  "squad": "NERV",
+  "burst_skill": {
+    "name": "Burst: 座標誘導式ミサイル",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_dmg_buff",
+      "value": 0.40990000000000004,
+      "duration": 10.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 一点狙撃",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "pierce_dmg_buff",
+        "value": 0.40990000000000004,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: 精神集中",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "is_pierce",
+            "value": 1.0,
+            "duration": 5.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.3078,
+            "duration": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 精神集中",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.3078,
+        "duration": 5.0
+      }
+    }
+  ]
+}

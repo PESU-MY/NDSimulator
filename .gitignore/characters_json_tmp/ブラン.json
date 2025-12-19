@@ -1,0 +1,68 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ブラン",
+  "weapon_type": "AR",
+  "element": "Wind",
+  "class": "Defender",
+  "manufacturer": "テトラ",
+  "squad": "777",
+  "burst_skill": {
+    "name": "Burst: ショータイム",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "max_hp_rate",
+      "value": 0.31679999999999997,
+      "duration": 10.0
+    },
+    "cooldown": 60.0
+  },
+  "skills": [
+    {
+      "name": "S1: ラッキーガード",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.11800000000000001,
+        "duration": 5.0
+      }
+    },
+    {
+      "name": "S2: ラビットツインズW",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0368,
+        "duration": 5.0
+      }
+    },
+    {
+      "name": "S2: ラビットツインズW",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "cooldown_reduction",
+        "value": 0.0,
+        "duration": 10
+      }
+    }
+  ]
+}

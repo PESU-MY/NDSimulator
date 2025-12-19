@@ -1,0 +1,85 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 0.67,
+    "damage_rate": 2.316,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "シュガー",
+  "weapon_type": "SG",
+  "element": "Iron",
+  "class": "Attacker",
+  "manufacturer": "テトラ",
+  "squad": "カフェ・スウィーティー",
+  "burst_skill": {
+    "name": "Burst: トラブルシューター",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "hit_rate_buff",
+      "value": 0.33,
+      "duration": 15.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: ブラックタイフーン",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "crit_dmg_buff",
+            "value": 0.16390000000000002,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "value": 0.12119999999999999,
+            "duration": 10.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: ノワールセンサー",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.13019999999999998,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: ノワールセンサー",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_ammo_rate",
+        "value": 0.838,
+        "duration": 10.0
+      }
+    }
+  ]
+}

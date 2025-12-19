@@ -1,0 +1,58 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.3,
+    "damage_rate": 0.1429,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ブリッド",
+  "weapon_type": "AR",
+  "element": "Water",
+  "class": "Attacker",
+  "manufacturer": "エリシオン",
+  "squad": "インフィニティレール",
+  "burst_skill": {
+    "name": "Burst: AZX",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 14.4,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: アクセラレーション",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.1852,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: リーク",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 2.112,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

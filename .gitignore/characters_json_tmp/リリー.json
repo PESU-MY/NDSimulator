@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 120,
+    "reload_time": 1.0,
+    "damage_rate": 0.081,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "リリー",
+  "weapon_type": "SMG",
+  "element": "Wind",
+  "class": "Supporter",
+  "manufacturer": "アブノーマル",
+  "squad": "第5空挺部隊",
+  "burst_skill": {
+    "name": "Burst: 最高のエンジニア！",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.4,
+      "duration": 10.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: 精密調整",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.2,
+        "duration": 5.0
+      }
+    }
+  ]
+}

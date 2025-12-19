@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 1.86,
+    "damage_rate": 2.1069999999999998,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "イサベル",
+  "weapon_type": "SG",
+  "element": "Electric",
+  "class": "Attacker",
+  "manufacturer": "ピルグリム",
+  "squad": "インヘルト",
+  "skills": [
+    {
+      "name": "S1: ターゲットマーキング",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.1728,
+        "duration": 45.0
+      }
+    },
+    {
+      "name": "S2: フェザー・イジェクション",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 1.7058000000000002,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 300,
+    "reload_time": 2.5,
+    "damage_rate": 0.0557,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "エマ：タクティカル・アップ",
+  "weapon_type": "MG",
+  "element": "Fire",
+  "class": "Supporter",
+  "manufacturer": "エリシオン",
+  "squad": "アブソルート",
+  "burst_skill": {
+    "name": "Burst: 戦場コントロール",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.4007,
+      "duration": 10.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 環境コントロール",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0232,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S2: フォーメーションLT",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "crit_dmg_buff",
+            "value": 0.2351,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "def_buff_rate",
+            "value": 0.3097,
+            "duration": 99999
+          }
+        }
+      ]
+    }
+  ]
+}

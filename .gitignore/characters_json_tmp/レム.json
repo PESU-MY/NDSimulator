@@ -1,0 +1,76 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 300,
+    "reload_time": 2.5,
+    "damage_rate": 0.0557,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "レム",
+  "weapon_type": "MG",
+  "element": "Water",
+  "class": "Supporter",
+  "manufacturer": "アブノーマル",
+  "squad": "エミリア陣営",
+  "burst_skill": {
+    "name": "Burst: レムは許しません！",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 0.5078,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "max_ammo_rate",
+          "value": 5.0,
+          "duration": 10.0
+        }
+      }
+    ],
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: レムにお任せください！",
+      "trigger_type": "shot_count",
+      "trigger_value": 15,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.042199999999999994,
+        "duration": 10.0,
+        "max_stack": 5,
+        "stack_name": "Stack_atk_buff_rate"
+      }
+    },
+    {
+      "name": "S2: レムが治療します！",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.4224,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

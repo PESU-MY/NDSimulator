@@ -1,0 +1,70 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ティア",
+  "weapon_type": "RL",
+  "element": "Iron",
+  "class": "Defender",
+  "manufacturer": "ミシリス",
+  "squad": "ダージリンパール",
+  "skills": [
+    {
+      "name": "S1: 爬虫類愛好家",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "cooldown_reduction",
+        "value": 13.0,
+        "duration": 12.0,
+        "max_stack": 5,
+        "stack_name": "Stack_cooldown_reduction"
+      }
+    },
+    {
+      "name": "S1: 爬虫類愛好家",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.3211,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: カメレオンの隠れ身の術",
+      "trigger_type": "shot_count",
+      "trigger_value": 5,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0,
+        "duration": 5.0
+      }
+    },
+    {
+      "name": "S2: カメレオンの隠れ身の術",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.21960000000000002,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.67,
+    "damage_rate": 0.1507,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ミハラ",
+  "weapon_type": "AR",
+  "element": "Water",
+  "class": "Attacker",
+  "manufacturer": "ミシリス",
+  "squad": "ワードレス",
+  "burst_skill": {
+    "name": "Burst: センスシェアリング",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 2.6639999999999997,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: エンデュアー",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_dmg_buff",
+        "value": 0.187,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: ペインロード",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.15560000000000002,
+        "duration": 10
+      }
+    }
+  ]
+}

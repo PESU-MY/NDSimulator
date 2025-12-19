@@ -1,0 +1,124 @@
+{
+  "name": "アスカ",
+  "weapon_type": "AR",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "NERV",
+  "stats": {
+    "max_ammo": 20,
+    "reload_time": 1.0,
+    "damage_rate": 0.1876,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "S1: 負けず嫌い (バリア特攻)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_barrier_dmg",
+        "value": 6.0101,
+        "duration": 99999
+      },
+      "description": "バリアへのダメージUP（シミュレーション上は効果なし）"
+    },
+    {
+      "name": "S1: 負けず嫌い (攻撃バフ)",
+      "trigger_type": "on_receive_heal",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.9698,
+        "duration": 25.0
+      },
+      "description": "回復効果適用時に攻撃力UP"
+    },
+    {
+      "name": "S2: 突撃戦術 (自己バフ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "target_condition": {
+        "type": "has_barrier"
+      },
+      "kwargs": {
+        "buff_type": "elemental_buff",
+        "value": 0.3002,
+        "duration": 10.0
+      },
+      "description": "フルバースト時、バリア状態なら優越コード攻撃ダメUP"
+    },
+    {
+      "name": "S2: 突撃戦術 (味方バフ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "element",
+        "value": "Fire"
+      },
+      "kwargs": {
+        "buff_type": "core_dmg_buff",
+        "value": 0.6007,
+        "duration": 10.0
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 貫通特化弾丸",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "is_pierce",
+          "value": 1,
+          "duration": 25.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_dmg_buff",
+          "value": 1.5004,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_heal",
+          "value": 0.0316,
+          "duration": 0
+        },
+        "description": "攻撃ダメージの回復（即時発動扱いでS1トリガー用）"
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "hit_rate_buff",
+          "value": 1.0137,
+          "duration": 10.0
+        }
+      }
+    ]
+  }
+}

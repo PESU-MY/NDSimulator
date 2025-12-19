@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "アリス",
+  "weapon_type": "SR",
+  "element": "Fire",
+  "class": "Attacker",
+  "manufacturer": "テトラ",
+  "squad": "アンリミテッド",
+  "burst_skill": {
+    "name": "Burst: 摩訶不思議な世界",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "charge_speed_rate",
+          "value": 0.8015000000000001,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 0.5512,
+          "duration": 10.0
+        }
+      }
+    ],
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: 元気が出るニンジン",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "charge_speed_rate",
+            "value": 0.1167,
+            "duration": 10.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "charge_dmg_buff",
+            "value": 0.07,
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 健康なニンジン",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "is_pierce",
+        "value": 1.0,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S2: 健康なニンジン",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.0812,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

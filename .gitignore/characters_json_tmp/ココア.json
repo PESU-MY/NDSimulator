@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ココア",
+  "weapon_type": "SR",
+  "element": "Fire",
+  "class": "Supporter",
+  "manufacturer": "テトラ",
+  "squad": "メイド・フォー・ユー",
+  "burst_skill": {
+    "name": "Burst: プロメイド長",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.1359,
+      "duration": 10.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": []
+}

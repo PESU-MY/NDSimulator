@@ -1,0 +1,102 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 300,
+    "reload_time": 2.5,
+    "damage_rate": 0.0557,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "クラウン",
+  "weapon_type": "MG",
+  "element": "Iron",
+  "class": "Defender",
+  "manufacturer": "ピルグリム",
+  "squad": "ヴァイスリッター",
+  "burst_skill": {
+    "name": "Burst: ラストキングダム",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_dmg_buff",
+      "value": 0.3624,
+      "duration": 15.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: ワンフォーオール",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.6451,
+            "duration": 15.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "value": 0.4435,
+            "duration": 15.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: ワンフォーオール",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "def_buff_rate",
+            "value": 0.37439999999999996,
+            "duration": 15.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "value": 0.4435,
+            "duration": 15.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: ロイヤルアタイア",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.20989999999999998,
+        "duration": 7.0
+      }
+    }
+  ]
+}

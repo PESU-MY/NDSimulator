@@ -8,5 +8,6 @@
   "windup_frames": 12,
   "winddown_frames": 10,
   "fire_interval": 40,
-  "hit_size": 20
+  "hit_size": 20,
+  "pellet_count": 10
 }

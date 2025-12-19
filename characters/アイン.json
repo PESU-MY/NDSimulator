@@ -1,0 +1,160 @@
+{
+  "name": "アイン",
+  "weapon_type": "SR",
+  "element": "Electric",
+  "class": "Attacker",
+  "squad": "School Circle",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "S1: ニアフェザー展開 (開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "set_stack",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "Near Feather",
+        "value": 4
+      }
+    },
+    {
+      "name": "S1: フェザースタンバイ (攻撃バフ)",
+      "trigger_type": "on_burst_3_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.7012,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: フェザーショット (追撃)",
+      "trigger_type": "variable_interval",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "multiplier": 0.9081,
+        "profile": {
+          "is_skill_damage": true,
+          "is_ignore_def": true
+        },
+        "stack_name": "Near Feather",
+        "intervals": {
+          "6": 18,
+          "4": 180,
+          "3": 300,
+          "2": 420,
+          "1": 540
+        }
+      }
+    },
+    {
+      "name": "S2: フェザーレスト (チャージバフ)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "charge_dmg_buff",
+        "value": 0.8,
+        "shot_duration": 2
+      }
+    },
+    {
+      "name": "Near Feather: 自然減少",
+      "trigger_type": "time_interval",
+      "trigger_value": 16.0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "condition": {
+        "stack_name": "Near Feather",
+        "stack_max": 4,
+        "stack_min": 2
+      },
+      "kwargs": {
+        "stack_name": "Near Feather",
+        "buff_type": "dummy_counter",
+        "value": -1,
+        "max_stack": 10,
+        "stack_amount": -1,
+        "duration": 99999
+      },
+      "description": "スタック4以下かつ2以上の時、16秒ごとに1減少"
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: フェザーオールレンジ",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "set_stack",
+        "target": "self",
+        "kwargs": {
+          "stack_name": "Near Feather",
+          "value": 6
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "ignore_def_dmg_buff",
+          "value": 0.553,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "charge_dmg_buff",
+          "value": 1.4068,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "multiplier": 3.002,
+          "profile": {
+            "is_skill_damage": true,
+            "is_ignore_def": true,
+            "force_full_burst": true
+          }
+        }
+      },
+      {
+        "effect_type": "delayed_action",
+        "target": "self",
+        "kwargs": {
+          "duration": 10.0
+        },
+        "sub_effect": {
+          "effect_type": "set_stack",
+          "target": "self",
+          "kwargs": {
+            "stack_name": "Near Feather",
+            "value": 4
+          }
+        }
+      }
+    ]
+  }
+}

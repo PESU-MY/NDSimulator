@@ -96,7 +96,7 @@ def load_character_full_setup(char_file_path):
 if not os.path.exists('characters'): os.makedirs('characters')
 
 # ドロシーの読み込み (命中率仕様変更の確認用)
-dorothy_setup = load_character_full_setup('characters/dorothy_ns.json')
+nikke_setup = load_character_full_setup('characters/アイン.json')
 
 # --- 追加: 常時バーストCT短縮スキル ---
 passive_cd_reduction = Skill(
@@ -112,35 +112,35 @@ passive_cd_reduction = Skill(
 # バースト編成
 b1 = BurstCharacter("B1", 1, 20, None, element="Wind", weapon_type="SMG", base_atk=15000)
 b2 = BurstCharacter("B2", 2, 20, None, element="Water", weapon_type="AR", base_atk=18000)
-b3_dorothy = BurstCharacter(
-    dorothy_setup['name'], 
+b3_nikke = BurstCharacter(
+    nikke_setup['name'], 
     3, 
     40, 
-    dorothy_setup['burst_skill'], 
-    element=dorothy_setup['element'],
+    nikke_setup['burst_skill'], 
+    element=nikke_setup['element'],
     weapon_type="SG",
-    base_atk=dorothy_setup['base_atk'],
-    base_hp=dorothy_setup['base_hp']
+    base_atk=nikke_setup['base_atk'],
+    base_hp=nikke_setup['base_hp']
 )
 b3_dummy = BurstCharacter("B3_Dummy", 3, 40, None, element="Fire", weapon_type="MG", base_atk=10000)
 
-rotation = [[b1], [b2], [b3_dorothy, b3_dummy]]
+rotation = [[b1], [b2], [b3_nikke, b3_dummy]]
 
 sim = NikkeSimulator(
-    weapon_config=dorothy_setup['weapon_config'],
-    skills=dorothy_setup['passive_skills']+[passive_cd_reduction],
+    weapon_config=nikke_setup['weapon_config'],
+    skills=nikke_setup['passive_skills']+[passive_cd_reduction],
     burst_rotation=rotation,
-    base_atk=dorothy_setup['base_atk'],
-    base_hp=dorothy_setup['base_hp'],
+    base_atk=nikke_setup['base_atk'],
+    base_hp=nikke_setup['base_hp'],
     enemy_element="None", 
     enemy_core_size=3.0, # コアサイズ指定
     enemy_size=100,      # 敵サイズ指定
-    character_name=dorothy_setup['name']
+    character_name=nikke_setup['name']
 )
 
 breakdown = sim.run()
 
-print(f"キャラクター: {dorothy_setup['name']}")
+print(f"キャラクター: {nikke_setup['name']}")
 print(f"基礎攻撃力: {sim.BASE_ATK}")
 print(f"総ダメージ: {sim.total_damage:,.0f}")
 print("【ダメージ内訳】")
@@ -161,7 +161,7 @@ plt.figure(figsize=(12, 6))
 plt.plot(time_axis, cumulative_damage, label='総ダメージ (累積)', color='red', linewidth=1.5)
 plt.xlabel('時間 (秒)')
 plt.ylabel('総ダメージ')
-plt.title(f'総ダメージ推移: {dorothy_setup["name"]}')
+plt.title(f'総ダメージ推移: {nikke_setup["name"]}')
 plt.grid(True, alpha=0.3)
 plt.legend()
 plt.tight_layout()

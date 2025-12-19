@@ -1,0 +1,85 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 120,
+    "reload_time": 1.43,
+    "damage_rate": 0.10800000000000001,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ミランダ",
+  "weapon_type": "SMG",
+  "element": "Fire",
+  "class": "Supporter",
+  "manufacturer": "エリシオン",
+  "squad": "A.C.P.U.",
+  "burst_skill": {
+    "name": "Burst: パワーアップ！",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 0.40399999999999997,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "crit_dmg_buff",
+          "value": 0.5623,
+          "duration": 10
+        }
+      }
+    ],
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: ヘルスアップ！",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "hit_rate_buff",
+        "value": 0.054400000000000004,
+        "duration": 5.0
+      }
+    },
+    {
+      "name": "S1: ヘルスアップ！",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "hit_rate_buff",
+        "value": 0.0379,
+        "duration": 5.0
+      }
+    },
+    {
+      "name": "S2: ウェイクアップ！",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_dmg_buff",
+        "value": 0.3299,
+        "duration": 10
+      }
+    }
+  ]
+}

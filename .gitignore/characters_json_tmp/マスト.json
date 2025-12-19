@@ -1,0 +1,69 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 120,
+    "reload_time": 1.5,
+    "damage_rate": 0.0873,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "マスト",
+  "weapon_type": "SMG",
+  "element": "Electric",
+  "class": "Supporter",
+  "manufacturer": "エリシオン",
+  "squad": "イージス",
+  "burst_skill": {
+    "name": "Burst: 嵐を突っ切って！",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "self",
+    "kwargs": {
+      "multiplier": 0.0452,
+      "profile": {
+        "is_skill_damage": true
+      }
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 海賊の根性",
+      "trigger_type": "shot_count",
+      "trigger_value": 2,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 0.019,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S1: 海賊の根性",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_dmg_buff",
+        "value": 0.5094,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S2: 海賊の眼差し",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.23559999999999998,
+        "duration": 10
+      }
+    }
+  ]
+}

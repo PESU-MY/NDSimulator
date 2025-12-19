@@ -1,0 +1,129 @@
+{
+  "name": "K",
+  "weapon_type": "SMG",
+  "element": "Electric",
+  "class": "Attacker",
+  "squad": "Siege Perilous",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.8,
+    "damage_rate": 0.091,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "pellet_count": 2
+  },
+  "skills": [
+    {
+      "name": "S1: 傾く天秤 (スタック)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "Scale of Balance",
+        "buff_type": "crit_rate_buff",
+        "value": 0.0075,
+        "max_stack": 100,
+        "stack_amount": 30,
+        "duration": 99999,
+        "tag": "scale_balance"
+      }
+    },
+    {
+      "name": "S1: 傾く天秤 (追撃)",
+      "trigger_type": "critical_hit",
+      "trigger_value": 4,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "multiplier": 0.239,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S1: 傾く天秤 (解除)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "remove_tags": ["scale_balance"],
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 0
+      }
+    },
+    {
+      "name": "S2: 正義の執行 (バフ)",
+      "trigger_type": "stack_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "stack_name": "Scale of Balance",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "max_ammo_rate",
+            "value": -0.5113,
+            "duration": 10,
+            "tag": "justice_realized"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "atk_dmg_buff",
+            "value": 0.1062,
+            "duration": 10,
+            "tag": "justice_realized"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 正義の執行 (解除)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "remove_tags": ["justice_realized"],
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 0
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 正義への手段",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "effect_type": "weapon_change",
+    "target": "self",
+    "cooldown": 40.0,
+    "kwargs": {
+      "duration": 10,
+      "weapon_data": {
+        "name": "K Burst",
+        "type": "RAPID",
+        "weapon_class": "SMG",
+        "multiplier": 1.85,
+        "windup_frames": 12,
+        "winddown_frames": 10,
+        "hit_size": 20,
+        "fire_interval": 24,
+        "pellet_count": 10,
+        "force_full_burst": true,
+        "reset_ammo_on_revert": false
+      }
+    }
+  }
+}

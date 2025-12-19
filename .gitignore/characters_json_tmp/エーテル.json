@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 2.0,
+    "damage_rate": 2.1430000000000002,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "エーテル",
+  "weapon_type": "SG",
+  "element": "Electric",
+  "class": "Defender",
+  "manufacturer": "ミシリス",
+  "squad": "M.M.R.",
+  "skills": [
+    {
+      "name": "S2: 副反応実験",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.5632,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: 副反応実験",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 0.09380000000000001,
+        "duration": 6.0
+      }
+    }
+  ]
+}

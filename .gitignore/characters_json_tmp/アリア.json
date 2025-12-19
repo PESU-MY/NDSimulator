@@ -1,0 +1,56 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 300,
+    "reload_time": 2.33,
+    "damage_rate": 0.0547,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "アリア",
+  "weapon_type": "MG",
+  "element": "Water",
+  "class": "Attacker",
+  "manufacturer": "テトラ",
+  "squad": "プリマドンナ",
+  "burst_skill": {
+    "name": "Burst: アリア・デ・カンポ",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "hit_rate_buff",
+      "value": 0.3037,
+      "duration": 15.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: アレグロ",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_dmg_buff",
+        "value": 0.2699,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: ラクリモソ",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.0703,
+        "duration": 10
+      }
+    }
+  ]
+}

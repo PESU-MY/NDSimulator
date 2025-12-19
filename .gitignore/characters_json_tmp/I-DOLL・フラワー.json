@@ -1,0 +1,52 @@
+{
+  "name": "I-DOLL・フラワー",
+  "weapon_type": "RL",
+  "element": "Wind",
+  "class": "Defender",
+  "squad": "リプレイス",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "Skill 1:フラワーリーフ",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "enemy",
+      "kwargs": {
+        "buff_type": "attack_debuf",
+        "value": 0.1652
+      },
+      "stages": []
+    },
+    {
+      "name": "Skill 2: フラワーカラー",
+      "trigger_type": "time_interval",
+      "trigger_value": 15,
+      "effect_type": "buff",
+      "target": "enemy",
+      "kwargs": {
+        "buff_type": "attack_debuf",
+        "value": 0.3937
+      },
+      "stages": []
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: フラワーパフュー厶",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "effect_type": "damage",
+    "target": "enemy",
+    "kwargs": {
+      "multiplier": 3.3061
+    },
+    "stages": [],
+    "cooldown": 20.0
+  }
+}

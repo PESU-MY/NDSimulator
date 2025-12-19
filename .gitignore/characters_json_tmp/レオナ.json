@@ -1,0 +1,68 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 1.5,
+    "damage_rate": 2.015,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "レオナ",
+  "weapon_type": "SG",
+  "element": "Water",
+  "class": "Supporter",
+  "manufacturer": "テトラ",
+  "squad": "ハッピーズー",
+  "burst_skill": {
+    "name": "Burst: ライオンの心",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "crit_rate_buff",
+      "value": 0.2132,
+      "duration": 10
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 力強い咆哮",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.0262,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: 勇気の眼差し",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "hit_rate_buff",
+        "value": 0.2028,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: 勇気の眼差し",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "pellet_count_add",
+        "value": 5.0,
+        "duration": 10.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 300,
+    "reload_time": 2.5,
+    "damage_rate": 0.0557,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ミハラ：ボンディングチェーン",
+  "weapon_type": "MG",
+  "element": "Fire",
+  "class": "Attacker",
+  "manufacturer": "ミシリス",
+  "squad": "ワードレス",
+  "skills": [
+    {
+      "name": "S1: ボディコンタクト",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.5006,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S1: ボディコンタクト",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.25079999999999997,
+        "duration": 99999,
+        "max_stack": 5,
+        "stack_name": "Stack_atk_buff_rate"
+      }
+    }
+  ]
+}

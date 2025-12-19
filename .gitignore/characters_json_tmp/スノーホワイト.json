@@ -1,0 +1,69 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.5,
+    "damage_rate": 0.1471,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "スノーホワイト",
+  "weapon_type": "AR",
+  "element": "Iron",
+  "class": "Attacker",
+  "manufacturer": "ピルグリム",
+  "squad": "パイオニア",
+  "skills": [
+    {
+      "name": "S1: 純白の意志",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.828,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S1: 純白の意志",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.0828,
+        "duration": 5.0
+      }
+    },
+    {
+      "name": "S2: セブンスドワーフ：V&VI",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 1.4472999999999998,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: セブンスドワーフ：V&VI",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "crit_rate_buff",
+        "value": 0.261,
+        "duration": 10
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 300,
+    "reload_time": 2.33,
+    "damage_rate": 0.0547,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "アスカ：WILLE",
+  "weapon_type": "MG",
+  "element": "Wind",
+  "class": "Attacker",
+  "manufacturer": "アブノーマル",
+  "squad": "WILLE",
+  "burst_skill": {
+    "name": "Burst: 殲滅態勢",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "stack_buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.0662,
+      "duration": 10,
+      "max_stack": 5,
+      "stack_name": "Stack_atk_buff_rate"
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: アンチA.T.フィールド",
+      "trigger_type": "shot_count",
+      "trigger_value": 50,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 4.7186,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: 緊急修復",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.3097,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: 緊急修復",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "max_hp_rate",
+            "value": 0.0377,
+            "duration": 3.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "value": 0.0,
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 120,
+    "reload_time": 1.0,
+    "damage_rate": 0.081,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "チャイム",
+  "weapon_type": "SMG",
+  "element": "Iron",
+  "class": "Supporter",
+  "manufacturer": "ピルグリム",
+  "squad": "ヴァイスリッター",
+  "burst_skill": {
+    "name": "Burst: 王のために",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_dmg_buff",
+      "value": 0.9244,
+      "duration": 10
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 王国一の臣下",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.4646,
+        "duration": 99999
+      }
+    }
+  ]
+}

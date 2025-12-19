@@ -1,0 +1,80 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ラプンツェル：ピュアグレイス",
+  "weapon_type": "SR",
+  "element": "Iron",
+  "class": "Defender",
+  "manufacturer": "ピルグリム",
+  "squad": "ゴッデス",
+  "burst_skill": {
+    "name": "Burst: ガーデンオブユートピア",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_dmg_buff",
+      "value": 0.1524,
+      "duration": 10.0
+    },
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: サンクチュアリ",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.2059,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S1: サンクチュアリ",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.2059,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S1: サンクチュアリ",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.1041,
+        "duration": 99999
+      }
+    },
+    {
+      "name": "S2: プレイア",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.0316,
+        "duration": 99999
+      }
+    }
+  ]
+}

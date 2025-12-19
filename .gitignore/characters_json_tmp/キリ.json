@@ -1,0 +1,68 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "キリ",
+  "weapon_type": "RL",
+  "element": "Wind",
+  "class": "Supporter",
+  "manufacturer": "エリシオン",
+  "squad": "A.C.P.U.",
+  "burst_skill": {
+    "name": "Burst: お見通し",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "crit_rate_buff",
+      "value": 0.19899999999999998,
+      "duration": 10.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: のぞき見",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.0894,
+        "duration": 3.0
+      }
+    },
+    {
+      "name": "S1: のぞき見",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.0581,
+        "duration": 3.0
+      }
+    },
+    {
+      "name": "S2: 見渡し",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.11630000000000001,
+        "duration": 99999
+      }
+    }
+  ]
+}

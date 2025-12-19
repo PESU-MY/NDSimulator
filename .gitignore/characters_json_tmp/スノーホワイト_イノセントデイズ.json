@@ -1,0 +1,84 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "スノーホワイト：イノセントデイズ",
+  "weapon_type": "AR",
+  "element": "Iron",
+  "class": "Attacker",
+  "manufacturer": "ピルグリム",
+  "squad": "ゴッデス",
+  "burst_skill": {
+    "name": "Burst: セブンスドワーフIII",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "atk_buff_rate",
+      "value": 0.972,
+      "duration": 10.0
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: セブンスドワーフV&VI",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_ammo_rate",
+        "value": 0.2566,
+        "duration": 5.0,
+        "max_stack": 5,
+        "stack_name": "Stack_max_ammo_rate"
+      }
+    },
+    {
+      "name": "S1: セブンスドワーフV&VI",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 1.8868,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: セブンスドワーフIV",
+      "trigger_type": "shot_count",
+      "trigger_value": 50,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.6169,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: セブンスドワーフIV",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.2112,
+        "duration": 10.0
+      }
+    }
+  ]
+}

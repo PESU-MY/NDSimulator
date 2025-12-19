@@ -1,0 +1,46 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ロザンナ：シックオーシャン",
+  "weapon_type": "AR",
+  "element": "Wind",
+  "class": "Supporter",
+  "manufacturer": "テトラ",
+  "squad": "アンダーワールドクイーン",
+  "skills": [
+    {
+      "name": "S1: フェリータ",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.03,
+        "duration": 30.0,
+        "max_stack": 5,
+        "stack_name": "Stack_atk_buff_rate"
+      }
+    },
+    {
+      "name": "S2: スピーナ・ディ・ローザ",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.7040000000000001,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    }
+  ]
+}

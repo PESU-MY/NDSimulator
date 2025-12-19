@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 60,
+    "reload_time": 1.5,
+    "damage_rate": 0.1471,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "モラン",
+  "weapon_type": "AR",
+  "element": "Electric",
+  "class": "Defender",
+  "manufacturer": "テトラ",
+  "squad": "アンダーワールドクイーン",
+  "burst_skill": {
+    "name": "Burst: 正々堂々と勝負だ！",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "buff",
+    "target": "self",
+    "kwargs": {
+      "buff_type": "def_buff_rate",
+      "value": 0.1485,
+      "duration": 10
+    },
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: かかって来い！",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 0.0351,
+        "duration": 10
+      }
+    },
+    {
+      "name": "S1: かかって来い！",
+      "trigger_type": "shot_count",
+      "trigger_value": 5,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 0.4718,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: ここは俺に任せろ！",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "max_hp_rate",
+            "value": 0.91,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "max_hp_rate",
+            "value": 0.6984,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "max_hp_rate",
+            "value": 0.5109,
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}

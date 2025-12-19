@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 9,
+    "reload_time": 1.5,
+    "damage_rate": 2.015,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ネヴェ",
+  "weapon_type": "SG",
+  "element": "Water",
+  "class": "Attacker",
+  "manufacturer": "テトラ",
+  "squad": "アンリミテッド",
+  "burst_skill": {
+    "name": "Burst: ホッキョクグマの遠吠え",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "crit_rate_buff",
+          "value": 0.3195,
+          "duration": 20.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "hit_rate_buff",
+          "value": 0.22039999999999998,
+          "duration": 20.0
+        }
+      }
+    ],
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S1: ホッキョクグマの力",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "self",
+      "kwargs": {
+        "multiplier": 1.4545,
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S2: ホッキョクグマの冬眠",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "is_pierce",
+            "value": 1.0,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 1.248,
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}

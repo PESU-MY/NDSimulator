@@ -1,0 +1,90 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.3,
+    "damage_rate": 0.7089,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "姫野",
+  "weapon_type": "SR",
+  "element": "Wind",
+  "class": "Supporter",
+  "manufacturer": "アブノーマル",
+  "squad": "デビルハンター",
+  "burst_skill": {
+    "name": "Burst: ゴースト",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "charge_dmg_buff",
+          "value": 0.2376,
+          "duration": 10
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "crit_rate_buff",
+          "value": 0.1635,
+          "duration": 10
+        }
+      }
+    ],
+    "cooldown": 20.0
+  },
+  "skills": [
+    {
+      "name": "S1: 弱点攻略",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "def_buff_rate",
+        "value": 0.0694,
+        "duration": 3.0
+      }
+    },
+    {
+      "name": "S2: 見えない手",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.10980000000000001,
+            "duration": 10.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "max_ammo_rate",
+            "value": 0.0,
+            "duration": 10.0
+          }
+        }
+      ]
+    }
+  ]
+}

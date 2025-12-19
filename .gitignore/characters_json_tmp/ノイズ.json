@@ -1,0 +1,61 @@
+{
+  "stats": {
+    "base_atk": 10000,
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "core_hit_rate": 0.0
+  },
+  "name": "ノイズ",
+  "weapon_type": "RL",
+  "element": "Electric",
+  "class": "Supporter",
+  "manufacturer": "テトラ",
+  "squad": "プリマドンナ",
+  "burst_skill": {
+    "name": "Burst: エナジェティックノイズ",
+    "trigger_type": "on_start",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "max_hp_rate",
+          "value": 0.024700000000000003,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "max_hp_rate",
+          "value": 0.495,
+          "duration": 10.0
+        }
+      }
+    ],
+    "cooldown": 40.0
+  },
+  "skills": [
+    {
+      "name": "S2: シンギングトゥギャザー",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "max_hp_rate",
+        "value": 0.2486,
+        "duration": 8.0
+      }
+    }
+  ]
+}
