@@ -96,7 +96,7 @@ def load_character_full_setup(char_file_path):
 if not os.path.exists('characters'): os.makedirs('characters')
 
 # ドロシーの読み込み (命中率仕様変更の確認用)
-nikke_setup = load_character_full_setup('characters/ソルジャーE.G..json')
+nikke_setup = load_character_full_setup('characters/cinderella.json')
 
 # --- 追加: 常時バーストCT短縮スキル ---
 passive_cd_reduction = Skill(
