@@ -1,5 +1,6 @@
 {
   "name": "アスカ",
+  "burst_stage": "3",
   "weapon_type": "AR",
   "element": "Fire",
   "class": "Attacker",

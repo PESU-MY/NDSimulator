@@ -1,5 +1,6 @@
 {
   "name": "アスカ：WILLE",
+  "burst_stage": "3",
   "weapon_type": "MG",
   "element": "Wind",
   "class": "Attacker",
@@ -9,7 +10,13 @@
     "reload_time": 2.33,
     "damage_rate": 0.0547,
     "windup_frames": 12,
-    "winddown_frames": 10
+    "winddown_frames": 10,
+    "warmup_table": [
+      [10, 6],
+      [10, 5],
+      [15, 2],
+      [9999, 1]
+    ]
   },
   "skills": [
     {

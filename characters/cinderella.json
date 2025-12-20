@@ -1,5 +1,6 @@
 {
   "name": "シンデレラ",
+  "burst_stage": "3",
   "weapon_type": "RL",
   "element": "Electric",
   "class": "Defender",

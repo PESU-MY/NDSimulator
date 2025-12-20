@@ -13,18 +13,22 @@ class WeaponConfig:
     def __init__(self, data):
         self.name = data.get('name', 'Unknown Weapon')
         
-        # 武器タイプの判定ロジック強化
         raw_type = data.get('weapon_type', 'AR')
-        self.weapon_class = data.get('weapon_class', raw_type) # weapon_classがなければweapon_typeを使う
+        self.weapon_class = data.get('weapon_class', raw_type)
         
         self.type = data.get('type', 'RAPID')
-        # MGの場合は明示的にタイプを設定
         if self.weapon_class == "MG":
             self.type = "MG"
         elif self.weapon_class in ["RL", "SR"]:
             self.type = "CHARGE"
             
         self.element = data.get('element', 'Iron')
+        
+        # --- 追加: バースト段階の読み込み ---
+        # "1", "2", "3" などの文字列または数値を受け取る
+        self.burst_stage = str(data.get('burst_stage', '3')) 
+        # -------------------------------
+
         self.multiplier = data.get('multiplier', 1.0)
         self.max_ammo = data.get('max_ammo', 60)
         self.reload_frames = data.get('reload_frames', 60)
@@ -50,11 +54,8 @@ class WeaponConfig:
         self.mg_warmup_map = []
         self.mg_max_warmup = 0
         
-        # MGのウォームアップテーブル設定（デフォルト値補完）
         if self.type == "MG":
             if 'warmup_table' not in data:
-                # デフォルト: 約35発(155F前後)で最大レートへ
-                # [発数, 間隔F]
                 data['warmup_table'] = [
                     [10, 6],
                     [10, 5],
@@ -65,7 +66,7 @@ class WeaponConfig:
             current_sum = 0
             for count, interval in data['warmup_table']:
                 self.mg_warmup_map.append({'start': current_sum, 'interval': interval})
-                current_sum += count # ここをintervalではなくcountを加算するように修正
+                current_sum += count 
             self.mg_max_warmup = current_sum + self.windup_frames
 
     @classmethod
@@ -301,6 +302,16 @@ class NikkeSimulator:
         self.weapon_change_end_frame = 0 
         self.weapon_change_ammo_specified = False
         
+        self.log(f"[Config] Weapon: {self.weapon.name}")
+        self.log(f"[Config] Type: {self.weapon.type} (Class: {self.weapon.weapon_class})")
+        self.log(f"[Config] Max Ammo: {self.weapon.max_ammo}")
+        self.log(f"[Config] Fire Interval (RAPID default): {self.weapon.fire_interval}")
+        if self.weapon.type == "MG":
+            self.log(f"[Config] MG Warmup Table: {len(self.weapon.mg_warmup_map)} stages")
+            if len(self.weapon.mg_warmup_map) > 0:
+                first = self.weapon.mg_warmup_map[0]
+                self.log(f"[Config] Initial Interval: {first['interval']}F")
+        
         self.current_max_ammo = self.weapon.max_ammo
         self.current_ammo = self.current_max_ammo
         
@@ -315,6 +326,8 @@ class NikkeSimulator:
         for stage_list in burst_rotation:
             for char in stage_list:
                 self.all_burst_chars.append(char)
+        
+        self.last_burst_char_name = None
 
         self.state = "READY"
         self.state_timer = 0
@@ -351,7 +364,6 @@ class NikkeSimulator:
             self.history[f'ct_{char.name}'] = []
 
     def log(self, message):
-        """コンソールとファイルの両方にログを出力"""
         print(message)
         with open(self.log_file_path, 'a', encoding='utf-8') as f:
             f.write(message + '\n')
@@ -366,52 +378,68 @@ class NikkeSimulator:
 
     def check_target_condition(self, condition, frame):
         if not condition: return True
+        
         my_name = self.character_name
         my_element = self.weapon.element if hasattr(self.weapon, 'element') else 'Iron'
         my_weapon = self.weapon.weapon_class
         my_atk = self.BASE_ATK
-        cond_type = condition.get('type')
-        cond_value = condition.get('value')
-        if cond_type == "element":
-            if my_element != cond_value: return False
-        elif cond_type == "weapon_type":
-            if my_weapon != cond_value: return False
-        elif cond_type == "class":
-             return True
-        elif cond_type == "highest_atk":
-            target_count = condition.get('count', 1)
-            all_chars = []
-            all_chars.append((my_name, my_atk))
-            for char in self.all_burst_chars:
-                if char.name != my_name:
-                    all_chars.append((char.name, char.base_atk))
-            all_chars.sort(key=lambda x: x[1], reverse=True)
-            top_n_names = [c[0] for c in all_chars[:target_count]]
-            if my_name not in top_n_names: return False
-        elif cond_type == "used_burst":
-            found = False
-            for char in self.all_burst_chars:
-                if char.name == my_name:
-                    if char.has_used_burst: found = True
-                    break
-            if not found: return False
-        elif cond_type == "has_barrier":
-            if not self.buff_manager.has_active_tag("barrier", frame):
-                return False
+        
+        # --- 変更: 複合条件チェック ---
+        # 1つでも不一致があれば False を返す
+        
+        # 属性
+        if 'element' in condition:
+            if my_element != condition['element']: return False
+            
+        # 武器種
+        if 'weapon_type' in condition:
+            if my_weapon != condition['weapon_type']: return False
+            
+        # バースト段階 (メインキャラのバースト段階)
+        if 'burst_stage' in condition:
+            # メインキャラのバースト段階は self.weapon.burst_stage に格納されている想定
+            my_stage = getattr(self.weapon, 'burst_stage', '0')
+            if str(my_stage) != str(condition['burst_stage']): return False
+
+        # 直前のバースト使用者か
+        if condition.get('is_last_burst_user'):
+            if self.last_burst_char_name != my_name: return False
+            
+        # クラス
+        if 'class' in condition:
+            # 現状Mainのクラスは持っていないが、必要ならWeaponConfigに追加
+            pass 
+
+        # タグ関連
+        if "not_has_tag" in condition:
+            tag = condition["not_has_tag"]
+            if self.buff_manager.has_active_tag(tag, frame): return False
+        if "has_tag" in condition:
+            tag = condition["has_tag"]
+            if not self.buff_manager.has_active_tag(tag, frame): return False
+            
+        # スタック数
         if "stack_min" in condition or "stack_max" in condition:
             stack_name = condition.get("stack_name")
             if stack_name:
                 count = self.buff_manager.get_stack_count(stack_name, frame)
                 min_v = condition.get("stack_min", -999)
                 max_v = condition.get("stack_max", 999)
-                if not (min_v <= count <= max_v):
-                    return False
+                if not (min_v <= count <= max_v): return False
+        
+        # 従来の 'type' 指定の互換性維持 (念のため)
+        if 'type' in condition:
+            if condition['type'] == 'element' and my_element != condition['value']: return False
+            if condition['type'] == 'weapon_type' and my_weapon != condition['value']: return False
+            # ... 他のタイプも必要に応じて
+            
         return True
 
     def calculate_reduced_frame(self, original_frame, rate_buff, fixed_buff):
-        reduction = round_half_up(original_frame * rate_buff + fixed_buff)
-        new_frame = max(1, original_frame - reduction)
-        return int(new_frame)
+        if rate_buff <= -1.0: return 9999
+        new_frame = original_frame / (1.0 + rate_buff)
+        new_frame -= fixed_buff
+        return max(1, int(new_frame))
 
     def get_buffed_frames(self, frame_type, original_frame, current_frame):
         if frame_type == 'reload':
@@ -766,9 +794,11 @@ class NikkeSimulator:
         elif skill.effect_type == 'set_current_ammo':
             val = kwargs.get('value', 0)
             self.current_ammo = val
+            self.log(f"[Effect] Ammo set to {val}")
             if self.current_ammo == 0:
                 self.state = "RELOADING"
                 self.state_timer = 0
+                self.log("[State] Force Reloading started.")
         elif skill.effect_type == 'delayed_action':
             duration_sec = kwargs.get('duration', 0)
             exec_frame = frame + int(duration_sec * self.FPS)
@@ -784,6 +814,9 @@ class NikkeSimulator:
                 )
                 act_skill.target = skill.target
                 act_skill.owner_name = skill.owner_name
+                
+                if 'stages' in sub_data:
+                    act_skill.stages = sub_data['stages']
                 
                 self.scheduled_actions.append({
                     'frame': exec_frame,
@@ -876,6 +909,7 @@ class NikkeSimulator:
                 
                 if self.burst_state == "BURST_3":
                     self.process_trigger('on_burst_3_enter', 0, frame, is_full_burst, attacker_char=char)
+                    self.last_burst_char_name = char.name
                 
                 if char.skill: self.apply_skill_effect(char.skill, frame, is_full_burst, char.element)
                 self.process_trigger('on_use_burst_skill', 0, frame, is_full_burst, attacker_char=char)
@@ -1009,7 +1043,14 @@ class NikkeSimulator:
                 
                 if self.state_timer == 0:
                     perform_shoot()
-                    self.mg_warmup_frames = min(self.weapon.mg_max_warmup, self.mg_warmup_frames + 1)
+                    
+                    # --- 変更点: MG立ち上げ速度バフの適用 ---
+                    warmup_speed = 1.0 + self.buff_manager.get_total_value('mg_warmup_speed', frame)
+                    if warmup_speed < 0: warmup_speed = 0 # 負の値は停止とする
+                    increment = warmup_speed
+                    # ------------------------------------
+                    
+                    self.mg_warmup_frames = min(self.weapon.mg_max_warmup, self.mg_warmup_frames + increment)
                     if self.current_ammo <= 0: self.state = "WINDDOWN"; self.state_timer = 0
                     else: self.state_timer = max(0, buffed_interval - 1)
                 else: self.state_timer -= 1
@@ -1021,11 +1062,17 @@ class NikkeSimulator:
                     if self.is_weapon_changed and self.current_ammo <= 0: self.revert_weapon(frame)
                     else: self.state = "RELOADING"
             elif self.state == "RELOADING":
-                if self.state_timer == 0: self.current_action_duration = self.get_buffed_frames('reload', self.weapon.reload_frames, frame)
+                if self.state_timer == 0:
+                    self.current_action_duration = self.get_buffed_frames('reload', self.weapon.reload_frames, frame)
+                    self.log(f"[Action] Reloading... ({self.current_action_duration} frames)")
+                
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration: 
-                    self.current_ammo = self.current_max_ammo; self.state = "READY"; self.state_timer = 0
+                    self.current_ammo = self.current_max_ammo
+                    self.state = "READY"
+                    self.state_timer = 0
                     self.buff_manager.remove_reload_buffs()
+                    self.log(f"[Action] Reload Complete. Ammo: {self.current_ammo}")
 
         else: 
             if self.state == "READY":

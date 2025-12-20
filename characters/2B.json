@@ -1,5 +1,6 @@
 {
   "name": "2B",
+  "burst_stage": "3",
   "weapon_type": "AR",
   "element": "Fire",
   "class": "Defender",

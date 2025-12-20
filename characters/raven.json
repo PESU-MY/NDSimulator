@@ -1,5 +1,6 @@
 {
   "name": "Raven",
+  "burst_stage": "3",
   "weapon_type": "RL",
   "element": "Iron",
   "class": "Attacker",

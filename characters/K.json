@@ -1,5 +1,6 @@
 {
   "name": "K",
+  "burst_stage": "3",
   "weapon_type": "SMG",
   "element": "Electric",
   "class": "Attacker",

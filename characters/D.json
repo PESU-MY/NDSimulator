@@ -1,5 +1,6 @@
 {
   "name": "D",
+  "burst_stage": "3",
   "weapon_type": "SMG",
   "element": "Wind",
   "class": "Attacker",

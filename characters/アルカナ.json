@@ -1,0 +1,161 @@
+{
+  "name": "アルカナ",
+  "weapon_type": "RL",
+  "burst_stage": "2",
+  "element": "Electric",
+  "class": "Supporter",
+  "squad": "Best Seller",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.50,
+    "damage_rate": 0.6404,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "charge_time": 1.0,
+    "hit_size": 1
+  },
+  "skills": [
+    {
+      "name": "S1: 目覚める運命 (魔術師)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "is_last_burst_user": true,
+        "element": "Electric",
+        "burst_stage": "3"
+      },
+      "condition": {
+        "has_tag": "wheel_of_fortune"
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "magic_card",
+            "value": 1,
+            "duration": 15.0,
+            "tag": "magic_card_active"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "atk_dmg_buff",
+            "value": 1.80,
+            "duration": 15.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 目覚める運命 (攻撃力)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.05,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: 巡る運命",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "condition": {
+        "has_tag": "wheel_of_fortune"
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "cooldown_reduction",
+          "kwargs": {
+            "value": 6.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.50,
+            "duration": 10.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 追加 (攻撃ダメ)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "atk_dmg_buff",
+        "value": 0.075,
+        "duration": 10.0
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 愚者のカード",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "allies",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_state",
+          "value": 1,
+          "duration": 10.0,
+          "tag": "wheel_of_fortune"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target_condition": {
+          "element": "Electric"
+        },
+        "kwargs": {
+          "buff_type": "atk_dmg_buff",
+          "value": 0.10,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "multiplier": 3.00,
+          "profile": {
+            "is_skill_damage": true
+          }
+        }
+      },
+      {
+        "effect_type": "buff",
+        "kwargs": {
+          "buff_type": "taken_dmg_debuff",
+          "value": 0.10,
+          "duration": 10.0
+        }
+      }
+    ]
+  }
+}

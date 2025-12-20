@@ -1,5 +1,6 @@
 {
   "name": "N102",
+  "burst_stage": "1",
   "weapon_type": "RL",
   "element": "Water",
   "class": "Supporter",
