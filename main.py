@@ -84,35 +84,51 @@ def create_character_from_json(char_file_path):
     return Character(char_name, weapon_config, skills, base_atk, base_hp, element, burst_stage, char_class)
 
 # --- ヘルパー関数: ダミーキャラ作成 ---
-def create_dummy_character(name, burst_stage, weapon_type="AR"):
-    # 最小限の設定
+def create_dummy_character(name, burst_stage, weapon_type="AR", skills=None):
+# 最小限の設定
     weapon_data = {'name': f"{name}_Weapon", 'weapon_type': weapon_type, 'burst_stage': str(burst_stage)}
     wc = WeaponConfig(weapon_data)
+    
+    # スキルリストの処理
+    skill_list = skills if skills else []
+    
     # is_dummy=True にして計算をスキップさせる
-    return Character(name, wc, [], base_atk=0, base_hp=0, element="Iron", burst_stage=burst_stage, is_dummy=True)
+    return Character(name, wc, skill_list, base_atk=1, base_hp=1, element="Electric", burst_stage=burst_stage, is_dummy=False)
 
 
 # === メイン処理 ===
 
 if not os.path.exists('characters'): os.makedirs('characters')
 
+#ダミーCT短縮スキルの作成
+dummy_ct_skill = Skill(
+    name="Dummy B1: CT Reduction",
+    trigger_type="on_use_burst_skill", 
+    trigger_value=0,
+    effect_type="cooldown_reduction",
+    target="allies", 
+    value=5.0  # ここを修正
+)
+
 # 1. キャラクターの読み込み
-liter = create_character_from_json('characters/liter.json')
-cinderella = create_character_from_json('characters/cinderella.json')
+#burst1_nikke = create_character_from_json('characters/liter.json')
+burst3_nikke = create_character_from_json('characters/アスカ_WILLE.json')
 
 # 2. ダミーキャラの作成
+dummy_b1 = create_dummy_character("Dummy_B1", 1, "SMG",skills=[dummy_ct_skill])
 dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG")
 dummy_b3 = create_dummy_character("Dummy_B3_Sub", 3, "MG")
 dummy_non = create_dummy_character("Dummy_NonBurst", 3, "RL")
 
+
 # 3. 編成リスト作成 (Simulatorに渡す全キャラリスト)
-all_characters = [liter, dummy_b2, cinderella, dummy_b3, dummy_non]
+all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_non]
 
 # 4. バーストローテーション設定 ( [[B1], [B2], [B3, B3_sub]] )
 rotation = [
-    [liter],          # Burst I
+    [dummy_b1],          # Burst I
     [dummy_b2],       # Burst II
-    [cinderella, dummy_b3] # Burst III
+    [burst3_nikke, dummy_b3] # Burst III
 ]
 
 # 5. シミュレーター初期化
@@ -122,7 +138,8 @@ sim = NikkeSimulator(
     enemy_element="None", 
     enemy_core_size=3.0,
     enemy_size=100,
-    part_break_mode=False
+    part_break_mode=False,
+    burst_charge_time=5.0  # 追加: バースト溜め時間（秒）。デフォルト5秒
 )
 
 # 6. 実行

@@ -102,7 +102,7 @@
         }
       },
       {
-        "effect_type": "buff",
+        "effect_type": "heal",
         "target": "self",
         "kwargs": {
           "buff_type": "dummy_heal",

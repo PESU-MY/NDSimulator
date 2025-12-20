@@ -47,6 +47,9 @@
       "name": "S1: 傾く天秤 (解除)",
       "trigger_type": "on_burst_end",
       "trigger_value": 0,
+      "condition": {
+        "is_last_burst_user": true
+      },
       "effect_type": "buff",
       "target": "self",
       "remove_tags": ["scale_balance"],
@@ -93,6 +96,9 @@
       "name": "S2: 正義の執行 (解除)",
       "trigger_type": "on_burst_end",
       "trigger_value": 0,
+      "condition": {
+        "is_last_burst_user": true
+      },
       "effect_type": "buff",
       "target": "allies",
       "remove_tags": ["justice_realized"],
@@ -107,24 +113,56 @@
     "name": "Burst: 正義への手段",
     "trigger_type": "manual",
     "trigger_value": 0,
-    "effect_type": "weapon_change",
-    "target": "self",
     "cooldown": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
     "kwargs": {
-      "duration": 10,
-      "weapon_data": {
-        "name": "K Burst",
-        "type": "RAPID",
-        "weapon_class": "SMG",
-        "multiplier": 1.85,
-        "windup_frames": 12,
-        "winddown_frames": 10,
-        "hit_size": 20,
-        "fire_interval": 24,
-        "pellet_count": 10,
-        "force_full_burst": true,
-        "reset_ammo_on_revert": false
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "weapon_change",
+        "target": "self",
+        "kwargs": {
+          "duration": 10,
+          "weapon_data": {
+            "name": "K Burst",
+            "type": "RAPID",
+            "weapon_class": "SMG",
+            "multiplier": 1.85,
+            "windup_frames": 12,
+            "winddown_frames": 10,
+            "hit_size": 20,
+            "fire_interval": 24,
+            "pellet_count": 10,
+            "force_full_burst": true,
+            "reset_ammo_on_revert": false
+          }
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 0.6336,
+          "duration": 10
+        }
+
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_dmg_buff",
+          "value": 0.2112,
+          "duration": 10
+        }
+
       }
-    }
+    ]
   }
 }
+
+
+    

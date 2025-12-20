@@ -1,42 +1,54 @@
 === Simulation Start ===
-Character: Liter (Atk:21307)
-Character: Dummy_B2 (Atk:0)
-Character: シンデレラ (Atk:17059)
-Character: Dummy_B3_Sub (Atk:0)
-Character: Dummy_NonBurst (Atk:0)
-[Burst] Liter used Burst Stage 1
+Character: Dummy_B1 (Atk:1)
+Character: Dummy_B2 (Atk:1)
+Character: アスカ：WILLE (Atk:25554)
+Character: Dummy_B3_Sub (Atk:1)
+Character: Dummy_NonBurst (Atk:1)
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[Burst] Liter used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] Dummy_B3_Sub used Burst Stage 3
-[Burst] Liter used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[Burst] Liter used Burst Stage 1
+[Burst] アスカ：WILLE used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3_Sub used Burst Stage 3
-[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[Burst] Liter used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] Dummy_B3_Sub used Burst Stage 3
-[Burst] Liter used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[Burst] Liter used Burst Stage 1
+[Burst] アスカ：WILLE used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3_Sub used Burst Stage 3
-[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[Burst] Liter used Burst Stage 1
+[Burst] アスカ：WILLE used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3_Sub used Burst Stage 3
-[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[Burst] Liter used Burst Stage 1
+[Burst] アスカ：WILLE used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3_Sub used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] アスカ：WILLE used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3_Sub used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] アスカ：WILLE used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3_Sub used Burst Stage 3
