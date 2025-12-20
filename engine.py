@@ -82,7 +82,6 @@ class NikkeSimulator:
         if skill.condition:
             if "not_has_tag" in skill.condition:
                 tag = skill.condition["not_has_tag"]
-                # 簡易的に共有デバフをチェック（本来はcasterのバフも見るべきだが、構造上ここでcasterが不明な場合は省略）
                 if self.enemy_debuffs.has_active_tag(tag, frame):
                      return False
             if "has_tag" in skill.condition:
@@ -92,18 +91,64 @@ class NikkeSimulator:
         return True
 
     def apply_skill(self, skill, caster, frame, is_full_burst):
-# ▼▼▼ 修正: 同一フレーム内でのスキル多重発動を防止 (Engine側で強制) ▼▼▼
-        # マニュアル発動(派生効果など)以外のスキルについて、同じフレームでの再発動を防ぐ
+        # 同一フレーム内でのスキル多重発動を防止
         if skill.trigger_type != 'manual':
-            # skillオブジェクトに前回の発動フレームを記録させる
             last_frame = getattr(skill, 'last_used_frame', -1)
             if last_frame == frame:
                 return 0
             skill.last_used_frame = frame
-        # ▲▲▲▲▲▲
 
         if not self.should_apply_skill(skill, frame): return 0
         
+        total_dmg = 0
+        kwargs = skill.kwargs.copy()
+
+        # ▼▼▼ 修正: cumulative_stages (段階進行) はターゲット決定・ループの前に処理する ▼▼▼
+        # これにより、対象人数分だけ重複して発動するのを防ぐ
+        if skill.effect_type == 'cumulative_stages':
+            if skill.kwargs.get('trigger_all_stages'):
+                for i, stage_data in enumerate(skill.stages):
+                    if isinstance(stage_data, Skill):
+                        total_dmg += self.apply_skill(stage_data, caster, frame, is_full_burst)
+                    elif isinstance(stage_data, dict):
+                        init_kwargs = stage_data.get('kwargs', {}).copy()
+                        for k, v in stage_data.items():
+                            if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs']:
+                                init_kwargs[k] = v
+                        temp_skill = Skill(
+                            name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
+                            effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
+                        )
+                        temp_skill.target = skill.target
+                        temp_skill.target_condition = skill.target_condition
+                        temp_skill.owner_name = caster.name
+                        total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
+            else:
+                skill.current_usage_count += 1
+                max_apply_idx = min(len(skill.stages), skill.current_usage_count)
+                for i in range(max_apply_idx):
+                    stage_data = skill.stages[i]
+                    if isinstance(stage_data, Skill):
+                        total_dmg += self.apply_skill(stage_data, caster, frame, is_full_burst)
+                    elif isinstance(stage_data, dict):
+                        init_kwargs = stage_data.get('kwargs', {}).copy()
+                        for k, v in stage_data.items():
+                            if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs']:
+                                init_kwargs[k] = v
+                        temp_skill = Skill(
+                            name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
+                            effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
+                        )
+                        temp_skill.target = skill.target
+                        temp_skill.target_condition = skill.target_condition
+                        temp_skill.owner_name = caster.name
+                        total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
+            
+            # cumulative_stages の処理が終わったら、このスキル自体の処理は完了としてリターン
+            return total_dmg
+        # ▲▲▲▲▲▲
+
+        # ターゲット決定
         targets = []
         if skill.target == 'self':
             if self.check_target_condition(skill.target_condition, caster, caster, frame):
@@ -113,23 +158,18 @@ class NikkeSimulator:
                 if self.check_target_condition(skill.target_condition, caster, char, frame):
                     targets.append(char)
         elif skill.target == 'enemy':
-            targets.append(caster) # 敵対象スキルも便宜上casterをリストに入れ、効果処理で敵への影響として扱う
+            targets.append(caster)
 
-        # ターゲット指定がない場合で、ダメージ効果なら自分自身（攻撃者）を対象として処理開始
         if not targets and skill.effect_type == 'damage':
             targets.append(caster)
 
         # CT短縮はターゲットに関わらず全員に適用
         if skill.effect_type == 'cooldown_reduction':
-            kwargs = skill.kwargs
             reduce_sec = kwargs.get('value', 0)
             reduce_frames = reduce_sec * self.FPS
             for char in self.characters:
                 if char.current_cooldown > 0: char.current_cooldown = max(0, char.current_cooldown - reduce_frames)
             return 0
-
-        total_dmg = 0
-        kwargs = skill.kwargs.copy()
         
         if kwargs.get('scale_by_caster_stats'):
             ratio = kwargs.get('value', 0)
@@ -145,49 +185,14 @@ class NikkeSimulator:
                 self.log(f"[Flag] {t.name}: Activated {flag_name}", target_name=t.name)
             return 0
 
+        # 効果の適用
         for target in targets:
             if skill.effect_type == 'convert_hp_to_atk':
                 rate = skill.kwargs.get('value', 0)
                 target.buff_manager.add_buff('conversion_hp_to_atk', rate, skill.kwargs.get('duration', 0) * self.FPS, frame, source=skill.name)
                 self.log(f"[Buff] {target.name}: HP to ATK conversion ({rate})", target_name=target.name)
             
-            elif skill.effect_type == 'cumulative_stages':
-                if skill.kwargs.get('trigger_all_stages'):
-                    for i, stage_data in enumerate(skill.stages):
-                        if isinstance(stage_data, Skill):
-                            total_dmg += self.apply_skill(stage_data, caster, frame, is_full_burst)
-                        elif isinstance(stage_data, dict):
-                            init_kwargs = stage_data.get('kwargs', {}).copy()
-                            for k, v in stage_data.items():
-                                if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs']:
-                                    init_kwargs[k] = v
-                            temp_skill = Skill(
-                                name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
-                                effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
-                            )
-                            temp_skill.target = skill.target
-                            temp_skill.target_condition = skill.target_condition
-                            temp_skill.owner_name = caster.name
-                            total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
-                else:
-                    skill.current_usage_count += 1
-                    max_apply_idx = min(len(skill.stages), skill.current_usage_count)
-                    for i in range(max_apply_idx):
-                        stage_data = skill.stages[i]
-                        if isinstance(stage_data, Skill):
-                            total_dmg += self.apply_skill(stage_data, caster, frame, is_full_burst)
-                        elif isinstance(stage_data, dict):
-                            init_kwargs = stage_data.get('kwargs', {}).copy()
-                            for k, v in stage_data.items():
-                                if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs']:
-                                    init_kwargs[k] = v
-                            temp_skill = Skill(
-                                name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
-                                effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
-                            )
-                            temp_skill.target = skill.target
-                            temp_skill.owner_name = caster.name
-                            total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
+            # (cumulative_stages は上で処理済みのため、ここには記述しない)
             
             elif skill.effect_type == 'buff' or skill.effect_type == 'stack_buff':
                 b_type = kwargs.get('buff_type', skill.effect_type) 
@@ -211,13 +216,11 @@ class NikkeSimulator:
                     self.log(f"[Buff] Applied {skill.name} ({b_type}: {val}) to {target.name}", target_name=target.name)
 
             elif skill.effect_type == 'damage':
-                # targetに関わらずダメージ計算を実行（敵への攻撃とみなす）
                 profile = DamageProfile.create(**kwargs.get('profile', {}))
                 mult = kwargs.get('multiplier', 1.0)
                 loops = kwargs.get('loop_count', 1)
                 skill_dmg = 0
                 for _ in range(loops):
-                    # caster (発動者) の能力値を使って計算
                     d, _ = caster.calculate_strict_damage(
                         mult, profile, is_full_burst, frame, 
                         self.ENEMY_DEF, self.enemy_element, self.enemy_core_size, self.enemy_size,
@@ -300,15 +303,12 @@ class NikkeSimulator:
                         self.log(f"[Burst] {char.name} used Burst Stage {self.burst_state.split('_')[1]}", target_name="System")
                         self.log(f"[Burst] Activate!", target_name=char.name)
                         
-                        # ▼▼▼ 修正: バースト突入時トリガー(バフ等)を、スキル発動(ダメージ)より先に処理する ▼▼▼
                         if self.burst_state == "BURST_3":
-                            self.last_burst_char_name = char.name # バースト発動者を確定させておく
+                            self.last_burst_char_name = char.name 
                             char.process_trigger('on_burst_3_enter', 0, frame, is_full_burst, self)
                             self.process_trigger_global('on_burst_enter', frame) 
                         
-                        # その後にバーストスキル(ダメージ等)を発動
                         char.process_trigger('on_use_burst_skill', 0, frame, is_full_burst, self)
-                        # ▲▲▲▲▲▲
                         
                         self.burst_indices[stage_idx] = (idx + 1) % len(char_list)
                         if self.burst_state == "BURST_1": self.burst_state = "BURST_2"
@@ -352,7 +352,6 @@ class NikkeSimulator:
                     if frame <= dot['end_frame']:
                         total_mult = dot['multiplier'] * dot.get('count', 1)
                         profile = dot.get('profile', DamageProfile.create())
-                        # caster自身で計算
                         dmg, _ = char.calculate_strict_damage(
                             total_mult, profile, is_full_burst, frame, 
                             self.ENEMY_DEF, self.enemy_element, self.enemy_core_size, self.enemy_size,
