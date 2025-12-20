@@ -3,19 +3,19 @@ from utils import round_half_up
 from models import DamageProfile, Skill
 from buff_manager import BuffManager
 
-# --- キャラクタークラス ---
-
 class Character:
     def __init__(self, name, weapon_config, skills, base_atk, base_hp, element, burst_stage, character_class="Attacker", is_dummy=False):
         self.name = name
         self.weapon = weapon_config
         
-        # ▼▼▼ 修正箇所: ここで self.skills を先に定義します ▼▼▼
+        # --- 初期化順序の修正 ---
         self.skills = skills 
         for s in self.skills:
             if not s.owner_name: s.owner_name = self.name
-        # ▲▲▲▲▲▲
-            
+            # models.pyを変更しないための多重発動防止用属性追加
+            if not hasattr(s, 'last_used_frame'):
+                s.last_used_frame = -1
+        
         self.base_atk = base_atk
         self.base_hp = base_hp
         self.element = element
@@ -26,9 +26,7 @@ class Character:
 
         self.buff_manager = BuffManager()
         
-        # 追加: engine.pyで属性エラーにならないよう初期化
         self.skill = None 
-        # もしバーストスキルがskillsに含まれているなら、それをself.skillに割り当てる簡易対応
         for s in self.skills:
             if s.trigger_type == 'on_use_burst_skill' and s.name.find('Burst') != -1:
                 self.skill = s
@@ -75,7 +73,7 @@ class Character:
             atk_fixed += current_max_hp * hp_conv_rate
         return (self.base_atk * (1.0 + atk_rate)) + atk_fixed
 
-    # 修正: calculate_strict_damage に debuff_manager 引数を追加 (前回の提案通り)
+    # debuff_manager引数を追加 (複数キャラ対応のため)
     def calculate_strict_damage(self, mult, profile, is_full_burst, frame, enemy_def=0, enemy_element="None", enemy_core_size=3.0, enemy_size=5.0, debuff_manager=None):
         final_atk = self.get_current_atk(frame)
         
@@ -149,9 +147,8 @@ class Character:
         if debuff_manager:
             taken_dmg_val += debuff_manager.get_total_value('taken_dmg_debuff', frame)
         layer_taken = 1.0 + taken_dmg_val
-
-        layer_dmg = bucket_dmg
         
+        layer_dmg = bucket_dmg
         layer_split = 1.0
         if profile['is_split']: layer_split += self.buff_manager.get_total_value('split_dmg_buff', frame)
         
@@ -163,9 +160,17 @@ class Character:
             
         return layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem, is_crit_hit
 
+    # --- 修正: 元の計算ロジック (減算方式) を復元 ---
     def calculate_reduced_frame(self, original_frame, rate_buff, fixed_buff):
         if rate_buff <= -1.0: return 9999
-        new_frame = original_frame / (1.0 + rate_buff)
+        new_frame = original_frame * (1.0 - rate_buff) # 修正: 掛け算
+        new_frame -= fixed_buff
+        return max(1, int(new_frame))
+    
+    # --- 修正: 攻撃速度用の計算ロジック (除算方式) を復元 ---
+    def calculate_reduced_frame_attack(self, original_frame, rate_buff, fixed_buff):
+        if rate_buff <= -1.0: return 9999
+        new_frame = original_frame / (1.0 + rate_buff) # 修正: 割り算
         new_frame -= fixed_buff
         return max(1, int(new_frame))
 
@@ -174,13 +179,19 @@ class Character:
             fixed_val = self.buff_manager.get_total_value('reload_speed_fixed_value', frame)
             if fixed_val > 0: return int(original_frame / (1.0 + fixed_val))
             if self.weapon.disable_reload_buffs: return int(original_frame)
+        
         if frame_type == 'charge' and self.weapon.disable_charge_buffs: return int(original_frame)
         if frame_type == 'attack' and self.weapon.disable_attack_speed_buffs: return int(original_frame)
         
         rate = self.buff_manager.get_total_value(f'{frame_type}_speed_rate', frame)
         if rate <= -1.0: rate = -0.99
         fixed = self.buff_manager.get_total_value(f'{frame_type}_speed_fixed', frame)
-        return self.calculate_reduced_frame(original_frame, rate, fixed)
+        
+        # 修正: attackの場合は専用メソッドを使う
+        if frame_type == 'attack':
+            return self.calculate_reduced_frame_attack(original_frame, rate, fixed)
+        else:
+            return self.calculate_reduced_frame(original_frame, rate, fixed)
 
     def update_max_ammo(self, frame):
         rate_buffs = self.buff_manager.get_active_buffs('max_ammo_rate', frame)
@@ -212,10 +223,10 @@ class Character:
     def process_trigger(self, trigger_type, val, frame, is_full_burst, simulator):
         triggered_skills = []
         for skill in self.skills:
-            # --- 追加: 同一フレームでの多重発動チェック ---
-            if skill.last_used_frame == frame:
+            # 修正: 多重発動防止チェック
+            if getattr(skill, 'last_used_frame', -1) == frame:
                 continue
-            # ----------------------------------------
+
             if skill.trigger_type == trigger_type:
                 is_triggered = False
                 if trigger_type == 'on_use_burst_skill': is_triggered = True 
@@ -247,19 +258,17 @@ class Character:
                     prob = skill.kwargs['probability']
                     if random.random() * 100 > prob: is_triggered = False
 
-                if is_triggered:
-                    triggered_skills.append(skill)
+                if is_triggered: triggered_skills.append(skill)
         
         total_dmg = 0
         for skill in triggered_skills:
-            # 発動記録を更新
-            skill.last_used_frame = frame
+            #skill.last_used_frame = frame
             total_dmg += simulator.apply_skill(skill, self, frame, is_full_burst)
         
         return total_dmg
 
     def tick_action(self, frame, is_full_burst, simulator):
-        if self.is_dummy: return 0  # ダミーキャラは行動計算しない
+        if self.is_dummy: return 0
         
         damage_this_frame = 0
         if self.weapon.type == "MG" and self.state != "SHOOTING" and self.state != "READY": 
@@ -294,6 +303,7 @@ class Character:
             crit_count = 0
             
             for _ in range(current_pellets):
+                # simulator.enemy_debuffs を渡す
                 dmg, is_crit = self.calculate_strict_damage(
                     per_pellet_multiplier, prof, is_full_burst, frame, 
                     enemy_def=simulator.ENEMY_DEF, enemy_element=simulator.enemy_element,
@@ -313,11 +323,9 @@ class Character:
             
             self.buff_manager.decrement_shot_buffs()
             
-            # --- ログ出力（詳細） ---
             buff_debug_str = self.buff_manager.get_active_buffs_debug(frame)
             simulator.log(f"[Shoot] 時間:{frame/60:>6.2f}s | 弾数:{self.current_ammo:>3}/{self.current_max_ammo:<3} | Dmg:{total_shot_dmg:10,.0f} | Buffs: {buff_debug_str}", target_name=self.name)
-            # ---------------------
-
+            
             damage_this_frame += self.process_trigger('shot_count', self.total_shots, frame, is_full_burst, simulator)
             damage_this_frame += self.process_trigger('ammo_empty', self.current_ammo, frame, is_full_burst, simulator)
             damage_this_frame += self.process_trigger('pellet_hit', self.cumulative_pellet_hits, frame, is_full_burst, simulator)
@@ -326,56 +334,33 @@ class Character:
             if self.cumulative_pellet_hits >= 9999: self.cumulative_pellet_hits = 0 
 
         if self.weapon.type in ["RL", "SR", "CHARGE"]:
-            # --- RL/SR のロジック修正 ---
             if self.state == "READY":
-                if self.state_timer == 0:
-                    # windup_frames を正しく取得
-                    self.current_action_duration = self.get_buffed_frames('attack', self.weapon.windup_frames, frame)
-                
+                if self.state_timer == 0: self.current_action_duration = self.get_buffed_frames('attack', self.weapon.windup_frames, frame)
                 self.state_timer += 1
-                if self.state_timer >= self.current_action_duration:
-                    self.state = "CHARGING"
-                    self.state_timer = 0
-                    
+                if self.state_timer >= self.current_action_duration: self.state = "CHARGING"; self.state_timer = 0
             elif self.state == "CHARGING":
                 if self.state_timer == 0:
-                    # charge_time が 0 の場合の安全策 (最低1フレーム)
                     base_frames = max(1, self.weapon.charge_time * simulator.FPS)
                     self.current_action_duration = self.get_buffed_frames('charge', base_frames, frame)
-                    
                 self.state_timer += 1
-                if self.state_timer >= self.current_action_duration:
-                    self.state = "SHOOTING"
-                    self.state_timer = 0
-                    
+                if self.state_timer >= self.current_action_duration: self.state = "SHOOTING"; self.state_timer = 0
             elif self.state == "SHOOTING":
-                # 発射処理
                 perform_shoot()
-                self.state = "WINDDOWN"
-                self.state_timer = 0
-                
+                self.state = "WINDDOWN"; self.state_timer = 0
             elif self.state == "WINDDOWN":
-                if self.state_timer == 0:
-                    self.current_action_duration = self.get_buffed_frames('attack', self.weapon.winddown_frames, frame)
-                
+                if self.state_timer == 0: self.current_action_duration = self.get_buffed_frames('attack', self.weapon.winddown_frames, frame)
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration:
                     self.state_timer = 0
-                    if self.is_weapon_changed and self.current_ammo <= 0:
-                        self.revert_weapon(frame)
-                    else:
-                        self.state = "RELOADING" if self.current_ammo <= 0 else "READY"
-                        
+                    if self.is_weapon_changed and self.current_ammo <= 0: self.revert_weapon(frame)
+                    else: self.state = "RELOADING" if self.current_ammo <= 0 else "READY"
             elif self.state == "RELOADING":
                 if self.state_timer == 0:
                     self.current_action_duration = self.get_buffed_frames('reload', self.weapon.reload_frames, frame)
                     simulator.log(f"[Action] Reloading... ({self.current_action_duration} frames)", target_name=self.name)
-                
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration:
-                    self.current_ammo = self.current_max_ammo
-                    self.state = "READY"
-                    self.state_timer = 0
+                    self.current_ammo = self.current_max_ammo; self.state = "READY"; self.state_timer = 0
                     self.buff_manager.remove_reload_buffs()
                     simulator.log(f"[Action] Reload Complete. Ammo: {self.current_ammo}", target_name=self.name)
 

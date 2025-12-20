@@ -7,7 +7,7 @@
   "reload_frames": 120,
   "windup_frames": 12,
   "winddown_frames": 10,
-  "charge_time": 60,
+  "charge_time": 1,
   "charge_mult": 2.5,
   "hit_size": 1
 }

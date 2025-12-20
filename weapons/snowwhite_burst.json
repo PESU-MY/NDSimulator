@@ -7,7 +7,7 @@
   "reload_frames": 0,
   "windup_frames": 12,
   "winddown_frames": 10,
-  "charge_time": 300,
+  "charge_time": 5,
   "charge_mult": 10.0,
   "hit_size": 1,
   "is_pierce": true

@@ -21,19 +21,18 @@ class NikkeSimulator:
         self.enemy_core_size = enemy_core_size
         self.enemy_size = enemy_size
         self.part_break_mode = part_break_mode
+        
+        # 敵へのデバフ(全員で共有)
         self.enemy_debuffs = BuffManager()
         
-        # --- ログファイル管理 ---
         self.log_dir = "logs"
         if os.path.exists(self.log_dir):
             shutil.rmtree(self.log_dir) # 古いログを掃除
         os.makedirs(self.log_dir)
         
         self.log_handles = {}
-        # System Log
         self.log_handles["System"] = open(os.path.join(self.log_dir, "System.txt"), 'w', encoding='utf-8')
         
-        # Character Logs
         for char in self.characters:
             safe_name = "".join([c for c in char.name if c.isalnum() or c in (' ', '_', '-', '.')])
             self.log_handles[char.name] = open(os.path.join(self.log_dir, f"{safe_name}.txt"), 'w', encoding='utf-8')
@@ -52,7 +51,6 @@ class NikkeSimulator:
         if target_name in self.log_handles:
             self.log_handles[target_name].write(message + '\n')
         else:
-            # フォールバック
             self.log_handles["System"].write(f"[{target_name}] {message}\n")
 
     def check_target_condition(self, condition, caster, target, frame):
@@ -79,8 +77,33 @@ class NikkeSimulator:
                 if not (min_v <= count <= max_v): return False
         return True
 
+    def should_apply_skill(self, skill, frame):
+        # 条件付きスキルの判定
+        if skill.condition:
+            if "not_has_tag" in skill.condition:
+                tag = skill.condition["not_has_tag"]
+                # 簡易的に共有デバフをチェック（本来はcasterのバフも見るべきだが、構造上ここでcasterが不明な場合は省略）
+                if self.enemy_debuffs.has_active_tag(tag, frame):
+                     return False
+            if "has_tag" in skill.condition:
+                tag = skill.condition["has_tag"]
+                if not self.enemy_debuffs.has_active_tag(tag, frame):
+                     return False
+        return True
+
     def apply_skill(self, skill, caster, frame, is_full_burst):
-        # ... (targets決定ロジック) ...
+# ▼▼▼ 修正: 同一フレーム内でのスキル多重発動を防止 (Engine側で強制) ▼▼▼
+        # マニュアル発動(派生効果など)以外のスキルについて、同じフレームでの再発動を防ぐ
+        if skill.trigger_type != 'manual':
+            # skillオブジェクトに前回の発動フレームを記録させる
+            last_frame = getattr(skill, 'last_used_frame', -1)
+            if last_frame == frame:
+                return 0
+            skill.last_used_frame = frame
+        # ▲▲▲▲▲▲
+
+        if not self.should_apply_skill(skill, frame): return 0
+        
         targets = []
         if skill.target == 'self':
             if self.check_target_condition(skill.target_condition, caster, caster, frame):
@@ -90,7 +113,20 @@ class NikkeSimulator:
                 if self.check_target_condition(skill.target_condition, caster, char, frame):
                     targets.append(char)
         elif skill.target == 'enemy':
+            targets.append(caster) # 敵対象スキルも便宜上casterをリストに入れ、効果処理で敵への影響として扱う
+
+        # ターゲット指定がない場合で、ダメージ効果なら自分自身（攻撃者）を対象として処理開始
+        if not targets and skill.effect_type == 'damage':
             targets.append(caster)
+
+        # CT短縮はターゲットに関わらず全員に適用
+        if skill.effect_type == 'cooldown_reduction':
+            kwargs = skill.kwargs
+            reduce_sec = kwargs.get('value', 0)
+            reduce_frames = reduce_sec * self.FPS
+            for char in self.characters:
+                if char.current_cooldown > 0: char.current_cooldown = max(0, char.current_cooldown - reduce_frames)
+            return 0
 
         total_dmg = 0
         kwargs = skill.kwargs.copy()
@@ -109,20 +145,11 @@ class NikkeSimulator:
                 self.log(f"[Flag] {t.name}: Activated {flag_name}", target_name=t.name)
             return 0
 
-        if skill.effect_type == 'cooldown_reduction':
-            reduce_sec = kwargs.get('value', 0)
-            reduce_frames = reduce_sec * self.FPS
-            for char in self.characters:
-                if char.current_cooldown > 0: char.current_cooldown = max(0, char.current_cooldown - reduce_frames)
-            return 0
-
-        total_dmg = 0
-        kwargs = skill.kwargs.copy()
-
         for target in targets:
             if skill.effect_type == 'convert_hp_to_atk':
                 rate = skill.kwargs.get('value', 0)
                 target.buff_manager.add_buff('conversion_hp_to_atk', rate, skill.kwargs.get('duration', 0) * self.FPS, frame, source=skill.name)
+                self.log(f"[Buff] {target.name}: HP to ATK conversion ({rate})", target_name=target.name)
             
             elif skill.effect_type == 'cumulative_stages':
                 if skill.kwargs.get('trigger_all_stages'):
@@ -159,7 +186,6 @@ class NikkeSimulator:
                                 effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
                             )
                             temp_skill.target = skill.target
-                            temp_skill.target_condition = skill.target_condition
                             temp_skill.owner_name = caster.name
                             total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
             
@@ -170,7 +196,7 @@ class NikkeSimulator:
                 s_name = kwargs.get('stack_name')
                 tag = kwargs.get('tag')
                 
-                # 修正: デバフ系の効果は「共有デバフマネージャー」に登録
+                # 敵へのデバフは共有マネージャーへ
                 if b_type in ['def_debuff', 'taken_dmg_debuff']:
                     if skill.effect_type == 'stack_buff':
                         self.enemy_debuffs.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=s_name, max_stack=kwargs.get('max_stack', 1), tag=tag)
@@ -178,7 +204,6 @@ class NikkeSimulator:
                         self.enemy_debuffs.add_buff(b_type, val, dur, frame, source=skill.name, tag=tag)
                     self.log(f"[Debuff] Applied {skill.name} ({b_type}) to Enemy (Shared)", target_name=caster.name)
                 else:
-                    # 通常のバフ
                     if skill.effect_type == 'stack_buff':
                         target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=s_name, max_stack=kwargs.get('max_stack', 1), tag=tag)
                     else:
@@ -186,27 +211,27 @@ class NikkeSimulator:
                     self.log(f"[Buff] Applied {skill.name} ({b_type}: {val}) to {target.name}", target_name=target.name)
 
             elif skill.effect_type == 'damage':
-                if skill.target == 'enemy':
-                    profile = DamageProfile.create(**kwargs.get('profile', {}))
-                    mult = kwargs.get('multiplier', 1.0)
-                    loops = kwargs.get('loop_count', 1)
-                    skill_dmg = 0
-                    for _ in range(loops):
-                        # 修正: デバフマネージャーを渡す
-                        d, _ = caster.calculate_strict_damage(
-                            mult, profile, is_full_burst, frame, 
-                            self.ENEMY_DEF, self.enemy_element, self.enemy_core_size, self.enemy_size,
-                            debuff_manager=self.enemy_debuffs
-                        )
-                        skill_dmg += d
-                    
-                    buff_debug = caster.buff_manager.get_active_buffs_debug(frame)
-                    self.log(f"[Skill Dmg] 時間:{frame/60:>6.2f}s | 名前:{skill.name:<25} | Dmg:{skill_dmg:10,.0f} | Hits:{loops} | Buffs:{buff_debug}", target_name=caster.name)
-                    
-                    caster.total_damage += skill_dmg
-                    if skill.name in caster.damage_breakdown: caster.damage_breakdown[skill.name] += skill_dmg
-                    else: caster.damage_breakdown[skill.name] = skill_dmg
-                    total_dmg += skill_dmg
+                # targetに関わらずダメージ計算を実行（敵への攻撃とみなす）
+                profile = DamageProfile.create(**kwargs.get('profile', {}))
+                mult = kwargs.get('multiplier', 1.0)
+                loops = kwargs.get('loop_count', 1)
+                skill_dmg = 0
+                for _ in range(loops):
+                    # caster (発動者) の能力値を使って計算
+                    d, _ = caster.calculate_strict_damage(
+                        mult, profile, is_full_burst, frame, 
+                        self.ENEMY_DEF, self.enemy_element, self.enemy_core_size, self.enemy_size,
+                        debuff_manager=self.enemy_debuffs
+                    )
+                    skill_dmg += d
+                
+                buff_debug = caster.buff_manager.get_active_buffs_debug(frame)
+                self.log(f"[Skill Dmg] 時間:{frame/60:>6.2f}s | 名前:{skill.name:<25} | Dmg:{skill_dmg:10,.0f} | Hits:{loops} | Buffs:{buff_debug}", target_name=caster.name)
+                
+                caster.total_damage += skill_dmg
+                if skill.name in caster.damage_breakdown: caster.damage_breakdown[skill.name] += skill_dmg
+                else: caster.damage_breakdown[skill.name] = skill_dmg
+                total_dmg += skill_dmg
 
             elif skill.effect_type == 'delayed_action':
                 duration_sec = kwargs.get('duration', 0)
@@ -224,7 +249,6 @@ class NikkeSimulator:
                     self.scheduled_actions.append({'frame': exec_frame, 'skill': act_skill, 'caster': caster})
             
             elif skill.effect_type == 'weapon_change':
-                # 自分自身への適用のみサポート
                 new_weapon_data = kwargs.get('weapon_data')
                 duration = kwargs.get('duration', 0)
                 if new_weapon_data and target == caster:
@@ -270,19 +294,21 @@ class NikkeSimulator:
                     char = char_list[idx]
                     if char.current_cooldown <= 0:
                         base_cd = 40.0
-                        # 簡易的なCT管理: バースト1,2は一律20秒CTとする例（必要に応じて調整）
                         if char.burst_stage in ['1', '2']: base_cd = 20.0 
                         char.current_cooldown = base_cd * self.FPS
                         
                         self.log(f"[Burst] {char.name} used Burst Stage {self.burst_state.split('_')[1]}", target_name="System")
                         self.log(f"[Burst] Activate!", target_name=char.name)
                         
-                        char.process_trigger('on_use_burst_skill', 0, frame, is_full_burst, self)
-                        
+                        # ▼▼▼ 修正: バースト突入時トリガー(バフ等)を、スキル発動(ダメージ)より先に処理する ▼▼▼
                         if self.burst_state == "BURST_3":
+                            self.last_burst_char_name = char.name # バースト発動者を確定させておく
                             char.process_trigger('on_burst_3_enter', 0, frame, is_full_burst, self)
-                            self.last_burst_char_name = char.name
                             self.process_trigger_global('on_burst_enter', frame) 
+                        
+                        # その後にバーストスキル(ダメージ等)を発動
+                        char.process_trigger('on_use_burst_skill', 0, frame, is_full_burst, self)
+                        # ▲▲▲▲▲▲
                         
                         self.burst_indices[stage_idx] = (idx + 1) % len(char_list)
                         if self.burst_state == "BURST_1": self.burst_state = "BURST_2"
@@ -316,7 +342,6 @@ class NikkeSimulator:
         for i in reversed(executed_indices): self.scheduled_actions.pop(i)
         
         for char in self.characters:
-            # 武器変更状態の解除チェック
             if char.is_weapon_changed and char.weapon_change_end_frame > 0:
                 if frame >= char.weapon_change_end_frame: char.revert_weapon(frame)
 
@@ -325,8 +350,9 @@ class NikkeSimulator:
                 damage_dot = 0
                 for name, dot in list(char.active_dots.items()):
                     if frame <= dot['end_frame']:
-                        # ...
-                        # 修正: デバフマネージャーを渡す
+                        total_mult = dot['multiplier'] * dot.get('count', 1)
+                        profile = dot.get('profile', DamageProfile.create())
+                        # caster自身で計算
                         dmg, _ = char.calculate_strict_damage(
                             total_mult, profile, is_full_burst, frame, 
                             self.ENEMY_DEF, self.enemy_element, self.enemy_core_size, self.enemy_size,
