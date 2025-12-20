@@ -1,0 +1,42 @@
+=== Simulation Start ===
+Character: Liter (Atk:21307)
+Character: Dummy_B2 (Atk:0)
+Character: シンデレラ (Atk:17059)
+Character: Dummy_B3_Sub (Atk:0)
+Character: Dummy_NonBurst (Atk:0)
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3_Sub used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3_Sub used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3_Sub used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3_Sub used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3_Sub used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Liter used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3_Sub used Burst Stage 3

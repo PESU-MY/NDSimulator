@@ -1,0 +1,275 @@
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Burst] Activate!
+[Skill Dmg] 時間:  5.05s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 4,729,172 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | [Beauty x1 (Val:0.02)]
+[Skill Dmg] 時間:  5.05s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 1,334,220 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | [Beauty x1 (Val:0.02)]
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Burst] Activate!
+[Skill Dmg] 時間: 35.15s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 4,204,008 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | [Beauty x11 (Val:0.18)]
+[Skill Dmg] 時間: 35.15s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 1,334,220 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | [Beauty x11 (Val:0.18)]
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Shoot] 時間: 60.17s | 弾数: 23/24  | Dmg:    27,388 | Buffs: [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Burst] Activate!
+[Skill Dmg] 時間: 65.25s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 4,729,172 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill Dmg] 時間: 65.25s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 1,445,334 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Shoot] 時間: 90.50s | 弾数: 22/24  | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Burst] Activate!
+[Skill Dmg] 時間: 95.35s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 4,466,590 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill Dmg] 時間: 95.35s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 1,500,890 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Shoot] 時間:120.83s | 弾数: 21/24  | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Burst] Activate!
+[Skill Dmg] 時間:125.45s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 4,466,590 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill Dmg] 時間:125.45s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 1,389,777 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Shoot] 時間:151.17s | 弾数: 20/24  | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Burst] Activate!
+[Skill Dmg] 時間:155.55s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 4,466,590 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill Dmg] 時間:155.55s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 1,334,220 | Hits:10 | Buffs:max_ammo_rate:0.45 | crit_dmg_buff:0.12 | atk_buff_rate:0.80 | charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to シンデレラ
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to シンデレラ
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ
+[Buff] Applied Skill 2: 美しさスタック (max_hp_rate: 0.016) to シンデレラ

@@ -1,0 +1,195 @@
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Burst] Activate!
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Burst] Activate!
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Burst] Activate!
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Burst] Activate!
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Burst] Activate!
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_0 (max_ammo_rate: 0.4517) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_1 (crit_dmg_buff: 0.1246) to Dummy_B3_Sub
+[Buff] Applied Liter S1 (Passive: Burst Buff)_Stage_2 (atk_buff_rate: 0.1442) to Dummy_B3_Sub
+[Buff] Applied Liter Burst Skill (atk_buff_rate: 0.66) to Dummy_B3_Sub
+[Burst] Activate!

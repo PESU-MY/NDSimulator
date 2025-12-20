@@ -1,49 +1,44 @@
 import json
 import os
-from simulator import NikkeSimulator, WeaponConfig, Skill, BurstCharacter
+from simulator import NikkeSimulator, WeaponConfig, Skill, Character
 import matplotlib.pyplot as plt
-import numpy as np
 
-# --- 日本語フォントの設定 ---
-plt.rcParams['font.family'] = 'MS Gothic'
-
-def load_character_full_setup(char_file_path):
+# --- ヘルパー関数: JSONからキャラデータを読み込んでCharacterを作成 ---
+def create_character_from_json(char_file_path):
     with open(char_file_path, 'r', encoding='utf-8') as f:
         char_data = json.load(f)
     
     char_name = char_data['name']
     weapon_type_str = char_data['weapon_type'].lower()
     element = char_data.get('element', 'Iron')
-    stats = char_data['stats']
+    stats = char_data.get('stats', {})
     char_class = char_data.get('class', 'Attacker')
+    burst_stage = char_data.get('burst_stage', '3')
     
-    # 武器情報の読み込み
+    # 武器設定 (標準ファイルがあれば読み込む)
     weapon_file_path = f"weapons/{weapon_type_str}_standard.json"
+    weapon_data = {}
     if os.path.exists(weapon_file_path):
         with open(weapon_file_path, 'r', encoding='utf-8') as f:
             weapon_data = json.load(f)
-    
-    # 基本項目の設定
-    weapon_data['name'] = f"{char_name}'s {weapon_data['weapon_class']}"
+    else:
+        # なければデフォルト値で埋める
+        weapon_data = {'weapon_type': weapon_type_str, 'name': 'Default Weapon'}
+
+    weapon_data['name'] = f"{char_name}'s Weapon"
     weapon_data['element'] = element
+    weapon_data['burst_stage'] = burst_stage
     
-    # --- 修正: stats内の全パラメータでweapon_dataを更新 ---
+    # statsで上書き
     for key, value in stats.items():
-        if key == 'reload_time':
-            weapon_data['reload_frames'] = int(value * 60)
-        elif key == 'damage_rate':
-            weapon_data['multiplier'] = value
-        elif key == 'core_hit_rate':
-            # core_hit_rate はWeaponConfigから削除されたため無視する
-            pass 
-        else:
-            # hit_size などのパラメータはそのまま上書き
-            weapon_data[key] = value
-    # -------------------------------------------------------
-    
+        if key == 'reload_time': weapon_data['reload_frames'] = int(value * 60)
+        elif key == 'damage_rate': weapon_data['multiplier'] = value
+        elif key == 'ammo': weapon_data['max_ammo'] = value
+        else: weapon_data[key] = value
+
     weapon_config = WeaponConfig(weapon_data)
     
-    # クラスごとの基礎ステータス設定
+    # 基礎ステータス (クラス別補正など)
     base_atk = 25554
     base_hp = 583734
     if char_class == 'Supporter':
@@ -56,17 +51,14 @@ def load_character_full_setup(char_file_path):
     if 'base_atk' in stats: base_atk = stats['base_atk']
     if 'base_hp' in stats: base_hp = stats['base_hp']
 
+    # スキル読み込み
     def parse_skill_data(s_data):
         init_kwargs = s_data.get('kwargs', {}).copy()
         for k, v in s_data.items():
             if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs', 'stages']:
                 init_kwargs[k] = v
-        
         stages = []
-        if 'stages' in s_data:
-            for stage in s_data['stages']:
-                stages.append(stage)
-        
+        if 'stages' in s_data: stages = s_data['stages']
         return Skill(
             name=s_data['name'],
             trigger_type=s_data['trigger_type'],
@@ -76,93 +68,78 @@ def load_character_full_setup(char_file_path):
             **init_kwargs
         )
 
-    passive_skills = []
+    skills = []
     if 'skills' in char_data:
         for s_data in char_data['skills']:
             s = parse_skill_data(s_data)
             s.owner_name = char_name
-            passive_skills.append(s)
+            skills.append(s)
             
-    burst_skill = None
     if 'burst_skill' in char_data:
-        burst_skill = parse_skill_data(char_data['burst_skill'])
-        burst_skill.owner_name = char_name
+        b_skill = parse_skill_data(char_data['burst_skill'])
+        b_skill.owner_name = char_name
+        b_skill.trigger_type = 'on_use_burst_skill' # バーストスキルとして登録
+        skills.append(b_skill)
 
-    return {
-        "name": char_name, "base_atk": base_atk, "base_hp": base_hp, "element": element,
-        "weapon_config": weapon_config, "passive_skills": passive_skills, "burst_skill": burst_skill
-    }
+    return Character(char_name, weapon_config, skills, base_atk, base_hp, element, burst_stage, char_class)
+
+# --- ヘルパー関数: ダミーキャラ作成 ---
+def create_dummy_character(name, burst_stage, weapon_type="AR"):
+    # 最小限の設定
+    weapon_data = {'name': f"{name}_Weapon", 'weapon_type': weapon_type, 'burst_stage': str(burst_stage)}
+    wc = WeaponConfig(weapon_data)
+    # is_dummy=True にして計算をスキップさせる
+    return Character(name, wc, [], base_atk=0, base_hp=0, element="Iron", burst_stage=burst_stage, is_dummy=True)
+
+
+# === メイン処理 ===
 
 if not os.path.exists('characters'): os.makedirs('characters')
 
-# ドロシーの読み込み (命中率仕様変更の確認用)
-nikke_setup = load_character_full_setup('characters/cinderella.json')
+# 1. キャラクターの読み込み
+liter = create_character_from_json('characters/liter.json')
+cinderella = create_character_from_json('characters/cinderella.json')
 
-# --- 追加: 常時バーストCT短縮スキル ---
-passive_cd_reduction = Skill(
-    name="Passive: CD Reduction",
-    trigger_type="on_burst_enter", 
-    trigger_value=0,
-    effect_type="cooldown_reduction",
-    target="allies",
-    value=5.0,  # 5秒短縮
-    owner_name="System"
-)
+# 2. ダミーキャラの作成
+dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG")
+dummy_b3 = create_dummy_character("Dummy_B3_Sub", 3, "MG")
+dummy_non = create_dummy_character("Dummy_NonBurst", 3, "RL")
 
-# バースト編成
-b1 = BurstCharacter("B1", 1, 20, None, element="Wind", weapon_type="SMG", base_atk=15000)
-b2 = BurstCharacter("B2", 2, 20, None, element="Water", weapon_type="AR", base_atk=18000)
-b3_nikke = BurstCharacter(
-    nikke_setup['name'], 
-    3, 
-    40, 
-    nikke_setup['burst_skill'], 
-    element=nikke_setup['element'],
-    weapon_type="SG",
-    base_atk=nikke_setup['base_atk'],
-    base_hp=nikke_setup['base_hp']
-)
-b3_dummy = BurstCharacter("B3_Dummy", 3, 40, None, element="Fire", weapon_type="MG", base_atk=10000)
+# 3. 編成リスト作成 (Simulatorに渡す全キャラリスト)
+all_characters = [liter, dummy_b2, cinderella, dummy_b3, dummy_non]
 
-rotation = [[b1], [b2], [b3_nikke, b3_dummy]]
+# 4. バーストローテーション設定 ( [[B1], [B2], [B3, B3_sub]] )
+rotation = [
+    [liter],          # Burst I
+    [dummy_b2],       # Burst II
+    [cinderella, dummy_b3] # Burst III
+]
 
+# 5. シミュレーター初期化
 sim = NikkeSimulator(
-    weapon_config=nikke_setup['weapon_config'],
-    skills=nikke_setup['passive_skills']+[passive_cd_reduction],
+    characters=all_characters,
     burst_rotation=rotation,
-    base_atk=nikke_setup['base_atk'],
-    base_hp=nikke_setup['base_hp'],
     enemy_element="None", 
-    enemy_core_size=3.0, # コアサイズ指定
-    enemy_size=100,      # 敵サイズ指定
-    character_name=nikke_setup['name']
+    enemy_core_size=3.0,
+    enemy_size=100,
+    part_break_mode=False
 )
 
-breakdown = sim.run()
+# 6. 実行
+print("シミュレーションを開始します...")
+results = sim.run()
+print("シミュレーション終了。")
 
-print(f"キャラクター: {nikke_setup['name']}")
-print(f"基礎攻撃力: {sim.BASE_ATK}")
-print(f"総ダメージ: {sim.total_damage:,.0f}")
-print("【ダメージ内訳】")
-for name, val in breakdown.items():
-    if val > 0:
-        print(f"{name.ljust(35)}: {val:12,.0f}")
+# 7. 結果表示
+print("-" * 50)
+total_party_damage = sum(r['total_damage'] for r in results.values())
+print(f"パーティ総ダメージ: {total_party_damage:,.0f}")
+print("-" * 50)
 
-duration_seconds = sim.TOTAL_FRAMES / sim.FPS
-overall_dps = sim.total_damage / duration_seconds
-print(f"経過時間: {duration_seconds:.1f} 秒")
-print(f"平均DPS: {overall_dps:,.0f}")
-
-time_axis = sim.history['frame']
-damage_per_frame = sim.history['damage']
-cumulative_damage = np.cumsum(damage_per_frame)
-
-plt.figure(figsize=(12, 6))
-plt.plot(time_axis, cumulative_damage, label='総ダメージ (累積)', color='red', linewidth=1.5)
-plt.xlabel('時間 (秒)')
-plt.ylabel('総ダメージ')
-plt.title(f'総ダメージ推移: {nikke_setup["name"]}')
-plt.grid(True, alpha=0.3)
-plt.legend()
-plt.tight_layout()
-plt.show()
+for name, res in results.items():
+    if res['total_damage'] > 0:
+        print(f"■ {name} - Total: {res['total_damage']:,.0f}")
+        for k, v in res['breakdown'].items():
+            if v > 0:
+                print(f"   - {k}: {v:,.0f}")
+        print("")

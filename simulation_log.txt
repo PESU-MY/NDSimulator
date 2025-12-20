@@ -1,785 +1,903 @@
 === Simulation Start ===
 [Config] Weapon: シンデレラ's RL
 [Config] Type: CHARGE (Class: RL)
-[Config] Max Ammo: 24
+[Config] Max Ammo: 50
 [Config] Fire Interval (RAPID default): 5
-[Shoot] 時間:  1.17s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: None
+[Shoot] 時間:  1.17s | 弾数: 49/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: None
 [Skill] 時間:  1.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:  1.52s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
+[Shoot] 時間:  1.52s | 弾数: 48/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00
 [Skill] 時間:  1.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:  1.87s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00
+[Shoot] 時間:  1.87s | 弾数: 47/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
 [Skill] 時間:  1.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:  2.22s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00
+[Shoot] 時間:  2.22s | 弾数: 46/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
 [Skill] 時間:  2.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:  2.57s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
-[Skill] 時間:  2.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:  2.92s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00
-[Skill] 時間:  2.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:  3.27s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  2.57s | 弾数: 45/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
+[Skill] 時間:  2.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:  2.92s | 弾数: 44/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
+[Skill] 時間:  2.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:  3.27s | 弾数: 43/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
 [Skill] 時間:  3.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:  3.62s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  3.62s | 弾数: 42/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
 [Skill] 時間:  3.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:  3.97s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  3.97s | 弾数: 41/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
 [Skill] 時間:  3.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:  4.32s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  4.32s | 弾数: 40/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
 [Skill] 時間:  4.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:  4.67s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
-[Skill] 時間:  4.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:  5.02s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  4.67s | 弾数: 39/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Skill] 時間:  4.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:  5.02s | 弾数: 38/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
 [Skill] 時間:  5.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Skill] 時間:  5.05s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,254,981 | Hits:10
+[Skill] 時間:  5.05s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,004,744 | Hits:10
 [Skill] 時間:  5.05s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg:   158,835 | Hits:1
-[Shoot] 時間:  5.37s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    58,826 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
-[Skill] 時間:  5.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,076 | Hits:1
-[Shoot] 時間:  5.72s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    70,591 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  5.37s | 弾数: 37/50  | ペレット: 1 (Hit:1) | Dmg:    58,826 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
+[Skill] 時間:  5.37s | 名前:Skill 1: 追加ダメージ           | Dmg:   100,101 | Hits:1
+[Shoot] 時間:  5.72s | 弾数: 36/50  | ペレット: 1 (Hit:1) | Dmg:    58,826 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
 [Skill] 時間:  5.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,076 | Hits:1
-[Shoot] 時間:  6.07s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
-[Skill] 時間:  6.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1
-[Shoot] 時間:  6.42s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  6.07s | 弾数: 35/50  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Skill] 時間:  6.07s | 名前:Skill 1: 追加ダメージ           | Dmg:   100,943 | Hits:1
+[Shoot] 時間:  6.42s | 弾数: 34/50  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
 [Skill] 時間:  6.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1
-[Shoot] 時間:  6.77s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    71,185 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  6.77s | 弾数: 33/50  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
 [Skill] 時間:  6.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1
-[Shoot] 時間:  7.12s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  7.12s | 弾数: 32/50  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
 [Skill] 時間:  7.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1
-[Shoot] 時間:  7.47s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  7.47s | 弾数: 31/50  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
 [Skill] 時間:  7.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1
-[Shoot] 時間:  7.82s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  7.82s | 弾数: 30/50  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
 [Skill] 時間:  7.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1
-[Shoot] 時間:  8.17s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  8.17s | 弾数: 29/50  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
 [Skill] 時間:  8.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1
-[Shoot] 時間:  8.52s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  8.52s | 弾数: 28/50  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
 [Skill] 時間:  8.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1
-[Shoot] 時間:  8.87s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
-[Skill] 時間:  8.87s | 名前:Skill 1: 追加ダメージ           | Dmg:   100,943 | Hits:1
-[Shoot] 時間:  9.22s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    59,816 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Shoot] 時間:  8.87s | 弾数: 27/50  | ペレット: 1 (Hit:1) | Dmg:    71,185 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Skill] 時間:  8.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1
+[Shoot] 時間:  9.22s | 弾数: 26/50  | ペレット: 1 (Hit:1) | Dmg:    71,779 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
 [Skill] 時間:  9.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,339 | Hits:1
-[Shoot] 時間: 12.55s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
-[Skill] 時間: 12.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
-[Shoot] 時間: 12.90s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
-[Skill] 時間: 12.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
-[Shoot] 時間: 13.25s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
-[Skill] 時間: 13.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
-[Shoot] 時間: 13.60s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
-[Skill] 時間: 13.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
-[Shoot] 時間: 13.95s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    72,373 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
-[Skill] 時間: 13.95s | 名前:Skill 1: 追加ダメージ           | Dmg:   102,628 | Hits:1
-[Shoot] 時間: 14.30s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    72,373 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
-[Skill] 時間: 14.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
-[Shoot] 時間: 14.65s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
-[Skill] 時間: 14.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
-[Shoot] 時間: 15.00s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    60,806 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x5 (Val:0.08)]
-[Skill] 時間: 15.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    77,603 | Hits:1
-[Shoot] 時間: 15.35s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
-[Skill] 時間: 15.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間: 15.70s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
-[Skill] 時間: 15.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 16.05s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
-[Skill] 時間: 16.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 16.40s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
-[Skill] 時間: 16.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 16.75s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
-[Skill] 時間: 16.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間: 17.10s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
-[Skill] 時間: 17.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間: 17.45s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
-[Skill] 時間: 17.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 17.80s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
-[Skill] 時間: 17.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 18.15s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
-[Skill] 時間: 18.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 18.50s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
-[Skill] 時間: 18.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間: 18.85s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
-[Skill] 時間: 18.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 19.20s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
-[Skill] 時間: 19.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 19.55s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
-[Skill] 時間: 19.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 19.90s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
-[Skill] 時間: 19.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 20.25s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    73,561 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x6 (Val:0.10)]
-[Skill] 時間: 20.25s | 名前:Skill 1: 追加ダメージ           | Dmg:   104,313 | Hits:1
-[Shoot] 時間: 20.60s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    61,301 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x6 (Val:0.10)]
-[Skill] 時間: 20.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    78,235 | Hits:1
-[Shoot] 時間: 23.93s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    61,796 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
-[Skill] 時間: 23.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    78,867 | Hits:1
-[Shoot] 時間: 24.28s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
-[Skill] 時間: 24.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
-[Shoot] 時間: 24.63s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
-[Skill] 時間: 24.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
-[Shoot] 時間: 24.98s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
-[Skill] 時間: 24.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
-[Shoot] 時間: 25.33s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
-[Skill] 時間: 25.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
-[Shoot] 時間: 25.68s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
-[Skill] 時間: 25.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
-[Shoot] 時間: 26.03s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
-[Skill] 時間: 26.03s | 名前:Skill 1: 追加ダメージ           | Dmg:   105,998 | Hits:1
-[Shoot] 時間: 26.38s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
-[Skill] 時間: 26.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
-[Shoot] 時間: 26.73s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
-[Skill] 時間: 26.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
-[Shoot] 時間: 27.08s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
-[Skill] 時間: 27.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
-[Shoot] 時間: 27.43s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
-[Skill] 時間: 27.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
-[Shoot] 時間: 27.78s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
-[Skill] 時間: 27.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
-[Shoot] 時間: 28.13s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
-[Skill] 時間: 28.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
-[Shoot] 時間: 28.48s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
-[Skill] 時間: 28.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
-[Shoot] 時間: 28.83s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
-[Skill] 時間: 28.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
-[Shoot] 時間: 29.18s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    75,344 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
-[Skill] 時間: 29.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
-[Shoot] 時間: 29.53s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
-[Skill] 時間: 29.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
-[Shoot] 時間: 29.88s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
-[Skill] 時間: 29.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
-[Shoot] 時間: 30.23s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
-[Skill] 時間: 30.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 30.58s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
-[Skill] 時間: 30.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 30.93s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
-[Skill] 時間: 30.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 31.28s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
-[Skill] 時間: 31.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間: 31.63s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
-[Skill] 時間: 31.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 31.98s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
-[Skill] 時間: 31.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:  9.57s | 弾数: 25/50  | ペレット: 1 (Hit:1) | Dmg:    59,816 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Skill] 時間:  9.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,339 | Hits:1
+[Shoot] 時間:  9.92s | 弾数: 24/50  | ペレット: 1 (Hit:1) | Dmg:    59,816 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Skill] 時間:  9.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,339 | Hits:1
+[Shoot] 時間: 10.27s | 弾数: 23/50  | ペレット: 1 (Hit:1) | Dmg:    59,816 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Skill] 時間: 10.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,339 | Hits:1
+[Shoot] 時間: 10.62s | 弾数: 22/50  | ペレット: 1 (Hit:1) | Dmg:    59,816 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Skill] 時間: 10.62s | 名前:Skill 1: 追加ダメージ           | Dmg:   101,786 | Hits:1
+[Shoot] 時間: 10.97s | 弾数: 21/50  | ペレット: 1 (Hit:1) | Dmg:    59,816 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Skill] 時間: 10.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,339 | Hits:1
+[Shoot] 時間: 11.32s | 弾数: 20/50  | ペレット: 1 (Hit:1) | Dmg:    59,816 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Skill] 時間: 11.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,339 | Hits:1
+[Shoot] 時間: 11.67s | 弾数: 19/50  | ペレット: 1 (Hit:1) | Dmg:    59,816 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Skill] 時間: 11.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,339 | Hits:1
+[Shoot] 時間: 12.02s | 弾数: 18/50  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Skill] 時間: 12.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
+[Shoot] 時間: 12.37s | 弾数: 17/50  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Skill] 時間: 12.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
+[Shoot] 時間: 12.72s | 弾数: 16/50  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Skill] 時間: 12.72s | 名前:Skill 1: 追加ダメージ           | Dmg:   102,628 | Hits:1
+[Shoot] 時間: 13.07s | 弾数: 15/50  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Skill] 時間: 13.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
+[Shoot] 時間: 13.42s | 弾数: 14/50  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Skill] 時間: 13.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
+[Shoot] 時間: 13.77s | 弾数: 13/50  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Skill] 時間: 13.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
+[Shoot] 時間: 14.12s | 弾数: 12/50  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Skill] 時間: 14.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
+[Shoot] 時間: 14.47s | 弾数: 11/50  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Skill] 時間: 14.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
+[Shoot] 時間: 14.82s | 弾数: 10/50  | ペレット: 1 (Hit:1) | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Skill] 時間: 14.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1
+[Shoot] 時間: 15.17s | 弾数:  9/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Skill] 時間: 15.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 15.52s | 弾数:  8/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Skill] 時間: 15.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 15.87s | 弾数:  7/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Skill] 時間: 15.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 16.22s | 弾数:  6/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Skill] 時間: 16.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 16.57s | 弾数:  5/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Skill] 時間: 16.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 16.92s | 弾数:  4/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Skill] 時間: 16.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 17.27s | 弾数:  3/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Skill] 時間: 17.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 17.62s | 弾数:  2/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Skill] 時間: 17.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 17.97s | 弾数:  1/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Skill] 時間: 17.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 18.32s | 弾数:  0/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Skill] 時間: 18.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 21.65s | 弾数: 49/50  | ペレット: 1 (Hit:1) | Dmg:    61,796 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
+[Skill] 時間: 21.65s | 名前:Skill 1: 追加ダメージ           | Dmg:   105,155 | Hits:1
+[Shoot] 時間: 22.00s | 弾数: 48/50  | ペレット: 1 (Hit:1) | Dmg:    61,796 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
+[Skill] 時間: 22.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    78,867 | Hits:1
+[Shoot] 時間: 22.35s | 弾数: 47/50  | ペレット: 1 (Hit:1) | Dmg:    74,155 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
+[Skill] 時間: 22.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    78,867 | Hits:1
+[Shoot] 時間: 22.70s | 弾数: 46/50  | ペレット: 1 (Hit:1) | Dmg:    61,796 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
+[Skill] 時間: 22.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    78,867 | Hits:1
+[Shoot] 時間: 23.05s | 弾数: 45/50  | ペレット: 1 (Hit:1) | Dmg:    61,796 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
+[Skill] 時間: 23.05s | 名前:Skill 1: 追加ダメージ           | Dmg:   105,155 | Hits:1
+[Shoot] 時間: 23.40s | 弾数: 44/50  | ペレット: 1 (Hit:1) | Dmg:    61,796 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
+[Skill] 時間: 23.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    78,867 | Hits:1
+[Shoot] 時間: 23.75s | 弾数: 43/50  | ペレット: 1 (Hit:1) | Dmg:    61,796 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
+[Skill] 時間: 23.75s | 名前:Skill 1: 追加ダメージ           | Dmg:   105,155 | Hits:1
+[Shoot] 時間: 24.10s | 弾数: 42/50  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Skill] 時間: 24.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
+[Shoot] 時間: 24.45s | 弾数: 41/50  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Skill] 時間: 24.45s | 名前:Skill 1: 追加ダメージ           | Dmg:   105,998 | Hits:1
+[Shoot] 時間: 24.80s | 弾数: 40/50  | ペレット: 1 (Hit:1) | Dmg:    74,749 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Skill] 時間: 24.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
+[Shoot] 時間: 25.15s | 弾数: 39/50  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Skill] 時間: 25.15s | 名前:Skill 1: 追加ダメージ           | Dmg:   105,998 | Hits:1
+[Shoot] 時間: 25.50s | 弾数: 38/50  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Skill] 時間: 25.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
+[Shoot] 時間: 25.85s | 弾数: 37/50  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Skill] 時間: 25.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
+[Shoot] 時間: 26.20s | 弾数: 36/50  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Skill] 時間: 26.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
+[Shoot] 時間: 26.55s | 弾数: 35/50  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Skill] 時間: 26.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
+[Shoot] 時間: 26.90s | 弾数: 34/50  | ペレット: 1 (Hit:1) | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Skill] 時間: 26.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1
+[Shoot] 時間: 27.25s | 弾数: 33/50  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Skill] 時間: 27.25s | 名前:Skill 1: 追加ダメージ           | Dmg:   106,840 | Hits:1
+[Shoot] 時間: 27.60s | 弾数: 32/50  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Skill] 時間: 27.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
+[Shoot] 時間: 27.95s | 弾数: 31/50  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Skill] 時間: 27.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
+[Shoot] 時間: 28.30s | 弾数: 30/50  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Skill] 時間: 28.30s | 名前:Skill 1: 追加ダメージ           | Dmg:   106,840 | Hits:1
+[Shoot] 時間: 28.65s | 弾数: 29/50  | ペレット: 1 (Hit:1) | Dmg:    75,344 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Skill] 時間: 28.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
+[Shoot] 時間: 29.00s | 弾数: 28/50  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Skill] 時間: 29.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
+[Shoot] 時間: 29.35s | 弾数: 27/50  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Skill] 時間: 29.35s | 名前:Skill 1: 追加ダメージ           | Dmg:   106,840 | Hits:1
+[Shoot] 時間: 29.70s | 弾数: 26/50  | ペレット: 1 (Hit:1) | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Skill] 時間: 29.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1
+[Shoot] 時間: 30.05s | 弾数: 25/50  | ペレット: 1 (Hit:1) | Dmg:    63,281 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x10 (Val:0.16)]
+[Skill] 時間: 30.05s | 名前:Skill 1: 追加ダメージ           | Dmg:   107,683 | Hits:1
+[Shoot] 時間: 30.40s | 弾数: 24/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Skill] 時間: 30.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 30.75s | 弾数: 23/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Skill] 時間: 30.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 31.10s | 弾数: 22/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Skill] 時間: 31.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 31.45s | 弾数: 21/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Skill] 時間: 31.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 31.80s | 弾数: 20/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Skill] 時間: 31.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 32.15s | 弾数: 19/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Skill] 時間: 32.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 32.50s | 弾数: 18/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Skill] 時間: 32.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 32.85s | 弾数: 17/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Skill] 時間: 32.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 33.20s | 弾数: 16/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x11 (Val:0.18)]
+[Skill] 時間: 33.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 33.55s | 弾数: 15/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x11 (Val:0.18)]
+[Skill] 時間: 33.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 33.90s | 弾数: 14/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x11 (Val:0.18)]
+[Skill] 時間: 33.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 34.25s | 弾数: 13/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x11 (Val:0.18)]
+[Skill] 時間: 34.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 34.60s | 弾数: 12/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x11 (Val:0.18)]
+[Skill] 時間: 34.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 34.95s | 弾数: 11/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x11 (Val:0.18)]
+[Skill] 時間: 34.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
 [Skill] 時間: 35.15s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,697,242 | Hits:10
-[Skill] 時間: 35.15s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 1,951,627 | Hits:11
-[Shoot] 時間: 35.32s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    63,776 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
-[Skill] 時間: 35.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    81,394 | Hits:1
-[Shoot] 時間: 35.67s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    76,532 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
-[Skill] 時間: 35.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    81,394 | Hits:1
-[Shoot] 時間: 36.02s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 36.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 36.37s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 36.37s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 36.72s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 36.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 37.07s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 37.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 37.42s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 37.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 37.77s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 37.77s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 38.12s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 38.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 38.47s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 38.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 38.82s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 38.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 39.17s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 39.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 39.52s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 39.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 39.87s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 39.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 40.22s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 40.22s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 40.57s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 40.57s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 40.92s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 40.92s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 41.27s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 41.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 41.62s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 41.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 41.97s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 41.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 42.32s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 42.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 42.67s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 42.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 43.02s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 43.02s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 43.37s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 43.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 46.70s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: [Beauty x12 (Val:0.19)]
-[Skill] 時間: 46.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 47.05s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 47.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 47.40s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 47.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 47.75s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 47.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 48.10s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 48.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 48.45s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 48.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間: 48.80s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 48.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 49.15s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 49.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 49.50s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 49.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 49.85s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 49.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 50.20s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 50.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 50.55s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 50.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 50.90s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 50.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 51.25s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 51.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 51.60s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 51.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 51.95s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 51.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 52.30s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 52.30s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 52.65s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 52.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 53.00s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 53.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 53.35s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 53.35s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 53.70s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 53.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 54.05s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 54.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 54.40s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 54.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 54.75s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 54.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 58.08s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 58.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 58.43s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 58.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 58.78s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 58.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 59.13s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 59.13s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 59.48s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 59.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 59.83s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 59.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 60.18s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 60.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 60.53s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 60.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 60.88s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 60.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間: 61.23s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 61.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 61.58s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 61.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間: 61.93s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 61.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 62.28s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 62.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間: 62.63s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 62.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 62.98s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 62.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 63.33s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 63.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 63.68s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 63.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 64.03s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 64.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 64.38s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 64.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 64.73s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 64.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 65.08s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 65.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Skill] 時間: 65.25s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,741,468 | Hits:10
-[Skill] 時間: 65.25s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,198,163 | Hits:12
-[Shoot] 時間: 65.43s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 65.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 65.78s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 65.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 66.13s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 66.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 69.47s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 69.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 69.82s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 69.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 70.17s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 70.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 70.52s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 70.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 70.87s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 70.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 71.22s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 71.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 71.57s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 71.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 71.92s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 71.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 72.27s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 72.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 72.62s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 72.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 72.97s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 72.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 73.32s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 73.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 73.67s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 73.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 74.02s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 74.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 74.37s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 74.37s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 74.72s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 74.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 75.07s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 75.07s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 75.42s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 75.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 75.77s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 75.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 76.12s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 76.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 76.47s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 76.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 76.82s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 76.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 77.17s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 77.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 77.52s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 77.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 80.85s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 80.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 81.20s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 81.20s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 81.55s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 81.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 81.90s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 81.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 82.25s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 82.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 82.60s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 82.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 82.95s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 82.95s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 83.30s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 83.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 83.65s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 83.65s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 84.00s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 84.00s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 84.35s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 84.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 84.70s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 84.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 85.05s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 85.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 85.40s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 85.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 85.75s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 85.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 86.10s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 86.10s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 86.45s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 86.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 86.80s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 86.80s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間: 87.15s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 87.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 87.50s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 87.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 87.85s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 87.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 88.20s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 88.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 88.55s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 88.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 88.90s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 88.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 92.23s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: [Beauty x12 (Val:0.19)]
-[Skill] 時間: 92.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 92.58s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 92.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 92.93s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 92.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 93.28s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 93.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 93.63s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 93.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 93.98s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 93.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 94.33s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 94.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 94.68s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 94.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間: 95.03s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 95.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Skill] 時間: 95.35s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,741,468 | Hits:10
+[Skill] 時間: 35.15s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,009,028 | Hits:11
+[Shoot] 時間: 35.30s | 弾数: 10/50  | ペレット: 1 (Hit:1) | Dmg:    63,776 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
+[Skill] 時間: 35.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    81,394 | Hits:1
+[Shoot] 時間: 35.65s | 弾数:  9/50  | ペレット: 1 (Hit:1) | Dmg:    76,532 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
+[Skill] 時間: 35.65s | 名前:Skill 1: 追加ダメージ           | Dmg:   108,525 | Hits:1
+[Shoot] 時間: 36.00s | 弾数:  8/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 36.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 36.35s | 弾数:  7/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 36.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 36.70s | 弾数:  6/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 36.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 37.05s | 弾数:  5/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 37.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 37.40s | 弾数:  4/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 37.40s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間: 37.75s | 弾数:  3/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 37.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 38.10s | 弾数:  2/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 38.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 38.45s | 弾数:  1/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 38.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 38.80s | 弾数:  0/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 38.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 42.13s | 弾数: 49/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 42.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 42.48s | 弾数: 48/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 42.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 42.83s | 弾数: 47/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 42.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 43.18s | 弾数: 46/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 43.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 43.53s | 弾数: 45/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 43.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 43.88s | 弾数: 44/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 43.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 44.23s | 弾数: 43/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 44.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 44.58s | 弾数: 42/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 44.58s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間: 44.93s | 弾数: 41/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 44.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 45.28s | 弾数: 40/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 45.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 45.63s | 弾数: 39/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 45.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 45.98s | 弾数: 38/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 45.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 46.33s | 弾数: 37/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 46.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 46.68s | 弾数: 36/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 46.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 47.03s | 弾数: 35/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 47.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 47.38s | 弾数: 34/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 47.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 47.73s | 弾数: 33/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 47.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 48.08s | 弾数: 32/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 48.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 48.43s | 弾数: 31/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 48.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 48.78s | 弾数: 30/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 48.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 49.13s | 弾数: 29/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 49.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 49.48s | 弾数: 28/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 49.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 49.83s | 弾数: 27/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 49.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 50.18s | 弾数: 26/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 50.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 50.53s | 弾数: 25/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 50.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 50.88s | 弾数: 24/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 50.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 51.23s | 弾数: 23/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 51.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 51.58s | 弾数: 22/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 51.58s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間: 51.93s | 弾数: 21/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 51.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 52.28s | 弾数: 20/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 52.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 52.63s | 弾数: 19/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 52.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 52.98s | 弾数: 18/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 52.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 53.33s | 弾数: 17/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 53.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 53.68s | 弾数: 16/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 53.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 54.03s | 弾数: 15/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 54.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 54.38s | 弾数: 14/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 54.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 54.73s | 弾数: 13/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 54.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 55.08s | 弾数: 12/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 55.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 55.43s | 弾数: 11/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 55.43s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間: 55.78s | 弾数: 10/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 55.78s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間: 56.13s | 弾数:  9/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 56.13s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間: 56.48s | 弾数:  8/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 56.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 56.83s | 弾数:  7/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 56.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 57.18s | 弾数:  6/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 57.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 57.53s | 弾数:  5/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 57.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 57.88s | 弾数:  4/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 57.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 58.23s | 弾数:  3/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 58.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 58.58s | 弾数:  2/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 58.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 58.93s | 弾数:  1/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 58.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 59.28s | 弾数:  0/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 59.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 62.62s | 弾数: 49/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: [Beauty x12 (Val:0.19)]
+[Skill] 時間: 62.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 62.97s | 弾数: 48/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 62.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 63.32s | 弾数: 47/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 63.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 63.67s | 弾数: 46/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 63.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 64.02s | 弾数: 45/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 64.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 64.37s | 弾数: 44/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 64.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 64.72s | 弾数: 43/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 64.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 65.07s | 弾数: 42/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 65.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Skill] 時間: 65.25s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 6,561,677 | Hits:10
+[Skill] 時間: 65.25s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,140,316 | Hits:12
+[Shoot] 時間: 65.42s | 弾数: 41/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 65.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 65.77s | 弾数: 40/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 65.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 66.12s | 弾数: 39/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 66.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 66.47s | 弾数: 38/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 66.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 66.82s | 弾数: 37/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 66.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 67.17s | 弾数: 36/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 67.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 67.52s | 弾数: 35/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 67.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 67.87s | 弾数: 34/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 67.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 68.22s | 弾数: 33/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 68.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 68.57s | 弾数: 32/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 68.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 68.92s | 弾数: 31/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 68.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 69.27s | 弾数: 30/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 69.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 69.62s | 弾数: 29/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 69.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 69.97s | 弾数: 28/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 69.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 70.32s | 弾数: 27/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 70.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 70.67s | 弾数: 26/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 70.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 71.02s | 弾数: 25/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 71.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 71.37s | 弾数: 24/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 71.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 71.72s | 弾数: 23/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 71.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 72.07s | 弾数: 22/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 72.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 72.42s | 弾数: 21/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 72.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 72.77s | 弾数: 20/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 72.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 73.12s | 弾数: 19/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 73.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 73.47s | 弾数: 18/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 73.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 73.82s | 弾数: 17/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 73.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 74.17s | 弾数: 16/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 74.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 74.52s | 弾数: 15/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 74.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 74.87s | 弾数: 14/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 74.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 75.22s | 弾数: 13/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 75.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 75.57s | 弾数: 12/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 75.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 75.92s | 弾数: 11/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 75.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 76.27s | 弾数: 10/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 76.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 76.62s | 弾数:  9/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 76.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 76.97s | 弾数:  8/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 76.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 77.32s | 弾数:  7/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 77.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 77.67s | 弾数:  6/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 77.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 78.02s | 弾数:  5/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 78.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 78.37s | 弾数:  4/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 78.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 78.72s | 弾数:  3/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 78.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 79.07s | 弾数:  2/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 79.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 79.42s | 弾数:  1/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 79.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 79.77s | 弾数:  0/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 79.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 83.10s | 弾数: 49/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 83.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 83.45s | 弾数: 48/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 83.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 83.80s | 弾数: 47/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 83.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 84.15s | 弾数: 46/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 84.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 84.50s | 弾数: 45/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 84.50s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間: 84.85s | 弾数: 44/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 84.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 85.20s | 弾数: 43/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 85.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 85.55s | 弾数: 42/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 85.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 85.90s | 弾数: 41/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 85.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 86.25s | 弾数: 40/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 86.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 86.60s | 弾数: 39/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 86.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 86.95s | 弾数: 38/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 86.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 87.30s | 弾数: 37/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 87.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 87.65s | 弾数: 36/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 87.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 88.00s | 弾数: 35/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 88.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 88.35s | 弾数: 34/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 88.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 88.70s | 弾数: 33/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 88.70s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間: 89.05s | 弾数: 32/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 89.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 89.40s | 弾数: 31/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 89.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 89.75s | 弾数: 30/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 89.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 90.10s | 弾数: 29/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 90.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 90.45s | 弾数: 28/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 90.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 90.80s | 弾数: 27/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 90.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 91.15s | 弾数: 26/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 91.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 91.50s | 弾数: 25/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 91.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 91.85s | 弾数: 24/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 91.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 92.20s | 弾数: 23/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 92.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 92.55s | 弾数: 22/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 92.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間: 92.90s | 弾数: 21/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 92.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 93.25s | 弾数: 20/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 93.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 93.60s | 弾数: 19/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 93.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 93.95s | 弾数: 18/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 93.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 94.30s | 弾数: 17/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 94.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 94.65s | 弾数: 16/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 94.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 95.00s | 弾数: 15/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 95.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Skill] 時間: 95.35s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,468,064 | Hits:10
 [Skill] 時間: 95.35s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,256,009 | Hits:12
-[Shoot] 時間: 95.38s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 95.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 95.73s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 95.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 96.08s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 96.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 96.43s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 96.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 96.78s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 96.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 97.13s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 97.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 97.48s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 97.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 97.83s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 97.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 98.18s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 98.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 98.53s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 98.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 98.88s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 98.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 99.23s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 99.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 99.58s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 99.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間: 99.93s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間: 99.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:100.28s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:100.28s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:103.62s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:103.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:103.97s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:103.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:104.32s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:104.32s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:104.67s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:104.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:105.02s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:105.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:105.37s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:105.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:105.72s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:105.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:106.07s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:106.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:106.42s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:106.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:106.77s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:106.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:107.12s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:107.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:107.47s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:107.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:107.82s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:107.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:108.17s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:108.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:108.52s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:108.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:108.87s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:108.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:109.22s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:109.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:109.57s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:109.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:109.92s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:109.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:110.27s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:110.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:110.62s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:110.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:110.97s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:110.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:111.32s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:111.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:111.67s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:111.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:115.00s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:115.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:115.35s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:115.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:115.70s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:115.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:116.05s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:116.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:116.40s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:116.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:116.75s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:116.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:117.10s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:117.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:117.45s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:117.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:117.80s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:117.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:118.15s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:118.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:118.50s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:118.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:118.85s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:118.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:119.20s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:119.20s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:119.55s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:119.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:119.90s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:119.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:120.25s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:120.25s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:120.60s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:120.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:120.95s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:120.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:121.30s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:121.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:121.65s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:121.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:122.00s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:122.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:122.35s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:122.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:122.70s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:122.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:123.05s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:123.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間: 95.35s | 弾数: 14/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 95.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 95.70s | 弾数: 13/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 95.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 96.05s | 弾数: 12/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 96.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 96.40s | 弾数: 11/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 96.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 96.75s | 弾数: 10/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 96.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 97.10s | 弾数:  9/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 97.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 97.45s | 弾数:  8/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 97.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 97.80s | 弾数:  7/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 97.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 98.15s | 弾数:  6/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 98.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 98.50s | 弾数:  5/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 98.50s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間: 98.85s | 弾数:  4/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 98.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 99.20s | 弾数:  3/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 99.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 99.55s | 弾数:  2/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 99.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間: 99.90s | 弾数:  1/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間: 99.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:100.25s | 弾数:  0/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:100.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:103.58s | 弾数: 49/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:103.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:103.93s | 弾数: 48/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:103.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:104.28s | 弾数: 47/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:104.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:104.63s | 弾数: 46/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:104.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:104.98s | 弾数: 45/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:104.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:105.33s | 弾数: 44/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:105.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:105.68s | 弾数: 43/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:105.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:106.03s | 弾数: 42/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:106.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:106.38s | 弾数: 41/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:106.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:106.73s | 弾数: 40/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:106.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:107.08s | 弾数: 39/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:107.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:107.43s | 弾数: 38/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:107.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:107.78s | 弾数: 37/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:107.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:108.13s | 弾数: 36/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:108.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:108.48s | 弾数: 35/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:108.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:108.83s | 弾数: 34/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:108.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:109.18s | 弾数: 33/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:109.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:109.53s | 弾数: 32/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:109.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:109.88s | 弾数: 31/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:109.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:110.23s | 弾数: 30/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:110.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:110.58s | 弾数: 29/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:110.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:110.93s | 弾数: 28/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:110.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:111.28s | 弾数: 27/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:111.28s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:111.63s | 弾数: 26/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:111.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:111.98s | 弾数: 25/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:111.98s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:112.33s | 弾数: 24/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:112.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:112.68s | 弾数: 23/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:112.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:113.03s | 弾数: 22/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:113.03s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:113.38s | 弾数: 21/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:113.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:113.73s | 弾数: 20/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:113.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:114.08s | 弾数: 19/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:114.08s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:114.43s | 弾数: 18/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:114.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:114.78s | 弾数: 17/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:114.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:115.13s | 弾数: 16/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:115.13s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:115.48s | 弾数: 15/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:115.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:115.83s | 弾数: 14/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:115.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:116.18s | 弾数: 13/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:116.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:116.53s | 弾数: 12/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:116.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:116.88s | 弾数: 11/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:116.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:117.23s | 弾数: 10/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:117.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:117.58s | 弾数:  9/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:117.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:117.93s | 弾数:  8/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:117.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:118.28s | 弾数:  7/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:118.28s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:118.63s | 弾数:  6/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:118.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:118.98s | 弾数:  5/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:118.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:119.33s | 弾数:  4/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:119.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:119.68s | 弾数:  3/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:119.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:120.03s | 弾数:  2/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:120.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:120.38s | 弾数:  1/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:120.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:120.73s | 弾数:  0/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:120.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:124.07s | 弾数: 49/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: [Beauty x12 (Val:0.19)]
+[Skill] 時間:124.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:124.42s | 弾数: 48/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:124.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:124.77s | 弾数: 47/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:124.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:125.12s | 弾数: 46/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:125.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
 [Skill] 時間:125.45s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 6,014,871 | Hits:10
-[Skill] 時間:125.45s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,256,009 | Hits:12
-[Shoot] 時間:126.38s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:126.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:126.73s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:126.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:127.08s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:127.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:127.43s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:127.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:127.78s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:127.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:128.13s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:128.13s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:128.48s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:128.48s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:128.83s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:128.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:129.18s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:129.18s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:129.53s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:129.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:129.88s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:129.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:130.23s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:130.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:130.58s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:130.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:130.93s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:130.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:131.28s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:131.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:131.63s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:131.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:131.98s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:131.98s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:132.33s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:132.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:132.68s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:132.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:133.03s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:133.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:133.38s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:133.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:133.73s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:133.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:134.08s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:134.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:134.43s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:134.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:137.77s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: [Beauty x12 (Val:0.19)]
-[Skill] 時間:137.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:138.12s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:138.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:138.47s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:138.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:138.82s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:138.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:139.17s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:139.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:139.52s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:139.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:139.87s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:139.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:140.22s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:140.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:140.57s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:140.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:140.92s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:140.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:141.27s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:141.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:141.62s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:141.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:141.97s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:141.97s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:142.32s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:142.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:142.67s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:142.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:143.02s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:143.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:143.37s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:143.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:143.72s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:143.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:144.07s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:144.07s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:144.42s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:144.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:144.77s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:144.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:145.12s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:145.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:145.47s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:145.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:145.82s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:145.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:149.15s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:149.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:149.50s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:149.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:149.85s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:149.85s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:150.20s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:150.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:150.55s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:150.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:150.90s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:150.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:151.25s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:151.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:151.60s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:151.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:151.95s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:151.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:152.30s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:152.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:152.65s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:152.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:153.00s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:153.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:153.35s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:153.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:153.70s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:153.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:154.05s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:154.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:154.40s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:154.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:154.75s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:154.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:155.10s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:155.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:155.45s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:155.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Skill] 時間:125.45s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,140,316 | Hits:12
+[Shoot] 時間:125.47s | 弾数: 45/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:125.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:125.82s | 弾数: 44/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:125.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:126.17s | 弾数: 43/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:126.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:126.52s | 弾数: 42/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:126.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:126.87s | 弾数: 41/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:126.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:127.22s | 弾数: 40/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:127.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:127.57s | 弾数: 39/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:127.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:127.92s | 弾数: 38/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:127.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:128.27s | 弾数: 37/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:128.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:128.62s | 弾数: 36/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:128.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:128.97s | 弾数: 35/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:128.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:129.32s | 弾数: 34/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:129.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:129.67s | 弾数: 33/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:129.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:130.02s | 弾数: 32/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:130.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:130.37s | 弾数: 31/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:130.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:130.72s | 弾数: 30/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:130.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:131.07s | 弾数: 29/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:131.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:131.42s | 弾数: 28/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:131.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:131.77s | 弾数: 27/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:131.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:132.12s | 弾数: 26/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:132.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:132.47s | 弾数: 25/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:132.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:132.82s | 弾数: 24/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:132.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:133.17s | 弾数: 23/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:133.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:133.52s | 弾数: 22/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:133.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:133.87s | 弾数: 21/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:133.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:134.22s | 弾数: 20/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:134.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:134.57s | 弾数: 19/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:134.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:134.92s | 弾数: 18/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:134.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:135.27s | 弾数: 17/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:135.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:135.62s | 弾数: 16/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:135.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:135.97s | 弾数: 15/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:135.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:136.32s | 弾数: 14/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:136.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:136.67s | 弾数: 13/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:136.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:137.02s | 弾数: 12/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:137.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:137.37s | 弾数: 11/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:137.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:137.72s | 弾数: 10/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:137.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:138.07s | 弾数:  9/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:138.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:138.42s | 弾数:  8/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:138.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:138.77s | 弾数:  7/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:138.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:139.12s | 弾数:  6/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:139.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:139.47s | 弾数:  5/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:139.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:139.82s | 弾数:  4/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:139.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:140.17s | 弾数:  3/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:140.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:140.52s | 弾数:  2/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:140.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:140.87s | 弾数:  1/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:140.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:141.22s | 弾数:  0/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:141.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:144.55s | 弾数: 49/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:144.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:144.90s | 弾数: 48/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:144.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:145.25s | 弾数: 47/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:145.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:145.60s | 弾数: 46/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:145.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:145.95s | 弾数: 45/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:145.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:146.30s | 弾数: 44/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:146.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:146.65s | 弾数: 43/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:146.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:147.00s | 弾数: 42/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:147.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:147.35s | 弾数: 41/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:147.35s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:147.70s | 弾数: 40/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:147.70s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:148.05s | 弾数: 39/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:148.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:148.40s | 弾数: 38/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:148.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:148.75s | 弾数: 37/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:148.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:149.10s | 弾数: 36/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:149.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:149.45s | 弾数: 35/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:149.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:149.80s | 弾数: 34/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:149.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:150.15s | 弾数: 33/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:150.15s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:150.50s | 弾数: 32/50  | ペレット: 1 (Hit:1) | Dmg:    51,417 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:150.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    54,684 | Hits:1
+[Shoot] 時間:150.85s | 弾数: 31/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:150.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:151.20s | 弾数: 30/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:151.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:151.55s | 弾数: 29/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:151.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:151.90s | 弾数: 28/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:151.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:152.25s | 弾数: 27/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:152.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:152.60s | 弾数: 26/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:152.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:152.95s | 弾数: 25/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:152.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:153.30s | 弾数: 24/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:153.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:153.65s | 弾数: 23/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:153.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:154.00s | 弾数: 22/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:154.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:154.35s | 弾数: 21/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:154.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:154.70s | 弾数: 20/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:154.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:155.05s | 弾数: 19/50  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:155.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:155.40s | 弾数: 18/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:155.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
 [Skill] 時間:155.55s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 6,014,871 | Hits:10
 [Skill] 時間:155.55s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,140,316 | Hits:12
-[Shoot] 時間:155.80s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:155.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:156.15s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:156.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:156.50s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:156.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:156.85s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:156.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:157.20s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:157.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:160.53s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:160.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:160.88s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:160.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:161.23s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:161.23s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:161.58s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:161.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:161.93s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:161.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:162.28s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:162.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:162.63s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:162.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:162.98s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:162.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:163.33s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:163.33s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:163.68s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:163.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:164.03s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:164.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:164.38s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:164.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:164.73s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:164.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:165.08s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:165.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:165.43s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:165.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:165.78s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:165.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
-[Shoot] 時間:166.13s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:166.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:166.48s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:166.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:166.83s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:166.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:167.18s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:167.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:167.53s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:167.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:167.88s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:167.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:168.23s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:168.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:168.58s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:168.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
-[Shoot] 時間:171.92s | 弾数: 23/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:171.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:172.27s | 弾数: 22/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:172.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:172.62s | 弾数: 21/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:172.62s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:172.97s | 弾数: 20/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:172.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:173.32s | 弾数: 19/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:173.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:173.67s | 弾数: 18/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:173.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:174.02s | 弾数: 17/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:174.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:174.37s | 弾数: 16/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:174.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:174.72s | 弾数: 15/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:174.72s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:175.07s | 弾数: 14/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:175.07s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:175.42s | 弾数: 13/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:175.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:175.77s | 弾数: 12/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:175.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:176.12s | 弾数: 11/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:176.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:176.47s | 弾数: 10/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:176.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:176.82s | 弾数:  9/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:176.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:177.17s | 弾数:  8/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:177.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:177.52s | 弾数:  7/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:177.52s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:177.87s | 弾数:  6/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:177.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:178.22s | 弾数:  5/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:178.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:178.57s | 弾数:  4/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:178.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:178.92s | 弾数:  3/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:178.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:179.27s | 弾数:  2/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:179.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
-[Shoot] 時間:179.62s | 弾数:  1/24  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:179.62s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
-[Shoot] 時間:179.97s | 弾数:  0/24  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
-[Skill] 時間:179.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:155.75s | 弾数: 17/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:155.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:156.10s | 弾数: 16/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:156.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:156.45s | 弾数: 15/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:156.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:156.80s | 弾数: 14/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:156.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:157.15s | 弾数: 13/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:157.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:157.50s | 弾数: 12/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:157.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:157.85s | 弾数: 11/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:157.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:158.20s | 弾数: 10/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:158.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:158.55s | 弾数:  9/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:158.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:158.90s | 弾数:  8/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:158.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:159.25s | 弾数:  7/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:159.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:159.60s | 弾数:  6/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:159.60s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:159.95s | 弾数:  5/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:159.95s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:160.30s | 弾数:  4/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:160.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:160.65s | 弾数:  3/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:160.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:161.00s | 弾数:  2/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:161.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:161.35s | 弾数:  1/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:161.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:161.70s | 弾数:  0/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:161.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:165.03s | 弾数: 49/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:165.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:165.38s | 弾数: 48/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:165.38s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:165.73s | 弾数: 47/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:165.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:166.08s | 弾数: 46/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:166.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:166.43s | 弾数: 45/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:166.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:166.78s | 弾数: 44/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:166.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:167.13s | 弾数: 43/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:167.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:167.48s | 弾数: 42/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:167.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:167.83s | 弾数: 41/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:167.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1
+[Shoot] 時間:168.18s | 弾数: 40/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:168.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:168.53s | 弾数: 39/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:168.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:168.88s | 弾数: 38/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:168.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:169.23s | 弾数: 37/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:169.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:169.58s | 弾数: 36/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:169.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:169.93s | 弾数: 35/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:169.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:170.28s | 弾数: 34/50  | ペレット: 1 (Hit:1) | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:170.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1
+[Shoot] 時間:170.63s | 弾数: 33/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:170.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:170.98s | 弾数: 32/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:170.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:171.33s | 弾数: 31/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:171.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:171.68s | 弾数: 30/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:171.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:172.03s | 弾数: 29/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:172.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:172.38s | 弾数: 28/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:172.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:172.73s | 弾数: 27/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:172.73s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:173.08s | 弾数: 26/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:173.08s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:173.43s | 弾数: 25/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:173.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:173.78s | 弾数: 24/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:173.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:174.13s | 弾数: 23/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:174.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:174.48s | 弾数: 22/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:174.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:174.83s | 弾数: 21/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:174.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:175.18s | 弾数: 20/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:175.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:175.53s | 弾数: 19/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:175.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:175.88s | 弾数: 18/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:175.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:176.23s | 弾数: 17/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:176.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:176.58s | 弾数: 16/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:176.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:176.93s | 弾数: 15/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:176.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:177.28s | 弾数: 14/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:177.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:177.63s | 弾数: 13/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:177.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:177.98s | 弾数: 12/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:177.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:178.33s | 弾数: 11/50  | ペレット: 1 (Hit:1) | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:178.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:178.68s | 弾数: 10/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:178.68s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:179.03s | 弾数:  9/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:179.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1
+[Shoot] 時間:179.38s | 弾数:  8/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:179.38s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
+[Shoot] 時間:179.73s | 弾数:  7/50  | ペレット: 1 (Hit:1) | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Skill] 時間:179.73s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1
