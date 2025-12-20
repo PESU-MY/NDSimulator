@@ -1,232 +1,29 @@
 === Simulation Start ===
-[Config] Weapon: アルカナ's RL
-[Config] Type: CHARGE (Class: RL)
-[Config] Max Ammo: 6
-[Config] Fire Interval (RAPID default): 5
-[Shoot] 時間:  0.23s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:  0.63s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:  1.03s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:  1.43s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:  1.83s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:  2.23s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Skill] 時間:  5.03s | 名前:Burst: 愚者のカード_Stage_2     | Dmg:    70,313 | Hits:1
-[Shoot] 時間:  5.13s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:  5.53s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:  5.93s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:  6.33s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:  6.73s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:  7.13s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 10.03s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 10.43s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 10.83s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 11.23s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 11.63s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 12.03s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 14.93s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 15.33s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 15.73s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 16.13s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 16.53s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 16.93s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 19.83s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 20.23s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 20.63s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 21.03s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 21.43s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 21.83s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 24.73s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    96,261 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 25.13s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 25.53s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 25.93s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 26.33s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 26.73s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 29.63s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 30.03s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 30.43s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間: 30.83s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間: 31.23s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 31.63s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 34.53s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 34.93s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 35.33s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間: 35.73s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 36.13s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 36.53s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間: 39.43s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 39.83s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Skill] 時間: 40.03s | 名前:Burst: 愚者のカード_Stage_2     | Dmg:    70,313 | Hits:1
-[Shoot] 時間: 40.23s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 40.63s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 41.03s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 41.43s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 44.33s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 44.73s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 45.13s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 45.53s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 45.93s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 46.33s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 49.23s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 49.63s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 50.03s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 50.43s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    96,261 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 50.83s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    96,261 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 51.23s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 54.13s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 54.53s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 54.93s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 55.33s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 55.73s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 56.13s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 59.03s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 59.43s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 59.83s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 60.23s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 60.63s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 61.03s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間: 63.93s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 64.33s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 64.73s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 65.13s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 65.53s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間: 65.93s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 68.83s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 69.23s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 69.63s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 70.03s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 70.43s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 70.83s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間: 73.73s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 74.13s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 74.53s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 74.93s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Skill] 時間: 75.03s | 名前:Burst: 愚者のカード_Stage_2     | Dmg:   105,470 | Hits:1
-[Shoot] 時間: 75.33s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 75.73s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 78.63s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 79.03s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 79.43s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 79.83s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 80.23s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 80.63s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 83.53s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 83.93s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 84.33s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 84.73s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間: 85.13s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 85.53s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    96,261 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 88.43s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 88.83s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    96,261 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 89.23s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 89.63s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 90.03s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 90.43s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    96,261 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 93.33s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    96,261 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 93.73s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 94.13s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 94.53s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 94.93s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間: 95.33s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 98.23s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 98.63s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 99.03s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間: 99.43s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間: 99.83s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:100.23s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:103.13s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:103.53s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:103.93s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:104.33s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:104.73s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:105.13s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:108.03s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:108.43s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:108.83s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:109.23s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:109.63s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Skill] 時間:110.03s | 名前:Burst: 愚者のカード_Stage_2     | Dmg:    70,313 | Hits:1
-[Shoot] 時間:110.03s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    82,552 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:112.93s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:113.33s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:113.73s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:114.13s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:114.53s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:114.93s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:117.83s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:118.23s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:118.63s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:119.03s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:119.43s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:119.83s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:122.73s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:123.13s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:123.53s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:123.93s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:124.33s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:124.73s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:127.63s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:128.03s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:128.43s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:128.83s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:129.23s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    96,261 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:129.63s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:132.53s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:132.93s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:133.33s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:133.73s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:134.13s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:134.53s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:137.43s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:137.83s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:138.23s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:138.63s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:139.03s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:139.43s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:142.33s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:142.73s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:143.13s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:143.53s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:143.93s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:144.33s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Skill] 時間:145.03s | 名前:Burst: 愚者のカード_Stage_2     | Dmg:    70,313 | Hits:1
-[Shoot] 時間:147.23s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:147.63s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:148.03s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:148.43s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:148.83s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:149.23s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:152.13s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:152.53s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:152.93s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:153.33s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:153.73s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:   123,828 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:154.13s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:   103,190 | Buffs: dummy_state:1.00 | atk_dmg_buff:0.10 | taken_dmg_debuff:0.10
-[Shoot] 時間:157.03s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:157.43s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:157.83s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:158.23s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:158.63s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:159.03s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:161.93s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:162.33s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:162.73s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:163.13s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    96,261 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:163.53s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:163.93s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    77,009 | Buffs: atk_dmg_buff:0.07 | atk_buff_rate:0.05
-[Shoot] 時間:166.83s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:167.23s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:167.63s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:168.03s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:168.43s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:168.83s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    85,281 | Buffs: None
-[Shoot] 時間:171.73s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:172.13s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:172.53s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:172.93s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:173.33s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:173.73s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:176.63s | 弾数:  5/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:177.03s | 弾数:  4/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:177.43s | 弾数:  3/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:177.83s | 弾数:  2/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:178.23s | 弾数:  1/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
-[Shoot] 時間:178.63s | 弾数:  0/6   | ペレット: 1 (Hit:1) | Dmg:    68,225 | Buffs: None
+[Config] Weapon: ソルジャーE.G.'s AR
+[Config] Type: RAPID (Class: AR)
+[Config] Max Ammo: 60
+[Shoot] 時間:  0.22s | 弾数: 59/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  0.30s | 弾数: 58/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  0.38s | 弾数: 57/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  0.47s | 弾数: 56/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  0.55s | 弾数: 55/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  0.63s | 弾数: 54/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  0.72s | 弾数: 53/60  | ペレット: 1 (Hit:1) | Dmg:     8,950 | Buffs: None
+[Shoot] 時間:  0.80s | 弾数: 52/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  0.88s | 弾数: 51/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  0.97s | 弾数: 50/60  | ペレット: 1 (Hit:1) | Dmg:     5,370 | Buffs: None
+[Shoot] 時間:  1.05s | 弾数: 49/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  1.13s | 弾数: 48/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  1.22s | 弾数: 47/60  | ペレット: 1 (Hit:1) | Dmg:     5,370 | Buffs: None
+[Shoot] 時間:  1.30s | 弾数: 46/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  1.38s | 弾数: 45/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  1.47s | 弾数: 44/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  1.55s | 弾数: 43/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  1.63s | 弾数: 42/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  1.72s | 弾数: 41/60  | ペレット: 1 (Hit:1) | Dmg:     5,370 | Buffs: None
+[Shoot] 時間:  1.80s | 弾数: 40/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  1.88s | 弾数: 39/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  1.97s | 弾数: 38/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  2.05s | 弾数: 37/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  2.13s | 弾数: 36/60  | ペレット: 1 (Hit:1) | Dmg:     3,580 | Buffs: None
+[Shoot] 時間:  2.22s | 弾数: 35/60  | ペレット: 1 (Hit:1) | Dmg:     5,370 | Buffs: None

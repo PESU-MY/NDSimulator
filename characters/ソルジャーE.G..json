@@ -1,0 +1,77 @@
+{
+  "name": "ソルジャーE.G.",
+  "weapon_type": "AR",
+  "element": "Electric",
+  "class": "Attacker",
+  "squad": "Elysion",
+  "burst_stage": "3",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.17,
+    "damage_rate": 0.1401,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "S1: イーグルアイ",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.0792,
+        "duration": 5.0,
+        "probability": 5
+      },
+      "description": "通常攻撃命中時、5%の確率で発動"
+    },
+    {
+      "name": "S2: イーグルタクティク (通常)",
+      "trigger_type": "time_interval",
+      "trigger_value": 9.0,
+      "effect_type": "buff",
+      "target": "self",
+      "condition": {
+        "not_has_tag": "magic_card_active"
+      },
+      "kwargs": {
+        "buff_type": "max_ammo_rate",
+        "value": 1.1277,
+        "duration": 5.0
+      }
+    },
+    {
+      "name": "S2: イーグルタクティク (短縮)",
+      "trigger_type": "time_interval",
+      "trigger_value": 2.25,
+      "effect_type": "buff",
+      "target": "self",
+      "condition": {
+        "has_tag": "magic_card_active"
+      },
+      "kwargs": {
+        "buff_type": "max_ammo_rate",
+        "value": 1.1277,
+        "duration": 5.0
+      },
+      "description": "アルカナバフ時：2.25秒間隔"
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: イーグルショット",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40.0,
+    "effect_type": "damage",
+    "target": "enemy",
+    "kwargs": {
+      "multiplier": 7.20,
+      "profile": {
+        "is_skill_damage": true,
+        "force_full_burst": true
+      }
+    }
+  }
+}

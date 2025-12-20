@@ -1,0 +1,103 @@
+{
+  "name": "メイデン",
+  "weapon_type": "SG",
+  "element": "Electric",
+  "class": "Attacker",
+  "squad": "Extrinsic",
+  "burst_stage": "3",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 0.67,
+    "damage_rate": 2.316,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "pellet_count": 10
+  },
+  "skills": [
+    {
+      "name": "S1: 言霊：技巧の言 (復讐バフ)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "condition": {
+        "has_flag": "revenge_mode"
+      },
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value": 0.2666,
+        "duration": 99999
+      },
+      "description": "復讐状態なら攻撃力UP"
+    },
+    {
+      "name": "S2: 言霊：必中の言 (通常)",
+      "trigger_type": "time_interval",
+      "trigger_value": 30.0,
+      "effect_type": "buff",
+      "target": "self",
+      "condition": {
+        "not_has_tag": "magic_card_active"
+      },
+      "kwargs": {
+        "buff_type": "crit_dmg_buff",
+        "value": 1.5284,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "S2: 言霊：必中の言 (短縮)",
+      "trigger_type": "time_interval",
+      "trigger_value": 7.5,
+      "effect_type": "buff",
+      "target": "self",
+      "condition": {
+        "has_tag": "magic_card_active"
+      },
+      "kwargs": {
+        "buff_type": "crit_dmg_buff",
+        "value": 1.5284,
+        "duration": 10.0
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 言霊：確かな言葉",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "enemy",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "multiplier": 4.5787,
+          "profile": {
+            "is_skill_damage": true,
+            "force_full_burst": true
+          }
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "condition": {
+          "has_flag": "revenge_mode"
+        },
+        "kwargs": {
+          "multiplier": 4.5787,
+          "profile": {
+            "is_skill_damage": true,
+            "force_full_burst": true
+          }
+        },
+        "description": "復讐状態なら追加ダメージ"
+      }
+    ]
+  }
+}

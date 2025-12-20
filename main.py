@@ -96,7 +96,7 @@ def load_character_full_setup(char_file_path):
 if not os.path.exists('characters'): os.makedirs('characters')
 
 # ドロシーの読み込み (命中率仕様変更の確認用)
-nikke_setup = load_character_full_setup('characters/アルカナ.json')
+nikke_setup = load_character_full_setup('characters/ソルジャーE.G..json')
 
 # --- 追加: 常時バーストCT短縮スキル ---
 passive_cd_reduction = Skill(
@@ -111,8 +111,8 @@ passive_cd_reduction = Skill(
 
 # バースト編成
 b1 = BurstCharacter("B1", 1, 20, None, element="Wind", weapon_type="SMG", base_atk=15000)
-#b2 = BurstCharacter("B2", 2, 20, None, element="Water", weapon_type="AR", base_atk=18000)
-b2_nikke = BurstCharacter(
+b2 = BurstCharacter("B2", 2, 20, None, element="Water", weapon_type="AR", base_atk=18000)
+b3_nikke = BurstCharacter(
     nikke_setup['name'], 
     3, 
     40, 
@@ -124,7 +124,7 @@ b2_nikke = BurstCharacter(
 )
 b3_dummy = BurstCharacter("B3_Dummy", 3, 40, None, element="Fire", weapon_type="MG", base_atk=10000)
 
-rotation = [[b1], [b2_nikke], [b3_dummy, b3_dummy]]
+rotation = [[b1], [b2], [b3_nikke, b3_dummy]]
 
 sim = NikkeSimulator(
     weapon_config=nikke_setup['weapon_config'],

@@ -13,6 +13,7 @@ class WeaponConfig:
     def __init__(self, data):
         self.name = data.get('name', 'Unknown Weapon')
         
+        # 武器タイプの判定ロジック強化
         raw_type = data.get('weapon_type', 'AR')
         self.weapon_class = data.get('weapon_class', raw_type)
         
@@ -24,10 +25,8 @@ class WeaponConfig:
             
         self.element = data.get('element', 'Iron')
         
-        # --- 追加: バースト段階の読み込み ---
-        # "1", "2", "3" などの文字列または数値を受け取る
+        # バースト段階の読み込み
         self.burst_stage = str(data.get('burst_stage', '3')) 
-        # -------------------------------
 
         self.multiplier = data.get('multiplier', 1.0)
         self.max_ammo = data.get('max_ammo', 60)
@@ -48,7 +47,10 @@ class WeaponConfig:
         self.disable_reload_buffs = data.get('disable_reload_buffs', False)
         self.disable_charge_buffs = data.get('disable_charge_buffs', False)
         self.disable_attack_speed_buffs = data.get('disable_attack_speed_buffs', False)
-        self.charge_time = data.get('charge_time', 0)
+        
+        # チャージ時間の取得（RL/SRの場合、デフォルト値を設定）
+        default_charge = 1.0 if self.weapon_class in ["RL", "SR"] else 0
+        self.charge_time = data.get('charge_time', default_charge)
         self.charge_mult = data.get('charge_mult', 1.0)
         
         self.mg_warmup_map = []
@@ -305,12 +307,6 @@ class NikkeSimulator:
         self.log(f"[Config] Weapon: {self.weapon.name}")
         self.log(f"[Config] Type: {self.weapon.type} (Class: {self.weapon.weapon_class})")
         self.log(f"[Config] Max Ammo: {self.weapon.max_ammo}")
-        self.log(f"[Config] Fire Interval (RAPID default): {self.weapon.fire_interval}")
-        if self.weapon.type == "MG":
-            self.log(f"[Config] MG Warmup Table: {len(self.weapon.mg_warmup_map)} stages")
-            if len(self.weapon.mg_warmup_map) > 0:
-                first = self.weapon.mg_warmup_map[0]
-                self.log(f"[Config] Initial Interval: {first['interval']}F")
         
         self.current_max_ammo = self.weapon.max_ammo
         self.current_ammo = self.current_max_ammo
@@ -328,6 +324,10 @@ class NikkeSimulator:
                 self.all_burst_chars.append(char)
         
         self.last_burst_char_name = None
+        
+        # --- 追加: 特殊フラグ管理 ---
+        self.special_flags = set()
+        # ------------------------
 
         self.state = "READY"
         self.state_timer = 0
@@ -384,33 +384,28 @@ class NikkeSimulator:
         my_weapon = self.weapon.weapon_class
         my_atk = self.BASE_ATK
         
-        # --- 変更: 複合条件チェック ---
-        # 1つでも不一致があれば False を返す
-        
-        # 属性
         if 'element' in condition:
             if my_element != condition['element']: return False
-            
-        # 武器種
+        
         if 'weapon_type' in condition:
             if my_weapon != condition['weapon_type']: return False
             
-        # バースト段階 (メインキャラのバースト段階)
         if 'burst_stage' in condition:
-            # メインキャラのバースト段階は self.weapon.burst_stage に格納されている想定
             my_stage = getattr(self.weapon, 'burst_stage', '0')
             if str(my_stage) != str(condition['burst_stage']): return False
 
-        # 直前のバースト使用者か
         if condition.get('is_last_burst_user'):
             if self.last_burst_char_name != my_name: return False
             
-        # クラス
-        if 'class' in condition:
-            # 現状Mainのクラスは持っていないが、必要ならWeaponConfigに追加
-            pass 
+        # --- 追加: フラグチェック ---
+        if "has_flag" in condition:
+            flag_name = condition["has_flag"]
+            if flag_name not in self.special_flags: return False
+        if "not_has_flag" in condition:
+            flag_name = condition["not_has_flag"]
+            if flag_name in self.special_flags: return False
+        # ------------------------
 
-        # タグ関連
         if "not_has_tag" in condition:
             tag = condition["not_has_tag"]
             if self.buff_manager.has_active_tag(tag, frame): return False
@@ -418,7 +413,6 @@ class NikkeSimulator:
             tag = condition["has_tag"]
             if not self.buff_manager.has_active_tag(tag, frame): return False
             
-        # スタック数
         if "stack_min" in condition or "stack_max" in condition:
             stack_name = condition.get("stack_name")
             if stack_name:
@@ -427,11 +421,9 @@ class NikkeSimulator:
                 max_v = condition.get("stack_max", 999)
                 if not (min_v <= count <= max_v): return False
         
-        # 従来の 'type' 指定の互換性維持 (念のため)
         if 'type' in condition:
             if condition['type'] == 'element' and my_element != condition['value']: return False
             if condition['type'] == 'weapon_type' and my_weapon != condition['value']: return False
-            # ... 他のタイプも必要に応じて
             
         return True
 
@@ -452,7 +444,7 @@ class NikkeSimulator:
         if frame_type == 'attack' and self.weapon.disable_attack_speed_buffs: return int(original_frame)
         
         rate = self.buff_manager.get_total_value(f'{frame_type}_speed_rate', current_frame)
-        rate = min(rate, 1.0)
+        if rate <= -1.0: rate = -0.99
         
         fixed = self.buff_manager.get_total_value(f'{frame_type}_speed_fixed', current_frame)
         return self.calculate_reduced_frame(original_frame, rate, fixed)
@@ -572,32 +564,6 @@ class NikkeSimulator:
             
         return layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem, is_crit_hit
 
-    def should_apply_skill(self, skill, frame):
-        is_target_valid = True
-        if skill.target == 'self':
-            if skill.owner_name != 'Main' and skill.owner_name != self.character_name: 
-                is_target_valid = False
-        if not is_target_valid: return False
-
-        if skill.condition:
-            if "not_has_tag" in skill.condition:
-                tag = skill.condition["not_has_tag"]
-                if self.buff_manager.has_active_tag(tag, frame):
-                    return False
-            if "has_tag" in skill.condition:
-                tag = skill.condition["has_tag"]
-                if not self.buff_manager.has_active_tag(tag, frame):
-                    return False
-            if "stack_min" in skill.condition or "stack_max" in skill.condition:
-                stack_name = skill.condition.get("stack_name")
-                if stack_name:
-                    count = self.buff_manager.get_stack_count(stack_name, frame)
-                    min_v = skill.condition.get("stack_min", -999)
-                    max_v = skill.condition.get("stack_max", 999)
-                    if not (min_v <= count <= max_v):
-                        return False
-        return True
-
     def apply_skill_effect(self, skill, frame, is_full_burst, attacker_element="None"):
         if not self.should_apply_skill(skill, frame): return 0
         if skill.target == 'allies' and skill.target_condition:
@@ -625,6 +591,15 @@ class NikkeSimulator:
             
             if calc_atk > 0:
                 kwargs['value'] = calc_atk * ratio
+
+        # --- 追加: フラグ有効化 ---
+        if skill.effect_type == 'activate_flag':
+            flag_name = kwargs.get('flag_name')
+            if flag_name:
+                self.special_flags.add(flag_name)
+                self.log(f"[Flag] Activated special flag: {flag_name}")
+            return 0
+        # -----------------------
 
         if skill.effect_type == 'convert_hp_to_atk':
             rate = skill.kwargs.get('value', 0)
@@ -843,6 +818,10 @@ class NikkeSimulator:
                 
         self.state = "READY"; self.state_timer = 0
 
+    # -------------------------------------------------------------------------
+    # [修正] process_trigger メソッド
+    # 確率判定 (probability) のロジックを追加
+    # -------------------------------------------------------------------------
     def process_trigger(self, trigger_type, val, frame, is_full_burst, attacker_char=None):
         total_dmg = 0
         attacker_element = attacker_char.element if attacker_char else self.weapon.element
@@ -882,13 +861,20 @@ class NikkeSimulator:
                         if interval and val % interval == 0:
                             is_triggered = True
                 
+                # --- 追加: 確率判定 ---
+                # skill.kwargs に 'probability' (0~100) が設定されていれば乱数で判定
+                if is_triggered and 'probability' in skill.kwargs:
+                    prob = skill.kwargs['probability']
+                    if random.random() * 100 > prob:
+                        is_triggered = False
+                # --------------------
+
                 if is_triggered: triggered_skills.append(skill)
         
         for skill in triggered_skills:
             total_dmg += self.apply_skill_effect(skill, frame, is_full_burst, attacker_element)
             
         return total_dmg, len(triggered_skills) > 0
-
     def update_cooldowns(self):
         for char in self.all_burst_chars:
             if char.current_cooldown > 0: char.current_cooldown -= 1
@@ -1005,7 +991,9 @@ class NikkeSimulator:
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration: self.state = "CHARGING"; self.state_timer = 0
             elif self.state == "CHARGING":
-                if self.state_timer == 0: self.current_action_duration = self.get_buffed_frames('charge', self.weapon.charge_time, frame)
+                if self.state_timer == 0:
+                    base_frames = self.weapon.charge_time * self.FPS
+                    self.current_action_duration = self.get_buffed_frames('charge', base_frames, frame)
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration: self.state = "SHOOTING"; self.state_timer = 0
             elif self.state == "SHOOTING":
@@ -1030,26 +1018,23 @@ class NikkeSimulator:
                 if self.state_timer == 0: self.current_action_duration = self.get_buffed_frames('attack', self.weapon.windup_frames, frame)
                 self.mg_warmup_frames = min(self.weapon.mg_max_warmup, self.mg_warmup_frames + 1)
                 self.state_timer += 1
-                if self.state_timer >= self.current_action_duration: self.state = "SHOOTING"; self.state_timer = 0 
+                if self.state_timer >= self.current_action_duration: 
+                    self.state = "SHOOTING"
+                    self.state_timer = 0 
+                    if self.mg_warmup_frames < self.weapon.windup_frames: self.mg_warmup_frames = self.weapon.windup_frames
             elif self.state == "SHOOTING":
                 original_interval = self.get_mg_interval()
                 buffed_interval = self.get_buffed_frames('attack', original_interval, frame)
                 
-                # --- 追加: 強制発射間隔バフの確認 ---
                 forced_interval = self.buff_manager.get_total_value('force_fire_interval', frame)
                 if forced_interval > 0:
                     buffed_interval = int(forced_interval)
-                # --------------------------------
                 
                 if self.state_timer == 0:
                     perform_shoot()
-                    
-                    # --- 変更点: MG立ち上げ速度バフの適用 ---
                     warmup_speed = 1.0 + self.buff_manager.get_total_value('mg_warmup_speed', frame)
-                    if warmup_speed < 0: warmup_speed = 0 # 負の値は停止とする
+                    if warmup_speed < 0: warmup_speed = 0
                     increment = warmup_speed
-                    # ------------------------------------
-                    
                     self.mg_warmup_frames = min(self.weapon.mg_max_warmup, self.mg_warmup_frames + increment)
                     if self.current_ammo <= 0: self.state = "WINDDOWN"; self.state_timer = 0
                     else: self.state_timer = max(0, buffed_interval - 1)
