@@ -4,7 +4,11 @@ from simulator import NikkeSimulator, WeaponConfig, Skill, Character
 import matplotlib.pyplot as plt
 
 # --- ヘルパー関数: JSONからキャラデータを読み込んでCharacterを作成 ---
-def create_character_from_json(char_file_path):
+def create_character_from_json(char_file_path, skill_level=10):
+    if not os.path.exists(char_file_path):
+        print(f"[Error] File not found: {char_file_path}")
+        return None
+
     with open(char_file_path, 'r', encoding='utf-8') as f:
         char_data = json.load(f)
     
@@ -15,21 +19,19 @@ def create_character_from_json(char_file_path):
     char_class = char_data.get('class', 'Attacker')
     burst_stage = char_data.get('burst_stage', '3')
     
-    # 武器設定 (標準ファイルがあれば読み込む)
+    # 武器設定
     weapon_file_path = f"weapons/{weapon_type_str}_standard.json"
     weapon_data = {}
     if os.path.exists(weapon_file_path):
         with open(weapon_file_path, 'r', encoding='utf-8') as f:
             weapon_data = json.load(f)
     else:
-        # なければデフォルト値で埋める
         weapon_data = {'weapon_type': weapon_type_str, 'name': 'Default Weapon'}
 
     weapon_data['name'] = f"{char_name}'s Weapon"
     weapon_data['element'] = element
     weapon_data['burst_stage'] = burst_stage
     
-    # statsで上書き
     for key, value in stats.items():
         if key == 'reload_time': weapon_data['reload_frames'] = int(value * 60)
         elif key == 'damage_rate': weapon_data['multiplier'] = value
@@ -38,7 +40,6 @@ def create_character_from_json(char_file_path):
 
     weapon_config = WeaponConfig(weapon_data)
     
-    # 基礎ステータス (クラス別補正など)
     base_atk = 25554
     base_hp = 583734
     if char_class == 'Supporter':
@@ -51,14 +52,48 @@ def create_character_from_json(char_file_path):
     if 'base_atk' in stats: base_atk = stats['base_atk']
     if 'base_hp' in stats: base_hp = stats['base_hp']
 
-    # スキル読み込み
+    # スキル読み込み用内部関数
     def parse_skill_data(s_data):
         init_kwargs = s_data.get('kwargs', {}).copy()
-        for k, v in s_data.items():
-            if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs', 'stages']:
-                init_kwargs[k] = v
+        
+        # ▼▼▼ スキルレベル処理 (Lv1~10 -> index 0~9) ▼▼▼
+        level_idx = max(0, min(9, skill_level - 1))
+        
+        # 1. トップレベルのkwargsを展開
+        keys_to_process = list(init_kwargs.keys())
+        for k in keys_to_process:
+            if k.endswith('_list') and isinstance(init_kwargs[k], list):
+                base_key = k[:-5] # "_list" を削除
+                if base_key not in init_kwargs:
+                    val_list = init_kwargs[k]
+                    if len(val_list) > level_idx:
+                        init_kwargs[base_key] = val_list[level_idx]
+        
+        # 2. stages 内の展開 (重要: ここで multiplier がセットされる)
         stages = []
-        if 'stages' in s_data: stages = s_data['stages']
+        if 'stages' in s_data: 
+            raw_stages = s_data['stages']
+            for i, st in enumerate(raw_stages):
+                # 辞書の中身を直接書き換えるのではなく、コピーして編集
+                st_copy = st.copy()
+                st_kwargs = st.get('kwargs', {}).copy()
+                
+                st_keys = list(st_kwargs.keys())
+                for k in st_keys:
+                    if k.endswith('_list') and isinstance(st_kwargs[k], list):
+                        base_key = k[:-5]
+                        if base_key not in st_kwargs:
+                            val_list = st_kwargs[k]
+                            if len(val_list) > level_idx:
+                                resolved_val = val_list[level_idx]
+                                st_kwargs[base_key] = resolved_val
+                                # デバッグログ: バーストスキルの倍率解決を確認
+                                if base_key == 'multiplier':
+                                    print(f"[Debug] {s_data['name']} Stage {i}: multiplier resolved to {resolved_val}")
+
+                st_copy['kwargs'] = st_kwargs
+                stages.append(st_copy)
+
         return Skill(
             name=s_data['name'],
             trigger_type=s_data['trigger_type'],
@@ -75,24 +110,30 @@ def create_character_from_json(char_file_path):
             s.owner_name = char_name
             skills.append(s)
             
+    # バーストスキル読み込み（stages対応）
     if 'burst_skill' in char_data:
-        b_skill = parse_skill_data(char_data['burst_skill'])
+        # burst_skillもtrigger_typeに関わらずパースする
+        # ※JSON側で on_use_burst_skill になっている必要がある
+        b_data = char_data['burst_skill']
+        b_skill = parse_skill_data(b_data)
         b_skill.owner_name = char_name
-        b_skill.trigger_type = 'on_use_burst_skill' # バーストスキルとして登録
+        
+        # 強制的にバーストスキルとしてマークするが、
+        # engine側は trigger_type='on_use_burst_skill' を探すため
+        # JSON側での指定が正しいことが前提
+        if b_skill.trigger_type != 'on_use_burst_skill':
+            # 補完: JSONで manual になっていてもここで上書きして動くようにする
+            b_skill.trigger_type = 'on_use_burst_skill' 
+        
         skills.append(b_skill)
 
     return Character(char_name, weapon_config, skills, base_atk, base_hp, element, burst_stage, char_class)
 
 # --- ヘルパー関数: ダミーキャラ作成 ---
 def create_dummy_character(name, burst_stage, weapon_type="AR", skills=None):
-# 最小限の設定
     weapon_data = {'name': f"{name}_Weapon", 'weapon_type': weapon_type, 'burst_stage': str(burst_stage)}
     wc = WeaponConfig(weapon_data)
-    
-    # スキルリストの処理
     skill_list = skills if skills else []
-    
-    # is_dummy=True にして計算をスキップさせる
     return Character(name, wc, skill_list, base_atk=1, base_hp=1, element="Electric", burst_stage=burst_stage, is_dummy=False)
 
 
@@ -100,35 +141,38 @@ def create_dummy_character(name, burst_stage, weapon_type="AR", skills=None):
 
 if not os.path.exists('characters'): os.makedirs('characters')
 
-#ダミーCT短縮スキルの作成
 dummy_ct_skill = Skill(
     name="Dummy B1: CT Reduction",
     trigger_type="on_use_burst_skill", 
     trigger_value=0,
     effect_type="cooldown_reduction",
     target="allies", 
-    value=5.0  # ここを修正
+    value=5.0
 )
 
 # 1. キャラクターの読み込み
-#burst1_nikke = create_character_from_json('characters/liter.json')
-burst3_nikke = create_character_from_json('characters/アスカ_WILLE.json')
+print(">>> キャラクター読み込み開始")
+burst3_nikke = create_character_from_json('characters/アスカ_WILLE.json', skill_level=10)
+rei_nikke = create_character_from_json('characters/レイ.json', skill_level=10)
+toob_nikke = create_character_from_json('characters/2B.json', skill_level=10) # 2B
+print(">>> キャラクター読み込み完了\n")
 
 # 2. ダミーキャラの作成
-dummy_b1 = create_dummy_character("Dummy_B1", 1, "SMG",skills=[dummy_ct_skill])
+dummy_b1 = create_dummy_character("Dummy_B1", 1, "SMG", skills=[dummy_ct_skill])
 dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG")
-dummy_b3 = create_dummy_character("Dummy_B3_Sub", 3, "MG")
-dummy_non = create_dummy_character("Dummy_NonBurst", 3, "RL")
+dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 
-# 3. 編成リスト作成 (Simulatorに渡す全キャラリスト)
-all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_non]
+# 3. 編成リスト作成 
+# アスカ編成例: [dummy_b1, dummy_b2, burst3_nikke, rei_nikke, create_dummy_character("Dummy_Non", 3, "RL")]
+# 2B単独テスト用: 
+all_characters = [dummy_b1, dummy_b2, toob_nikke, create_dummy_character("Dummy_4", 3, "MG"), create_dummy_character("Dummy_5", 3, "RL")]
 
-# 4. バーストローテーション設定 ( [[B1], [B2], [B3, B3_sub]] )
+# 4. バーストローテーション (2Bを使用)
 rotation = [
-    [dummy_b1],          # Burst I
-    [dummy_b2],       # Burst II
-    [burst3_nikke, dummy_b3] # Burst III
+    [dummy_b1],
+    [dummy_b2],
+    [toob_nikke,dummy_b3] 
 ]
 
 # 5. シミュレーター初期化
@@ -139,7 +183,7 @@ sim = NikkeSimulator(
     enemy_core_size=3.0,
     enemy_size=100,
     part_break_mode=False,
-    burst_charge_time=5.0  # 追加: バースト溜め時間（秒）。デフォルト5秒
+    burst_charge_time=5.0
 )
 
 # 6. 実行

@@ -40,7 +40,7 @@
       "effect_type": "cumulative_stages",
       "target": "enemy",
       "condition": {
-        "has_tag": "annihilation_mode"
+        "self_has_tag": "annihilation_mode"
       },
       "kwargs": {
         "trigger_all_stages": true
@@ -78,7 +78,7 @@
       "effect_type": "buff",
       "target": "self",
       "condition": {
-        "has_tag": "annihilation_mode"
+        "self_has_tag": "annihilation_mode"
       },
       "kwargs": {
         "buff_type": "atk_dmg_buff",
@@ -181,7 +181,7 @@
               "target": "self",
               "kwargs": {
                 "buff_type": "mg_warmup_speed",
-                "value": -0.5,
+                "value": -1.0,
                 "duration": 3.0
               }
             },

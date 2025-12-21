@@ -2,7 +2,7 @@ from models import DamageProfile, Skill, WeaponConfig
 from utils import round_half_up
 
 class SkillEngineMixin:
-    # ... (既存の check_target_condition, should_apply_skill は変更なし) ...
+    # ... (check_target_condition は変更なし) ...
     def check_target_condition(self, condition, caster, target, frame):
         if not condition: return True
         
@@ -35,8 +35,10 @@ class SkillEngineMixin:
                 if not (min_v <= count <= max_v): return False
         return True
 
-    def should_apply_skill(self, skill, frame):
+    # ▼▼▼ 修正: caster 引数を追加し、self_has_tag 対応を追加 ▼▼▼
+    def should_apply_skill(self, skill, frame, caster=None):
         if skill.condition:
+            # 既存: 敵(全体)のデバフ状況チェック
             if "not_has_tag" in skill.condition:
                 tag = skill.condition["not_has_tag"]
                 if self.enemy_debuffs.has_active_tag(tag, frame):
@@ -45,6 +47,17 @@ class SkillEngineMixin:
                 tag = skill.condition["has_tag"]
                 if not self.enemy_debuffs.has_active_tag(tag, frame):
                      return False
+            
+            # 新規: 自身のバフ状況チェック
+            if "self_has_tag" in skill.condition and caster:
+                tag = skill.condition["self_has_tag"]
+                if not caster.buff_manager.has_active_tag(tag, frame):
+                    return False
+            if "self_not_has_tag" in skill.condition and caster:
+                tag = skill.condition["self_not_has_tag"]
+                if caster.buff_manager.has_active_tag(tag, frame):
+                    return False
+
             if skill.condition.get('is_last_burst_user'):
                 if self.last_burst_char_name != skill.owner_name:
                     return False
@@ -57,11 +70,13 @@ class SkillEngineMixin:
                 return 0
             self.executed_skill_ids.add(s_id)
 
-        if not self.should_apply_skill(skill, frame): return 0
+        # ▼▼▼ 修正: caster を渡す ▼▼▼
+        if not self.should_apply_skill(skill, frame, caster): return 0
         
         total_dmg = 0
         kwargs = skill.kwargs.copy()
 
+        # ... (以下、既存コードと同じ) ...
         if skill.effect_type == 'cumulative_stages':
             if skill.kwargs.get('trigger_all_stages'):
                 for i, stage_data in enumerate(skill.stages):
@@ -111,7 +126,7 @@ class SkillEngineMixin:
                 if self.check_target_condition(skill.target_condition, caster, char, frame):
                     targets.append(char)
         elif skill.target == 'enemy':
-            targets.append(caster)
+            targets.append(caster) # 便宜上casterを入れているがターゲット処理は後続で行う
 
         if not targets and skill.effect_type == 'damage':
             targets.append(caster)
@@ -143,18 +158,16 @@ class SkillEngineMixin:
             for tag in skill.remove_tags:
                 for t in targets:
                     t.buff_manager.remove_buffs_by_tag(tag, frame)
-                self.enemy_debuffs.remove_buffs_by_tag(tag, frame)
+                self.enemy_debuffs.remove_buffs_by_tag(tag, frame) # 敵からも削除
                 self.log(f"[Remove] Removed tags {tag} from targets via {skill.name}", target_name=caster.name)
 
         for target in targets:
-            # ▼▼▼ 新規追加: 弾丸チャージ (rate指定) ▼▼▼
             if skill.effect_type == 'ammo_charge' or skill.effect_type == 'refill_ammo':
                 rate = kwargs.get('rate', 0)
                 amount = round_half_up(target.current_max_ammo * rate)
                 target.current_ammo = min(target.current_max_ammo, target.current_ammo + amount)
                 self.log(f"[Ammo] {target.name} charged {amount} ammo (Current: {target.current_ammo})", target_name=target.name)
             
-            # ▼▼▼ 新規追加: 残弾数強制変更 (value指定) ▼▼▼
             elif skill.effect_type == 'set_current_ammo':
                 val = int(kwargs.get('value', 0))
                 target.current_ammo = max(0, min(target.current_max_ammo, val))

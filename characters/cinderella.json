@@ -65,7 +65,7 @@
   ],
   "burst_skill": {
     "name": "Burst: ガラスの靴・フルコンタクト",
-    "trigger_type": "manual",
+    "trigger_type": "on_use_burst_skill",
     "trigger_value": 0,
     "cooldown": 40,
     "effect_type": "cumulative_stages",
