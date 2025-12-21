@@ -109,19 +109,21 @@ class CharacterStatsMixin:
         return max(1, int(new_frame))
 
     def get_buffed_frames(self, frame_type, original_frame, frame):
-        if frame_type == 'reload':
-            fixed_val = self.buff_manager.get_total_value('reload_speed_fixed_value', frame)
-            if fixed_val > 0: return int(original_frame / (1.0 + fixed_val))
-            if self.weapon.disable_reload_buffs: return int(original_frame)
-        
+        # バフ無効化のチェック
+        if frame_type == 'reload' and getattr(self.weapon, 'disable_reload_buffs', False): return int(original_frame)
         if frame_type == 'charge' and self.weapon.disable_charge_buffs: return int(original_frame)
         if frame_type == 'attack' and self.weapon.disable_attack_speed_buffs: return int(original_frame)
         
         rate = self.buff_manager.get_total_value(f'{frame_type}_speed_rate', frame)
         if rate <= -1.0: rate = -0.99
-        fixed = self.buff_manager.get_total_value(f'{frame_type}_speed_fixed', frame)
+        
+        # 固定値バフはリロードとチャージにのみ適用
+        fixed = 0
+        if frame_type in ['reload', 'charge']:
+            fixed = self.buff_manager.get_total_value(f'{frame_type}_speed_fixed', frame)
         
         if frame_type == 'attack':
             return self.calculate_reduced_frame_attack(original_frame, rate, fixed)
         else:
+            # リロード・チャージは除算ではなく乗算短縮 + 固定値減算
             return self.calculate_reduced_frame(original_frame, rate, fixed)

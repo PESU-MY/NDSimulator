@@ -140,7 +140,7 @@ class CharacterActionMixin:
                 if self.state_timer == 0:
                     perform_shoot()
                     warmup_speed = 1.0 + self.buff_manager.get_total_value('mg_warmup_speed', frame)
-                    if warmup_speed < 0: warmup_speed = 0
+                    if warmup_speed < 0: warmup_speed = 0 # 安全策
                     increment = warmup_speed
                     self.mg_warmup_frames = min(self.weapon.mg_max_warmup, self.mg_warmup_frames + increment)
                     if self.current_ammo <= 0: self.state = "WINDDOWN"; self.state_timer = 0

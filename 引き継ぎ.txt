@@ -1,0 +1,99 @@
+
+
+
+（引継ぎ）
+以下は前任からの引継ぎ資料です。少々仕様に疎い部分があったので、こちらは参考にお願いします。
+
+
+NDSimulator 開発引き継ぎ資料
+
+1. プロジェクト構造とファイル間の関連
+本シミュレーターは、肥大化を防ぐためにクラス機能をMixin（ミキシン）を用いて分割・構成している。
+
+メイン実行・管理
+
+main.py: エントリーポイント。キャラクター生成、JSON読み込み、シミュレーター初期化、実行、結果表示を行う。
+
+models.py: データクラス定義（Skill, DamageProfile, WeaponConfig）。
+
+buff_manager.py: バフおよびスタックの管理クラス。
+
+重要修正: add_buff に stack_amount 引数を追加し、一度に複数スタック増加させる機能が必要。
+
+シミュレーターエンジン (NikkeSimulator クラス) engine.py で以下のMixinを継承して統合している。
+
+engine.py: メインループ (tick)、初期化、ログ出力、全体進行管理。
+
+engine_skills.py (SkillEngineMixin): スキル効果の判定と適用ロジック (apply_skill, check_target_condition)。
+
+実装済み効果: damage, buff, stack_buff, heal, refill_ammo, set_current_ammo, delayed_action, weapon_change, cooldown_reduction 等。
+
+engine_burst.py (BurstEngineMixin): バースト状態の遷移 (tick_burst_state)、クールダウン管理。
+
+処理順序: バースト発動時は「スキル発動(タグ付与) on_use_burst_skill」→「バースト突入トリガー on_burst_enter」の順で処理すること（条件判定のため）。
+
+キャラクター (Character クラス) character.py で以下のMixinを継承して統合している。
+
+character.py: 基本属性の保持、初期化。
+
+character_stats.py (CharacterStatsMixin): ステータス計算、ダメージ計算 (calculate_strict_damage)、フレーム短縮計算。
+
+character_skill.py (CharacterSkillMixin): スキル発動トリガーの判定ロジック (process_trigger)。
+
+character_action.py (CharacterActionMixin): 射撃、リロード、弾薬管理、状態遷移 (tick_action)。
+
+2. ダメージ計算・スキル処理における重要ロジック
+以下のロジックはデバッグを経て確定した仕様であるため、勝手に変更してはならない。
+
+トリガー判定ロジック (process_trigger)
+
+回数累積型 (pellet_hit, critical_hit):
+
+単純な閾値超え判定ではなく、(現在値 // 条件値) - (前回値 // 条件値) > 0 というロジックで判定する。
+
+これにより、1フレームに条件を複数回満たした場合（例：散弾で一気にヒット数が増えた、バーストで多数のクリティカルが出た）、その回数分だけスキルを発動させる。
+
+スタック数監視 (stack_count):
+
+毎フレーム監視すると無限ループするため、バフが付与されてスタックが増加した瞬間 (apply_skill 内) にのみ判定を行う。
+
+判定には delta (増加量) を用い、閾値をまたいだ場合のみ発動する。
+
+回復時 (on_receive_heal):
+
+効果タイプ heal が実行された時にのみトリガーされる。
+
+スキル効果の実装詳細 (apply_skill)
+
+heal: ログ出力を行い、ターゲットの on_receive_heal トリガーを引く。
+
+refill_ammo: 最大装弾数の割合(%)で弾丸を即時回復する。
+
+set_current_ammo: 残弾数を特定の値（例: 0）に強制変更する。
+
+delayed_action: 指定秒数(duration)経過後のフレームに、指定された sub_effect を予約実行する。
+
+ダメージ計算:
+
+scale_by_target_stack: ターゲット（敵）の指定デバフスタック数に応じてダメージ倍率を乗算する機能。
+
+3. これまでの修正・要望履歴（考慮すべき事情）
+DoT（持続ダメージ）:
+
+stack_dot および dot 効果タイプの実装。毎秒 (frame % 60 == 0) 計算しログ出力する。
+
+バースト仕様:
+
+フルバースト終了後、次のバースト受付開始までに「バースト溜め時間（デフォルト5秒）」の待機時間 (GEN 状態) を設ける。この時間はCT短縮の影響を受けない。
+
+JSONデータの扱い:
+
+warmup_table (MG用) は配列の配列 [[frame, interval], ...] 形式と、辞書リスト [{"start":.., "interval":..}] 形式の混在に注意し、安全に読み込むこと。
+
+shot_duration: バフの持続を「発射回数」で制限するパラメータ。
+
+コード生成時の制約:
+
+既存ロジックの改変禁止: ファイル分割や機能追加の際、動作確認済みの既存ロジック（特にダメージ計算式）を勝手に書き換えないこと。
+
+全文出力: 修正時は、基本的にパッチ形式で出力すること。修正箇所が1メソッド内で複数ある場合はメソッドごと出力すること。

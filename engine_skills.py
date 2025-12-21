@@ -1,6 +1,8 @@
 from models import DamageProfile, Skill, WeaponConfig
+from utils import round_half_up
 
 class SkillEngineMixin:
+    # ... (既存の check_target_condition, should_apply_skill は変更なし) ...
     def check_target_condition(self, condition, caster, target, frame):
         if not condition: return True
         
@@ -145,18 +147,28 @@ class SkillEngineMixin:
                 self.log(f"[Remove] Removed tags {tag} from targets via {skill.name}", target_name=caster.name)
 
         for target in targets:
-            if skill.effect_type == 'convert_hp_to_atk':
+            # ▼▼▼ 新規追加: 弾丸チャージ (rate指定) ▼▼▼
+            if skill.effect_type == 'ammo_charge' or skill.effect_type == 'refill_ammo':
+                rate = kwargs.get('rate', 0)
+                amount = round_half_up(target.current_max_ammo * rate)
+                target.current_ammo = min(target.current_max_ammo, target.current_ammo + amount)
+                self.log(f"[Ammo] {target.name} charged {amount} ammo (Current: {target.current_ammo})", target_name=target.name)
+            
+            # ▼▼▼ 新規追加: 残弾数強制変更 (value指定) ▼▼▼
+            elif skill.effect_type == 'set_current_ammo':
+                val = int(kwargs.get('value', 0))
+                target.current_ammo = max(0, min(target.current_max_ammo, val))
+                self.log(f"[Ammo] {target.name} ammo set to {target.current_ammo}", target_name=target.name)
+
+            elif skill.effect_type == 'convert_hp_to_atk':
                 rate = skill.kwargs.get('value', 0)
                 target.buff_manager.add_buff('conversion_hp_to_atk', rate, skill.kwargs.get('duration', 0) * self.FPS, frame, source=skill.name)
                 self.log(f"[Buff] {target.name}: HP to ATK conversion ({rate})", target_name=target.name)
             
-            # ▼▼▼ 追加: 回復効果の処理 ▼▼▼
             elif skill.effect_type == 'heal':
                 heal_val = kwargs.get('value', 0)
                 self.log(f"[Heal] {caster.name} healed {target.name} (Val: {heal_val})", target_name=target.name)
-                # ターゲットに対して「回復を受けた」トリガーを発動
                 target.process_trigger('on_receive_heal', heal_val, frame, is_full_burst, self)
-            # ▲▲▲▲▲▲
 
             elif skill.effect_type == 'buff' or skill.effect_type == 'stack_buff':
                 b_type = kwargs.get('buff_type', skill.effect_type) 
