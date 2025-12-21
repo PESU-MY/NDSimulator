@@ -17,7 +17,7 @@
       "trigger_value": 18,
       "effect_type": "cumulative_stages",
       "target": "enemy",
-      "target_condition": {
+      "condition": {
         "has_tag": "anti_at_field"
       },
       "kwargs": {

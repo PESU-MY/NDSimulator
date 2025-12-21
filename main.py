@@ -51,9 +51,16 @@ def create_character_from_json(char_file_path, skill_level=10):
     
     if 'base_atk' in stats: base_atk = stats['base_atk']
     if 'base_hp' in stats: base_hp = stats['base_hp']
+
     # スキル読み込み用内部関数
     def parse_skill_data(s_data):
         init_kwargs = s_data.get('kwargs', {}).copy()
+        
+        # ▼▼▼ 修正: JSONのトップレベルパラメータ（condition等）もinit_kwargsにコピーする ▼▼▼
+        # これがないと condition, target_condition が無視され、常時発動になってしまう
+        for k, v in s_data.items():
+            if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs', 'stages']:
+                init_kwargs[k] = v
         
         # ▼▼▼ スキルレベル処理 (Lv1~10 -> index 0~9) ▼▼▼
         level_idx = max(0, min(9, skill_level - 1))
@@ -85,19 +92,17 @@ def create_character_from_json(char_file_path, skill_level=10):
                             if len(val_list) > level_idx:
                                 resolved_val = val_list[level_idx]
                                 st_kwargs[base_key] = resolved_val
-                                # デバッグログ
                                 if base_key == 'multiplier':
                                     print(f"[Debug] {s_data.get('name', 'Unknown')} Stage {i}: multiplier resolved to {resolved_val}")
 
                 st_copy['kwargs'] = st_kwargs
                 stages.append(st_copy)
 
-        # ▼▼▼ 修正: effect_type 等を .get() で安全に取得するように変更 ▼▼▼
         return Skill(
             name=s_data.get('name', 'Unknown Skill'),
             trigger_type=s_data.get('trigger_type', 'manual'),
             trigger_value=s_data.get('trigger_value', 0),
-            effect_type=s_data.get('effect_type', 'buff'), # ここが KeyError の原因でした
+            effect_type=s_data.get('effect_type', 'buff'),
             stages=stages,
             **init_kwargs
         )
@@ -109,21 +114,12 @@ def create_character_from_json(char_file_path, skill_level=10):
             s.owner_name = char_name
             skills.append(s)
             
-    # バーストスキル読み込み（stages対応）
     if 'burst_skill' in char_data:
-        # burst_skillもtrigger_typeに関わらずパースする
-        # ※JSON側で on_use_burst_skill になっている必要がある
         b_data = char_data['burst_skill']
         b_skill = parse_skill_data(b_data)
         b_skill.owner_name = char_name
-        
-        # 強制的にバーストスキルとしてマークするが、
-        # engine側は trigger_type='on_use_burst_skill' を探すため
-        # JSON側での指定が正しいことが前提
         if b_skill.trigger_type != 'on_use_burst_skill':
-            # 補完: JSONで manual になっていてもここで上書きして動くようにする
             b_skill.trigger_type = 'on_use_burst_skill' 
-        
         skills.append(b_skill)
 
     return Character(char_name, weapon_config, skills, base_atk, base_hp, element, burst_stage, char_class)
@@ -153,7 +149,7 @@ dummy_ct_skill = Skill(
 print(">>> キャラクター読み込み開始")
 burst3_nikke = create_character_from_json('characters/アスカ_WILLE.json', skill_level=10)
 rei_nikke = create_character_from_json('characters/レイ_仮称.json', skill_level=10)
-toob_nikke = create_character_from_json('characters/2B.json', skill_level=10) # 2B
+toob_nikke = create_character_from_json('characters/2B.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
 
 # 2. ダミーキャラの作成
@@ -161,17 +157,15 @@ dummy_b1 = create_dummy_character("Dummy_B1", 1, "SMG", skills=[dummy_ct_skill])
 dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG")
 dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
-
 # 3. 編成リスト作成 
-# アスカ編成例: [dummy_b1, dummy_b2, burst3_nikke, rei_nikke, create_dummy_character("Dummy_Non", 3, "RL")]
-# 2B単独テスト用: 
+# 例: 2B単独テスト + ダミー
 all_characters = [dummy_b1, dummy_b2, burst3_nikke, rei_nikke, create_dummy_character("Dummy_5", 3, "RL")]
 
-# 4. バーストローテーション (2Bを使用)
+# 4. バーストローテーション
 rotation = [
     [dummy_b1],
     [dummy_b2],
-    [burst3_nikke,rei_nikke] 
+    [burst3_nikke, rei_nikke] 
 ]
 
 # 5. シミュレーター初期化
