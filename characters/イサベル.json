@@ -1,148 +1,162 @@
 {
   "name": "イサベル",
+  "burst_stage": "3",
   "weapon_type": "SG",
   "element": "Electric",
   "class": "Attacker",
   "squad": "Inherit",
-  "burst_stage": "3",
   "stats": {
     "max_ammo": 9,
     "reload_time": 1.86,
     "damage_rate": 2.107,
-    "windup_frames": 12,
-    "winddown_frames": 10,
     "pellet_count": 10
   },
   "skills": [
     {
-      "name": "S1: ターゲットマーキング (スタック加算)",
+      "name": "S1: ターゲットマーキング",
       "trigger_type": "on_use_burst_skill",
       "trigger_value": 0,
       "effect_type": "cumulative_stages",
-      "target": "allies",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": false
+      },
+      "description": "バースト使用回数に応じて段階解放（下位効果スタック適用）",
       "stages": [
         {
-          "effect_type": "buff",
-          "buff_type": "crit_rate_buff",
-          "value": 0.0626,
-          "duration": 45.0
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "stack_name": "TargetMarking",
+            "buff_type": "crit_rate_buff",
+            "effect_no": 1,
+            "value_list": [0.0391, 0.0417, 0.0443, 0.0469, 0.0495, 0.0522, 0.0548, 0.0574, 0.06, 0.0626],
+            "duration": 45.0,
+            "max_stack": 3
+          },
+          "description": "1回目: クリ率UP & スタック蓄積"
         },
         {
           "effect_type": "buff",
-          "buff_type": "crit_dmg_buff",
-          "value": 0.1803,
-          "duration": 45.0
+          "target": "self",
+          "kwargs": {
+            "buff_type": "crit_dmg_buff",
+            "effect_no": 2,
+            "value_list": [0.1127, 0.1202, 0.1277, 0.1352, 0.1427, 0.1503, 0.1578, 0.1653, 0.1728, 0.1803],
+            "duration": 45.0
+          },
+          "description": "2回目: クリダメUP"
         },
         {
           "effect_type": "buff",
-          "buff_type": "atk_buff_rate",
-          "value": 0.1728,
-          "duration": 45.0
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "effect_no": 3,
+            "value_list": [0.108, 0.1152, 0.1224, 0.1296, 0.1368, 0.144, 0.1512, 0.1584, 0.1656, 0.1728],
+            "duration": 45.0
+          },
+          "description": "3回目: 攻撃力UP"
         }
-      ],
-      "description": "バースト使用時にスタックを加算"
+      ]
     },
     {
-      "name": "S2: フェザー・イジェクション (通常)",
-      "trigger_type": "time_interval",
-      "trigger_value": 15.0,
+      "name": "S2: フェザー・イジェクション",
+      "trigger_type": "interval_15s",
+      "trigger_value": 0,
       "effect_type": "damage",
       "target": "enemy",
-      "condition": {
-        "not_has_tag": "magic_card_active"
-      },
       "kwargs": {
-        "multiplier": 1.7058,
-        "loop_count": 5,
-        "profile": {
-          "is_skill_damage": true
-        }
-      }
-    },
-    {
-      "name": "S2: フェザー・イジェクション (短縮)",
-      "trigger_type": "time_interval",
-      "trigger_value": 3.75,
-      "effect_type": "damage",
-      "target": "enemy",
-      "condition": {
-        "has_tag": "magic_card_active"
-      },
-      "kwargs": {
-        "multiplier": 1.7058,
-        "loop_count": 5,
+        "effect_no": 4,
+        "multiplier_list": [1.0661, 1.1372, 1.2083, 1.2793, 1.3504, 1.4215, 1.4926, 1.5636, 1.6347, 1.7058],
         "profile": {
           "is_skill_damage": true
         }
       },
-      "description": "アルカナバフ時：3.75秒間隔"
+      "description": "15秒ごとに最も防御の高い敵5機にダメージ"
+    },
+    {
+      "name": "Burst: ソニックチェイサー",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "multiplier_list": [0.9365, 0.999, 1.0614, 1.1238, 1.1863, 1.2487, 1.3111, 1.3736, 1.436, 1.4985],
+            "profile": {
+              "is_skill_damage": true
+            }
+          },
+          "description": "全体ダメージ"
+        },
+        {
+          "effect_type": "reduce_full_burst_time",
+          "target": "self",
+          "kwargs": {
+            "value": 5.0
+          },
+          "description": "フルバーストタイム5秒短縮"
+        },
+        {
+          "effect_type": "stack_buff",
+          "target": "enemy",
+          "condition": {
+            "self_stack_min": 1,
+            "stack_name": "TargetMarking"
+          },
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "taken_dmg_debuff",
+            "value_list": [0.2497, 0.2664, 0.283, 0.2997, 0.3163, 0.333, 0.3496, 0.3663, 0.3829, 0.3996],
+            "duration": 5.0,
+            "stack_name": "IsabelDebuff",
+            "max_stack": 1
+          },
+          "description": "マーキング1以上: 被ダメデバフ"
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "condition": {
+            "self_stack_min": 2,
+            "stack_name": "TargetMarking"
+          },
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [1.8731, 1.998, 2.1228, 2.2477, 2.3726, 2.4975, 2.6223, 2.7472, 2.8721, 2.997],
+            "profile": {
+              "is_skill_damage": true
+            }
+          },
+          "description": "マーキング2以上: 追加ダメージ1"
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "condition": {
+            "self_stack_min": 3,
+            "stack_name": "TargetMarking"
+          },
+          "kwargs": {
+            "effect_no": 8,
+            "multiplier_list": [2.1853, 2.331, 2.4766, 2.6223, 2.768, 2.9137, 3.0594, 3.2051, 3.3508, 3.4965],
+            "profile": {
+              "is_skill_damage": true
+            }
+          },
+          "description": "マーキング3以上: 追加ダメージ2"
+        }
+      ]
     }
   ],
   "burst_skill": {
-    "name": "Burst: ソニックチェイサー",
-    "trigger_type": "manual",
-    "trigger_value": 0,
-    "cooldown": 40.0,
-    "effect_type": "cumulative_stages",
-    "target": "enemy",
-    "kwargs": {
-      "trigger_all_stages": true
-    },
-    "stages": [
-      {
-        "effect_type": "damage",
-        "target": "enemy",
-        "kwargs": {
-          "multiplier": 1.4985,
-          "profile": {
-            "is_skill_damage": true,
-            "force_full_burst": true
-          }
-        }
-      },
-      {
-        "effect_type": "cumulative_stages",
-        "target": "enemy",
-        "condition": {
-          "stack_name": "TargetMarking",
-          "stack_min": 0
-        },
-        "kwargs": {
-          "buff_type": "taken_dmg_debuff",
-          "value": 0.3996,
-          "duration": 5.0
-        }
-      },
-      {
-        "effect_type": "damage",
-        "target": "enemy",
-        "condition": {
-          "stack_name": "TargetMarking",
-          "stack_min": 1
-        },
-        "kwargs": {
-          "multiplier": 2.997,
-          "profile": {
-            "is_skill_damage": true,
-            "force_full_burst": true
-          }
-        }
-      },
-      {
-        "effect_type": "damage",
-        "target": "enemy",
-        "condition": {
-          "stack_name": "TargetMarking",
-          "stack_min": 2
-        },
-        "kwargs": {
-          "multiplier": 3.4965,
-          "profile": {
-            "is_skill_damage": true,
-            "force_full_burst": true
-          }
-        }
-      }
-    ]
+    "name": "Burst: ソニックチェイサー (ダミー)",
+    "trigger_type": "on_use_burst_skill",
+    "description": "skillsリスト内で定義済み"
   }
 }

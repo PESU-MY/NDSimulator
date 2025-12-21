@@ -24,17 +24,16 @@ class SkillEngineMixin:
         if "has_tag" in condition:
             if not target.buff_manager.has_active_tag(condition["has_tag"], frame): return False
             
-        # ▼▼▼ 追加: 自分自身のタグ状況もターゲット判定に使えるようにする ▼▼▼
         if "self_has_tag" in condition:
             if not caster.buff_manager.has_active_tag(condition["self_has_tag"], frame): return False
         if "self_not_has_tag" in condition:
             if caster.buff_manager.has_active_tag(condition["self_not_has_tag"], frame): return False
-        # ▲▲▲ 追加ここまで ▲▲▲
 
         if "has_flag" in condition:
             if condition["has_flag"] not in target.special_flags: return False
         if "not_has_flag" in condition:
             if condition["not_has_flag"] in target.special_flags: return False
+            
         if "stack_min" in condition or "stack_max" in condition:
             stack_name = condition.get("stack_name")
             if stack_name:
@@ -42,6 +41,16 @@ class SkillEngineMixin:
                 min_v = condition.get("stack_min", -999)
                 max_v = condition.get("stack_max", 999)
                 if not (min_v <= count <= max_v): return False
+        
+        # ▼▼▼ 追加: 自身のスタック数を条件にする (self_stack_min) ▼▼▼
+        if "self_stack_min" in condition:
+            stack_name = condition.get("stack_name") # スタック名は共通
+            if stack_name:
+                count = caster.buff_manager.get_stack_count(stack_name, frame)
+                min_v = condition["self_stack_min"]
+                if count < min_v: return False
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         return True
 
     def should_apply_skill(self, skill, frame, caster=None):
@@ -63,7 +72,7 @@ class SkillEngineMixin:
             if skill.condition.get('is_last_burst_user'):
                 if self.last_burst_char_name != skill.owner_name: return False
         return True
-    # ... (apply_skill 以降は変更なし) ...
+
     def apply_skill(self, skill, caster, frame, is_full_burst):
         if skill.trigger_type not in ['manual', 'pellet_hit', 'critical_hit']:
             s_id = id(skill)
@@ -75,7 +84,7 @@ class SkillEngineMixin:
         
         total_dmg = 0
         kwargs = skill.kwargs.copy()
-        # ... (以下、既存コードと同じ) ...
+
         if skill.effect_type == 'cumulative_stages':
             if skill.kwargs.get('trigger_all_stages'):
                 for i, stage_data in enumerate(skill.stages):
@@ -118,19 +127,26 @@ class SkillEngineMixin:
 
         targets = []
         if skill.target == 'self':
-            if self.check_target_condition(skill.target_condition, caster, caster, frame):
-                targets.append(caster)
+            if self.check_target_condition(skill.target_condition, caster, caster, frame): targets.append(caster)
         elif skill.target == 'allies':
             for char in self.characters:
-                if self.check_target_condition(skill.target_condition, caster, char, frame):
-                    targets.append(char)
+                if self.check_target_condition(skill.target_condition, caster, char, frame): targets.append(char)
         elif skill.target == 'enemy':
-            targets.append(caster) # 便宜上casterを入れているがターゲット処理は後続で行う
+            targets.append(caster) 
 
-        if not targets and skill.effect_type == 'damage':
-            targets.append(caster)
+        if not targets and skill.effect_type == 'damage': targets.append(caster)
+        
+        # ▼▼▼ 追加: フルバースト時間短縮効果 ▼▼▼
+        if skill.effect_type == 'reduce_full_burst_time':
+            val = kwargs.get('value', 0)
+            if not hasattr(self, 'full_burst_reduction'): self.full_burst_reduction = 0.0
+            self.full_burst_reduction += val
+            self.log(f"[Burst] Scheduled Full Burst reduction: +{val}s (Total: {self.full_burst_reduction}s)", target_name=caster.name)
+            return 0
+        # ▲▲▲ 追加ここまで ▲▲▲
 
         if skill.effect_type == 'cooldown_reduction':
+            # ... (既存コード) ...
             reduce_sec = kwargs.get('value', 0)
             reduce_frames = reduce_sec * self.FPS
             for char in self.characters:

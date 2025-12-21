@@ -1,0 +1,160 @@
+[Shoot] 時間:  1.22s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:  2.60s | 弾数:  4/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間:  3.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Burst] Activate!
+[Buff] Applied Burst: 愚者のカード_Stage_0 (atk_dmg_buff: 0.075) to アルカナ
+[Skill Dmg] 時間:  5.03s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:    68,715 | Hits:1 | Buffs:atk_dmg_buff:0.07
+[Skill Dmg] 時間:  5.03s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:   103,073 | Hits:1 | Buffs:atk_dmg_buff:0.07
+[Skill Dmg] 時間:  5.03s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:   103,073 | Hits:1 | Buffs:atk_dmg_buff:0.07
+[Skill Dmg] 時間:  5.03s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:    68,715 | Hits:1 | Buffs:atk_dmg_buff:0.07
+[Skill Dmg] 時間:  5.03s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:    68,715 | Hits:1 | Buffs:atk_dmg_buff:0.07
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Shoot] 時間:  5.37s | 弾数:  2/6   | Pellets: 1 | Dmg:   100,845 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間:  6.75s | 弾数:  1/6   | Pellets: 1 | Dmg:   100,845 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間:  8.13s | 弾数:  0/6   | Pellets: 1 | Dmg:   100,845 | Buffs: atk_dmg_buff:0.07
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 12.02s | 弾数:  5/6   | Pellets: 1 | Dmg:   100,845 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間: 13.40s | 弾数:  4/6   | Pellets: 1 | Dmg:   100,845 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間: 14.78s | 弾数:  3/6   | Pellets: 1 | Dmg:   100,845 | Buffs: atk_dmg_buff:0.07
+[Buff] Applied S2: 追加 (攻撃ダメ) (atk_dmg_buff: 0.5) to アルカナ
+[Shoot] 時間: 16.17s | 弾数:  2/6   | Pellets: 1 | Dmg:   102,338 | Buffs: atk_dmg_buff:0.50
+[Shoot] 時間: 17.55s | 弾数:  1/6   | Pellets: 1 | Dmg:   102,338 | Buffs: atk_dmg_buff:0.50
+[Shoot] 時間: 18.93s | 弾数:  0/6   | Pellets: 1 | Dmg:   127,922 | Buffs: atk_dmg_buff:0.50
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 22.82s | 弾数:  5/6   | Pellets: 1 | Dmg:   127,922 | Buffs: atk_dmg_buff:0.50
+[Shoot] 時間: 24.20s | 弾数:  4/6   | Pellets: 1 | Dmg:   127,922 | Buffs: atk_dmg_buff:0.50
+[Shoot] 時間: 25.58s | 弾数:  3/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間: 26.97s | 弾数:  2/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間: 28.35s | 弾数:  1/6   | Pellets: 1 | Dmg:   102,338 | Buffs: None
+[Shoot] 時間: 29.73s | 弾数:  0/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Action] Reloading... (150 frames)
+[Buff] Applied S2: 追加 (攻撃ダメ) (atk_dmg_buff: 0.5) to アルカナ
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 33.62s | 弾数:  5/6   | Pellets: 1 | Dmg:   102,338 | Buffs: atk_dmg_buff:0.50
+[Shoot] 時間: 35.00s | 弾数:  4/6   | Pellets: 1 | Dmg:   102,338 | Buffs: atk_dmg_buff:0.50
+[Burst] Activate!
+[Buff] Applied Burst: 愚者のカード_Stage_0 (atk_dmg_buff: 0.075) to アルカナ
+[Skill Dmg] 時間: 35.13s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:   100,676 | Hits:1 | Buffs:atk_dmg_buff:0.57
+[Skill Dmg] 時間: 35.13s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:   100,676 | Hits:1 | Buffs:atk_dmg_buff:0.57
+[Skill Dmg] 時間: 35.13s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:   100,676 | Hits:1 | Buffs:atk_dmg_buff:0.57
+[Skill Dmg] 時間: 35.13s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:   100,676 | Hits:1 | Buffs:atk_dmg_buff:0.57
+[Skill Dmg] 時間: 35.13s | 名前:Burst: 愚者のカード_Stage_1     | Dmg:   151,013 | Hits:1 | Buffs:atk_dmg_buff:0.57
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Debuff] Applied Burst: 愚者のカード_Stage_2 (taken_dmg_debuff) to Enemy (Shared)
+[Shoot] 時間: 36.38s | 弾数:  3/6   | Pellets: 1 | Dmg:   177,300 | Buffs: atk_dmg_buff:0.57
+[Shoot] 時間: 37.77s | 弾数:  2/6   | Pellets: 1 | Dmg:   147,750 | Buffs: atk_dmg_buff:0.57
+[Shoot] 時間: 39.15s | 弾数:  1/6   | Pellets: 1 | Dmg:   147,750 | Buffs: atk_dmg_buff:0.57
+[Buff] Applied S2: 追加 (攻撃ダメ) (atk_dmg_buff: 0.5) to アルカナ
+[Shoot] 時間: 40.53s | 弾数:  0/6   | Pellets: 1 | Dmg:   118,200 | Buffs: atk_dmg_buff:0.57
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 44.42s | 弾数:  5/6   | Pellets: 1 | Dmg:   147,750 | Buffs: atk_dmg_buff:0.57
+[Shoot] 時間: 45.80s | 弾数:  4/6   | Pellets: 1 | Dmg:   102,338 | Buffs: atk_dmg_buff:0.50
+[Shoot] 時間: 47.18s | 弾数:  3/6   | Pellets: 1 | Dmg:   102,338 | Buffs: atk_dmg_buff:0.50
+[Shoot] 時間: 48.57s | 弾数:  2/6   | Pellets: 1 | Dmg:   102,338 | Buffs: atk_dmg_buff:0.50
+[Shoot] 時間: 49.95s | 弾数:  1/6   | Pellets: 1 | Dmg:   102,338 | Buffs: atk_dmg_buff:0.50
+[Shoot] 時間: 51.33s | 弾数:  0/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 55.22s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 56.60s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 57.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 59.37s | 弾数:  2/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 60.75s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 62.13s | 弾数:  0/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 66.02s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 67.40s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 68.78s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 70.17s | 弾数:  2/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間: 71.55s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 72.93s | 弾数:  0/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 76.82s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 78.20s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 79.58s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 80.97s | 弾数:  2/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 82.35s | 弾数:  1/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間: 83.73s | 弾数:  0/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 87.62s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 89.00s | 弾数:  4/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間: 90.38s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 91.77s | 弾数:  2/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 93.15s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 94.53s | 弾数:  0/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 98.42s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間: 99.80s | 弾数:  4/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間:101.18s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:102.57s | 弾数:  2/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:103.95s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:105.33s | 弾数:  0/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:109.22s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:110.60s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:111.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:113.37s | 弾数:  2/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:114.75s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:116.13s | 弾数:  0/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:120.02s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:121.40s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:122.78s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:124.17s | 弾数:  2/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間:125.55s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:126.93s | 弾数:  0/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:130.82s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:132.20s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:133.58s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:134.97s | 弾数:  2/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:136.35s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:137.73s | 弾数:  0/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:141.62s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:143.00s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:144.38s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:145.77s | 弾数:  2/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間:147.15s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:148.53s | 弾数:  0/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:152.42s | 弾数:  5/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:153.80s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:155.18s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:156.57s | 弾数:  2/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:157.95s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:159.33s | 弾数:  0/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:163.22s | 弾数:  5/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間:164.60s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:165.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間:167.37s | 弾数:  2/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間:168.75s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:170.13s | 弾数:  0/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Action] Reloading... (150 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:174.02s | 弾数:  5/6   | Pellets: 1 | Dmg:    85,281 | Buffs: None
+[Shoot] 時間:175.40s | 弾数:  4/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:176.78s | 弾数:  3/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:178.17s | 弾数:  2/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None
+[Shoot] 時間:179.55s | 弾数:  1/6   | Pellets: 1 | Dmg:    68,225 | Buffs: None

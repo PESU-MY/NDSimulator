@@ -1,156 +1,140 @@
 [Shoot] 時間:  1.22s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  2.60s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  3.98s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Shoot] 時間:  5.37s | 弾数: 56/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00
-[Shoot] 時間:  6.75s | 弾数: 55/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00
-[Shoot] 時間:  8.13s | 弾数: 54/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00
-[Shoot] 時間:  9.52s | 弾数: 53/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00
-[Shoot] 時間: 10.90s | 弾数: 52/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00
-[Shoot] 時間: 12.28s | 弾数: 51/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00
-[Shoot] 時間: 13.67s | 弾数: 50/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00
-[Shoot] 時間: 15.05s | 弾数: 49/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00
-[Shoot] 時間: 16.43s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 17.82s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 19.20s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間: 20.58s | 弾数: 45/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 21.97s | 弾数: 44/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 23.35s | 弾数: 43/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 24.73s | 弾数: 42/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 26.12s | 弾数: 41/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 27.50s | 弾数: 40/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 28.88s | 弾数: 39/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 30.27s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 31.65s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 33.03s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 34.42s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間: 35.80s | 弾数: 34/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 37.18s | 弾数: 33/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 38.57s | 弾数: 32/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 39.95s | 弾数: 31/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 41.33s | 弾数: 30/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 42.72s | 弾数: 29/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 44.10s | 弾数: 28/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 45.48s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 46.87s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 48.25s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 49.63s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間: 51.02s | 弾数: 23/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 52.40s | 弾数: 22/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 53.78s | 弾数: 21/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 55.17s | 弾数: 20/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 56.55s | 弾数: 19/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 57.93s | 弾数: 18/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 59.32s | 弾数: 17/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
+[Buff] Applied Burst: 愚者のカード_Stage_0 (atk_dmg_buff: 0.075) to Dummy_5
+[Shoot] 時間:  5.37s | 弾数: 56/60  | Pellets: 1 | Dmg:         3 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間:  6.75s | 弾数: 55/60  | Pellets: 1 | Dmg:         4 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間:  8.13s | 弾数: 54/60  | Pellets: 1 | Dmg:         3 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間:  9.52s | 弾数: 53/60  | Pellets: 1 | Dmg:         4 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間: 10.90s | 弾数: 52/60  | Pellets: 1 | Dmg:         3 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間: 12.28s | 弾数: 51/60  | Pellets: 1 | Dmg:         4 | Buffs: atk_dmg_buff:0.07
+[Shoot] 時間: 13.67s | 弾数: 50/60  | Pellets: 1 | Dmg:         3 | Buffs: atk_dmg_buff:0.07
+[Buff] Applied S2: 巡る運命（力のカード） (atk_buff_fixed: 38352.6) to Dummy_5
+[Buff] Applied S2: 追加 (攻撃ダメ) (atk_dmg_buff: 0.5) to Dummy_5
+[Shoot] 時間: 15.05s | 弾数: 49/60  | Pellets: 1 | Dmg:   143,826 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 16.43s | 弾数: 48/60  | Pellets: 1 | Dmg:   115,061 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 17.82s | 弾数: 47/60  | Pellets: 1 | Dmg:   115,061 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 19.20s | 弾数: 46/60  | Pellets: 1 | Dmg:   115,061 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 20.58s | 弾数: 45/60  | Pellets: 1 | Dmg:   143,826 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 21.97s | 弾数: 44/60  | Pellets: 1 | Dmg:   143,826 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 23.35s | 弾数: 43/60  | Pellets: 1 | Dmg:   143,826 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 24.73s | 弾数: 42/60  | Pellets: 1 | Dmg:   172,591 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 26.12s | 弾数: 41/60  | Pellets: 1 | Dmg:    95,884 | Buffs: atk_buff_fixed:38352.60
+[Shoot] 時間: 27.50s | 弾数: 40/60  | Pellets: 1 | Dmg:    95,884 | Buffs: atk_buff_fixed:38352.60
+[Shoot] 時間: 28.88s | 弾数: 39/60  | Pellets: 1 | Dmg:    95,884 | Buffs: atk_buff_fixed:38352.60
+[Buff] Applied S2: 巡る運命（力のカード） (atk_buff_fixed: 38352.6) to Dummy_5
+[Buff] Applied S2: 追加 (攻撃ダメ) (atk_dmg_buff: 0.5) to Dummy_5
+[Shoot] 時間: 30.27s | 弾数: 38/60  | Pellets: 1 | Dmg:   115,061 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 31.65s | 弾数: 37/60  | Pellets: 1 | Dmg:   115,061 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 33.03s | 弾数: 36/60  | Pellets: 1 | Dmg:   143,826 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 34.42s | 弾数: 35/60  | Pellets: 1 | Dmg:   115,061 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Buff] Applied Burst: 愚者のカード_Stage_0 (atk_dmg_buff: 0.075) to Dummy_5
+[Shoot] 時間: 35.80s | 弾数: 34/60  | Pellets: 1 | Dmg:   166,119 | Buffs: atk_dmg_buff:0.57 | atk_buff_fixed:38352.60
+[Shoot] 時間: 37.18s | 弾数: 33/60  | Pellets: 1 | Dmg:   166,119 | Buffs: atk_dmg_buff:0.57 | atk_buff_fixed:38352.60
+[Shoot] 時間: 38.57s | 弾数: 32/60  | Pellets: 1 | Dmg:   166,119 | Buffs: atk_dmg_buff:0.57 | atk_buff_fixed:38352.60
+[Shoot] 時間: 39.95s | 弾数: 31/60  | Pellets: 1 | Dmg:   166,119 | Buffs: atk_dmg_buff:0.57 | atk_buff_fixed:38352.60
+[Buff] Applied S2: 巡る運命（力のカード） (atk_buff_fixed: 38352.6) to Dummy_5
+[Buff] Applied S2: 追加 (攻撃ダメ) (atk_dmg_buff: 0.5) to Dummy_5
+[Shoot] 時間: 41.33s | 弾数: 30/60  | Pellets: 1 | Dmg:   132,895 | Buffs: atk_dmg_buff:0.57 | atk_buff_fixed:38352.60
+[Shoot] 時間: 42.72s | 弾数: 29/60  | Pellets: 1 | Dmg:   132,895 | Buffs: atk_dmg_buff:0.57 | atk_buff_fixed:38352.60
+[Shoot] 時間: 44.10s | 弾数: 28/60  | Pellets: 1 | Dmg:   132,895 | Buffs: atk_dmg_buff:0.57 | atk_buff_fixed:38352.60
+[Shoot] 時間: 45.48s | 弾数: 27/60  | Pellets: 1 | Dmg:   115,061 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 46.87s | 弾数: 26/60  | Pellets: 1 | Dmg:   143,826 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 48.25s | 弾数: 25/60  | Pellets: 1 | Dmg:   143,826 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 49.63s | 弾数: 24/60  | Pellets: 1 | Dmg:   115,061 | Buffs: atk_dmg_buff:0.50 | atk_buff_fixed:38352.60
+[Shoot] 時間: 51.02s | 弾数: 23/60  | Pellets: 1 | Dmg:    76,707 | Buffs: atk_buff_fixed:38352.60
+[Shoot] 時間: 52.40s | 弾数: 22/60  | Pellets: 1 | Dmg:    76,707 | Buffs: atk_buff_fixed:38352.60
+[Shoot] 時間: 53.78s | 弾数: 21/60  | Pellets: 1 | Dmg:    76,707 | Buffs: atk_buff_fixed:38352.60
+[Shoot] 時間: 55.17s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 56.55s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 57.93s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 59.32s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 60.70s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 62.08s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 63.47s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 64.85s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間: 66.23s | 弾数: 12/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 67.62s | 弾数: 11/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 69.00s | 弾数: 10/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 70.38s | 弾数:  9/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 71.77s | 弾数:  8/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 73.15s | 弾数:  7/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 74.53s | 弾数:  6/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
+[Shoot] 時間: 66.23s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 67.62s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 69.00s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 70.38s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 71.77s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 73.15s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 74.53s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 75.92s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 77.30s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 78.68s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 80.07s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間: 81.45s | 弾数:  1/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 82.83s | 弾数:  0/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Action] Reloading... (30 frames)
-[Action] Reload Complete. Ammo: 60
-[Shoot] 時間: 84.72s | 弾数: 59/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 86.10s | 弾数: 58/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 87.48s | 弾数: 57/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 88.87s | 弾数: 56/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 90.25s | 弾数: 55/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 91.63s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 93.02s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 94.40s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間: 95.78s | 弾数: 51/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 97.17s | 弾数: 50/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 98.55s | 弾数: 49/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間: 99.93s | 弾数: 48/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:101.32s | 弾数: 47/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:102.70s | 弾数: 46/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:104.08s | 弾数: 45/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:105.47s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:106.85s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:108.23s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:109.62s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間:111.00s | 弾数: 40/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:112.38s | 弾数: 39/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:113.77s | 弾数: 38/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:115.15s | 弾数: 37/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:116.53s | 弾数: 36/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:117.92s | 弾数: 35/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:119.30s | 弾数: 34/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:120.68s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:122.07s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:123.45s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:124.83s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間:126.22s | 弾数: 29/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:127.60s | 弾数: 28/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:128.98s | 弾数: 27/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:130.37s | 弾数: 26/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:131.75s | 弾数: 25/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:133.13s | 弾数: 24/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:134.52s | 弾数: 23/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:135.90s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:137.28s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:138.67s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:140.05s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間:141.43s | 弾数: 18/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:142.82s | 弾数: 17/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:144.20s | 弾数: 16/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:145.58s | 弾数: 15/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:146.97s | 弾数: 14/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:148.35s | 弾数: 13/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:149.73s | 弾数: 12/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:151.12s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:152.50s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:153.88s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:155.27s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間:156.65s | 弾数:  7/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:158.03s | 弾数:  6/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:159.42s | 弾数:  5/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:160.80s | 弾数:  4/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:162.18s | 弾数:  3/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:163.57s | 弾数:  2/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:164.95s | 弾数:  1/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:166.33s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 81.45s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 82.83s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Action] Reloading... (60 frames)
 [Action] Reload Complete. Ammo: 60
-[Shoot] 時間:168.72s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:170.10s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Buff] Applied S1: Sparkling Boost_Stage_0 (atk_buff_fixed: 11785) to Dummy_5
-[Buff] Applied S1: Sparkling Boost_Stage_1 (reload_speed_rate: 0.4928) to Dummy_5
-[Shoot] 時間:171.48s | 弾数: 57/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:172.87s | 弾数: 56/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:174.25s | 弾数: 55/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:175.63s | 弾数: 54/60  | Pellets: 1 | Dmg:    35,358 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:177.02s | 弾数: 53/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:178.40s | 弾数: 52/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
-[Shoot] 時間:179.78s | 弾数: 51/60  | Pellets: 1 | Dmg:    29,465 | Buffs: atk_buff_fixed:11785.00 | reload_speed_rate:0.49
+[Shoot] 時間: 85.22s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 86.60s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 87.98s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 89.37s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 90.75s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 92.13s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 93.52s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 94.90s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 96.28s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 97.67s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 99.05s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:100.43s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:101.82s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:103.20s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:104.58s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:105.97s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:107.35s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:108.73s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:110.12s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:111.50s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:112.88s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:114.27s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:115.65s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:117.03s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:118.42s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:119.80s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:121.18s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:122.57s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:123.95s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:125.33s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:126.72s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:128.10s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:129.48s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:130.87s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:132.25s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:133.63s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:135.02s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:136.40s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:137.78s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:139.17s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:140.55s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:141.93s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:143.32s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:144.70s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:146.08s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:147.47s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:148.85s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:150.23s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:151.62s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:153.00s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:154.38s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:155.77s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:157.15s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:158.53s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:159.92s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:161.30s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:162.68s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:164.07s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:165.45s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:166.83s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Action] Reloading... (60 frames)
+[Action] Reload Complete. Ammo: 60
+[Shoot] 時間:169.22s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:170.60s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:171.98s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:173.37s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:174.75s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:176.13s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:177.52s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:178.90s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None

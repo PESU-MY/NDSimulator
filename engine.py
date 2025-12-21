@@ -74,6 +74,12 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
                 executed_indices.append(i)
         for i in reversed(executed_indices): self.scheduled_actions.pop(i)
         
+        # ▼▼▼ 追加: 15秒ごとの定期トリガー (900フレーム) ▼▼▼
+        if frame > 0 and frame % (15 * self.FPS) == 0:
+            # "trigger_value"は便宜上0
+            self.process_trigger_global('interval_15s', frame)
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         for char in self.characters:
             if char.is_weapon_changed and char.weapon_change_end_frame > 0:
                 if frame >= char.weapon_change_end_frame: char.revert_weapon(frame)

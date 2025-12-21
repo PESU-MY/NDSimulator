@@ -8,6 +8,9 @@ class BurstEngineMixin:
         
         if self.burst_state == "GEN":
             self.burst_timer += 1
+            # バースト終了時に短縮効果をリセット
+            self.full_burst_reduction = 0.0 
+            
             if self.burst_timer >= self.burst_charge_time * self.FPS: 
                 self.burst_state = "BURST_1"
                 self.burst_timer = 0
@@ -40,11 +43,25 @@ class BurstEngineMixin:
                         if self.burst_state == "BURST_1": self.burst_state = "BURST_2"
                         elif self.burst_state == "BURST_2": self.burst_state = "BURST_3"
                         elif self.burst_state == "BURST_3":
-                            self.burst_state = "FULL"; self.burst_timer = 0
+                            self.burst_state = "FULL"
+                            self.burst_timer = 0
+                            
+                            # ▼▼▼ フルバースト時間計算 (短縮適用) ▼▼▼
+                            # デフォルト10秒 - 短縮量 (下限なし、または0秒)
+                            base_duration = 10.0
+                            current_duration = max(0.0, base_duration - getattr(self, 'full_burst_reduction', 0.0))
+                            self.current_full_burst_duration_frames = int(current_duration * self.FPS)
+                            
+                            if self.full_burst_reduction > 0:
+                                self.log(f"[Burst] Full Burst Time shortened by {self.full_burst_reduction:.2f}s (Duration: {current_duration:.2f}s)", target_name="System")
+                            # ▲▲▲ 追加ここまで ▲▲▲
                             
         elif self.burst_state == "FULL":
             self.burst_timer += 1
-            if self.burst_timer >= 10 * self.FPS: 
+            # 10秒固定ではなく、計算された時間を使用
+            target_duration = getattr(self, 'current_full_burst_duration_frames', 10 * self.FPS)
+            
+            if self.burst_timer >= target_duration: 
                 self.process_trigger_global('on_burst_end', frame)
                 self.burst_state = "GEN"; self.burst_timer = 0
 
