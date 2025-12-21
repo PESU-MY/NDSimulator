@@ -71,6 +71,12 @@ class SkillEngineMixin:
 
             if skill.condition.get('is_last_burst_user'):
                 if self.last_burst_char_name != skill.owner_name: return False
+
+            # ▼▼▼ 追加: 敵の属性条件チェック ▼▼▼
+            if "enemy_element" in skill.condition:
+                if self.enemy_element != skill.condition["enemy_element"]:
+                    return False
+            
         return True
 
     def apply_skill(self, skill, caster, frame, is_full_burst):
@@ -155,12 +161,18 @@ class SkillEngineMixin:
                 self.log(f"[CT Reduce] Reduced cooldowns by {reduce_sec:.2f}s (Source: {caster.name})", target_name="System")
             return 0
         
+        # ▼▼▼ 修正箇所: ステータス参照のロジック変更 ▼▼▼
         if kwargs.get('scale_by_caster_stats'):
             ratio = kwargs.get('value', 0)
-            stat_type = kwargs.get('stat_type', 'current') 
+            # デフォルトを 'base' とし、明示的に 'finally' が指定された場合のみ現在値を参照
+            stat_type = kwargs.get('stat_type', 'base') 
+            
             calc_atk = caster.base_atk
-            if stat_type == 'current': calc_atk = caster.get_current_atk(frame)
+            if stat_type == 'finally': 
+                calc_atk = caster.get_current_atk(frame)
+                
             if calc_atk > 0: kwargs['value'] = calc_atk * ratio
+        # ▲▲▲ 修正ここまで ▲▲▲
 
         if skill.effect_type == 'activate_flag':
             flag_name = kwargs.get('flag_name')
@@ -197,6 +209,13 @@ class SkillEngineMixin:
                 heal_val = kwargs.get('value', 0)
                 self.log(f"[Heal] {caster.name} healed {target.name} (Val: {heal_val})", target_name=target.name)
                 target.process_trigger('on_receive_heal', heal_val, frame, is_full_burst, self)
+
+            # ▼▼▼ 追加: 固定値リロードの実装 ▼▼▼
+            elif skill.effect_type == 'refill_ammo_fixed':
+                amount = int(kwargs.get('value', 0))
+                target.current_ammo = min(target.current_max_ammo, target.current_ammo + amount)
+                self.log(f"[Ammo] Refilled {amount} ammo (Fixed) for {target.name}", target_name=target.name)
+            # ▲▲▲▲▲▲
 
             elif skill.effect_type == 'buff' or skill.effect_type == 'stack_buff':
                 b_type = kwargs.get('buff_type', skill.effect_type) 

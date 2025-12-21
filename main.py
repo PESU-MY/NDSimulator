@@ -53,16 +53,16 @@ def create_character_from_json(char_file_path, skill_level=10):
     if 'base_hp' in stats: base_hp = stats['base_hp']
 
     # スキル読み込み用内部関数
+# スキル読み込み用内部関数
     def parse_skill_data(s_data):
         init_kwargs = s_data.get('kwargs', {}).copy()
         
-        # ▼▼▼ 修正: JSONのトップレベルパラメータ（condition等）もinit_kwargsにコピーする ▼▼▼
-        # これがないと condition, target_condition が無視され、常時発動になってしまう
+        # JSONのトップレベルパラメータ（condition等）もinit_kwargsにコピー
         for k, v in s_data.items():
             if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs', 'stages']:
                 init_kwargs[k] = v
         
-        # ▼▼▼ スキルレベル処理 (Lv1~10 -> index 0~9) ▼▼▼
+        # スキルレベル処理 (Lv1~10 -> index 0~9)
         level_idx = max(0, min(9, skill_level - 1))
         
         # 1. トップレベルのkwargsを展開
@@ -70,10 +70,12 @@ def create_character_from_json(char_file_path, skill_level=10):
         for k in keys_to_process:
             if k.endswith('_list') and isinstance(init_kwargs[k], list):
                 base_key = k[:-5] # "_list" を削除
-                if base_key not in init_kwargs:
-                    val_list = init_kwargs[k]
-                    if len(val_list) > level_idx:
-                        init_kwargs[base_key] = val_list[level_idx]
+                
+                # 【修正】既存の値があってもリストの値で上書きするため、存在チェックを削除
+                # if base_key not in init_kwargs: 
+                val_list = init_kwargs[k]
+                if len(val_list) > level_idx:
+                    init_kwargs[base_key] = val_list[level_idx]
         
         # 2. stages 内の展開
         stages = []
@@ -87,13 +89,15 @@ def create_character_from_json(char_file_path, skill_level=10):
                 for k in st_keys:
                     if k.endswith('_list') and isinstance(st_kwargs[k], list):
                         base_key = k[:-5]
-                        if base_key not in st_kwargs:
-                            val_list = st_kwargs[k]
-                            if len(val_list) > level_idx:
-                                resolved_val = val_list[level_idx]
-                                st_kwargs[base_key] = resolved_val
-                                if base_key == 'multiplier':
-                                    print(f"[Debug] {s_data.get('name', 'Unknown')} Stage {i}: multiplier resolved to {resolved_val}")
+                        
+                        # 【修正】既存の値があってもリストの値で上書きするため、存在チェックを削除
+                        # if base_key not in st_kwargs:
+                        val_list = st_kwargs[k]
+                        if len(val_list) > level_idx:
+                            resolved_val = val_list[level_idx]
+                            st_kwargs[base_key] = resolved_val
+                            if base_key == 'multiplier':
+                                print(f"[Debug] {s_data.get('name', 'Unknown')} Stage {i}: multiplier resolved to {resolved_val}")
 
                 st_copy['kwargs'] = st_kwargs
                 stages.append(st_copy)
@@ -147,7 +151,7 @@ dummy_ct_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/イサベル.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/イヴ.json', skill_level=10)
 rei_nikke = create_character_from_json('characters/レイ_仮称.json', skill_level=10)
 burst2_nikke = create_character_from_json('characters/アルカナ.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
@@ -159,12 +163,12 @@ dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, dummy_b2, burst2_nikke, burst3_nikke, create_dummy_character("Dummy_5", 3, "RL")]
+all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_b3]
 
 # 4. バーストローテーション
 rotation = [
     [dummy_b1],
-    [burst2_nikke,dummy_b2],
+    [dummy_b2],
     [burst3_nikke, dummy_b3] 
 ]
 

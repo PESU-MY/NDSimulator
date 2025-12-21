@@ -1,23 +1,54 @@
 === Simulation Start ===
 Character: Dummy_B1 (Atk:1)
 Character: Dummy_B2 (Atk:1)
-Character: アルカナ (Atk:21307)
-Character: イサベル (Atk:25554)
-Character: Dummy_5 (Atk:1)
+Character: イヴ (Atk:25554)
+Character: Dummy_B3 (Atk:1)
+Character: Dummy_B3 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] アルカナ used Burst Stage 2
-[Burst] イサベル used Burst Stage 3
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] イヴ used Burst Stage 3
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Dummy_B3] [Burst] Activate!
-[Burst] Dummy_B1 used Burst Stage 1
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] アルカナ used Burst Stage 2
-[Burst] イサベル used Burst Stage 3
-[Burst] Full Burst Time shortened by 5.00s (Duration: 5.00s)
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
+[Burst] イヴ used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] イヴ used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] イヴ used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] イヴ used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] イヴ used Burst Stage 3
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3

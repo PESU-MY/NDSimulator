@@ -94,7 +94,15 @@ class CharacterStatsMixin:
             elem_buff = self.buff_manager.get_total_value('elemental_buff', frame)
             layer_elem += 0.10 + elem_buff
             
-        return layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem, is_crit_hit
+        # ▼▼▼ 追加: 特殊スキルダメージバフ (別枠乗算) ▼▼▼
+        layer_special = 1.0
+        if profile.get('is_special_skill_damage', False):
+            # special_skill_dmg_buff の合計値を取得して (1 + バフ量) とする
+            sp_buff = self.buff_manager.get_total_value('special_skill_dmg_buff', frame)
+            layer_special += sp_buff
+            
+        # 最終計算に layer_special を乗算
+        return layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem * layer_special, is_crit_hit
 
     def calculate_reduced_frame(self, original_frame, rate_buff, fixed_buff):
         if rate_buff <= -1.0: return 9999

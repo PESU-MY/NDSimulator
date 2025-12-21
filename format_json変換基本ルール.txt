@@ -1,0 +1,127 @@
+# formatted.txt to JSON 変換仕様書
+
+1. 基本構造とステータス（ヘッダー情報）
+--------------------------------------------------------------------------------
+テキストファイルのヘッダー情報（【武器情報】セクション）を JSON のルート要素および
+`stats` オブジェクトにマッピングする。
+
+[ルート要素へのマッピング]
+- name        : 「キャラ名:」の値
+- weapon_type : 「武器種:」の値（AR, SMG, SG, MG, SR, RL）
+- burst_stage : 「バースト:」の値（文字列として "1", "2", "3"）
+- element     : 「属性:」の英語名
+                （鉄甲→Iron, 電撃→Electric, 水冷→Water, 灼熱→Fire, 風圧→Wind）
+- class       : 「型:」の英語名
+                （火力型→Attacker, 防御型→Defender, 支援型→Supporter）
+- squad       : 「部隊:」の値（任意）
+
+[stats オブジェクトへのマッピング]
+- max_ammo        : 「最大装弾数:」の数値
+- reload_time     : 「リロード時間:」の数値（秒）
+- damage_rate     : 「武器ダメージ:」の％を除いた数値（例: 13.65% → 0.1365）
+- windup_frames   : 固定値 12（基本デフォルト）
+- winddown_frames : 固定値 10（基本デフォルト。RL/SRは要調整）
+- hit_size        : 武器種ごとのデフォルト値（AR=1, SG=20など。RL/SRは 1）
+
+
+2. スキル記述の解析ルール
+--------------------------------------------------------------------------------
+「【スキル詳細】」セクションの記述を解析し、`skills` リストおよび `burst_skill`
+オブジェクトに変換する。
+
+[A. トリガー（発動条件）の判定]
+テキストの文言から `trigger_type` と `trigger_value` を決定する。
+
+- 戦闘開始時                  -> type: "on_start",           value: 0
+- 通常攻撃がN回命中した時     -> type: "pellet_hit",         value: N
+- 通常攻撃がN回攻撃した時     -> type: "shot_count",         value: N
+- N回クリティカル命中した時   -> type: "critical_hit",       value: N
+- バーストスキル使用時        -> type: "on_use_burst_skill", value: 0
+- フルバーストタイム開始時    -> type: "on_burst_enter",     value: 0
+- (バーストスキルの定義)      -> type: "manual",             value: 0
+
+[B. 効果（Effect）の判定]
+テキストの内容から `effect_type` とパラメータを決定する。
+
+1. ダメージ系（「〜のダメージ」）
+   - effect_type: "damage"
+   - パラメータ: multiplier または multiplier_list
+   - 必須設定: profile: { "is_skill_damage": true } を常に追加。
+
+2. バフ系（「〜UP」「〜増加」「〜短縮」）
+   - effect_type: "buff"
+   - パラメータ: value または value_list
+   - buff_type: 効果内容に応じてマッピング（例: 攻撃力→atk_buff_rate / atk_buff_fixed）
+
+3. スタック/段階系（「〜スタック適用」「順番に攻撃」）
+   - effect_type: "cumulative_stages"
+   - kwargs: { "trigger_all_stages": true } （一括発動の場合）
+
+[C. 変動値リスト（_list）の適用ルール]
+テキスト内の `[効果n]` 表記は、「【変動値リスト】」セクションの配列データを使用する。
+
+- `[効果n]` が効果量の場合 -> value_list (バフ) または multiplier_list (ダメージ)
+- `[効果n]` が時間の場合   -> duration_list
+
+※ JSON上に value (固定値) と value_list (配列) が両方ある場合、
+   シミュレーターは `_list` を優先してレベルごとの値を適用する。
+
+
+3. 特殊仕様の記述ルール（最新改修対応）
+--------------------------------------------------------------------------------
+
+[A. スキル発動者基準のステータス参照]
+テキストに「スキル発動者基準で〜」とある場合：
+- `scale_by_caster_stats: true` を追加。
+- デフォルト設定:
+  - 基礎ステータス (base_atk) 参照となるため、`stat_type` は記述しない（または "base"）。
+- 例外設定:
+  - 「現在の（バフ込み）」攻撃力を参照する場合のみ、`stat_type: "finally"` を記述。
+
+[B. 特殊スキルダメージ（バーストなど）]
+通常の攻撃バフとは別枠で計算すべき強力な単発攻撃などの場合：
+1. ダメージ定義側:
+   - profile に `"is_special_skill_damage": true` を追加。
+2. バフ付与側:
+   - buff_type に `"special_skill_dmg_buff"` を使用（値は 1.0 など）。
+
+[C. 効果時間の変動]
+テキスト「維持時間：[効果n]秒」のように時間がレベル変動する場合：
+- duration: (デフォルト値) に加えて、`duration_list: [変動値リスト...]` を必ず記述する。
+
+
+4. ターゲット条件と記述例
+--------------------------------------------------------------------------------
+
+[ターゲット (target)]
+- 「自分に」      -> "self"
+- 「味方全体に」  -> "allies"
+- 「敵に」        -> "enemy"
+
+[条件 (target_condition / condition)]
+- 「対象が電撃コードなら」
+  -> target_condition: { "element": "Electric" }
+- 「(自分に)タグが付与されているなら」
+  -> condition: { "has_tag": "tag_name" }
+
+[記述例: イヴのバースト（抜粋）]
+テキスト:
+  バースト: カウンターチェーン
+  ■自分に「エグゾスパインMk2」...維持時間：[効果7]秒
+
+JSON変換:
+  {
+    "name": "Burst: カウンターチェーン",
+    "trigger_type": "manual",
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+           "tag": "eve_burst_active",
+           "duration": 10.0,
+           "duration_list": [3, 3, 3, 5, 5, 5, 7, 7, 7, 10]
+        }
+      }
+    ]
+  }

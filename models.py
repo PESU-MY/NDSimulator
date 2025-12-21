@@ -68,7 +68,9 @@ class DamageProfile:
             'burst_buff_enabled': True,
             'force_full_burst': False, 
             'is_skill_damage': False,
-            'enable_core_hit': False 
+            'enable_core_hit': False,
+            # ▼▼▼ 追加: 特殊スキルダメージフラグ ▼▼▼
+            'is_special_skill_damage': False
         }
         if kwargs:
             profile.update(kwargs)
