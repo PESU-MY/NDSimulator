@@ -51,7 +51,6 @@ def create_character_from_json(char_file_path, skill_level=10):
     
     if 'base_atk' in stats: base_atk = stats['base_atk']
     if 'base_hp' in stats: base_hp = stats['base_hp']
-
     # スキル読み込み用内部関数
     def parse_skill_data(s_data):
         init_kwargs = s_data.get('kwargs', {}).copy()
@@ -69,12 +68,11 @@ def create_character_from_json(char_file_path, skill_level=10):
                     if len(val_list) > level_idx:
                         init_kwargs[base_key] = val_list[level_idx]
         
-        # 2. stages 内の展開 (重要: ここで multiplier がセットされる)
+        # 2. stages 内の展開
         stages = []
         if 'stages' in s_data: 
             raw_stages = s_data['stages']
             for i, st in enumerate(raw_stages):
-                # 辞書の中身を直接書き換えるのではなく、コピーして編集
                 st_copy = st.copy()
                 st_kwargs = st.get('kwargs', {}).copy()
                 
@@ -87,18 +85,19 @@ def create_character_from_json(char_file_path, skill_level=10):
                             if len(val_list) > level_idx:
                                 resolved_val = val_list[level_idx]
                                 st_kwargs[base_key] = resolved_val
-                                # デバッグログ: バーストスキルの倍率解決を確認
+                                # デバッグログ
                                 if base_key == 'multiplier':
-                                    print(f"[Debug] {s_data['name']} Stage {i}: multiplier resolved to {resolved_val}")
+                                    print(f"[Debug] {s_data.get('name', 'Unknown')} Stage {i}: multiplier resolved to {resolved_val}")
 
                 st_copy['kwargs'] = st_kwargs
                 stages.append(st_copy)
 
+        # ▼▼▼ 修正: effect_type 等を .get() で安全に取得するように変更 ▼▼▼
         return Skill(
-            name=s_data['name'],
-            trigger_type=s_data['trigger_type'],
+            name=s_data.get('name', 'Unknown Skill'),
+            trigger_type=s_data.get('trigger_type', 'manual'),
             trigger_value=s_data.get('trigger_value', 0),
-            effect_type=s_data['effect_type'],
+            effect_type=s_data.get('effect_type', 'buff'), # ここが KeyError の原因でした
             stages=stages,
             **init_kwargs
         )
@@ -153,7 +152,7 @@ dummy_ct_skill = Skill(
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
 burst3_nikke = create_character_from_json('characters/アスカ_WILLE.json', skill_level=10)
-rei_nikke = create_character_from_json('characters/レイ.json', skill_level=10)
+rei_nikke = create_character_from_json('characters/レイ_仮称.json', skill_level=10)
 toob_nikke = create_character_from_json('characters/2B.json', skill_level=10) # 2B
 print(">>> キャラクター読み込み完了\n")
 
@@ -166,13 +165,13 @@ dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 # 3. 編成リスト作成 
 # アスカ編成例: [dummy_b1, dummy_b2, burst3_nikke, rei_nikke, create_dummy_character("Dummy_Non", 3, "RL")]
 # 2B単独テスト用: 
-all_characters = [dummy_b1, dummy_b2, toob_nikke, create_dummy_character("Dummy_4", 3, "MG"), create_dummy_character("Dummy_5", 3, "RL")]
+all_characters = [dummy_b1, dummy_b2, burst3_nikke, rei_nikke, create_dummy_character("Dummy_5", 3, "RL")]
 
 # 4. バーストローテーション (2Bを使用)
 rotation = [
     [dummy_b1],
     [dummy_b2],
-    [toob_nikke,dummy_b3] 
+    [burst3_nikke,rei_nikke] 
 ]
 
 # 5. シミュレーター初期化

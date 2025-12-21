@@ -2,7 +2,6 @@ from models import DamageProfile, Skill, WeaponConfig
 from utils import round_half_up
 
 class SkillEngineMixin:
-    # ... (check_target_condition は変更なし) ...
     def check_target_condition(self, condition, caster, target, frame):
         if not condition: return True
         
@@ -16,12 +15,22 @@ class SkillEngineMixin:
         if 'element' in condition and target.element != condition['element']: return False
         if 'weapon_type' in condition and target.weapon.weapon_class != condition['weapon_type']: return False
         if 'burst_stage' in condition and str(target.burst_stage) != str(condition['burst_stage']): return False
+        
         if condition.get('is_last_burst_user'):
             if self.last_burst_char_name != target.name: return False
+            
         if "not_has_tag" in condition:
             if target.buff_manager.has_active_tag(condition["not_has_tag"], frame): return False
         if "has_tag" in condition:
             if not target.buff_manager.has_active_tag(condition["has_tag"], frame): return False
+            
+        # ▼▼▼ 追加: 自分自身のタグ状況もターゲット判定に使えるようにする ▼▼▼
+        if "self_has_tag" in condition:
+            if not caster.buff_manager.has_active_tag(condition["self_has_tag"], frame): return False
+        if "self_not_has_tag" in condition:
+            if caster.buff_manager.has_active_tag(condition["self_not_has_tag"], frame): return False
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         if "has_flag" in condition:
             if condition["has_flag"] not in target.special_flags: return False
         if "not_has_flag" in condition:
@@ -35,34 +44,26 @@ class SkillEngineMixin:
                 if not (min_v <= count <= max_v): return False
         return True
 
-    # ▼▼▼ 修正: caster 引数を追加し、self_has_tag 対応を追加 ▼▼▼
     def should_apply_skill(self, skill, frame, caster=None):
         if skill.condition:
-            # 既存: 敵(全体)のデバフ状況チェック
             if "not_has_tag" in skill.condition:
                 tag = skill.condition["not_has_tag"]
-                if self.enemy_debuffs.has_active_tag(tag, frame):
-                     return False
+                if self.enemy_debuffs.has_active_tag(tag, frame): return False
             if "has_tag" in skill.condition:
                 tag = skill.condition["has_tag"]
-                if not self.enemy_debuffs.has_active_tag(tag, frame):
-                     return False
+                if not self.enemy_debuffs.has_active_tag(tag, frame): return False
             
-            # 新規: 自身のバフ状況チェック
             if "self_has_tag" in skill.condition and caster:
                 tag = skill.condition["self_has_tag"]
-                if not caster.buff_manager.has_active_tag(tag, frame):
-                    return False
+                if not caster.buff_manager.has_active_tag(tag, frame): return False
             if "self_not_has_tag" in skill.condition and caster:
                 tag = skill.condition["self_not_has_tag"]
-                if caster.buff_manager.has_active_tag(tag, frame):
-                    return False
+                if caster.buff_manager.has_active_tag(tag, frame): return False
 
             if skill.condition.get('is_last_burst_user'):
-                if self.last_burst_char_name != skill.owner_name:
-                    return False
+                if self.last_burst_char_name != skill.owner_name: return False
         return True
-
+    # ... (apply_skill 以降は変更なし) ...
     def apply_skill(self, skill, caster, frame, is_full_burst):
         if skill.trigger_type not in ['manual', 'pellet_hit', 'critical_hit']:
             s_id = id(skill)
@@ -70,12 +71,10 @@ class SkillEngineMixin:
                 return 0
             self.executed_skill_ids.add(s_id)
 
-        # ▼▼▼ 修正: caster を渡す ▼▼▼
         if not self.should_apply_skill(skill, frame, caster): return 0
         
         total_dmg = 0
         kwargs = skill.kwargs.copy()
-
         # ... (以下、既存コードと同じ) ...
         if skill.effect_type == 'cumulative_stages':
             if skill.kwargs.get('trigger_all_stages'):
