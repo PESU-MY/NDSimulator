@@ -116,9 +116,12 @@ class SkillEngineMixin:
                             name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
                             effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
                         )
-                        # ▼▼▼ 修正: ステージ側のターゲット指定を優先する ▼▼▼
-                        temp_skill.target = stage_data.get('target', skill.target)
-                        temp_skill.target_condition = stage_data.get('target_condition', skill.target_condition)
+                        # ▼▼▼ 修正: ターゲット/条件の継承ロジック ▼▼▼
+                        # ステージ設定があればそれが優先され、なければ親スキルの設定を引き継ぐ
+                        if not temp_skill.target:
+                            temp_skill.target = skill.target
+                        if not temp_skill.target_condition:
+                            temp_skill.target_condition = skill.target_condition
                         # ▲▲▲ 修正ここまで ▲▲▲
                         temp_skill.owner_name = caster.name
                         total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
@@ -138,9 +141,11 @@ class SkillEngineMixin:
                             name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
                             effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
                         )
-                        # ▼▼▼ 修正: ステージ側のターゲット指定を優先する ▼▼▼
-                        temp_skill.target = stage_data.get('target', skill.target)
-                        temp_skill.target_condition = stage_data.get('target_condition', skill.target_condition)
+                        # ▼▼▼ 修正: 継承ロジック ▼▼▼
+                        if not temp_skill.target:
+                            temp_skill.target = skill.target
+                        if not temp_skill.target_condition:
+                            temp_skill.target_condition = skill.target_condition
                         # ▲▲▲ 修正ここまで ▲▲▲
                         temp_skill.target = skill.target
                         temp_skill.target_condition = skill.target_condition
@@ -152,8 +157,27 @@ class SkillEngineMixin:
         if skill.target == 'self':
             if self.check_target_condition(skill.target_condition, caster, caster, frame): targets.append(caster)
         elif skill.target == 'allies':
+            # ▼▼▼ 追加: highest_atk の処理 ▼▼▼
+            # 1. まず通常の条件でフィルタリング
+            candidates = []
             for char in self.characters:
-                if self.check_target_condition(skill.target_condition, caster, char, frame): targets.append(char)
+                if self.check_target_condition(skill.target_condition, caster, char, frame): 
+                    candidates.append(char)
+            
+            # 2. 最高攻撃力指定のチェックとソート
+            if skill.target_condition and skill.target_condition.get('type') == 'highest_atk':
+                count = skill.target_condition.get('count', 1)
+                # 現在の攻撃力で降順ソート
+                candidates.sort(key=lambda c: c.get_current_atk(frame), reverse=True)
+                # 上位N機を選択
+                targets = candidates[:count]
+                
+                # デバッグ用ログ（必要ならコメントアウト解除）
+                target_names = [t.name for t in targets]
+                self.log(f"[Target] Selected Top {count} ATK: {target_names}", target_name=caster.name)
+            else:
+                targets = candidates
+            # ▲▲▲ 追加ここまで ▲▲▲
         elif skill.target == 'enemy':
             targets.append(caster) 
 

@@ -147,7 +147,7 @@ dummy_ct_skill = Skill(
 print(">>> キャラクター読み込み開始")
 burst3_nikke = create_character_from_json('characters/アスカ.json', skill_level=10)
 rei_nikke = create_character_from_json('characters/レイ_仮称.json', skill_level=10)
-burst1_nikke = create_character_from_json('characters/I-DOLL・オーシャン.json', skill_level=10)
+burst1_nikke = create_character_from_json('characters/N102.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
 
 # 2. ダミーキャラの作成

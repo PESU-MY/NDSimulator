@@ -244,3 +244,21 @@ SR/RL/CHARGE 武器において、フルチャージ攻撃を行った回数を�
 cumulative_stages 内に含まれる `trigger_type: "part_break"` のステージについて、シミュレーター設定（part_break_mode）を正しく参照するように修正。
 ・変更前: 無条件で発動していた。
 ・変更後: シミュレーターの `part_break_mode` が False の場合、該当ステージはスキップされる。
+
+9. ターゲット選定ロジックの拡張（highest_atk 対応）
+
+【最高攻撃力の味方へのターゲット指定】
+N102（アン）やアリスなどが持つ「攻撃力が最も高い味方n機」へのバフに対応。
+・仕様: 
+  - `target_condition` に `{ "type": "highest_atk", "count": 1 }` を指定可能。
+  - 判定時、全味方キャラクターを「その瞬間の攻撃力（バフ込み）」で降順ソートし、上位 `count` 名を対象とする。
+  - `get_current_atk(frame)` を使用しているため、同フレーム内で直前に付与された攻撃力バフも計算に含まれる。
+
+【cumulative_stages における条件継承の強化】
+段階別スキル（stages）を生成する際、ターゲット情報の取得優先順位を以下のように整理・強化した。
+優先度高:
+  1. ステージ定義の直下にある `target` / `target_condition`
+  2. ステージ定義の `kwargs` 内にある `target` / `target_condition`
+  3. 親スキル（バーストスキル自体）の `target` / `target_condition`
+優先度低
+これにより、JSON記述の揺らぎ（kwargs内か外か）を吸収しつつ、ステージごとの個別指定も可能にしている。

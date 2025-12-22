@@ -1,42 +1,42 @@
 === Simulation Start ===
-Character: I-DOLL・オーシャン (Atk:21307)
+Character: N102 (Atk:21307)
 Character: Dummy_B2 (Atk:1)
 Character: アスカ (Atk:25554)
 Character: Dummy_B3 (Atk:1)
 Character: Dummy_B3 (Atk:1)
-[Burst] I-DOLL・オーシャン used Burst Stage 1
+[Burst] N102 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
 [Burst] Recorded burst end time for アスカ at frame 903
-[Burst] I-DOLL・オーシャン used Burst Stage 1
+[Burst] N102 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
 [Burst] Recorded burst end time for Dummy_B3 at frame 2103
-[Burst] I-DOLL・オーシャン used Burst Stage 1
+[Burst] N102 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
 [Burst] Recorded burst end time for アスカ at frame 3303
-[Burst] I-DOLL・オーシャン used Burst Stage 1
+[Burst] N102 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
 [Burst] Recorded burst end time for Dummy_B3 at frame 4503
-[Burst] I-DOLL・オーシャン used Burst Stage 1
+[Burst] N102 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
 [Burst] Recorded burst end time for アスカ at frame 5703
-[Burst] I-DOLL・オーシャン used Burst Stage 1
+[Burst] N102 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
 [Burst] Recorded burst end time for Dummy_B3 at frame 6903
-[Burst] I-DOLL・オーシャン used Burst Stage 1
+[Burst] N102 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
 [Burst] Recorded burst end time for アスカ at frame 8103
-[Burst] I-DOLL・オーシャン used Burst Stage 1
+[Burst] N102 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
 [Burst] Recorded burst end time for Dummy_B3 at frame 9303
-[Burst] I-DOLL・オーシャン used Burst Stage 1
+[Burst] N102 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
 [Burst] Recorded burst end time for アスカ at frame 10503

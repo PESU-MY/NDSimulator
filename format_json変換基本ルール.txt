@@ -136,3 +136,27 @@ JSON変換:
       }
     ]
   }
+
+  [条件 (target_condition / condition)]
+...
+（既存の記述）
+...
+- 「攻撃力が最も高い味方N機なら」
+  -> target_condition: { "type": "highest_atk", "count": 2 }
+  ※ "count" で対象人数を指定する。
+
+【重要：記述場所について】
+`target_condition` は、解析トラブルを防ぐため `kwargs` の中ではなく、
+可能な限り **スキルのトップレベル（effect_type と同階層）** に記述することを推奨する。
+
+(推奨例)
+{
+  "effect_type": "buff",
+  "target": "allies",
+  "target_condition": { "type": "highest_atk", "count": 1 },  <-- ここに書く
+  "kwargs": {
+    "buff_type": "atk_buff_rate",
+    "value": 0.10,
+    "duration": 10
+  }
+}
