@@ -2,7 +2,7 @@
 Character: D：キラーワイフ (Atk:21307)
 Character: Dummy_B2 (Atk:1)
 Character: シンデレラ (Atk:17059)
-Character: レイ（仮称） (Atk:25554)
+Character: Dummy_B3 (Atk:1)
 Character: Dummy_B3 (Atk:1)
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
@@ -11,9 +11,9 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Recorded burst end time for シンデレラ at frame 903
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] レイ（仮称） used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for レイ（仮称） at frame 1806
+[Burst] Recorded burst end time for Dummy_B3 at frame 1806
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3
@@ -21,9 +21,9 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Recorded burst end time for シンデレラ at frame 2709
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] レイ（仮称） used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for レイ（仮称） at frame 3612
+[Burst] Recorded burst end time for Dummy_B3 at frame 3612
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3
@@ -32,8 +32,8 @@ Character: Dummy_B3 (Atk:1)
 [CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] レイ（仮称） used Burst Stage 3
-[Burst] Recorded burst end time for レイ（仮称） at frame 5418
+[Burst] Dummy_B3 used Burst Stage 3
+[Burst] Recorded burst end time for Dummy_B3 at frame 5418
 [CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
@@ -42,8 +42,8 @@ Character: Dummy_B3 (Atk:1)
 [CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] レイ（仮称） used Burst Stage 3
-[Burst] Recorded burst end time for レイ（仮称） at frame 7224
+[Burst] Dummy_B3 used Burst Stage 3
+[Burst] Recorded burst end time for Dummy_B3 at frame 7224
 [CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
@@ -52,9 +52,9 @@ Character: Dummy_B3 (Atk:1)
 [CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] レイ（仮称） used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for レイ（仮称） at frame 9030
+[Burst] Recorded burst end time for Dummy_B3 at frame 9030
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3
@@ -62,5 +62,5 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Recorded burst end time for シンデレラ at frame 9933
 [Burst] D：キラーワイフ used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] レイ（仮称） used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)

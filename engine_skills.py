@@ -94,6 +94,17 @@ class SkillEngineMixin:
         if skill.effect_type == 'cumulative_stages':
             if skill.kwargs.get('trigger_all_stages'):
                 for i, stage_data in enumerate(skill.stages):
+                    # ▼▼▼ 追加: trigger_type が part_break の場合、モード設定をチェックしてスキップ ▼▼▼
+                    # ステージが辞書の場合の判定
+                    if isinstance(stage_data, dict):
+                        t_type = stage_data.get('trigger_type')
+                        if t_type == 'part_break' and not getattr(self, 'part_break_mode', False):
+                            continue
+                    # ステージがSkillオブジェクトの場合の判定
+                    elif isinstance(stage_data, Skill):
+                        if stage_data.trigger_type == 'part_break' and not getattr(self, 'part_break_mode', False):
+                            continue
+                    # ▲▲▲ 追加ここまで ▲▲▲
                     if isinstance(stage_data, Skill):
                         total_dmg += self.apply_skill(stage_data, caster, frame, is_full_burst)
                     elif isinstance(stage_data, dict):
@@ -105,8 +116,10 @@ class SkillEngineMixin:
                             name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
                             effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
                         )
-                        temp_skill.target = skill.target
-                        temp_skill.target_condition = skill.target_condition
+                        # ▼▼▼ 修正: ステージ側のターゲット指定を優先する ▼▼▼
+                        temp_skill.target = stage_data.get('target', skill.target)
+                        temp_skill.target_condition = stage_data.get('target_condition', skill.target_condition)
+                        # ▲▲▲ 修正ここまで ▲▲▲
                         temp_skill.owner_name = caster.name
                         total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
             else:
@@ -125,6 +138,10 @@ class SkillEngineMixin:
                             name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
                             effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
                         )
+                        # ▼▼▼ 修正: ステージ側のターゲット指定を優先する ▼▼▼
+                        temp_skill.target = stage_data.get('target', skill.target)
+                        temp_skill.target_condition = stage_data.get('target_condition', skill.target_condition)
+                        # ▲▲▲ 修正ここまで ▲▲▲
                         temp_skill.target = skill.target
                         temp_skill.target_condition = skill.target_condition
                         temp_skill.owner_name = caster.name
