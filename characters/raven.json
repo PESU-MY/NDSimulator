@@ -17,7 +17,7 @@
   "skills": [
     {
       "name": "S1: Shockwave (DoT)",
-      "trigger_type": "shot_count",
+      "trigger_type": "full_charge_count",
       "trigger_value": 1,
       "effect_type": "stack_dot",
       "target": "enemy",
@@ -88,7 +88,7 @@
   ],
   "burst_skill": {
     "name": "Burst: Tempest",
-    "trigger_type": "manual",
+    "trigger_type": "on_use_burst_skill",
     "trigger_value": 0,
     "cooldown": 40,
     "effect_type": "cumulative_stages",

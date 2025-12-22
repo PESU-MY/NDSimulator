@@ -282,6 +282,24 @@ class SkillEngineMixin:
                 profile = DamageProfile.create(**kwargs.get('profile', {}))
                 mult = kwargs.get('multiplier', 1.0)
                 loops = kwargs.get('loop_count', 1)
+
+                # ▼▼▼ 追加: スタック数による倍率補正処理 ▼▼▼
+                # 1. 自身のバフスタック数でスケール (シンデレラ用)
+                if 'copy_stack_count' in kwargs:
+                    stack_name = kwargs['copy_stack_count']
+                    stack_count = caster.buff_manager.get_stack_count(stack_name, frame)
+                    mult *= stack_count
+                    self.log(f"[Dmg Scale] Scaled by self stack '{stack_name}': x{stack_count} -> {mult:.4f}", target_name=caster.name)
+
+                # 2. ターゲットのデバフスタック数でスケール (アスカWILLE用など)
+                elif kwargs.get('scale_by_target_stack') and targets:
+                    stack_name = kwargs.get('stack_name')
+                    # ターゲットが複数の場合は代表して1体目、あるいは個別に計算が必要だが簡略化
+                    target_stack = self.enemy_debuffs.get_stack_count(stack_name, frame)
+                    mult *= target_stack
+                    self.log(f"[Dmg Scale] Scaled by enemy stack '{stack_name}': x{target_stack} -> {mult:.4f}", target_name=targets[0].name)
+                # ▲▲▲ 追加ここまで ▲▲▲
+
                 skill_dmg = 0
                 for _ in range(loops):
                     d, _ = caster.calculate_strict_damage(
@@ -313,6 +331,16 @@ class SkillEngineMixin:
                     act_skill.owner_name = caster.name
                     if 'stages' in sub_data: act_skill.stages = sub_data['stages']
                     self.scheduled_actions.append({'frame': exec_frame, 'skill': act_skill, 'caster': caster})
+                
+            # ▼▼▼ 追加: スタック数の強制設定処理 ▼▼▼
+            elif skill.effect_type == 'set_stack':
+                stack_name = kwargs.get('stack_name')
+                val = int(kwargs.get('value', 0))
+                for target in targets:
+                    # BuffManagerに実装済みの set_stack_count を利用
+                    target.buff_manager.set_stack_count(stack_name, val)
+                    self.log(f"[Stack Set] {target.name}: {stack_name} set to {val}", target_name=target.name)
+            # ▲▲▲ 追加ここまで ▲▲▲
             
             elif skill.effect_type == 'weapon_change':
                 new_weapon_data = kwargs.get('weapon_data')

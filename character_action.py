@@ -91,6 +91,14 @@ class CharacterActionMixin:
             damage_this_frame += self.process_trigger('ammo_empty', self.current_ammo, frame, is_full_burst, simulator)
             damage_this_frame += self.process_trigger('pellet_hit', self.cumulative_pellet_hits, frame, is_full_burst, simulator, delta=hit_count)
             damage_this_frame += self.process_trigger('critical_hit', self.cumulative_crit_hits, frame, is_full_burst, simulator, delta=crit_count)
+            # ▼▼▼ 追加: フルチャージ攻撃判定とトリガー処理 ▼▼▼
+            # 現状のシミュ仕様では、SR/RL/CHARGEタイプは必ずチャージ時間を経て発射されるため、常にフルチャージ扱いとする。
+            # 将来タップ撃ちを実装する場合は、ここでチャージ率などを判定する。
+            if self.weapon.type in ["RL", "SR", "CHARGE"]:
+                self.cumulative_full_charge_count += 1
+                damage_this_frame += self.process_trigger('full_charge_count', self.cumulative_full_charge_count, frame, is_full_burst, simulator)
+            # ▲▲▲ 追加ここまで ▲▲▲
+
 
         if self.weapon.type in ["RL", "SR", "CHARGE"]:
             if self.state == "READY":

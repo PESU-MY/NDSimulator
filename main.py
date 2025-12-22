@@ -53,7 +53,6 @@ def create_character_from_json(char_file_path, skill_level=10):
     if 'base_hp' in stats: base_hp = stats['base_hp']
 
     # スキル読み込み用内部関数
-# スキル読み込み用内部関数
     def parse_skill_data(s_data):
         init_kwargs = s_data.get('kwargs', {}).copy()
         
@@ -62,20 +61,26 @@ def create_character_from_json(char_file_path, skill_level=10):
             if k not in ['name', 'trigger_type', 'trigger_value', 'effect_type', 'kwargs', 'stages']:
                 init_kwargs[k] = v
         
-        # スキルレベル処理 (Lv1~10 -> index 0~9)
         level_idx = max(0, min(9, skill_level - 1))
-        
-        # 1. トップレベルのkwargsを展開
-        keys_to_process = list(init_kwargs.keys())
-        for k in keys_to_process:
-            if k.endswith('_list') and isinstance(init_kwargs[k], list):
-                base_key = k[:-5] # "_list" を削除
+
+        # ▼▼▼ 修正: 再帰的に辞書を走査して _list を展開する関数 ▼▼▼
+        def resolve_variable_params(d):
+            keys = list(d.keys())
+            for k in keys:
+                # 1. _list の展開 (例: stack_amount_list -> stack_amount)
+                if k.endswith('_list') and isinstance(d[k], list):
+                    base_key = k[:-5]
+                    val_list = d[k]
+                    # 以前の「if base_key not in d:」を削除し、常にリスト値で上書き
+                    if len(val_list) > level_idx:
+                        d[base_key] = val_list[level_idx]
                 
-                # 【修正】既存の値があってもリストの値で上書きするため、存在チェックを削除
-                # if base_key not in init_kwargs: 
-                val_list = init_kwargs[k]
-                if len(val_list) > level_idx:
-                    init_kwargs[base_key] = val_list[level_idx]
+                # 2. 辞書型なら再帰的に処理 (例: weapon_data 内の multiplier_list 対応)
+                elif isinstance(d[k], dict):
+                    resolve_variable_params(d[k])
+
+        # 1. トップレベルのkwargsを展開
+        resolve_variable_params(init_kwargs)
         
         # 2. stages 内の展開
         stages = []
@@ -85,19 +90,8 @@ def create_character_from_json(char_file_path, skill_level=10):
                 st_copy = st.copy()
                 st_kwargs = st.get('kwargs', {}).copy()
                 
-                st_keys = list(st_kwargs.keys())
-                for k in st_keys:
-                    if k.endswith('_list') and isinstance(st_kwargs[k], list):
-                        base_key = k[:-5]
-                        
-                        # 【修正】既存の値があってもリストの値で上書きするため、存在チェックを削除
-                        # if base_key not in st_kwargs:
-                        val_list = st_kwargs[k]
-                        if len(val_list) > level_idx:
-                            resolved_val = val_list[level_idx]
-                            st_kwargs[base_key] = resolved_val
-                            if base_key == 'multiplier':
-                                print(f"[Debug] {s_data.get('name', 'Unknown')} Stage {i}: multiplier resolved to {resolved_val}")
+                # stages内のkwargsも再帰的に処理
+                resolve_variable_params(st_kwargs)
 
                 st_copy['kwargs'] = st_kwargs
                 stages.append(st_copy)
@@ -151,9 +145,9 @@ dummy_ct_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/イヴ.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/cinderella.json', skill_level=10)
 rei_nikke = create_character_from_json('characters/レイ_仮称.json', skill_level=10)
-burst2_nikke = create_character_from_json('characters/アルカナ.json', skill_level=10)
+burst1_nikke = create_character_from_json('characters/D_キラーワイフ.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
 
 # 2. ダミーキャラの作成
@@ -163,11 +157,11 @@ dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_b3]
+all_characters = [burst1_nikke, dummy_b2, burst3_nikke, dummy_b3, dummy_b3]
 
 # 4. バーストローテーション
 rotation = [
-    [dummy_b1],
+    [burst1_nikke],
     [dummy_b2],
     [burst3_nikke, dummy_b3] 
 ]
@@ -176,7 +170,7 @@ rotation = [
 sim = NikkeSimulator(
     characters=all_characters,
     burst_rotation=rotation,
-    enemy_element="None", 
+    enemy_element="Wind", 
     enemy_core_size=3.0,
     enemy_size=100,
     part_break_mode=False,

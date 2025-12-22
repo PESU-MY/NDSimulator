@@ -63,6 +63,16 @@ class BurstEngineMixin:
             
             if self.burst_timer >= target_duration: 
                 self.process_trigger_global('on_burst_end', frame)
+
+                # ▼▼▼ 追加: バーストIII発動者の「バースト終了時刻」を更新 ▼▼▼
+                if self.last_burst_char_name:
+                    for char in self.characters:
+                        if char.name == self.last_burst_char_name:
+                            char.last_burst_end_frame = frame
+                            self.log(f"[Burst] Recorded burst end time for {char.name} at frame {frame}", target_name="System")
+                            break
+                # ▲▲▲ 追加ここまで ▲▲▲
+                
                 self.burst_state = "GEN"; self.burst_timer = 0
 
     def process_trigger_global(self, trigger_type, frame):

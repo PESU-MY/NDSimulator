@@ -80,6 +80,8 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
             self.process_trigger_global('interval_15s', frame)
         # ▲▲▲ 追加ここまで ▲▲▲
 
+
+
         for char in self.characters:
             if char.is_weapon_changed and char.weapon_change_end_frame > 0:
                 if frame >= char.weapon_change_end_frame: char.revert_weapon(frame)
@@ -104,6 +106,11 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
                 char.total_damage += damage_dot
             
             char.process_trigger('time_interval', frame, frame, is_full_burst, self)
+
+            # ▼▼▼ 追加: 変動間隔トリガー (variable_interval) の呼び出し ▼▼▼
+            char.process_trigger('variable_interval', frame, frame, is_full_burst, self)
+            # ▲▲▲ 追加ここまで ▲▲▲
+
             char.tick_action(frame, is_full_burst, self)
 
     def run(self):

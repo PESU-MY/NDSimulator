@@ -46,11 +46,18 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.total_shots = 0
         self.cumulative_pellet_hits = 0 
         self.cumulative_crit_hits = 0 
+        # ▼▼▼ 追加: フルチャージ攻撃回数の累積カウンタ ▼▼▼
+        self.cumulative_full_charge_count = 0
+        # ▲▲▲ 追加ここまで ▲▲▲
         self.damage_breakdown = {'Weapon Attack': 0}
         
         self.active_dots = {}
         self.special_flags = set()
         
+        # ▼▼▼ 追加: 自身のバースト(Full Burst)が終了した時刻 ▼▼▼
+        self.last_burst_end_frame = -1
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         def register_breakdown(skill_obj):
             if skill_obj.effect_type in ['damage', 'dot']:
                 self.damage_breakdown[skill_obj.name] = 0

@@ -21,7 +21,8 @@
       "target": "self",
       "kwargs": {
         "buff_type": "dummy_barrier_dmg",
-        "value": 6.0101,
+        "effect_no": 1,
+        "value_list": [4.0465, 4.2647, 4.4829, 4.701, 4.9192, 5.1374, 5.3556, 5.5738, 5.792, 6.0101],
         "duration": 99999
       },
       "description": "バリアへのダメージUP（シミュレーション上は効果なし）"
@@ -34,7 +35,8 @@
       "target": "self",
       "kwargs": {
         "buff_type": "atk_buff_rate",
-        "value": 0.9698,
+        "effect_no": 2,
+        "value_list": [0.5793, 0.6227, 0.6661, 0.7094, 0.7528, 0.7962, 0.8396, 0.883, 0.9264, 0.9698],
         "duration": 25.0
       },
       "description": "回復効果適用時に攻撃力UP"
@@ -50,7 +52,8 @@
       },
       "kwargs": {
         "buff_type": "elemental_buff",
-        "value": 0.3002,
+        "effect_no": 3,
+        "value_list": [0.1778, 0.1914, 0.205, 0.2186, 0.2322, 0.2458, 0.2594, 0.273, 0.2866, 0.3002],
         "duration": 10.0
       },
       "description": "フルバースト時、バリア状態なら優越コード攻撃ダメUP"
@@ -67,7 +70,8 @@
       },
       "kwargs": {
         "buff_type": "core_dmg_buff",
-        "value": 0.6007,
+        "effect_no": 4,
+        "value_list": [0.3319, 0.3618, 0.3917, 0.4215, 0.4514, 0.4813, 0.5111, 0.541, 0.5709, 0.6007],
         "duration": 10.0
       }
     }
@@ -89,7 +93,8 @@
         "kwargs": {
           "buff_type": "is_pierce",
           "value": 1,
-          "duration": 25.0
+          "effect_no": 5,
+          "duration_list": [15, 15, 15, 20, 20, 20, 25, 25, 25, 25]
         }
       },
       {
@@ -97,7 +102,8 @@
         "target": "self",
         "kwargs": {
           "buff_type": "atk_dmg_buff",
-          "value": 1.5004,
+          "effect_no": 6,
+          "value_list": [0.6364, 0.7324, 0.8284, 0.9244, 1.0204, 1.1164, 1.2124, 1.3084, 1.4044, 1.5004],
           "duration": 10.0
         }
       },
@@ -106,7 +112,8 @@
         "target": "self",
         "kwargs": {
           "buff_type": "dummy_heal",
-          "value": 0.0316,
+          "effect_no": 6,
+          "value_list": [0.0187, 0.0201, 0.0216, 0.023, 0.0244, 0.0259, 0.0273, 0.0288, 0.0302, 0.0316],
           "duration": 0
         },
         "description": "攻撃ダメージの回復（即時発動扱いでS1トリガー用）"
@@ -116,7 +123,8 @@
         "target": "self",
         "kwargs": {
           "buff_type": "hit_rate_buff",
-          "value": 1.0137,
+          "effect_no": 7,
+          "value_list": [0.599, 0.6451, 0.6912, 0.7372, 0.7833, 0.8294, 0.8755, 0.9216, 0.9676, 1.0137],
           "duration": 10.0
         }
       }

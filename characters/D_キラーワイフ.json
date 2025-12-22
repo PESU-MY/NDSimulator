@@ -15,7 +15,7 @@
   "skills": [
     {
       "name": "Skill 1: カーム・スナイピング (貫通)",
-      "trigger_type": "shot_count",
+      "trigger_type": "full_charge_count",
       "trigger_value": 3,
       "effect_type": "buff",
       "target": "self",
@@ -38,38 +38,37 @@
       },
       "kwargs": {
         "buff_type": "pierce_dmg_buff",
-        "value": 0.1353,
+        "effect_no": 1,
+        "value_list": [0.08, 0.0862, 0.0924, 0.0985, 0.1047, 0.1108, 0.117, 0.1232, 0.1293, 0.1355],
         "duration": 10
       }
     },
     {
       "name": "Skill 2: アサルト・フォーメーション (CD短縮)",
-      "trigger_type": "shot_count",
+      "trigger_type": "full_charge_count",
       "trigger_value": 8,
       "effect_type": "cooldown_reduction",
       "target": "allies",
       "kwargs": {
-        "value": 7.0
+        "effect_no": 2,
+        "value_list": [4.13, 4.45, 4.77, 5.09, 5.4, 5.72, 6.04, 6.36, 6.68, 7]
       }
     },
     {
-      "name": "Burst: ターゲット殲滅 (コアダメUP)",
-      "trigger_type": "part_break",
-      "trigger_value": 0,
-      "effect_type": "buff",
+      "name": "Skill 2: アサルト・フォーメーション (攻撃ダメージバフ)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 5,
+      "effect_type": "atk_dmg_buff",
       "target": "allies",
       "kwargs": {
-        "buff_type": "core_dmg_buff",
-        "value": 0.54,
-        "shot_duration": 1,
-        "duration": 0
-      },
-      "description": "部位破壊(part_break)時に発動するコアダメージバフ"
+        "effect_no": 3,
+        "value_list": [0.0299, 0.0322, 0.0345, 0.0368, 0.0391, 0.0414, 0.0437, 0.046, 0.0483, 0.0506]
+      }
     }
   ],
   "burst_skill": {
     "name": "Burst: キル・ザ・ターゲット",
-    "trigger_type": "manual",
+    "trigger_type": "on_use_burst_skill",
     "trigger_value": 0,
     "cooldown": 20.0,
     "effect_type": "cumulative_stages",
@@ -81,7 +80,8 @@
       {
         "effect_type": "damage",
         "kwargs": {
-          "multiplier": 2.8024,
+          "effect_no": 4,
+          "multiplier_list": [1.5912, 1.7136, 1.836, 1.9584, 2.0808, 2.2032, 2.3256, 2.448, 2.5704, 2.6928],
           "profile": {
             "is_skill_damage": true
           }
@@ -89,16 +89,30 @@
         "description": "バースト使用時に無条件発動する追加ダメージ"
       },
       {
+        "trigger_type": "part_break",
+        "trigger_value": 0,
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "buff_type": "core_dmg_buff",
+          "effect_no": 5,
+          "value_list": [0.096, 0.1034, 0.1108, 0.1182, 0.1256, 0.133, 0.1404, 0.1478, 0.1552, 0.1626],
+          "duration": 10
+        },
+        "description": "部位破壊フラグがONになっている時に発動するコアダメージバフ"
+      },
+      {
         "effect_type": "buff",
         "target": "allies",
         "kwargs": {
             "buff_type": "atk_buff_fixed",
-            "value": 0.0645,
+            "effect_no": 6,
+            "value_list": [0.072, 0.0776, 0.0831, 0.0887, 0.0942, 0.0997, 0.1053, 0.1108, 0.1164, 0.1219],
             "duration": 10,
             "scale_by_caster_stats": true,
             "stat_type": "base"
         },
-        "description": "発動者の基礎攻撃力×6.45%の固定値を攻撃力バフとして付与"
+        "description": "発動者の基礎攻撃力バフ"
       }
     ]
   }

@@ -20,8 +20,14 @@ class CharacterSkillMixin:
                     if prev_count < skill.trigger_value <= current_count:
                         is_triggered = True
                 elif trigger_type == 'part_break': is_triggered = True
-                elif skill.trigger_value <= 0 and trigger_type in ['shot_count', 'time_interval', 'pellet_hit', 'critical_hit']: is_triggered = False 
+                # ▼▼▼ 修正: trigger_value<=0 の除外対象に full_charge_count を追加 ▼▼▼
+                elif skill.trigger_value <= 0 and trigger_type in ['shot_count', 'full_charge_count', 'time_interval', 'pellet_hit', 'critical_hit']: is_triggered = False 
+                # ▲▲▲ 修正ここまで ▲▲▲
                 elif trigger_type == 'shot_count' and val > 0 and val % skill.trigger_value == 0: is_triggered = True
+
+                # ▼▼▼ 追加: フルチャージ攻撃回数トリガー ▼▼▼
+                elif trigger_type == 'full_charge_count' and val > 0 and val % skill.trigger_value == 0: is_triggered = True
+                # ▲▲▲ 追加ここまで ▲▲▲
                 elif trigger_type == 'time_interval' and val % (skill.trigger_value * simulator.FPS) == 0: is_triggered = True
                 elif trigger_type == 'ammo_empty' and val == 0: is_triggered = True
                 elif trigger_type == 'on_burst_enter': is_triggered = True
@@ -40,6 +46,18 @@ class CharacterSkillMixin:
                             trigger_count = count_diff
 
                 elif trigger_type == 'on_receive_heal': is_triggered = True
+
+                # ▼▼▼ 追加: バースト終了後からの経過時間トリガー ▼▼▼
+                elif trigger_type == 'interval_after_burst_end':
+                    # バースト終了記録があり、かつ現在時刻がそれより後の場合
+                    if self.last_burst_end_frame > 0 and frame > self.last_burst_end_frame:
+                        elapsed = frame - self.last_burst_end_frame
+                        # 指定秒数（trigger_value）ごとに発動
+                        interval_frames = skill.trigger_value * simulator.FPS
+                        if elapsed % interval_frames == 0:
+                            is_triggered = True
+                # ▲▲▲ 追加ここまで ▲▲▲
+
                 elif trigger_type == 'variable_interval':
                     intervals = skill.kwargs.get('intervals', {})
                     stack_name = skill.kwargs.get('stack_name')

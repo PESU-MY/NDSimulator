@@ -15,7 +15,7 @@
   "skills": [
     {
       "name": "S1: ノートの中の記憶",
-      "trigger_type": "shot_count",
+      "trigger_type": "full_charge_count",
       "trigger_value": 1,
       "effect_type": "cumulative_stages",
       "target": "allies",

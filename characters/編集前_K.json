@@ -20,13 +20,12 @@
       "trigger_value": 0,
       "effect_type": "stack_buff",
       "target": "self",
-      "effect_no" : 1, 
       "kwargs": {
         "stack_name": "Scale of Balance",
         "buff_type": "crit_rate_buff",
-        "value_list": [0.0044, 0.0047, 0.0051, 0.0054, 0.0058, 0.0061, 0.0064, 0.0068, 0.0071, 0.0075],
+        "value": 0.0075,
         "max_stack": 100,
-        "stack_amount_list": [10, 10, 10, 20, 20, 20, 30, 30, 30, 30],
+        "stack_amount": 30,
         "duration": 99999,
         "tag": "scale_balance"
       }
@@ -38,8 +37,7 @@
       "effect_type": "damage",
       "target": "enemy",
       "kwargs": {
-        "effect_no" : 3, 
-        "multiplier_list": [0.1412, 0.1521, 0.163, 0.1738, 0.1847, 0.1956, 0.2064, 0.2173, 0.2282, 0.239],
+        "multiplier": 0.239,
         "profile": {
           "is_skill_damage": true
         }
@@ -77,8 +75,7 @@
           "target": "allies",
           "kwargs": {
             "buff_type": "max_ammo_rate",
-            "effect_no" : 4, 
-            "value_list": [-0.3021, -0.3254, -0.3486, -0.3719, -0.3951, -0.4184, -0.4416, -0.4649, -0.4881, -0.5113],
+            "value": -0.5113,
             "duration": 10,
             "tag": "justice_realized"
           }
@@ -88,8 +85,7 @@
           "target": "allies",
           "kwargs": {
             "buff_type": "atk_dmg_buff",
-            "effect_no" : 5, 
-            "value_list": [0.0627, 0.0676, 0.0724, 0.0772, 0.0821, 0.0869, 0.0917, 0.0966, 0.1014, 0.1062],
+            "value": 0.1062,
             "duration": 10,
             "tag": "justice_realized"
           }
@@ -133,8 +129,7 @@
             "name": "K Burst",
             "type": "RAPID",
             "weapon_class": "SMG",
-            "effect_no" : 6, 
-            "multiplier_list": [1.0932, 1.1772, 1.2614, 1.3454, 1.4296, 1.5136, 1.5978, 1.6818, 1.766, 1.85],
+            "multiplier": 1.85,
             "windup_frames": 12,
             "winddown_frames": 10,
             "hit_size": 20,
@@ -150,8 +145,7 @@
         "target": "self",
         "kwargs": {
           "buff_type": "atk_buff_rate",
-          "effect_no" : 7, 
-          "value_list": [0.3744, 0.4032, 0.432, 0.4608, 0.4896, 0.5184, 0.5472, 0.576, 0.6048, 0.6336],
+          "value": 0.6336,
           "duration": 10
         }
 
@@ -161,8 +155,7 @@
         "target": "self",
         "kwargs": {
           "buff_type": "atk_dmg_buff",
-          "effect_no" : 8, 
-          "value_list": [0.1248, 0.1344, 0.144, 0.1536, 0.1632, 0.1728, 0.1824, 0.192, 0.2016, 0.2112],
+          "value": 0.2112,
           "duration": 10
         }
 
@@ -170,6 +163,3 @@
     ]
   }
 }
-
-
-    
