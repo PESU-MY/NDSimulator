@@ -50,8 +50,19 @@
 
 2. バフ系（「〜UP」「〜増加」「〜短縮」）
    - effect_type: "buff"
-   - パラメータ: value または value_list
-   - buff_type: 効果内容に応じてマッピング（例: 攻撃力→atk_buff_rate / atk_buff_fixed）
+   - 必須構造: パラメータ（value, duration, buff_type等）は必ず `kwargs` オブジェクトの中に記述すること。
+     ※直下に書くと、レベル変動処理（_listの展開）などで無視される場合がある。
+
+   (記述例)
+   "stages": [
+     {
+       "effect_type": "buff",
+       "kwargs": {  <-- 重要！
+         "buff_type": "atk_buff_rate",
+         "value_list": [...]
+       }
+     }
+   ]
 
 3. スタック/段階系（「〜スタック適用」「順番に攻撃」）
    - effect_type: "cumulative_stages"

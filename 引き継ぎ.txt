@@ -210,6 +210,21 @@ engine.py の tick メソッド内で毎フレーム判定が行われる。
   }
 }
 
+【JSON記述時の注意点：kwargs の必須性】
+スキル効果のパラメータ（value, duration, buff_type, および各種 _list）は、
+必ず `kwargs` ディクショナリの中に記述する必要がある。
+
+特に `cumulative_stages` の内部ステージを記述する際、
+`effect_type` と同列に `value_list` などを書いてしまうミスが発生しやすい。
+この場合、main.py の再帰読み込み処理の対象外となり、
+レベル変動が適用されず（デフォルト値または0として）処理されてしまうため注意すること。
+
+NG例:
+{ "effect_type": "buff", "value_list": [...] }
+
+OK例:
+{ "effect_type": "buff", "kwargs": { "value_list": [...] } }
+
 8. ターゲット指定と条件判定の厳密化（最新改修）
 
 【cumulative_stages 内のターゲット優先度変更】
