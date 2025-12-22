@@ -145,9 +145,9 @@ dummy_ct_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/cinderella.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/アスカ.json', skill_level=10)
 rei_nikke = create_character_from_json('characters/レイ_仮称.json', skill_level=10)
-burst1_nikke = create_character_from_json('characters/D_キラーワイフ.json', skill_level=10)
+burst1_nikke = create_character_from_json('characters/I-DOLL・オーシャン.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
 
 # 2. ダミーキャラの作成
@@ -170,7 +170,7 @@ rotation = [
 sim = NikkeSimulator(
     characters=all_characters,
     burst_rotation=rotation,
-    enemy_element="Wind", 
+    enemy_element="None", 
     enemy_core_size=3.0,
     enemy_size=100,
     part_break_mode=False,

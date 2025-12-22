@@ -36,7 +36,8 @@
           "effect_type": "buff",
           "kwargs": {
             "buff_type": "hit_rate_buff",
-            "value": 0.9818, 
+            "effect_no" : 1,
+            "value_list": [0.7854, 0.8072, 0.829, 0.8509, 0.8727, 0.8945, 0.9163, 0.9381, 0.96, 0.9818], 
             "duration": 0,
             "shot_duration": 4
           }
@@ -45,7 +46,8 @@
           "effect_type": "buff",
           "kwargs": {
             "buff_type": "atk_dmg_buff",
-            "value": 0.72,
+            "effect_no" : 2,
+            "value_list": [0.432, 0.464, 0.496, 0.528, 0.56, 0.592, 0.624, 0.656, 0.688, 0.72],
             "duration": 0,
             "shot_duration": 4
           }
@@ -69,7 +71,8 @@
       "target": "self",
       "kwargs": {
         "buff_type": "pierce_dmg_buff",
-        "value": 0.5508,
+        "effect_no" : 3,
+        "value_list": [0.3168, 0.3428, 0.3688, 0.3948, 0.4208, 0.4468, 0.4728, 0.4988, 0.5248, 0.5508],
         "duration": 99999
       }
     },
@@ -87,7 +90,8 @@
           "effect_type": "buff",
           "kwargs": {
             "buff_type": "atk_buff_rate",
-            "value": 0.7524,
+            "effect_no" : 4,
+            "value_list": [0.45, 0.4836, 0.5172, 0.5508, 0.5844, 0.618, 0.6516, 0.6852, 0.7188, 0.7524],
             "duration": 10 
           }
         },
@@ -95,7 +99,8 @@
           "effect_type": "buff",
           "kwargs": {
             "buff_type": "hit_rate_buff",
-            "value": 0.4068, 
+            "effect_no" : 5,
+            "value_list": [0.234, 0.2532, 0.2724, 0.2916, 0.3108, 0.33, 0.3492, 0.3684, 0.3876, 0.4068], 
             "duration": 10 
           }
         }
@@ -117,7 +122,8 @@
         "effect_type": "buff",
         "kwargs": {
             "buff_type": "attack_speed_rate",
-            "value": 0.65,
+            "effect_no" : 6,
+            "value_list": [0.3672, 0.3986, 0.43, 0.4614, 0.4929, 0.5243, 0.5557, 0.5871, 0.6186, 0.65],
             "duration": 15
           }
       },
@@ -125,7 +131,8 @@
         "effect_type": "buff",
         "kwargs": {
             "buff_type": "atk_buff_rate",
-            "value": 0.8812,
+            "effect_no" : 7,
+            "value_list": [0.5108, 0.5519, 0.5931, 0.6342, 0.6754, 0.7165, 0.7577, 0.7989, 0.84, 0.8812],
             "duration": 15
           }
       },
@@ -133,7 +140,8 @@
         "effect_type": "buff",
         "kwargs": {
             "buff_type": "pellet_count_add",
-            "value": 5,
+            "effect_no" : 8,
+            "value_list": [3, 3, 3, 4, 4, 4, 5, 5, 5, 5],
             "duration": 15
           }
       }

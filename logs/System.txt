@@ -1,66 +1,42 @@
 === Simulation Start ===
-Character: D：キラーワイフ (Atk:21307)
+Character: I-DOLL・オーシャン (Atk:21307)
 Character: Dummy_B2 (Atk:1)
-Character: シンデレラ (Atk:17059)
+Character: アスカ (Atk:25554)
 Character: Dummy_B3 (Atk:1)
 Character: Dummy_B3 (Atk:1)
-[Burst] D：キラーワイフ used Burst Stage 1
+[Burst] I-DOLL・オーシャン used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for シンデレラ at frame 903
-[Burst] D：キラーワイフ used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for Dummy_B3 at frame 1806
-[Burst] D：キラーワイフ used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for シンデレラ at frame 2709
-[Burst] D：キラーワイフ used Burst Stage 1
+[Burst] アスカ used Burst Stage 3
+[Burst] Recorded burst end time for アスカ at frame 903
+[Burst] I-DOLL・オーシャン used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for Dummy_B3 at frame 3612
-[Burst] D：キラーワイフ used Burst Stage 1
+[Burst] Recorded burst end time for Dummy_B3 at frame 2103
+[Burst] I-DOLL・オーシャン used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for シンデレラ at frame 4515
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] D：キラーワイフ used Burst Stage 1
+[Burst] アスカ used Burst Stage 3
+[Burst] Recorded burst end time for アスカ at frame 3303
+[Burst] I-DOLL・オーシャン used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 5418
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] D：キラーワイフ used Burst Stage 1
+[Burst] Recorded burst end time for Dummy_B3 at frame 4503
+[Burst] I-DOLL・オーシャン used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[Burst] Recorded burst end time for シンデレラ at frame 6321
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] D：キラーワイフ used Burst Stage 1
+[Burst] アスカ used Burst Stage 3
+[Burst] Recorded burst end time for アスカ at frame 5703
+[Burst] I-DOLL・オーシャン used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 7224
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] D：キラーワイフ used Burst Stage 1
+[Burst] Recorded burst end time for Dummy_B3 at frame 6903
+[Burst] I-DOLL・オーシャン used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[Burst] Recorded burst end time for シンデレラ at frame 8127
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] D：キラーワイフ used Burst Stage 1
+[Burst] アスカ used Burst Stage 3
+[Burst] Recorded burst end time for アスカ at frame 8103
+[Burst] I-DOLL・オーシャン used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for Dummy_B3 at frame 9030
-[Burst] D：キラーワイフ used Burst Stage 1
+[Burst] Recorded burst end time for Dummy_B3 at frame 9303
+[Burst] I-DOLL・オーシャン used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] シンデレラ used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
-[Burst] Recorded burst end time for シンデレラ at frame 9933
-[Burst] D：キラーワイフ used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 7.00s (Source: D：キラーワイフ)
+[Burst] アスカ used Burst Stage 3
+[Burst] Recorded burst end time for アスカ at frame 10503

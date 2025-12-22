@@ -3,6 +3,7 @@
   "burst_stage": "1",
   "weapon_type": "SMG",
   "element": "Iron",
+  "class": "Supporter",
   "stats": {
     "base_atk": 21307,
     "max_ammo": 120,
@@ -29,21 +30,46 @@
       "effect_type": "cumulative_stages",
       "target": "allies",
       "stages": [
-        {"effect_type": "buff", "buff_type": "max_ammo_rate", "value": 0.4517, "duration": 5},
-        {"effect_type": "buff", "buff_type": "crit_dmg_buff", "value": 0.1246, "duration": 5},
-        {"effect_type": "buff", "buff_type": "atk_buff_rate", "value": 0.1442, "duration": 5}
+        {
+          "effect_type": "buff",
+          "kwargs": { 
+            "buff_type": "max_ammo_rate",
+            "effect_no": 1,
+            "value_list": [0.0705, 0.1129, 0.1552, 0.1976, 0.2399, 0.2823, 0.3246, 0.367, 0.4093, 0.4517],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": { 
+            "buff_type": "crit_dmg_buff",
+            "effect_no": 2,
+            "value_list": [0.0336, 0.0437, 0.0538, 0.0639, 0.074, 0.0841, 0.0942, 0.1044, 0.1145, 0.1246],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "effect_no": 3,
+            "value_list": [0.1077, 0.1215, 0.1354, 0.1492, 0.1631, 0.1769, 0.1908, 0.2046, 0.2185, 0.2323],
+            "duration": 5
+          }
+        }
       ]
     }
   ],
   "burst_skill": {
     "name": "Liter Burst Skill",
-    "trigger_type": "manual",
+    "trigger_type": "on_use_burst_skill",
     "trigger_value": 0,
     "cooldown": 20,
     "effect_type": "buff",
     "target": "allies",
     "buff_type": "atk_buff_rate",
-    "value": 0.66,
+    "effect_no" : 5, 
+    "value_list": [0.363, 0.396, 0.429, 0.462, 0.495, 0.528, 0.561, 0.594, 0.627, 0.66],
     "duration": 5
   }
 }

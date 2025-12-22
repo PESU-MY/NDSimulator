@@ -32,7 +32,8 @@
       "target": "self",
       "kwargs": {
         "buff_type": "atk_buff_rate",
-        "value": 9.09,
+        "effect_no" : 2,
+        "value_list": [0.0227, 0.0303, 0.0378, 0.0454, 0.053, 0.0606, 0.0681, 0.0757, 0.0833, 0.0909],
         "duration": 5
       },
       "stages": []
@@ -46,7 +47,8 @@
     "target": "self",
     "kwargs": {
       "buff_type": "max_ammo_rate",
-      "value": 787.5,
+      "effect_no" : 3,
+      "value_list": [1.9687, 2.625, 3.2812, 3.9375, 4.5937, 5.25, 5.9062, 6.5625, 7.2187, 7.875],
       "duration": 10
     },
     "stages": [],

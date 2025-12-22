@@ -26,7 +26,9 @@
           "effect_type": "buff",
           "kwargs": {
             "buff_type": "atk_buff_fixed",
-            "value": 11785,
+            "scale_by_caster_stats": true,
+            "effect_no" : 1,
+            "value_list": [0.3268, 0.352, 0.3771, 0.4022, 0.4274, 0.4525, 0.4777, 0.5028, 0.528, 0.5531],
             "duration": 10
           }
         },
@@ -34,7 +36,8 @@
           "effect_type": "buff",
           "kwargs": {
             "buff_type": "reload_speed_rate",
-            "value": 0.4928,
+            "effect_no" : 2,
+            "value_list": [0.2912, 0.3136, 0.336, 0.3584, 0.3808, 0.4032, 0.4256, 0.448, 0.4704, 0.4928],
             "duration": 10
           }
         }
@@ -49,15 +52,19 @@
       "stages": [
         {
           "effect_type": "damage",
-          "multiplier": 3.8242,
-          "profile": { "is_skill_damage": true }
+          "kwargs": { 
+            "effect_no" : 3,
+            "multiplier_list": [2.2597, 2.4336, 2.6074, 2.7812, 2.955, 3.1289, 3.3027, 3.4765, 3.6504, 3.8242],
+            "profile": { "is_skill_damage": true }
+          }
         },
         {
           "effect_type": "buff",
           "target": "self",
           "kwargs": {
-            "buff_type": "part_dmg_buff",
-            "value": 0.0691,
+            "buff_type": "dummy_buff",
+            "effect_no" : 4,
+            "value_list": [0.0408, 0.044, 0.0471, 0.0502, 0.0534, 0.0565, 0.0597, 0.0628, 0.066, 0.0691],
             "duration": 10
           }
         }
@@ -76,7 +83,8 @@
         "effect_type": "buff",
         "kwargs": {
             "buff_type": "max_ammo_rate",
-            "value": -0.7392,
+            "effect_no" : 5,
+            "value_list": [-0.4368, -0.4704, -0.504, -0.5376, -0.5712, -0.6048, -0.6384, -0.672, -0.7056, -0.7392],
             "duration": 10
         }
       },
@@ -84,7 +92,8 @@
         "effect_type": "buff",
         "kwargs": {
             "buff_type": "reload_speed_rate",
-            "value": 0.2772,
+            "effect_no" : 6,
+            "value_list": [0.1638, 0.1764, 0.189, 0.2016, 0.2142, 0.2268, 0.2394, 0.252, 0.2646, 0.2772],
             "duration": 10
         }
       },
@@ -92,7 +101,8 @@
         "effect_type": "buff",
         "kwargs": {
             "buff_type": "elemental_buff",
-            "value": 0.4224,
+            "effect_no" : 7,
+            "value_list": [0.2496, 0.2688, 0.288, 0.3072, 0.3264, 0.3456, 0.3648, 0.384, 0.4032, 0.4224],
             "duration": 10
         }
       }
