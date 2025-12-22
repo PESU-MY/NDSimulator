@@ -204,3 +204,9 @@ JSONには、formatted.txt に明示的な指定がない限り記載しなく�
    }
    
    ※ `condition` に書くと判定されず、無条件発動してしまうため注意。
+
+   [D. HP参照スキル]
+「最大HPのn%」といった記述がある場合：
+- `scale_by_caster_stats: true` を設定。
+- `target_stat: "max_hp"` を追加する。
+- 文脈に応じて `stat_type: "finally"` （現在の最大HP）を指定する。

@@ -217,17 +217,33 @@ class SkillEngineMixin:
                 self.log(f"[CT Reduce] Reduced cooldowns by {reduce_sec:.2f}s (Source: {caster.name})", target_name="System")
             return 0
         
-        # ▼▼▼ 修正箇所: ステータス参照のロジック変更 ▼▼▼
+        # ▼▼▼ 修正箇所: ステータス参照のロジック変更 (HP対応) ▼▼▼
         if kwargs.get('scale_by_caster_stats'):
             ratio = kwargs.get('value', 0)
-            # デフォルトを 'base' とし、明示的に 'finally' が指定された場合のみ現在値を参照
+            # stat_type: 'base' (基礎ステータス) or 'finally' (バフ込み現在値)
             stat_type = kwargs.get('stat_type', 'base') 
+            # target_stat: 'atk' (攻撃力) or 'max_hp' (最大HP) - デフォルトは atk
+            target_stat = kwargs.get('target_stat', 'atk')
             
-            calc_atk = caster.base_atk
-            if stat_type == 'finally': 
-                calc_atk = caster.get_current_atk(frame)
-                
-            if calc_atk > 0: kwargs['value'] = calc_atk * ratio
+            val_to_scale = 0
+            
+            if target_stat == 'atk':
+                if stat_type == 'finally': 
+                    val_to_scale = caster.get_current_atk(frame)
+                else:
+                    val_to_scale = caster.base_atk
+                    
+            elif target_stat == 'max_hp':
+                # 最大HPの計算
+                if stat_type == 'finally':
+                    # バフ込み最大HP = 基礎HP * (1 + rate) + fixed
+                    rate = caster.buff_manager.get_total_value('max_hp_rate', frame)
+                    fixed = caster.buff_manager.get_total_value('max_hp_fixed', frame)
+                    val_to_scale = caster.base_hp * (1.0 + rate) + fixed
+                else:
+                    val_to_scale = caster.base_hp
+            
+            if val_to_scale > 0: kwargs['value'] = val_to_scale * ratio
         # ▲▲▲ 修正ここまで ▲▲▲
 
         if skill.effect_type == 'activate_flag':
