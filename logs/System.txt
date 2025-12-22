@@ -1,42 +1,65 @@
 === Simulation Start ===
-Character: N102 (Atk:21307)
+Character: Dummy_B1 (Atk:1)
 Character: Dummy_B2 (Atk:1)
 Character: アスカ (Atk:25554)
 Character: Dummy_B3 (Atk:1)
 Character: Dummy_B3 (Atk:1)
-[Burst] N102 used Burst Stage 1
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
 [Burst] Recorded burst end time for アスカ at frame 903
-[Burst] N102 used Burst Stage 1
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 2103
-[Burst] N102 used Burst Stage 1
+[Burst] Recorded burst end time for Dummy_B3 at frame 1806
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 3303
-[Burst] N102 used Burst Stage 1
+[Burst] Recorded burst end time for アスカ at frame 2709
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 4503
-[Burst] N102 used Burst Stage 1
+[Burst] Recorded burst end time for Dummy_B3 at frame 3612
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 5703
-[Burst] N102 used Burst Stage 1
+[Burst] Recorded burst end time for アスカ at frame 4515
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 6903
-[Burst] N102 used Burst Stage 1
+[Burst] Recorded burst end time for Dummy_B3 at frame 5418
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 8103
-[Burst] N102 used Burst Stage 1
+[Burst] Recorded burst end time for アスカ at frame 6321
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 9303
-[Burst] N102 used Burst Stage 1
+[Burst] Recorded burst end time for Dummy_B3 at frame 7224
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 10503
+[Burst] Recorded burst end time for アスカ at frame 8127
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[Burst] Recorded burst end time for Dummy_B3 at frame 9030
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] アスカ used Burst Stage 3
+[Burst] Recorded burst end time for アスカ at frame 9933
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3

@@ -51,6 +51,21 @@ class SkillEngineMixin:
                 if count < min_v: return False
         # ▲▲▲ 追加ここまで ▲▲▲
 
+        # ▼▼▼ 追加: バリア所持判定 (has_barrier) ▼▼▼
+        if "has_barrier" in condition:
+            # 現在有効な shield タイプのバフ合計値を取得
+            shield_val = target.buff_manager.get_total_value('shield', frame)
+            
+            # 条件が true (バリアが必要) なのに値が 0 以下なら False
+            if condition["has_barrier"] is True and shield_val <= 0:
+                return False
+            # 条件が false (バリアが無いこと) なのに値が 0 より大なら False
+            elif condition["has_barrier"] is False and shield_val > 0:
+                return False
+        # ▲▲▲ 追加ここまで ▲▲▲
+
+        
+
         return True
 
     def should_apply_skill(self, skill, frame, caster=None):
@@ -257,6 +272,21 @@ class SkillEngineMixin:
                 target.current_ammo = min(target.current_max_ammo, target.current_ammo + amount)
                 self.log(f"[Ammo] Refilled {amount} ammo (Fixed) for {target.name}", target_name=target.name)
             # ▲▲▲▲▲▲
+
+            # ▼▼▼ 修正: バリア (Shield) 効果の実装（タグ対応） ▼▼▼
+            elif skill.effect_type == 'shield':
+                value = kwargs.get('value', 1.0)
+                duration = kwargs.get('duration', 0) * self.FPS
+                
+                # JSONで "tag" 指定があればそれを使い、なければ "barrier" をデフォルトとする
+                tag_name = kwargs.get('tag', 'barrier') 
+                
+                target.buff_manager.add_buff(
+                    'shield', value, duration, frame, 
+                    source=skill.name, tag=tag_name  # ← ここを変数に変更
+                )
+                self.log(f"[Barrier] {target.name} applied Shield ({tag_name}) (Val:{value}, Dur:{kwargs.get('duration')}s)", target_name=target.name)
+            # ▲▲▲ 修正ここまで ▲▲▲
 
             elif skill.effect_type == 'buff' or skill.effect_type == 'stack_buff':
                 b_type = kwargs.get('buff_type', skill.effect_type) 

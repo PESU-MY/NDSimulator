@@ -1,0 +1,81 @@
+{
+  "name": "アドミ",
+  "burst_stage": "2",
+  "weapon_type": "SR",
+  "element": "Wind",
+  "class": "Supporter",
+  "squad": "トライアングル",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 1.73,
+    "damage_rate": 0.6737,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "S1: 応援の手",
+      "trigger_type": "receive_damage",
+      "trigger_value": 20,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "charge_dmg_buff",
+        "effect_no": 1,
+        "value_list": [0.048, 0.0533, 0.0586, 0.064, 0.0693, 0.0746, 0.08, 0.0853, 0.0906, 0.0959],
+        "duration": 20.0
+      }
+    },
+    {
+      "name": "S2: ネコの息遣い",
+      "trigger_type": "time_interval",
+      "trigger_value": 20,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 2
+      },
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "description": "taken_dmg_cut_buff (被ダメージ減少)",
+        "effect_no": 2,
+        "value_list": [0.1432, 0.1591, 0.1751, 0.191, 0.2069, 0.2228, 0.2387, 0.2546, 0.2706, 0.2865],
+        "duration": 10.0
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 愛情の恩返し",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "target": "allies",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "buff_type": "reload_speed_rate",
+          "effect_no": 3,
+          "value_list": [0.2545, 0.2828, 0.3111, 0.3394, 0.3677, 0.396, 0.4242, 0.4525, 0.4808, 0.5091],
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "buff_type": "crit_dmg_buff",
+          "effect_no": 4,
+          "value_list": [0.1417, 0.1574, 0.1732, 0.1889, 0.2046, 0.2204, 0.2361, 0.2519, 0.2676, 0.2834],
+          "duration": 10.0
+        }
+      }
+    ],
+    "cooldown": 20.0
+  }
+}
