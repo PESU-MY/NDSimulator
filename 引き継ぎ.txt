@@ -262,3 +262,25 @@ N102（アン）やアリスなどが持つ「攻撃力が最も高い味方n機
   3. 親スキル（バーストスキル自体）の `target` / `target_condition`
 優先度低
 これにより、JSON記述の揺らぎ（kwargs内か外か）を吸収しつつ、ステージごとの個別指定も可能にしている。
+
+10. バリア（Shield）機能の実装と仕様
+
+【バリア展開 (effect_type: "shield")】
+キャラクターにバリア（シールド）を付与する機能を実装。
+・仕様: 
+  - `BuffManager` に `shield` タイプとして登録され、耐久値（value）と持続時間（duration）を持つ。
+  - `tag` を指定することで、「自分専用バリア」や「全体共有バリア」を区別可能（デフォルトは "barrier"）。
+・記述例:
+  "effect_type": "shield",
+  "target": "self",
+  "kwargs": { "value": 5000, "duration": 10, "tag": "personal_barrier" }
+
+【バリア所持判定 (has_barrier)】
+対象がバリアを持っているかを判定するロジックを `check_target_condition` に追加。
+・仕様:
+  - `target_condition` 内で `"has_barrier": true` を指定すると、現在有効なシールド値（全タグ合計）が0より大きいか判定する。
+  - 特定のバリアのみを条件にしたい場合は、既存の `"has_tag"` を使用してタグ名で判定する。
+  
+【注意点：自身のバリア判定】
+アスカのように「自分自身がバリアを持っている時」という条件であっても、
+コード上の実装場所の関係で `condition` ではなく **`target_condition`** に記述する必要がある。

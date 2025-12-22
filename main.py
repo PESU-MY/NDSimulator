@@ -143,6 +143,16 @@ dummy_ct_skill = Skill(
     value=5.0
 )
 
+dummy_barrier_skill = Skill(
+    name = "全体プロテクション",
+    trigger_type="on_use_burst_skill", 
+    trigger_value=0,
+    effect_type = "shield",
+    target = "allies",
+    value = 5000,
+    duration = 10,
+)
+
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
 burst3_nikke = create_character_from_json('characters/アスカ.json', skill_level=10)
@@ -152,7 +162,7 @@ print(">>> キャラクター読み込み完了\n")
 
 # 2. ダミーキャラの作成
 dummy_b1 = create_dummy_character("Dummy_B1", 1, "SMG", skills=[dummy_ct_skill])
-dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG")
+dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG" , skills=[dummy_barrier_skill])
 dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 # 3. 編成リスト作成 

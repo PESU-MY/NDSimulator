@@ -183,3 +183,24 @@ JSON変換:
 winddown_frames（射撃後隙）等のフレーム情報は、原則としてモデル定義(models.py)の
 デフォルト値を使用する。
 JSONには、formatted.txt に明示的な指定がない限り記載しなくてよい。
+
+[バリア（シールド）関連の記述]
+
+1. バリア付与
+   - effect_type: "shield"
+   - kwargs:
+     - value: 耐久値（判定用なら1でも可）
+     - duration: 持続時間（秒）
+     - tag: 識別用タグ（任意。指定なしなら "barrier"）
+
+2. バリア所持条件（重要）
+   「バリアを持っている時」という条件は、対象が自分（self）であっても
+   必ず **target_condition** の中に記述する。
+   
+   (記述例)
+   "target": "self",
+   "target_condition": {
+     "has_barrier": true
+   }
+   
+   ※ `condition` に書くと判定されず、無条件発動してしまうため注意。

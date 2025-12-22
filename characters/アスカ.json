@@ -47,7 +47,7 @@
       "trigger_value": 0,
       "effect_type": "buff",
       "target": "self",
-      "condition": {
+      "target_condition": {
         "has_barrier": true
       },
       "kwargs": {
