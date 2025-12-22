@@ -1,0 +1,175 @@
+{
+  "name": "K",
+  "burst_stage": "3",
+  "weapon_type": "SMG",
+  "element": "Electric",
+  "class": "Attacker",
+  "squad": "Siege Perilous",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.8,
+    "damage_rate": 0.091,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "pellet_count": 2
+  },
+  "skills": [
+    {
+      "name": "S1: 傾く天秤 (スタック)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "effect_no" : 1, 
+      "kwargs": {
+        "stack_name": "Scale of Balance",
+        "buff_type": "crit_rate_buff",
+        "value_list": [0.0044, 0.0047, 0.0051, 0.0054, 0.0058, 0.0061, 0.0064, 0.0068, 0.0071, 0.0075],
+        "max_stack": 100,
+        "stack_amount_list": [10, 10, 10, 20, 20, 20, 30, 30, 30, 30],
+        "duration": 99999,
+        "tag": "scale_balance"
+      }
+    },
+    {
+      "name": "S1: 傾く天秤 (追撃)",
+      "trigger_type": "critical_hit",
+      "trigger_value": 4,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no" : 3, 
+        "multiplier_list": [0.1412, 0.1521, 0.163, 0.1738, 0.1847, 0.1956, 0.2064, 0.2173, 0.2282, 0.239],
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S1: 傾く天秤 (解除)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "condition": {
+        "is_last_burst_user": true
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "remove_tags": ["scale_balance"],
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 0
+      }
+    },
+    {
+      "name": "S2: 正義の執行 (バフ)",
+      "trigger_type": "stack_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "stack_name": "Scale of Balance",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "max_ammo_rate",
+            "effect_no" : 4, 
+            "value_list": [-0.3021, -0.3254, -0.3486, -0.3719, -0.3951, -0.4184, -0.4416, -0.4649, -0.4881, -0.5113],
+            "duration": 10,
+            "tag": "justice_realized"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "atk_dmg_buff",
+            "effect_no" : 5, 
+            "value_list": [0.0627, 0.0676, 0.0724, 0.0772, 0.0821, 0.0869, 0.0917, 0.0966, 0.1014, 0.1062],
+            "duration": 10,
+            "tag": "justice_realized"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 正義の執行 (解除)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "condition": {
+        "is_last_burst_user": true
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "remove_tags": ["justice_realized"],
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 0
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 正義への手段",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "weapon_change",
+        "target": "self",
+        "kwargs": {
+          "duration": 10,
+          "weapon_data": {
+            "name": "K Burst",
+            "type": "RAPID",
+            "weapon_class": "SMG",
+            "effect_no" : 6, 
+            "multiplier_list": [1.0932, 1.1772, 1.2614, 1.3454, 1.4296, 1.5136, 1.5978, 1.6818, 1.766, 1.85],
+            "windup_frames": 12,
+            "winddown_frames": 10,
+            "hit_size": 20,
+            "fire_interval": 24,
+            "pellet_count": 10,
+            "force_full_burst": true,
+            "reset_ammo_on_revert": false
+          }
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "effect_no" : 7, 
+          "value_list": [0.3744, 0.4032, 0.432, 0.4608, 0.4896, 0.5184, 0.5472, 0.576, 0.6048, 0.6336],
+          "duration": 10
+        }
+
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_dmg_buff",
+          "effect_no" : 8, 
+          "value_list": [0.1248, 0.1344, 0.144, 0.1536, 0.1632, 0.1728, 0.1824, 0.192, 0.2016, 0.2112],
+          "duration": 10
+        }
+
+      }
+    ]
+  }
+}
+
+
+    

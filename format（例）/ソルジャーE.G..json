@@ -1,0 +1,81 @@
+{
+  "name": "ソルジャーE.G.",
+  "weapon_type": "AR",
+  "element": "Electric",
+  "class": "Attacker",
+  "squad": "Elysion",
+  "burst_stage": "3",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.17,
+    "damage_rate": 0.1401,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "S1: イーグルアイ",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "effect_no" : 1, 
+        "value_list": [0.0198, 0.0264, 0.033, 0.0396, 0.0462, 0.0528, 0.0594, 0.0659, 0.0726, 0.0792],
+        "duration": 5.0,
+        "probability": 5
+      },
+      "description": "通常攻撃命中時、5%の確率で発動"
+    },
+    {
+      "name": "S2: イーグルタクティク (通常)",
+      "trigger_type": "time_interval",
+      "trigger_value": 9.0,
+      "effect_type": "buff",
+      "target": "self",
+      "condition": {
+        "not_has_tag": "magic_card_active"
+      },
+      "kwargs": {
+        "buff_type": "max_ammo_rate",
+        "effect_no" : 2, 
+        "value_list": [0.2819, 0.3759, 0.4699, 0.5638, 0.6578, 0.7518, 0.8458, 0.9398, 1.0337, 1.1277],
+        "duration": 5.0
+      }
+    },
+    {
+      "name": "S2: イーグルタクティク (短縮)",
+      "trigger_type": "time_interval",
+      "trigger_value": 2.25,
+      "effect_type": "buff",
+      "target": "self",
+      "condition": {
+        "has_tag": "magic_card_active"
+      },
+      "kwargs": {
+        "buff_type": "max_ammo_rate",
+        "effect_no" : 2, 
+        "value_list": [0.2819, 0.3759, 0.4699, 0.5638, 0.6578, 0.7518, 0.8458, 0.9398, 1.0337, 1.1277],
+        "duration": 5.0
+      },
+      "description": "アルカナバフ時：2.25秒間隔"
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: イーグルショット",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown": 40.0,
+    "effect_type": "damage",
+    "target": "enemy",
+    "kwargs": {
+      "effect_no" : 3, 
+      "multiplier_list": [1.8, 2.4, 3, 3.6, 4.2, 4.8, 5.4, 6, 6.6, 7.2],
+      "profile": {
+        "is_skill_damage": true,
+        "force_full_burst": true
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "name": "レイ（仮称）",
+  "burst_stage": "3",
+  "weapon_type": "AR",
+  "element": "Wind",
+  "class": "Attacker",
+  "squad": "NERV",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.50,
+    "damage_rate": 0.1471
+  },
+  "skills": [
+    {
+      "name": "S1: 殲滅支援 (対A.T.F)",
+      "trigger_type": "shot_count",
+      "trigger_value": 18,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "condition": {
+        "has_tag": "anti_at_field"
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 1,
+            "multiplier_list": [3.4901, 3.7586, 4.0271, 4.2955, 4.564, 4.8325, 5.101, 5.3694, 5.6379, 5.9064],
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        },
+        {
+          "effect_type": "stack_buff",
+          "target": "enemy",
+          "kwargs": {
+            "stack_name": "AntiATField",
+            "buff_type": "taken_dmg_debuff",
+            "value": 0.0083,
+            "stack_amount": 10,
+            "max_stack": 30,
+            "duration": 30,
+            "tag": "anti_at_field"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 殲滅支援 (攻撃態勢)",
+      "trigger_type": "shot_count",
+      "trigger_value": 7,
+      "effect_type": "damage",
+      "target": "enemy",
+      "condition": {
+        "self_has_tag": "attack_mode"
+      },
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [1.6922, 1.8223, 1.9525, 2.0827, 2.2128, 2.343, 2.4732, 2.6033, 2.7335, 2.8637],
+        "profile": {
+          "is_skill_damage": true
+        }
+      }
+    },
+    {
+      "name": "S1: 殲滅支援 (殲滅強化)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "has_tag": "annihilation_mode"
+      },
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "atk_buff_fixed", 
+        "scale_by_caster_stats": true,
+        "value_list": [0.104, 0.112, 0.12, 0.128, 0.136, 0.144, 0.152, 0.16, 0.168, 0.176],
+        "duration": 9.0
+      }
+    },
+    {
+      "name": "S2: 整備補給 (MG立ち上げ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "is_last_burst_user": true,
+        "weapon_type": "MG"
+      },
+      "kwargs": {
+        "buff_type": "mg_warmup_speed",
+        "value": 1.0,
+        "duration": 13.0
+      }
+    },
+    {
+      "name": "S2: 整備補給 (攻撃力)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "value_list": [0.0686, 0.0739, 0.0792, 0.0844, 0.0897, 0.095, 0.1003, 0.1056, 0.1108, 0.1161],
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "Burst: 攻撃態勢",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "cooldown": 40.0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_mode",
+            "value": 1,
+            "duration": 10.0,
+            "tag": "attack_mode"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.2121, 0.2284, 0.2448, 0.2611, 0.2774, 0.2937, 0.31, 0.3264, 0.3427, 0.359],
+            "duration": 10.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "value_list": [0.3744, 0.4032, 0.432, 0.4608, 0.4896, 0.5184, 0.5472, 0.576, 0.6048, 0.6336],
+            "duration": 10.0
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [6.5454, 6.9184, 7.2913, 7.6643, 8.0372, 8.4102, 8.7832, 9.1561, 9.5291, 9.902],
+            "profile": {
+              "is_skill_damage": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 攻撃態勢 (ダミー)",
+    "trigger_type": "on_use_burst_skill",
+    "description": "skillsリスト内で定義済み"
+  }
+}
