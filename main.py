@@ -163,17 +163,17 @@ print(">>> キャラクター読み込み完了\n")
 
 # 2. ダミーキャラの作成
 dummy_b1 = create_dummy_character("Dummy_B1", 1, "SMG", skills=[dummy_ct_skill])
-dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG" , skills=[dummy_barrier_skill])
+dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG")
 dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, saitotu, burst3_nikke, dummy_b3, dummy_b2]
+all_characters = [dummy_b1, burst2_nikke, burst3_nikke, dummy_b3, dummy_b2]
 
 # 4. バーストローテーション
 rotation = [
-    [saitotu,dummy_b1],
-    [dummy_b2],
+    [dummy_b1],
+    [burst2_nikke,dummy_b2],
     [burst3_nikke, dummy_b3] 
 ]
 

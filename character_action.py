@@ -32,6 +32,14 @@ class CharacterActionMixin:
     def tick_action(self, frame, is_full_burst, simulator):
         if self.is_dummy: return 0
         
+        # ▼▼▼ 追加: 気絶(Stun)判定 ▼▼▼
+        # "stun" タグを持つバフが有効な場合、行動不能として処理をスキップ
+        if self.buff_manager.has_active_tag("stun", frame):
+            # ログ出力（頻繁に出過ぎる場合は調整）
+            if frame % 60 == 0:
+                simulator.log(f"[Stun] {self.name} is stunned and cannot act.", target_name=self.name)
+            return 0
+        # ▲▲▲ 追加ここまで ▲▲▲
         
         damage_this_frame = 0
         if self.weapon.type == "MG" and self.state != "SHOOTING" and self.state != "READY": 

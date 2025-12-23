@@ -142,4 +142,7 @@ class BuffManager:
                 parts.append(f"[{name} x{stack['count']} (Val:{val:.2f})]")
         return " | ".join(parts) if parts else "None"
     
-    
+    def remove_stack(self, stack_name):
+        """指定された名前のスタックを削除する"""
+        if stack_name in self.active_stacks:
+            del self.active_stacks[stack_name]

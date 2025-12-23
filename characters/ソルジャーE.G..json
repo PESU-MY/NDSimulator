@@ -64,7 +64,7 @@
   ],
   "burst_skill": {
     "name": "Burst: イーグルショット",
-    "trigger_type": "manual",
+    "trigger_type": "on_use_burst_skill",
     "trigger_value": 0,
     "cooldown": 40.0,
     "effect_type": "damage",

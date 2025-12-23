@@ -31,6 +31,10 @@ class CharacterSkillMixin:
                 elif trigger_type == 'time_interval' and val % (skill.trigger_value * simulator.FPS) == 0: is_triggered = True
                 elif trigger_type == 'ammo_empty' and val == 0: is_triggered = True
                 elif trigger_type == 'on_burst_enter': is_triggered = True
+                # ▼▼▼ 追加: 新規バースト段階トリガーの判定 ▼▼▼
+                elif trigger_type == 'on_burst_1_enter': is_triggered = True
+                elif trigger_type == 'on_burst_2_enter': is_triggered = True
+                # ▲▲▲ 追加ここまで ▲▲▲
                 elif trigger_type == 'on_burst_3_enter': is_triggered = True
                 elif trigger_type == 'on_start': is_triggered = True
                 elif trigger_type == 'on_burst_end': is_triggered = True

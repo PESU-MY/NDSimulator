@@ -78,7 +78,7 @@
   ],
   "burst_skill": {
     "name": "Burst: 貫通特化弾丸",
-    "trigger_type": "manual",
+    "trigger_type": "on_use_burst_skill",
     "trigger_value": 0,
     "cooldown": 40.0,
     "effect_type": "cumulative_stages",

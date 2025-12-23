@@ -65,7 +65,7 @@
   ],
   "burst_skill": {
     "name": "Burst: 青い蝶の記憶",
-    "trigger_type": "manual",
+    "trigger_type": "on_use_burst_skill",
     "trigger_value": 0,
     "effect_type": "buff",
     "target": "allies",

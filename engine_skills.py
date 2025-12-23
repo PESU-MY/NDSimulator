@@ -91,7 +91,14 @@ class SkillEngineMixin:
             if "enemy_element" in skill.condition:
                 if self.enemy_element != skill.condition["enemy_element"]:
                     return False
-            
+            # ▼▼▼ 追加: 自身のスタック数判定 (self_stack_min) ▼▼▼
+            if "self_stack_min" in skill.condition and caster:
+                stack_name = skill.condition.get("stack_name")
+                if stack_name:
+                    count = caster.buff_manager.get_stack_count(stack_name, frame)
+                    if count < skill.condition["self_stack_min"]:
+                        return False
+            # ▲▲▲ 追加ここまで ▲▲▲
         return True
 
     def apply_skill(self, skill, caster, frame, is_full_burst):
@@ -246,12 +253,34 @@ class SkillEngineMixin:
             if val_to_scale > 0: kwargs['value'] = val_to_scale * ratio
         # ▲▲▲ 修正ここまで ▲▲▲
 
+        # ▼▼▼ 追加: スタック数による効果量補正 (copy_stack_count) ▼▼▼
+        # バフや回復など、valueを持つあらゆる効果に対してスタック倍率を適用可能にする
+        if 'copy_stack_count' in kwargs and 'value' in kwargs:
+            stack_name = kwargs['copy_stack_count']
+            # 基本は発動者(caster)のスタックを参照
+            count = caster.buff_manager.get_stack_count(stack_name, frame)
+            
+            # スタック数に応じて値を乗算
+            kwargs['value'] *= count
+            self.log(f"[Stack Scale] Value scaled by {stack_name} (x{count}) -> {kwargs['value']:.4f}", target_name=caster.name)
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         if skill.effect_type == 'activate_flag':
             flag_name = kwargs.get('flag_name')
             for t in targets:
                 t.special_flags.add(flag_name)
                 self.log(f"[Flag] {t.name}: Activated {flag_name}", target_name=t.name)
             return 0
+        
+        # ▼▼▼ 追加: スタック名指定での削除処理 (remove_stacks) ▼▼▼
+        # JSONのkwargsに "remove_stacks": ["name1", "name2"] と記述して使用
+        remove_stacks = kwargs.get('remove_stacks')
+        if remove_stacks:
+            for s_name in remove_stacks:
+                for t in targets:
+                    t.buff_manager.remove_stack(s_name)
+                    self.log(f"[Remove] Removed stack '{s_name}' from {t.name}", target_name=caster.name)
+        # ▲▲▲ 追加ここまで ▲▲▲
 
         if skill.remove_tags:
             for tag in skill.remove_tags:
@@ -418,6 +447,14 @@ class SkillEngineMixin:
                     act_skill.owner_name = caster.name
                     if 'stages' in sub_data: act_skill.stages = sub_data['stages']
                     self.scheduled_actions.append({'frame': exec_frame, 'skill': act_skill, 'caster': caster})
+
+            # ▼▼▼ 追加: バースト段階の再突入・維持機能 (reenter_burst_stage) ▼▼▼
+            elif skill.effect_type == 'reenter_burst_stage':
+                val = int(kwargs.get('value', 1))
+                # シミュレーター本体(self)に再突入ターゲットを予約
+                self.reenter_burst_target = f"BURST_{val}"
+                self.log(f"[Burst] Reserved re-entry to BURST_{val}", target_name=caster.name)
+            # ▲▲▲ 追加ここまで ▲▲▲
                 
             # ▼▼▼ 追加: スタック数の強制設定処理 ▼▼▼
             elif skill.effect_type == 'set_stack':
@@ -429,19 +466,34 @@ class SkillEngineMixin:
                     self.log(f"[Stack Set] {target.name}: {stack_name} set to {val}", target_name=target.name)
             # ▲▲▲ 追加ここまで ▲▲▲
 
-            # ▼▼▼ 追加: スタック数の増減効果 ▼▼▼
             elif skill.effect_type == 'increase_current_stack_count':
-                # value が正なら増加、負なら減少
                 delta = int(kwargs.get('value', 1))
                 
-                # target_buff_type は現状 "stack_buff" (全スタックバフ) を想定
-                # 将来的に特定のバフタイプのみ対象にする場合はここでフィルタリング処理を追加する
+                # "debuff" タグを持つスタックは増加させないようにデフォルトで設定
+                # 必要であればJSONからignore_tagsを指定できるようにしても良いが、
+                # 今回の要望では「デバフを対象から外す」ことが目的なのでハードコードまたはデフォルトリストを使用
+                ignore_tags = kwargs.get('ignore_tags', ["debuff", "negative_buff"])
                 
                 for target in targets:
-                    target.buff_manager.modify_active_stack_counts(delta)
-                    self.log(f"[Stack Mod] Modified all stacks by {delta:+d} for {target.name}", target_name=target.name)
-            # ▲▲▲ 追加ここまで ▲▲▲
+                    target.buff_manager.modify_active_stack_counts(delta, ignore_tags=ignore_tags)
+                    self.log(f"[Stack Mod] Modified stacks by {delta:+d} (Ignored: {ignore_tags}) for {target.name}", target_name=target.name)
+            # ▲▲▲ 修正ここまで ▲▲▲
             
+            # ▼▼▼ 追加: 気絶(Stun)効果 ▼▼▼
+            elif skill.effect_type == 'stun':
+                duration = kwargs.get('duration', 0) * self.FPS
+                tag_name = kwargs.get('tag', 'stun')
+                
+                # 気絶はバフの一種として実装し、CharacterAction/EngineBurstでタグをチェックする
+                # 値は関係ないので0、スタックもしない
+                for target in targets:
+                    target.buff_manager.add_buff(
+                        'stun_status', 0, duration, frame, 
+                        source=skill.name, tag=tag_name
+                    )
+                    self.log(f"[Stun] {target.name} is stunned for {kwargs.get('duration')}s", target_name=target.name)
+            # ▲▲▲ 追加ここまで ▲▲▲
+
             elif skill.effect_type == 'weapon_change':
                 new_weapon_data = kwargs.get('weapon_data')
                 duration = kwargs.get('duration', 0)
