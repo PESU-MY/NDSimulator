@@ -220,3 +220,37 @@ JSONには、formatted.txt に明示的な指定がない限り記載しなく�
    
    ※ `condition` に書くと判定されず、無条件発動してしまうため注意。
 
+【トリガータイプ (trigger_type)】
+・on_burst_1_enter
+  - バーストI段階に突入した瞬間に発動。
+・on_burst_2_enter
+  - バーストII段階に突入した瞬間に発動。
+  （※ burst_skill 枠ではなく、skills 枠のパッシブとして記述すること）
+
+【効果タイプ (effect_type)】
+・reenter_burst_stage
+  - バースト段階を指定した段階に戻す。
+  - 必須args: "value": 1 (戻る段階数、基本的に1)
+
+・stun
+  - 対象を気絶させる。
+  - 必須args: "duration": 秒数, "tag": "stun"
+
+【条件指定 (condition)】
+・self_stack_min
+  - 自身の特定スタックが指定数以上ある場合のみ発動。
+  - 例: { "stack_name": "horoyoi", "self_stack_min": 3 }
+
+【追加パラメータ (kwargs)】
+・copy_stack_count
+  - 指定した文字列（スタック名）の自身の所持数を参照し、効果値(value)に乗算する。
+  - 使用例: マストのS2（スタック数比例のバフ）。
+  - 例: "copy_stack_count": "horoyoi"
+
+・remove_stacks
+  - 指定したリスト内のスタック名を、強制的に削除する。
+  - 例: "remove_stacks": ["horoyoi"]
+
+・ignore_tags
+  - (increase_current_stack_count専用) 指定したタグを持つスタックを増減対象から外す。
+  - 指定がない場合のデフォルトは ["debuff", "negative_buff"]。

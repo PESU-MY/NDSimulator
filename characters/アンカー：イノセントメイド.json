@@ -1,0 +1,170 @@
+{
+  "name": "アンカー：イノセントメイド",
+  "burst_stage": "2",
+  "weapon_type": "RL",
+  "element": "Water",
+  "class": "Supporter",
+  "squad": "イージス",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "core_damage": 2.0,
+    "charge_time": 1.0,
+    "charge_mult": 2.5
+  },
+  "skills": [
+    {
+      "name": "S1: ヒトデ（形）オムライス (Stages)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": { "trigger_all_stages": false },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "heal_effectiveness_buff",
+            "effect_no": 1,
+            "value_list": [0.1829, 0.197, 0.2111, 0.2251, 0.2392, 0.2533, 0.2674, 0.2814, 0.2955, 0.3096],
+            "duration": 5.0,
+            "description": "HP回復量UP"
+          }
+        },
+        {
+            "effect_type": "buff",
+            "target": "allies",
+            "kwargs": {
+                "buff_type": "distribute_damage",
+                "effect_no": 2,
+                "value_list": [0.1796, 0.1934, 0.2072, 0.221, 0.2349, 0.2487, 0.2625, 0.2763, 0.2901, 0.304],
+                "duration": 10.0,
+                "description": "分配ダメージUP"
+            }
+        },
+        {
+            "effect_type": "decrease_debuff_stack_count",
+            "target": "allies",
+            "kwargs": {
+                "value": 1,
+                "tag": "debuff",
+                "description": "スタック可能デバフのスタック量1個減少"
+            }
+        }
+        ]
+    },
+    {
+      "name": "S1: ヒトデ（形）オムライス (Heal)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "has_squad_mate_present": true
+      },
+      "effect_type": "heal",
+      "target": "allies",
+      "kwargs": {
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "base",
+        "effect_no": 3,
+        "value_list": [0.0179, 0.0193, 0.0207, 0.0221, 0.0234, 0.0248, 0.0262, 0.0276, 0.029, 0.0304],
+        "description": "持続回復（代替：単発回復）"
+      }
+    },
+    {
+      "name": "S2: イソギンチャク（形）パスタ",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": { "trigger_all_stages": false },
+      "stages": [
+        {
+            "effect_type": "buff",
+            "target": "allies",
+            "kwargs": {
+                "buff_type": "hit_rate_buff",
+                "effect_no": 4,
+                "value_list": [0.0598, 0.0644, 0.069, 0.0736, 0.0783, 0.0829, 0.0875, 0.0921, 0.0967, 0.1013],
+                "duration": 10.0,
+                "description": "命中率UP"
+            }
+        },
+        {
+            "effect_type": "buff",
+            "target": "allies",
+            "kwargs": {
+                "buff_type": "atk_buff_fixed",
+                "scale_by_caster_stats": true,
+                "target_stat": "atk",
+                "effect_no": 5,
+                "value_list": [0.2065, 0.2225, 0.2385, 0.2544, 0.2704, 0.2864, 0.3023, 0.3183, 0.3343, 0.3502],
+                "duration": 10.0,
+                "description": "攻撃力UP"
+            }
+        },
+        {
+            "effect_type": "buff",
+            "target": "allies",
+            "kwargs": {
+                "buff_type": "reload_speed_rate",
+                "effect_no": 6,
+                "value_list": [0.2382, 0.2562, 0.2742, 0.2923, 0.3103, 0.3283, 0.3463, 0.3644, 0.3824, 0.4004],
+                "duration": 15.0,
+                "description": "リロード速度UP"
+               }
+        }
+        ]
+    },
+    {
+      "name": "Burst: パイレーツランチ",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": { "trigger_all_stages": true },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "effect_no": 7,
+            "value_list": [0.3556, 0.383, 0.4104, 0.4377, 0.4651, 0.4924, 0.5198, 0.5472, 0.5745, 0.6019],
+            "duration": 25.0,
+            "description": "超過HP回復量保存 (dummy)"
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "base",
+            "effect_no": 8,
+            "value_list": [0.2356, 0.2541, 0.2725, 0.291, 0.3095, 0.3279, 0.3464, 0.3649, 0.3833, 0.4018],
+            "description": "HP回復"
+          }
+        },
+        {
+            "effect_type": "buff",
+            "target": "allies",
+            "kwargs": {
+                "buff_type": "atk_buff_fixed",
+                "scale_by_caster_stats": true,
+                "target_stat": "atk",
+                "effect_no": 9,
+                "value_list": [0.1778, 0.1915, 0.2052, 0.2188, 0.2325, 0.2462, 0.2599, 0.2736, 0.2872, 0.3009],
+                "duration": 10.0,
+                "description": "攻撃力UP"
+            }
+        }
+      ],
+      "cooldown": 40.0
+    }
+  ]
+}

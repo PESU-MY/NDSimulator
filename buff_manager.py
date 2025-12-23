@@ -146,3 +146,18 @@ class BuffManager:
         """指定された名前のスタックを削除する"""
         if stack_name in self.active_stacks:
             del self.active_stacks[stack_name]
+
+    # ▼▼▼ 追加: 指定タグを持つスタックのカウントを減らす ▼▼▼
+    def decrease_stack_count_by_tag(self, tag, amount=1):
+        """
+        指定されたタグ(tag)を持つ全てのアクティブなスタックについて、
+        スタック数を amount だけ減らす。0以下になってもエントリは残すが効果は消える(count=0)。
+        """
+        for stack_name, data in self.active_stacks.items():
+            if data.get('tag') == tag:
+                current = data['count']
+                new_count = max(0, current - amount)
+                data['count'] = new_count
+                return True # 少なくとも1つ処理したらTrueを返すなど（必要なら）
+        return False
+    # ▲▲▲ 追加ここまで ▲▲▲

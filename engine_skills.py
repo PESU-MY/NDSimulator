@@ -64,6 +64,16 @@ class SkillEngineMixin:
                 return False
         # ▲▲▲ 追加ここまで ▲▲▲
 
+        # ▼▼▼ 追加: 部隊条件 (self_squad_mate) ▼▼▼
+        # スキル発動者(caster)と同じ部隊の味方がいるか？という条件だが、
+        # ここは「ターゲット選定」のフィルタなので、
+        # 「自分以外の同じ部隊の味方がフィールドに存在するか」は
+        # should_apply_skill (発動可否判定) で見るのが適切。
+        # もし「ターゲットが同じ部隊であること」ならここで判定する。
+        if "squad" in condition:
+            if target.squad != condition["squad"]: return False
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         
 
         return True
@@ -99,6 +109,20 @@ class SkillEngineMixin:
                     if count < skill.condition["self_stack_min"]:
                         return False
             # ▲▲▲ 追加ここまで ▲▲▲
+
+        # ▼▼▼ 追加: 特定部隊の味方の存在チェック (has_squad_mate_present) ▼▼▼
+        # skill.condition and ... を追加して、conditionが存在しない場合はスルーするようにする
+        if skill.condition and "has_squad_mate_present" in skill.condition and caster:
+            target_squad = caster.squad
+            found = False
+            for char in self.characters:
+                if char != caster and char.squad == target_squad and char.base_hp > 0:
+                     found = True
+                     break
+            
+            required = skill.condition["has_squad_mate_present"]
+            if found != required: return False
+        # ▲▲▲ 追加ここまで ▲▲▲
         return True
 
     def apply_skill(self, skill, caster, frame, is_full_burst):
@@ -200,6 +224,31 @@ class SkillEngineMixin:
             else:
                 targets = candidates
             # ▲▲▲ 追加ここまで ▲▲▲
+
+            # ▼▼▼ 追加: HP最低の対象を選択 (lowest_hp) ▼▼▼
+            if skill.target_condition and skill.target_condition.get('type') == 'lowest_hp':
+                count = skill.target_condition.get('count', 1)
+                candidates = []
+                for char in self.characters:
+                    # 対象条件（属性など）があればチェック
+                    if self.check_target_condition(skill.target_condition, caster, char, frame): 
+                         candidates.append(char)
+                
+                # 現在HP割合(または絶対値)で昇順ソート。ここでは絶対値を採用。
+                # HP割合で見たい場合は char.current_hp / char.base_hp (バフ込み最大HP取得は重いので簡易的でも可)
+                # ここでは簡易的に「現在ダメージを受けている量」等の管理がないため、
+                # シミュレータ仕様上「現在HP」の概念が希薄だが、
+                # プロパティとして current_hp がある前提、あるいは base_hp で代用（全員無傷ならランダム/登録順）
+                # ※このシミュレータのCharacterクラスには current_hp が明示されていないため、
+                #   便宜上 base_hp (最大HP) を基準にするか、被ダメージロジックがあればそれを参照する。
+                #   今回は「最大HP」が低い順として実装する（またはダミー的にAtk順の逆など）
+                #   → 要求仕様の「HP回復」の文脈から、回復対象を選びたい意図がある。
+                #   → とりあえず base_hp の低い順とする。
+                candidates.sort(key=lambda c: c.base_hp)
+                targets = candidates[:count]
+                self.log(f"[Target] Selected Lowest {count} HP: {[t.name for t in targets]}", target_name=caster.name)
+            # ▲▲▲ 追加ここまで ▲▲▲
+
         elif skill.target == 'enemy':
             targets.append(caster) 
 
@@ -224,6 +273,17 @@ class SkillEngineMixin:
                 self.log(f"[CT Reduce] Reduced cooldowns by {reduce_sec:.2f}s (Source: {caster.name})", target_name="System")
             return 0
         
+        # ▼▼▼ ここに挿入してください ▼▼▼
+        if skill.effect_type == 'decrease_debuff_stack_count':
+            tag = kwargs.get('tag', 'debuff')
+            amount = int(kwargs.get('value', 1))
+            for target in targets:
+                # decrease_stack_count_by_tag は buff_manager.py に追加が必要
+                if target.buff_manager.decrease_stack_count_by_tag(tag, amount):
+                    self.log(f"[Debuff Cleanse] Decreased '{tag}' stacks by {amount} for {target.name}", target_name=caster.name)
+            return 0
+        # ▲▲▲ 挿入ここまで ▲▲▲
+
         # ▼▼▼ 修正箇所: ステータス参照のロジック変更 (HP対応) ▼▼▼
         if kwargs.get('scale_by_caster_stats'):
             ratio = kwargs.get('value', 0)

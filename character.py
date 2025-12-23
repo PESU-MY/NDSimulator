@@ -7,7 +7,7 @@ from character_action import CharacterActionMixin
 # --- キャラクタークラス ---
 
 class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
-    def __init__(self, name, weapon_config, skills, base_atk, base_hp, element, burst_stage, character_class="Attacker", is_dummy=False):
+    def __init__(self, name, weapon_config, skills, base_atk, base_hp, element, burst_stage, character_class="Attacker", squad="Unknown", is_dummy=False):
         self.name = name
         self.weapon = weapon_config
         
@@ -22,6 +22,9 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.element = element
         self.burst_stage = str(burst_stage)
         self.character_class = character_class
+        # ▼▼▼ 追加: 部隊情報 ▼▼▼
+        self.squad = squad
+        # ▲▲▲ 追加ここまで ▲▲▲
         
         self.is_dummy = is_dummy
 

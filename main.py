@@ -18,6 +18,8 @@ def create_character_from_json(char_file_path, skill_level=10):
     stats = char_data.get('stats', {})
     char_class = char_data.get('class', 'Attacker')
     burst_stage = char_data.get('burst_stage', '3')
+    # ▼▼▼ 追加: 部隊情報の読み込み ▼▼▼
+    squad = char_data.get('squad', 'Unknown')
     
     # 武器設定
     weapon_file_path = f"weapons/{weapon_type_str}_standard.json"
@@ -120,7 +122,7 @@ def create_character_from_json(char_file_path, skill_level=10):
             b_skill.trigger_type = 'on_use_burst_skill' 
         skills.append(b_skill)
 
-    return Character(char_name, weapon_config, skills, base_atk, base_hp, element, burst_stage, char_class)
+    return Character(char_name, weapon_config, skills, base_atk, base_hp, element, burst_stage, char_class, squad=squad)
 
 # --- ヘルパー関数: ダミーキャラ作成 ---
 def create_dummy_character(name, burst_stage, weapon_type="AR", skills=None):
@@ -157,6 +159,7 @@ dummy_barrier_skill = Skill(
 print(">>> キャラクター読み込み開始")
 burst3_nikke = create_character_from_json('characters/シンデレラ.json', skill_level=10)
 burst2_nikke = create_character_from_json('characters/マスト：ロマンチックメイド.json', skill_level=10)
+burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
 burst1_nikke = create_character_from_json('characters/N102.json', skill_level=10)
 saitotu = create_character_from_json('characters/アリス_ワンダーランドバニー.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
@@ -168,12 +171,12 @@ dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, burst2_nikke, burst3_nikke, dummy_b3, dummy_b2]
+all_characters = [dummy_b1, burst2_nikke, burst3_nikke, dummy_b3, burst2_nikke_2]
 
 # 4. バーストローテーション
 rotation = [
     [dummy_b1],
-    [burst2_nikke,dummy_b2],
+    [burst2_nikke,burst2_nikke_2],
     [burst3_nikke, dummy_b3] 
 ]
 

@@ -98,7 +98,7 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
-            "buff_type": "reload_speed_buff",
+            "buff_type": "reload_speed_rate",
             "effect_no": 5,
             "value_list": [0.0873, 0.0943, 0.1013, 0.1083, 0.1153, 0.1224, 0.1294, 0.1364, 0.1434, 0.1504],
             "duration": 10.0,
