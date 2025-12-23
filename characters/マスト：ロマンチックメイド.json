@@ -1,0 +1,180 @@
+{
+  "name": "マスト：ロマンチックメイド",
+  "weapon_type": "MG",
+  "burst_stage": "2",
+  "element": "Water",
+  "class": "Supporter",
+  "squad": "イージス",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.50,
+    "damage_rate": 0.0557,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "hit_size": 1
+  },
+  "skills": [
+    {
+      "name": "パイレーツハート",
+      "trigger_type": "on_burst_1_enter",
+      "trigger_value": 0,
+      "description": "バースト1段階突入時",
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "hit_rate",
+            "tag": "drunk",
+            "is_negative_stack": true,
+            "max_stack": 3,
+            "duration": 9999,
+            "effect_no": 1,
+            "value_list": [-0.3592, -0.3415, -0.3238, -0.3062, -0.2885, -0.2708, -0.2531, -0.2354, -0.2177, -0.20]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "caster_has_tag": "drunk"
+          },
+          "kwargs": {
+            "buff_type": "crit_rate",
+            "duration": 9999,
+            "effect_no": 2,
+            "value_list": [0.1185, 0.1276, 0.1367, 0.1458, 0.1549, 0.164, 0.1732, 0.1823, 0.1914, 0.2005]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "caster_has_tag": "drunk"
+          },
+          "kwargs": {
+            "buff_type": "atk_buff",
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "duration": 9999,
+            "effect_no": 3,
+            "value_list": [0.2069, 0.2228, 0.2387, 0.2546, 0.2706, 0.2865, 0.3024, 0.3183, 0.3342, 0.3502]
+          }
+        }
+      ]
+    },
+    {
+      "name": "パイレーツスピリット",
+      "trigger_type": "on_burst_3_enter",
+      "trigger_value": 0,
+      "description": "バースト3段階突入時",
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "caster_has_tag": "drunk"
+          },
+          "kwargs": {
+            "buff_type": "distribute_damage_buff",
+            "stack_tag": "drunk",
+            "duration": 10.0,
+            "effect_no": 4,
+            "value_list": [0.0888, 0.0956, 0.1024, 0.1093, 0.1161, 0.1229, 0.1298, 0.1366, 0.1434, 0.1503]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "caster_has_tag": "drunk"
+          },
+          "kwargs": {
+            "buff_type": "reload_speed",
+            "stack_tag": "drunk",
+            "duration": 10.0,
+            "effect_no": 5,
+            "value_list": [0.0873, 0.0943, 0.1013, 0.1083, 0.1153, 0.1224, 0.1294, 0.1364, 0.1434, 0.1504]
+          }
+        }
+      ]
+    },
+    {
+      "name": "パイレーツスピリット（デメリット）",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "description": "フルバースト終了時",
+      "stages": [
+        {
+          "effect_type": "debuff",
+          "target": "self",
+          "target_condition": {
+            "has_tag": "drunk",
+            "stack_count": 3
+          },
+          "kwargs": {
+            "type": "remove_tag",
+            "tag": "drunk"
+          }
+        },
+        {
+          "effect_type": "debuff",
+          "target": "self",
+          "target_condition": {
+            "has_tag": "drunk",
+            "stack_count": 3
+          },
+          "kwargs": {
+            "buff_type": "stun",
+            "tag": "hangover",
+            "duration": 10.0
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "パイレーツロマン",
+    "trigger_type": "manual",
+    "trigger_value": 0,
+    "cooldown_time": 40.0,
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "buff_type": "crit_damage_buff",
+          "duration": 10.0,
+          "effect_no": 6,
+          "value_list": [0.2351, 0.2534, 0.2718, 0.2902, 0.3086, 0.3269, 0.3453, 0.3637, 0.382, 0.4004]
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "buff_type": "damage_buff",
+          "duration": 10.0,
+          "effect_no": 7,
+          "value_list": [0.0889, 0.0957, 0.1026, 0.1094, 0.1162, 0.1231, 0.1299, 0.1368, 0.1436, 0.1504]
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "target_condition": {
+          "caster_has_tag": "drunk"
+        },
+        "kwargs": {
+          "buff_type": "atk_buff",
+          "scale_by_caster_stats": true,
+          "target_stat": "atk",
+          "stack_tag": "drunk",
+          "duration": 10.0,
+          "effect_no": 8,
+          "value_list": [0.1185, 0.1276, 0.1368, 0.1459, 0.155, 0.1641, 0.1732, 0.1824, 0.1915, 0.2006]
+        }
+      }
+    ]
+  }
+}

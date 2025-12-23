@@ -1,65 +1,52 @@
 === Simulation Start ===
 Character: Dummy_B1 (Atk:1)
+Character: アリス：ワンダーランドバニー (Atk:21307)
+Character: シンデレラ (Atk:17059)
+Character: Dummy_B3 (Atk:1)
 Character: Dummy_B2 (Atk:1)
-Character: アスカ (Atk:25554)
-Character: Dummy_B3 (Atk:1)
-Character: Dummy_B3 (Atk:1)
-[Burst] Dummy_B1 used Burst Stage 1
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] アリス：ワンダーランドバニー used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 903
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Recorded burst end time for シンデレラ at frame 903
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
 [Burst] Recorded burst end time for Dummy_B3 at frame 1806
-[Burst] Dummy_B1 used Burst Stage 1
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] アリス：ワンダーランドバニー used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 2709
-[Burst] Dummy_B1 used Burst Stage 1
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 3612
-[Burst] Dummy_B1 used Burst Stage 1
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 4515
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Recorded burst end time for シンデレラ at frame 3006
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 5418
-[Burst] Dummy_B1 used Burst Stage 1
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 3909
+[Burst] アリス：ワンダーランドバニー used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 6321
-[Burst] Dummy_B1 used Burst Stage 1
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 7224
-[Burst] Dummy_B1 used Burst Stage 1
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 8127
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Recorded burst end time for シンデレラ at frame 5109
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 9030
-[Burst] Dummy_B1 used Burst Stage 1
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 6012
+[Burst] アリス：ワンダーランドバニー used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] アスカ used Burst Stage 3
-[Burst] Recorded burst end time for アスカ at frame 9933
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Recorded burst end time for シンデレラ at frame 7212
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
+[Burst] Recorded burst end time for Dummy_B3 at frame 8115
+[Burst] アリス：ワンダーランドバニー used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] シンデレラ used Burst Stage 3
+[Burst] Recorded burst end time for シンデレラ at frame 9315
+[Burst] Dummy_B1 used Burst Stage 1
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[Burst] Recorded burst end time for Dummy_B3 at frame 10218
+[Burst] アリス：ワンダーランドバニー used Burst Stage 1

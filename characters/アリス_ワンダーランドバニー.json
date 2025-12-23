@@ -1,0 +1,155 @@
+{
+  "name": "アリス：ワンダーランドバニー",
+  "burst_stage": "1",
+  "weapon_type": "SMG",
+  "element": "Water",
+  "class": "Supporter",
+  "squad": "アンリミテッド",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.0,
+    "damage_rate": 0.1012,
+    "windup_frames": 12,
+    "winddown_frames": 10
+  },
+  "skills": [
+    {
+      "name": "S1: ニンジンとウサギパーティー",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0321, 0.0367, 0.0414, 0.046, 0.0507, 0.0554, 0.06, 0.0647, 0.0693, 0.074],
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp"
+          }
+        },
+        {
+          "effect_type": "stack_buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "description": "阻止部位の攻撃ダメージUP (dummy)",
+            "effect_no": 2,
+            "value_list": [0.0089, 0.0102, 0.0114, 0.0126, 0.0139, 0.0151, 0.0163, 0.0176, 0.0188, 0.02],
+            "stack_name": "rabbit_party_buff",
+            "max_stack": 5,
+            "duration": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1-2: スタック増加効果",
+      "trigger_type": "shot_count",
+      "trigger_value": 90,
+      "effect_type": "increase_current_stack_count",
+      "target": "allies",
+      "target_condition": {
+        "element": "Water"
+      },
+      "kwargs": {
+        "value": 1,
+        "description": "スタック可能バフ効果のスタック量を増加 (暫定実装用)",
+        "target_buff_type": "stack_buff"
+      }
+    },
+    {
+      "name": "S2: もっとたくさんのニンジン (End)",
+      "trigger_type": "on_full_burst_end",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "description": "バーストゲージチャージ速度UP (dummy)",
+        "effect_no": 3,
+        "value_list": [0.0473, 0.0532, 0.059, 0.0649, 0.0707, 0.0766, 0.0824, 0.0883, 0.0941, 0.1],
+        "duration": 5.0
+      }
+    },
+    {
+      "name": "S2: もっとたくさんのニンジン (Start)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "max_ammo_rate",
+            "effect_no": 4,
+            "value_list": [0.1057, 0.1384, 0.1711, 0.2038, 0.2365, 0.2692, 0.3019, 0.3346, 0.3673, 0.4],
+            "duration": 15.0
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 5,
+            "rate_list": [0.1057, 0.1384, 0.1711, 0.2038, 0.2365, 0.2692, 0.3019, 0.3346, 0.3673, 0.4]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Burst: 大きくて大切なニンジン",
+      "trigger_type": "manual",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "reenter_burst_stage",
+          "target": "allies",
+          "kwargs": {
+            "value": 1,
+            "description": "バースト再突入1段階 (暫定)"
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 6,
+            "value_list": [0.1246, 0.1408, 0.1569, 0.1731, 0.1892, 0.2054, 0.2216, 0.2377, 0.2539, 0.27],
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "description": "受けるHP回復量UP (dummy)",
+            "effect_no": 7,
+            "value_list": [0.742, 0.8262, 0.9105, 0.9947, 1.0789, 1.1631, 1.2473, 1.3316, 1.4158, 1.5],
+            "duration": 10.0
+          }
+        }
+      ],
+      "cooldown": 40.0
+    }
+  ]
+}

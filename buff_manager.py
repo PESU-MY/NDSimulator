@@ -44,6 +44,26 @@ class BuffManager:
                 'unit_value': 0, 'end_frame': 99999999, 'tag': None, 'shot_life': 0, 'remove_on_reload': False
             }
 
+    def modify_active_stack_counts(self, delta):
+        """
+        現在アクティブな全てのスタックバフのスタック数を delta 分だけ増減させる。
+        ただし、0未満や最大スタック数を超えることはない。
+        """
+        for stack_name, data in self.active_stacks.items():
+            current = data['count']
+            max_s = data['max_stack']
+            
+            # 増減計算
+            new_count = current + delta
+            
+            # 範囲制限 (0 <= new_count <= max_stack)
+            # ※スタック1以上で維持したい場合は max(1, ...) にするが、
+            #   減少効果で消失させる可能性も考慮し max(0, ...) としている
+            new_count = max(0, min(max_s, new_count))
+            
+            data['count'] = new_count
+
+
     def remove_buffs_by_tag(self, tag, current_frame):
         if not tag: return
         for buff_type in self.buffs:
@@ -121,3 +141,5 @@ class BuffManager:
                 val = stack['unit_value'] * stack['count']
                 parts.append(f"[{name} x{stack['count']} (Val:{val:.2f})]")
         return " | ".join(parts) if parts else "None"
+    
+    

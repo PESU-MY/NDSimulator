@@ -428,6 +428,19 @@ class SkillEngineMixin:
                     target.buff_manager.set_stack_count(stack_name, val)
                     self.log(f"[Stack Set] {target.name}: {stack_name} set to {val}", target_name=target.name)
             # ▲▲▲ 追加ここまで ▲▲▲
+
+            # ▼▼▼ 追加: スタック数の増減効果 ▼▼▼
+            elif skill.effect_type == 'increase_current_stack_count':
+                # value が正なら増加、負なら減少
+                delta = int(kwargs.get('value', 1))
+                
+                # target_buff_type は現状 "stack_buff" (全スタックバフ) を想定
+                # 将来的に特定のバフタイプのみ対象にする場合はここでフィルタリング処理を追加する
+                
+                for target in targets:
+                    target.buff_manager.modify_active_stack_counts(delta)
+                    self.log(f"[Stack Mod] Modified all stacks by {delta:+d} for {target.name}", target_name=target.name)
+            # ▲▲▲ 追加ここまで ▲▲▲
             
             elif skill.effect_type == 'weapon_change':
                 new_weapon_data = kwargs.get('weapon_data')

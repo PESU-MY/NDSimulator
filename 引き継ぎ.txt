@@ -308,3 +308,40 @@ N102（アン）やアリスなどが持つ「攻撃力が最も高い味方n機
     "target_stat": "max_hp",  <-- ここでHPを指定
     "value": 0.15
   }
+
+  12. スタック数の直接増減機能 (increase_current_stack_count)
+
+【概要】
+現在付与されているスタック可能バフの「スタック数」を、直接＋1したりー1したりする機能。
+「攻撃回数n回でスタック増加」などのギミックに使用する。
+
+【仕様】
+・BuffManager に modify_active_stack_counts(delta) を実装。
+・現在アクティブな全てのスタックバフに対して、delta 分だけ数値を加算（減算）する。
+・0未満にはならず、各バフの max_stack を超えることもない（範囲内で変動）。
+・現状は「全てのスタックバフ」が対象だが、必要であれば target_buff_type 等でフィルタリングする拡張も想定済み。
+
+【記述例】
+  "effect_type": "increase_current_stack_count",
+  "target": "allies",
+  "kwargs": {
+    "value": 1  // 1個増やす（-1なら減らす）
+  }
+
+13. バースト段階の再突入・維持機能 (reenter_burst_stage)
+
+【概要】
+バーストスキル使用後、通常なら次の段階（I→II→III）へ進むところを、
+指定した段階へ強制的に遷移（再突入）させる機能。
+ティアやルージュのような「バーストIを再突入させる」スキルなどで使用する。
+
+【仕様】
+・engine_skills.py: 効果発動時に reenter_burst_target フラグ（例: "BURST_1"）を予約する。
+・engine_burst.py: バーストスキル終了後の遷移処理で、上記予約フラグがあれば優先して適用し、通常の進行（I→IIなど）をキャンセルする。
+
+【記述例（バーストI再突入）】
+  "effect_type": "reenter_burst_stage",
+  "target": "allies", // システムへの干渉なのでtarget自体は問わないが便宜上allies等
+  "kwargs": {
+    "value": 1  // 次の段階を「BURST_1」にする
+  }

@@ -14,6 +14,9 @@ class BurstEngineMixin:
             if self.burst_timer >= self.burst_charge_time * self.FPS: 
                 self.burst_state = "BURST_1"
                 self.burst_timer = 0
+                # ▼▼▼ 追加: バースト1段階突入トリガー ▼▼▼
+                self.process_trigger_global('on_burst_1_enter', frame)
+                # ▲▲▲
                 
         elif self.burst_state in ["BURST_1", "BURST_2", "BURST_3"]:
             stage_idx = {"BURST_1": 0, "BURST_2": 1, "BURST_3": 2}[self.burst_state]
@@ -40,21 +43,28 @@ class BurstEngineMixin:
                         char.process_trigger('on_use_burst_skill', 0, frame, is_full_burst, self)
                         
                         self.burst_indices[stage_idx] = (idx + 1) % len(char_list)
-                        if self.burst_state == "BURST_1": self.burst_state = "BURST_2"
-                        elif self.burst_state == "BURST_2": self.burst_state = "BURST_3"
-                        elif self.burst_state == "BURST_3":
-                            self.burst_state = "FULL"
-                            self.burst_timer = 0
-                            
-                            # ▼▼▼ フルバースト時間計算 (短縮適用) ▼▼▼
-                            # デフォルト10秒 - 短縮量 (下限なし、または0秒)
-                            base_duration = 10.0
-                            current_duration = max(0.0, base_duration - getattr(self, 'full_burst_reduction', 0.0))
-                            self.current_full_burst_duration_frames = int(current_duration * self.FPS)
-                            
-                            if self.full_burst_reduction > 0:
-                                self.log(f"[Burst] Full Burst Time shortened by {self.full_burst_reduction:.2f}s (Duration: {current_duration:.2f}s)", target_name="System")
-                            # ▲▲▲ 追加ここまで ▲▲▲
+                        # ▼▼▼ 変更: バースト再突入判定と状態遷移ロジック ▼▼▼
+                        # 再突入予約がある場合はそちらを優先
+                        if getattr(self, 'reenter_burst_target', None):
+                            self.burst_state = self.reenter_burst_target
+                            self.log(f"[Burst] Re-entered {self.burst_state} by effect", target_name="System")
+                            self.reenter_burst_target = None # フラグを消費してリセット
+                        else:
+                            # 通常の段階移行ロジック
+                            if self.burst_state == "BURST_1": self.burst_state = "BURST_2"
+                            elif self.burst_state == "BURST_2": self.burst_state = "BURST_3"
+                            elif self.burst_state == "BURST_3":
+                                self.burst_state = "FULL"
+                                self.burst_timer = 0
+                                
+                                # フルバースト時間計算 (短縮適用)
+                                base_duration = 10.0
+                                current_duration = max(0.0, base_duration - getattr(self, 'full_burst_reduction', 0.0))
+                                self.current_full_burst_duration_frames = int(current_duration * self.FPS)
+                                
+                                if self.full_burst_reduction > 0:
+                                    self.log(f"[Burst] Full Burst Time shortened by {self.full_burst_reduction:.2f}s (Duration: {current_duration:.2f}s)", target_name="System")
+                        # ▲▲▲ 変更ここまで ▲▲▲
                             
         elif self.burst_state == "FULL":
             self.burst_timer += 1

@@ -60,6 +60,7 @@
           "duration": 10.0,
           "scale_by_caster_stats": true,
           "stat_type": "finally",
+          "target_stat": "max_hp",
           "description": "CAUTION: Program currently scales by ATK, not HP."
         }
       },

@@ -32,6 +32,7 @@ class CharacterActionMixin:
     def tick_action(self, frame, is_full_burst, simulator):
         if self.is_dummy: return 0
         
+        
         damage_this_frame = 0
         if self.weapon.type == "MG" and self.state != "SHOOTING" and self.state != "READY": 
             self.mg_warmup_frames -= self.mg_decay_rate
