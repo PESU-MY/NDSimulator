@@ -20,7 +20,6 @@ JSONの "buff_type" や "effect_type" に指定するキー名と、
 クリティカルダメージUP      : crit_dmg_buff
 コアダメージUP              : core_dmg_buff
 有利コード攻撃ダメージUP    : elemental_buff
-通常攻撃ダメージUP          : normal_attack_dmg_buff
 チャージダメージUP          : charge_dmg_buff
 貫通ダメージUP              : pierce_dmg_buff
 パーツダメージUP            : part_dmg_buff
@@ -34,10 +33,11 @@ JSONの "buff_type" や "effect_type" に指定するキー名と、
                               ※ 追加ダメージや分配ダメージの元威力強化用（別枠乗算）
 
 [確率系]
-クリティカル確率UP          : critical_rate_buff
+クリティカル確率UP          : crit_rate_buff
 命中率UP                    : hit_rate_buff
 
 [未実装・汎用代用]
+通常攻撃ダメージUP          : (専用キーなし。必要になれば実装)
 付着ダメージバフ            : (専用キーなし。必要になれば実装)
 爆発ダメージバフ            : (専用キーなし。必要になれば実装)
 
@@ -47,7 +47,7 @@ JSONの "buff_type" や "effect_type" に指定するキー名と、
 [リロード]
 リロード速度UP (％)         : reload_speed_rate
                               ※ 100% (1.0) 以上で0秒リロード
-リロード時間短縮 (固定値)   : reload_speed_fixed_value
+リロード時間短縮 (固定値)   : reload_speed_fixed
                               ※ バフとして持続する場合
 
 [チャージ]

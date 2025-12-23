@@ -206,7 +206,7 @@
               "effect_type": "buff",
               "target": "self",
               "kwargs": {
-                "buff_type": "reload_speed_fixed_value",
+                "buff_type": "reload_speed_fixed",
                 "value": 0.6,
                 "shot_duration": 1
               }
