@@ -191,6 +191,21 @@ JSON変換:
 本シミュレーターは「味方の被ダメージ」を計算しないため、防御力アップや
 被ダメージ減少などの効果は計算に影響しないダミーとして定義する。
 - buff_type: "dummy_effect"
+回復スキルも現状回復量を計算する必要はないので、
+{
+          "effect_type": "heal",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "effect_no": 8,
+            "value_list": [0.2356, 0.2541, 0.2725, 0.291, 0.3095, 0.3279, 0.3464, 0.3649, 0.3833, 0.4018],
+            "description": "HP回復"
+          }
+        },
+
+のように、"effect_type": "heal","target": "allies",で最低限HP回復をトリガーにするスキルを発動できるようにすればいい。
+また、持続回復でもHP回復をトリガーにするスキルが発動するのは"付与時"の1回のみになっている。
+
 - kwargs内に本来の意味をメモとして残すことを推奨 (例: "description": "taken_dmg_cut")
 - value_list 等の数値データは将来のためにそのまま記述してよい。
 
@@ -254,3 +269,33 @@ JSONには、formatted.txt に明示的な指定がない限り記載しなく�
 ・ignore_tags
   - (increase_current_stack_count専用) 指定したタグを持つスタックを増減対象から外す。
   - 指定がない場合のデフォルトは ["debuff", "negative_buff"]。
+
+【キャラクター基本データ】
+・squad
+  - 所属部隊名を指定する。シナジー判定に使用される。
+  - 例: "squad": "イージス"
+
+【条件指定 (condition)】
+・has_squad_mate_present
+  - 自分と同じ部隊の味方が（自分以外に）生存している場合に true。
+  - 例: "has_squad_mate_present": true
+
+【ターゲット条件 (target_condition)】
+・lowest_hp
+  - HPが低い順に対象を選択する。
+  - 例: "target_condition": { "type": "lowest_hp", "count": 1 }
+
+【効果タイプ (effect_type)】
+・decrease_debuff_stack_count
+  - 指定したタグを持つスタックの数値を減少させる。
+  - 必須args: "value": 減少させる量
+  - オプションargs: "tag": 対象とするタグ（デフォルトは "debuff"）
+  - 例:
+    {
+      "effect_type": "decrease_debuff_stack_count",
+      "target": "allies",
+      "kwargs": {
+        "value": 1,
+        "tag": "debuff"
+      }
+    }
