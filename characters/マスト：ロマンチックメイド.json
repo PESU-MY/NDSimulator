@@ -86,7 +86,7 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
-            "buff_type": "distribute_damage",
+            "buff_type": "split_dmg_buff",
             "effect_no": 4,
             "value_list": [0.0888, 0.0956, 0.1024, 0.1093, 0.1161, 0.1229, 0.1298, 0.1366, 0.1434, 0.1503],
             "duration": 10.0,
