@@ -51,7 +51,7 @@ JSONの "buff_type" や "effect_type" に指定するキー名と、
                               ※ バフとして持続する場合
 
 [チャージ]
-チャージ速度UP              : charge_speed_buff
+チャージ速度UP              : charge_speed_rate
 チャージ倍率加算            : charge_ratio_buff
 
 [弾薬・連射]

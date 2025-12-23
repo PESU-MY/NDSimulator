@@ -1,0 +1,235 @@
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:  1.72s | 弾数: 17/18  | Pellets: 1 | Dmg:   154,372 | Buffs: is_pierce:1.00
+[Shoot] 時間:  3.60s | 弾数: 16/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Burst] Activate!
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
+[Shoot] 時間:  5.48s | 弾数: 15/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  5.98s | 弾数: 14/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  6.48s | 弾数: 13/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  6.98s | 弾数: 12/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  7.48s | 弾数: 11/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  7.98s | 弾数: 10/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  8.48s | 弾数:  9/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  8.98s | 弾数:  8/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  9.48s | 弾数:  7/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  9.98s | 弾数:  6/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 10.48s | 弾数:  5/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 10.98s | 弾数:  4/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 11.48s | 弾数:  3/18  | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 11.98s | 弾数:  2/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 12.48s | 弾数:  1/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 12.98s | 弾数:  0/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 18
+[Shoot] 時間: 16.87s | 弾数: 17/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間: 18.75s | 弾数: 16/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Shoot] 時間: 20.63s | 弾数: 15/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 22.33s | 弾数: 14/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 24.03s | 弾数: 13/18  | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 25.73s | 弾数: 12/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 27.43s | 弾数: 11/18  | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 29.13s | 弾数: 10/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 30.83s | 弾数:  9/18  | Pellets: 1 | Dmg:   154,372 | Buffs: is_pierce:1.00
+[Shoot] 時間: 32.72s | 弾数:  8/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間: 34.60s | 弾数:  7/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Burst] Activate!
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
+[Shoot] 時間: 36.48s | 弾数:  6/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 36.98s | 弾数:  5/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 37.48s | 弾数:  4/18  | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 37.98s | 弾数:  3/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 38.48s | 弾数:  2/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 38.98s | 弾数:  1/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 39.48s | 弾数:  0/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 18
+[Shoot] 時間: 41.98s | 弾数: 17/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 42.48s | 弾数: 16/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 42.98s | 弾数: 15/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 43.48s | 弾数: 14/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 43.98s | 弾数: 13/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 44.48s | 弾数: 12/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 44.98s | 弾数: 11/18  | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 46.87s | 弾数: 10/18  | Pellets: 1 | Dmg:   154,372 | Buffs: is_pierce:1.00
+[Shoot] 時間: 48.75s | 弾数:  9/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Shoot] 時間: 50.63s | 弾数:  8/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 52.33s | 弾数:  7/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 54.03s | 弾数:  6/18  | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 55.73s | 弾数:  5/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 57.43s | 弾数:  4/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 59.13s | 弾数:  3/18  | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 60.83s | 弾数:  2/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間: 62.72s | 弾数:  1/18  | Pellets: 1 | Dmg:   154,372 | Buffs: is_pierce:1.00
+[Shoot] 時間: 64.60s | 弾数:  0/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Action] Reloading... (120 frames)
+[Burst] Activate!
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
+[Action] Reload Complete. Ammo: 18
+[Shoot] 時間: 67.10s | 弾数: 17/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 67.60s | 弾数: 16/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 68.10s | 弾数: 15/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 68.60s | 弾数: 14/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 69.10s | 弾数: 13/18  | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 69.60s | 弾数: 12/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 70.10s | 弾数: 11/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 70.60s | 弾数: 10/18  | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 71.10s | 弾数:  9/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 71.60s | 弾数:  8/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 72.10s | 弾数:  7/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 72.60s | 弾数:  6/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 73.10s | 弾数:  5/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 73.60s | 弾数:  4/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 74.10s | 弾数:  3/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 74.60s | 弾数:  2/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 75.10s | 弾数:  1/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 76.98s | 弾数:  0/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 18
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Shoot] 時間: 80.87s | 弾数: 17/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 82.57s | 弾数: 16/18  | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 84.27s | 弾数: 15/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 85.97s | 弾数: 14/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 87.67s | 弾数: 13/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 89.37s | 弾数: 12/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 91.07s | 弾数: 11/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間: 92.95s | 弾数: 10/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間: 94.83s | 弾数:  9/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Burst] Activate!
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
+[Shoot] 時間: 96.72s | 弾数:  8/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 97.22s | 弾数:  7/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 97.72s | 弾数:  6/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 98.22s | 弾数:  5/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 98.72s | 弾数:  4/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 99.22s | 弾数:  3/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 99.72s | 弾数:  2/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:100.22s | 弾数:  1/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:100.72s | 弾数:  0/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 18
+[Shoot] 時間:103.22s | 弾数: 17/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:103.72s | 弾数: 16/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:104.22s | 弾数: 15/18  | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:104.72s | 弾数: 14/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:105.22s | 弾数: 13/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:107.10s | 弾数: 12/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間:108.98s | 弾数: 11/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Shoot] 時間:110.87s | 弾数: 10/18  | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:112.57s | 弾数:  9/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:114.27s | 弾数:  8/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:115.97s | 弾数:  7/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:117.67s | 弾数:  6/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:119.37s | 弾数:  5/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:121.07s | 弾数:  4/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間:122.95s | 弾数:  3/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間:124.83s | 弾数:  2/18  | Pellets: 1 | Dmg:   154,372 | Buffs: is_pierce:1.00
+[Burst] Activate!
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
+[Shoot] 時間:126.72s | 弾数:  1/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:127.22s | 弾数:  0/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 18
+[Shoot] 時間:129.72s | 弾数: 17/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:130.22s | 弾数: 16/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:130.72s | 弾数: 15/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:131.22s | 弾数: 14/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:131.72s | 弾数: 13/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:132.22s | 弾数: 12/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:132.72s | 弾数: 11/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:133.22s | 弾数: 10/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:133.72s | 弾数:  9/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:134.22s | 弾数:  8/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:134.72s | 弾数:  7/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:135.22s | 弾数:  6/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:137.10s | 弾数:  5/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間:138.98s | 弾数:  4/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Shoot] 時間:140.87s | 弾数:  3/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:142.57s | 弾数:  2/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:144.27s | 弾数:  1/18  | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:145.97s | 弾数:  0/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 18
+[Shoot] 時間:149.67s | 弾数: 17/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:151.37s | 弾数: 16/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間:153.25s | 弾数: 15/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間:155.13s | 弾数: 14/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Burst] Activate!
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
+[Shoot] 時間:157.02s | 弾数: 13/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:157.52s | 弾数: 12/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:158.02s | 弾数: 11/18  | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:158.52s | 弾数: 10/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:159.02s | 弾数:  9/18  | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:159.52s | 弾数:  8/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:160.02s | 弾数:  7/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:160.52s | 弾数:  6/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:161.02s | 弾数:  5/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:161.52s | 弾数:  4/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:162.02s | 弾数:  3/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:162.52s | 弾数:  2/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:163.02s | 弾数:  1/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:163.52s | 弾数:  0/18  | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 18
+[Shoot] 時間:167.40s | 弾数: 17/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Shoot] 時間:169.28s | 弾数: 16/18  | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['アリス', 'Dummy_B1']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Shoot] 時間:171.17s | 弾数: 15/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:172.87s | 弾数: 14/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:174.57s | 弾数: 13/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:176.27s | 弾数: 12/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:177.97s | 弾数: 11/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間:179.67s | 弾数: 10/18  | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
