@@ -1,0 +1,81 @@
+{
+  "name": "アンカー",
+  "weapon_type": "RL",
+  "burst_stage": "1",
+  "element": "Wind",
+  "class": "Defender",
+  "squad": "イージス",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.613,
+    "hit_size": 1,
+    "charge_time": 1.0,
+    "charge_mult": 2.5
+  },
+  "skills": [
+    {
+      "name": "Skill 1: GS",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "description": "挑発",
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "dummy_effect",
+            "value_list": [0.1042, 0.1191, 0.1339, 0.1488, 0.1637, 0.1786, 0.1935, 0.2084, 0.2233, 0.2382],
+            "duration": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: MDS",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "dummy_effect",
+            "description": "発射体へのダメージバフ",
+            "value_list": [0.112, 0.128, 0.144, 0.16, 0.176, 0.192, 0.208, 0.224, 0.24, 0.256],
+            "duration": 99999
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "バースト: CIWS",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 20.0,
+    "effect_type": "damage",
+    "target": "enemy",
+    "profile": {
+        "is_skill_damage": true
+    },
+    "kwargs": {
+        "effect_no": 3,
+        "multiplier_list": [1.332, 1.5222, 1.7125, 1.9028, 2.0931, 2.2834, 2.4737, 2.664, 2.8542, 3.0445]
+    }
+  }
+}

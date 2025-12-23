@@ -1,0 +1,110 @@
+{
+  "name": "ウンファ",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "アブソルート",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.33,
+    "damage_rate": 0.7107,
+    "hit_size": 1
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 準備態勢",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "charge_dmg_buff",
+            "value_list": [0.1864, 0.2071, 0.2278, 0.2485, 0.2692, 0.29, 0.3107, 0.3314, 0.3521, 0.3728],
+            "duration": 0,
+            "shot_duration": 3
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "charge_speed_rate",
+            "value_list": [0.0776, 0.0863, 0.0949, 0.1035, 0.1122, 0.1208, 0.1294, 0.138, 0.1467, 0.1553],
+            "duration": 0,
+            "shot_duration": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 弱点の見極め",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "def_debuff",
+            "value_list": [0.145, 0.1611, 0.1772, 0.1933, 0.2094, 0.2255, 0.2416, 0.2577, 0.2738, 0.29],
+            "duration": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: 戦勢逆転",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "profile": {
+            "is_skill_damage": true
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [0.4281, 0.4757, 0.5232, 0.5708, 0.6184, 0.666, 0.7135, 0.7611, 0.8087, 0.8562]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "def_debuff",
+            "value_list": [0.0121, 0.0135, 0.0148, 0.0162, 0.0175, 0.0189, 0.0202, 0.0216, 0.0229, 0.0243],
+            "duration": 15
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "crit_rate_buff",
+            "value_list": [0.0232, 0.0258, 0.0284, 0.031, 0.0336, 0.0362, 0.0387, 0.0413, 0.0439, 0.0465],
+            "duration": 15
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -31,6 +31,7 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
+            "effect_no": 1,
             "buff_type": "charge_speed_rate",
             "value_list": [0.0689, 0.0742, 0.0795, 0.0848, 0.0902, 0.0955, 0.1008, 0.1061, 0.1114, 0.1167],
             "duration": 10
@@ -40,6 +41,7 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
+            "effect_no": 2,
             "buff_type": "charge_dmg_buff",
             "value_list": [0.0413, 0.0445, 0.0477, 0.0509, 0.0541, 0.0573, 0.0604, 0.0636, 0.0668, 0.07],
             "duration": 10

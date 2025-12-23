@@ -110,6 +110,15 @@ class SkillEngineMixin:
                         return False
             # ▲▲▲ 追加ここまで ▲▲▲
 
+            # ▼▼▼ 追加: フルバースト中判定 (is_full_burst) ▼▼▼
+            if "is_full_burst" in skill.condition:
+                required_state = skill.condition["is_full_burst"]
+                # self.burst_state が "FULL" かどうかで判定
+                is_fb_now = (getattr(self, 'burst_state', 'GEN') == 'FULL')
+                if is_fb_now != required_state:
+                    return False
+            # ▲▲▲ 追加ここまで ▲▲▲
+
         # ▼▼▼ 追加: 特定部隊の味方の存在チェック (has_squad_mate_present) ▼▼▼
         # skill.condition and ... を追加して、conditionが存在しない場合はスルーするようにする
         if skill.condition and "has_squad_mate_present" in skill.condition and caster:
