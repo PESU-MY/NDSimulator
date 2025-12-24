@@ -18,7 +18,6 @@ def create_character_from_json(char_file_path, skill_level=10):
     stats = char_data.get('stats', {})
     char_class = char_data.get('class', 'Attacker')
     burst_stage = char_data.get('burst_stage', '3')
-    # ▼▼▼ 追加: 部隊情報の読み込み ▼▼▼
     squad = char_data.get('squad', 'Unknown')
     
     # 武器設定
@@ -55,6 +54,7 @@ def create_character_from_json(char_file_path, skill_level=10):
     if 'base_hp' in stats: base_hp = stats['base_hp']
 
     # スキル読み込み用内部関数
+    # スキル読み込み用内部関数
     def parse_skill_data(s_data):
         init_kwargs = s_data.get('kwargs', {}).copy()
         
@@ -65,24 +65,42 @@ def create_character_from_json(char_file_path, skill_level=10):
         
         level_idx = max(0, min(9, skill_level - 1))
 
-        # ▼▼▼ 修正: 再帰的に辞書を走査して _list を展開する関数 ▼▼▼
+        # ▼▼▼▼▼ 修正: 強力な再帰展開関数 ▼▼▼▼▼
         def resolve_variable_params(d):
-            keys = list(d.keys())
-            for k in keys:
-                # 1. _list の展開 (例: stack_amount_list -> stack_amount)
-                if k.endswith('_list') and isinstance(d[k], list):
-                    base_key = k[:-5]
-                    val_list = d[k]
-                    # 以前の「if base_key not in d:」を削除し、常にリスト値で上書き
-                    if len(val_list) > level_idx:
-                        d[base_key] = val_list[level_idx]
-                
-                # 2. 辞書型なら再帰的に処理 (例: weapon_data 内の multiplier_list 対応)
-                elif isinstance(d[k], dict):
-                    resolve_variable_params(d[k])
+            # 辞書型の場合
+            if isinstance(d, dict):
+                keys = list(d.keys())
+                for k in keys:
+                    # 1. _list の展開
+                    if k.endswith('_list') and isinstance(d[k], list):
+                        base_key = k[:-5]
+                        val_list = d[k]
+                        if len(val_list) > level_idx:
+                            d[base_key] = val_list[level_idx]
+                    
+                    # 2. ammo_charge 等の value 展開 (エラー回避)
+                    elif k == 'value' and isinstance(d[k], list):
+                        val_list = d[k]
+                        if len(val_list) > level_idx:
+                            d['value'] = val_list[level_idx]
 
-        # 1. トップレベルのkwargsを展開
+                    # 3. 再帰呼び出し (値が辞書またはリストの場合)
+                    else:
+                        resolve_variable_params(d[k])
+            
+            # リスト型の場合
+            elif isinstance(d, list):
+                for item in d:
+                    resolve_variable_params(item)
+        # ▲▲▲▲▲ 修正ここまで ▲▲▲▲▲
+
+        # 1. トップレベルのkwargsを展開 (これでsub_effectの中も全て処理される)
         resolve_variable_params(init_kwargs)
+        
+        # (以下、ammo_chargeのマッピングなどはそのまま)
+        if s_data.get('effect_type') in ['ammo_charge', 'refill_ammo']:
+            if 'value' in init_kwargs and 'rate' not in init_kwargs:
+                init_kwargs['rate'] = init_kwargs['value']
         
         # 2. stages 内の展開
         stages = []
@@ -90,11 +108,15 @@ def create_character_from_json(char_file_path, skill_level=10):
             raw_stages = s_data['stages']
             for i, st in enumerate(raw_stages):
                 st_copy = st.copy()
-                st_kwargs = st.get('kwargs', {}).copy()
+                # ここも同じ関数で処理可能
+                resolve_variable_params(st_copy) 
                 
-                # stages内のkwargsも再帰的に処理
-                resolve_variable_params(st_kwargs)
-
+                # kwargsのマッピング (念のため)
+                st_kwargs = st_copy.get('kwargs', {})
+                if st.get('effect_type') in ['ammo_charge', 'refill_ammo']:
+                    if 'value' in st_kwargs and 'rate' not in st_kwargs:
+                        st_kwargs['rate'] = st_kwargs['value']
+                
                 st_copy['kwargs'] = st_kwargs
                 stages.append(st_copy)
 
@@ -138,11 +160,11 @@ if not os.path.exists('characters'): os.makedirs('characters')
 
 dummy_ct_skill = Skill(
     name="Dummy B1: CT Reduction",
-    trigger_type="on_burst_enter", 
+    trigger_type="on_use_burst_skill", 
     trigger_value=0,
     effect_type="cooldown_reduction",
     target="allies", 
-    value=5
+    value=5.0
 )
 
 dummy_barrier_skill = Skill(
@@ -157,7 +179,7 @@ dummy_barrier_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/2B.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/シンデレラ.json', skill_level=10)
 burst3_nikke_2 = create_character_from_json('characters/キリ.json', skill_level=10)
 burst2_nikke = create_character_from_json('characters/エレグ.json', skill_level=10)
 burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
@@ -172,15 +194,14 @@ dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, burst3_nikke_2, burst3_nikke, dummy_b3, dummy_b2]
+all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_b3]
 
 # 4. バーストローテーション
 rotation = [
     [dummy_b1],
     [dummy_b2],
-    [burst3_nikke, burst3_nikke_2] 
+    [burst3_nikke, dummy_b3] 
 ]
-
 # 5. シミュレーター初期化
 sim = NikkeSimulator(
     characters=all_characters,
@@ -192,12 +213,8 @@ sim = NikkeSimulator(
     burst_charge_time=5.0
 )
 
-# ▼▼▼ 追加: 汎用フラグの設定 ▼▼▼
-# ここで設定した変数名（例: special_mode）を JSON の "simulation_flag" に指定すると、
-# その変数が True の場合のみスキルが発動するようになります。
+# 汎用フラグの設定例
 sim.special_mode = False 
-# sim.hard_mode = True  # 必要に応じて他のフラグも自由に追加可能です
-# ▲▲▲ 追加ここまで ▲▲▲
 
 # 6. 実行
 print("シミュレーションを開始します...")
@@ -216,4 +233,3 @@ for name, res in results.items():
         for k, v in res['breakdown'].items():
             if v > 0:
                 print(f"   - {k}: {v:,.0f}")
-        print("")

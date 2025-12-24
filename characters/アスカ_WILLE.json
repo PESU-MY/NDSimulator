@@ -26,7 +26,8 @@
       "effect_type": "damage",
       "target": "enemy",
       "kwargs": {
-        "multiplier": 4.7186,
+        "effect_no" : 1,
+        "multiplier_list": [2.7882, 3.0027, 3.2172, 3.4317, 3.6462, 3.8607, 4.0751, 4.2896, 4.5041, 4.7186],
         "profile": {
           "is_skill_damage": true
         }
@@ -50,7 +51,8 @@
           "effect_type": "damage",
           "target": "enemy",
           "kwargs": {
-            "multiplier": 0.1562,
+            "effect_no" : 2,
+            "multiplier_list": [0.0922, 0.0993, 0.1065, 0.1136, 0.1207, 0.1278, 0.1349, 0.142, 0.1491, 0.1562],
             "profile": {
               "is_skill_damage": true
             }
@@ -62,7 +64,8 @@
           "kwargs": {
             "stack_name": "AntiATField",
             "buff_type": "taken_dmg_debuff",
-            "value": 0.0083,
+            "effect_no" : 3,
+            "value_list": [0.0049, 0.0052, 0.0056, 0.006, 0.0064, 0.0068, 0.0071, 0.0075, 0.0079, 0.0083],
             "max_stack": 30,
             "duration": 30,
             "tag": "anti_at_field"
@@ -73,16 +76,14 @@
     },
     {
       "name": "S2: 緊急修復 (バフ)",
-      "trigger_type": "on_burst_enter",
+      "trigger_type": "on_use_burst_skill", 
       "trigger_value": 0,
       "effect_type": "buff",
       "target": "self",
-      "condition": {
-        "self_has_tag": "annihilation_mode"
-      },
       "kwargs": {
         "buff_type": "atk_dmg_buff",
-        "value": 0.3097,
+        "effect_no" : 4,
+        "value_list": [0.183, 0.1971, 0.2112, 0.2252, 0.2393, 0.2534, 0.2675, 0.2816, 0.2956, 0.3097],
         "duration": 10.0
       }
     }
@@ -122,7 +123,8 @@
         "effect_type": "ammo_charge",
         "target": "self",
         "kwargs": {
-          "rate": 0.2004
+          "effect_no": 6,
+          "value_list": [0.124, 0.1336, 0.1431, 0.1527, 0.1622, 0.1718, 0.1813, 0.1909, 0.2004, 0.21]
         }
       },
       {
@@ -130,7 +132,8 @@
         "target": "self",
         "kwargs": {
           "buff_type": "atk_buff_rate",
-          "value": 0.4467,
+          "effect_no": 7,
+          "value_list": [0.2765, 0.2978, 0.319, 0.3403, 0.3616, 0.3829, 0.4041, 0.4254, 0.4467, 0.468],
           "duration": 9.0
         }
       },
@@ -139,7 +142,8 @@
         "target": "self",
         "kwargs": {
           "buff_type": "atk_dmg_buff",
-          "value": 0.3436,
+          "effect_no": 8,
+          "value_list": [0.2127, 0.229, 0.2454, 0.2618, 0.2781, 0.2945, 0.3109, 0.3272, 0.3436, 0.36],
           "duration": 9.0
         }
       },
@@ -160,7 +164,8 @@
               "effect_type": "damage",
               "target": "enemy",
               "kwargs": {
-                "multiplier": 0.0632,
+                "effect_no": 9,
+                "multiplier_list": [0.0391, 0.0421, 0.0451, 0.0481, 0.0511, 0.0541, 0.0572, 0.0602, 0.0632, 0.0662],
                 "scale_by_target_stack": true,
                 "stack_name": "AntiATField",
                 "profile": {
@@ -193,11 +198,11 @@
               }
             },
             {
-              "effect_type": "heal",
+              "effect_type": "regenerate",
               "target": "self",
               "kwargs": {
-                "buff_type": "dummy_heal",
-                "value": 0.0377,
+                "effect_no" : 5,
+                "value_list": [0.0222, 0.024, 0.0257, 0.0274, 0.0291, 0.0308, 0.0325, 0.0342, 0.036, 0.0377],
                 "duration": 3.0,
                 "interval": 1.0
               }

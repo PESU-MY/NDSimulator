@@ -20,7 +20,6 @@
       "effect_type": "heal",
       "target": "allies",
       "kwargs": {
-        "buff_type": "dummy_heal",
         "effect_no": 1,
         "value_list": [0.0121, 0.0162, 0.0202, 0.0243, 0.0283, 0.0324, 0.0364, 0.0405, 0.0445, 0.0486],
         "duration": 0
@@ -34,7 +33,6 @@
       "effect_type": "heal",
       "target": "allies",
       "kwargs": {
-        "buff_type": "dummy_heal",
         "effect_no": 2,
         "value_list": [0.0242, 0.0323, 0.0403, 0.0484, 0.0565, 0.0646, 0.0726, 0.0807, 0.0888, 0.0969],
         "duration": 0
@@ -50,7 +48,6 @@
     "target": "allies",
     "kwargs": {
       "effect_no": 2,
-      "buff_type": "dummy_heal",
       "value_list": [0.0742, 0.099, 0.1237, 0.1485, 0.1732, 0.198, 0.2227, 0.2475, 0.2722, 0.297],
       "duration": 0
     },

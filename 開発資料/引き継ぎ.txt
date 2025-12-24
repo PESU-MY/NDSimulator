@@ -420,3 +420,27 @@ JSONの condition に "simulation_flag": "special_mode" を記述。 ・挙動: 
 【スキルの無効化・ダミー設定】 実装予定だが効果未定のスキルや、一時的に無効化したいスキルについては、 trigger_type にシステム上で未定義の文字列（"dummy" 等）を設定することを推奨する。 プログラム側で一致するトリガーがないため、確実に無視される。
 
 ・記述例: "trigger_type": "dummy", "description": "効果未実装のため発動しない"
+
+HP管理システムの刷新と回復機能の実装（最新改修）
+
+【現在HP (current_hp) の導入】 キャラクターの「現在HP」を変動させる機能を実装。初期値は最大HP。 回復、自傷、最大HP変動に合わせてリアルタイムに更新される。
+
+【回復ロジックの統合 (healメソッド)】 これまでバラバラだった回復処理を Character.heal メソッドに集約。 ・仕様:
+
+基本回復量 × (1 + 受ける回復量UPバフ heal_effectiveness_buff) を計算。
+
+max_hp_overflow バフがある場合、最大HPを超過して回復可能（HPストック機能）。
+
+回復発生時にトリガー on_receive_heal を発火。
+
+【新規効果タイプ: regenerate (リジェネ)】 指定間隔で持続回復するHoT (Heal over Time) 効果。 ・記述: "effect_type": "regenerate" ・パラメータ: value (1回の回復量), interval (間隔秒数), duration (持続秒数) ・仕様:
+
+発動時に回復量（value）が確定（スナップショット）される。
+
+scale_by_caster_stats と併用した場合、発動瞬間のステータスで計算された固定値が毎秒適用される。
+
+【最大HPバフの挙動拡張】 最大HPを増加させるバフにおいて、現在HPも同時に増加させるオプションを追加。 ・記述: "kwargs": { "buff_type": "max_hp_rate", "update_current_hp": true, ... } ・挙動: update_current_hp: true の場合、最大HPが増えた分だけ現在HPも加算回復する（実質的な現在HP維持）。
+
+【HP推移ログの出力】 シミュレーション中のHP変動を追跡するため、logs/hp_log.csv を生成する機能を追加。 1秒（60フレーム）ごとに全キャラクターの現在HP、最大HP、HP割合(%)を出力する。
+
+【ドレイン (Drain) の実装】 攻撃ダメージの一部を吸収して回復する機能。 ・バフ名: drain ・仕様: 射撃ダメージ発生時、ダメージ量 × バフ効果値 分のHPを即時回復する。
