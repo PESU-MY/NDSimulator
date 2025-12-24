@@ -1,0 +1,141 @@
+{
+  "name": "エード：エージェントバニー",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Iron",
+  "class": "Supporter",
+  "squad": "メイド・フォー・ユー",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.6904
+  },
+  "skills": [
+    {
+      "name": "Skill 1: エージェントの目配り",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "stat_type": "finally",
+            "value_list": [0.0898, 0.0967, 0.1036, 0.1105, 0.1175, 0.1244, 0.1313, 0.1382, 0.1451, 0.152],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "description": "隠しレンズ：適正最小射程距離UP",
+            "stack_name": "hidden_lens",
+            "max_stack": 10,
+            "value": 0.0444,
+            "duration": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: エージェントの所作",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "pierce_dmg_buff",
+            "value_list": [0.0915, 0.1017, 0.112, 0.1222, 0.1324, 0.1427, 0.1529, 0.1632, 0.1734, 0.1836],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "condition": {
+            "self_stack_min": 10,
+            "stack_name": "hidden_lens"
+          },
+          "kwargs": {
+            "buff_type": "is_pierce",
+            "value": 1,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "condition": {
+            "self_stack_min": 10,
+            "stack_name": "hidden_lens"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.0936, 0.1009, 0.1083, 0.1157, 0.1231, 0.1305, 0.1378, 0.1452, 0.1526, 0.16],
+            "duration": 99999
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: エージェントの隠し道具",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "description": "適正最小射程距離UP",
+            "value": 0.5556,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.2985, 0.3265, 0.3545, 0.3825, 0.4105, 0.4385, 0.4664, 0.4944, 0.5224, 0.5504],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "pierce_dmg_buff",
+            "value_list": [0.0514, 0.057, 0.0625, 0.0681, 0.0736, 0.0792, 0.0847, 0.0902, 0.0958, 0.1013],
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}
