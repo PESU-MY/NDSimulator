@@ -54,7 +54,6 @@ def create_character_from_json(char_file_path, skill_level=10):
     if 'base_hp' in stats: base_hp = stats['base_hp']
 
     # スキル読み込み用内部関数
-    # スキル読み込み用内部関数
     def parse_skill_data(s_data):
         init_kwargs = s_data.get('kwargs', {}).copy()
         
@@ -67,37 +66,28 @@ def create_character_from_json(char_file_path, skill_level=10):
 
         # ▼▼▼▼▼ 修正: 強力な再帰展開関数 ▼▼▼▼▼
         def resolve_variable_params(d):
-            # 辞書型の場合
             if isinstance(d, dict):
                 keys = list(d.keys())
                 for k in keys:
-                    # 1. _list の展開
                     if k.endswith('_list') and isinstance(d[k], list):
                         base_key = k[:-5]
                         val_list = d[k]
                         if len(val_list) > level_idx:
                             d[base_key] = val_list[level_idx]
-                    
-                    # 2. ammo_charge 等の value 展開 (エラー回避)
                     elif k == 'value' and isinstance(d[k], list):
                         val_list = d[k]
                         if len(val_list) > level_idx:
                             d['value'] = val_list[level_idx]
-
-                    # 3. 再帰呼び出し (値が辞書またはリストの場合)
                     else:
                         resolve_variable_params(d[k])
-            
-            # リスト型の場合
             elif isinstance(d, list):
                 for item in d:
                     resolve_variable_params(item)
         # ▲▲▲▲▲ 修正ここまで ▲▲▲▲▲
 
-        # 1. トップレベルのkwargsを展開 (これでsub_effectの中も全て処理される)
+        # 1. トップレベルのkwargsを展開
         resolve_variable_params(init_kwargs)
         
-        # (以下、ammo_chargeのマッピングなどはそのまま)
         if s_data.get('effect_type') in ['ammo_charge', 'refill_ammo']:
             if 'value' in init_kwargs and 'rate' not in init_kwargs:
                 init_kwargs['rate'] = init_kwargs['value']
@@ -108,10 +98,8 @@ def create_character_from_json(char_file_path, skill_level=10):
             raw_stages = s_data['stages']
             for i, st in enumerate(raw_stages):
                 st_copy = st.copy()
-                # ここも同じ関数で処理可能
                 resolve_variable_params(st_copy) 
                 
-                # kwargsのマッピング (念のため)
                 st_kwargs = st_copy.get('kwargs', {})
                 if st.get('effect_type') in ['ammo_charge', 'refill_ammo']:
                     if 'value' in st_kwargs and 'rate' not in st_kwargs:
@@ -120,10 +108,14 @@ def create_character_from_json(char_file_path, skill_level=10):
                 st_copy['kwargs'] = st_kwargs
                 stages.append(st_copy)
 
+        # ▼▼▼▼▼ 修正: trigger_value の競合回避処理 ▼▼▼▼▼
+        # init_kwargs に trigger_value が生成されていれば取り出して優先使用する
+        final_trigger_value = init_kwargs.pop('trigger_value', s_data.get('trigger_value', 0))
+
         return Skill(
             name=s_data.get('name', 'Unknown Skill'),
             trigger_type=s_data.get('trigger_type', 'manual'),
-            trigger_value=s_data.get('trigger_value', 0),
+            trigger_value=final_trigger_value,  # ← ここを修正（計算済みの値を使う）
             effect_type=s_data.get('effect_type', 'buff'),
             stages=stages,
             **init_kwargs

@@ -14,7 +14,7 @@
   "skills": [
     {
       "name": "Skill 1: ワンフォーオール (バースト参加者)",
-      "trigger_type": "on_full_burst_start",
+      "trigger_type": "on_burst_enter",
       "trigger_value": 0,
       "effect_type": "buff",
       "target": "allies",
@@ -23,7 +23,7 @@
       },
       "kwargs": {
         "effect_no": 1,
-        "buff_type": "atk_buff_rate",
+        "buff_type": "atk_buff_fix",
         "scale_by_caster_stats": true,
         "target_stat": "atk",
         "value_list": [0.4032, 0.43, 0.4569, 0.4838, 0.5107, 0.5376, 0.5644, 0.5913, 0.6182, 0.6451],
@@ -32,7 +32,7 @@
     },
     {
       "name": "Skill 1: ワンフォーオール (バースト参加者_リロード)",
-      "trigger_type": "on_full_burst_start",
+      "trigger_type": "on_burst_enter",
       "trigger_value": 0,
       "effect_type": "buff",
       "target": "allies",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Skill 1: ワンフォーオール (バースト不参加者)",
-      "trigger_type": "on_full_burst_start",
+      "trigger_type": "on_burst_enter",
       "trigger_value": 0,
       "effect_type": "buff",
       "target": "allies",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Skill 1: ワンフォーオール (バースト不参加者_リロード)",
-      "trigger_type": "on_full_burst_start",
+      "trigger_type": "on_burst_enter",
       "trigger_value": 0,
       "effect_type": "buff",
       "target": "allies",
