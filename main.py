@@ -191,6 +191,13 @@ sim = NikkeSimulator(
     burst_charge_time=5.0
 )
 
+# ▼▼▼ 追加: 汎用フラグの設定 ▼▼▼
+# ここで設定した変数名（例: special_mode）を JSON の "simulation_flag" に指定すると、
+# その変数が True の場合のみスキルが発動するようになります。
+sim.special_mode = True 
+# sim.hard_mode = True  # 必要に応じて他のフラグも自由に追加可能です
+# ▲▲▲ 追加ここまで ▲▲▲
+
 # 6. 実行
 print("シミュレーションを開始します...")
 results = sim.run()

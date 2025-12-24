@@ -377,3 +377,30 @@ N102（アン）やアリスなどが持つ「攻撃力が最も高い味方n機
 
 ・自身のスタック数条件 (self_stack_min)
   - スキル発動条件として、自身の特定のスタック数がN個以上であることを指定可能。
+
+
+最新の改修・追加機能（シミュレーション制御・詳細仕様）
+
+【汎用フラグによるスキル発動制御 (simulation_flag)】 シミュレーター本体の変数を参照して、スキルの発動可否を制御する機能。 特定モード（部位破壊モードや特殊ギミック）のON/OFFをMain側で管理できる。
+
+・使用方法:
+
+main.py で sim.special_mode = True のように任意の変数を設定。
+
+JSONの condition に "simulation_flag": "special_mode" を記述。 ・挙動: 指定された変数が True の場合のみスキルが発動する。
+
+【バーストCTの優先順位変更】 キャラクターごとのバーストクールタイム設定の読み込みロジックを修正。 ・変更前: バーストI・IIは一律20秒、IIIは40秒として強制上書きされていた。 ・変更後: JSONに cooldown_time (または cooldown) の記述があれば、それを最優先で適用する。 これにより、エーテル（バーストI・CT40秒）やラプンツェル（バーストI・CT60秒）などが正しく動作するようになった。
+
+【新規効果・条件の実装】 ・decrease_debuff_stack_count: 指定したタグを持つデバフのスタック数を減少（解除）する。 記述: "effect_type": "decrease_debuff_stack_count", "target": "allies", "kwargs": { "tag": "debuff", "value": 1 }
+
+・refill_ammo_fixed: 弾丸を固定数だけリロードする。 記述: "effect_type": "refill_ammo_fixed", "kwargs": { "value": 3 }
+
+・is_full_burst (Condition): 現在がフルバースト中かどうかを判定する条件。 記述: "condition": { "is_full_burst": true }
+
+【重要：キー名・設定値の注意点】 ・チャージ速度バフのキー名: charge_speed_buff ではなく charge_speed_rate を使用すること。 （プログラム内部での参照キーが _rate で統一されているため）
+
+・発動回数指定 (shot_duration): 以前の「+1が必要」という認識は誤り。 設定した数値の回数分きっちり適用されるため、本来の回数をそのまま記述すること。
+
+・バフ名称の管理: JSON作成時のキー名間違いを防ぐため、別途作成した 開発資料/バフ_プログラム対応表.txt を参照すること。
+
+【ターゲット条件の記述統一】 クラス（型）指定などの条件記述は、プログラムが標準サポートしている以下の形式に統一して記述すること。 NG: "target_condition": { "class": "Supporter" } OK: "target_condition": { "type": "class", "value": "Supporter" }
