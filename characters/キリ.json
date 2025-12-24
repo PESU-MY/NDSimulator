@@ -79,18 +79,17 @@
       },
       "stages": [
         {
-          "effect_type": "heal",
+          "effect_type": "regenerate",
           "target": "allies",
           "kwargs": {
             "effect_no": 4,
-            "buff_type": "regenerate",
-            "active_hots": 10,
             "description": "スキル発動者の最終最大HPのn%回復(1秒間隔)",
             "scale_by_caster_stats": true,
             "target_stat": "max_hp",
             "stat_type": "finally",
             "value_list": [0.0411, 0.0443, 0.0475, 0.0506, 0.0538, 0.057, 0.0601, 0.0633, 0.0665, 0.0696],
-            "duration": 10
+            "duration": 10,
+            "interval": 1.0 
           }
         },
         {

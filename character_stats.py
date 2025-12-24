@@ -136,7 +136,7 @@ class CharacterStatsMixin:
             # リロード・チャージは除算ではなく乗算短縮 + 固定値減算
             return self.calculate_reduced_frame(original_frame, rate, fixed)
     
-    # ▼▼▼ 追加: バフ込み最大HPの計算 ▼▼▼
+    # ▼▼▼ 追加: 最大HP計算メソッド ▼▼▼
     def get_current_max_hp(self, frame):
         rate = self.buff_manager.get_total_value('max_hp_rate', frame)
         fixed = self.buff_manager.get_total_value('max_hp_fixed', frame)

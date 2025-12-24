@@ -8,7 +8,7 @@
 [Shoot] 時間:  3.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間:  5.37s | 弾数:  2/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
+[Shoot] 時間:  5.37s | 弾数:  2/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間:  6.75s | 弾数:  1/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
@@ -22,10 +22,10 @@
 [Shoot] 時間: 11.52s | 弾数:  5/6   | Pellets: 1 | Dmg:    81,632 | Buffs: None
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間: 12.90s | 弾数:  4/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Shoot] 時間: 12.90s | 弾数:  4/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間: 14.28s | 弾数:  3/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Shoot] 時間: 14.28s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間: 15.67s | 弾数:  2/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
@@ -39,6 +39,11 @@
 [Target] Selected Top 2 ATK: ['2B']
 [Action] Reloading... (120 frames)
 [Burst] Activate!
+[Regen] Applied Regen to Dummy_B1 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to キリ (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to 2B (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B3 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B2 (Val:45063, Int:1.0s, Dur:10s)
 [Action] Reload Complete. Ammo: 6
 [Shoot] 時間: 21.82s | 弾数:  5/6   | Pellets: 1 | Dmg:    81,632 | Buffs: None
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
@@ -69,7 +74,7 @@
 [Shoot] 時間: 34.88s | 弾数:  3/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間: 36.27s | 弾数:  2/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Shoot] 時間: 36.27s | 弾数:  2/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間: 37.65s | 弾数:  1/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
@@ -100,14 +105,19 @@
 [Target] Selected Top 2 ATK: ['2B']
 [Action] Reloading... (120 frames)
 [Burst] Activate!
+[Regen] Applied Regen to Dummy_B1 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to キリ (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to 2B (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B3 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B2 (Val:45063, Int:1.0s, Dur:10s)
 [Action] Reload Complete. Ammo: 6
 [Shoot] 時間: 52.72s | 弾数:  5/6   | Pellets: 1 | Dmg:    81,632 | Buffs: None
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間: 54.10s | 弾数:  4/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Shoot] 時間: 54.10s | 弾数:  4/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間: 55.48s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
+[Shoot] 時間: 55.48s | 弾数:  3/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間: 56.87s | 弾数:  2/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
@@ -116,7 +126,7 @@
 [Shoot] 時間: 58.25s | 弾数:  1/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間: 59.63s | 弾数:  0/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Shoot] 時間: 59.63s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Action] Reloading... (120 frames)
@@ -127,7 +137,7 @@
 [Shoot] 時間: 64.40s | 弾数:  4/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間: 65.78s | 弾数:  3/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Shoot] 時間: 65.78s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間: 67.17s | 弾数:  2/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
@@ -160,6 +170,11 @@
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Burst] Activate!
+[Regen] Applied Regen to Dummy_B1 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to キリ (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to 2B (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B3 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B2 (Val:45063, Int:1.0s, Dur:10s)
 [Action] Reloading... (120 frames)
 [Action] Reload Complete. Ammo: 6
 [Shoot] 時間: 83.62s | 弾数:  5/6   | Pellets: 1 | Dmg:    81,632 | Buffs: None
@@ -177,7 +192,7 @@
 [Shoot] 時間: 89.15s | 弾数:  1/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間: 90.53s | 弾数:  0/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Shoot] 時間: 90.53s | 弾数:  0/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Action] Reloading... (120 frames)
@@ -202,22 +217,27 @@
 [Target] Selected Top 2 ATK: ['2B']
 [Action] Reloading... (120 frames)
 [Action] Reload Complete. Ammo: 6
-[Shoot] 時間:104.22s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,959 | Buffs: None
+[Shoot] 時間:104.22s | 弾数:  5/6   | Pellets: 1 | Dmg:    81,632 | Buffs: None
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間:105.60s | 弾数:  4/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間:106.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
+[Shoot] 時間:106.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間:108.37s | 弾数:  2/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間:109.75s | 弾数:  1/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
+[Shoot] 時間:109.75s | 弾数:  1/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Burst] Activate!
+[Regen] Applied Regen to Dummy_B1 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to キリ (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to 2B (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B3 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B2 (Val:45063, Int:1.0s, Dur:10s)
 [Shoot] 時間:111.13s | 弾数:  0/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
@@ -269,14 +289,19 @@
 [Shoot] 時間:136.50s | 弾数:  4/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間:137.88s | 弾数:  3/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Shoot] 時間:137.88s | 弾数:  3/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間:139.27s | 弾数:  2/6   | Pellets: 1 | Dmg:    65,306 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Burst] Activate!
-[Shoot] 時間:140.65s | 弾数:  1/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Regen] Applied Regen to Dummy_B1 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to キリ (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to 2B (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B3 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B2 (Val:45063, Int:1.0s, Dur:10s)
+[Shoot] 時間:140.65s | 弾数:  1/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間:142.03s | 弾数:  0/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
@@ -287,7 +312,7 @@
 [Shoot] 時間:145.42s | 弾数:  5/6   | Pellets: 1 | Dmg:    81,632 | Buffs: None
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間:146.80s | 弾数:  4/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
+[Shoot] 時間:146.80s | 弾数:  4/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間:148.18s | 弾数:  3/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
@@ -304,10 +329,10 @@
 [Target] Selected Top 2 ATK: ['2B']
 [Action] Reloading... (120 frames)
 [Action] Reload Complete. Ammo: 6
-[Shoot] 時間:155.72s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,959 | Buffs: None
+[Shoot] 時間:155.72s | 弾数:  5/6   | Pellets: 1 | Dmg:    81,632 | Buffs: None
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間:157.10s | 弾数:  4/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
+[Shoot] 時間:157.10s | 弾数:  4/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Shoot] 時間:158.48s | 弾数:  3/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
@@ -337,10 +362,15 @@
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Burst] Activate!
-[Shoot] 時間:171.55s | 弾数:  1/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Regen] Applied Regen to Dummy_B1 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to キリ (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to 2B (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B3 (Val:45063, Int:1.0s, Dur:10s)
+[Regen] Applied Regen to Dummy_B2 (Val:45063, Int:1.0s, Dur:10s)
+[Shoot] 時間:171.55s | 弾数:  1/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
-[Shoot] 時間:172.93s | 弾数:  0/6   | Pellets: 1 | Dmg:    81,632 | Buffs: dummy_effect:1904.85
+[Shoot] 時間:172.93s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,959 | Buffs: dummy_effect:1904.85
 [Buff] Applied Skill 1: のぞき見 (敵デバフ) (dummy_effect: 1904.8457999999998) to キリ
 [Target] Selected Top 2 ATK: ['2B']
 [Action] Reloading... (120 frames)

@@ -38,6 +38,12 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
         
         self.log_handles = {}
         self.log_handles["System"] = open(os.path.join(self.log_dir, "System.txt"), 'w', encoding='utf-8')
+
+        # ▼▼▼ 追加: HPログ用のファイル作成 ▼▼▼
+        self.hp_log_handle = open(os.path.join(self.log_dir, "hp_log.csv"), 'w', encoding='utf-8')
+        # CSVヘッダー書き込み
+        self.hp_log_handle.write("Time(s),Character,CurrentHP,MaxHP,Ratio(%)\n")
+        # ▲▲▲ 追加ここまで ▲▲▲
         
         for char in self.characters:
             # ▼▼▼ 追加: リジェネ(HoT)の処理 ▼▼▼
@@ -90,6 +96,15 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
         if frame > 0 and frame % (15 * self.FPS) == 0:
             # "trigger_value"は便宜上0
             self.process_trigger_global('interval_15s', frame)
+        # ▲▲▲ 追加ここまで ▲▲▲
+
+        # ▼▼▼ 追加: HPログ出力 (1秒ごとに記録) ▼▼▼
+        if frame % 60 == 0:
+            for char in self.characters:
+                # 最大HP計算 (stats.pyのメソッドが必要)
+                max_hp = char.get_current_max_hp(frame)
+                ratio = (char.current_hp / max_hp * 100) if max_hp > 0 else 0
+                self.hp_log_handle.write(f"{frame/60:.2f},{char.name},{char.current_hp:.0f},{max_hp:.0f},{ratio:.2f}\n")
         # ▲▲▲ 追加ここまで ▲▲▲
 
 
