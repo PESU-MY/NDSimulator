@@ -51,30 +51,33 @@
     },
     {
         "name": "Skill 2: 健康なニンジン",
-        "trigger_type": "on_start",
-        "trigger_value": 0,
+        "trigger_type": "time_interval",
+        "trigger_value": 1.0,
         "effect_type": "buff",
         "target": "self",
+        "target_condition": {
+          "hp_ratio_min": 0.8
+        },
         "kwargs": {
             "buff_type": "is_pierce",
             "value": 1,
-            "duration": 99999
-        },
-        "description": "本シミュレーターでは被ダメージが発生しないためHP100%（80%以上）の状態として処理し、貫通効果を常時適用します。HP80%未満の回復効果は未定義としています。"
+            "duration": 1.1
+        }
     },
     {
         "name": "Skill 2: 健康なニンジン（HP80%以下）",
-        "trigger_type": "dummy",
-        "trigger_value": 0,
-        "effect_type": "heal",
+        "trigger_type": "time_interval",
+        "trigger_value": 1.0,
         "target": "self",
+        "target_condition": {
+          "hp_ratio_max": 0.7999
+        },
         "kwargs": {
             "effect_no": 3,
-            "buff_type": "dummy_heal",
+            "buff_type": "drain",
             "value_list": [0.0245, 0.0308, 0.0371, 0.0434, 0.0497, 0.056, 0.0623, 0.0686, 0.0749, 0.0812],
-            "duration": 99999
-        },
-        "description": "本シミュレーターでは被ダメージが発生しないためHP100%（80%以上）の状態として処理し、貫通効果を常時適用します。HP80%未満の回復効果は未定義としています。"
+            "duration": 1.1
+        }
     }
   ],
   "burst_skill": {

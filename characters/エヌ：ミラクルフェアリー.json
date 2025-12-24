@@ -15,7 +15,7 @@
       "name": "Skill 1: 踊る妖精",
       "trigger_type": "shot_count",
       "trigger_value": 3,
-      "effect_type": "heal",
+      "effect_type": "buff",
       "target": "allies",
       "target_condition": {
         "type": "class",
@@ -23,7 +23,7 @@
       },   
       "kwargs": {
         "effect_no": 1,
-        "buff_type": "dummy_effect",
+        "buff_type": "drain",
         "description": "攻撃ダメージのn%回復(ドレイン)",
         "value_list": [0.0333, 0.0364, 0.0394, 0.0425, 0.0455, 0.0485, 0.0516, 0.0546, 0.0576, 0.0607],
         "duration": 5

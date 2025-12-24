@@ -12,7 +12,7 @@ JSONの "buff_type" や "effect_type" に指定するキー名と、
 [基礎ステータス]
 攻撃力UP (％/乗算)          : atk_buff_rate
 攻撃力UP (固定値)           : atk_buff_fixed
-                              ※ scale_by_caster_stats: true と併用されることが多い
+                              ※ ステータスコピー時や scale_by_caster_stats と併用される
 
 [ダメージ倍率 (加算枠)]
 攻撃ダメージUP              : atk_dmg_buff
@@ -36,10 +36,11 @@ JSONの "buff_type" や "effect_type" に指定するキー名と、
 クリティカル確率UP          : crit_rate_buff
 命中率UP                    : hit_rate_buff
 
-[未実装・汎用代用]
-通常攻撃ダメージUP          : (専用キーなし。必要になれば実装)
-付着ダメージバフ            : (専用キーなし。必要になれば実装)
-爆発ダメージバフ            : (専用キーなし。必要になれば実装)
+[ステータスコピー機能 (kwargs)]
+ステータスコピー有効化      : scale_by_reference (true)
+参照するステータス          : reference_stat ("atk" または "max_hp")
+参照対象の条件              : reference_condition ({"type": "highest_atk"} 等)
+                              ※ buff_type には atk_buff_fixed 等を指定すること
 
 ----------------------------------------------------------------
  2. 武器・アクション挙動系
@@ -59,7 +60,7 @@ JSONの "buff_type" や "effect_type" に指定するキー名と、
 最大装弾数UP (固定値)       : max_ammo_fixed
 攻撃速度UP                  : attack_speed_rate
 MG立ち上げ速度UP            : mg_warmup_speed
-ペレット数UP		    : pellet_count_add
+ペレット数UP                : pellet_count_add
 
 [即時効果 (Effect Type)]
 弾丸チャージ (割合)         : ammo_charge
@@ -70,11 +71,25 @@ MG立ち上げ速度UP            : mg_warmup_speed
 ----------------------------------------------------------------
  3. 防御・耐久・デバフ系
 ----------------------------------------------------------------
-[味方強化]
+[味方強化・HP管理]
 最大HPUP (％)               : max_hp_rate
+                              ※ kwargs: { "update_current_hp": true } で現在HPも同期回復
 最大HPUP (固定値)           : max_hp_fixed
+最大HP超過 (ヘルス増強)     : max_hp_overflow
+                              ※ 回復時に最大HPを超えて保持できる割合 (1.0 = 200%)
+受ける回復量UP              : heal_effectiveness_buff
+ドレイン (吸収)             : drain
+                              ※ 攻撃ダメージのn%を回復 (要: duration)
 
+[回復効果 (Effect Type)]
+即時回復                    : heal
+                              ※ value: 回復量
+リジェネ (持続回復)         : regenerate
+                              ※ kwargs: { "interval": 1.0, "duration": 5.0 }
+
+[防御・バリア]
 バリア (シールド)           : shield (effect_typeとして指定)
+                              ※ kwargs: { "tag": "..." } で個別管理可能
 
 [敵へのデバフ]
 被ダメージ上昇              : taken_dmg_debuff
@@ -156,7 +171,7 @@ JSONの "trigger_type"（いつ発動するか）や、
 | **フルバースト終了時** | `on_burst_end` | `trigger_value`: 0<br>※フルバーストタイムが終わった瞬間。 |
 | **戦闘開始時** | `on_start` | `trigger_value`: 0 |
 | **時間経過 (n秒ごと)** | `time_interval` | `trigger_value`: 秒数<br>※戦闘開始からn秒ごとに繰り返し発動。 |
-| **回復を受けた時** | `on_receive_heal` | `trigger_value`: 0 |
+| **回復を受けた時** | `on_receive_heal` | `trigger_value`: 0<br>※HP満タン時など回復量0でも発動する仕様。 |
 | **部位破壊時** | `part_break` | `trigger_value`: 0<br>※シミュレーター設定で部位破壊モードON時のみ有効。 |
 
 ----------------------------------------------------------------
@@ -172,6 +187,12 @@ JSONの "trigger_type"（いつ発動するか）や、
 | **武器種** | `weapon_type` | "AR", "SMG", "MG", "SG", "SR", "RL" |
 | **クラス** | `class` | "Attacker", "Supporter", "Defender" |
 | **部隊** | `squad` | "Matis", "Absolute" 等 |
+
+[HP・ステータス]
+| 条件 | キー名 | 値の型・備考 |
+| :--- | :--- | :--- |
+| **HP割合 (以上)** | `hp_ratio_min` | `0.8` (80%以上)<br>※対象の現在HP/最大HPで判定。 |
+| **HP割合 (以下)** | `hp_ratio_max` | `0.5` (50%以下) |
 
 [バフ・デバフの状態]
 | 条件 | キー名 | 備考 |
@@ -191,7 +212,7 @@ JSONの "trigger_type"（いつ発動するか）や、
 | 条件 | キー名 | 備考 |
 | :--- | :--- | :--- |
 | **直前のバースト使用者** | `is_last_burst_user` | `true` で指定。直前にバーストスキルを使ったキャラ（主にバーストIII発動者）を対象にする。 |
-| **フルバースト中** | `is_full_burst`      | `true` で指定。現在フルバーストタイム中であるかを判定する。 |  <-- ★追加
+| **フルバースト中** | `is_full_burst`      | `true` で指定。現在フルバーストタイム中であるかを判定する。 |
 | **攻撃力が最も高い** | `type: "highest_atk"` | `target_condition` 内で `{ "type": "highest_atk", "count": 2 }` のように記述。 |
 | **HPが最も低い** | `type: "lowest_hp"` | `target_condition` 内で `{ "type": "lowest_hp", "count": 1 }` のように記述。 |
 | **特定部隊の味方がいる** | `has_squad_mate_present` | 自分以外の指定部隊の味方が生存しているか（condition用）。<br>値は `true`。 |
@@ -199,4 +220,4 @@ JSONの "trigger_type"（いつ発動するか）や、
 ================================================================
 
 現状は敵1体を想定したシミュレーターのため、
-〇〇機に、全体に、といった指定に対応はしない。（無条件とする。）
+〇〇機に、全体に、といった指定に対応はしない。（無条件に対象クラス全員にかかる等）

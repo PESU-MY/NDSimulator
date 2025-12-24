@@ -108,13 +108,13 @@
         }
       },
       {
-        "effect_type": "heal",
+        "effect_type": "buff",
         "target": "self",
         "kwargs": {
-          "buff_type": "dummy_heal",
+          "buff_type": "drain",
           "effect_no": 6,
           "value_list": [0.0187, 0.0201, 0.0216, 0.023, 0.0244, 0.0259, 0.0273, 0.0288, 0.0302, 0.0316],
-          "duration": 0
+          "duration": 10
         },
         "description": "攻撃ダメージの回復（即時発動扱いでS1トリガー用）"
       },

@@ -62,13 +62,15 @@
       "condition": {
         "has_squad_mate_present": true
       },
-      "effect_type": "heal",
+      "effect_type": "regenerate",
       "target": "allies",
       "kwargs": {
         "scale_by_caster_stats": true,
         "target_stat": "max_hp",
         "stat_type": "base",
         "effect_no": 3,
+        "interval" : 1,
+        "duration" : 5,
         "value_list": [0.0179, 0.0193, 0.0207, 0.0221, 0.0234, 0.0248, 0.0262, 0.0276, 0.029, 0.0304],
         "description": "持続回復（代替：単発回復）"
       }
@@ -130,11 +132,14 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
-            "buff_type": "dummy_effect",
+            "buff_type": "max_hp_overflow",
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "base",
             "effect_no": 7,
             "value_list": [0.3556, 0.383, 0.4104, 0.4377, 0.4651, 0.4924, 0.5198, 0.5472, 0.5745, 0.6019],
             "duration": 25.0,
-            "description": "超過HP回復量保存 (dummy)"
+            "description": "超過HP回復量保存"
           }
         },
         {

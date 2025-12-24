@@ -141,8 +141,8 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
-            "buff_type": "dummy_effect",
-            "description": "受けるHP回復量UP (dummy)",
+            "buff_type": "heal_effectiveness_buff",
+            "description": "受けるHP回復量UP",
             "effect_no": 7,
             "value_list": [0.742, 0.8262, 0.9105, 0.9947, 1.0789, 1.1631, 1.2473, 1.3316, 1.4158, 1.5],
             "duration": 10.0

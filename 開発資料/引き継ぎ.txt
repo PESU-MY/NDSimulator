@@ -1,446 +1,163 @@
+NDSimulator 開発引き継ぎ資料（統合・整理版）
 
+本資料は、これまでの開発経緯・修正履歴を機能別・トピック別に整理し、重複を排除した最新の仕様書です。
 
+==================================================
 
-（引継ぎ）
-以下は前任からの引継ぎ資料です。少々仕様に疎い部分があったので、こちらは参考にお願いします。
+プロジェクト構造と役割 ================================================== 本シミュレーターは、肥大化を防ぐためにクラス機能をMixinを用いて分割・構成している。
 
+■ メイン実行・データ定義
 
-NDSimulator 開発引き継ぎ資料
-
-1. プロジェクト構造とファイル間の関連
-本シミュレーターは、肥大化を防ぐためにクラス機能をMixin（ミキシン）を用いて分割・構成している。
-
-メイン実行・管理
-
-main.py: エントリーポイント。キャラクター生成、JSON読み込み、シミュレーター初期化、実行、結果表示を行う。
+main.py: エントリーポイント。JSON読み込み（再帰解析含む）、キャラクター生成、シミュレーター初期化、実行、結果表示。
 
 models.py: データクラス定義（Skill, DamageProfile, WeaponConfig）。
 
-buff_manager.py: バフおよびスタックの管理クラス。
+buff_manager.py: バフおよびスタックの管理。add_buff は stack_amount 引数で複数スタック同時付与に対応済み。
 
-重要修正: add_buff に stack_amount 引数を追加し、一度に複数スタック増加させる機能が必要。
+■ シミュレーターエンジン (NikkeSimulator) engine.py で以下のMixinを継承して統合。
 
-シミュレーターエンジン (NikkeSimulator クラス) engine.py で以下のMixinを継承して統合している。
+engine.py: メインループ (tick)、初期化、ログ出力、全体進行管理。毎フレームのDoT/HoT計算、リジェネ処理もここで行う。
 
-engine.py: メインループ (tick)、初期化、ログ出力、全体進行管理。
+engine_skills.py (SkillEngineMixin): スキル効果の判定と適用ロジック。
 
-engine_skills.py (SkillEngineMixin): スキル効果の判定と適用ロジック (apply_skill, check_target_condition)。
+engine_burst.py (BurstEngineMixin): バースト状態遷移、クールダウン管理。
 
-実装済み効果: damage, buff, stack_buff, heal, refill_ammo, set_current_ammo, delayed_action, weapon_change, cooldown_reduction 等。
+■ キャラクター (Character) character.py で以下のMixinを継承して統合。
 
-engine_burst.py (BurstEngineMixin): バースト状態の遷移 (tick_burst_state)、クールダウン管理。
+character.py: 基本属性、現在HP、HoTリスト等の保持。heal メソッドの実装。
 
-処理順序: バースト発動時は「スキル発動(タグ付与) on_use_burst_skill」→「バースト突入トリガー on_burst_enter」の順で処理すること（条件判定のため）。
+character_stats.py (CharacterStatsMixin): ステータス計算、ダメージ計算、最大HP計算、フレーム短縮計算。
 
-キャラクター (Character クラス) character.py で以下のMixinを継承して統合している。
+character_skill.py (CharacterSkillMixin): スキル発動トリガーの判定ロジック。
 
-character.py: 基本属性の保持、初期化。
+character_action.py (CharacterActionMixin): 射撃、リロード、弾薬管理、状態遷移。
 
-character_stats.py (CharacterStatsMixin): ステータス計算、ダメージ計算 (calculate_strict_damage)、フレーム短縮計算。
+================================================== 2. JSONデータ記述ルール（重要）
+データ読み込み時（main.py）の解析ロジックに関わる重要事項。
 
-character_skill.py (CharacterSkillMixin): スキル発動トリガーの判定ロジック (process_trigger)。
+【基本ルール】
 
-character_action.py (CharacterActionMixin): 射撃、リロード、弾薬管理、状態遷移 (tick_action)。
+kwargs の必須性: スキル効果のパラメータ（value, duration, buff_type等）は、必ず kwargs ディクショナリの中に記述すること。
 
-2. ダメージ計算・スキル処理における重要ロジック
-以下のロジックはデバッグを経て確定した仕様であるため、勝手に変更してはならない。
+ターゲット条件の記述: 条件記述は {"type": "class", "value": "Supporter"} のような形式に統一すること（プログラム側でサポート）。
 
-トリガー判定ロジック (process_trigger)
+【レベル依存パラメータの自動展開 (_list)】
 
-回数累積型 (pellet_hit, critical_hit):
+命名規則: キー名の末尾が _list で終わるもの（例: value_list, multiplier_list）は、スキルレベルに応じた値を自動抽出して展開する。
 
-単純な閾値超え判定ではなく、(現在値 // 条件値) - (前回値 // 条件値) > 0 というロジックで判定する。
+逆に、レベル依存でない固定リストデータには _list を付けてはならない。
 
-これにより、1フレームに条件を複数回満たした場合（例：散弾で一気にヒット数が増えた、バーストで多数のクリティカルが出た）、その回数分だけスキルを発動させる。
+再帰的展開: main.py の改修により、ネストされた辞書やリスト（例: delayed_action 内の sub_effect 内の stages）の深層にある _list も全て探索・変換される。
 
-スタック数監視 (stack_count):
+優先順位: 同一階層に value と value_list がある場合、リストから算出された値が優先（上書き）される。
 
-毎フレーム監視すると無限ループするため、バフが付与されてスタックが増加した瞬間 (apply_skill 内) にのみ判定を行う。
+ammo_charge/refill_ammo の特例: value_list で指定した場合、自動的に rate としてマッピングされる救済ロジックが存在する。
 
-判定には delta (増加量) を用い、閾値をまたいだ場合のみ発動する。
+【ターゲット判定のスコープ】
 
-回復時 (on_receive_heal):
+condition: 敵の状態（not_has_tag等）やグローバルな状況（simulation_flag等）の判定。
 
-効果タイプ heal が実行された時にのみトリガーされる。
+target_condition: スキル対象（Self含む）個人の状態判定（class, element, has_barrier, highest_atk 等）。
 
-スキル効果の実装詳細 (apply_skill)
+味方や自分自身のタグ所持判定もこちらで行うこと。
 
-heal: ログ出力を行い、ターゲットの on_receive_heal トリガーを引く。
+複合条件（例：「防御型」かつ「攻撃力が高い2機」）も記述可能。
 
-refill_ammo: 最大装弾数の割合(%)で弾丸を即時回復する。
+【ダミースキル】
 
-set_current_ammo: 残弾数を特定の値（例: 0）に強制変更する。
+効果未定のスキルは "trigger_type": "dummy" とすることで、システム上で無視され発動しない。
 
-delayed_action: 指定秒数(duration)経過後のフレームに、指定された sub_effect を予約実行する。
+================================================== 3. コアロジック仕様
+【HP管理と回復システム】
 
-ダメージ計算:
+現在HP (current_hp): 初期値は最大HP。変動をリアルタイム管理。
 
-scale_by_target_stack: ターゲット（敵）の指定デバフスタック数に応じてダメージ倍率を乗算する機能。
+heal メソッド: 全ての回復処理を集約。
 
-3. これまでの修正・要望履歴（考慮すべき事情）
-DoT（持続ダメージ）:
+計算式: 基本回復量 × (1 + 受ける回復量UPバフ)
 
-stack_dot および dot 効果タイプの実装。毎秒 (frame % 60 == 0) 計算しログ出力する。
+超過回復: バフ max_hp_overflow がある場合のみ、最大HPを超えて回復可能。
 
-バースト仕様:
+トリガー: 回復発生時に on_receive_heal を発火。
 
-フルバースト終了後、次のバースト受付開始までに「バースト溜め時間（デフォルト5秒）」の待機時間 (GEN 状態) を設ける。この時間はCT短縮の影響を受けない。
+最大HPバフの同期:
 
-JSONデータの扱い:
+"kwargs": { "buff_type": "max_hp_rate", "update_current_hp": true } と記述すると、最大HPが増加した分だけ、現在HPも加算される（現在HP割合の維持ではないが、実数値として減らない挙動）。
 
-warmup_table (MG用) は配列の配列 [[frame, interval], ...] 形式と、辞書リスト [{"start":.., "interval":..}] 形式の混在に注意し、安全に読み込むこと。
+【ダメージ計算】
 
-shot_duration: バフの持続を「発射回数」で制限するパラメータ。
+特殊スキルダメージ: profile に "is_special_skill_damage": true を指定すると、バフ special_skill_dmg_buff が別枠乗算として計算される。
 
-コード生成時の制約:
+ステータス参照 (scale_by_caster_stats):
 
-既存ロジックの改変禁止: ファイル分割や機能追加の際、動作確認済みの既存ロジック（特にダメージ計算式）を勝手に書き換えないこと。
+デフォルトでは「基礎ステータス (base)」を参照する仕様に変更済み。
 
-全文出力: 修正時は、基本的にパッチ形式で出力すること。修正箇所が1メソッド内で複数ある場合はメソッドごと出力すること。
+バフ込み値を参照したい場合は "stat_type": "finally" を指定する。
 
+参照先は target_stat: "atk" (デフォルト) または "max_hp" を指定可能。
 
-4. 最新の仕様変更・注意点（追加事項）
+【時間短縮計算】
 
-JSONデータのプリプロセス要件 (value_list)
+リロード・チャージ時間は、「割合短縮（乗算）」と「固定値短縮（減算）」を組み合わせた calculate_reduced_frame を使用。
 
-JSON内のスキル定義において、レベルごとの数値を value_list (配列) で持たせている場合がある。
+攻撃速度（Attack Speed）には固定値短縮は適用されない。
 
-シミュレーターエンジン (engine_skills.py) は配列を解釈せず、単一の value キーのみを参照する。
+【MG武器の仕様】
 
-したがって、main.py 等のロード処理段階で、指定されたスキルレベルに対応する値を value_list から抽出し、value キーとして再設定してからエンジンに渡す処理が必須である。
+warmup_table は「辞書のリスト [{'start':.., 'interval':..}]」形式で扱う。JSONが配列の配列の場合は WeaponConfig 初期化時に正規化される。
 
-タグ判定のスコープ (condition vs target_condition)
+================================================== 4. スキル効果・トリガーの実装詳細
+【バースト関連】
 
-skill.condition 内の has_tag / not_has_tag は、「敵全体のデバフ状況 (Shared Enemy Debuffs)」 を判定する仕様となっている。
+トリガー推奨: 自身のバースト発動に連動する効果（タグ付与直後の判定など）は、on_use_burst_skill を使用すること。
 
-味方（または自分自身）に付与されたタグ（例：アルカナの「運命の輪」状態など）を判定条件とする場合は、必ず target_condition 内に has_tag を記述すること。
+on_burst_enter は状態遷移後のため、タグ付与タイミングと判定が噛み合わないリスクがある。
 
-condition: 敵の状態、またはグローバルな状況の判定
+再突入 (reenter_burst_stage): バースト段階を戻す・維持する効果（ティア、ルージュ等）。
 
-target_condition: スキル対象（Self含む）の状態判定
+CT短縮: JSONに cooldown_time 指定があればそれを優先。なければデフォルト（I/II:20秒, III:40秒）。
 
-MG武器データの正規化
+【実装済み効果タイプ (effect_type)】
 
-character_action.py のロジックは、MGの warmup_table が「辞書のリスト [{'start':.., 'interval':..}]」であることを前提としている。
+regenerate: リジェネ。発動時の回復量がスナップショットされ、指定間隔で持続回復。
 
-元データが「配列の配列 [[frame, interval], ...]」である場合は、models.py (WeaponConfig) の初期化時などで必ず辞書形式に変換（正規化）すること。これを怠ると実行時エラーになる。
+shield: バリア付与。tag 指定で共有/個別を区別可能。条件判定には has_barrier を使用。
 
-リロード・チャージ時間の計算式変更
+increase_current_stack_count: スタック数を直接増減させる。
 
-以前の除算型ロジック（reload_speed_fixed_value による割り算）は廃止された。
+set_stack: スタック数を特定の値に固定する。
 
-現在は「割合短縮（乗算）」と「固定値短縮（減算）」を組み合わせた calculate_reduced_frame メソッドを使用する。
+decrease_debuff_stack_count: デバフのスタックを解除（減少）させる。
 
-攻撃速度（Attack Speed）には固定値短縮（減算）は適用されない仕様とした。
+refill_ammo_fixed: 固定数リロード。
 
-5. 直近の仕様変更・実装ルール（最新改修分）
+activate_flag: フラグを立てる（has_flag で判定）。
 
-【JSONパラメータの優先順位変更 (_list の扱い)】
-main.py の読み込み処理において、kwargs 内に `_list` で終わるキー（例: duration_list）が存在する場合、
-レベル計算後の値が、既存の単一キー（例: duration）よりも**優先して上書き**される仕様に変更済み。
-これにより、従来は固定値しか設定できなかった「効果時間 (duration)」などもスキルレベルごとの変動に対応可能。
+delayed_action: 指定時間後にサブ効果を発動。
 
-【特殊スキルダメージ枠の実装】
-一部の特殊なダメージ計算に対応するため、既存のダメージ計算式とは独立した乗算枠を追加。
-1. ダメージ発生側（JSON）: `profile` に `"is_special_skill_damage": true` を指定。
-2. バフ付与側（JSON）: `buff_type` に `"special_skill_dmg_buff"` を指定。
-計算式: ... × (1 + special_skill_dmg_buff) ... となり、他のバフ枠とは乗算の関係になる。
+【特殊なバフ・デバフ】
 
-【scale_by_caster_stats の参照ステータス変更】
-発動者のステータスを参照してバフ量を決定する `scale_by_caster_stats: true` の挙動を変更。
+drain: 攻撃ダメージの一定割合を回復するバフ。
 
-・変更前: デフォルトで「現在のバフ込みステータス (current)」を参照していた。
-・変更後: デフォルトで「**基礎ステータス (base)**」を参照するように変更。
+stun: 気絶。射撃不可になり、バースト発動候補からも除外される。
 
-※これにより、循環参照や二重バフのリスクを低減している。
-※もし旧仕様のように「バフ込みの最終ステータス」を参照したい場合は、
-  JSONの kwargs に `"stat_type": "finally"` を明示的に記述すること。
+【トリガー (trigger_type) の特記事項】
 
-  6. アイン実装に伴う新規トリガー・効果の仕様（最新機能）
-
-複雑な周期管理やスタック操作を持つキャラクター（アイン等）に対応するため、以下の機能を実装済み。
-
-【新規効果: set_stack】
-特定のバフスタック数を、増減ではなく「指定した値」に強制上書きする効果。
-使用例: 開幕やバースト発動時にスタック数をリセット・固定する場合。
-記述: 
-  "effect_type": "set_stack",
-  "kwargs": { "stack_name": "...", "value": 6 }
-
-【新規トリガー: variable_interval】
-現在の「スタック数」に応じて、発動間隔（フレーム数）が動的に変化するトリガー。
-engine.py の tick メソッド内で毎フレーム判定が行われる。
-記述:
-  "trigger_type": "variable_interval",
-  "kwargs": { 
-    "stack_name": "...", 
-    "intervals": { "6": 18, "4": 180, ... }  // "スタック数": 間隔フレーム
-  }
-
-【新規トリガー: interval_after_burst_end】
-「自身が発動したバースト（フルバースト）の終了時刻」を0秒地点として、一定時間ごとに発動するトリガー。
-通常の time_interval（戦闘開始時起点）とは異なり、バースト周期に依存したギミック（自然減少など）に使用する。
-注意点:
-  - Characterクラスに last_burst_end_frame 変数を追加し、engine_burst.py でフルバースト終了時に更新している。
-  - バーストIIIを担当していない（フルバーストを発動させていない）場合はトリガーされない。
-7. JSON読み込みロジックの刷新（再帰処理・ネスト対応）
-
-スキルデータ読み込み時（main.py）の `_list` パラメータ展開処理を強化。
-
-【変更内容】
-従来は `kwargs` 直下のキーのみをチェックしていたが、**再帰的に辞書内部を走査**するように変更。
-これにより、`weapon_data` のような入れ子構造内のパラメータや、任意の階層にある `stack_amount` などもスキルレベルに応じて変動させることが可能になった。
-
-【仕様・注意点】
-1. **ネスト対応**:
-   `kwargs` -> `weapon_data` -> `multiplier_list` のような記述が可能。
-   これにより、バーストスキルで武器を持ち替えるキャラ（K、スノーホワイト等）の「武器倍率のレベル変動」を正確に再現できる。
-
-2. **上書きルール（優先順位）**:
-   同名の固定値キー（例: `multiplier`）と変動値リスト（例: `multiplier_list`）が両方存在する場合、
-   **常にリストから算出された値（レベル依存値）で上書き**する仕様とした。
-   （以前の `if key not in ...` チェックは撤廃済み）
-
-【JSON記述例】
-"kwargs": {
-  "stack_amount_list": [10, 11, ...],  // 直下もOK
-  "weapon_data": {
-    "multiplier": 1.0,                 // デフォルト値（万が一リストがない場合用）
-    "multiplier_list": [1.5, 1.6, ...] // こちらが優先適用される
-  }
-}
-
-【JSON記述時の注意点：kwargs の必須性】
-スキル効果のパラメータ（value, duration, buff_type, および各種 _list）は、
-必ず `kwargs` ディクショナリの中に記述する必要がある。
-
-特に `cumulative_stages` の内部ステージを記述する際、
-`effect_type` と同列に `value_list` などを書いてしまうミスが発生しやすい。
-この場合、main.py の再帰読み込み処理の対象外となり、
-レベル変動が適用されず（デフォルト値または0として）処理されてしまうため注意すること。
-
-NG例:
-{ "effect_type": "buff", "value_list": [...] }
-
-OK例:
-{ "effect_type": "buff", "kwargs": { "value_list": [...] } }
-
-8. ターゲット指定と条件判定の厳密化（最新改修）
-
-【cumulative_stages 内のターゲット優先度変更】
-バーストスキル（親スキル）のターゲットと、その内部ステージ（個別のバフなど）のターゲットが異なるケースに対応。
-・仕様: ステージ定義内に `target` 指定がある場合、親スキルのターゲットよりも優先して適用される。
-・用途: 「敵にダメージを与える（Target: Enemy）」バーストスキルの中で、「味方にバフを撒く（Target: Allies）」効果を混在させる場合（D：キラーワイフ等）。
-
-【フルチャージ攻撃トリガー (full_charge_count) の実装】
-SR/RL/CHARGE 武器において、フルチャージ攻撃を行った回数をトリガーとする機能を実装。
-・仕様: 
-  - Characterクラスに `cumulative_full_charge_count` を追加。
-  - 現状のシミュレーターでは SR/RL は常にフルチャージ発射扱いとなるため、実質的に射撃時にカウントアップされる。
-  - 将来的に「速射（非フルチャージ）」を実装する場合は、判定ロジックの分岐が必要。
-・記述例: `"trigger_type": "full_charge_count", "trigger_value": 5`
-
-【部位破壊トリガー (part_break) の挙動修正】
-cumulative_stages 内に含まれる `trigger_type: "part_break"` のステージについて、シミュレーター設定（part_break_mode）を正しく参照するように修正。
-・変更前: 無条件で発動していた。
-・変更後: シミュレーターの `part_break_mode` が False の場合、該当ステージはスキップされる。
-
-9. ターゲット選定ロジックの拡張（highest_atk 対応）
-
-【最高攻撃力の味方へのターゲット指定】
-N102（アン）やアリスなどが持つ「攻撃力が最も高い味方n機」へのバフに対応。
-・仕様: 
-  - `target_condition` に `{ "type": "highest_atk", "count": 1 }` を指定可能。
-  - 判定時、全味方キャラクターを「その瞬間の攻撃力（バフ込み）」で降順ソートし、上位 `count` 名を対象とする。
-  - `get_current_atk(frame)` を使用しているため、同フレーム内で直前に付与された攻撃力バフも計算に含まれる。
-
-【cumulative_stages における条件継承の強化】
-段階別スキル（stages）を生成する際、ターゲット情報の取得優先順位を以下のように整理・強化した。
-優先度高:
-  1. ステージ定義の直下にある `target` / `target_condition`
-  2. ステージ定義の `kwargs` 内にある `target` / `target_condition`
-  3. 親スキル（バーストスキル自体）の `target` / `target_condition`
-優先度低
-これにより、JSON記述の揺らぎ（kwargs内か外か）を吸収しつつ、ステージごとの個別指定も可能にしている。
-
-10. バリア（Shield）機能の実装と仕様
-
-【バリア展開 (effect_type: "shield")】
-キャラクターにバリア（シールド）を付与する機能を実装。
-・仕様: 
-  - `BuffManager` に `shield` タイプとして登録され、耐久値（value）と持続時間（duration）を持つ。
-  - `tag` を指定することで、「自分専用バリア」や「全体共有バリア」を区別可能（デフォルトは "barrier"）。
-・記述例:
-  "effect_type": "shield",
-  "target": "self",
-  "kwargs": { "value": 5000, "duration": 10, "tag": "personal_barrier" }
-
-【バリア所持判定 (has_barrier)】
-対象がバリアを持っているかを判定するロジックを `check_target_condition` に追加。
-・仕様:
-  - `target_condition` 内で `"has_barrier": true` を指定すると、現在有効なシールド値（全タグ合計）が0より大きいか判定する。
-  - 特定のバリアのみを条件にしたい場合は、既存の `"has_tag"` を使用してタグ名で判定する。
-  
-【注意点：自身のバリア判定】
-アスカのように「自分自身がバリアを持っている時」という条件であっても、
-コード上の実装場所の関係で `condition` ではなく **`target_condition`** に記述する必要がある。
-
-11. ステータス参照ロジックの拡張（HP参照対応）
-
-【scale_by_caster_stats の機能拡張】
-従来は攻撃力（ATK）のみを参照していたステータス比例計算を拡張し、最大HP（MaxHP）も参照可能にした。
-主にHP依存のバリア耐久値や、HP比例の回復量計算などに使用する。
-
-・新規パラメータ:
-  - `target_stat`: 参照するステータスを指定。
-    - "atk": 攻撃力（デフォルト。指定なしならこれ）
-    - "max_hp": 最大HP
-
-・併用パラメータ（既存）:
-  - `stat_type`: 
-    - "base": 基礎ステータス（デフォルト）
-    - "finally": バフ込みの現在ステータス（HP参照時はこちらが推奨されることが多い）
-
-・記述例（HP15%分のバリア）:
-  "kwargs": {
-    "scale_by_caster_stats": true,
-    "stat_type": "finally",
-    "target_stat": "max_hp",  <-- ここでHPを指定
-    "value": 0.15
-  }
+回数累積型 (pellet_hit, critical_hit): 1フレームに複数回条件を満たした場合、その回数分だけ発動する（(現在値 // 条件) - (前回値 // 条件) 判定）。
 
-  12. スタック数の直接増減機能 (increase_current_stack_count)
+stack_count: スタックが増加した瞬間のみ判定される。
 
-【概要】
-現在付与されているスタック可能バフの「スタック数」を、直接＋1したりー1したりする機能。
-「攻撃回数n回でスタック増加」などのギミックに使用する。
+variable_interval: スタック数に応じて発動間隔が可変するトリガー。
 
-【仕様】
-・BuffManager に modify_active_stack_counts(delta) を実装。
-・現在アクティブな全てのスタックバフに対して、delta 分だけ数値を加算（減算）する。
-・0未満にはならず、各バフの max_stack を超えることもない（範囲内で変動）。
-・現状は「全てのスタックバフ」が対象だが、必要であれば target_buff_type 等でフィルタリングする拡張も想定済み。
+interval_after_burst_end: 自身が発動したフルバースト終了時を起点とする時間トリガー。
 
-【記述例】
-  "effect_type": "increase_current_stack_count",
-  "target": "allies",
-  "kwargs": {
-    "value": 1  // 1個増やす（-1なら減らす）
-  }
+full_charge_count: フルチャージ攻撃回数をトリガーとする。
 
-13. バースト段階の再突入・維持機能 (reenter_burst_stage)
+================================================== 5. シミュレーション制御
+汎用フラグ (simulation_flag):
 
-【概要】
-バーストスキル使用後、通常なら次の段階（I→II→III）へ進むところを、
-指定した段階へ強制的に遷移（再突入）させる機能。
-ティアやルージュのような「バーストIを再突入させる」スキルなどで使用する。
+main.py で sim.special_mode = True のように変数をセットし、JSONの condition で "simulation_flag": "special_mode" と指定することで、特定モード（部位破壊あり/なし等）の挙動を切り替え可能。
 
-【仕様】
-・engine_skills.py: 効果発動時に reenter_burst_target フラグ（例: "BURST_1"）を予約する。
-・engine_burst.py: バーストスキル終了後の遷移処理で、上記予約フラグがあれば優先して適用し、通常の進行（I→IIなど）をキャンセルする。
+ログ出力:
 
-【記述例（バーストI再突入）】
-  "effect_type": "reenter_burst_stage",
-  "target": "allies", // システムへの干渉なのでtarget自体は問わないが便宜上allies等
-  "kwargs": {
-    "value": 1  // 次の段階を「BURST_1」にする
-  }
-
-  ■ バースト関連の拡張
-・バースト段階突入トリガーの追加
-  - on_burst_1_enter: バーストI突入時に発動
-  - on_burst_2_enter: バーストII突入時に発動
-  （従来の on_burst_3_enter と同等の仕組み）
-
-・バースト再突入 (Re-enter Burst Stage)
-  - アリス：ワンダーランドバニー等の「バースト段階を戻す」スキルに対応。
-  - effect_type: "reenter_burst_stage" で指定。指定した段階（"BURST_1"等）に強制遷移させる。
-
-■ 行動阻害・デバフ関連
-・気絶 (Stun)
-  - "stun" タグを持つバフが付与されている間、キャラクターは射撃・リロードを行わない。
-  - バースト発動の候補選びでも、気絶中のキャラクターはスキップされる。
-
-・スタック操作の除外設定
-  - スタック増加スキル（increase_current_stack_count）は、デフォルトで "debuff" タグを持つスタックを対象外とするように修正済み。
-  - これにより、マストの「ほろ酔い（自分へのデバフ扱い）」などが誤って増殖するのを防いでいる。
-
-■ スキル効果・条件の拡張
-・自身のスタック数による効果量補正 (copy_stack_count)
-  - 発動者自身のスタック数を参照し、効果値(value)に乗算する機能。
-  - マストの「自分のスタック数に応じて味方の攻撃力をUP」などで使用。
-  - 既存の scale_by_target_stack（敵のスタック数依存）とは別物。
-
-・スタックの直接削除 (remove_stacks)
-  - タグではなく、スタック名（stack_name）を直接指定して削除する機能。
-  - タグ削除だと消しきれない特殊なスタック（デバフタグ付きバフなど）を確実に消去するために使用。
-
-・自身のスタック数条件 (self_stack_min)
-  - スキル発動条件として、自身の特定のスタック数がN個以上であることを指定可能。
-
-
-最新の改修・追加機能（シミュレーション制御・詳細仕様）
-
-【汎用フラグによるスキル発動制御 (simulation_flag)】 シミュレーター本体の変数を参照して、スキルの発動可否を制御する機能。 特定モード（部位破壊モードや特殊ギミック）のON/OFFをMain側で管理できる。
-
-・使用方法:
-
-main.py で sim.special_mode = True のように任意の変数を設定。
-
-JSONの condition に "simulation_flag": "special_mode" を記述。 ・挙動: 指定された変数が True の場合のみスキルが発動する。
-
-【バーストCTの優先順位変更】 キャラクターごとのバーストクールタイム設定の読み込みロジックを修正。 ・変更前: バーストI・IIは一律20秒、IIIは40秒として強制上書きされていた。 ・変更後: JSONに cooldown_time (または cooldown) の記述があれば、それを最優先で適用する。 これにより、エーテル（バーストI・CT40秒）やラプンツェル（バーストI・CT60秒）などが正しく動作するようになった。
-
-【新規効果・条件の実装】 ・decrease_debuff_stack_count: 指定したタグを持つデバフのスタック数を減少（解除）する。 記述: "effect_type": "decrease_debuff_stack_count", "target": "allies", "kwargs": { "tag": "debuff", "value": 1 }
-
-・refill_ammo_fixed: 弾丸を固定数だけリロードする。 記述: "effect_type": "refill_ammo_fixed", "kwargs": { "value": 3 }
-
-・is_full_burst (Condition): 現在がフルバースト中かどうかを判定する条件。 記述: "condition": { "is_full_burst": true }
-
-【重要：キー名・設定値の注意点】 ・チャージ速度バフのキー名: charge_speed_buff ではなく charge_speed_rate を使用すること。 （プログラム内部での参照キーが _rate で統一されているため）
-
-・発動回数指定 (shot_duration): 以前の「+1が必要」という認識は誤り。 設定した数値の回数分きっちり適用されるため、本来の回数をそのまま記述すること。
-
-・バフ名称の管理: JSON作成時のキー名間違いを防ぐため、別途作成した 開発資料/バフ_プログラム対応表.txt を参照すること。
-
-【ターゲット条件の記述統一】 クラス（型）指定などの条件記述は、プログラムが標準サポートしている以下の形式に統一して記述すること。 NG: "target_condition": { "class": "Supporter" } OK: "target_condition": { "type": "class", "value": "Supporter" }
-
-最新の実装方針・運用テクニック（追記分）
-
-【ターゲット条件の複合指定（クラス×ステータス順）】 「防御型の味方の中から、攻撃力が高い2機」といった複合条件を実現するため、class キーの直接判定ロジックを追加実装済み。 これにより、type を占有する条件（highest_atkなど）とクラス指定を併用可能になった。
-
-・記述例（防御型かつ攻撃力上位2名）: "target_condition": { "type": "highest_atk", // 順位判定タイプ "count": 2, // 人数 "class": "Defender" // フィルタリング条件（コード改修により併用可能） }
-
-【汎用フラグ機能 (simulation_flag) の最終仕様】 シミュレーターのモード切替（部位破壊あり/なし等）や、特定ギミックの有効化を制御する汎用フラグ機能。 main.py でシミュレーターインスタンスに直接変数をセットするだけで機能する簡便な仕様とした。
-
-・Python側 (main.py): sim = NikkeSimulator(...) sim.special_mode = True // 任意の変数名でTrueを代入
-
-・JSON側: "condition": { "simulation_flag": "special_mode" // 変数名を指定 }
-
-【スキルの無効化・ダミー設定】 実装予定だが効果未定のスキルや、一時的に無効化したいスキルについては、 trigger_type にシステム上で未定義の文字列（"dummy" 等）を設定することを推奨する。 プログラム側で一致するトリガーがないため、確実に無視される。
-
-・記述例: "trigger_type": "dummy", "description": "効果未実装のため発動しない"
-
-HP管理システムの刷新と回復機能の実装（最新改修）
-
-【現在HP (current_hp) の導入】 キャラクターの「現在HP」を変動させる機能を実装。初期値は最大HP。 回復、自傷、最大HP変動に合わせてリアルタイムに更新される。
-
-【回復ロジックの統合 (healメソッド)】 これまでバラバラだった回復処理を Character.heal メソッドに集約。 ・仕様:
-
-基本回復量 × (1 + 受ける回復量UPバフ heal_effectiveness_buff) を計算。
-
-max_hp_overflow バフがある場合、最大HPを超過して回復可能（HPストック機能）。
-
-回復発生時にトリガー on_receive_heal を発火。
-
-【新規効果タイプ: regenerate (リジェネ)】 指定間隔で持続回復するHoT (Heal over Time) 効果。 ・記述: "effect_type": "regenerate" ・パラメータ: value (1回の回復量), interval (間隔秒数), duration (持続秒数) ・仕様:
-
-発動時に回復量（value）が確定（スナップショット）される。
-
-scale_by_caster_stats と併用した場合、発動瞬間のステータスで計算された固定値が毎秒適用される。
-
-【最大HPバフの挙動拡張】 最大HPを増加させるバフにおいて、現在HPも同時に増加させるオプションを追加。 ・記述: "kwargs": { "buff_type": "max_hp_rate", "update_current_hp": true, ... } ・挙動: update_current_hp: true の場合、最大HPが増えた分だけ現在HPも加算回復する（実質的な現在HP維持）。
-
-【HP推移ログの出力】 シミュレーション中のHP変動を追跡するため、logs/hp_log.csv を生成する機能を追加。 1秒（60フレーム）ごとに全キャラクターの現在HP、最大HP、HP割合(%)を出力する。
-
-【ドレイン (Drain) の実装】 攻撃ダメージの一部を吸収して回復する機能。 ・バフ名: drain ・仕様: 射撃ダメージ発生時、ダメージ量 × バフ効果値 分のHPを即時回復する。
+各キャラのログに加え、logs/hp_log.csv に1秒ごとのHP推移（現在HP, 最大HP, 割合）が出力される。

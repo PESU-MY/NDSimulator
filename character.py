@@ -104,10 +104,13 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.current_hp = min(cap_hp, self.current_hp + final_heal)
         actual_heal = self.current_hp - prev_hp
         
-        if actual_heal > 0:
-            simulator.log(f"[Heal] {self.name} healed by {actual_heal:.0f} (Src: {source_name}, HP: {self.current_hp:.0f}/{max_hp:.0f})", target_name=self.name)
-            is_fb = (simulator.burst_state == "FULL")
-            self.process_trigger('on_receive_heal', actual_heal, frame, is_fb, simulator)
-            
+        # ▼▼▼ 修正: HPが増えなくても(0でも)トリガーを発火させる ▼▼▼
+        # ログは回復が発生したことを記録
+        simulator.log(f"[Heal] {self.name} received heal (Val: {final_heal:.0f} -> Actual: {actual_heal:.0f}) (Src: {source_name}, HP: {self.current_hp:.0f}/{max_hp:.0f})", target_name=self.name)
+        
+        is_fb = (simulator.burst_state == "FULL")
+        self.process_trigger('on_receive_heal', actual_heal, frame, is_fb, simulator)
+        # ▲▲▲
+        #     
         return actual_heal
     # ▲▲▲

@@ -69,6 +69,27 @@ class SkillEngineMixin:
                 return False
         # ▲▲▲ 追加ここまで ▲▲▲
 
+        # ▼▼▼ 追加: HP割合(%)による判定 ▼▼▼
+        if "hp_ratio_min" in condition or "hp_ratio_max" in condition:
+            # 現在の最大HPを取得
+            max_hp = target.get_current_max_hp(frame)
+            if max_hp > 0:
+                current_ratio = target.current_hp / max_hp
+                
+                # 下限チェック (hp_ratio_min 以上か)
+                if "hp_ratio_min" in condition:
+                    if current_ratio < condition["hp_ratio_min"]:
+                        return False
+                
+                # 上限チェック (hp_ratio_max 以下か)
+                # ※「未満」にしたい場合はJSONで 0.7999 などを指定すると確実です
+                if "hp_ratio_max" in condition:
+                    if current_ratio > condition["hp_ratio_max"]:
+                        return False
+            else:
+                return False
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         # ▼▼▼ 追加: 部隊条件 (self_squad_mate) ▼▼▼
         # スキル発動者(caster)と同じ部隊の味方がいるか？という条件だが、
         # ここは「ターゲット選定」のフィルタなので、
@@ -445,6 +466,41 @@ class SkillEngineMixin:
                 shot_dur = kwargs.get('shot_duration', 0)
                 rem_reload = kwargs.get('remove_on_reload', False)
                 st_amount = kwargs.get('stack_amount', 1)
+
+                # ▼▼▼ 追加: ステータスコピー (基礎値・最大ステータス参照版) ▼▼▼
+                if kwargs.get('scale_by_reference', False):
+                    ref_stat = kwargs.get('reference_stat', 'atk') # 'atk' or 'max_hp'
+                    
+                    # 1. 参照すべき最大値を持つキャラを探す
+                    target_char = None
+                    max_val = -1.0
+                    
+                    for char in self.characters:
+                        if char.base_hp <= 0: continue # 戦闘不能は除外
+                        
+                        # フィルタリング条件があれば適用 (例: 火力型のみ対象など)
+                        ref_cond = kwargs.get('reference_condition')
+                        if ref_cond and not self.check_target_condition(ref_cond, caster, char, frame):
+                            continue
+
+                        # 基礎ステータスを取得
+                        check_val = char.base_hp if ref_stat == 'max_hp' else char.base_atk
+                        
+                        # 最大値を更新
+                        if check_val > max_val:
+                            max_val = check_val
+                            target_char = char
+                    
+                    if target_char:
+                        # 2. 値の計算 (基礎値 * 割合)
+                        # value は「割合(%)」として設定されている
+                        calculated_val = max_val * val
+                        
+                        self.log(f"[Stat Copy] Copied Base {ref_stat} from {target_char.name} (Base:{max_val:,.0f} x {val:.2%} = {calculated_val:,.0f})", target_name=caster.name)
+                        
+                        # 3. 固定値として適用するために value を上書き
+                        val = calculated_val
+                # ▲▲▲
                 
                 # ▼▼▼ 追加: 最大HP増加時の現在HP同期処理 ▼▼▼
                 if b_type == 'max_hp_rate':

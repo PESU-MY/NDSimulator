@@ -1,0 +1,258 @@
+[Shoot] 時間:  1.22s | 弾数:  5/6   | Pellets: 1 | Dmg:    81,632 | Buffs: None
+[Shoot] 時間:  2.60s | 弾数:  4/6   | Pellets: 1 | Dmg:    65,306 | Buffs: None
+[Shoot] 時間:  3.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    65,306 | Buffs: None
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Shoot] 時間:  5.37s | 弾数:  2/6   | Pellets: 1 | Dmg:   100,702 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31
+[Shoot] 時間:  6.62s | 弾数:  1/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31
+[Shoot] 時間:  7.87s | 弾数:  0/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 11.12s | 弾数:  5/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 12.37s | 弾数:  4/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 13.62s | 弾数:  3/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Shoot] 時間: 14.87s | 弾数:  2/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Shoot] 時間: 16.25s | 弾数:  1/6   | Pellets: 1 | Dmg:    65,306 | Buffs: hit_rate_buff:0.10
+[Shoot] 時間: 17.63s | 弾数:  0/6   | Pellets: 1 | Dmg:    65,306 | Buffs: hit_rate_buff:0.10
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 6
+[Burst] Activate!
+[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アンカー：イノセントメイド
+[Heal] アンカー：イノセントメイド received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 907600/647453)
+[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Shoot] 時間: 21.02s | 弾数:  5/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
+[Shoot] 時間: 22.27s | 弾数:  4/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
+[Shoot] 時間: 23.52s | 弾数:  3/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
+[Shoot] 時間: 24.77s | 弾数:  2/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
+[Shoot] 時間: 26.02s | 弾数:  1/6   | Pellets: 1 | Dmg:   131,003 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
+[Shoot] 時間: 27.27s | 弾数:  0/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Shoot] 時間: 30.52s | 弾数:  5/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71
+[Shoot] 時間: 31.90s | 弾数:  4/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71
+[Shoot] 時間: 33.28s | 弾数:  3/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71
+[Shoot] 時間: 34.67s | 弾数:  2/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Shoot] 時間: 36.05s | 弾数:  1/6   | Pellets: 1 | Dmg:   135,968 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30
+[Shoot] 時間: 37.30s | 弾数:  0/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 40.55s | 弾数:  5/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
+[Shoot] 時間: 41.80s | 弾数:  4/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
+[Shoot] 時間: 43.05s | 弾数:  3/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
+[Shoot] 時間: 44.30s | 弾数:  2/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アンカー：イノセントメイド
+[Shoot] 時間: 45.55s | 弾数:  1/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 46.93s | 弾数:  0/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 49.50s | 弾数:  5/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Burst] Activate!
+[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アンカー：イノセントメイド
+[Heal] アンカー：イノセントメイド received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 1167746/647453)
+[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Shoot] 時間: 50.88s | 弾数:  4/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 52.13s | 弾数:  3/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 53.38s | 弾数:  2/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 54.63s | 弾数:  1/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 55.88s | 弾数:  0/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 58.32s | 弾数:  5/6   | Pellets: 1 | Dmg:   131,003 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 59.57s | 弾数:  4/6   | Pellets: 1 | Dmg:   131,003 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アンカー：イノセントメイド
+[Shoot] 時間: 60.82s | 弾数:  3/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 62.20s | 弾数:  2/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 63.58s | 弾数:  1/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 64.97s | 弾数:  0/6   | Pellets: 1 | Dmg:   110,220 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 67.40s | 弾数:  5/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 68.65s | 弾数:  4/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 69.90s | 弾数:  3/6   | Pellets: 1 | Dmg:   135,968 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 71.15s | 弾数:  2/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 72.40s | 弾数:  1/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 73.65s | 弾数:  0/6   | Pellets: 1 | Dmg:   100,702 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アンカー：イノセントメイド
+[Shoot] 時間: 76.08s | 弾数:  5/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 77.47s | 弾数:  4/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 78.85s | 弾数:  3/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 80.23s | 弾数:  2/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Burst] Activate!
+[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アンカー：イノセントメイド
+[Heal] アンカー：イノセントメイド received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 1427893/647453)
+[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Shoot] 時間: 81.48s | 弾数:  1/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 82.73s | 弾数:  0/6   | Pellets: 1 | Dmg:   166,269 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 85.17s | 弾数:  5/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 86.42s | 弾数:  4/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 87.67s | 弾数:  3/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 88.92s | 弾数:  2/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 90.17s | 弾数:  1/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アンカー：イノセントメイド
+[Shoot] 時間: 91.55s | 弾数:  0/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 94.12s | 弾数:  5/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Shoot] 時間: 95.50s | 弾数:  4/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 96.75s | 弾数:  3/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 98.00s | 弾数:  2/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 99.25s | 弾数:  1/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:100.50s | 弾数:  0/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:102.93s | 弾数:  5/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:104.18s | 弾数:  4/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アンカー：イノセントメイド
+[Shoot] 時間:105.43s | 弾数:  3/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:106.82s | 弾数:  2/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:108.20s | 弾数:  1/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:109.58s | 弾数:  0/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Burst] Activate!
+[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アンカー：イノセントメイド
+[Heal] アンカー：イノセントメイド received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 1688039/647453)
+[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:112.02s | 弾数:  5/6   | Pellets: 1 | Dmg:   166,269 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:113.27s | 弾数:  4/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:114.52s | 弾数:  3/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:115.77s | 弾数:  2/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:117.02s | 弾数:  1/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:118.27s | 弾数:  0/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アンカー：イノセントメイド
+[Shoot] 時間:120.70s | 弾数:  5/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:122.08s | 弾数:  4/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:123.47s | 弾数:  3/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:124.85s | 弾数:  2/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Shoot] 時間:126.23s | 弾数:  1/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:127.48s | 弾数:  0/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:129.92s | 弾数:  5/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:131.17s | 弾数:  4/6   | Pellets: 1 | Dmg:   100,702 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:132.42s | 弾数:  3/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:133.67s | 弾数:  2/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:134.92s | 弾数:  1/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アンカー：イノセントメイド
+[Shoot] 時間:136.17s | 弾数:  0/6   | Pellets: 1 | Dmg:   110,220 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:138.73s | 弾数:  5/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:140.12s | 弾数:  4/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Burst] Activate!
+[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アンカー：イノセントメイド
+[Heal] アンカー：イノセントメイド received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 1948186/647453)
+[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Shoot] 時間:141.37s | 弾数:  3/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:142.62s | 弾数:  2/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:143.87s | 弾数:  1/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:145.12s | 弾数:  0/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:147.55s | 弾数:  5/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:148.80s | 弾数:  4/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:150.05s | 弾数:  3/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アンカー：イノセントメイド
+[Shoot] 時間:151.30s | 弾数:  2/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:152.68s | 弾数:  1/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:154.07s | 弾数:  0/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Shoot] 時間:156.50s | 弾数:  5/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:157.75s | 弾数:  4/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:159.00s | 弾数:  3/6   | Pellets: 1 | Dmg:   135,968 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:160.25s | 弾数:  2/6   | Pellets: 1 | Dmg:   113,306 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:161.50s | 弾数:  1/6   | Pellets: 1 | Dmg:   100,702 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:162.75s | 弾数:  0/6   | Pellets: 1 | Dmg:    83,918 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:165.18s | 弾数:  5/6   | Pellets: 1 | Dmg:   100,702 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アンカー：イノセントメイド
+[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アンカー：イノセントメイド
+[Shoot] 時間:166.57s | 弾数:  4/6   | Pellets: 1 | Dmg:   110,220 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:167.95s | 弾数:  3/6   | Pellets: 1 | Dmg:   110,220 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:169.33s | 弾数:  2/6   | Pellets: 1 | Dmg:    88,176 | Buffs: hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Burst] Activate!
+[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アンカー：イノセントメイド
+[Heal] アンカー：イノセントメイド received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 2208333/647453)
+[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アンカー：イノセントメイド
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アンカー：イノセントメイド
+[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アンカー：イノセントメイド
+[Shoot] 時間:170.72s | 弾数:  1/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:171.97s | 弾数:  0/6   | Pellets: 1 | Dmg:   166,269 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reloading... (71 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:174.40s | 弾数:  5/6   | Pellets: 1 | Dmg:   138,557 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:175.65s | 弾数:  4/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:176.90s | 弾数:  3/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:178.15s | 弾数:  2/6   | Pellets: 1 | Dmg:   109,169 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:179.40s | 弾数:  1/6   | Pellets: 1 | Dmg:   131,003 | Buffs: charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
