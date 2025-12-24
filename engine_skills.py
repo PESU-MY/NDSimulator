@@ -388,16 +388,14 @@ class SkillEngineMixin:
                 target.buff_manager.add_buff('conversion_hp_to_atk', rate, skill.kwargs.get('duration', 0) * self.FPS, frame, source=skill.name)
                 self.log(f"[Buff] {target.name}: HP to ATK conversion ({rate})", target_name=target.name)
             
-            # --- heal (即時回復) の修正 ---
+            # ▼▼▼ 修正: Heal実装 ▼▼▼
             elif skill.effect_type == 'heal':
-                # 既存の heal_val 計算ロジック (scale_by_caster_stats 等は適用済み)
                 base_heal = kwargs.get('value', 0)
-                
-                # healメソッドを使って回復処理 (現在HP更新・トリガー発火含む)
+                # healメソッドを使用して回復処理を実行
                 target.heal(base_heal, skill.name, frame, self)
+            # ▲▲▲
 
-            # --- regenerate の追加 (新規ブロック) ---
-            # ▼▼▼ 追加: リジェネ効果の実装 ▼▼▼
+            # ▼▼▼ 追加: Regenerate実装 ▼▼▼
             elif skill.effect_type == 'regenerate':
                 heal_per_tick = kwargs.get('value', 0)
                 interval_sec = kwargs.get('interval', 1.0)
@@ -405,6 +403,7 @@ class SkillEngineMixin:
                 duration_sec = kwargs.get('duration', 0)
                 end_frame = frame + (duration_sec * self.FPS)
                 
+                # Active HoT リストに追加
                 target.active_hots.append({
                     'source': skill.name,
                     'heal_value': heal_per_tick,

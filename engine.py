@@ -46,18 +46,6 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
         # ▲▲▲ 追加ここまで ▲▲▲
         
         for char in self.characters:
-            # ▼▼▼ 追加: リジェネ(HoT)の処理 ▼▼▼
-            active_hots = []
-            for hot in char.active_hots:
-                if self.frame >= hot['next_tick']:
-                    # 回復実行
-                    char.heal(hot['heal_value'], hot['source'], self.frame, self)
-                    hot['next_tick'] += hot['interval']
-                
-                if self.frame < hot['end_frame']:
-                    active_hots.append(hot)
-            char.active_hots = active_hots
-            # ▲▲▲
             safe_name = "".join([c for c in char.name if c.isalnum() or c in (' ', '_', '-', '.')])
             self.log_handles[char.name] = open(os.path.join(self.log_dir, f"{safe_name}.txt"), 'w', encoding='utf-8')
             
@@ -114,6 +102,20 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
                 if frame >= char.weapon_change_end_frame: char.revert_weapon(frame)
 
             char.update_max_ammo(frame)
+            
+            # ▼▼▼ 追加: リジェネ(HoT)の処理 ▼▼▼
+            active_hots = []
+            for hot in char.active_hots:
+                if frame >= hot['next_tick']:
+                    # キャラクターのhealメソッドを呼ぶ
+                    char.heal(hot['heal_value'], hot['source'], frame, self)
+                    hot['next_tick'] += hot['interval']
+                
+                if frame < hot['end_frame']:
+                    active_hots.append(hot)
+            char.active_hots = active_hots
+            # ▲▲▲
+            
             if frame % 60 == 0:
                 damage_dot = 0
                 for name, dot in list(char.active_dots.items()):
