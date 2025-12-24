@@ -20,6 +20,16 @@ class SkillEngineMixin:
         if 'element' in condition and target.element != condition['element']: return False
         if 'weapon_type' in condition and target.weapon.weapon_class != condition['weapon_type']: return False
         if 'burst_stage' in condition and str(target.burst_stage) != str(condition['burst_stage']): return False
+        # ▼▼▼ 追加: 今回のバーストに参加したかどうかの判定 ▼▼▼
+        if "is_current_burst_participant" in condition:
+            required = condition["is_current_burst_participant"]
+            # 参加者リストに名前があるかチェック
+            participants = getattr(self, 'current_burst_participants', set())
+            is_participant = target.name in participants
+            
+            if is_participant != required:
+                return False
+        # ▲▲▲ 追加ここまで ▲▲▲
         
         if condition.get('is_last_burst_user'):
             if self.last_burst_char_name != target.name: return False

@@ -216,6 +216,9 @@ JSONの "trigger_type"（いつ発動するか）や、
 | **攻撃力が最も高い** | `type: "highest_atk"` | `target_condition` 内で `{ "type": "highest_atk", "count": 2 }` のように記述。 |
 | **HPが最も低い** | `type: "lowest_hp"` | `target_condition` 内で `{ "type": "lowest_hp", "count": 1 }` のように記述。 |
 | **特定部隊の味方がいる** | `has_squad_mate_present` | 自分以外の指定部隊の味方が生存しているか（condition用）。<br>値は `true`。 |
+| 条件 | キー名 | 値の型・備考 |
+| :--- | :--- | :--- |
+| **今回のバースト参加者** | `is_current_burst_participant` | `true`: 参加した味方<br>`false`: 参加していない味方<br>※`on_burst_enter` トリガー時のみ有効 |
 
 ================================================================
 

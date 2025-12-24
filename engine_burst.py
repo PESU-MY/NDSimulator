@@ -7,6 +7,10 @@ class BurstEngineMixin:
         is_full_burst = (self.burst_state == "FULL")
         
         if self.burst_state == "GEN":
+            # ▼▼▼ 追加: バースト生成開始時に参加者リストをリセット ▼▼▼
+            if self.burst_timer == 0:
+                self.current_burst_participants = set()
+            # ▲▲▲ 追加ここまで ▲▲▲
             self.burst_timer += 1
             # バースト終了時に短縮効果をリセット
             self.full_burst_reduction = 0.0 
@@ -51,6 +55,11 @@ class BurstEngineMixin:
                 
                 if target_char:
                     char = target_char
+                    # ▼▼▼ 追加: バースト使用車を参加者リストに登録 ▼▼▼
+                    if not hasattr(self, 'current_burst_participants'):
+                        self.current_burst_participants = set()
+                    self.current_burst_participants.add(char.name)
+                    # ▲▲▲ 追加ここまで ▲▲
                     # ▼▼▼ 修正: クールダウン設定ロジック ▼▼▼
                     # 1. JSONで指定されたクールタイムがあれば最優先で使用
                     if getattr(char, 'burst_skill_cooldown', None) is not None:
