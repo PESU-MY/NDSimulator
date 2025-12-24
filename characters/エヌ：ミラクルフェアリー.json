@@ -1,0 +1,116 @@
+{
+  "name": "エヌ : ミラクルフェアリー",
+  "weapon_type": "RL",
+  "burst_stage": "2",
+  "element": "Wind",
+  "class": "Supporter",
+  "squad": "リコール＆リリーズ",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.613
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 踊る妖精",
+      "trigger_type": "shot_count",
+      "trigger_value": 3,
+      "effect_type": "heal",
+      "target": "allies",
+      "target_condition": {
+        "type": "class",
+        "value": "Attacker"
+      },   
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "dummy_effect",
+        "description": "攻撃ダメージのn%回復(ドレイン)",
+        "value_list": [0.0333, 0.0364, 0.0394, 0.0425, 0.0455, 0.0485, 0.0516, 0.0546, 0.0576, 0.0607],
+        "duration": 5
+      }
+    },
+    {
+      "name": "Skill 2: 妖精のイタズラ (味方)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "dummy_effect",
+        "description": "受けるHP回復量UP",
+        "value_list": [0.129, 0.1408, 0.1525, 0.1642, 0.176, 0.1877, 0.1994, 0.2112, 0.2229, 0.2346],
+        "duration": 99999
+      }
+    },
+    {
+      "name": "Skill 2: 妖精のイタズラ (敵)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "dummy_effect",
+        "description": "受けるHP回復量DOWN",
+        "value_list": [0.4341, 0.4736, 0.513, 0.5525, 0.592, 0.6314, 0.6709, 0.7104, 0.7498, 0.7893],
+        "duration": 10
+      }
+    },
+    {
+      "name": "バースト: 青い蝶の夢",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 60.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "target_condition": {
+            "type": "class",
+            "value": "Attacker"
+          },   
+          "kwargs": {
+            "effect_no": 4,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.2123, 0.2316, 0.2509, 0.2702, 0.2895, 0.3088, 0.3281, 0.3474, 0.3667, 0.3861]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "class",
+            "value": "Attacker"
+          },   
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.4247, 0.4633, 0.5019, 0.5405, 0.5791, 0.6177, 0.6563, 0.6949, 0.7335, 0.7722],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "class",
+            "value": "Attacker"
+          },   
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "dummy_effect",
+            "description": "戦闘不能状態の味方を復活",
+            "value_list": [0.5445, 0.594, 0.6435, 0.693, 0.7425, 0.792, 0.8415, 0.891, 0.9405, 0.99]
+          }
+        }
+      ]
+    }
+  ]
+}

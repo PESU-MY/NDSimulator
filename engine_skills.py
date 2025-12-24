@@ -118,6 +118,14 @@ class SkillEngineMixin:
                 if is_fb_now != required_state:
                     return False
             # ▲▲▲ 追加ここまで ▲▲▲
+            # ▼▼▼ 追加: 汎用シミュレーターフラグ判定 (simulation_flag) ▼▼▼
+            # JSONで指定された名前の変数が、Simulator本体で True になっているか確認
+            if "simulation_flag" in skill.condition:
+                flag_name = skill.condition["simulation_flag"]
+                if not getattr(self, flag_name, False):
+                    return False
+            # ▲▲▲ 追加ここまで ▲▲▲
+
 
         # ▼▼▼ 追加: 特定部隊の味方の存在チェック (has_squad_mate_present) ▼▼▼
         # skill.condition and ... を追加して、conditionが存在しない場合はスルーするようにする

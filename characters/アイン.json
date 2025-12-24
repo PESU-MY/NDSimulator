@@ -70,7 +70,7 @@
         "buff_type": "charge_dmg_buff",
         "effect_no": 3,
         "value_list": [0.4727, 0.5091, 0.5454, 0.5818, 0.6182, 0.6545, 0.6909, 0.7273, 0.7636, 0.8],
-        "shot_duration": 2
+        "shot_duration": 1
       }
     },
     {

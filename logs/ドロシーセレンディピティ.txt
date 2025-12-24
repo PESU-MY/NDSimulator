@@ -1,0 +1,494 @@
+[Buff] Applied S2: Light Wing (Start) (pierce_dmg_buff: 0.5508) to ドロシー：セレンディピティ
+[Buff] Applied Skill 2: 妖精のイタズラ (味方) (dummy_effect: 0.2346) to ドロシー：セレンディピティ
+[Shoot] 時間:  0.22s | 弾数:  8/9   | Pellets:10 | Dmg:    51,491 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:  0.88s | 弾数:  7/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:  1.55s | 弾数:  6/9   | Pellets:10 | Dmg:    51,491 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:  2.22s | 弾数:  5/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:  2.88s | 弾数:  4/9   | Pellets:10 | Dmg:    61,790 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:  3.55s | 弾数:  3/9   | Pellets:10 | Dmg:    56,640 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:  4.22s | 弾数:  2/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:  4.88s | 弾数:  1/9   | Pellets:10 | Dmg:    59,215 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 249981.6033)
+[Buff] Applied バースト: 青い蝶の夢_Stage_1 (atk_buff_rate: 0.7722) to ドロシー：セレンディピティ
+[Buff] Applied バースト: 青い蝶の夢_Stage_2 (dummy_effect: 0.99) to ドロシー：セレンディピティ
+[Burst] Activate!
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_0 (attack_speed_rate: 0.65) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_1 (atk_buff_rate: 0.8812) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_2 (pellet_count_add: 5) to ドロシー：セレンディピティ
+[Shoot] 時間:  5.55s | 弾数:  0/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:  7.28s | 弾数:  8/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:  7.68s | 弾数:  7/9   | Pellets: 1 | Dmg: 1,194,684 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:  8.08s | 弾数:  6/9   | Pellets:15 | Dmg:   280,591 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:  8.48s | 弾数:  5/9   | Pellets:15 | Dmg:   298,127 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:  8.88s | 弾数:  4/9   | Pellets:15 | Dmg:   280,591 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:  9.28s | 弾数:  3/9   | Pellets:15 | Dmg:   263,054 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:  9.68s | 弾数:  2/9   | Pellets:15 | Dmg:   268,899 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 10.08s | 弾数:  1/9   | Pellets:15 | Dmg:   309,819 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 10.48s | 弾数:  0/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 12.22s | 弾数:  8/9   | Pellets: 1 | Dmg: 1,194,684 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 12.62s | 弾数:  7/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 13.02s | 弾数:  6/9   | Pellets:15 | Dmg:   292,282 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 13.42s | 弾数:  5/9   | Pellets:15 | Dmg:   309,819 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 13.82s | 弾数:  4/9   | Pellets:15 | Dmg:   286,436 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 14.22s | 弾数:  3/9   | Pellets:15 | Dmg:   286,436 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 14.62s | 弾数:  2/9   | Pellets:15 | Dmg:   286,436 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 15.02s | 弾数:  1/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 15.42s | 弾数:  0/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 17.15s | 弾数:  8/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 17.55s | 弾数:  7/9   | Pellets:15 | Dmg:   103,323 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 17.95s | 弾数:  6/9   | Pellets:15 | Dmg:   113,010 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 18.35s | 弾数:  5/9   | Pellets:15 | Dmg:   103,323 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 18.75s | 弾数:  4/9   | Pellets:15 | Dmg:    96,865 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 19.15s | 弾数:  3/9   | Pellets:15 | Dmg:    96,865 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 19.55s | 弾数:  2/9   | Pellets: 1 | Dmg:   549,905 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 19.95s | 弾数:  1/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Shoot] 時間: 20.35s | 弾数:  0/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 22.23s | 弾数:  8/9   | Pellets:10 | Dmg:   148,885 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 22.90s | 弾数:  7/9   | Pellets:10 | Dmg:   148,885 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 23.57s | 弾数:  6/9   | Pellets:10 | Dmg:   139,862 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 24.23s | 弾数:  5/9   | Pellets:10 | Dmg:   135,350 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 24.90s | 弾数:  4/9   | Pellets:10 | Dmg:   162,420 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 25.57s | 弾数:  3/9   | Pellets:10 | Dmg:   139,862 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 26.23s | 弾数:  2/9   | Pellets:10 | Dmg:   139,862 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 26.90s | 弾数:  1/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.75
+[Shoot] 時間: 27.57s | 弾数:  0/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.75
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 29.45s | 弾数:  8/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 30.12s | 弾数:  7/9   | Pellets:10 | Dmg:    61,790 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 30.78s | 弾数:  6/9   | Pellets:10 | Dmg:    61,790 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 31.45s | 弾数:  5/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 32.12s | 弾数:  4/9   | Pellets:10 | Dmg:    64,364 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 32.78s | 弾数:  3/9   | Pellets:10 | Dmg:    66,939 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 33.45s | 弾数:  2/9   | Pellets:10 | Dmg:    56,640 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 34.12s | 弾数:  1/9   | Pellets:10 | Dmg:    59,215 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 34.78s | 弾数:  0/9   | Pellets:10 | Dmg:    59,215 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Burst] Activate!
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_0 (attack_speed_rate: 0.65) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_1 (atk_buff_rate: 0.8812) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_2 (pellet_count_add: 5) to ドロシー：セレンディピティ
+[Shoot] 時間: 36.58s | 弾数:  8/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 36.98s | 弾数:  7/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 37.38s | 弾数:  6/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 37.78s | 弾数:  5/9   | Pellets:15 | Dmg:   221,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 38.18s | 弾数:  4/9   | Pellets:15 | Dmg:   221,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 38.58s | 弾数:  3/9   | Pellets:15 | Dmg:   207,932 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 38.98s | 弾数:  2/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 39.38s | 弾数:  1/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 39.78s | 弾数:  0/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 41.52s | 弾数:  8/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 41.92s | 弾数:  7/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 42.32s | 弾数:  6/9   | Pellets:15 | Dmg:   216,972 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 42.72s | 弾数:  5/9   | Pellets:15 | Dmg:   221,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 43.12s | 弾数:  4/9   | Pellets:15 | Dmg:   221,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 43.52s | 弾数:  3/9   | Pellets:15 | Dmg:   207,932 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 43.92s | 弾数:  2/9   | Pellets:15 | Dmg:   203,411 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 44.32s | 弾数:  1/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 44.72s | 弾数:  0/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 46.45s | 弾数:  8/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 46.85s | 弾数:  7/9   | Pellets:15 | Dmg:   113,010 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 47.25s | 弾数:  6/9   | Pellets:15 | Dmg:   106,552 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 47.65s | 弾数:  5/9   | Pellets:15 | Dmg:   103,323 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 48.05s | 弾数:  4/9   | Pellets:15 | Dmg:   113,010 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 48.45s | 弾数:  3/9   | Pellets:15 | Dmg:   103,323 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 48.85s | 弾数:  2/9   | Pellets:15 | Dmg:   100,094 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 49.25s | 弾数:  1/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 49.65s | 弾数:  0/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 249981.6033)
+[Buff] Applied バースト: 青い蝶の夢_Stage_1 (atk_buff_rate: 0.7722) to ドロシー：セレンディピティ
+[Buff] Applied バースト: 青い蝶の夢_Stage_2 (dummy_effect: 0.99) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Shoot] 時間: 51.47s | 弾数:  8/9   | Pellets: 1 | Dmg:   885,578 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間: 52.13s | 弾数:  7/9   | Pellets:10 | Dmg:   233,991 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間: 52.80s | 弾数:  6/9   | Pellets:10 | Dmg:   220,991 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間: 53.47s | 弾数:  5/9   | Pellets:10 | Dmg:   227,491 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間: 54.13s | 弾数:  4/9   | Pellets:10 | Dmg:   214,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間: 54.80s | 弾数:  3/9   | Pellets:10 | Dmg:   207,992 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間: 55.47s | 弾数:  2/9   | Pellets:10 | Dmg:   207,992 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 56.13s | 弾数:  1/9   | Pellets:10 | Dmg:   194,992 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 56.80s | 弾数:  0/9   | Pellets: 1 | Dmg:   737,981 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.52
+[Shoot] 時間: 58.68s | 弾数:  8/9   | Pellets: 1 | Dmg:   737,981 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.52
+[Shoot] 時間: 59.35s | 弾数:  7/9   | Pellets: 1 | Dmg:   737,981 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 60.02s | 弾数:  6/9   | Pellets:10 | Dmg:   240,491 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間: 60.68s | 弾数:  5/9   | Pellets:10 | Dmg:    59,215 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 61.35s | 弾数:  4/9   | Pellets:10 | Dmg:    56,640 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 62.02s | 弾数:  3/9   | Pellets:10 | Dmg:    59,215 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 62.68s | 弾数:  2/9   | Pellets:10 | Dmg:    51,491 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 63.35s | 弾数:  1/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 64.02s | 弾数:  0/9   | Pellets:10 | Dmg:    59,215 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Burst] Activate!
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_0 (attack_speed_rate: 0.65) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_1 (atk_buff_rate: 0.8812) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_2 (pellet_count_add: 5) to ドロシー：セレンディピティ
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 65.82s | 弾数:  8/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 66.22s | 弾数:  7/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 66.62s | 弾数:  6/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 67.02s | 弾数:  5/9   | Pellets:15 | Dmg:   207,932 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 67.42s | 弾数:  4/9   | Pellets:15 | Dmg:   207,932 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 67.82s | 弾数:  3/9   | Pellets:15 | Dmg:   239,573 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 68.22s | 弾数:  2/9   | Pellets:15 | Dmg:   216,972 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 68.62s | 弾数:  1/9   | Pellets:15 | Dmg:   216,972 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 69.02s | 弾数:  0/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 70.75s | 弾数:  8/9   | Pellets: 1 | Dmg:   923,813 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 71.15s | 弾数:  7/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 71.55s | 弾数:  6/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 71.95s | 弾数:  5/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 72.35s | 弾数:  4/9   | Pellets:15 | Dmg:   216,972 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 72.75s | 弾数:  3/9   | Pellets:15 | Dmg:   235,053 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 73.15s | 弾数:  2/9   | Pellets:15 | Dmg:   216,972 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 73.55s | 弾数:  1/9   | Pellets:15 | Dmg:   221,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 73.95s | 弾数:  0/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 75.68s | 弾数:  8/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 76.08s | 弾数:  7/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 76.48s | 弾数:  6/9   | Pellets:15 | Dmg:   106,552 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 76.88s | 弾数:  5/9   | Pellets:15 | Dmg:   103,323 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 77.28s | 弾数:  4/9   | Pellets:15 | Dmg:   109,781 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 77.68s | 弾数:  3/9   | Pellets:15 | Dmg:   100,094 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 78.08s | 弾数:  2/9   | Pellets:15 | Dmg:   106,552 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 78.48s | 弾数:  1/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 78.88s | 弾数:  0/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Shoot] 時間: 80.70s | 弾数:  8/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 81.37s | 弾数:  7/9   | Pellets:10 | Dmg:   153,397 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 82.03s | 弾数:  6/9   | Pellets:10 | Dmg:   153,397 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 82.70s | 弾数:  5/9   | Pellets:10 | Dmg:   162,420 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 83.37s | 弾数:  4/9   | Pellets:10 | Dmg:   148,885 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 84.03s | 弾数:  3/9   | Pellets:10 | Dmg:   135,350 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 84.70s | 弾数:  2/9   | Pellets:10 | Dmg:   144,373 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 85.37s | 弾数:  1/9   | Pellets:10 | Dmg:   139,862 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間: 86.03s | 弾数:  0/9   | Pellets: 1 | Dmg:   614,706 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.75
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 87.92s | 弾数:  8/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.75
+[Shoot] 時間: 88.58s | 弾数:  7/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 89.25s | 弾数:  6/9   | Pellets:10 | Dmg:   144,373 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間: 89.92s | 弾数:  5/9   | Pellets:10 | Dmg:   157,908 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 90.58s | 弾数:  4/9   | Pellets:10 | Dmg:    51,491 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 91.25s | 弾数:  3/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 91.92s | 弾数:  2/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 92.58s | 弾数:  1/9   | Pellets:10 | Dmg:    56,640 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 93.25s | 弾数:  0/9   | Pellets:10 | Dmg:    56,640 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間: 95.13s | 弾数:  8/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 249981.6033)
+[Buff] Applied バースト: 青い蝶の夢_Stage_1 (atk_buff_rate: 0.7722) to ドロシー：セレンディピティ
+[Buff] Applied バースト: 青い蝶の夢_Stage_2 (dummy_effect: 0.99) to ドロシー：セレンディピティ
+[Burst] Activate!
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_0 (attack_speed_rate: 0.65) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_1 (atk_buff_rate: 0.8812) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_2 (pellet_count_add: 5) to ドロシー：セレンディピティ
+[Shoot] 時間: 95.80s | 弾数:  7/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 96.20s | 弾数:  6/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 96.60s | 弾数:  5/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間: 97.00s | 弾数:  4/9   | Pellets:15 | Dmg:   292,282 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 97.40s | 弾数:  3/9   | Pellets:15 | Dmg:   286,436 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 97.80s | 弾数:  2/9   | Pellets:15 | Dmg:   274,745 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 98.20s | 弾数:  1/9   | Pellets:15 | Dmg:   268,899 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間: 98.60s | 弾数:  0/9   | Pellets:15 | Dmg:   292,282 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:100.33s | 弾数:  8/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:100.73s | 弾数:  7/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:101.13s | 弾数:  6/9   | Pellets: 1 | Dmg: 1,194,684 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:101.53s | 弾数:  5/9   | Pellets:15 | Dmg:   298,127 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:101.93s | 弾数:  4/9   | Pellets:15 | Dmg:   280,591 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:102.33s | 弾数:  3/9   | Pellets:15 | Dmg:   263,054 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:102.73s | 弾数:  2/9   | Pellets:15 | Dmg:   309,819 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:103.13s | 弾数:  1/9   | Pellets:15 | Dmg:   274,745 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:103.53s | 弾数:  0/9   | Pellets: 1 | Dmg: 1,194,684 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:105.27s | 弾数:  8/9   | Pellets: 1 | Dmg:   995,570 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:2.41 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:105.67s | 弾数:  7/9   | Pellets: 1 | Dmg:   549,905 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:106.07s | 弾数:  6/9   | Pellets:15 | Dmg:   113,010 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:106.47s | 弾数:  5/9   | Pellets:15 | Dmg:   119,467 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:106.87s | 弾数:  4/9   | Pellets:15 | Dmg:   100,094 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:107.27s | 弾数:  3/9   | Pellets:15 | Dmg:   100,094 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:107.67s | 弾数:  2/9   | Pellets:15 | Dmg:   100,094 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:108.07s | 弾数:  1/9   | Pellets:15 | Dmg:   122,696 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:108.47s | 弾数:  0/9   | Pellets: 1 | Dmg:   549,905 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:110.20s | 弾数:  8/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Shoot] 時間:110.60s | 弾数:  7/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:111.27s | 弾数:  6/9   | Pellets:10 | Dmg:   148,885 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:111.93s | 弾数:  5/9   | Pellets:10 | Dmg:   148,885 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:112.60s | 弾数:  4/9   | Pellets:10 | Dmg:   139,862 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:113.27s | 弾数:  3/9   | Pellets:10 | Dmg:   148,885 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:113.93s | 弾数:  2/9   | Pellets:10 | Dmg:   171,443 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:114.60s | 弾数:  1/9   | Pellets:10 | Dmg:   166,932 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:115.27s | 弾数:  0/9   | Pellets:10 | Dmg:   148,885 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:117.15s | 弾数:  8/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.75
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:117.82s | 弾数:  7/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.75
+[Shoot] 時間:118.48s | 弾数:  6/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:119.15s | 弾数:  5/9   | Pellets:10 | Dmg:   144,373 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:119.82s | 弾数:  4/9   | Pellets:10 | Dmg:   157,908 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:120.48s | 弾数:  3/9   | Pellets:10 | Dmg:    56,640 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:121.15s | 弾数:  2/9   | Pellets:10 | Dmg:    56,640 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:121.82s | 弾数:  1/9   | Pellets:10 | Dmg:    59,215 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:122.48s | 弾数:  0/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:124.37s | 弾数:  8/9   | Pellets:10 | Dmg:    61,790 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:125.03s | 弾数:  7/9   | Pellets: 1 | Dmg:   233,853 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00
+[Burst] Activate!
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_0 (attack_speed_rate: 0.65) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_1 (atk_buff_rate: 0.8812) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_2 (pellet_count_add: 5) to ドロシー：セレンディピティ
+[Shoot] 時間:125.70s | 弾数:  6/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:126.10s | 弾数:  5/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:126.50s | 弾数:  4/9   | Pellets:15 | Dmg:   244,094 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:126.90s | 弾数:  3/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:127.30s | 弾数:  2/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:127.70s | 弾数:  1/9   | Pellets:15 | Dmg:   230,533 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:128.10s | 弾数:  0/9   | Pellets:15 | Dmg:   230,533 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:129.83s | 弾数:  8/9   | Pellets:15 | Dmg:   207,932 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:130.23s | 弾数:  7/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:130.63s | 弾数:  6/9   | Pellets: 1 | Dmg:   923,813 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:131.03s | 弾数:  5/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:131.43s | 弾数:  4/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:131.83s | 弾数:  3/9   | Pellets:15 | Dmg:   212,452 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:132.23s | 弾数:  2/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:132.63s | 弾数:  1/9   | Pellets:15 | Dmg:   239,573 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:133.03s | 弾数:  0/9   | Pellets:15 | Dmg:   221,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:134.77s | 弾数:  8/9   | Pellets: 1 | Dmg:   923,813 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:135.17s | 弾数:  7/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:135.57s | 弾数:  6/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:135.97s | 弾数:  5/9   | Pellets:15 | Dmg:   109,781 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:136.37s | 弾数:  4/9   | Pellets:15 | Dmg:   100,094 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:136.77s | 弾数:  3/9   | Pellets:15 | Dmg:   103,323 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:137.17s | 弾数:  2/9   | Pellets:15 | Dmg:   109,781 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:137.57s | 弾数:  1/9   | Pellets:15 | Dmg:   109,781 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:137.97s | 弾数:  0/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:139.70s | 弾数:  8/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:140.10s | 弾数:  7/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 249981.6033)
+[Buff] Applied バースト: 青い蝶の夢_Stage_1 (atk_buff_rate: 0.7722) to ドロシー：セレンディピティ
+[Buff] Applied バースト: 青い蝶の夢_Stage_2 (dummy_effect: 0.99) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Shoot] 時間:140.50s | 弾数:  6/9   | Pellets:10 | Dmg:   201,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間:141.17s | 弾数:  5/9   | Pellets:10 | Dmg:   201,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間:141.83s | 弾数:  4/9   | Pellets:10 | Dmg:   233,991 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:142.50s | 弾数:  3/9   | Pellets:10 | Dmg:   214,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間:143.17s | 弾数:  2/9   | Pellets:10 | Dmg:   194,992 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間:143.83s | 弾数:  1/9   | Pellets:10 | Dmg:   214,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間:144.50s | 弾数:  0/9   | Pellets:10 | Dmg:   233,991 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:146.38s | 弾数:  8/9   | Pellets: 1 | Dmg:   737,981 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.52
+[Shoot] 時間:147.05s | 弾数:  7/9   | Pellets: 1 | Dmg:   737,981 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.52
+[Shoot] 時間:147.72s | 弾数:  6/9   | Pellets: 1 | Dmg:   737,981 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:148.38s | 弾数:  5/9   | Pellets:10 | Dmg:   207,992 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間:149.05s | 弾数:  4/9   | Pellets:10 | Dmg:   220,991 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間:149.72s | 弾数:  3/9   | Pellets:10 | Dmg:   259,990 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間:150.38s | 弾数:  2/9   | Pellets:10 | Dmg:   220,991 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.52
+[Shoot] 時間:151.05s | 弾数:  1/9   | Pellets:10 | Dmg:    56,640 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:151.72s | 弾数:  0/9   | Pellets:10 | Dmg:    61,790 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:153.60s | 弾数:  8/9   | Pellets:10 | Dmg:    56,640 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Shoot] 時間:154.27s | 弾数:  7/9   | Pellets:10 | Dmg:    54,066 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:154.93s | 弾数:  6/9   | Pellets: 1 | Dmg:   233,853 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00
+[Burst] Activate!
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_0 (attack_speed_rate: 0.65) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_1 (atk_buff_rate: 0.8812) to ドロシー：セレンディピティ
+[Buff] Applied Burst: False Salvation_Stage_2 (pellet_count_add: 5) to ドロシー：セレンディピティ
+[Shoot] 時間:155.60s | 弾数:  5/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:156.00s | 弾数:  4/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:156.40s | 弾数:  3/9   | Pellets:15 | Dmg:   230,533 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:156.80s | 弾数:  2/9   | Pellets:15 | Dmg:   221,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:157.20s | 弾数:  1/9   | Pellets:15 | Dmg:   230,533 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:157.60s | 弾数:  0/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:159.33s | 弾数:  8/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:159.73s | 弾数:  7/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:160.13s | 弾数:  6/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:160.53s | 弾数:  5/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:160.93s | 弾数:  4/9   | Pellets:15 | Dmg:   216,972 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:161.33s | 弾数:  3/9   | Pellets:15 | Dmg:   230,533 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:161.73s | 弾数:  2/9   | Pellets:15 | Dmg:   221,492 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:162.13s | 弾数:  1/9   | Pellets:15 | Dmg:   226,013 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:162.53s | 弾数:  0/9   | Pellets:15 | Dmg:   216,972 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:164.27s | 弾数:  8/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:164.67s | 弾数:  7/9   | Pellets: 1 | Dmg:   769,844 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:165.07s | 弾数:  6/9   | Pellets: 1 | Dmg:   923,813 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:165.47s | 弾数:  5/9   | Pellets:15 | Dmg:   216,972 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:1.63 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:165.87s | 弾数:  4/9   | Pellets:15 | Dmg:   109,781 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:166.27s | 弾数:  3/9   | Pellets:15 | Dmg:   116,239 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:166.67s | 弾数:  2/9   | Pellets:15 | Dmg:   100,094 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:167.07s | 弾数:  1/9   | Pellets:15 | Dmg:   100,094 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:167.47s | 弾数:  0/9   | Pellets:15 | Dmg:   103,323 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:169.20s | 弾数:  8/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:169.60s | 弾数:  7/9   | Pellets: 1 | Dmg:   549,905 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:0.98 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:170.00s | 弾数:  6/9   | Pellets: 1 | Dmg:   439,924 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Shoot] 時間:170.40s | 弾数:  5/9   | Pellets:15 | Dmg:   106,552 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | atk_buff_rate:0.88 | attack_speed_rate:0.65 | pellet_count_add:5.00
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_0 (atk_buff_rate: 0.7524) to ドロシー：セレンディピティ
+[Buff] Applied S2: Light Wing (Full Burst)_Stage_1 (hit_rate_buff: 0.4068) to ドロシー：セレンディピティ
+[Shoot] 時間:170.80s | 弾数:  4/9   | Pellets:10 | Dmg:   135,350 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:171.47s | 弾数:  3/9   | Pellets:10 | Dmg:   153,397 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:172.13s | 弾数:  2/9   | Pellets:10 | Dmg:   139,862 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:172.80s | 弾数:  1/9   | Pellets:10 | Dmg:   166,932 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:173.47s | 弾数:  0/9   | Pellets:10 | Dmg:   144,373 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Buff] Applied S1: Flash (80 hits)_Stage_0 (is_pierce: 1) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_1 (hit_rate_buff: 0.9818) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_2 (atk_dmg_buff: 0.72) to ドロシー：セレンディピティ
+[Buff] Applied S1: Flash (80 hits)_Stage_3 (pellet_count_fixed: 1) to ドロシー：セレンディピティ
+[Shoot] 時間:175.35s | 弾数:  8/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.75
+[Shoot] 時間:176.02s | 弾数:  7/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | is_pierce:1.00 | hit_rate_buff:1.39 | atk_dmg_buff:0.72 | pellet_count_fixed:1.00 | atk_buff_rate:0.75
+[Shoot] 時間:176.68s | 弾数:  6/9   | Pellets: 1 | Dmg:   512,255 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:177.35s | 弾数:  5/9   | Pellets:10 | Dmg:   144,373 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:178.02s | 弾数:  4/9   | Pellets:10 | Dmg:   135,350 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Shoot] 時間:178.68s | 弾数:  3/9   | Pellets:10 | Dmg:   135,350 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
+[Heal] エヌ : ミラクルフェアリー healed ドロシー：セレンディピティ (Val: 0.0607)
+[Shoot] 時間:179.35s | 弾数:  2/9   | Pellets:10 | Dmg:   139,862 | Buffs: pierce_dmg_buff:0.55 | dummy_effect:0.23 | hit_rate_buff:0.41 | atk_buff_rate:0.75
