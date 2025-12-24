@@ -1,0 +1,100 @@
+{
+  "name": "エピネル",
+  "weapon_type": "SMG",
+  "burst_stage": "3",
+  "element": "Wind",
+  "class": "Attacker",
+  "squad": "ライフトニック",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.00,
+    "damage_rate": 0.1012,
+    "core_damage_rate": 2.50
+  },
+  "skills": [
+    {
+      "name": "Skill 1: スーパールーキー",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "stack_name": "スーパールーキー",
+        "max_stack": 5,
+        "value_list": [0.0818, 0.0882, 0.0944, 0.1008, 0.1071, 0.1134, 0.1197, 0.126, 0.1323, 0.1386],
+        "duration": 15
+      },
+      "description": "便宜的に60回攻撃としている"
+      
+    },
+    {
+      "name": "Skill 2: スパイダー",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "crit_rate_buff",
+            "value_list": [0.0298, 0.0321, 0.0344, 0.0367, 0.039, 0.0413, 0.0436, 0.0459, 0.0482, 0.0505],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "crit_dmg_buff",
+            "value_list": [0.0378, 0.0407, 0.0436, 0.0465, 0.0495, 0.0524, 0.0553, 0.0582, 0.0611, 0.064],
+            "duration": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: SAFE 50-50",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [2.7056, 2.9137, 3.1218, 3.33, 3.5381, 3.7462, 3.9543, 4.1625, 4.3706, 4.5787]
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "condition": {
+            "self_stack_min": 5,
+            "stack_name": "スーパールーキー"
+          },
+          "kwargs": {
+            "effect_no": 5,
+            "multiplier_list": [2.7056, 2.9137, 3.1218, 3.33, 3.5381, 3.7462, 3.9543, 4.1625, 4.3706, 4.5787]
+          }
+        }
+      ]
+    }
+  ]
+}

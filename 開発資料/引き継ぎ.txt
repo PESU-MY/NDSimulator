@@ -404,3 +404,19 @@ JSONの condition に "simulation_flag": "special_mode" を記述。 ・挙動: 
 ・バフ名称の管理: JSON作成時のキー名間違いを防ぐため、別途作成した 開発資料/バフ_プログラム対応表.txt を参照すること。
 
 【ターゲット条件の記述統一】 クラス（型）指定などの条件記述は、プログラムが標準サポートしている以下の形式に統一して記述すること。 NG: "target_condition": { "class": "Supporter" } OK: "target_condition": { "type": "class", "value": "Supporter" }
+
+最新の実装方針・運用テクニック（追記分）
+
+【ターゲット条件の複合指定（クラス×ステータス順）】 「防御型の味方の中から、攻撃力が高い2機」といった複合条件を実現するため、class キーの直接判定ロジックを追加実装済み。 これにより、type を占有する条件（highest_atkなど）とクラス指定を併用可能になった。
+
+・記述例（防御型かつ攻撃力上位2名）: "target_condition": { "type": "highest_atk", // 順位判定タイプ "count": 2, // 人数 "class": "Defender" // フィルタリング条件（コード改修により併用可能） }
+
+【汎用フラグ機能 (simulation_flag) の最終仕様】 シミュレーターのモード切替（部位破壊あり/なし等）や、特定ギミックの有効化を制御する汎用フラグ機能。 main.py でシミュレーターインスタンスに直接変数をセットするだけで機能する簡便な仕様とした。
+
+・Python側 (main.py): sim = NikkeSimulator(...) sim.special_mode = True // 任意の変数名でTrueを代入
+
+・JSON側: "condition": { "simulation_flag": "special_mode" // 変数名を指定 }
+
+【スキルの無効化・ダミー設定】 実装予定だが効果未定のスキルや、一時的に無効化したいスキルについては、 trigger_type にシステム上で未定義の文字列（"dummy" 等）を設定することを推奨する。 プログラム側で一致するトリガーがないため、確実に無視される。
+
+・記述例: "trigger_type": "dummy", "description": "効果未実装のため発動しない"

@@ -12,6 +12,11 @@ class SkillEngineMixin:
             if c_type == 'weapon_type' and target.weapon.weapon_class != c_value: return False
             if c_type == 'class' and target.character_class != c_value: return False
 
+        # ▼▼▼ 追加: クラス(class)の直接指定判定 ▼▼▼
+        # これを追加することで、highest_atk と class 指定を併用できるようになります
+        if 'class' in condition and target.character_class != condition['class']:
+            return False
+        # ▲▲▲ 追加ここまで ▲▲▲
         if 'element' in condition and target.element != condition['element']: return False
         if 'weapon_type' in condition and target.weapon.weapon_class != condition['weapon_type']: return False
         if 'burst_stage' in condition and str(target.burst_stage) != str(condition['burst_stage']): return False

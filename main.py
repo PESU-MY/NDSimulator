@@ -157,10 +157,10 @@ dummy_barrier_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/ドロシー：セレンディピティ.json', skill_level=10)
-burst2_nikke = create_character_from_json('characters/エヌ：ミラクルフェアリー.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/エピネル.json', skill_level=10)
+burst2_nikke = create_character_from_json('characters/エレグ.json', skill_level=10)
 burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
-burst1_nikke = create_character_from_json('characters/エクシア.json', skill_level=10)
+burst1_nikke = create_character_from_json('characters/エマ.json', skill_level=10)
 saitotu = create_character_from_json('characters/アリス_ワンダーランドバニー.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
 
@@ -171,12 +171,12 @@ dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, burst2_nikke]
+all_characters = [dummy_b1, burst2_nikke, burst3_nikke, dummy_b3, dummy_b2]
 
 # 4. バーストローテーション
 rotation = [
     [dummy_b1],
-    [burst2_nikke,dummy_b2],
+    [burst2_nikke],
     [burst3_nikke, dummy_b3] 
 ]
 
@@ -194,7 +194,7 @@ sim = NikkeSimulator(
 # ▼▼▼ 追加: 汎用フラグの設定 ▼▼▼
 # ここで設定した変数名（例: special_mode）を JSON の "simulation_flag" に指定すると、
 # その変数が True の場合のみスキルが発動するようになります。
-sim.special_mode = True 
+sim.special_mode = False 
 # sim.hard_mode = True  # 必要に応じて他のフラグも自由に追加可能です
 # ▲▲▲ 追加ここまで ▲▲▲
 
