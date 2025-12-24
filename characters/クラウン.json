@@ -81,7 +81,6 @@
     {
       "name": "Skill 2: ロイヤルアタイア (スタック付与)",
       "trigger_type": "shot_count",
-      "trigger_value_list": 43,
       "effect_type": "stack_buff",
       "target": "self",
       "kwargs": {
@@ -98,7 +97,6 @@
     {
       "name": "Skill 2: ロイヤルアタイア (フルスタック時発動)",
       "trigger_type": "shot_count",
-      "trigger_value": 43,
       "condition": {
         "self_stack_min": 20,
         "stack_name": "リラックス"
