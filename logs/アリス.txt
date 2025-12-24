@@ -5,496 +5,412 @@
 [Shoot] 時間:  3.60s | 弾数:  4/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Heal] アリス received heal (Val: 174812 -> Actual: 0) (Src: Burst: 大きくて大切なニンジン_Stage_1, HP: 583734/583734)
+[Buff] Applied Burst: 大きくて大切なニンジン_Stage_2 (heal_effectiveness_buff: 1.5) to アリス
 [Burst] Activate!
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
 [Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
 [Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
-[Shoot] 時間:  5.48s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55
-[Shoot] 時間:  5.98s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55
+[Shoot] 時間:  5.48s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  5.98s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:  6.48s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55
-[Shoot] 時間:  6.98s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reloading... (120 frames)
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Shoot] 時間:  9.48s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55
-[Shoot] 時間:  9.98s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 10.48s | 弾数:  3/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
-[Shoot] 時間: 10.98s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 11.48s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
-[Shoot] 時間: 11.98s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  6.48s | 弾数:  1/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  6.98s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reloading... (120 frames)
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
-[Shoot] 時間: 14.48s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
-[Shoot] 時間: 14.98s | 弾数:  4/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  9.48s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:  9.98s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
+[Shoot] 時間: 10.48s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 10.98s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 16.87s | 弾数:  3/6   | Pellets: 1 | Dmg:   154,372 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10
+[Shoot] 時間: 11.48s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 11.98s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reloading... (120 frames)
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 18.75s | 弾数:  2/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 14.48s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 14.98s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | heal_effectiveness_buff:1.50 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アリス
-[Heal] アリス received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 843881/583734)
-[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Shoot] 時間: 16.87s | 弾数:  3/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 18.75s | 弾数:  2/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
-[Shoot] 時間: 20.63s | 弾数:  1/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
+[Shoot] 時間: 20.63s | 弾数:  1/6   | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 22.33s | 弾数:  0/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
+[Shoot] 時間: 22.33s | 弾数:  0/6   | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Action] Reloading... (120 frames)
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 26.03s | 弾数:  5/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
+[Shoot] 時間: 26.03s | 弾数:  5/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 27.73s | 弾数:  4/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 29.43s | 弾数:  3/6   | Pellets: 1 | Dmg:   236,357 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 31.13s | 弾数:  2/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71
+[Shoot] 時間: 27.73s | 弾数:  4/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 33.02s | 弾数:  1/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71
+[Shoot] 時間: 29.43s | 弾数:  3/6   | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 34.90s | 弾数:  0/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 31.13s | 弾数:  2/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 33.02s | 弾数:  1/6   | Pellets: 1 | Dmg:   154,372 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 34.90s | 弾数:  0/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reloading... (120 frames)
 [Burst] Activate!
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
 [Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
 [Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
-[Shoot] 時間: 37.40s | 弾数:  5/6   | Pellets: 1 | Dmg:   348,274 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30
-[Shoot] 時間: 37.90s | 弾数:  4/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30
+[Shoot] 時間: 37.40s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 37.90s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 38.40s | 弾数:  3/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30
-[Shoot] 時間: 38.90s | 弾数:  2/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30
+[Shoot] 時間: 38.40s | 弾数:  3/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 38.90s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 39.40s | 弾数:  1/6   | Pellets: 1 | Dmg:   348,274 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30
-[Shoot] 時間: 39.90s | 弾数:  0/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30
+[Shoot] 時間: 39.40s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 39.90s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reloading... (120 frames)
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
-[Shoot] 時間: 42.40s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
-[Shoot] 時間: 42.90s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
+[Shoot] 時間: 42.40s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 42.90s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 43.40s | 弾数:  3/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
-[Shoot] 時間: 43.90s | 弾数:  2/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
+[Shoot] 時間: 43.40s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 43.90s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 44.40s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
-[Shoot] 時間: 44.90s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30
+[Shoot] 時間: 44.40s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 44.90s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reloading... (120 frames)
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 48.78s | 弾数:  5/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 48.78s | 弾数:  5/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アリス
-[Heal] アリス received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 1104027/583734)
-[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
-[Shoot] 時間: 50.67s | 弾数:  4/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 50.67s | 弾数:  4/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 52.37s | 弾数:  3/6   | Pellets: 1 | Dmg:   291,530 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 52.37s | 弾数:  3/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 54.07s | 弾数:  2/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 54.07s | 弾数:  2/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 55.77s | 弾数:  1/6   | Pellets: 1 | Dmg:   236,357 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 55.77s | 弾数:  1/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 57.47s | 弾数:  0/6   | Pellets: 1 | Dmg:   236,357 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
+[Shoot] 時間: 57.47s | 弾数:  0/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アリス
-[Shoot] 時間: 60.35s | 弾数:  5/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 61.17s | 弾数:  5/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 62.23s | 弾数:  4/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 63.05s | 弾数:  4/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 64.12s | 弾数:  3/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間: 64.93s | 弾数:  3/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Burst] Activate!
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
+[Shoot] 時間: 65.43s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 65.93s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 66.43s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 68.93s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 69.43s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 69.93s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 70.43s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 70.93s | 弾数:  1/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 71.43s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 73.93s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 74.43s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 74.93s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 76.82s | 弾数:  2/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 78.70s | 弾数:  1/6   | Pellets: 1 | Dmg:   154,372 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Shoot] 時間: 80.58s | 弾数:  0/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 84.28s | 弾数:  5/6   | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 85.98s | 弾数:  4/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 87.68s | 弾数:  3/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 89.38s | 弾数:  2/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 91.08s | 弾数:  1/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間: 92.97s | 弾数:  0/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reload Complete. Ammo: 6
+[Burst] Activate!
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
 [Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
 [Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 66.00s | 弾数:  2/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間: 66.50s | 弾数:  1/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 96.85s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 67.00s | 弾数:  0/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
+[Shoot] 時間: 97.35s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 97.85s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Shoot] 時間: 68.68s | 弾数:  5/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 98.35s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間: 98.85s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 69.18s | 弾数:  4/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間: 69.68s | 弾数:  3/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間: 99.35s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 70.18s | 弾数:  2/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間: 70.68s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 71.18s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
-[Shoot] 時間: 72.87s | 弾数:  5/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:101.85s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 73.37s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間: 73.87s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:102.35s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:102.85s | 弾数:  3/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 74.37s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間: 74.87s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:103.35s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:103.85s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アリス
-[Shoot] 時間: 75.37s | 弾数:  0/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
+[Shoot] 時間:104.35s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 78.43s | 弾数:  5/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:108.23s | 弾数:  5/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アリス
-[Heal] アリス received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 1364174/583734)
-[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Shoot] 時間:110.12s | 弾数:  4/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
-[Shoot] 時間: 80.32s | 弾数:  4/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:111.82s | 弾数:  3/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 82.02s | 弾数:  3/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 83.72s | 弾数:  2/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:113.52s | 弾数:  2/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 85.42s | 弾数:  1/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:115.22s | 弾数:  1/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:116.92s | 弾数:  0/6   | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 87.12s | 弾数:  0/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 90.00s | 弾数:  5/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 91.88s | 弾数:  4/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:120.62s | 弾数:  5/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 93.77s | 弾数:  3/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
+[Shoot] 時間:122.50s | 弾数:  4/6   | Pellets: 1 | Dmg:   154,372 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:124.38s | 弾数:  3/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Burst] Activate!
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
-[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
-[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
-[Shoot] 時間: 95.65s | 弾数:  2/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 96.15s | 弾数:  1/6   | Pellets: 1 | Dmg:   348,274 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間: 96.65s | 弾数:  0/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Shoot] 時間: 98.33s | 弾数:  5/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間: 98.83s | 弾数:  4/6   | Pellets: 1 | Dmg:   348,274 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間: 99.33s | 弾数:  3/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間: 99.83s | 弾数:  2/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:100.33s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:100.83s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reloading... (71 frames)
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Shoot] 時間:102.52s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:103.02s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:103.52s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:104.02s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:104.52s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:105.02s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:108.08s | 弾数:  5/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:109.97s | 弾数:  4/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アリス
-[Heal] アリス received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 1624320/583734)
-[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
-[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
-[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:111.85s | 弾数:  3/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:113.55s | 弾数:  2/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:115.25s | 弾数:  1/6   | Pellets: 1 | Dmg:   291,530 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:116.95s | 弾数:  0/6   | Pellets: 1 | Dmg:   236,357 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reloading... (71 frames)
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:119.83s | 弾数:  5/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:121.53s | 弾数:  4/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:123.42s | 弾数:  3/6   | Pellets: 1 | Dmg:   199,448 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:125.30s | 弾数:  2/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Burst] Activate!
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
-[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
-[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
-[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
-[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
-[Shoot] 時間:125.80s | 弾数:  1/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:126.30s | 弾数:  0/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Shoot] 時間:127.98s | 弾数:  5/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:128.48s | 弾数:  4/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:128.98s | 弾数:  3/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:129.48s | 弾数:  2/6   | Pellets: 1 | Dmg:   348,274 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:129.98s | 弾数:  1/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:130.48s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:132.17s | 弾数:  5/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:132.67s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:133.17s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:133.67s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:134.17s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:134.67s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:137.73s | 弾数:  5/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:139.62s | 弾数:  4/6   | Pellets: 1 | Dmg:   199,448 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アリス
-[Heal] アリス received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 1884467/583734)
-[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
-[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
-[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:141.50s | 弾数:  3/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:143.20s | 弾数:  2/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:144.90s | 弾数:  1/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:146.60s | 弾数:  0/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:149.48s | 弾数:  5/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:151.18s | 弾数:  4/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:153.07s | 弾数:  3/6   | Pellets: 1 | Dmg:   199,448 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:154.95s | 弾数:  2/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Burst] Activate!
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
-[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
-[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
 [Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
 [Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:156.83s | 弾数:  1/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:126.27s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:126.77s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:157.33s | 弾数:  0/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
+[Shoot] 時間:127.27s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
+[Shoot] 時間:129.77s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:159.02s | 弾数:  5/6   | Pellets: 1 | Dmg:   348,274 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:159.52s | 弾数:  4/6   | Pellets: 1 | Dmg:   348,274 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:130.27s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:130.77s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:160.02s | 弾数:  3/6   | Pellets: 1 | Dmg:   290,228 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:7461.71 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:160.52s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:131.27s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:131.77s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:161.02s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:161.52s | 弾数:  0/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
+[Shoot] 時間:132.27s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Action] Reload Complete. Ammo: 6
+[Shoot] 時間:134.77s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:163.20s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:163.70s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:164.20s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Shoot] 時間:164.70s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:165.20s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55 | max_hp_overflow:389701.96 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_0 (hit_rate_buff: 0.1013) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_1 (atk_buff_fixed: 7461.7114) to アリス
-[Buff] Applied S2: イソギンチャク（形）パスタ_Stage_2 (reload_speed_rate: 0.4004) to アリス
+[Shoot] 時間:135.27s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:167.08s | 弾数:  0/6   | Pellets: 1 | Dmg:   159,558 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Action] Reloading... (71 frames)
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:137.15s | 弾数:  3/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:170.15s | 弾数:  5/6   | Pellets: 1 | Dmg:   199,448 | Buffs: is_pierce:1.00 | hit_rate_buff:0.10 | atk_buff_fixed:7461.71 | reload_speed_rate:0.40
-[Buff] Applied Burst: パイレーツランチ_Stage_0 (max_hp_overflow: 389701.9607) to アリス
-[Heal] アリス received heal (Val: 260147 -> Actual: 260147) (Src: Burst: パイレーツランチ_Stage_1, HP: 2144614/583734)
-[Buff] Applied Burst: パイレーツランチ_Stage_2 (atk_buff_fixed: 6411.2763) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Shoot] 時間:139.03s | 弾数:  2/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
-[Target] Selected Top 2 ATK: ['アリス', 'アンカー：イノセントメイド']
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
 [Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_0 (heal_effectiveness_buff: 0.3096) to アリス
-[Buff] Applied S1: ヒトデ（形）オムライス (Stages)_Stage_1 (split_dmg_buff: 0.304) to アリス
+[Shoot] 時間:140.92s | 弾数:  1/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:172.03s | 弾数:  4/6   | Pellets: 1 | Dmg:   291,530 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:173.73s | 弾数:  3/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:175.43s | 弾数:  2/6   | Pellets: 1 | Dmg:   242,942 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | heal_effectiveness_buff:0.31 | hit_rate_buff:0.10 | max_hp_overflow:389701.96 | atk_buff_fixed:13872.99 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Shoot] 時間:142.62s | 弾数:  0/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Action] Reloading... (120 frames)
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:177.13s | 弾数:  1/6   | Pellets: 1 | Dmg:   236,357 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
+[Action] Reload Complete. Ammo: 6
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Shoot] 時間:178.83s | 弾数:  0/6   | Pellets: 1 | Dmg:   196,964 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07 | max_hp_overflow:389701.96 | atk_buff_fixed:6411.28 | split_dmg_buff:0.30 | reload_speed_rate:0.40
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
-[Action] Reloading... (71 frames)
+[Shoot] 時間:146.32s | 弾数:  5/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:148.02s | 弾数:  4/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:149.72s | 弾数:  3/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:151.42s | 弾数:  2/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:153.30s | 弾数:  1/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:155.18s | 弾数:  0/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Action] Reloading... (120 frames)
+[Burst] Activate!
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_0 (charge_speed_rate: 0.8015) to アリス
+[Buff] Applied バースト: 摩訶不思議な世界_Stage_1 (atk_buff_rate: 0.5512) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:157.68s | 弾数:  5/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:158.18s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:158.68s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:159.18s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:159.68s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:160.18s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:162.68s | 弾数:  5/6   | Pellets: 1 | Dmg:   293,101 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:163.18s | 弾数:  4/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:163.68s | 弾数:  3/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:164.18s | 弾数:  2/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Shoot] 時間:164.68s | 弾数:  1/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:165.18s | 弾数:  0/6   | Pellets: 1 | Dmg:   244,251 | Buffs: is_pierce:1.00 | charge_speed_rate:0.92 | charge_dmg_buff:0.07 | atk_buff_rate:0.55
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:169.07s | 弾数:  5/6   | Pellets: 1 | Dmg:   123,497 | Buffs: is_pierce:1.00
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_0 (charge_speed_rate: 0.1167) to アリス
+[Target] Selected Top 2 ATK: ['ギルティ', 'アリス']
+[Buff] Applied Skill 1: 元気が出るニンジン_Stage_1 (charge_dmg_buff: 0.07) to アリス
+[Shoot] 時間:170.95s | 弾数:  4/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:172.65s | 弾数:  3/6   | Pellets: 1 | Dmg:   188,951 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:174.35s | 弾数:  2/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:176.05s | 弾数:  1/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Shoot] 時間:177.75s | 弾数:  0/6   | Pellets: 1 | Dmg:   157,459 | Buffs: is_pierce:1.00 | charge_speed_rate:0.12 | charge_dmg_buff:0.07
+[Action] Reloading... (120 frames)
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス
+[Action] Reload Complete. Ammo: 6
 [Buff] Applied Skill 2: 健康なニンジン (is_pierce: 1) to アリス

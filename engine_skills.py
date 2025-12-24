@@ -646,16 +646,16 @@ class SkillEngineMixin:
             # ▲▲▲ 追加ここまで ▲▲▲
 
             elif skill.effect_type == 'increase_current_stack_count':
-                delta = int(kwargs.get('value', 1))
+                delta = int(kwargs.get('value', 1))  # 変数名は delta
                 
-                # "debuff" タグを持つスタックは増加させないようにデフォルトで設定
-                # 必要であればJSONからignore_tagsを指定できるようにしても良いが、
-                # 今回の要望では「デバフを対象から外す」ことが目的なのでハードコードまたはデフォルトリストを使用
                 ignore_tags = kwargs.get('ignore_tags', ["debuff", "negative_buff"])
                 
                 for target in targets:
-                    target.buff_manager.modify_active_stack_counts(delta, ignore_tags=ignore_tags)
-                    self.log(f"[Stack Mod] Modified stacks by {delta:+d} (Ignored: {ignore_tags}) for {target.name}", target_name=target.name)
+                    # 引数を val から delta に変更
+                    count = target.buff_manager.modify_active_stack_counts(delta, frame, ignore_tags=ignore_tags)
+                    if count > 0:
+                        self.log(f"[Stack Up] Increased stack count for {count} buffs on {target.name}", target_name=caster.name)
+                return 0
             # ▲▲▲ 修正ここまで ▲▲▲
             
             # ▼▼▼ 追加: 気絶(Stun)効果 ▼▼▼

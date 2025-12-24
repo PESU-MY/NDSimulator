@@ -44,24 +44,53 @@ class BuffManager:
                 'unit_value': 0, 'end_frame': 99999999, 'tag': None, 'shot_life': 0, 'remove_on_reload': False
             }
 
-    def modify_active_stack_counts(self, delta):
-        """
-        現在アクティブな全てのスタックバフのスタック数を delta 分だけ増減させる。
-        ただし、0未満や最大スタック数を超えることはない。
-        """
-        for stack_name, data in self.active_stacks.items():
-            current = data['count']
-            max_s = data['max_stack']
+    def modify_active_stack_counts(self, delta, frame, ignore_tags=None):
+        if ignore_tags is None:
+            ignore_tags = []
             
-            # 増減計算
-            new_count = current + delta
+        modified_count = 0
+        
+        if isinstance(self.buffs, dict):
+            all_buff_lists = self.buffs.values()
+        else:
+            all_buff_lists = [self.buffs]
             
-            # 範囲制限 (0 <= new_count <= max_stack)
-            # ※スタック1以上で維持したい場合は max(1, ...) にするが、
-            #   減少効果で消失させる可能性も考慮し max(0, ...) としている
-            new_count = max(0, min(max_s, new_count))
-            
-            data['count'] = new_count
+        for buff_list in all_buff_lists:
+            for b in buff_list:
+                
+                current_tag = b.get('tag')
+                if current_tag and current_tag in ignore_tags:
+                    continue
+
+                if 'stack_count' in b:
+                    old_count = b['stack_count']
+                    max_stack = b.get('max_stack', 1)
+                    
+                    # 新しいスタック数を計算（最大値を超えないように）
+                    new_count = max(1, min(max_stack, old_count + delta))
+                    
+                    # ▼▼▼ 修正: スタック増加操作 (delta > 0) なら無条件で時間リセット ▼▼▼
+                    if delta > 0:
+                        # スタック数が変わるか、既に最大値の場合でもリセットを実行
+                        
+                        # 時間リセット
+                        if 'duration_frames' in b:
+                             b['duration'] = b['duration_frames']
+                             b['start_frame'] = frame
+                        
+                        # スタック数を更新（値が変わっていれば）
+                        if new_count != old_count:
+                            b['stack_count'] = new_count
+                        
+                        # 「効果が適用された（リセット含む）」としてカウント
+                        modified_count += 1
+                        
+                    # ▼▼▼ スタック減少操作の場合 ▼▼▼
+                    elif new_count < old_count:
+                         b['stack_count'] = new_count
+                         modified_count += 1
+                    
+        return modified_count
 
 
     def remove_buffs_by_tag(self, tag, current_frame):

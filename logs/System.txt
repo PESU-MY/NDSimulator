@@ -1,65 +1,73 @@
 === Simulation Start ===
 Character: Dummy_B1 (Atk:1)
-Character: Dummy_B2 (Atk:1)
+Character: Dummy_B3 (Atk:1)
 Character: アリス (Atk:25554)
 Character: Dummy_B3 (Atk:1)
-Character: アンカー：イノセントメイド (Atk:21307)
+Character: ギルティ (Atk:25554)
+[Burst] アリス：ワンダーランドバニー used Burst Stage 1
+[アリス：ワンダーランドバニー] [Burst] Activate!
+[アリス：ワンダーランドバニー] [Burst] Reserved re-entry to BURST_1
+[アリス：ワンダーランドバニー] [Burst] Reserved re-entry to BURST_1
+[アリス：ワンダーランドバニー] [Burst] Reserved re-entry to BURST_1
+[アリス：ワンダーランドバニー] [Burst] Reserved re-entry to BURST_1
+[アリス：ワンダーランドバニー] [Burst] Reserved re-entry to BURST_1
+[Burst] Re-entered BURST_1 by effect
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] アリス used Burst Stage 3
-[Burst] Recorded burst end time for アリス at frame 903
+[Burst] Recorded burst end time for アリス at frame 904
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] アンカー：イノセントメイド used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 1806
+[Burst] Recorded burst end time for Dummy_B3 at frame 1807
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] アリス used Burst Stage 3
-[Burst] Recorded burst end time for アリス at frame 2709
+[Burst] Recorded burst end time for アリス at frame 2710
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] アンカー：イノセントメイド used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 3612
+[Burst] Recorded burst end time for Dummy_B3 at frame 3613
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] アリス used Burst Stage 3
-[Burst] Recorded burst end time for アリス at frame 4515
+[Burst] Recorded burst end time for アリス at frame 4516
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] アンカー：イノセントメイド used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 5418
+[Burst] Recorded burst end time for Dummy_B3 at frame 5419
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] アリス used Burst Stage 3
-[Burst] Recorded burst end time for アリス at frame 6321
+[Burst] Recorded burst end time for アリス at frame 6322
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] アンカー：イノセントメイド used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 7224
+[Burst] Recorded burst end time for Dummy_B3 at frame 7225
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] アリス used Burst Stage 3
-[Burst] Recorded burst end time for アリス at frame 8127
+[Burst] Recorded burst end time for アリス at frame 8128
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] アンカー：イノセントメイド used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[Burst] Recorded burst end time for Dummy_B3 at frame 9030
+[Burst] Recorded burst end time for Dummy_B3 at frame 9031
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Dummy_B2 used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] アリス used Burst Stage 3
-[Burst] Recorded burst end time for アリス at frame 9933
+[Burst] Recorded burst end time for アリス at frame 9934
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] アンカー：イノセントメイド used Burst Stage 2
+[Burst] ギルティ used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
