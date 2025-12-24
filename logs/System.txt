@@ -1,14 +1,14 @@
 === Simulation Start ===
 Character: Dummy_B1 (Atk:1)
 Character: Dummy_B2 (Atk:1)
-Character: キロ (Atk:17059)
+Character: ギロチン (Atk:25554)
 Character: Dummy_B3 (Atk:1)
 Character: Dummy_B3 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] キロ used Burst Stage 3
-[Burst] Recorded burst end time for キロ at frame 903
+[Burst] ギロチン used Burst Stage 3
+[Burst] Recorded burst end time for ギロチン at frame 903
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
@@ -17,8 +17,8 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] キロ used Burst Stage 3
-[Burst] Recorded burst end time for キロ at frame 2709
+[Burst] ギロチン used Burst Stage 3
+[Burst] Recorded burst end time for ギロチン at frame 2709
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
@@ -27,8 +27,8 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] キロ used Burst Stage 3
-[Burst] Recorded burst end time for キロ at frame 4515
+[Burst] ギロチン used Burst Stage 3
+[Burst] Recorded burst end time for ギロチン at frame 4515
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
@@ -37,8 +37,8 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] キロ used Burst Stage 3
-[Burst] Recorded burst end time for キロ at frame 6321
+[Burst] ギロチン used Burst Stage 3
+[Burst] Recorded burst end time for ギロチン at frame 6321
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
@@ -47,8 +47,8 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] キロ used Burst Stage 3
-[Burst] Recorded burst end time for キロ at frame 8127
+[Burst] ギロチン used Burst Stage 3
+[Burst] Recorded burst end time for ギロチン at frame 8127
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
@@ -57,8 +57,8 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] キロ used Burst Stage 3
-[Burst] Recorded burst end time for キロ at frame 9933
+[Burst] ギロチン used Burst Stage 3
+[Burst] Recorded burst end time for ギロチン at frame 9933
 [Burst] Dummy_B1 used Burst Stage 1
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
 [Burst] Dummy_B2 used Burst Stage 2

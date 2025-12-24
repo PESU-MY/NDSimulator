@@ -467,6 +467,22 @@ class SkillEngineMixin:
                 rem_reload = kwargs.get('remove_on_reload', False)
                 st_amount = kwargs.get('stack_amount', 1)
 
+                # 減少HP率に応じた効果量のスケーリング
+                if kwargs.get('scale_by_missing_hp_percentage'):
+                    max_hp = target.get_current_max_hp(frame)
+                    if max_hp > 0:
+                        # 減少率(%)を計算 (例: HP60%なら減少40% -> 40.0)
+                        missing_ratio = 1.0 - (target.current_hp / max_hp)
+                        missing_percent = missing_ratio * 100.0
+                        
+                        # 元の値(1%あたりの上昇量)に減少%を掛ける
+                        # 例: 0.96% * 40 = 38.4% (0.384)
+                        scaled_val = val * missing_percent
+                        
+                        self.log(f"[HP Scale] Scaled by missing HP {missing_percent:.1f}% (Base:{val:.4f} -> Final:{scaled_val:.4f})", target_name=target.name)
+                        val = scaled_val
+                # -----------------
+                
                 # ▼▼▼ 追加: ステータスコピー (基礎値・最大ステータス参照版) ▼▼▼
                 if kwargs.get('scale_by_reference', False):
                     ref_stat = kwargs.get('reference_stat', 'atk') # 'atk' or 'max_hp'
@@ -594,7 +610,7 @@ class SkillEngineMixin:
                     mult *= target_stack
                     self.log(f"[Dmg Scale] Scaled by enemy stack '{stack_name}': x{target_stack} -> {mult:.4f}", target_name=targets[0].name)
                 # ▲▲▲ 追加ここまで ▲▲▲
-
+            
                 skill_dmg = 0
                 for _ in range(loops):
                     d, _ = caster.calculate_strict_damage(
@@ -672,6 +688,18 @@ class SkillEngineMixin:
                     )
                     self.log(f"[Stun] {target.name} is stunned for {kwargs.get('duration')}s", target_name=target.name)
             # ▲▲▲ 追加ここまで ▲▲▲
+
+            elif skill.effect_type == 'lose_hp':
+                # value は割合として扱う (例: 0.0201 = 2.01%)
+                ratio = kwargs.get('value', 0)
+                
+                # 現在HPに基づいて減少量を計算
+                loss = target.current_hp * ratio
+                
+                # HPを減少させる (最低1は残すか、0にするかは仕様次第ですが、一旦0許容で減少)
+                target.current_hp = max(0, target.current_hp - loss)
+                
+                self.log(f"[Lose HP] Lost {loss:.0f} HP (Current: {target.current_hp:.0f}/{target.get_current_max_hp(frame):.0f})", target_name=target.name)
 
             elif skill.effect_type == 'weapon_change':
                 new_weapon_data = kwargs.get('weapon_data')
