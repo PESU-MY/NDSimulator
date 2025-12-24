@@ -388,10 +388,13 @@ class SkillEngineMixin:
                 target.buff_manager.add_buff('conversion_hp_to_atk', rate, skill.kwargs.get('duration', 0) * self.FPS, frame, source=skill.name)
                 self.log(f"[Buff] {target.name}: HP to ATK conversion ({rate})", target_name=target.name)
             
+            # --- heal (即時回復) の修正 ---
             elif skill.effect_type == 'heal':
-                heal_val = kwargs.get('value', 0)
-                self.log(f"[Heal] {caster.name} healed {target.name} (Val: {heal_val})", target_name=target.name)
-                target.process_trigger('on_receive_heal', heal_val, frame, is_full_burst, self)
+                # 既存の heal_val 計算ロジック (scale_by_caster_stats 等は適用済み)
+                base_heal = kwargs.get('value', 0)
+                
+                # healメソッドを使って回復処理 (現在HP更新・トリガー発火含む)
+                target.heal(base_heal, skill.name, frame, self)
 
             # ▼▼▼ 追加: 固定値リロードの実装 ▼▼▼
             elif skill.effect_type == 'refill_ammo_fixed':
@@ -399,6 +402,61 @@ class SkillEngineMixin:
                 target.current_ammo = min(target.current_max_ammo, target.current_ammo + amount)
                 self.log(f"[Ammo] Refilled {amount} ammo (Fixed) for {target.name}", target_name=target.name)
             # ▲▲▲▲▲▲
+
+            # --- regenerate (リジェネ) の追加 ---
+            elif skill.effect_type == 'regenerate':
+                # ユーザー要望: 「発動者の発動時の最大HP×[value%]」を「X秒間隔」で「Y秒間」
+                # kwargs: { "value": 0.05, "interval": 1.0, "duration": 10.0, "scale_by_caster_stats": True ... }
+                
+                # 1回の回復量を計算 (scale_by_caster_stats があれば適用済み)
+                heal_per_tick = kwargs.get('value', 0)
+                interval_sec = kwargs.get('interval', 1.0)
+                interval_frames = int(interval_sec * self.FPS)
+                duration_sec = kwargs.get('duration', 0)
+                end_frame = frame + (duration_sec * self.FPS)
+                
+                # Active HoT リストに追加
+                target.active_hots.append({
+                    'source': skill.name,
+                    'heal_value': heal_per_tick,
+                    'next_tick': frame + interval_frames,
+                    'interval': interval_frames,
+                    'end_frame': end_frame
+                })
+                self.log(f"[Regen] Applied Regen to {target.name} (Val:{heal_per_tick:.0f}, Int:{interval_sec}s, Dur:{duration_sec}s)", target_name=caster.name)
+
+            # --- buff (最大HPアップの挙動分岐) の修正 ---
+            elif skill.effect_type == 'buff' or skill.effect_type == 'stack_buff':
+                # ... (既存のパラメータ取得) ...
+                b_type = kwargs.get('buff_type', skill.effect_type)
+                
+                # ▼▼▼ 追加: 最大HPアップ時の現在HP加算処理 ▼▼▼
+                if b_type == 'max_hp_rate':
+                    # 現在HPも増やすかどうかのフラグ (デフォルトはFalse、要望のスキルではTrueにする)
+                    update_current = kwargs.get('update_current_hp', False)
+                    
+                    if update_current:
+                        # 増加前の最大HP
+                        old_max_hp = target.get_current_max_hp(frame)
+                        
+                        # バフ適用（既存処理）
+                        if skill.effect_type == 'stack_buff':
+                            # ... (スタック処理) ...
+                            target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=s_name, max_stack=kwargs.get('max_stack', 1), tag=tag)
+                        else:
+                            target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, tag=tag)
+                            
+                        # 増加後の最大HP
+                        new_max_hp = target.get_current_max_hp(frame)
+                        
+                        # 差分を現在HPに加算
+                        hp_diff = new_max_hp - old_max_hp
+                        if hp_diff > 0:
+                            target.current_hp += hp_diff
+                            self.log(f"[HP Mod] Increased Current HP by {hp_diff:.0f} due to MaxHP buff", target_name=target.name)
+                        
+                        continue # バフ適用済みなので以降の処理をスキップ
+                # ▲▲▲
 
             # ▼▼▼ 修正: バリア (Shield) 効果の実装（タグ対応） ▼▼▼
             elif skill.effect_type == 'shield':

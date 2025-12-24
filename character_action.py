@@ -108,6 +108,15 @@ class CharacterActionMixin:
                 damage_this_frame += self.process_trigger('full_charge_count', self.cumulative_full_charge_count, frame, is_full_burst, simulator)
             # ▲▲▲ 追加ここまで ▲▲▲
 
+            # ▼▼▼ 追加: ドレイン(攻撃回復)処理 ▼▼▼
+            # "drain" バフが付与されている場合、与ダメージの n% を回復
+            drain_rate = self.buff_manager.get_total_value('drain', frame)
+            if drain_rate > 0 and total_shot_dmg > 0:
+                heal_amount = total_shot_dmg * drain_rate
+                # healメソッドを呼び出す (simulatorへの参照が必要)
+                self.heal(heal_amount, "Drain", frame, simulator)
+            # ▲▲▲
+
 
         if self.weapon.type in ["RL", "SR", "CHARGE"]:
             if self.state == "READY":

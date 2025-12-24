@@ -56,6 +56,14 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         
         self.active_dots = {}
         self.special_flags = set()
+
+        # ▼▼▼ 追加: リジェネ(HoT)の管理用リスト ▼▼▼
+        self.active_hots = []
+
+        # 初期状態ではバフなし最大HPとする
+        self.current_hp = self.base_hp
+        # ▲▲▲
+
         
         # ▼▼▼ 追加: 自身のバースト(Full Burst)が終了した時刻 ▼▼▼
         self.last_burst_end_frame = -1
@@ -67,7 +75,7 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
             if skill_obj.effect_type == 'cumulative_stages':
                 for stage in skill_obj.stages:
                     if isinstance(stage, Skill): register_breakdown(stage)
-                    
+
         # ▼▼▼ 追加: バーストスキルのクールタイム設定を保持 ▼▼▼
         self.burst_skill_cooldown = None
         for s in self.skills:
@@ -82,3 +90,37 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.is_weapon_changed = False
         self.weapon_change_end_frame = 0
         self.weapon_change_ammo_specified = False
+
+    def heal(self, amount, source_name, frame, simulator):
+        # 1. 回復量補正 (受ける回復量UPバフ)
+        # buff_manager.py に 'heal_effectiveness_buff' の集計ロジックが必要だが、
+        # get_total_value で取得できる前提とする。
+        heal_rate = self.buff_manager.get_total_value('heal_effectiveness_buff', frame)
+        final_heal = amount * (1.0 + heal_rate)
+        
+        if final_heal <= 0: return 0
+        
+        # 2. 現在の最大HP計算
+        # CharacterStatsMixin に get_current_max_hp を実装して呼ぶ
+        max_hp = self.get_current_max_hp(frame)
+        
+        # 3. 超過回復の上限計算
+        # 'max_hp_overflow' バフがある場合、その値(割合)分だけ最大HPを超えて回復可能
+        overflow_rate = self.buff_manager.get_total_value('max_hp_overflow', frame)
+        cap_hp = max_hp * (1.0 + overflow_rate)
+        
+        # 4. HP加算とキャップ処理
+        prev_hp = self.current_hp
+        self.current_hp = min(cap_hp, self.current_hp + final_heal)
+        actual_heal = self.current_hp - prev_hp
+        
+        if actual_heal > 0:
+            simulator.log(f"[Heal] {self.name} healed by {actual_heal:.0f} (Src: {source_name}, HP: {self.current_hp:.0f}/{max_hp:.0f})", target_name=self.name)
+            # トリガー発火
+            # is_full_burst は simulator から取得する必要があるが、メソッド引数に追加するか、
+            # simulatorオブジェクト経由で取得する。ここでは引数で渡ってくる前提。
+            is_fb = (simulator.burst_state == "FULL")
+            self.process_trigger('on_receive_heal', actual_heal, frame, is_fb, simulator)
+            
+        return actual_heal
+    # ▲▲▲

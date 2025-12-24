@@ -40,6 +40,18 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
         self.log_handles["System"] = open(os.path.join(self.log_dir, "System.txt"), 'w', encoding='utf-8')
         
         for char in self.characters:
+            # ▼▼▼ 追加: リジェネ(HoT)の処理 ▼▼▼
+            active_hots = []
+            for hot in char.active_hots:
+                if self.frame >= hot['next_tick']:
+                    # 回復実行
+                    char.heal(hot['heal_value'], hot['source'], self.frame, self)
+                    hot['next_tick'] += hot['interval']
+                
+                if self.frame < hot['end_frame']:
+                    active_hots.append(hot)
+            char.active_hots = active_hots
+            # ▲▲▲
             safe_name = "".join([c for c in char.name if c.isalnum() or c in (' ', '_', '-', '.')])
             self.log_handles[char.name] = open(os.path.join(self.log_dir, f"{safe_name}.txt"), 'w', encoding='utf-8')
             
