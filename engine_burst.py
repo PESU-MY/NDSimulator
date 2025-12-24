@@ -51,9 +51,17 @@ class BurstEngineMixin:
                 
                 if target_char:
                     char = target_char
-                    base_cd = 40.0
-                    if char.burst_stage in ['1', '2']: base_cd = 20.0 
+                    # ▼▼▼ 修正: クールダウン設定ロジック ▼▼▼
+                    # 1. JSONで指定されたクールタイムがあれば最優先で使用
+                    if getattr(char, 'burst_skill_cooldown', None) is not None:
+                        base_cd = char.burst_skill_cooldown
+                    # 2. 指定がなければデフォルト値 (I/II: 20s, III: 40s)
+                    else:
+                        base_cd = 40.0
+                        if char.burst_stage in ['1', '2']: base_cd = 20.0 
+                    
                     char.current_cooldown = base_cd * self.FPS
+                    # ▲▲▲ 修正ここまで ▲▲▲
                     
                     self.log(f"[Burst] {char.name} used Burst Stage {self.burst_state.split('_')[1]}", target_name="System")
                     self.log(f"[Burst] Activate!", target_name=char.name)

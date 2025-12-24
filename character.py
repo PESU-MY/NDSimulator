@@ -67,7 +67,16 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
             if skill_obj.effect_type == 'cumulative_stages':
                 for stage in skill_obj.stages:
                     if isinstance(stage, Skill): register_breakdown(stage)
-        for s in self.skills: register_breakdown(s)
+                    
+        # ▼▼▼ 追加: バーストスキルのクールタイム設定を保持 ▼▼▼
+        self.burst_skill_cooldown = None
+        for s in self.skills:
+            if s.trigger_type == 'on_use_burst_skill':
+                # JSONのパラメータはkwargsに入っている
+                cd = s.kwargs.get('cooldown_time') or s.kwargs.get('cooldown')
+                if cd is not None:
+                    self.burst_skill_cooldown = float(cd)
+        # ▲▲▲ 追加ここまで ▲▲▲
         
         self.original_weapon = self.weapon
         self.is_weapon_changed = False

@@ -138,11 +138,11 @@ if not os.path.exists('characters'): os.makedirs('characters')
 
 dummy_ct_skill = Skill(
     name="Dummy B1: CT Reduction",
-    trigger_type="on_use_burst_skill", 
+    trigger_type="on_burst_enter", 
     trigger_value=0,
     effect_type="cooldown_reduction",
     target="allies", 
-    value=5.0
+    value=5
 )
 
 dummy_barrier_skill = Skill(
@@ -175,7 +175,7 @@ all_characters = [burst1_nikke, dummy_b2, burst3_nikke, dummy_b3, dummy_b1]
 
 # 4. バーストローテーション
 rotation = [
-    [burst1_nikke],
+    [burst1_nikke,dummy_b1],
     [dummy_b2],
     [burst3_nikke, dummy_b3] 
 ]
