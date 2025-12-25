@@ -142,6 +142,7 @@
           "kwargs": {
             "effect_no": 8,
             "buff_type": "max_hp_rate",
+            "update_current_hp": true,
             "value_list": [0.264, 0.288, 0.312, 0.336, 0.36, 0.384, 0.408, 0.432, 0.456, 0.48],
             "duration": 20
           }

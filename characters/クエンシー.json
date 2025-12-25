@@ -21,6 +21,7 @@
       "kwargs": {
         "effect_no": 1,
         "buff_type": "max_hp_fixed",
+        "update_current_hp": true,
         "description": "最大HPが最も高いニケの最大HPのコピー",
         "scale_by_reference": true,
         "reference_stat": "max_hp",
@@ -68,6 +69,7 @@
           "kwargs": {
             "effect_no": 3,
             "buff_type": "max_hp_rate",
+            "update_current_hp": true,
             "value_list": [0.2193, 0.2437, 0.2681, 0.2925, 0.3168, 0.3412, 0.3656, 0.39, 0.4143, 0.4387],
             "duration": 5
           }

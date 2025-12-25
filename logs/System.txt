@@ -3,7 +3,7 @@ Character: Dummy_B1 (Atk:1)
 Character: エード (Atk:21307)
 Character: シンデレラ (Atk:17059)
 Character: Dummy_B3 (Atk:1)
-Character: Anis: Sparkling Summer (Atk:21307)
+Character: Dummy_B3 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3
@@ -11,9 +11,9 @@ Character: Anis: Sparkling Summer (Atk:21307)
 [Burst] Recorded burst end time for シンデレラ at frame 903
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
-[Burst] Anis: Sparkling Summer used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Anis: Sparkling Summer at frame 1806
+[Burst] Recorded burst end time for Dummy_B3 at frame 1806
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3
@@ -21,9 +21,9 @@ Character: Anis: Sparkling Summer (Atk:21307)
 [Burst] Recorded burst end time for シンデレラ at frame 2709
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
-[Burst] Anis: Sparkling Summer used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Anis: Sparkling Summer at frame 3612
+[Burst] Recorded burst end time for Dummy_B3 at frame 3612
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3
@@ -31,9 +31,9 @@ Character: Anis: Sparkling Summer (Atk:21307)
 [Burst] Recorded burst end time for シンデレラ at frame 4515
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
-[Burst] Anis: Sparkling Summer used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Anis: Sparkling Summer at frame 5418
+[Burst] Recorded burst end time for Dummy_B3 at frame 5418
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3
@@ -41,9 +41,9 @@ Character: Anis: Sparkling Summer (Atk:21307)
 [Burst] Recorded burst end time for シンデレラ at frame 6321
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
-[Burst] Anis: Sparkling Summer used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Anis: Sparkling Summer at frame 7224
+[Burst] Recorded burst end time for Dummy_B3 at frame 7224
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3
@@ -51,9 +51,9 @@ Character: Anis: Sparkling Summer (Atk:21307)
 [Burst] Recorded burst end time for シンデレラ at frame 8127
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
-[Burst] Anis: Sparkling Summer used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Anis: Sparkling Summer at frame 9030
+[Burst] Recorded burst end time for Dummy_B3 at frame 9030
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3
@@ -61,5 +61,5 @@ Character: Anis: Sparkling Summer (Atk:21307)
 [Burst] Recorded burst end time for シンデレラ at frame 9933
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] エード used Burst Stage 2
-[Burst] Anis: Sparkling Summer used Burst Stage 3
+[Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)

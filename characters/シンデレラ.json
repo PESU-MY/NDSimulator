@@ -59,6 +59,7 @@
       "kwargs": {
         "stack_name": "Beauty",
         "buff_type": "max_hp_rate",
+        "update_current_hp": true,
         "effect_no" : 5, 
         "value_list": [0.0098, 0.0107, 0.0113, 0.012, 0.0128, 0.0133, 0.0138, 0.0146, 0.0154, 0.016],
         "max_stack": 12,

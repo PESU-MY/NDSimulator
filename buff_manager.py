@@ -3,11 +3,12 @@ class BuffManager:
         self.buffs = {}
         self.active_stacks = {}
 
-    def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False, stack_amount=1):
+    def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False, stack_amount=1, linked_remove_tag=None):
         buff_data = {
             'val': value, 'end_frame': current_frame + duration_frames, 
             'source': source, 'tag': tag, 'shot_life': shot_duration, 'remove_on_reload': remove_on_reload
             ,'start_frame': current_frame  # ▼ 追加: 開始フレームを記録 (LIFO用)
+            ,'linked_remove_tag': linked_remove_tag  # ▼ 追加: 連動削除する対象のタグ
         }
         if stack_name:
             if stack_name in self.active_stacks:
@@ -19,6 +20,7 @@ class BuffManager:
                 stack_data['tag'] = tag
                 stack_data['shot_life'] = shot_duration
                 stack_data['remove_on_reload'] = remove_on_reload
+                stack_data['linked_remove_tag'] = linked_remove_tag # ▼ 追加
                 return stack_data['count']
             else:
                 self.active_stacks[stack_name] = {
@@ -26,6 +28,7 @@ class BuffManager:
                     'unit_value': value, 'end_frame': current_frame + duration_frames,
                     'tag': tag, 'shot_life': shot_duration, 'remove_on_reload': remove_on_reload,
                     'start_frame': current_frame  # ▼ 追加
+                    ,'linked_remove_tag': linked_remove_tag # ▼ 追加
                 }
                 return stack_amount
         else:
@@ -36,7 +39,9 @@ class BuffManager:
                     if b.get('source') == source: existing_buff = b; break
             if existing_buff: 
                 existing_buff.update(buff_data)
-                existing_buff['start_frame'] = current_frame # ▼ 更新時もタイムスタンプ更新
+                # updateではキーが増えない場合があるので明示的にセット
+                existing_buff['linked_remove_tag'] = linked_remove_tag 
+                existing_buff['start_frame'] = current_frame
             
             else: self.buffs[buff_type].append(buff_data)
             return 1
@@ -114,87 +119,79 @@ class BuffManager:
 
     def remove_buffs_by_tag(self, tag, current_frame):
         if not tag: return
-        # ▼▼▼ 内部関数: 削除対象判定 (リスト対応) ▼▼▼
+        
         def should_remove(b_tag):
-            if isinstance(b_tag, list):
-                return tag in b_tag
+            if isinstance(b_tag, list): return tag in b_tag
             return b_tag == tag
-        # ▲▲▲
+
         for buff_type in self.buffs:
-            self.buffs[buff_type] = [b for b in self.buffs[buff_type] if b.get('tag') != tag]
-        keys_to_remove = [k for k, v in self.active_stacks.items() if v.get('tag') == tag]
+            self.buffs[buff_type] = [b for b in self.buffs[buff_type] if not should_remove(b.get('tag'))]
+        
+        keys_to_remove = [k for k, v in self.active_stacks.items() if should_remove(v.get('tag'))]
         for k in keys_to_remove: del self.active_stacks[k]
 
     # ▼▼▼ 追加: LIFO方式でのデバフ解除 ▼▼▼
     def remove_debuffs_lifo(self, tag, count, current_frame):
-        """
-        指定されたタグ(tag)を持つバフ・スタックを、付与されたのが新しい順に count 個解除する。
-        スタック型の場合はスタック数を減らす。
-        """
         if count <= 0: return 0
-        
-        # 1. 解除候補（バフリストのエントリ または スタック）をすべて収集
         candidates = []
 
-        # ▼▼▼ 判定関数の定義 ▼▼▼
         def is_match(b_tag):
             if isinstance(b_tag, list): return tag in b_tag
             return b_tag == tag
-        # ▲▲▲
         
-        # (A) 通常バフリストから候補収集
         for b_type, b_list in self.buffs.items():
             for b in b_list:
                 if is_match(b.get('tag')):
-                    # 参照を保持して後で削除/変更できるようにする
                     candidates.append({
                         'type': 'list', 'buff_type': b_type, 'data': b, 
                         'start_frame': b.get('start_frame', 0)
                     })
                     
-        # (B) スタックから候補収集
         for s_name, s_data in self.active_stacks.items():
             if is_match(s_data.get('tag')):
-                # スタックの場合は現在のスタック数分だけ候補に入れる（1つずつ減らすため）
-                # ただし効率のため、スタックエントリ自体を1つの候補とし、処理時に count 分減らす
                 candidates.append({
                     'type': 'stack', 'stack_name': s_name, 'data': s_data, 
                     'start_frame': s_data.get('start_frame', 0)
                 })
 
-        # 2. 開始フレームの降順（新しい順）にソート
         candidates.sort(key=lambda x: x['start_frame'], reverse=True)
         
         removed_count = 0
-        
-        # 3. 候補を上から順に処理
+        tags_to_remove_linked = set() # 連動して削除すべきタグのリスト
+
         for cand in candidates:
             if removed_count >= count: break
             
+            # 連動削除タグのチェック
+            linked_tag = cand['data'].get('linked_remove_tag')
+
             if cand['type'] == 'list':
-                # リスト型バフ: 1つ削除
                 b_list = self.buffs[cand['buff_type']]
                 if cand['data'] in b_list:
                     b_list.remove(cand['data'])
                     removed_count += 1
+                    if linked_tag: tags_to_remove_linked.add(linked_tag)
                     
             elif cand['type'] == 'stack':
-                # スタック型バフ: 必要な分だけスタックを減らす
                 s_data = cand['data']
                 current_stack = s_data['count']
-                
                 needed = count - removed_count
                 to_remove = min(current_stack, needed)
-                
                 s_data['count'] -= to_remove
                 removed_count += to_remove
                 
-                # スタック0になったら削除
+                # スタックが0になった（消滅した）場合のみ連動削除を発動
                 if s_data['count'] <= 0:
                     del self.active_stacks[cand['stack_name']]
+                    if linked_tag: tags_to_remove_linked.add(linked_tag)
+        
+        # ▼▼▼ 連動削除の実行 ▼▼▼
+        # 解除されたデバフに設定されていた linked_remove_tag を持つバフを全て消す
+        for l_tag in tags_to_remove_linked:
+            self.remove_buffs_by_tag(l_tag, current_frame)
+        # ▲▲▲
                     
         return removed_count
-    # ▲▲▲ 追加ここまで ▲▲▲
 
     # ▼▼▼ 追加: 免疫 (Immunity) 関連 ▼▼▼
     def has_active_immunity(self, current_frame):
@@ -211,33 +208,49 @@ class BuffManager:
         return False
 
     def consume_immunity_stack(self, current_frame):
-        """免疫バフのスタックを1つ消費する (スタックがないタイプなら消費せずTrueを返す)"""
-
-        # ▼▼▼ 内部関数: タグ一致判定 (リスト対応) ▼▼▼
+        """
+        免疫バフのスタックを1つ消費する。
+        """
         def is_match(b_tag):
-            if isinstance(b_tag, list):
-                return 'immunity' in b_tag
+            if isinstance(b_tag, list): return 'immunity' in b_tag
             return b_tag == 'immunity'
-        # ▲▲▲
-        # 1. スタック型の免疫を優先して探し、減らす
-        # 辞書の変更エラーを防ぐため list() でラップするか、見つけたら即 return する
-        for s_name, s_data in self.active_stacks.items():
-            # 修正: is_match を使用して判定
-            if is_match(s_data.get('tag')) and (s_data['end_frame'] >= current_frame or s_data['shot_life'] > 0):
-                if s_data['count'] > 0:
-                    s_data['count'] -= 1
-                    # スタックが0になったら削除
-                    if s_data['count'] <= 0:
-                        del self.active_stacks[s_name]
-                    return True # 消費成功
+
+        # 1. アクティブスタックから検索（スタック消費型）
+        target_stack_name = None
         
-        # 2. スタック型でない免疫があれば、消費なしで機能する (回数制限なし免疫)
-        # (has_active_immunity は既にリスト対応済みと想定)
-        if self.has_active_immunity(current_frame):
-            return True
+        # 辞書のキーをリスト化してループ（イテレーション中の変更エラー防止）
+        for s_name in list(self.active_stacks.keys()):
+            s_data = self.active_stacks[s_name]
             
+            # タグ判定
+            if not is_match(s_data.get('tag')):
+                continue
+                
+            # 期限判定
+            is_active = False
+            if s_data['end_frame'] >= current_frame: is_active = True
+            elif s_data['shot_life'] > 0: is_active = True
+            
+            if is_active and s_data['count'] > 0:
+                target_stack_name = s_name
+                break 
+
+        if target_stack_name:
+            # 直接減算処理
+            self.active_stacks[target_stack_name]['count'] -= 1
+            
+            # スタック0以下なら削除
+            if self.active_stacks[target_stack_name]['count'] <= 0:
+                del self.active_stacks[target_stack_name]
+            return True
+
+        # 2. 通常バフリストから検索（回数制限なし型）
+        for b_list in self.buffs.values():
+            for b in b_list:
+                if is_match(b.get('tag')) and (b['end_frame'] >= current_frame or b['shot_life'] > 0):
+                    return True 
+        
         return False
-    # ▲▲▲ 追加ここまで ▲▲▲
 
     def remove_reload_buffs(self):
         for buff_type in self.buffs:
@@ -248,18 +261,17 @@ class BuffManager:
     def has_active_tag(self, tag, current_frame):
         if not tag: return False
 
-        # ▼▼▼ 内部関数: タグ一致判定 (リスト対応) ▼▼▼
         def is_match(b_tag):
-            if isinstance(b_tag, list):
-                return tag in b_tag
+            if isinstance(b_tag, list): return tag in b_tag
             return b_tag == tag
-        # ▲▲▲
 
         for buff_list in self.buffs.values():
             for b in buff_list:
-                if b.get('tag') == tag and (b['end_frame'] >= current_frame or b['shot_life'] > 0): return True
+                # 修正: is_match を使用
+                if is_match(b.get('tag')) and (b['end_frame'] >= current_frame or b['shot_life'] > 0): return True
         for stack in self.active_stacks.values():
-            if stack.get('tag') == tag and (stack['end_frame'] >= current_frame or stack['shot_life'] > 0): return True
+            # 修正: is_match を使用
+            if is_match(stack.get('tag')) and (stack['end_frame'] >= current_frame or stack['shot_life'] > 0): return True
         return False
 
     def get_total_value(self, buff_type, current_frame):

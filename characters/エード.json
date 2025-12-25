@@ -16,7 +16,7 @@
       "name": "Skill 1: お掃除を始めます、ご主人様 (免疫)",
       "trigger_type": "on_start",
       "trigger_value": 0,
-      "effect_type": "buff",
+      "effect_type": "stack_buff",
       "target": "allies",
       "kwargs": {
         "effect_no": 1,
@@ -52,10 +52,9 @@
       "name": "Skill 2: 休憩のお時間です、ご主人様 (免疫)",
       "trigger_type": "shot_count",
       "trigger_value": 420,
-      "effect_type": "buff",
+      "effect_type": "stack_buff",
       "target": "allies",
       "kwargs": {
-        "effect_no": 3,
         "buff_type": "debuff_immunity",
         "tag": "immunity",
         "stack_name": "完璧なメイド",
@@ -72,8 +71,8 @@
       "effect_type": "buff",
       "target": "allies",
       "kwargs": {
-        "effect_no": 4,
-        "buff_type": "max_hp_fix",
+        "effect_no": 3,
+        "buff_type": "max_hp_fixed",
         "scale_by_caster_stats": true,
         "target_stat": "max_hp",
         "stat_type": "finally",
@@ -95,8 +94,8 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
-            "effect_no": 5,
-            "buff_type": "max_hp_fix",
+            "effect_no": 4,
+            "buff_type": "max_hp_fixed",
             "scale_by_caster_stats": true,
             "target_stat": "max_hp",
             "stat_type": "finally",
