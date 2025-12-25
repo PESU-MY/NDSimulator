@@ -652,10 +652,35 @@ class SkillEngineMixin:
                 self.log(f"[DoT] Applied {skill.name} on Enemy (via {target.name})", target_name=target.name)
 
             elif skill.effect_type == 'damage':
-                profile = DamageProfile.create(**kwargs.get('profile', {}))
-                mult = kwargs.get('multiplier', 1.0)
-                loops = kwargs.get('loop_count', 1)
-
+                # ▼▼▼ 修正: DamageProfileの生成ロジック (createメソッドを使用) ▼▼▼
+                profile = DamageProfile.create(
+                    is_burst=kwargs.get('is_burst', False),
+                    is_core_hit=kwargs.get('is_core_hit', False),
+                    is_critical=kwargs.get('is_critical', False),
+                    
+                    # 重要: 防御無視フラグの取得
+                    is_ignore_def=kwargs.get('is_ignore_def', False) or kwargs.get('damage_type') == 'ignore_def',
+                    
+                    # 重要: スキル判定
+                    is_skill_damage=kwargs.get('is_skill_damage', True),
+                    
+                    # 重要: フルバースト補正の適用許可
+                    burst_buff_enabled=kwargs.get('burst_buff_enabled', False),
+                    
+                    force_full_burst=kwargs.get('force_full_burst', False),
+                    is_charge_attack=kwargs.get('is_charge_attack', False),
+                    is_pierce=kwargs.get('is_pierce', False),
+                    is_dot=kwargs.get('is_dot', False),
+                    is_split=kwargs.get('is_split', False),
+                    # ▼▼▼ 追加: 特殊スキルダメージフラグ ▼▼▼
+                    is_special_skill_damage=kwargs.get('is_special_skill_damage', False)
+                )
+                
+                # ダメージ倍率の取得 (value または multiplier)
+                mult = kwargs.get('value', 0)
+                if mult == 0: mult = kwargs.get('multiplier', 1.0)
+                
+                loops = int(kwargs.get('loop_count', 1))
                 # ▼▼▼ 追加: スタック数による倍率補正処理 ▼▼▼
                 # 1. 自身のバフスタック数でスケール (シンデレラ用)
                 if 'copy_stack_count' in kwargs:

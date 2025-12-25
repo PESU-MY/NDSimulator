@@ -12,8 +12,10 @@ class CharacterStatsMixin:
         return (self.base_atk * (1.0 + atk_rate)) + atk_fixed
 
     def calculate_strict_damage(self, mult, profile, is_full_burst, frame, enemy_def=0, enemy_element="None", enemy_core_size=3.0, enemy_size=5.0, debuff_manager=None):
+        # 1. 攻撃力計算
         final_atk = self.get_current_atk(frame)
         
+        # 2. 防御力・貫通計算
         def_debuff = self.buff_manager.get_total_value('def_debuff', frame)
         if debuff_manager:
             def_debuff += debuff_manager.get_total_value('def_debuff', frame)
@@ -23,18 +25,29 @@ class CharacterStatsMixin:
         if raw_damage_diff <= 0: return 1.0, False
         layer_atk = raw_damage_diff
         
+        # 3. 武器倍率・スキル倍率
         weapon_buff = self.buff_manager.get_total_value('weapon_dmg_buff', frame) if profile['is_weapon_attack'] else 0.0
         layer_weapon = mult * (1.0 + weapon_buff)
         
-        bucket_val = 1.0
-        if profile['burst_buff_enabled']:
-            if is_full_burst or profile.get('force_full_burst', False): bucket_val += 0.50
-        if profile['range_bonus_active']: bucket_val += 0.30
+        # 4. クリティカル計算 (バケット1)
+        bucket_crit_bonus = 0.0
         
+        # ▼▼▼ フルバースト補正 (ここを直接加算に修正) ▼▼▼
+        is_fb_active = False
+        if profile['burst_buff_enabled']:
+            # 条件を満たしたら必ず 0.5 を足す
+            if is_full_burst or profile.get('force_full_burst', False): 
+                bucket_crit_bonus += 0.50
+                is_fb_active = True
+        # ▲▲▲
+        
+        # 距離ボーナス
+        if profile['range_bonus_active']: bucket_crit_bonus += 0.30
+        
+        # 命中・コアヒット判定
         base_hit_size = self.weapon.hit_size
         hit_rate_buff = self.buff_manager.get_total_value('hit_rate_buff', frame)
         current_hit_size = max(0.01, base_hit_size * (1.0 - hit_rate_buff))
-        
         hit_prob = min(1.0, (enemy_size / current_hit_size) ** 2)
         
         can_core_hit = profile.get('is_weapon_attack', False) or profile.get('enable_core_hit', False)
@@ -51,22 +64,28 @@ class CharacterStatsMixin:
         
         if is_core:
             core_dmg_buff = self.buff_manager.get_total_value('core_dmg_buff', frame)
-            bucket_val += 1.0 + core_dmg_buff
+            bucket_crit_bonus += (1.0 + core_dmg_buff)
             
+        # クリティカル判定
         crit_rate = profile['crit_rate'] + self.buff_manager.get_total_value('crit_rate_buff', frame)
         is_crit_hit = False
-        if random.random() < crit_rate:
-            bucket_val += (0.50 + self.buff_manager.get_total_value('crit_dmg_buff', frame))
+        if random.random() < crit_rate or profile.get('force_critical', False):
+            crit_dmg_buff = self.buff_manager.get_total_value('crit_dmg_buff', frame)
+            bucket_crit_bonus += (0.50 + crit_dmg_buff)
             is_crit_hit = True
-        layer_crit = bucket_val
         
+        # 最終的なクリティカルレイヤー倍率
+        layer_crit = 1.0 + bucket_crit_bonus
+        
+        # 5. チャージ計算
         layer_charge = 1.0
         if profile['is_charge_attack']:
             charge_ratio_buff = self.buff_manager.get_total_value('charge_ratio_buff', frame)
             charge_dmg_buff = self.buff_manager.get_total_value('charge_dmg_buff', frame)
             layer_charge = (profile['charge_mult'] * (1.0 + charge_ratio_buff)) + charge_dmg_buff
             
-        bucket_dmg = 1.0
+        # 6. ダメージバフ計算 (バケット2)
+        bucket_dmg = 0.0
         bucket_dmg += self.buff_manager.get_total_value('atk_dmg_buff', frame)
         if profile['is_part_damage']: bucket_dmg += self.buff_manager.get_total_value('part_dmg_buff', frame)
         
@@ -74,17 +93,22 @@ class CharacterStatsMixin:
         if profile['is_pierce'] or is_pierce_buff > 0: 
             bucket_dmg += self.buff_manager.get_total_value('pierce_dmg_buff', frame)
             
-        if profile['is_ignore_def']: bucket_dmg += self.buff_manager.get_total_value('ignore_def_dmg_buff', frame)
+        if profile['is_ignore_def']: 
+            bucket_dmg += self.buff_manager.get_total_value('ignore_def_dmg_buff', frame)
+            
         if profile['is_dot']: bucket_dmg += self.buff_manager.get_total_value('dot_dmg_buff', frame)
         if profile['burst_buff_enabled'] and (is_full_burst or profile.get('force_full_burst', False)):
              bucket_dmg += self.buff_manager.get_total_value('burst_dmg_buff', frame)
         
+        layer_dmg = 1.0 + bucket_dmg
+        
+        # 7. 被ダメージデバフ
         taken_dmg_val = self.buff_manager.get_total_value('taken_dmg_debuff', frame)
         if debuff_manager:
             taken_dmg_val += debuff_manager.get_total_value('taken_dmg_debuff', frame)
         layer_taken = 1.0 + taken_dmg_val
         
-        layer_dmg = bucket_dmg
+        # 8. その他レイヤー
         layer_split = 1.0
         if profile['is_split']: layer_split += self.buff_manager.get_total_value('split_dmg_buff', frame)
         
@@ -94,15 +118,24 @@ class CharacterStatsMixin:
             elem_buff = self.buff_manager.get_total_value('elemental_buff', frame)
             layer_elem += 0.10 + elem_buff
             
-        # ▼▼▼ 追加: 特殊スキルダメージバフ (別枠乗算) ▼▼▼
         layer_special = 1.0
         if profile.get('is_special_skill_damage', False):
-            # special_skill_dmg_buff の合計値を取得して (1 + バフ量) とする
             sp_buff = self.buff_manager.get_total_value('special_skill_dmg_buff', frame)
             layer_special += sp_buff
+
+        total_dmg = layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem * layer_special
+        if self.name == "エイダ":
+            print(f"--- [DEBUG] Damage Calc ({self.name}) ---")
+            print(f"  SkillMult: {mult:.4f}")
+            print(f"  1.FinalAtk: {final_atk:.1f} (Base:{self.base_atk} + Rate:{self.buff_manager.get_total_value('atk_buff_rate', frame):.2f} + Fix:{self.buff_manager.get_total_value('atk_buff_fixed', frame):.1f})")
+            print(f"  2.DefIgnore: {profile['is_ignore_def']} (EffDef:{effective_def})")
+            print(f"  3.CritLayer: {layer_crit:.2f} (FullBurst:{is_full_burst}, IsCrit:{is_crit_hit})")
+            print(f"  4.DmgLayer : {layer_dmg:.2f} (IgnoreDefBuff:{self.buff_manager.get_total_value('ignore_def_dmg_buff', frame):.2f}, TotalBucket:{bucket_dmg:.2f})")
+            print(f"  Total: {total_dmg:,.0f}")
+            print(f"----------------------------------------")
             
         # 最終計算に layer_special を乗算
-        return layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem * layer_special, is_crit_hit
+        return total_dmg, is_crit_hit
 
     def calculate_reduced_frame(self, original_frame, rate_buff, fixed_buff):
         if rate_buff <= -1.0: return 9999
