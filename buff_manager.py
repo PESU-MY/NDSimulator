@@ -358,3 +358,32 @@ class BuffManager:
                 return True
         return False
     # ▲▲▲ 追加ここまで ▲▲▲
+
+    def extend_buff(self, tag, duration_frames, frame):
+        """
+        指定されたタグを持つバフ(またはスタック)の終了時間を延長する。
+        見つかって延長できた場合はTrue、見つからなかった場合はFalseを返す。
+        """
+        extended = False
+        
+        # 1. 通常バフの検索と延長
+        # お客様の環境では self.buffs = { 'type': [buff_list], ... } の辞書構造になっています
+        if hasattr(self, 'buffs'):
+            for buff_list in self.buffs.values():
+                for b in buff_list:
+                    if b.get('tag') == tag:
+                        # 現在の残り時間 + 追加時間
+                        remaining = max(0, b['end_frame'] - frame)
+                        b['end_frame'] = frame + remaining + duration_frames
+                        extended = True
+        
+        # 2. スタックバフの検索と延長
+        # active_stacks は辞書として存在しています
+        if hasattr(self, 'active_stacks'):
+            for stack_name, s_data in self.active_stacks.items():
+                if s_data.get('tag') == tag:
+                    remaining = max(0, s_data['end_frame'] - frame)
+                    s_data['end_frame'] = frame + remaining + duration_frames
+                    extended = True
+                
+        return extended

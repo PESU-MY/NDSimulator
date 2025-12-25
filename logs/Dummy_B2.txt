@@ -1,85 +1,85 @@
 [Shoot] 時間:  0.12s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  0.15s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  0.20s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  0.23s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  0.15s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  0.20s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  0.23s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  0.28s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  0.32s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  0.37s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  0.37s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  0.40s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  0.45s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  0.48s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  0.53s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  0.53s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  0.57s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  0.62s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  0.65s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  0.70s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  0.70s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  0.73s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  0.78s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  0.78s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  0.82s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  0.87s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  0.90s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  0.87s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  0.90s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  0.95s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  0.98s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  1.03s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  1.03s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  1.07s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  1.12s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  1.12s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  1.15s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  1.20s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  1.20s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.23s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.28s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  1.32s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  1.32s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.37s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.40s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.45s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.48s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.53s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  1.57s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  1.62s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  1.65s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  1.70s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  1.62s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  1.65s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  1.70s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  1.73s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.78s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  1.82s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:  1.87s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  1.82s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  1.87s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  1.90s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.95s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  1.98s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:  2.03s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:  2.07s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  2.03s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  2.07s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  2.12s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  2.15s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  2.20s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  2.23s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  2.23s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  2.28s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  2.32s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  2.37s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  2.40s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  2.37s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  2.40s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  2.45s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  2.48s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  2.48s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  2.53s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  2.57s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  3.27s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  3.30s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  3.35s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:  3.38s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  3.38s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  3.43s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  3.47s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  3.47s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  3.52s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  3.55s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  3.60s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  3.55s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  3.60s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  3.63s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  3.68s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  3.72s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  3.72s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  3.77s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  3.80s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  3.80s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  3.85s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  3.88s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  3.93s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  3.97s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  3.97s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  4.02s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.05s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.10s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  4.13s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  4.13s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.18s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.22s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.27s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -87,9 +87,9 @@
 [Shoot] 時間:  4.35s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.38s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.43s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  4.47s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:  4.47s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  4.52s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  4.55s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  4.55s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.60s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.63s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.68s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -97,7 +97,7 @@
 [Shoot] 時間:  4.77s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.80s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.85s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:  4.88s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  4.88s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.93s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  4.97s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:  5.02s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -108,7 +108,7 @@
 [Shoot] 時間:  5.18s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  5.22s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  5.27s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:  5.30s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  5.30s | 弾数: 10/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:  5.35s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  5.38s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  5.43s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -128,7 +128,7 @@
 [Shoot] 時間:  6.67s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  6.70s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  6.75s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:  6.78s | 弾数: 50/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:  6.78s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  6.83s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  6.87s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  6.92s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -167,7 +167,7 @@
 [Shoot] 時間:  8.28s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  8.33s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  8.37s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:  8.42s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:  8.42s | 弾数: 11/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:  8.45s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  8.50s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:  8.53s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -198,7 +198,7 @@
 [Shoot] 時間: 10.23s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 10.27s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 10.32s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 10.35s | 弾数: 40/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 10.35s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 10.40s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 10.43s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 10.48s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -296,24 +296,24 @@
 [Shoot] 時間: 14.97s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 15.00s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 15.05s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 15.08s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 15.13s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 15.08s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 15.13s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 15.17s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 15.87s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 15.90s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 15.95s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 15.98s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 15.90s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 15.95s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 15.98s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 16.03s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 16.07s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 16.07s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 16.12s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 16.15s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 16.20s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 16.15s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 16.20s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 16.23s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 16.28s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 16.32s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 16.28s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 16.32s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 16.37s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 16.40s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 16.45s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 16.45s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 16.48s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 16.53s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 16.57s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -324,65 +324,65 @@
 [Shoot] 時間: 16.78s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 16.82s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 16.87s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 16.90s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 16.95s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 16.98s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 16.90s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 16.95s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 16.98s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 17.03s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 17.07s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 17.12s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 17.15s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 17.12s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 17.15s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 17.20s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 17.23s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 17.28s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 17.28s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 17.32s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 17.37s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 17.40s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 17.45s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 17.37s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 17.40s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 17.45s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 17.48s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 17.53s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 17.57s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 17.57s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 17.62s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 17.65s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 17.65s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 17.70s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 17.73s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 17.78s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 17.82s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 17.82s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 17.87s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 17.90s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 17.95s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 17.98s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 18.03s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 18.07s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 18.12s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 18.15s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 18.07s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 18.12s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 18.15s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 18.20s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 18.23s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 18.28s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 18.28s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 18.32s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.02s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 19.05s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 19.05s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.10s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.13s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.18s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.22s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.27s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.30s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 19.35s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 19.38s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 19.35s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 19.38s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 19.43s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.47s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.52s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.55s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.60s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 19.63s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 19.68s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 19.63s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 19.68s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.72s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.77s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 19.80s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 19.85s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 19.88s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 19.85s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 19.88s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 19.93s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 19.97s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 19.97s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 20.02s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 20.05s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Burst] Activate!
@@ -443,7 +443,7 @@
 [Shoot] 時間: 23.00s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 23.03s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 23.08s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 23.12s | 弾数: 36/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 23.12s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 23.17s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 23.20s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 23.25s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -474,7 +474,7 @@
 [Shoot] 時間: 24.28s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 24.33s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 24.37s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 24.42s | 弾数:  5/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 24.42s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 24.45s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 24.50s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 24.53s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -485,7 +485,7 @@
 [Shoot] 時間: 25.40s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 25.43s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 25.48s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 25.52s | 弾数: 54/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 25.52s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 25.57s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 25.60s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 25.65s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -530,7 +530,7 @@
 [Shoot] 時間: 27.27s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 27.32s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 27.35s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 27.40s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 27.40s | 弾数:  9/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 27.43s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 27.48s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 27.52s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -574,7 +574,7 @@
 [Shoot] 時間: 29.75s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 29.80s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 29.83s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 29.88s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 29.88s | 弾数: 25/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 29.92s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 29.97s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 30.00s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -584,25 +584,25 @@
 [Shoot] 時間: 30.17s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 30.22s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 30.25s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 30.30s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 30.30s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 30.33s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 30.38s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 30.42s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 30.47s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 30.50s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 30.55s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 30.58s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 30.63s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 30.55s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 30.58s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 30.63s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 30.67s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 30.72s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 30.75s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 30.80s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 30.83s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 30.88s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 30.92s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 30.88s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 30.92s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 31.62s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 31.65s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 31.70s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 31.70s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 31.73s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 31.78s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 31.82s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -611,7 +611,7 @@
 [Shoot] 時間: 31.95s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 31.98s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 32.03s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 32.07s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 32.07s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 32.12s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 32.15s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 32.20s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -620,19 +620,19 @@
 [Shoot] 時間: 32.32s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 32.37s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 32.40s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 32.45s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 32.45s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 32.48s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 32.53s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 32.57s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 32.62s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 32.57s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 32.62s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 32.65s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 32.70s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 32.70s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 32.73s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 32.78s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 32.78s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 32.82s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 32.87s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 32.90s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 32.95s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 32.87s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 32.90s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 32.95s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 32.98s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.03s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.07s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -640,35 +640,35 @@
 [Shoot] 時間: 33.15s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.20s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.23s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 33.28s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 33.28s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 33.32s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.37s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.40s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.45s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.48s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 33.53s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 33.53s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.57s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.62s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.65s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.70s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.73s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.78s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 33.82s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 33.82s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 33.87s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.90s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.95s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 33.98s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 34.03s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 34.07s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 34.07s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 34.77s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 34.80s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 34.80s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 34.85s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 34.88s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 34.88s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 34.93s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 34.97s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 34.97s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 35.02s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 35.05s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 35.10s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 35.05s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 35.10s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Burst] Activate!
 [Shoot] 時間: 35.13s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 35.18s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -679,7 +679,7 @@
 [Shoot] 時間: 35.38s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 35.43s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 35.47s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 35.52s | 弾数: 41/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 35.52s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 35.55s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 35.60s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 35.63s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -716,7 +716,7 @@
 [Shoot] 時間: 36.93s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 36.97s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 37.02s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 37.05s | 弾数:  4/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 37.05s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 37.10s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 37.13s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 37.18s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -772,7 +772,7 @@
 [Shoot] 時間: 39.92s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 39.95s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 40.00s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 40.03s | 弾数:  8/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 40.03s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 40.08s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 40.12s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 40.17s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -807,7 +807,7 @@
 [Shoot] 時間: 42.02s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 42.07s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 42.10s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 42.15s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 42.15s | 弾数: 33/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 42.18s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 42.23s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 42.27s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -866,40 +866,40 @@
 [Shoot] 時間: 45.13s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 45.17s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 45.22s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 45.25s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 45.25s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 45.30s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 45.33s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 45.33s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 45.38s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 45.42s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 45.42s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 45.47s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 45.50s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 45.55s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 45.58s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 45.63s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 45.63s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 45.67s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 45.72s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 45.75s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 45.80s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 45.83s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 45.88s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 45.92s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 45.88s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 45.92s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 45.97s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 46.00s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 46.00s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.05s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 46.08s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 46.08s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 46.13s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 46.17s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 46.17s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.22s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.25s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.30s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.33s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 46.38s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 46.38s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.42s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.47s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.50s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.55s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 46.58s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 46.63s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 46.58s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 46.63s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 46.67s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 47.37s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 47.40s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -910,56 +910,56 @@
 [Shoot] 時間: 47.62s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 47.65s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 47.70s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 47.73s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 47.78s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 47.73s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 47.78s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 47.82s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 47.87s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 47.90s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 47.95s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 47.98s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.03s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 48.07s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 48.07s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 48.12s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 48.15s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 48.20s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 48.23s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 48.15s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 48.20s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 48.23s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 48.28s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.32s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 48.37s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 48.40s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 48.37s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 48.40s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 48.45s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.48s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.53s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.57s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 48.62s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 48.62s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.65s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.70s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 48.73s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 48.73s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.78s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.82s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.87s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.90s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.95s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 48.98s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.03s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 49.03s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 49.07s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.12s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 49.12s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 49.15s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 49.20s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.23s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.28s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.32s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 49.23s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 49.28s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 49.32s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 49.37s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 49.40s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 49.45s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.48s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 49.48s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 49.53s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.57s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 49.57s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 49.62s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.65s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 49.65s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 49.70s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.73s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 49.78s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 49.73s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 49.78s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 49.82s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Burst] Activate!
 [Shoot] 時間: 50.52s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -982,7 +982,7 @@
 [Shoot] 時間: 51.22s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 51.27s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 51.30s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 51.35s | 弾数: 39/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 51.35s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 51.38s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 51.43s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 51.47s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -996,20 +996,20 @@
 [Shoot] 時間: 51.80s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 51.85s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 51.88s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 51.93s | 弾数: 25/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 51.93s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 51.97s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 52.02s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 52.02s | 弾数: 23/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 52.05s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 52.10s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 52.13s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 52.18s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 52.18s | 弾数: 19/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 52.22s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 52.27s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 52.30s | 弾数: 16/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 52.30s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 52.35s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 52.38s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 52.43s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 52.47s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 52.47s | 弾数: 12/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 52.52s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 52.55s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 52.60s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1038,7 +1038,7 @@
 [Shoot] 時間: 54.20s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 54.25s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 54.28s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 54.33s | 弾数: 43/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 54.33s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 54.37s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 54.42s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 54.45s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1064,7 +1064,7 @@
 [Shoot] 時間: 55.28s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 55.33s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 55.37s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 55.42s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 55.42s | 弾数: 17/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 55.45s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 55.50s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 55.53s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1072,7 +1072,7 @@
 [Shoot] 時間: 55.62s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 55.67s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 55.70s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 55.75s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 55.75s | 弾数:  9/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 55.78s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 55.83s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 55.87s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1091,7 +1091,7 @@
 [Shoot] 時間: 57.07s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 57.10s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 57.15s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 57.18s | 弾数: 50/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 57.18s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 57.23s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 57.27s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 57.32s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1136,7 +1136,7 @@
 [Shoot] 時間: 58.93s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 58.98s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 59.02s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 59.07s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 59.07s | 弾数:  5/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 59.10s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 59.15s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 59.18s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1150,114 +1150,114 @@
 [Shoot] 時間: 60.17s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 60.22s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 60.25s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 60.30s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 60.30s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 60.33s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 60.38s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 60.38s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 60.42s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 60.47s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 60.50s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 60.55s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 60.58s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 60.47s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 60.50s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 60.55s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 60.58s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 60.63s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 60.67s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 60.72s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 60.67s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 60.72s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 60.75s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 60.80s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 60.83s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 60.88s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 60.92s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 60.92s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 60.97s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.00s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.05s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.08s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 61.13s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 61.17s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 61.13s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 61.17s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 61.22s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.25s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 61.30s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 61.30s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 61.33s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 61.38s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.42s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 61.47s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 61.47s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 61.50s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.55s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.58s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.63s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 61.67s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 61.67s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 61.72s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.75s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 61.80s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 61.83s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 61.83s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 61.88s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 61.92s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 61.97s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 62.00s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 62.05s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 62.08s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 62.13s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 61.92s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 61.97s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 62.00s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 62.05s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 62.08s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 62.13s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 62.17s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 62.22s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 62.25s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 62.25s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 62.30s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 62.33s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 62.38s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 62.33s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 62.38s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 62.42s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.12s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 63.15s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 63.20s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 63.15s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 63.20s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 63.23s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 63.28s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 63.32s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 63.28s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 63.32s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.37s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.40s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.45s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.48s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.53s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 63.57s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 63.57s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 63.62s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.65s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.70s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 63.73s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 63.73s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.78s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.82s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.87s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 63.90s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 63.90s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.95s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 63.98s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 64.03s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 64.07s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 64.12s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 64.07s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 64.12s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 64.15s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 64.20s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 64.23s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 64.28s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 64.20s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 64.23s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 64.28s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 64.32s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 64.37s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 64.40s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 64.45s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 64.40s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 64.45s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 64.48s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 64.53s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 64.53s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 64.57s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 64.62s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 64.65s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 64.70s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 64.73s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 64.78s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 64.82s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 64.87s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 64.90s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 64.73s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 64.78s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 64.82s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 64.87s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 64.90s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 64.95s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 64.98s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 65.03s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 65.03s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 65.07s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 65.12s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 65.15s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 65.20s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 65.20s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Burst] Activate!
 [Shoot] 時間: 65.23s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 65.28s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 65.32s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 65.37s | 弾数:  5/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 65.37s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 65.40s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 65.45s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 65.48s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1299,7 +1299,7 @@
 [Shoot] 時間: 67.63s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 67.68s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 67.72s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 67.77s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 67.77s | 弾数: 23/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 67.80s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 67.85s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 67.88s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1308,7 +1308,7 @@
 [Shoot] 時間: 68.02s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 68.05s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 68.10s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 68.13s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 68.13s | 弾数: 14/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 68.18s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 68.22s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 68.27s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1381,7 +1381,7 @@
 [Shoot] 時間: 71.70s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 71.75s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 71.78s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 71.83s | 弾数:  1/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 71.83s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 71.87s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 72.57s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 72.60s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1417,13 +1417,13 @@
 [Shoot] 時間: 73.85s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 73.90s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 73.93s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 73.98s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 73.98s | 弾数: 25/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 74.02s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 74.07s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 74.10s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 74.15s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 74.18s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 74.23s | 弾数: 19/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 74.23s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 74.27s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 74.32s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 74.35s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1441,63 +1441,63 @@
 [Shoot] 時間: 74.85s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 74.90s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 74.93s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 74.98s | 弾数:  1/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 74.98s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 75.02s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 75.72s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 75.75s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 75.80s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 75.80s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 75.83s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 75.88s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 75.92s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 75.92s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 75.97s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 76.00s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 76.00s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 76.05s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 76.08s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 76.08s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 76.13s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 76.17s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 76.22s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 76.25s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 76.30s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 76.30s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 76.33s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 76.38s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 76.42s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 76.38s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 76.42s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 76.47s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 76.50s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 76.55s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 76.58s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 76.58s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 76.63s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 76.67s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 76.72s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 76.75s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 76.80s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 76.67s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 76.72s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 76.75s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 76.80s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 76.83s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 76.88s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 76.92s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 76.97s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 77.00s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 77.05s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 77.08s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 76.97s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 77.00s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 77.05s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 77.08s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 77.13s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 77.17s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 77.22s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 77.25s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 77.25s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 77.30s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 77.33s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 77.38s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 77.33s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 77.38s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 77.42s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 77.47s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 77.47s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 77.50s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 77.55s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 77.55s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 77.58s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 77.63s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 77.67s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 77.72s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 77.63s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 77.67s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 77.72s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 77.75s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 77.80s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 77.80s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 77.83s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 77.88s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 77.92s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 77.97s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 77.97s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 78.00s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 78.05s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 78.08s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -1510,33 +1510,33 @@
 [Shoot] 時間: 79.03s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.07s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.12s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 79.15s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 79.15s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.20s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 79.23s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 79.28s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 79.32s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 79.23s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 79.28s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 79.32s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 79.37s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 79.40s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 79.45s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 79.40s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 79.45s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.48s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 79.53s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 79.53s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.57s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 79.62s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 79.62s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.65s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.70s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.73s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.78s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.82s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 79.87s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 79.87s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 79.90s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 79.95s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 79.98s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 80.03s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 80.07s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 79.98s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 80.03s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 80.07s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 80.12s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 80.15s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 80.20s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 80.23s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 80.15s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 80.20s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 80.23s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Burst] Activate!
 [Shoot] 時間: 80.28s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 80.32s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1549,7 +1549,7 @@
 [Shoot] 時間: 80.62s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 80.65s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 80.70s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 80.73s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 80.73s | 弾数: 14/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 80.78s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 80.82s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 80.87s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1616,7 +1616,7 @@
 [Shoot] 時間: 84.05s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 84.10s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 84.13s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 84.18s | 弾数:  7/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 84.18s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 84.22s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 84.27s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 84.30s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1686,7 +1686,7 @@
 [Shoot] 時間: 87.62s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 88.32s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 88.35s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 88.40s | 弾数: 57/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 88.40s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 88.43s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 88.48s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 88.52s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1734,93 +1734,93 @@
 [Shoot] 時間: 90.27s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 90.32s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 90.35s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 90.40s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 90.40s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 90.43s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 90.48s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 90.52s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 90.57s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 90.57s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 90.60s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 90.65s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 90.68s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 90.73s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 90.77s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 90.77s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 91.47s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 91.50s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 91.55s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 91.58s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 91.63s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 91.58s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 91.63s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 91.67s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 91.72s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 91.72s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 91.75s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 91.80s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 91.83s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 91.88s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 91.92s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 91.97s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 92.00s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 91.83s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 91.88s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 91.92s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 91.97s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 92.00s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.05s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 92.08s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 92.13s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 92.08s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 92.13s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.17s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.22s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.25s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 92.30s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 92.30s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.33s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.38s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 92.42s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 92.47s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 92.42s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 92.47s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 92.50s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.55s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 92.58s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 92.58s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.63s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 92.67s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 92.67s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.72s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 92.75s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 92.75s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.80s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.83s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 92.88s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 92.92s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 92.92s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 92.97s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 93.00s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 93.05s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 93.00s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 93.05s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 93.08s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.13s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 93.17s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 93.17s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.22s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.25s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 93.30s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 93.30s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 93.33s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 93.38s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 93.38s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 93.42s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 93.47s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 93.47s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.50s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 93.55s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 93.58s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 93.55s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 93.58s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.63s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.67s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.72s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 93.75s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 93.75s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.80s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.83s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 93.88s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 93.92s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 94.62s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 94.62s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 94.65s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 94.70s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 94.73s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 94.78s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 94.82s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 94.87s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 94.90s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 94.78s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 94.82s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 94.87s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 94.90s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 94.95s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 94.98s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 94.98s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 95.03s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 95.07s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 95.12s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 95.07s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 95.12s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 95.15s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 95.20s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間: 95.23s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間: 95.28s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間: 95.28s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 95.32s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Burst] Activate!
 [Shoot] 時間: 95.37s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1831,7 +1831,7 @@
 [Shoot] 時間: 95.57s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 95.62s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 95.65s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 95.70s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 95.70s | 弾数: 33/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 95.73s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 95.78s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 95.82s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1843,7 +1843,7 @@
 [Shoot] 時間: 96.07s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.12s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.15s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 96.20s | 弾数: 21/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 96.20s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.23s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.28s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.32s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1858,7 +1858,7 @@
 [Shoot] 時間: 96.70s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.73s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.78s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 96.82s | 弾数:  6/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間: 96.82s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.87s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.90s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 96.95s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -1874,7 +1874,7 @@
 [Shoot] 時間: 98.02s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 98.05s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 98.10s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間: 98.13s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間: 98.13s | 弾数: 50/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間: 98.18s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 98.22s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間: 98.27s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2000,7 +2000,7 @@
 [Shoot] 時間:104.57s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:104.60s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:104.65s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:104.68s | 弾数: 44/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:104.68s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:104.73s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:104.77s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:104.82s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2017,18 +2017,18 @@
 [Shoot] 時間:105.27s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:105.32s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:105.35s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:105.40s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:105.40s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:105.43s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:105.48s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:105.52s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:105.52s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:105.57s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:105.60s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:105.65s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:105.60s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:105.65s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:105.68s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:105.73s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:105.77s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:105.77s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:105.82s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:105.85s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:105.85s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:105.90s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:105.93s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:105.98s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -2036,76 +2036,76 @@
 [Shoot] 時間:106.07s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:106.10s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:106.15s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:106.18s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:106.18s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:106.23s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:106.27s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:106.32s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:106.35s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:106.40s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:106.40s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:106.43s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:106.48s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:106.52s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:107.22s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:107.22s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:107.25s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:107.30s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:107.30s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:107.33s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:107.38s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:107.38s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:107.42s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:107.47s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:107.50s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:107.55s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:107.58s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:107.63s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:107.58s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:107.63s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:107.67s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:107.72s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:107.75s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:107.75s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:107.80s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:107.83s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:107.88s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:107.88s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:107.92s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:107.97s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:108.00s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:108.05s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:108.08s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.13s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:108.13s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:108.17s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.22s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:108.22s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:108.25s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.30s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.33s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:108.30s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:108.33s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:108.38s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.42s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.47s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:108.42s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:108.47s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:108.50s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:108.55s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:108.58s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.63s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:108.63s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:108.67s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.72s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.75s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.80s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:108.72s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:108.75s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:108.80s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:108.83s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:108.88s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:108.92s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:108.97s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:109.00s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:109.05s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:108.97s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:109.00s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:109.05s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:109.08s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:109.13s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:109.13s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:109.17s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:109.22s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:109.22s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:109.25s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:109.30s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:109.30s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:109.33s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:109.38s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:109.42s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:109.42s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:109.47s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:109.50s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:109.55s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:109.55s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:109.58s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:109.63s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:109.67s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:110.37s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:109.67s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:110.37s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Burst] Activate!
 [Shoot] 時間:110.40s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:110.45s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2137,7 +2137,7 @@
 [Shoot] 時間:111.53s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:111.57s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:111.62s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:111.65s | 弾数: 28/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:111.65s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:111.70s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:111.73s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:111.78s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2151,7 +2151,7 @@
 [Shoot] 時間:112.12s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.15s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.20s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:112.23s | 弾数: 14/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:112.23s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.28s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.32s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.37s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2162,7 +2162,7 @@
 [Shoot] 時間:112.57s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.62s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.65s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:112.70s | 弾数:  3/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:112.70s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.73s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.78s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:112.82s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2183,7 +2183,7 @@
 [Shoot] 時間:114.10s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:114.13s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:114.18s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:114.22s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:114.22s | 弾数: 42/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:114.27s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:114.30s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:114.35s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2212,7 +2212,7 @@
 [Shoot] 時間:115.30s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:115.35s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:115.38s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:115.43s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:115.43s | 弾数: 13/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:115.47s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:115.52s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:115.55s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2233,7 +2233,7 @@
 [Shoot] 時間:116.83s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:116.87s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:116.92s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:116.95s | 弾数: 52/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:116.95s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:117.00s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:117.03s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:117.08s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2261,7 +2261,7 @@
 [Shoot] 時間:118.00s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:118.03s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:118.08s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:118.12s | 弾数: 24/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:118.12s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:118.17s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:118.20s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:118.25s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2283,14 +2283,14 @@
 [Shoot] 時間:118.92s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:118.95s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:119.00s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:119.03s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:119.08s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:119.03s | 弾数:  2/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:119.08s | 弾数:  1/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:119.12s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:119.82s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:119.85s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:119.90s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:119.93s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:119.98s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:119.98s | 弾数: 55/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:120.02s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:120.07s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:120.10s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2299,113 +2299,113 @@
 [Shoot] 時間:120.23s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:120.27s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:120.32s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:120.35s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:120.40s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:120.35s | 弾数: 46/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:120.40s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:120.43s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:120.48s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:120.48s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:120.52s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:120.57s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:120.60s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:120.60s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:120.65s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:120.68s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:120.73s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:120.77s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:120.68s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:120.73s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:120.77s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:120.82s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:120.85s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:120.90s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:120.93s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:120.98s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:120.93s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:120.98s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:121.02s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.07s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.10s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:121.15s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:121.18s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:121.15s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:121.18s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:121.23s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.27s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.32s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.35s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.40s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.43s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:121.48s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:121.48s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.52s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:121.57s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:121.57s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:121.60s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.65s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.68s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.73s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:121.77s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:121.82s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:121.77s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:121.82s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.85s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:121.90s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:121.93s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:121.98s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:121.98s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:122.02s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:122.07s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:122.10s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:122.15s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:122.18s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:122.23s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:122.15s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:122.18s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:122.23s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:122.27s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:122.97s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:122.97s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.00s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.05s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.08s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:123.13s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:123.13s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:123.17s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:123.22s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:123.22s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:123.25s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:123.30s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:123.30s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:123.33s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.38s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:123.42s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:123.47s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:123.50s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:123.42s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:123.47s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:123.50s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.55s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:123.58s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:123.58s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:123.63s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.67s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.72s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.75s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:123.80s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:123.80s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.83s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:123.88s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:123.92s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:123.97s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:123.92s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:123.97s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:124.00s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:124.05s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:124.08s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:124.13s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:124.17s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:124.05s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:124.08s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:124.13s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:124.17s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:124.22s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:124.25s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:124.30s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:124.30s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:124.33s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:124.38s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:124.38s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:124.42s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:124.47s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:124.50s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:124.55s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:124.58s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:124.63s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:124.58s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:124.63s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:124.67s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:124.72s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:124.72s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:124.75s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:124.80s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:124.83s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:124.88s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:124.92s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:124.97s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:125.00s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:124.92s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:124.97s | 弾数: 11/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:125.00s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:125.05s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:125.08s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:125.13s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:125.17s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:125.22s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:125.25s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:125.25s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:125.30s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:125.33s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:125.38s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:125.42s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:125.38s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:125.42s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Burst] Activate!
 [Shoot] 時間:126.12s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:126.15s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2431,7 +2431,7 @@
 [Shoot] 時間:126.98s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:127.03s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:127.07s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:127.12s | 弾数: 35/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:127.12s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:127.15s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:127.20s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:127.23s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2509,7 +2509,7 @@
 [Shoot] 時間:130.88s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:130.93s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:130.97s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:131.02s | 弾数: 17/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:131.02s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:131.05s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:131.10s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:131.13s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2533,12 +2533,12 @@
 [Shoot] 時間:132.53s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:132.58s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:132.62s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:132.67s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:132.67s | 弾数: 53/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:132.70s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:132.75s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:132.78s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:132.83s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:132.87s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:132.87s | 弾数: 48/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:132.92s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:132.95s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:133.00s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2560,7 +2560,7 @@
 [Shoot] 時間:133.67s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:133.70s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:133.75s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:133.78s | 弾数: 26/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:133.78s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:133.83s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:133.87s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:133.92s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2592,29 +2592,29 @@
 [Shoot] 時間:135.65s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:135.68s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:135.73s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:135.77s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:135.77s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:135.82s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:135.85s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:135.85s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:135.90s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:135.93s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:135.93s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:135.98s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.02s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:136.07s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:136.10s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:136.07s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:136.10s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:136.15s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.18s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:136.23s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:136.23s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:136.27s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:136.32s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:136.32s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.35s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:136.40s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:136.43s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:136.40s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:136.43s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.48s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.52s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.57s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.60s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.65s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:136.68s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:136.68s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.73s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.77s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.82s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -2622,74 +2622,74 @@
 [Shoot] 時間:136.90s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.93s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:136.98s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:137.02s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:137.07s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:137.10s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:137.02s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:137.07s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:137.10s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:137.15s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:137.18s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:137.18s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:137.23s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:137.27s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:137.27s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:137.32s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:137.35s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:137.40s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:137.43s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:137.48s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:137.48s | 弾数: 13/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:137.52s | 弾数: 12/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:137.57s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:137.60s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:137.65s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:137.68s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:137.68s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:137.73s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:137.77s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:137.82s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:137.82s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:137.85s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:137.90s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:137.93s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:137.98s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:137.93s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:137.98s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:138.02s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:138.72s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:138.72s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:138.75s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:138.80s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:138.83s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:138.88s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:138.83s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:138.88s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:138.92s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:138.97s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:139.00s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:139.05s | 弾数: 51/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:139.05s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.08s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.13s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:139.17s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:139.17s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.22s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.25s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.30s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:139.33s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:139.33s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.38s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:139.42s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:139.47s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:139.47s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.50s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:139.55s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:139.55s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.58s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.63s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.67s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:139.72s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:139.75s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:139.80s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:139.83s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:139.72s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:139.75s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:139.80s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:139.83s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:139.88s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.92s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:139.97s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:140.00s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:140.05s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:140.08s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:140.08s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:140.13s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:140.17s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:140.22s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:140.25s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:140.22s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:140.25s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:140.30s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:140.33s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:140.33s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:140.38s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:140.42s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:140.47s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:140.42s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:140.47s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Burst] Activate!
 [Shoot] 時間:140.50s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:140.55s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2808,7 +2808,7 @@
 [Shoot] 時間:146.55s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:146.60s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:146.63s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:146.68s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:146.68s | 弾数: 19/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:146.72s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:146.77s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:146.80s | 弾数: 16/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2832,7 +2832,7 @@
 [Shoot] 時間:148.20s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:148.25s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:148.28s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:148.33s | 弾数: 55/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:148.33s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:148.37s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:148.42s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:148.45s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2852,7 +2852,7 @@
 [Shoot] 時間:149.03s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:149.08s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:149.12s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:149.17s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:149.17s | 弾数: 35/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:149.20s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:149.25s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:149.28s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2863,7 +2863,7 @@
 [Shoot] 時間:149.50s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:149.53s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:149.58s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:149.62s | 弾数: 24/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:149.62s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:149.67s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:149.70s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:149.75s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -2885,83 +2885,83 @@
 [Shoot] 時間:150.42s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:150.45s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:150.50s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:150.53s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:150.58s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:150.62s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:150.53s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:150.58s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:150.62s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:151.32s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:151.35s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:151.35s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:151.40s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:151.43s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:151.48s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:151.52s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:151.57s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:151.60s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:151.60s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:151.65s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:151.68s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:151.68s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:151.73s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:151.77s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:151.77s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:151.82s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:151.85s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:151.85s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:151.90s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:151.93s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:151.93s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:151.98s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.02s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:152.02s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.07s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.10s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.15s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.18s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.23s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:152.23s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:152.27s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.32s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.35s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:152.40s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.43s | 弾数: 32/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.48s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:152.43s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:152.48s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:152.52s | 弾数: 30/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.57s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.60s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:152.57s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:152.60s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:152.65s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.68s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.73s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.77s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.82s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:152.77s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:152.82s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.85s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.90s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:152.90s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:152.93s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:152.98s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:152.98s | 弾数: 19/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:153.02s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:153.07s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:153.07s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:153.10s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:153.15s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:153.15s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:153.18s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:153.23s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:153.27s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:153.32s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:153.35s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:153.35s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:153.40s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:153.43s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:153.48s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:153.48s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:153.52s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:153.57s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:153.57s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:153.60s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:153.65s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:153.68s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:153.73s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:153.77s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:154.47s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:153.65s | 弾数:  3/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:153.68s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:153.73s | 弾数:  1/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:153.77s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:154.47s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:154.50s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:154.55s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:154.55s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:154.58s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:154.63s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:154.67s | 弾数: 54/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:154.72s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:154.75s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:154.63s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:154.67s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:154.72s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:154.75s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:154.80s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:154.83s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:154.83s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:154.88s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:154.92s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:154.92s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:154.97s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:155.00s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:155.00s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:155.05s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:155.08s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:155.13s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -2971,7 +2971,7 @@
 [Shoot] 時間:155.30s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:155.33s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:155.38s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:155.42s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:155.42s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:155.47s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:155.50s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Burst] Activate!
@@ -3001,7 +3001,7 @@
 [Shoot] 時間:156.50s | 弾数: 10/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:156.55s | 弾数:  9/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:156.58s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:156.63s | 弾数:  7/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:156.63s | 弾数:  7/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:156.67s | 弾数:  6/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:156.72s | 弾数:  5/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:156.75s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -3021,7 +3021,7 @@
 [Shoot] 時間:157.98s | 弾数: 50/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:158.03s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:158.07s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:158.12s | 弾数: 47/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:158.12s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:158.15s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:158.20s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:158.23s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -3043,7 +3043,7 @@
 [Shoot] 時間:158.90s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:158.95s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:158.98s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:159.03s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:159.03s | 弾数: 25/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:159.07s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:159.12s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:159.15s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -3084,7 +3084,7 @@
 [Shoot] 時間:161.27s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:161.30s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:161.35s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:161.38s | 弾数: 44/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:161.38s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:161.43s | 弾数: 43/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:161.47s | 弾数: 42/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:161.52s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -3166,14 +3166,14 @@
 [Shoot] 時間:165.33s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:165.37s | 弾数: 24/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:165.42s | 弾数: 23/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:165.45s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:165.45s | 弾数: 22/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:165.50s | 弾数: 21/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:165.53s | 弾数: 20/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:165.58s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:165.62s | 弾数: 18/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:165.67s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:165.70s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:165.75s | 弾数: 15/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:165.75s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:165.78s | 弾数: 14/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:165.83s | 弾数: 13/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:165.87s | 弾数: 12/60  | Pellets: 1 | Dmg:         1 | Buffs: None
@@ -3184,54 +3184,54 @@
 [Shoot] 時間:166.08s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:166.12s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:166.17s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:166.20s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:166.20s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:166.25s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:166.28s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:166.28s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:166.33s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:166.37s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:166.37s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:167.07s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:167.10s | 弾数: 58/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:167.15s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:167.18s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:167.10s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:167.15s | 弾数: 57/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:167.18s | 弾数: 56/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:167.23s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:167.27s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:167.32s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:167.35s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:167.35s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:167.40s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:167.43s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:167.48s | 弾数: 49/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:167.48s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:167.52s | 弾数: 48/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:167.57s | 弾数: 47/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:167.60s | 弾数: 46/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:167.65s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:167.68s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:167.65s | 弾数: 45/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:167.68s | 弾数: 44/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:167.73s | 弾数: 43/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:167.77s | 弾数: 42/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:167.82s | 弾数: 41/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:167.85s | 弾数: 40/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:167.90s | 弾数: 39/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:167.93s | 弾数: 38/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:167.98s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:168.02s | 弾数: 36/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:168.07s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:167.82s | 弾数: 41/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:167.85s | 弾数: 40/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:167.90s | 弾数: 39/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:167.93s | 弾数: 38/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:167.98s | 弾数: 37/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:168.02s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:168.07s | 弾数: 35/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.10s | 弾数: 34/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.15s | 弾数: 33/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.18s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:168.23s | 弾数: 31/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.27s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:168.32s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:168.32s | 弾数: 29/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.35s | 弾数: 28/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.40s | 弾数: 27/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.43s | 弾数: 26/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.48s | 弾数: 25/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.52s | 弾数: 24/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.57s | 弾数: 23/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:168.60s | 弾数: 22/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:168.60s | 弾数: 22/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.65s | 弾数: 21/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.68s | 弾数: 20/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.73s | 弾数: 19/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.77s | 弾数: 18/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:168.82s | 弾数: 17/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:168.82s | 弾数: 17/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.85s | 弾数: 16/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.90s | 弾数: 15/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:168.93s | 弾数: 14/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -3240,29 +3240,29 @@
 [Shoot] 時間:169.07s | 弾数: 11/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:169.10s | 弾数: 10/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:169.15s | 弾数:  9/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:169.18s | 弾数:  8/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:169.18s | 弾数:  8/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:169.23s | 弾数:  7/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:169.27s | 弾数:  6/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:169.32s | 弾数:  5/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:169.35s | 弾数:  4/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:169.35s | 弾数:  4/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:169.40s | 弾数:  3/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:169.43s | 弾数:  2/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:169.43s | 弾数:  2/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:169.48s | 弾数:  1/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:169.52s | 弾数:  0/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:170.22s | 弾数: 59/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:169.52s | 弾数:  0/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:170.22s | 弾数: 59/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:170.25s | 弾数: 58/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:170.30s | 弾数: 57/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:170.33s | 弾数: 56/60  | Pellets: 1 | Dmg:         1 | Buffs: None
-[Shoot] 時間:170.38s | 弾数: 55/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:170.38s | 弾数: 55/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:170.42s | 弾数: 54/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:170.47s | 弾数: 53/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:170.50s | 弾数: 52/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:170.47s | 弾数: 53/60  | Pellets: 1 | Dmg:         1 | Buffs: None
+[Shoot] 時間:170.50s | 弾数: 52/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:170.55s | 弾数: 51/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Burst] Activate!
 [Shoot] 時間:170.58s | 弾数: 50/60  | Pellets: 1 | Dmg:         1 | Buffs: None
 [Shoot] 時間:170.63s | 弾数: 49/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:170.67s | 弾数: 48/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:170.72s | 弾数: 47/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:170.72s | 弾数: 47/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:170.75s | 弾数: 46/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:170.80s | 弾数: 45/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:170.83s | 弾数: 44/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -3341,7 +3341,7 @@
 [Shoot] 時間:174.53s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:174.57s | 弾数: 30/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:174.62s | 弾数: 29/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:174.65s | 弾数: 28/60  | Pellets: 1 | Dmg:         3 | Buffs: None
+[Shoot] 時間:174.65s | 弾数: 28/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:174.70s | 弾数: 27/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:174.73s | 弾数: 26/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:174.78s | 弾数: 25/60  | Pellets: 1 | Dmg:         2 | Buffs: None
@@ -3395,7 +3395,7 @@
 [Shoot] 時間:177.43s | 弾数: 37/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:177.47s | 弾数: 36/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:177.52s | 弾数: 35/60  | Pellets: 1 | Dmg:         2 | Buffs: None
-[Shoot] 時間:177.55s | 弾数: 34/60  | Pellets: 1 | Dmg:         2 | Buffs: None
+[Shoot] 時間:177.55s | 弾数: 34/60  | Pellets: 1 | Dmg:         3 | Buffs: None
 [Shoot] 時間:177.60s | 弾数: 33/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:177.63s | 弾数: 32/60  | Pellets: 1 | Dmg:         2 | Buffs: None
 [Shoot] 時間:177.68s | 弾数: 31/60  | Pellets: 1 | Dmg:         2 | Buffs: None

@@ -513,33 +513,65 @@ class SkillEngineMixin:
                 self.log(f"[Barrier] {target.name} applied Shield ({tag_name}) (Val:{value}, Dur:{kwargs.get('duration')}s)", target_name=target.name)
             # ▲▲▲ 修正ここまで ▲▲▲
 
-            elif skill.effect_type == 'buff' or skill.effect_type == 'stack_buff':
-                b_type = kwargs.get('buff_type', skill.effect_type) 
+            elif skill.effect_type in ['buff', 'stack_buff', 'debuff']:
+                # 1. まず変数をすべて定義する (これを最初に行わないとエラーになります)
+                b_type = kwargs.get('buff_type', 'atk_buff_rate')
                 val = kwargs.get('value', 0)
                 dur = kwargs.get('duration', 0) * self.FPS
-                s_name = kwargs.get('stack_name')
+                stack_name = kwargs.get('stack_name')
+                max_stack = kwargs.get('max_stack', 1)
                 tag = kwargs.get('tag')
                 shot_dur = kwargs.get('shot_duration', 0)
                 rem_reload = kwargs.get('remove_on_reload', False)
-                st_amount = kwargs.get('stack_amount', 1)
+                linked_remove_tag = kwargs.get('linked_remove_tag')
+                is_extend = kwargs.get('is_extend', False)
 
-                # --- 免疫チェック (Immunity Check) ---
-                # これがデバフかどうか判定 (tagに "debuff" が含まれるか、型名で判断)
+                # 2. 免疫チェック (Immunity Check)
                 is_debuff = False
                 if tag and ('debuff' in tag): is_debuff = True
-                if 'debuff' in b_type: is_debuff = True # def_debuff など
+                if 'debuff' in b_type: is_debuff = True
                 
                 if is_debuff:
-                    for target in targets[:]: # リストをコピーしてループ
-                        # ターゲットが免疫を持っているか？
-                        if target.buff_manager.has_active_immunity(frame):
-                            # 免疫スタックを消費して防ぐ
-                            if target.buff_manager.consume_immunity_stack(frame):
-                                self.log(f"[Immunity] Blocked debuff '{b_type}' on {target.name} (Immunity stack consumed)", target_name=target.name)
-                                # ターゲットリストから除外する（このターゲットには適用しない）
-                                targets.remove(target)
+                    for target_item in targets[:]:
+                        if target_item.buff_manager.has_active_immunity(frame):
+                            if target_item.buff_manager.consume_immunity_stack(frame):
+                                self.log(f"[Immunity] Blocked debuff '{b_type}' on {target_item.name}", target_name=target_item.name)
+                                targets.remove(target_item)
 
-                if not targets: return 0 # 全員ガードされたら終了
+                if not targets: return 0
+
+                # 3. ターゲットごとの処理
+                for target in targets:
+                    manager = target.buff_manager
+                    if skill.target == 'enemy':
+                        manager = self.enemy_debuffs
+                    
+                    # ▼▼▼ 追加: 延長処理 (extend_buffを使用) ▼▼▼
+                    # 延長フラグがあり、かつタグ指定がある場合のみ実行
+                    if is_extend and tag:
+                        # buff_manager.py に extend_buff メソッドが追加されている必要があります
+                        if hasattr(manager, 'extend_buff') and manager.extend_buff(tag, dur, frame):
+                            self.log(f"[Buff Extend] Extended '{tag}' on {target.name}", target_name=target.name)
+                            continue # 延長に成功したら、新規付与(add_buff)は行わず次へ
+
+                    # ▼▼▼ 既存処理: 新規バフ付与 (add_buff) ▼▼▼
+                    # 延長モードでない場合、または延長を試みたが見つからなかった場合に実行するかは仕様次第ですが、
+                    # 基本的に「延長」指定なら新規付与はしないのが一般的です。
+                    # ここでは「is_extend が False」の時のみ add_buff します。
+                    if not is_extend:
+                        manager.add_buff(
+                            b_type, val, dur, frame, source=skill.name,
+                            stack_name=stack_name, max_stack=max_stack, tag=tag,
+                            shot_duration=shot_dur, remove_on_reload=rem_reload,
+                            linked_remove_tag=linked_remove_tag
+                        )
+                        
+                        t_str = "Enemy" if skill.target == 'enemy' else target.name
+                        if stack_name:
+                            count = manager.get_stack_count(stack_name, frame)
+                            self.log(f"[Stack] Applied {skill.name} (Stack:{stack_name} x{count}) to {t_str}", target_name=caster.name)
+                        else:
+                            self.log(f"[Buff] Applied {skill.name} ({b_type}: {val}) to {t_str}", target_name=caster.name)
                         
 
                 # 減少HP率に応じた効果量のスケーリング
@@ -654,15 +686,46 @@ class SkillEngineMixin:
                 self.log(f"[DoT] Applied/Stacked {stack_name} on Enemy (via {target.name})", target_name=target.name)
 
             elif skill.effect_type == 'dot':
+                # 変数取得
                 raw_profile = skill.kwargs.get('profile', {})
+                mult = skill.kwargs.get('multiplier', 0) # multiplierの取得方法を統一
+                if not mult and 'multiplier_list' in skill.kwargs: # リストがある場合の保険
+                     mult = skill.kwargs['multiplier_list'][0] # 簡易的な取得
+
                 full_profile = DamageProfile.create(**raw_profile)
-                target.active_dots[skill.name] = {
-                    'end_frame': frame + (skill.kwargs.get('duration', 0) * self.FPS),
-                    'multiplier': skill.kwargs['multiplier'], 
-                    'profile': full_profile,
-                    'count': 1, 'max_stack': 1, 'element': caster.element
-                }
-                self.log(f"[DoT] Applied {skill.name} on Enemy (via {target.name})", target_name=target.name)
+                
+                duration_sec = skill.kwargs.get('duration', 0)
+                interval = skill.kwargs.get('interval', 1.0)
+                tag = skill.kwargs.get('tag')
+                is_extend = skill.kwargs.get('is_extend', False) # 延長フラグ
+
+                # DoTのキーを決定（タグがあればタグ、なければスキル名）
+                key = tag if tag else skill.name
+
+                for target in targets:
+                    # ▼▼▼ 延長処理 ▼▼▼
+                    if is_extend and tag and key in target.active_dots:
+                        dot = target.active_dots[key]
+                        remaining = max(0, dot['end_frame'] - frame)
+                        dot['end_frame'] = frame + remaining + (duration_sec * self.FPS)
+                        self.log(f"[DoT Extend] Extended '{tag}' on {target.name}", target_name=target.name)
+                    
+                    # ▼▼▼ 新規作成 / 上書き処理 ▼▼▼
+                    elif not is_extend:
+                        target.active_dots[key] = {
+                            'source': skill.name,
+                            'multiplier': mult,
+                            'profile': full_profile,
+                            'count': 1, 
+                            'max_stack': 1, 
+                            'element': caster.element,
+                            'start_frame': frame,
+                            'end_frame': frame + (duration_sec * self.FPS),
+                            'next_tick': frame + (interval * self.FPS),
+                            'interval': (interval * self.FPS),
+                            'tag': tag
+                        }
+                        self.log(f"[DoT] Applied {skill.name} ({tag}) on {target.name}", target_name=target.name)
 
             elif skill.effect_type == 'damage':
                 # ▼▼▼ 修正: DamageProfileの生成ロジック (createメソッドを使用) ▼▼▼

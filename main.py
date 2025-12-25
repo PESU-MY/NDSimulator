@@ -207,7 +207,7 @@ sim = NikkeSimulator(
 )
 
 # 汎用フラグの設定例
-sim.special_mode = True 
+sim.special_mode = False 
 
 # 6. 実行
 print("シミュレーションを開始します...")

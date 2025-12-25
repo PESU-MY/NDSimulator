@@ -29,7 +29,7 @@
       }
     },
     {
-      "name": "Skill 1: 花のほころび (維持時間延長)",
+      "name": "Skill 1: 花の舞 (維持時間延長)",
       "trigger_type": "time_interval",
       "trigger_value": 10.0,
       "condition": {
@@ -39,9 +39,28 @@
       "target": "self",
       "kwargs": {
         "effect_no": 2,
-        "buff_type": "dummy_buff",
+        "tag": "花の舞",
         "description": "花の舞/桜かんむりの維持時間を延長(効果2,3)",
-        "value_list": [5.92, 6.38, 6.84, 7.28, 7.74, 8.2, 8.66, 9.1, 9.56, 10.02]
+        "duration": 10.02,
+        "is_extend": true
+      }
+    },
+    
+    {
+      "name": "Skill 1: 桜かんむり (維持時間延長)",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.0,
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "effect_type": "dot",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 3,
+        "tag": "桜かんむり",
+        "description": "桜かんむりの維持時間を延長(効果2,3)",
+        "duration": 10.02,
+        "is_extend": true
       }
     },
     {
