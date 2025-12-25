@@ -170,3 +170,5 @@ main.py で sim.special_mode = True のように変数をセットし、JSONの 
   これにより、「デバフ」かつ「燃焼」といった複合属性を持たせることが可能になり、
   cleanse_debuff("debuff") でも remove_buffs_by_tag("burn") でも解除対象となる。
   ※ 内部判定ロジック（has_active_tag, remove_buffs_by_tag 等）をリスト包含判定に対応済み。
+
+  

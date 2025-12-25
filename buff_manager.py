@@ -212,16 +212,27 @@ class BuffManager:
 
     def consume_immunity_stack(self, current_frame):
         """免疫バフのスタックを1つ消費する (スタックがないタイプなら消費せずTrueを返す)"""
-        # 優先: スタック型の免疫を減らす
+
+        # ▼▼▼ 内部関数: タグ一致判定 (リスト対応) ▼▼▼
+        def is_match(b_tag):
+            if isinstance(b_tag, list):
+                return 'immunity' in b_tag
+            return b_tag == 'immunity'
+        # ▲▲▲
+        # 1. スタック型の免疫を優先して探し、減らす
+        # 辞書の変更エラーを防ぐため list() でラップするか、見つけたら即 return する
         for s_name, s_data in self.active_stacks.items():
-            if s_data.get('tag') == 'immunity' and (s_data['end_frame'] >= current_frame or s_data['shot_life'] > 0):
+            # 修正: is_match を使用して判定
+            if is_match(s_data.get('tag')) and (s_data['end_frame'] >= current_frame or s_data['shot_life'] > 0):
                 if s_data['count'] > 0:
                     s_data['count'] -= 1
+                    # スタックが0になったら削除
                     if s_data['count'] <= 0:
                         del self.active_stacks[s_name]
-                    return True
+                    return True # 消費成功
         
-        # スタック型でない免疫があれば、消費なしで機能する (回数制限なし免疫)
+        # 2. スタック型でない免疫があれば、消費なしで機能する (回数制限なし免疫)
+        # (has_active_immunity は既にリスト対応済みと想定)
         if self.has_active_immunity(current_frame):
             return True
             
