@@ -84,6 +84,7 @@
         "kwargs": {
             "buff_type": "max_ammo_rate",
             "effect_no" : 5,
+            "tag":"debuff",
             "value_list": [-0.4368, -0.4704, -0.504, -0.5376, -0.5712, -0.6048, -0.6384, -0.672, -0.7056, -0.7392],
             "duration": 10
         }

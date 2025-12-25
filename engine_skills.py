@@ -385,6 +385,39 @@ class SkillEngineMixin:
                 self.log(f"[Flag] {t.name}: Activated {flag_name}", target_name=t.name)
             return 0
         
+        # ▼▼▼ 追加: デバフ解除 (Cleanse) ▼▼▼
+        if skill.effect_type == 'cleanse_debuff':
+            count = int(kwargs.get('value', 1)) # 解除する個数
+            target_tag = kwargs.get('tag', 'debuff') # 解除対象タグ (デフォルト: debuff)
+            
+            for target in targets:
+                removed = target.buff_manager.remove_debuffs_lifo(target_tag, count, frame)
+                if removed > 0:
+                    self.log(f"[Cleanse] Removed {removed} stacks of '{target_tag}' from {target.name}", target_name=caster.name)
+            return 0
+        # ▲▲▲ 追加ここまで ▲▲▲
+
+        # ▼▼▼ 追加: デバフ免疫 (Immunity) 付与 ▼▼▼
+        if skill.effect_type == 'immunity_buff':
+            # 1. 既存のデバフを削除 (仕様: 免疫付与時にデバフがあれば削除)
+            for target in targets:
+                # 'debuff'タグをすべて削除
+                removed = target.buff_manager.remove_debuffs_lifo('debuff', 999, frame)
+                if removed > 0:
+                    self.log(f"[Immunity] Cleansed {removed} debuffs from {target.name} upon immunity grant", target_name=caster.name)
+            
+            # 2. 免疫バフ自体を付与 (tag='immunity' を付けるのが重要)
+            # kwargsを継承して buff として処理
+            kwargs['tag'] = 'immunity' 
+            # もし buff_type が指定されていなければダミーを設定
+            if 'buff_type' not in kwargs: kwargs['buff_type'] = 'debuff_immunity_status'
+            
+            # 以降の buff 処理へ流すため、effect_type を書き換えて fall through させるか、
+            # ここで buff 処理を呼ぶ。ここではコード重複を避けるため buff ブロックへ誘導する変数を設定
+            skill.effect_type = 'stack_buff' if 'stack_name' in kwargs else 'buff'
+            # (下の buff ブロックで処理される)
+        # ▲▲▲ 追加ここまで ▲▲▲
+        
         # ▼▼▼ 追加: スタック名指定での削除処理 (remove_stacks) ▼▼▼
         # JSONのkwargsに "remove_stacks": ["name1", "name2"] と記述して使用
         remove_stacks = kwargs.get('remove_stacks')
@@ -476,6 +509,25 @@ class SkillEngineMixin:
                 shot_dur = kwargs.get('shot_duration', 0)
                 rem_reload = kwargs.get('remove_on_reload', False)
                 st_amount = kwargs.get('stack_amount', 1)
+
+                # --- 免疫チェック (Immunity Check) ---
+                # これがデバフかどうか判定 (tagに "debuff" が含まれるか、型名で判断)
+                is_debuff = False
+                if tag and ('debuff' in tag): is_debuff = True
+                if 'debuff' in b_type: is_debuff = True # def_debuff など
+                
+                if is_debuff:
+                    for target in targets[:]: # リストをコピーしてループ
+                        # ターゲットが免疫を持っているか？
+                        if target.buff_manager.has_active_immunity(frame):
+                            # 免疫スタックを消費して防ぐ
+                            if target.buff_manager.consume_immunity_stack(frame):
+                                self.log(f"[Immunity] Blocked debuff '{b_type}' on {target.name} (Immunity stack consumed)", target_name=target.name)
+                                # ターゲットリストから除外する（このターゲットには適用しない）
+                                targets.remove(target)
+
+                if not targets: return 0 # 全員ガードされたら終了
+                        
 
                 # 減少HP率に応じた効果量のスケーリング
                 if kwargs.get('scale_by_missing_hp_percentage'):

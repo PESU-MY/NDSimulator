@@ -152,7 +152,7 @@ if not os.path.exists('characters'): os.makedirs('characters')
 
 dummy_ct_skill = Skill(
     name="Dummy B1: CT Reduction",
-    trigger_type="on_use_burst_skill", 
+    trigger_type="on_burst_enter", 
     trigger_value=0,
     effect_type="cooldown_reduction",
     target="allies", 
@@ -161,12 +161,13 @@ dummy_ct_skill = Skill(
 
 dummy_barrier_skill = Skill(
     name = "全体プロテクション",
-    trigger_type="on_use_burst_skill", 
+    trigger_type="on_start", 
     trigger_value=0,
     effect_type = "shield",
     target = "allies",
     value = 5000,
-    duration = 10,
+    duration = 999,
+    tag = "debuff"
 )
 
 # 1. キャラクターの読み込み
@@ -175,23 +176,23 @@ burst3_nikke = create_character_from_json('characters/シンデレラ.json', ski
 burst3_nikke_2 = create_character_from_json('characters/キリ.json', skill_level=10)
 burst2_nikke = create_character_from_json('characters/クラウン.json', skill_level=10)
 burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
-burst1_nikke = create_character_from_json('characters/エマ.json', skill_level=10)
+burst1_nikke = create_character_from_json('characters/クレア.json', skill_level=10)
 saitotu = create_character_from_json('characters/アリス_ワンダーランドバニー.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
 
 # 2. ダミーキャラの作成
 dummy_b1 = create_dummy_character("Dummy_B1", 1, "SMG", skills=[dummy_ct_skill])
 dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG")
-dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
+dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG", skills=[dummy_barrier_skill])
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, burst2_nikke, burst3_nikke, dummy_b3, dummy_b3]
+all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_b1]
 
 # 4. バーストローテーション
 rotation = [
     [dummy_b1],
-    [burst2_nikke],
+    [dummy_b2],
     [burst3_nikke, dummy_b3] 
 ]
 # 5. シミュレーター初期化

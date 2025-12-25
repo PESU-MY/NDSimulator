@@ -161,3 +161,12 @@ main.py で sim.special_mode = True のように変数をセットし、JSONの 
 ログ出力:
 
 各キャラのログに加え、logs/hp_log.csv に1秒ごとのHP推移（現在HP, 最大HP, 割合）が出力される。
+
+================================================== 6. 最新の更新・変更点 (Updates)
+
+【バフ管理 (buff_manager.py)】
+タグの複数指定対応:
+  バフ・デバフの "tag" 指定において、リスト形式（例: ["debuff", "burn"]）での記述に対応。
+  これにより、「デバフ」かつ「燃焼」といった複合属性を持たせることが可能になり、
+  cleanse_debuff("debuff") でも remove_buffs_by_tag("burn") でも解除対象となる。
+  ※ 内部判定ロジック（has_active_tag, remove_buffs_by_tag 等）をリスト包含判定に対応済み。

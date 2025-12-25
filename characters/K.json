@@ -80,7 +80,7 @@
             "effect_no" : 4, 
             "value_list": [-0.3021, -0.3254, -0.3486, -0.3719, -0.3951, -0.4184, -0.4416, -0.4649, -0.4881, -0.5113],
             "duration": 10,
-            "tag": "justice_realized"
+            "tag": ["justice_realized","debuff"]
           }
         },
         {

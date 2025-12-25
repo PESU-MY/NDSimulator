@@ -67,11 +67,11 @@
           }
         },
         {
-          "effect_type": "buff",
+          "effect_type": "cleanse_debuff",
           "target": "allies",
           "kwargs": {
             "effect_no": 4,
-            "buff_type": "dummy_effect",
+            "value": "1",
             "description": "デバフ効果解除1個"
           }
         }
