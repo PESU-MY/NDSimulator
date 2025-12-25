@@ -1,0 +1,86 @@
+{
+  "name": "ココア",
+  "weapon_type": "SR",
+  "burst_stage": "1",
+  "element": "Fire",
+  "class": "Supporter",
+  "squad": "メイド・フォー・ユー",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "Skill 1: プロ折り紙 (遮蔽物回復)",
+      "trigger_type": "time_interval",
+      "trigger_value": 12.0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "dummy_buff",
+        "description": "味方全体に遮蔽物HP回復n%",
+        "value_list": [0.0977, 0.1066, 0.1155, 0.1243, 0.1332, 0.1421, 0.151, 0.1599, 0.1688, 0.1776]
+      }
+    },
+    {
+      "name": "Skill 1: プロ折り紙 (デバフ解除)",
+      "trigger_type": "time_interval",
+      "trigger_value": 12.0,
+      "effect_type": "dispel_debuff",
+      "target": "allies",
+      "kwargs": {
+        "value": 1,
+        "description": "味方全体のデバフ効果解除1個"
+      }
+    },
+    {
+      "name": "Skill 2: プロケチャップ",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "dummy_buff",
+        "stack_name": "プロケチャップ",
+        "max_stack": 15,
+        "description": "受けるダメージn%▼",
+        "value_list": [0.024, 0.0262, 0.0284, 0.0306, 0.0328, 0.035, 0.0371, 0.0393, 0.0415, 0.0437],
+        "duration": 5
+      }
+    },
+    {
+      "name": "バースト: プロメイド長 (デバフ解除)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "cooldown_time": 20.0,
+      "effect_type": "dispel_debuff",
+      "target": "allies",
+      "kwargs": {
+        "value": 1,
+        "description": "味方全体のデバフ効果解除1個"
+      }
+    },
+    {
+      "name": "バースト: プロメイド長 (敵デバフ)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "condition": {
+        "self_stack_min": 15,
+        "stack_name": "プロケチャップ"
+      },
+      "effect_type": "buff",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "dummy_buff",
+        "description": "敵全体に攻撃力n%▼",
+        "value_list": [0.0747, 0.0815, 0.0883, 0.0951, 0.1019, 0.1087, 0.1155, 0.1223, 0.1291, 0.1359],
+        "duration": 10
+      }
+    }
+  ]
+}

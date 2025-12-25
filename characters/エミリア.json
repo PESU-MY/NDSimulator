@@ -1,0 +1,121 @@
+{
+  "name": "エミリア",
+  "weapon_type": "RL",
+  "burst_stage": "3",
+  "element": "Water",
+  "class": "Attacker",
+  "squad": "エミリア陣営",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 微精霊の祝福",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "charge_speed_rate",
+            "value_list": [0.0892, 0.0937, 0.0983, 0.1028, 0.1074, 0.1119, 0.1165, 0.121, 0.1255, 0.1301],
+            "shot_duration": 1
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "charge_dmg_buff",
+            "scale_by_max_ammo": true,
+            "description": "最終最大装弾数1発ごとにチャージダメージUP",
+            "value_list": [0.0139, 0.0146, 0.0153, 0.016, 0.0167, 0.0174, 0.0181, 0.0188, 0.0195, 0.0201],
+            "shot_duration": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 大精霊の鉄槌 (追撃)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "charge_additional_dmg",
+        "value_list": [0.4132, 0.4328, 0.4525, 0.4721, 0.4918, 0.5114, 0.531, 0.5507, 0.5703, 0.5899],
+        "duration": 99999,
+        "description": "フルチャージ攻撃命中時、ダメージのn%分の追加ダメージ"
+      }
+    },
+    {
+      "name": "Skill 2: 大精霊の鉄槌 (装弾数)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "max_ammo_fixed",
+        "value_list":[1, 1, 1, 2, 2, 2, 3, 3, 3, 3],
+        "duration": 10
+      }
+    },
+    {
+      "name": "バースト: 氷結の魔女",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "dummy_buff",
+            "value_list": [0.5982, 0.6442, 0.6903, 0.7363, 0.7823, 0.8283, 0.8743, 0.9204, 0.9664, 1.0124],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "charge_speed_rate",
+            "value": -3.0,
+            "shot_duration": 1,
+            "tag": ["debuff"],
+            "linked_remove_tag": "ice_witch_dmg"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "charge_dmg_buff",
+            "value_list": [8.8637, 9.5455, 10.2273, 10.9092, 11.591, 12.2728, 12.9546, 13.6365, 14.3183, 15],
+            "shot_duration": 1,
+            "tag": ["ice_witch_dmg"]
+          }
+        }
+      ]
+    }
+  ]
+}

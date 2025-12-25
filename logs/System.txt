@@ -1,14 +1,14 @@
 === Simulation Start ===
 Character: Dummy_B1 (Atk:1)
 Character: Dummy_B2 (Atk:1)
-Character: エイダ (Atk:25554)
+Character: サクラ：ブルーム・イン・サマー (Atk:25554)
 Character: Dummy_B3 (Atk:1)
-Character: Dummy_B3 (Atk:1)
+Character: Dummy_B2 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] エイダ used Burst Stage 3
+[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for エイダ at frame 903
+[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 903
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
@@ -16,9 +16,9 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Recorded burst end time for Dummy_B3 at frame 1806
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] エイダ used Burst Stage 3
+[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for エイダ at frame 2709
+[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 2709
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
@@ -26,9 +26,9 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Recorded burst end time for Dummy_B3 at frame 3612
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] エイダ used Burst Stage 3
+[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for エイダ at frame 4515
+[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 4515
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
@@ -36,9 +36,9 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Recorded burst end time for Dummy_B3 at frame 5418
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] エイダ used Burst Stage 3
+[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for エイダ at frame 6321
+[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 6321
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
@@ -46,9 +46,9 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Recorded burst end time for Dummy_B3 at frame 7224
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] エイダ used Burst Stage 3
+[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for エイダ at frame 8127
+[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 8127
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
@@ -56,9 +56,9 @@ Character: Dummy_B3 (Atk:1)
 [Burst] Recorded burst end time for Dummy_B3 at frame 9030
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] エイダ used Burst Stage 3
+[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for エイダ at frame 9933
+[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 9933
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3

@@ -46,9 +46,7 @@
       "kwargs": {
         "effect_no" : 2, 
         "multiplier_list": [0.8072, 0.8694, 0.9313, 0.9935, 1.0555, 1.1176, 1.1798, 1.2419, 1.3039, 1.366],
-        "profile": {
-          "is_skill_damage": true
-        }
+        "is_skill_damage": true
       }
     },
     {
@@ -84,9 +82,7 @@
           "effect_no" : 6, 
           "multiplier_list": [8.537, 9.1062, 9.675, 10.2446, 10.8138, 11.3826, 11.9516, 12.5208, 13.09, 13.6592],
           "loop_count": 10,
-          "profile": {
-            "is_skill_damage": true
-          }
+          "is_skill_damage": true
         }
       },
       {
@@ -96,10 +92,8 @@
           "multiplier_list": [0.1807, 0.1928, 0.2049, 0.2168, 0.2288, 0.2409, 0.253, 0.265, 0.2769, 0.289],
           "copy_stack_count": "Beauty",
           "loop_count": 10,
-          "profile": {
-            "is_skill_damage": true,
-            "force_full_burst": true
-          }
+          "is_skill_damage": true,
+          "force_full_burst": true
         }
       }
     ]

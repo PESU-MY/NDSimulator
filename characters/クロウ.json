@@ -1,0 +1,75 @@
+{
+  "name": "クロウ",
+  "weapon_type": "SMG",
+  "burst_stage": "3",
+  "element": "Fire",
+  "class": "Defender",
+  "squad": "エキゾチック",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.67,
+    "damage_rate": 0.1118,
+    "core_damage_rate": 2.5
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 暇つぶし",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "dummy_effect",
+        "description": "敵全体に攻撃力n%▼",
+        "value_list": [0.1177, 0.1268, 0.1359, 0.1449, 0.154, 0.1631, 0.1721, 0.1812, 0.1902, 0.1993],
+        "duration": 10
+      }
+    },
+    {
+      "name": "Skill 2: デアデビル",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 2,
+            "multiplier_list": [0.5265, 0.567, 0.6075, 0.648, 0.6885, 0.729, 0.7695, 0.81, 0.8505, 0.8909],
+            "description": "最後の弾丸命中時、最終攻撃力比例の追加ダメージ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "dummy_effect",
+            "description": "自分に防御力n%▲",
+            "value_list": [0.0752, 0.081, 0.0867, 0.0925, 0.0983, 0.1041, 0.1099, 0.1157, 0.1215, 0.1272],
+            "duration": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: ザ・テロリスト",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "cooldown_time": 40.0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 4,
+        "multiplier_list": [5.4112, 5.8275, 6.2437, 6.66, 7.0762, 7.4925, 7.9087, 8.325, 8.7412, 9.1575],
+        "description": "攻撃力が最も高い敵1機にバーストスキルダメージ"
+      }
+    }
+  ]
+}

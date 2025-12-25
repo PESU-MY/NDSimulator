@@ -1,0 +1,252 @@
+{
+  "name": "グレイブ",
+  "weapon_type": "AR",
+  "burst_stage": "2",
+  "element": "Fire",
+  "class": "Supporter",
+  "squad": "オールドテイルズ",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 2.00,
+    "damage_rate": 0.1791,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "スキル1：放熱状態へ移行",
+      "trigger_type": "on_burst_end",
+      "condition": {
+        "self_not_has_tag": "完全計算"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "set_current_ammo",
+          "target": "self",
+          "kwargs": {
+            "value": 0
+          },
+          "description": "放熱開始：残弾数100％減少"
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "tag": "放熱",
+            "value": -1,
+            "duration": 10
+          },
+          "description": "放熱：リロード速度50％ダウン"
+        }
+      ]
+    },
+    {
+      "name": "Skill 1: 放熱中パッシブ (自分)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_has_tag": "放熱"
+      },
+      "effect_type": "heal",
+      "target": "self",
+      "kwargs": {
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value": 0.02,
+        "duration": 1.1
+      }
+    },
+    {
+      "name": "Skill 1: 放熱中パッシブ (味方全体)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_has_tag": "放熱"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "burst_charge_speed_buff",
+            "value_list": [0.2302, 0.2479, 0.2656, 0.2833, 0.301, 0.3187, 0.3364, 0.3542, 0.3719, 0.3896],
+            "duration": 1.1
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "pierce_dmg_buff",
+            "value_list": [0.286, 0.308, 0.33, 0.352, 0.374, 0.396, 0.418, 0.44, 0.462, 0.484],
+            "duration": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: オーバーヒート (過熱I)",
+      "trigger_type": "shot_count",
+      "trigger_value": 15,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "atk_buff_rate",
+        "tag": "過熱I",
+        "value_list": [0.0915, 0.0985, 0.1056, 0.1126, 0.1196, 0.1267, 0.1337, 0.1407, 0.1478, 0.1548],
+        "duration": 999,
+        "remove_on_reload": true
+      }
+    },
+    {
+      "name": "Skill 2: オーバーヒート (過熱II)",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "condition": {
+        "self_has_tag":"perfect_calculation"
+      },
+      "effect_type": "cumulative_stages",
+      "stages":[
+        {
+        "condition": {
+        "self_has_tag": "過熱I" 
+        },
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.1221, 0.1314, 0.1409, 0.1503, 0.1597, 0.169, 0.1784, 0.1879, 0.1972, 0.2066],
+            "duration": 999,
+        "remove_on_reload": true
+        }
+      },
+      {
+        "condition": {
+        "self_has_tag": "過熱I" 
+        },
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+            "effect_no": 5,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.182, 0.196, 0.21, 0.224, 0.238, 0.252, 0.266, 0.28, 0.294, 0.308],
+            "duration": 999,
+        "remove_on_reload": true
+        }
+      }
+      ]
+      
+    },
+    {
+      "name": "バースト: インペリアル・レギオン",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "tag": "perfect_calculation",
+            "description": "完全計算状態",
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "is_pierce",
+            "value": 1,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "max_ammo_fixed",
+            "value": 999,
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "set_current_ammo",
+          "target": "self",
+          "kwargs": {
+            "value": 999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "pierce_dmg_buff",
+            "value_list": [0.312, 0.336, 0.36, 0.384, 0.408, 0.432, 0.456, 0.48, 0.504, 0.528],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "crit_rate_buff",
+            "value_list": [0.5324, 0.5679, 0.6034, 0.6389, 0.6744, 0.7099, 0.7454, 0.7809, 0.8164, 0.8519],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 8,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.2848, 0.3067, 0.3286, 0.3505, 0.3725, 0.3944, 0.4163, 0.4382, 0.4601, 0.482],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 9,
+            "buff_type": "pierce_dmg_buff",
+            "value_list": [0.2363, 0.2544, 0.2726, 0.2908, 0.309, 0.3272, 0.3453, 0.3635, 0.3817, 0.3998],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "max_ammo_fixed",
+            "value_list": 3,
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}
