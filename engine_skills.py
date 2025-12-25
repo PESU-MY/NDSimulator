@@ -653,30 +653,14 @@ class SkillEngineMixin:
 
             elif skill.effect_type == 'damage':
                 # ▼▼▼ 修正: DamageProfileの生成ロジック (createメソッドを使用) ▼▼▼
-                profile = DamageProfile.create(
-                    is_burst=kwargs.get('is_burst', False),
-                    is_core_hit=kwargs.get('is_core_hit', False),
-                    is_critical=kwargs.get('is_critical', False),
+                # 補正ロジック
+                if kwargs.get('damage_type') == 'ignore_def':
+                    kwargs['is_ignore_def'] = True
+                if 'is_skill_damage' not in kwargs:
+                    kwargs['is_skill_damage'] = True
                     
-                    # 重要: 防御無視フラグの取得
-                    is_ignore_def=kwargs.get('is_ignore_def', False) or kwargs.get('damage_type') == 'ignore_def',
-                    
-                    # 重要: スキル判定
-                    is_skill_damage=kwargs.get('is_skill_damage', True),
-                    
-                    # 重要: フルバースト補正の適用許可
-                    burst_buff_enabled=kwargs.get('burst_buff_enabled', False),
-                    
-                    force_full_burst=kwargs.get('force_full_burst', False),
-                    is_charge_attack=kwargs.get('is_charge_attack', False),
-                    is_pierce=kwargs.get('is_pierce', False),
-                    is_dot=kwargs.get('is_dot', False),
-                    is_split=kwargs.get('is_split', False),
-                    # ▼▼▼ 追加: 特殊スキルダメージフラグ ▼▼▼
-                    is_special_skill_damage=kwargs.get('is_special_skill_damage', False)
-                )
+                profile = DamageProfile.create(**kwargs)
                 
-                # ダメージ倍率の取得 (value または multiplier)
                 mult = kwargs.get('value', 0)
                 if mult == 0: mult = kwargs.get('multiplier', 1.0)
                 

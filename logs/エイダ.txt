@@ -11,40 +11,40 @@
 [Buff] Applied バースト: シークレットエージェント_Stage_2 (charge_speed_rate: 0) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_3 (charge_dmg_buff: 15) to エイダ
 [Shoot] 時間:  5.37s | 弾数:  2/6   | Pellets: 1 | Dmg: 1,370,653 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:  6.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:  6.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:  6.75s | 弾数:  1/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:  7.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:  8.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:  7.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:  8.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:  8.13s | 弾数:  0/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間:  9.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 10.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:  9.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 10.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reload Complete. Ammo: 6
-[Skill Dmg] 時間: 11.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間: 11.52s | 弾数:  5/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 12.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 11.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間: 11.52s | 弾数:  5/6   | Pellets: 1 | Dmg:   234,969 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 12.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 12.90s | 弾数:  4/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 13.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 14.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 13.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 14.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 14.28s | 弾数:  3/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 15.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 15.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 15.67s | 弾数:  2/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間: 17.05s | 弾数:  1/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
-[Shoot] 時間: 18.43s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
+[Shoot] 時間: 18.43s | 弾数:  0/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Action] Reloading... (120 frames)
 [Action] Reload Complete. Ammo: 6
 [Shoot] 時間: 21.82s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間: 22.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 22.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 23.20s | 弾数:  4/6   | Pellets: 1 | Dmg:   117,485 | Buffs: None
 [Skill Dmg] 時間: 24.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 24.58s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Shoot] 時間: 25.97s | 弾数:  2/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間: 26.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 26.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 27.35s | 弾数:  1/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Skill Dmg] 時間: 28.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 28.73s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間: 30.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 30.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Action] Reload Complete. Ammo: 6
 [Shoot] 時間: 32.12s | 弾数:  5/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間: 33.50s | 弾数:  4/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
@@ -58,22 +58,22 @@
 [Buff] Applied バースト: シークレットエージェント_Stage_1 (ignore_def_dmg_buff: 0.42) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_2 (charge_speed_rate: 0) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_3 (charge_dmg_buff: 15) to エイダ
-[Skill Dmg] 時間: 36.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40 | charge_speed_rate:0.00 | charge_dmg_buff:15.00
+[Skill Dmg] 時間: 36.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40 | charge_speed_rate:0.00 | charge_dmg_buff:15.00
 [Shoot] 時間: 36.27s | 弾数:  2/6   | Pellets: 1 | Dmg: 1,370,653 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Skill Dmg] 時間: 37.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 37.65s | 弾数:  1/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 38.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 39.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間: 39.03s | 弾数:  0/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 38.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 39.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間: 39.03s | 弾数:  0/6   | Pellets: 1 | Dmg:   234,969 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reloading... (120 frames)
 [Skill Dmg] 時間: 40.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 41.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 41.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reload Complete. Ammo: 6
-[Skill Dmg] 時間: 42.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 42.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 42.42s | 弾数:  5/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 43.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間: 43.80s | 弾数:  4/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 44.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 43.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間: 43.80s | 弾数:  4/6   | Pellets: 1 | Dmg:   234,969 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 44.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Skill Dmg] 時間: 45.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 45.18s | 弾数:  3/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間: 46.57s | 弾数:  2/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
@@ -81,18 +81,18 @@
 [Shoot] 時間: 49.33s | 弾数:  0/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Action] Reloading... (120 frames)
 [Action] Reload Complete. Ammo: 6
-[Skill Dmg] 時間: 52.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 52.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 52.72s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間: 54.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 54.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 54.10s | 弾数:  4/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Shoot] 時間: 55.48s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間: 56.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 56.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 56.87s | 弾数:  2/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間: 58.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 58.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   214,654 | Hits:1 | Buffs:None
 [Shoot] 時間: 58.25s | 弾数:  1/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Shoot] 時間: 59.63s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間: 60.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 60.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   214,654 | Hits:1 | Buffs:None
 [Action] Reload Complete. Ammo: 6
 [Shoot] 時間: 63.02s | 弾数:  5/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間: 64.40s | 弾数:  4/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
@@ -105,44 +105,44 @@
 [Buff] Applied バースト: シークレットエージェント_Stage_1 (ignore_def_dmg_buff: 0.42) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_2 (charge_speed_rate: 0) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_3 (charge_dmg_buff: 15) to エイダ
-[Shoot] 時間: 65.78s | 弾数:  3/6   | Pellets: 1 | Dmg: 1,370,653 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 66.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 67.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間: 67.17s | 弾数:  2/6   | Pellets: 1 | Dmg:   234,969 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 68.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間: 65.78s | 弾数:  3/6   | Pellets: 1 | Dmg: 1,644,783 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 66.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 67.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間: 67.17s | 弾数:  2/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 68.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 68.55s | 弾数:  1/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 69.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 69.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 69.93s | 弾数:  0/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 70.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 70.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間: 71.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 72.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 71.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 72.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reload Complete. Ammo: 6
-[Skill Dmg] 時間: 73.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間: 73.32s | 弾数:  5/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 74.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 73.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間: 73.32s | 弾数:  5/6   | Pellets: 1 | Dmg:   234,969 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 74.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 74.70s | 弾数:  4/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 75.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 75.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間: 76.08s | 弾数:  3/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間: 77.47s | 弾数:  2/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間: 78.85s | 弾数:  1/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
-[Shoot] 時間: 80.23s | 弾数:  0/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
+[Shoot] 時間: 80.23s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間: 82.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 82.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Action] Reload Complete. Ammo: 6
 [Shoot] 時間: 83.62s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間: 84.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 84.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 85.00s | 弾数:  4/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Skill Dmg] 時間: 86.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 86.38s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Shoot] 時間: 87.77s | 弾数:  2/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間: 88.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 88.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 89.15s | 弾数:  1/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間: 90.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間: 90.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間: 90.53s | 弾数:  0/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Action] Reloading... (120 frames)
 [Action] Reload Complete. Ammo: 6
-[Shoot] 時間: 93.92s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
+[Shoot] 時間: 93.92s | 弾数:  5/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間: 95.30s | 弾数:  4/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Burst] Activate!
 [Buff] Applied Skill 1: 隠密支援_Stage_0 (atk_buff_fixed: 15332.4) to エイダ
@@ -153,44 +153,44 @@
 [Buff] Applied バースト: シークレットエージェント_Stage_1 (ignore_def_dmg_buff: 0.42) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_2 (charge_speed_rate: 0) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_3 (charge_dmg_buff: 15) to エイダ
-[Skill Dmg] 時間: 96.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40 | charge_speed_rate:0.00 | charge_dmg_buff:15.00
+[Skill Dmg] 時間: 96.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40 | charge_speed_rate:0.00 | charge_dmg_buff:15.00
 [Shoot] 時間: 96.68s | 弾数:  3/6   | Pellets: 1 | Dmg: 1,370,653 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 97.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 98.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間: 98.07s | 弾数:  2/6   | Pellets: 1 | Dmg:   234,969 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間: 99.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間: 99.45s | 弾数:  1/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:100.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間:100.83s | 弾数:  0/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:101.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 97.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 98.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間: 98.07s | 弾数:  2/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間: 99.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間: 99.45s | 弾数:  1/6   | Pellets: 1 | Dmg:   234,969 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:100.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間:100.83s | 弾数:  0/6   | Pellets: 1 | Dmg:   234,969 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:101.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間:102.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:102.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Skill Dmg] 時間:103.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reload Complete. Ammo: 6
-[Skill Dmg] 時間:104.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:104.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:104.22s | 弾数:  5/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:105.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:105.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:105.60s | 弾数:  4/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
-[Shoot] 時間:106.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
+[Shoot] 時間:106.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間:108.37s | 弾数:  2/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間:109.75s | 弾数:  1/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
-[Shoot] 時間:111.13s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
+[Shoot] 時間:111.13s | 弾数:  0/6   | Pellets: 1 | Dmg:   117,485 | Buffs: None
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間:112.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間:112.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Action] Reload Complete. Ammo: 6
-[Skill Dmg] 時間:114.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間:114.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間:114.52s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Shoot] 時間:115.90s | 弾数:  4/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間:116.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
-[Shoot] 時間:117.28s | 弾数:  3/6   | Pellets: 1 | Dmg:   117,485 | Buffs: None
-[Skill Dmg] 時間:118.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
-[Shoot] 時間:118.67s | 弾数:  2/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間:120.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
-[Shoot] 時間:120.05s | 弾数:  1/6   | Pellets: 1 | Dmg:   117,485 | Buffs: None
+[Skill Dmg] 時間:116.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
+[Shoot] 時間:117.28s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
+[Skill Dmg] 時間:118.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
+[Shoot] 時間:118.67s | 弾数:  2/6   | Pellets: 1 | Dmg:   117,485 | Buffs: None
+[Skill Dmg] 時間:120.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
+[Shoot] 時間:120.05s | 弾数:  1/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Shoot] 時間:121.43s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Action] Reloading... (120 frames)
 [Action] Reload Complete. Ammo: 6
-[Shoot] 時間:124.82s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
+[Shoot] 時間:124.82s | 弾数:  5/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Burst] Activate!
 [Buff] Applied Skill 1: 隠密支援_Stage_0 (atk_buff_fixed: 15332.4) to エイダ
 [Buff] Applied Skill 1: 隠密支援_Stage_1 (ignore_def_dmg_buff: 0.5) to エイダ
@@ -200,40 +200,40 @@
 [Buff] Applied バースト: シークレットエージェント_Stage_1 (ignore_def_dmg_buff: 0.42) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_2 (charge_speed_rate: 0) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_3 (charge_dmg_buff: 15) to エイダ
-[Skill Dmg] 時間:126.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40 | charge_speed_rate:0.00 | charge_dmg_buff:15.00
+[Skill Dmg] 時間:126.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40 | charge_speed_rate:0.00 | charge_dmg_buff:15.00
 [Shoot] 時間:126.20s | 弾数:  4/6   | Pellets: 1 | Dmg: 1,370,653 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:127.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:127.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:127.58s | 弾数:  3/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:128.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:128.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:128.97s | 弾数:  2/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:129.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:130.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:129.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:130.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:130.35s | 弾数:  1/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:131.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:131.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:131.73s | 弾数:  0/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間:132.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:133.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:132.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:133.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reload Complete. Ammo: 6
-[Skill Dmg] 時間:134.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:135.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間:135.12s | 弾数:  5/6   | Pellets: 1 | Dmg:   234,969 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:134.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:135.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間:135.12s | 弾数:  5/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:136.50s | 弾数:  4/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
-[Shoot] 時間:137.88s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
+[Shoot] 時間:137.88s | 弾数:  3/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間:139.27s | 弾数:  2/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間:140.65s | 弾数:  1/6   | Pellets: 1 | Dmg:   117,485 | Buffs: None
-[Skill Dmg] 時間:142.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間:142.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間:142.03s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間:144.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間:144.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Action] Reload Complete. Ammo: 6
 [Shoot] 時間:145.42s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間:146.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間:146.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間:146.80s | 弾数:  4/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間:148.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間:148.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間:148.18s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Shoot] 時間:149.57s | 弾数:  2/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間:150.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Shoot] 時間:149.57s | 弾数:  2/6   | Pellets: 1 | Dmg:   117,485 | Buffs: None
+[Skill Dmg] 時間:150.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間:150.95s | 弾数:  1/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間:152.33s | 弾数:  0/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Action] Reloading... (120 frames)
@@ -248,36 +248,36 @@
 [Buff] Applied バースト: シークレットエージェント_Stage_2 (charge_speed_rate: 0) to エイダ
 [Buff] Applied バースト: シークレットエージェント_Stage_3 (charge_dmg_buff: 15) to エイダ
 [Shoot] 時間:155.72s | 弾数:  5/6   | Pellets: 1 | Dmg: 1,370,653 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:156.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:157.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:156.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:157.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:157.10s | 弾数:  4/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:158.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:158.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:158.48s | 弾数:  3/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:159.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:159.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:159.87s | 弾数:  2/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:160.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:161.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:160.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   824,270 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:161.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:161.25s | 弾数:  1/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:162.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:162.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Shoot] 時間:162.63s | 弾数:  0/6   | Pellets: 1 | Dmg:   195,808 | Buffs: atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間:163.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Skill Dmg] 時間:164.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:163.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Skill Dmg] 時間:164.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
 [Action] Reload Complete. Ammo: 6
-[Skill Dmg] 時間:165.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   412,135 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
-[Shoot] 時間:166.02s | 弾数:  5/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
+[Skill Dmg] 時間:165.00s | 名前:Skill 2: 閃光手榴弾 (短縮)       | Dmg:   618,202 | Hits:1 | Buffs:atk_buff_fixed:15332.40 | ignore_def_dmg_buff:0.92 | dummy_buff:1.00 | atk_buff_rate:0.40
+[Shoot] 時間:166.02s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Shoot] 時間:167.40s | 弾数:  4/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間:168.78s | 弾数:  3/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間:170.17s | 弾数:  2/6   | Pellets: 1 | Dmg:    78,323 | Buffs: None
 [Shoot] 時間:171.55s | 弾数:  1/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間:172.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間:172.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間:172.93s | 弾数:  0/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Action] Reloading... (120 frames)
-[Skill Dmg] 時間:174.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間:174.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Action] Reload Complete. Ammo: 6
 [Skill Dmg] 時間:176.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   160,990 | Hits:1 | Buffs:None
 [Shoot] 時間:176.32s | 弾数:  5/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
 [Shoot] 時間:177.70s | 弾数:  4/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
-[Skill Dmg] 時間:178.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
-[Shoot] 時間:179.08s | 弾数:  3/6   | Pellets: 1 | Dmg:   117,485 | Buffs: None
-[Skill Dmg] 時間:180.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   107,327 | Hits:1 | Buffs:None
+[Skill Dmg] 時間:178.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   214,654 | Hits:1 | Buffs:None
+[Shoot] 時間:179.08s | 弾数:  3/6   | Pellets: 1 | Dmg:    97,904 | Buffs: None
+[Skill Dmg] 時間:180.00s | 名前:Skill 2: 閃光手榴弾 (通常)       | Dmg:   214,654 | Hits:1 | Buffs:None
