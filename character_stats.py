@@ -119,9 +119,18 @@ class CharacterStatsMixin:
             layer_elem += 0.10 + elem_buff
             
         layer_special = 1.0
+
+        # 1. 本来のスキルダメージバフ (変更なし)
         if profile.get('is_special_skill_damage', False):
             sp_buff = self.buff_manager.get_total_value('special_skill_dmg_buff', frame)
             layer_special += sp_buff
+            
+        # 2. チャージ攻撃時の追撃バフ (新規追加)
+        # 独自のキー 'charge_additional_dmg' を参照するため、他キャラのスキルバフとは競合しない
+        if profile.get('is_charge_attack', False):
+            add_dmg = self.buff_manager.get_total_value('charge_additional_dmg', frame)
+            layer_special += add_dmg
+        # ▲▲▲ 修正ここまで ▲▲▲
 
         total_dmg = layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem * layer_special
         if self.name == "エイダ":

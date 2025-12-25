@@ -88,7 +88,6 @@
         "effect_no": 4,
         "is_ignore_def": true,
         "is_skill_damage": true,
-        "force_full_burst": true,
         "multiplier_list": [2.4818, 2.6727, 2.8636, 3.0545, 3.2454, 3.4363, 3.6272, 3.8182, 4.0091, 4.2]
       }
     },
@@ -106,7 +105,6 @@
         "effect_no": 4,
         "is_ignore_def": true,
         "is_skill_damage": true,
-        "force_full_burst": true,
         "multiplier_list": [2.4818, 2.6727, 2.8636, 3.0545, 3.2454, 3.4363, 3.6272, 3.8182, 4.0091, 4.2]
       }
     },

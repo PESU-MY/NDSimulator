@@ -337,6 +337,19 @@ class SkillEngineMixin:
             return 0
         # ▲▲▲ 挿入ここまで ▲▲▲
 
+        # ▼▼▼ 追加: 最大装弾数による効果量スケーリング ▼▼▼
+        # JSON記述例: "scale_by_max_ammo": true, "value": 0.015 (1発につき1.5%)
+        if kwargs.get('scale_by_max_ammo'):
+            ratio = kwargs.get('value', 0)
+            # 現在の最大装弾数を取得（バフ込み）
+            # ※CharacterActionMixinが統合されている前提
+            current_max_ammo = caster.current_max_ammo
+            
+            # 効果量 = 係数 × 最大装弾数
+            kwargs['value'] = ratio * current_max_ammo
+            self.log(f"[Scale] Value scaled by MaxAmmo({current_max_ammo}): {ratio} -> {kwargs['value']:.4f}", target_name=caster.name)
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         # ▼▼▼ 修正箇所: ステータス参照のロジック変更 (HP対応) ▼▼▼
         if kwargs.get('scale_by_caster_stats'):
             ratio = kwargs.get('value', 0)

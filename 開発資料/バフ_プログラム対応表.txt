@@ -123,6 +123,19 @@ MG立ち上げ速度UP            : mg_warmup_speed
 デバフ解除 (スタック数減少) : decrease_debuff_stack_count (effect_typeとして指定)
 気絶付与                    : stun (effect_typeとして指定)
 
+[最大装弾数によるスケーリング (scale_by_max_ammo)]
+機能                        : 自身の最大装弾数(現在値)に応じて効果量を変動させる
+キーワード                  : "scale_by_max_ammo": true
+                              "value": 1発あたりの効果量
+                              ※ valueが0.05で最大装弾数が10発なら、0.05 * 10 = 0.5 (50%) の効果となる
+
+[チャージ攻撃時追加ダメージ (charge_additional_dmg)]
+機能                        : チャージ攻撃（RL/SRの通常攻撃など）命中時に追加ダメージバフを適用する
+                              ※ special_skill_dmg_buff とは別枠で計算され、競合しない
+キーワード                  : "buff_type": "charge_additional_dmg"
+                              "value": 追加ダメージ倍率 (例: 0.5 = 50%追加)
+                              ※ 主に「与えたダメージのn%の追撃」を表現するために使用
+
 ================================================================
 
 【その他_ダメージ計算に使わないのでdummy_effectとして良いバフ】
