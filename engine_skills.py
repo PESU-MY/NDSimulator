@@ -185,16 +185,26 @@ class SkillEngineMixin:
         # 修正案: manual もチェック対象に含めるが、意図的な連打を防ぐためキーに識別子を含めるなどの検討が必要。
         # 今回のケースでは「同一フレーム」「同一スキル名」の重複を防ぎたいため、以下のように範囲を広げます。
         
+        # ▼▼▼ 調査用ログ（問題解決後に削除してください） ▼▼▼
+        if "放熱中" in skill.name or "チャージ速度" in skill.name:
+            print(f"[DEBUG] Frame:{frame} | Skill:{skill.name} | Type:{skill.trigger_type} | ID:{id(skill)}")
+        # ▲▲▲
+        
+        # ▼▼▼ 修正: manualトリガーも含めて重複チェックを行うため、除外リストから削除 ▼▼▼
+        # pellet_hit, critical_hit は1フレームに複数回発動して良いので除外のままにする
         if skill.trigger_type not in ['pellet_hit', 'critical_hit']:
-            # このフレームですでに発動済みならスキップ
+            
+            # このフレームですでに発動済みならスキップ (オブジェクトごとのチェック)
             if getattr(skill, 'last_used_frame', -1) == frame:
                 return 0
             
             skill.last_used_frame = frame
             
-            # 重複実行IDチェック
+            # 重複実行IDチェック (同名・同トリガーのスキルが別オブジェクトとして存在する場合の対策)
             unique_key = f"NAME_CHECK::{caster.name}::{skill.name}::{skill.trigger_type}"
             if unique_key in self.executed_skill_ids:
+                # デバッグ用: もしここでブロックされたらログに出るはず（通常は出さない）
+                # print(f"Blocked duplicate skill: {unique_key} at frame {frame}")
                 return 0
             self.executed_skill_ids.add(unique_key)
         # ▲▲▲ 修正ここまで ▲▲▲
@@ -320,6 +330,20 @@ class SkillEngineMixin:
             targets.append(caster) 
 
         if not targets and skill.effect_type == 'damage': targets.append(caster)
+
+        # =========================================================================
+        # ▼▼▼ 追加修正: ターゲットリストの強制重複排除 (名前ベース) ▼▼▼
+        # self.characters に重複が混入していても、ここで強制的に1キャラ1回に絞り込みます
+        if targets:
+            seen_names = set()
+            unique_targets = []
+            for t in targets:
+                if t.name not in seen_names:
+                    unique_targets.append(t)
+                    seen_names.add(t.name)
+            targets = unique_targets
+        # ▲▲▲ 追加ここまで ▲▲▲
+        # =========================================================================
         
         # ▼▼▼ 追加: フルバースト時間短縮効果 ▼▼▼
         if skill.effect_type == 'reduce_full_burst_time':

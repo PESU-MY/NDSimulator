@@ -141,16 +141,16 @@ class CharacterStatsMixin:
         # ▲▲▲ 修正ここまで ▲▲▲
 
         total_dmg = layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem * layer_special
-        if self.name == "グレイブ":
-            if mult != 0.1012:
-                print(f"--- [DEBUG] Damage Calc ({self.name}) ---")
-                print(f"  SkillMult: {mult:.4f}")
-                print(f"  1.FinalAtk: {final_atk:.1f} (Base:{self.base_atk} + Rate:{self.buff_manager.get_total_value('atk_buff_rate', frame):.2f} + Fix:{self.buff_manager.get_total_value('atk_buff_fixed', frame):.1f})")
-                print(f"  2.Split: {profile['is_pierce']} ")
-                print(f"  3.CritLayer: {layer_crit:.2f} (FullBurst:{is_full_burst}, IsCrit:{is_crit_hit})")
-                print(f"  4.DmgLayer : {layer_dmg:.2f} (IgnoreDefBuff:{self.buff_manager.get_total_value('atk_dmg_buff', frame):.2f}, TotalBucket:{bucket_dmg:.2f})")
-                print(f"  Total: {total_dmg:,.0f}")
-                print(f"----------------------------------------")
+        #if self.name == "グレイブ":
+        #    if mult != 0.1012:
+        #        print(f"--- [DEBUG] Damage Calc ({self.name}) ---")
+        #        print(f"  SkillMult: {mult:.4f}")
+        #        print(f"  1.FinalAtk: {final_atk:.1f} (Base:{self.base_atk} + Rate:{self.buff_manager.get_total_value('atk_buff_rate', frame):.2f} + Fix:{self.buff_manager.get_total_value('atk_buff_fixed', frame):.1f})")
+        #        print(f"  2.Split: {profile['is_pierce']} ")
+        #        print(f"  3.CritLayer: {layer_crit:.2f} (FullBurst:{is_full_burst}, IsCrit:{is_crit_hit})")
+        #        print(f"  4.DmgLayer : {layer_dmg:.2f} (IgnoreDefBuff:{self.buff_manager.get_total_value('atk_dmg_buff', frame):.2f}, TotalBucket:{bucket_dmg:.2f})")
+        #        print(f"  Total: {total_dmg:,.0f}")
+        #        print(f"----------------------------------------")
             
         # 最終計算に layer_special を乗算
         return total_dmg, is_crit_hit
