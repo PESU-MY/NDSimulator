@@ -1,0 +1,189 @@
+{
+  "name": "ジル",
+  "weapon_type": "AR",
+  "burst_stage": "3",
+  "element": "Electric",
+  "class": "Attacker",
+  "squad": "B.S.T.",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 1.00,
+    "damage_rate": 0.7109,
+    "core_damage_rate": 2.00,
+    "fire_interval": 24
+  },
+  "skills": [
+    {
+      "name": "Skill 1: マグナム弾 (通常)",
+      "trigger_type": "reload_complete",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_dmg_buff",
+        "value_list": [0.1701, 0.1846, 0.199, 0.2134, 0.2279, 0.2423, 0.2567, 0.2712, 0.2856, 0.3],
+        "shot_duration": 9,
+        "description": "通常攻撃ダメージ倍率UP (9発維持)"
+      }
+    },
+    {
+      "name": "Skill 1: マグナム弾 (戦闘開始時)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_dmg_buff",
+        "value_list": [0.1701, 0.1846, 0.199, 0.2134, 0.2279, 0.2423, 0.2567, 0.2712, 0.2856, 0.3],
+        "shot_duration": 9
+      }
+    },
+    {
+      "name": "Skill 1: マグナム弾 (バースト使用時ボーナス)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "ignore_def_dmg_buff",
+        "value_list": [0.2059, 0.2219, 0.2379, 0.2539, 0.2699, 0.2859, 0.3019, 0.3179, 0.3339, 0.3499],
+        "duration": 10
+      }
+    },
+    {
+      "name": "Skill 2: 硫酸弾 (装填)",
+      "trigger_type": "reload_complete",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_buff",
+        "tag": "acid_ready",
+        "value": 1,
+        "duration": 999999,
+        "description": "次弾で硫酸弾発射準備"
+      }
+    },
+    {
+      "name": "Skill 2: 硫酸弾 (戦闘開始時装填)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_buff",
+        "tag": "acid_ready",
+        "duration": 999999,
+        "value": 1,
+        "description": "次弾で硫酸弾発射準備"
+      }
+    },
+    {
+      "name": "Skill 2: 硫酸弾 (発射)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "acid_ready"
+      },
+      "effect_type": "cumulative_stages",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "dot",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [1.1345, 1.2218, 1.309, 1.3963, 1.4836, 1.5709, 1.6581, 1.7454, 1.8327, 1.92],
+            "interval": 1.0,
+            "duration": 30
+          }
+        },
+        {
+          "effect_type": "remove_buff",
+          "target": "self",
+          "kwargs": {
+            "tag": "acid_ready"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 硫酸弾 (攻撃力UP)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "atk_buff_rate",
+        "value_list": [0.2215, 0.2413, 0.2612, 0.2811, 0.301, 0.3208, 0.3407, 0.3606, 0.3804, 0.4003],
+        "duration": 10
+      }
+    },
+    {
+      "name": "バースト: スーパーコップ",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "reload_speed_rate",
+            "value_list": [0.546, 0.5964, 0.6468, 0.6972, 0.7476, 0.798, 0.8484, 0.8988, 0.9492, 0.9996],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "set_current_ammo",
+          "target": "self",
+          "kwargs": {
+            "value": 0,
+            "description": "強制リロード"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "hit_rate_buff",
+            "value_list": [0.4773, 0.514, 0.5508, 0.5875, 0.6242, 0.6609, 0.6976, 0.7344, 0.7711, 0.8078],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.4243, 0.4605, 0.4967, 0.5328, 0.569, 0.6052, 0.6414, 0.6776, 0.7138, 0.75],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "tag": "ignore_def_active", 
+            "value": 1.0,
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}

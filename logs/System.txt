@@ -1,52 +1,116 @@
 === Simulation Start ===
-Character: サクラ (Atk:21307)
-Character: Dummy_B2 (Atk:1)
-Character: サクラ：ブルーム・イン・サマー (Atk:25554)
-Character: Dummy_B3 (Atk:1)
 Character: Dummy_B1 (Atk:1)
+Character: Dummy_B2 (Atk:1)
+Character: ジル (Atk:25554)
+Character: Dummy_B3 (Atk:1)
+Character: Dummy_B3 (Atk:1)
 [Burst] サクラ used Burst Stage 1
+[サクラ] [Burst] Activate!
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to ジル
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[サクラ] [Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 0.05s (Source: サクラ)
-[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 903
+[Burst] ジル used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for ジル at frame 903
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 0.05s (Source: サクラ)
-[Burst] Recorded burst end time for Dummy_B3 at frame 2101
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 1806
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 0.05s (Source: サクラ)
-[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 3299
-[Burst] サクラ used Burst Stage 1
+[Burst] ジル used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for ジル at frame 2709
+[Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 0.05s (Source: サクラ)
-[Burst] Recorded burst end time for Dummy_B3 at frame 4497
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 3612
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 0.05s (Source: サクラ)
-[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 5695
-[Burst] サクラ used Burst Stage 1
+[Burst] ジル used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for ジル at frame 4515
+[Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 0.05s (Source: サクラ)
-[Burst] Recorded burst end time for Dummy_B3 at frame 6893
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 5418
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 0.05s (Source: サクラ)
-[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 8091
-[Burst] サクラ used Burst Stage 1
+[Burst] ジル used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for ジル at frame 6321
+[Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 0.05s (Source: サクラ)
-[Burst] Recorded burst end time for Dummy_B3 at frame 9289
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 7224
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] サクラ：ブルーム・イン・サマー used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 0.05s (Source: サクラ)
-[Burst] Recorded burst end time for サクラ：ブルーム・イン・サマー at frame 10487
-[Burst] サクラ used Burst Stage 1
+[Burst] ジル used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for ジル at frame 8127
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 9030
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] ジル used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for ジル at frame 9933
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)

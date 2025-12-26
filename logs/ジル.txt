@@ -1,0 +1,511 @@
+[Buff] Applied Skill 1: マグナム弾 (戦闘開始時) (atk_dmg_buff: 0.3) to ジル
+[Buff] Applied Skill 1: マグナム弾 (戦闘開始時) (atk_dmg_buff: 0.3) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (戦闘開始時装填) (dummy_buff: 1) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (戦闘開始時装填) (dummy_buff: 1) to ジル
+[Shoot] 時間:  0.22s | 弾数:  8/9   | Pellets: 1 | Dmg:    23,616 | Buffs: atk_dmg_buff:0.30 | dummy_buff:1.00
+[DoT] Applied Skill 2: 硫酸弾 (発射)_Stage_0 (None) on ジル
+[Remove Buff] Removed buffs with tag 'acid_ready' from ジル
+[Shoot] 時間:  0.62s | 弾数:  7/9   | Pellets: 1 | Dmg:    23,616 | Buffs: atk_dmg_buff:0.30
+[DoT] 時間:  1.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    63,783 | Stacks:1
+[Shoot] 時間:  1.02s | 弾数:  6/9   | Pellets: 1 | Dmg:    23,616 | Buffs: atk_dmg_buff:0.30
+[Shoot] 時間:  1.42s | 弾数:  5/9   | Pellets: 1 | Dmg:    23,616 | Buffs: atk_dmg_buff:0.30
+[Shoot] 時間:  1.82s | 弾数:  4/9   | Pellets: 1 | Dmg:    23,616 | Buffs: atk_dmg_buff:0.30
+[DoT] 時間:  2.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    63,783 | Stacks:1
+[Shoot] 時間:  2.22s | 弾数:  3/9   | Pellets: 1 | Dmg:    23,616 | Buffs: atk_dmg_buff:0.30
+[Shoot] 時間:  2.62s | 弾数:  2/9   | Pellets: 1 | Dmg:    23,616 | Buffs: atk_dmg_buff:0.30
+[DoT] 時間:  3.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    63,783 | Stacks:1
+[Shoot] 時間:  3.02s | 弾数:  1/9   | Pellets: 1 | Dmg:    23,616 | Buffs: atk_dmg_buff:0.30
+[Shoot] 時間:  3.42s | 弾数:  0/9   | Pellets: 1 | Dmg:    47,232 | Buffs: None
+[DoT] 時間:  4.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    49,064 | Stacks:1
+[Shoot] 時間:  4.80s | 弾数:  8/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[DoT] 時間:  5.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    49,064 | Stacks:1
+[Burst] Activate!
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Ammo] ジル ammo set to 0
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Shoot] 時間:  5.20s | 弾数: -1/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:  5.60s | 弾数:  8/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間:  6.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   180,348 | Stacks:1
+[Shoot] 時間:  6.00s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:  6.40s | 弾数:  6/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:  6.80s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間:  7.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   180,348 | Stacks:1
+[Shoot] 時間:  7.20s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:  7.60s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間:  8.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   180,348 | Stacks:1
+[Shoot] 時間:  8.00s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:  8.40s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:  8.80s | 弾数:  0/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間:  9.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   180,348 | Stacks:1
+[Shoot] 時間:  9.20s | 弾数:  8/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:  9.60s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間: 10.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   180,348 | Stacks:1
+[Shoot] 時間: 10.00s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 10.40s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 10.80s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間: 11.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   180,348 | Stacks:1
+[Shoot] 時間: 11.20s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 11.60s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間: 12.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   180,348 | Stacks:1
+[Shoot] 時間: 12.00s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 12.40s | 弾数:  0/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 12.80s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間: 13.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   180,348 | Stacks:1
+[Shoot] 時間: 13.20s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 13.60s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間: 14.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   180,348 | Stacks:1
+[Shoot] 時間: 14.00s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 14.40s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 14.80s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.91 | atk_buff_fix:5062.54 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[DoT] 時間: 15.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   240,464 | Stacks:1
+[Shoot] 時間: 15.20s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 15.60s | 弾数:  1/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[DoT] 時間: 16.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    49,064 | Stacks:1
+[Shoot] 時間: 16.00s | 弾数:  0/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[DoT] 時間: 17.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    49,064 | Stacks:1
+[Shoot] 時間: 17.38s | 弾数:  8/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 17.78s | 弾数:  7/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[DoT] 時間: 18.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    49,064 | Stacks:1
+[Shoot] 時間: 18.18s | 弾数:  6/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 18.58s | 弾数:  5/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 18.98s | 弾数:  4/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[DoT] 時間: 19.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    73,596 | Stacks:1
+[Shoot] 時間: 19.38s | 弾数:  3/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 19.78s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[DoT] 時間: 20.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:    49,064 | Stacks:1
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Shoot] 時間: 20.18s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 20.58s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 21.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   103,056 | Stacks:1
+[Shoot] 時間: 21.97s | 弾数:  8/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 22.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   103,056 | Stacks:1
+[Shoot] 時間: 22.37s | 弾数:  7/9   | Pellets: 1 | Dmg:    63,596 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 22.77s | 弾数:  6/9   | Pellets: 1 | Dmg:    50,877 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 23.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   103,056 | Stacks:1
+[Shoot] 時間: 23.17s | 弾数:  5/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 23.57s | 弾数:  4/9   | Pellets: 1 | Dmg:    76,315 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 23.97s | 弾数:  3/9   | Pellets: 1 | Dmg:    50,877 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 24.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   137,408 | Stacks:1
+[Shoot] 時間: 24.37s | 弾数:  2/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 24.77s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 25.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   137,408 | Stacks:1
+[Shoot] 時間: 25.17s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 26.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   103,056 | Stacks:1
+[Shoot] 時間: 26.55s | 弾数:  8/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 26.95s | 弾数:  7/9   | Pellets: 1 | Dmg:    63,596 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 27.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   103,056 | Stacks:1
+[Shoot] 時間: 27.35s | 弾数:  6/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 27.75s | 弾数:  5/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 28.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   137,408 | Stacks:1
+[Shoot] 時間: 28.15s | 弾数:  4/9   | Pellets: 1 | Dmg:    63,596 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 28.55s | 弾数:  3/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 28.95s | 弾数:  2/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 29.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   137,408 | Stacks:1
+[Shoot] 時間: 29.35s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[Shoot] 時間: 29.75s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: dummy_buff:0.91 | atk_buff_rate:0.40
+[DoT] 時間: 30.00s | Source:Skill 2: 硫酸弾 (発射)_Stage_0 | Dmg:   103,056 | Stacks:1
+[Shoot] 時間: 31.13s | 弾数:  8/9   | Pellets: 1 | Dmg:    27,250 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 31.53s | 弾数:  7/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 31.93s | 弾数:  6/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 32.33s | 弾数:  5/9   | Pellets: 1 | Dmg:    18,166 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 32.73s | 弾数:  4/9   | Pellets: 1 | Dmg:    27,250 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 33.13s | 弾数:  3/9   | Pellets: 1 | Dmg:    36,333 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 33.53s | 弾数:  2/9   | Pellets: 1 | Dmg:    36,333 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 33.93s | 弾数:  1/9   | Pellets: 1 | Dmg:    36,333 | Buffs: dummy_buff:0.91
+[Shoot] 時間: 34.33s | 弾数:  0/9   | Pellets: 1 | Dmg:    36,333 | Buffs: dummy_buff:0.91
+[Burst] Activate!
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Ammo] ジル ammo set to 0
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Shoot] 時間: 35.72s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 36.12s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 36.52s | 弾数:  6/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 36.92s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 37.32s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 37.72s | 弾数:  3/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 38.12s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 38.52s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 38.92s | 弾数:  0/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 39.32s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 39.72s | 弾数:  7/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 40.12s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 40.52s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 40.92s | 弾数:  4/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 41.32s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 41.72s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 42.12s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 42.52s | 弾数:  0/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 42.92s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 43.32s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 43.72s | 弾数:  6/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 44.12s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 44.52s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 44.92s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 45.32s | 弾数:  2/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間: 45.72s | 弾数:  1/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間: 46.12s | 弾数:  0/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 47.50s | 弾数:  8/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間: 47.90s | 弾数:  7/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間: 48.30s | 弾数:  6/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間: 48.70s | 弾数:  5/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間: 49.10s | 弾数:  4/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 49.50s | 弾数:  3/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 49.90s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Shoot] 時間: 50.30s | 弾数:  1/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 50.70s | 弾数:  0/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 52.08s | 弾数:  8/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 52.48s | 弾数:  7/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 52.88s | 弾数:  6/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 53.28s | 弾数:  5/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 53.68s | 弾数:  4/9   | Pellets: 1 | Dmg:    76,315 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 54.08s | 弾数:  3/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 54.48s | 弾数:  2/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 54.88s | 弾数:  1/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 55.28s | 弾数:  0/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 56.67s | 弾数:  8/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 57.07s | 弾数:  7/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 57.47s | 弾数:  6/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 57.87s | 弾数:  5/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 58.27s | 弾数:  4/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 58.67s | 弾数:  3/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 59.07s | 弾数:  2/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 59.47s | 弾数:  1/9   | Pellets: 1 | Dmg:    76,315 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 59.87s | 弾数:  0/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 61.25s | 弾数:  8/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 61.65s | 弾数:  7/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 62.05s | 弾数:  6/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間: 62.45s | 弾数:  5/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 62.85s | 弾数:  4/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 63.25s | 弾数:  3/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 63.65s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 64.05s | 弾数:  1/9   | Pellets: 1 | Dmg:    45,416 | Buffs: None
+[Shoot] 時間: 64.45s | 弾数:  0/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Burst] Activate!
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Ammo] ジル ammo set to 0
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Shoot] 時間: 65.83s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 66.23s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 66.63s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 67.03s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 67.43s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 67.83s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 68.23s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 68.63s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 69.03s | 弾数:  0/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 69.43s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 69.83s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 70.23s | 弾数:  6/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 70.63s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 71.03s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 71.43s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 71.83s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 72.23s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 72.63s | 弾数:  0/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 73.03s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 73.43s | 弾数:  7/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 73.83s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 74.23s | 弾数:  5/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 74.63s | 弾数:  4/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 75.03s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 75.43s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 75.83s | 弾数:  1/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 76.23s | 弾数:  0/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間: 77.62s | 弾数:  8/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 78.02s | 弾数:  7/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 78.42s | 弾数:  6/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間: 78.82s | 弾数:  5/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 79.22s | 弾数:  4/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 79.62s | 弾数:  3/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 80.02s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Shoot] 時間: 80.42s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 80.82s | 弾数:  0/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 82.20s | 弾数:  8/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 82.60s | 弾数:  7/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 83.00s | 弾数:  6/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 83.40s | 弾数:  5/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 83.80s | 弾数:  4/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 84.20s | 弾数:  3/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 84.60s | 弾数:  2/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 85.00s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 85.40s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 86.78s | 弾数:  8/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 87.18s | 弾数:  7/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 87.58s | 弾数:  6/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 87.98s | 弾数:  5/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 88.38s | 弾数:  4/9   | Pellets: 1 | Dmg:    76,315 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 88.78s | 弾数:  3/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 89.18s | 弾数:  2/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 89.58s | 弾数:  1/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 89.98s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間: 91.37s | 弾数:  8/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間: 91.77s | 弾数:  7/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間: 92.17s | 弾数:  6/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 92.57s | 弾数:  5/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間: 92.97s | 弾数:  4/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 93.37s | 弾数:  3/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 93.77s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 94.17s | 弾数:  1/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間: 94.57s | 弾数:  0/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Burst] Activate!
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Ammo] ジル ammo set to 0
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Shoot] 時間: 95.95s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 96.35s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 96.75s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 97.15s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 97.55s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 97.95s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 98.35s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 98.75s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 99.15s | 弾数:  0/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 99.55s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間: 99.95s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:100.35s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:100.75s | 弾数:  5/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:101.15s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:101.55s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:101.95s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:102.35s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:102.75s | 弾数:  0/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:103.15s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:103.55s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:103.95s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:104.35s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:104.75s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:105.15s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:105.55s | 弾数:  2/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間:105.95s | 弾数:  1/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:106.35s | 弾数:  0/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間:107.73s | 弾数:  8/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間:108.13s | 弾数:  7/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間:108.53s | 弾数:  6/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:108.93s | 弾数:  5/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間:109.33s | 弾数:  4/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:109.73s | 弾数:  3/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:110.13s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Shoot] 時間:110.53s | 弾数:  1/9   | Pellets: 1 | Dmg:    76,315 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:110.93s | 弾数:  0/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:112.32s | 弾数:  8/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:112.72s | 弾数:  7/9   | Pellets: 1 | Dmg:    76,315 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:113.12s | 弾数:  6/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:113.52s | 弾数:  5/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:113.92s | 弾数:  4/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:114.32s | 弾数:  3/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:114.72s | 弾数:  2/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:115.12s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:115.52s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:116.90s | 弾数:  8/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:117.30s | 弾数:  7/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:117.70s | 弾数:  6/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:118.10s | 弾数:  5/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:118.50s | 弾数:  4/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:118.90s | 弾数:  3/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:119.30s | 弾数:  2/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:119.70s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:120.10s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:121.48s | 弾数:  8/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間:121.88s | 弾数:  7/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間:122.28s | 弾数:  6/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:122.68s | 弾数:  5/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:123.08s | 弾数:  4/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間:123.48s | 弾数:  3/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:123.88s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:124.28s | 弾数:  1/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:124.68s | 弾数:  0/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Burst] Activate!
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Ammo] ジル ammo set to 0
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Shoot] 時間:126.07s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:126.47s | 弾数:  7/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:126.87s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:127.27s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:127.67s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:128.07s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:128.47s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:128.87s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:129.27s | 弾数:  0/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:129.67s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:130.07s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:130.47s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:130.87s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:131.27s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:131.67s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:132.07s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:132.47s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:132.87s | 弾数:  0/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:133.27s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:133.67s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:134.07s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:134.47s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:134.87s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:135.27s | 弾数:  3/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:135.67s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:136.07s | 弾数:  1/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:136.47s | 弾数:  0/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:137.85s | 弾数:  8/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間:138.25s | 弾数:  7/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:138.65s | 弾数:  6/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:139.05s | 弾数:  5/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:139.45s | 弾数:  4/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:139.85s | 弾数:  3/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間:140.25s | 弾数:  2/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Shoot] 時間:140.65s | 弾数:  1/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:141.05s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:142.43s | 弾数:  8/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:142.83s | 弾数:  7/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:143.23s | 弾数:  6/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:143.63s | 弾数:  5/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:144.03s | 弾数:  4/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:144.43s | 弾数:  3/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:144.83s | 弾数:  2/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:145.23s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:145.63s | 弾数:  0/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:147.02s | 弾数:  8/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:147.42s | 弾数:  7/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:147.82s | 弾数:  6/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:148.22s | 弾数:  5/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:148.62s | 弾数:  4/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:149.02s | 弾数:  3/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:149.42s | 弾数:  2/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:149.82s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:150.22s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:151.60s | 弾数:  8/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間:152.00s | 弾数:  7/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:152.40s | 弾数:  6/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:152.80s | 弾数:  5/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:153.20s | 弾数:  4/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:153.60s | 弾数:  3/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:154.00s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:154.40s | 弾数:  1/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間:154.80s | 弾数:  0/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Burst] Activate!
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied Skill 1: マグナム弾 (バースト使用時ボーナス) (ignore_def_dmg_buff: 0.3499) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_0 (reload_speed_rate: 0.9996) to ジル
+[Ammo] ジル ammo set to 0
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_2 (hit_rate_buff: 0.8078) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_3 (atk_dmg_buff: 0.75) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Buff] Applied バースト: スーパーコップ_Stage_4 (dummy_buff: 1.0) to ジル
+[Shoot] 時間:156.18s | 弾数:  8/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:156.58s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:156.98s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:157.38s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:157.78s | 弾数:  4/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:158.18s | 弾数:  3/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:158.58s | 弾数:  2/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:158.98s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:159.38s | 弾数:  0/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:159.78s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:160.18s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:160.58s | 弾数:  6/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:160.98s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:161.38s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:161.78s | 弾数:  3/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:162.18s | 弾数:  2/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:162.58s | 弾数:  1/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:162.98s | 弾数:  0/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:163.38s | 弾数:  8/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:163.78s | 弾数:  7/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:164.18s | 弾数:  6/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:164.58s | 弾数:  5/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:164.98s | 弾数:  4/9   | Pellets: 1 | Dmg:   111,293 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:165.38s | 弾数:  3/9   | Pellets: 1 | Dmg:   133,551 | Buffs: atk_dmg_buff:0.75 | dummy_buff:1.00 | atk_buff_rate:0.40 | ignore_def_dmg_buff:0.35 | reload_speed_rate:1.00 | hit_rate_buff:0.81
+[Shoot] 時間:165.78s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:166.18s | 弾数:  1/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間:166.58s | 弾数:  0/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間:167.97s | 弾数:  8/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:168.37s | 弾数:  7/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:168.77s | 弾数:  6/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:169.17s | 弾数:  5/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Shoot] 時間:169.57s | 弾数:  4/9   | Pellets: 1 | Dmg:    36,333 | Buffs: None
+[Shoot] 時間:169.97s | 弾数:  3/9   | Pellets: 1 | Dmg:    27,250 | Buffs: None
+[Shoot] 時間:170.37s | 弾数:  2/9   | Pellets: 1 | Dmg:    18,166 | Buffs: None
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Buff] Applied Skill 2: 硫酸弾 (攻撃力UP) (atk_buff_rate: 0.4003) to ジル
+[Shoot] 時間:170.77s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:171.17s | 弾数:  0/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:172.55s | 弾数:  8/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:172.95s | 弾数:  7/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:173.35s | 弾数:  6/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:173.75s | 弾数:  5/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:174.15s | 弾数:  4/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:174.55s | 弾数:  3/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:174.95s | 弾数:  2/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:175.35s | 弾数:  1/9   | Pellets: 1 | Dmg:    50,877 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:175.75s | 弾数:  0/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:177.13s | 弾数:  8/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:177.53s | 弾数:  7/9   | Pellets: 1 | Dmg:    63,596 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:177.93s | 弾数:  6/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:178.33s | 弾数:  5/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:178.73s | 弾数:  4/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:179.13s | 弾数:  3/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:179.53s | 弾数:  2/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40
+[Shoot] 時間:179.93s | 弾数:  1/9   | Pellets: 1 | Dmg:    38,157 | Buffs: atk_buff_rate:0.40

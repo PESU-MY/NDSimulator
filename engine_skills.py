@@ -337,6 +337,17 @@ class SkillEngineMixin:
             return 0
         # ▲▲▲ 挿入ここまで ▲▲▲
 
+        # ▼▼▼ 追加: バフ/デバフの削除処理 (remove_buff) ▼▼▼
+        if skill.effect_type == 'remove_buff':
+            tag = kwargs.get('tag')
+            if tag:
+                for target in targets:
+                    # remove_buffs_by_tag は buff_manager.py に既存のメソッドです
+                    target.buff_manager.remove_buffs_by_tag(tag, frame)
+                    self.log(f"[Remove Buff] Removed buffs with tag '{tag}' from {target.name}", target_name=caster.name)
+            return 0
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         # ▼▼▼ 追加: 最大装弾数による効果量スケーリング ▼▼▼
         # JSON記述例: "scale_by_max_ammo": true, "value": 0.015 (1発につき1.5%)
         if kwargs.get('scale_by_max_ammo'):
