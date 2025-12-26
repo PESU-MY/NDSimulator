@@ -148,6 +148,9 @@ class CharacterActionMixin:
                     self.current_ammo = self.current_max_ammo; self.state = "READY"; self.state_timer = 0
                     self.buff_manager.remove_reload_buffs()
                     simulator.log(f"[Action] Reload Complete. Ammo: {self.current_ammo}", target_name=self.name)
+                    # ▼▼▼ 追加: リロード完了トリガー ▼▼▼
+                    damage_this_frame += self.process_trigger('reload_complete', 0, frame, is_full_burst, simulator)
+                    # ▲▲▲
 
         elif self.weapon.type == "MG":
             if self.state == "READY":
@@ -188,6 +191,9 @@ class CharacterActionMixin:
                     self.current_ammo = self.current_max_ammo; self.state = "READY"; self.state_timer = 0
                     self.buff_manager.remove_reload_buffs()
                     simulator.log(f"[Action] Reload Complete. Ammo: {self.current_ammo}", target_name=self.name)
+                    # ▼▼▼ 追加: リロード完了トリガー ▼▼▼
+                    damage_this_frame += self.process_trigger('reload_complete', 0, frame, is_full_burst, simulator)
+                    # ▲▲▲
 
         else: 
             if self.state == "READY":
@@ -215,5 +221,9 @@ class CharacterActionMixin:
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration: self.current_ammo = self.current_max_ammo; self.state = "READY"; self.state_timer=0
                 self.buff_manager.remove_reload_buffs()
+
+                # ▼▼▼ 追加: リロード完了トリガー ▼▼▼
+                damage_this_frame += self.process_trigger('reload_complete', 0, frame, is_full_burst, simulator)
+                # ▲▲▲
         
         return damage_this_frame

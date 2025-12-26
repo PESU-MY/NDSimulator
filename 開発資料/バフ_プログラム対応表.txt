@@ -135,7 +135,9 @@ MG立ち上げ速度UP            : mg_warmup_speed
 キーワード                  : "buff_type": "charge_additional_dmg"
                               "value": 追加ダメージ倍率 (例: 0.5 = 50%追加)
                               ※ 主に「与えたダメージのn%の追撃」を表現するために使用
-
+[新規トリガー]
+リロード完了時              : reload_complete
+                              ※ trigger_value: 0
 ================================================================
 
 【その他_ダメージ計算に使わないのでdummy_effectとして良いバフ】
@@ -274,3 +276,5 @@ JSONの "trigger_type"（いつ発動するか）や、
 キーワード                  : "tag": "ignore_def_active"
                               ※ buff_type は dummy_buff 等で良い
                               ※ このタグが付与されている間、物理的な防御力計算がスキップされる
+
+    

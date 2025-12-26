@@ -171,4 +171,23 @@ main.py で sim.special_mode = True のように変数をセットし、JSONの 
   cleanse_debuff("debuff") でも remove_buffs_by_tag("burn") でも解除対象となる。
   ※ 内部判定ロジック（has_active_tag, remove_buffs_by_tag 等）をリスト包含判定に対応済み。
 
-  
+  【バグ修正 (Critical)】
+1. キャラクター生成時のスキルリスト共有バグ修正
+   Pythonの参照渡し仕様により、メイン処理（main.py）で読み込んだJSONデータをそのままCharacterに渡すと、
+   全キャラクター（特にダミー）が同じスキルリスト・状態変数を共有してしまう致命的なバグを修正。
+   対策: キャラクター生成時（Characterクラス初期化時）に `copy.deepcopy()` を使用し、データを完全複製するように変更済み。
+
+2. DoT（持続ダメージ）管理構造の修正
+   DoTデータの管理が辞書（dict）形式であるにも関わらず、一部処理でリスト（append）として扱おうとしていたバグを修正。
+   また、変数名の不一致（s_name / stack_name）によるエラーも解消済み。
+
+【機能追加 (New Features)】
+1. 効果時間の延長機能 (Extend)
+   既存のバフやDoTの効果時間を、上書きではなく「延長（現在残り時間 + 追加時間）」できる機能を追加。
+   JSON記述: "is_extend": true を指定。
+   検索キー: "tag" が一致する効果を探して延長する。スキル名が異なっていてもタグが合致すれば延長可能。
+
+2. リロード完了トリガー (reload_complete)
+   リロードが完了した瞬間に発動するトリガーを追加。
+   trigger_type: "reload_complete"
+   用途: 「リロード完了後の初弾のみ強化（硫酸弾）」などの実装に使用。
