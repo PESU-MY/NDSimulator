@@ -210,7 +210,27 @@ sim = NikkeSimulator(
 
 # 汎用フラグの設定例
 sim.special_mode = False 
+# ▼▼▼▼▼ スキル重複証明用デバッグコード ▼▼▼▼▼
+print("\n" + "="*50)
+print("【デバッグ】キャラクター別 スキル保持状況確認")
+print("="*50)
 
+for char in sim.characters:
+    print(f"■ キャラクター: {char.name}")
+    seen_skills = {}
+    for i, skill in enumerate(char.skills):
+        # スキル名とトリガータイプを表示（reprで隠し文字も可視化）
+        s_info = f"Name:{repr(skill.name)}, Trigger:{skill.trigger_type}"
+        print(f"  - [{i}] {s_info} | ID:{id(skill)}")
+        
+        # 名前とトリガーが完全に一致するものがあるかチェック
+        key = (skill.name, skill.trigger_type)
+        if key in seen_skills:
+            prev_i = seen_skills[key]
+            print(f"    >>>> ⚠️ 警告: Index[{prev_i}] と完全に一致するスキルが重複登録されています！")
+        seen_skills[key] = i
+print("="*50 + "\n")
+# ▲▲▲▲▲ 追加ここまで ▲▲▲▲▲
 # 6. 実行
 print("シミュレーションを開始します...")
 results = sim.run()
