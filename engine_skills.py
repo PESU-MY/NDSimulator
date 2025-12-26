@@ -435,10 +435,10 @@ class SkillEngineMixin:
         # JSONのkwargsに "remove_stacks": ["name1", "name2"] と記述して使用
         remove_stacks = kwargs.get('remove_stacks')
         if remove_stacks:
-            for s_name in remove_stacks:
+            for stack_name in remove_stacks:
                 for t in targets:
-                    t.buff_manager.remove_stack(s_name)
-                    self.log(f"[Remove] Removed stack '{s_name}' from {t.name}", target_name=caster.name)
+                    t.buff_manager.remove_stack(stack_name)
+                    self.log(f"[Remove] Removed stack '{stack_name}' from {t.name}", target_name=caster.name)
         # ▲▲▲ 追加ここまで ▲▲▲
 
         if skill.remove_tags:
@@ -514,24 +514,26 @@ class SkillEngineMixin:
             # ▲▲▲ 修正ここまで ▲▲▲
 
             elif skill.effect_type in ['buff', 'stack_buff', 'debuff']:
-                # 1. まず変数をすべて定義する (これを最初に行わないとエラーになります)
+                # 1. 変数定義 (すべて stack_name で統一)
                 b_type = kwargs.get('buff_type', 'atk_buff_rate')
                 val = kwargs.get('value', 0)
                 dur = kwargs.get('duration', 0) * self.FPS
-                stack_name = kwargs.get('stack_name')
+                stack_name = kwargs.get('stack_name')  # ★ここで定義
                 max_stack = kwargs.get('max_stack', 1)
                 tag = kwargs.get('tag')
                 shot_dur = kwargs.get('shot_duration', 0)
                 rem_reload = kwargs.get('remove_on_reload', False)
                 linked_remove_tag = kwargs.get('linked_remove_tag')
                 is_extend = kwargs.get('is_extend', False)
+                st_amount = kwargs.get('stack_amount', 1) 
 
-                # 2. 免疫チェック (Immunity Check)
+                # 2. 免疫チェック
                 is_debuff = False
                 if tag and ('debuff' in tag): is_debuff = True
                 if 'debuff' in b_type: is_debuff = True
                 
                 if is_debuff:
+                    # リストをコピーして回す
                     for target_item in targets[:]:
                         if target_item.buff_manager.has_active_immunity(frame):
                             if target_item.buff_manager.consume_immunity_stack(frame):
@@ -540,36 +542,41 @@ class SkillEngineMixin:
 
                 if not targets: return 0
 
-                # 3. ターゲットごとの処理
+                # 3. 適用処理
                 for target in targets:
                     manager = target.buff_manager
                     if skill.target == 'enemy':
                         manager = self.enemy_debuffs
                     
-                    # ▼▼▼ 追加: 延長処理 (extend_buffを使用) ▼▼▼
-                    # 延長フラグがあり、かつタグ指定がある場合のみ実行
+                    # 延長処理
                     if is_extend and tag:
-                        # buff_manager.py に extend_buff メソッドが追加されている必要があります
+                        # extend_buff が存在するか確認して実行
                         if hasattr(manager, 'extend_buff') and manager.extend_buff(tag, dur, frame):
                             self.log(f"[Buff Extend] Extended '{tag}' on {target.name}", target_name=target.name)
-                            continue # 延長に成功したら、新規付与(add_buff)は行わず次へ
+                            continue
 
-                    # ▼▼▼ 既存処理: 新規バフ付与 (add_buff) ▼▼▼
-                    # 延長モードでない場合、または延長を試みたが見つからなかった場合に実行するかは仕様次第ですが、
-                    # 基本的に「延長」指定なら新規付与はしないのが一般的です。
-                    # ここでは「is_extend が False」の時のみ add_buff します。
+                    # 新規/上書き付与
                     if not is_extend:
+                        # スタック数の変化をログに出すための事前チェック
+                        prev_count = 0
+                        if stack_name:
+                             # ★ここがエラーの原因箇所でした。stack_name に修正済みです。
+                             prev_count = manager.get_stack_count(stack_name, frame)
+
                         manager.add_buff(
                             b_type, val, dur, frame, source=skill.name,
-                            stack_name=stack_name, max_stack=max_stack, tag=tag,
+                            stack_name=stack_name, # ★修正済み
+                            max_stack=max_stack, tag=tag,
                             shot_duration=shot_dur, remove_on_reload=rem_reload,
-                            linked_remove_tag=linked_remove_tag
+                            linked_remove_tag=linked_remove_tag,
+                            stack_amount=st_amount
                         )
                         
                         t_str = "Enemy" if skill.target == 'enemy' else target.name
                         if stack_name:
-                            count = manager.get_stack_count(stack_name, frame)
-                            self.log(f"[Stack] Applied {skill.name} (Stack:{stack_name} x{count}) to {t_str}", target_name=caster.name)
+                            # ★修正済み
+                            new_count = manager.get_stack_count(stack_name, frame)
+                            self.log(f"[Stack] Applied {skill.name} (Stack:{stack_name} {prev_count}->{new_count}) to {t_str}", target_name=caster.name)
                         else:
                             self.log(f"[Buff] Applied {skill.name} ({b_type}: {val}) to {t_str}", target_name=caster.name)
                         
@@ -632,7 +639,7 @@ class SkillEngineMixin:
                         old_max_hp = target.get_current_max_hp(frame)
                         
                         if skill.effect_type == 'stack_buff':
-                            target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=s_name, max_stack=kwargs.get('max_stack', 1), tag=tag)
+                            target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=stack_name, max_stack=kwargs.get('max_stack', 1), tag=tag)
                         else:
                             target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, tag=tag)
                             
@@ -648,15 +655,15 @@ class SkillEngineMixin:
                 added_stack_count = 0
                 if b_type in ['def_debuff', 'taken_dmg_debuff']:
                     if skill.effect_type == 'stack_buff':
-                        self.enemy_debuffs.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=s_name, max_stack=kwargs.get('max_stack', 1), tag=tag, shot_duration=shot_dur, remove_on_reload=rem_reload, stack_amount=st_amount)
+                        self.enemy_debuffs.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=stack_name, max_stack=kwargs.get('max_stack', 1), tag=tag, shot_duration=shot_dur, remove_on_reload=rem_reload, stack_amount=st_amount)
                     else:
                         self.enemy_debuffs.add_buff(b_type, val, dur, frame, source=skill.name, tag=tag, shot_duration=shot_dur, remove_on_reload=rem_reload)
                     self.log(f"[Debuff] Applied {skill.name} ({b_type}) to Enemy (Shared)", target_name=caster.name)
                 else:
                     if skill.effect_type == 'stack_buff':
-                        prev_count = target.buff_manager.get_stack_count(s_name, frame)
-                        target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=s_name, max_stack=kwargs.get('max_stack', 1), tag=tag, shot_duration=shot_dur, remove_on_reload=rem_reload, stack_amount=st_amount)
-                        new_count = target.buff_manager.get_stack_count(s_name, frame)
+                        prev_count = target.buff_manager.get_stack_count(stack_name, frame)
+                        target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=stack_name, max_stack=kwargs.get('max_stack', 1), tag=tag, shot_duration=shot_dur, remove_on_reload=rem_reload, stack_amount=st_amount)
+                        new_count = target.buff_manager.get_stack_count(stack_name, frame)
                         added_stack_count = new_count - prev_count
                     else:
                         target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, tag=tag, shot_duration=shot_dur, remove_on_reload=rem_reload)

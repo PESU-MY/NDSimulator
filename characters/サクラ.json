@@ -1,0 +1,106 @@
+{
+  "name": "サクラ",
+  "weapon_type": "SR",
+  "burst_stage": "1",
+  "element": "Fire",
+  "class": "Supporter",
+  "squad": "アンダーワールドクイーン",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 1.67,
+    "damage_rate": 0.67,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 桜茶",
+      "trigger_type": "shot_count",
+      "trigger_value": 3,
+      "effect_type": "stack_buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "dummy_buff",
+        "stack_name": "桜茶",
+        "max_stack": 10,
+        "description": "防御力n%▲ (ダミー効果)",
+        "value_list": [0.0481, 0.0518, 0.0555, 0.0592, 0.0629, 0.0666, 0.0704, 0.0741, 0.0778, 0.0815],
+        "duration": 15
+      }
+    },
+    {
+      "name": "Skill 2: 花びら落とし (発射体ダメUP)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "dummy_buff",
+        "description": "発射体へのダメージn%▲ (ダミー効果)",
+        "value_list": [0.0457, 0.0492, 0.0528, 0.0563, 0.0598, 0.0633, 0.0668, 0.0704, 0.0739, 0.0774],
+        "duration": 99999
+      }
+    },
+    {
+      "name": "Skill 2: 花びら落とし (CT短縮)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cooldown_reduction",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 3,
+        "value_list": [0.0286, 0.0308, 0.033, 0.0352, 0.0374, 0.0396, 0.0418, 0.044, 0.0462, 0.0484]
+      }
+    },
+    {
+      "name": "バースト: 桜花らんまん (被ダメ軽減)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "dummy_buff",
+        "description": "風圧コードの敵から受けるダメージn%▼ (ダミー効果)",
+        "value_list": [0.5616, 0.6, 0.6384, 0.6768, 0.7152, 0.7536, 0.792, 0.8304, 0.8688, 0.9072],
+        "duration": 30
+      }
+    },
+    {
+      "name": "バースト: 桜花らんまん (攻撃力UP)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "cooldown_time": 40.0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "atk_buff_fix",
+        "scale_by_caster_stats": true,
+        "target_stat": "atk",
+        "stat_type": "finally",
+        "value_list": [0.1235, 0.1362, 0.1488, 0.1615, 0.1742, 0.1869, 0.1995, 0.2122, 0.2249, 0.2376],
+        "duration": 10
+      }
+    },
+    {
+      "name": "バースト: 桜花らんまん (阻止部位ダメUP)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "condition": {
+        "self_stack_min": 10,
+        "stack_name": "桜茶"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 6,
+        "buff_type": "dummy_buff",
+        "description": "阻止部位の攻撃ダメージn%▲ (ダミー効果)",
+        "value_list": [0.1391, 0.1498, 0.1605, 0.1712, 0.1819, 0.1926, 0.2033, 0.214, 0.2247, 0.2354],
+        "duration": 30
+      }
+    }
+  ]
+}

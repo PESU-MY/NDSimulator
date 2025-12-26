@@ -1,0 +1,114 @@
+{
+  "name": "シュガー",
+  "weapon_type": "SG",
+  "burst_stage": "3",
+  "element": "Iron",
+  "class": "Attacker",
+  "squad": "カフェ・スウィーティー",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 2.00,
+    "damage_rate": 2.316,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: ブラックタイフーン",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.0,
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "遮蔽物が攻撃を受けた時、20％の確率で発動 (special_mode)"
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "crit_dmg_buff",
+            "value_list": [0.0968, 0.1043, 0.1117, 0.1192, 0.1266, 0.1341, 0.1415, 0.149, 0.1564, 0.1639],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "reload_speed_rate",
+            "value_list": [0.0716, 0.0771, 0.0826, 0.0882, 0.0937, 0.0992, 0.1047, 0.1102, 0.1157, 0.1212],
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: ノワールセンサー (自分)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "crit_rate_buff",
+        "value_list": [0.0769, 0.0828, 0.0887, 0.0946, 0.1006, 0.1065, 0.1124, 0.1183, 0.1242, 0.1302],
+        "duration": 10
+      }
+    },
+    {
+      "name": "Skill 2: ノワールセンサー (SG味方)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "weapon_type",
+        "value": "SG"
+      },
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "max_ammo_rate",
+        "value_list": [0.4952, 0.5333, 0.5714, 0.6095, 0.6476, 0.6857, 0.7238, 0.7619, 0.8, 0.838],
+        "duration": 10
+      }
+    },
+    {
+      "name": "バースト: トラブルシューター",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "attack_speed_rate",
+            "value_list": [0.39, 0.42, 0.45, 0.48, 0.51, 0.54, 0.57, 0.6, 0.63, 0.66],
+            "duration": 15
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "hit_rate_buff",
+            "value_list": [0.195, 0.21, 0.225, 0.24, 0.255, 0.27, 0.285, 0.3, 0.315, 0.33],
+            "duration": 15
+          }
+        }
+      ]
+    }
+  ]
+}

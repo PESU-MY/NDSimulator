@@ -1,0 +1,1424 @@
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B2
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ：ブルーム・イン・サマー
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B3
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B1
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B2
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ：ブルーム・イン・サマー
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B3
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B1
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B2
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ：ブルーム・イン・サマー
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B3
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B1
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B2
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ：ブルーム・イン・サマー
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B3
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B1
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B2
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to サクラ：ブルーム・イン・サマー
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B3
+[Buff] Applied Skill 2: 花びら落とし (発射体ダメUP) (dummy_buff: 0.0774) to Dummy_B1
+[Shoot] 時間:  1.22s | 弾数:  5/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08
+[Shoot] 時間:  2.60s | 弾数:  4/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08
+[Shoot] 時間:  3.98s | 弾数:  3/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 0->1) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 0->1) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 0->1) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 0->1) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 0->1) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 1->2) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 1->2) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 1->2) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 1->2) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 2->3) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 2->3) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 2->3) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 2->3) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 2->3) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 4->5) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 3->4) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 3->4) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 3->4) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 3->4) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 6->7) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 4->5) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 4->5) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 4->5) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 4->5) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 8->9) to Dummy_B1
+[Burst] Activate!
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Shoot] 時間:  5.37s | 弾数:  2/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | atk_buff_fix:5062.54 | [桜茶 x5 (Val:0.41)]
+[Shoot] 時間:  6.75s | 弾数:  1/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | atk_buff_fix:5062.54 | [桜茶 x5 (Val:0.41)]
+[Shoot] 時間:  8.13s | 弾数:  0/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | atk_buff_fix:5062.54 | [桜茶 x5 (Val:0.41)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 5->6) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 5->6) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 5->6) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 5->6) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 6->7) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 6->7) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 6->7) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 6->7) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 7->8) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 7->8) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 7->8) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 7->8) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 8->9) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 8->9) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 8->9) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 8->9) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 9->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 9->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 9->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 9->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 11.18s | 弾数:  5/6   | Pellets: 1 | Dmg:   107,068 | Buffs: dummy_buff:0.98 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 12.57s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 13.95s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間: 15.33s | 弾数:  2/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 16.72s | 弾数:  1/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 18.10s | 弾数:  0/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 21.15s | 弾数:  5/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 22.53s | 弾数:  4/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 23.92s | 弾数:  3/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間: 25.30s | 弾数:  2/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 26.68s | 弾数:  1/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 28.07s | 弾数:  0/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 31.12s | 弾数:  5/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 32.50s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 33.88s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.98 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間: 35.27s | 弾数:  2/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 36.65s | 弾数:  1/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 38.03s | 弾数:  0/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 41.08s | 弾数:  5/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 42.47s | 弾数:  4/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 43.85s | 弾数:  3/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間: 45.23s | 弾数:  2/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 46.62s | 弾数:  1/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 48.00s | 弾数:  0/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 51.05s | 弾数:  5/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 52.43s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 53.82s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間: 55.20s | 弾数:  2/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 56.58s | 弾数:  1/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 57.97s | 弾数:  0/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Burst] Activate!
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Shoot] 時間: 61.02s | 弾数:  5/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 62.40s | 弾数:  4/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 63.78s | 弾数:  3/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間: 65.17s | 弾数:  2/6   | Pellets: 1 | Dmg:   107,068 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 66.55s | 弾数:  1/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 67.93s | 弾数:  0/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 70.98s | 弾数:  5/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 72.37s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 73.75s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間: 75.13s | 弾数:  2/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 76.52s | 弾数:  1/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 77.90s | 弾数:  0/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 80.95s | 弾数:  5/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 82.33s | 弾数:  4/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 83.72s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間: 85.10s | 弾数:  2/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 86.48s | 弾数:  1/6   | Pellets: 1 | Dmg:   107,068 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 87.87s | 弾数:  0/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間: 90.92s | 弾数:  5/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 92.30s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 93.68s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間: 95.07s | 弾数:  2/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 96.45s | 弾数:  1/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間: 97.83s | 弾数:  0/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Burst] Activate!
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Shoot] 時間:100.88s | 弾数:  5/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:102.27s | 弾数:  4/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:103.65s | 弾数:  3/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間:105.03s | 弾数:  2/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:106.42s | 弾数:  1/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:107.80s | 弾数:  0/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:110.85s | 弾数:  5/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:112.23s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:113.62s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間:115.00s | 弾数:  2/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:116.38s | 弾数:  1/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:117.77s | 弾数:  0/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:120.82s | 弾数:  5/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:122.20s | 弾数:  4/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:123.58s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間:124.97s | 弾数:  2/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:126.35s | 弾数:  1/6   | Pellets: 1 | Dmg:   107,068 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:127.73s | 弾数:  0/6   | Pellets: 1 | Dmg:   107,068 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:130.78s | 弾数:  5/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:132.17s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:133.55s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間:134.93s | 弾数:  2/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:136.32s | 弾数:  1/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:137.70s | 弾数:  0/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Burst] Activate!
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Shoot] 時間:140.75s | 弾数:  5/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:142.13s | 弾数:  4/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:143.52s | 弾数:  3/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間:144.90s | 弾数:  2/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:146.28s | 弾数:  1/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:147.67s | 弾数:  0/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | atk_buff_fix:5062.54 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:150.72s | 弾数:  5/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:152.10s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:153.48s | 弾数:  3/6   | Pellets: 1 | Dmg:   107,068 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間:154.87s | 弾数:  2/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:156.25s | 弾数:  1/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:157.63s | 弾数:  0/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:160.68s | 弾数:  5/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:162.07s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:163.45s | 弾数:  3/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間:164.83s | 弾数:  2/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:166.22s | 弾数:  1/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:167.60s | 弾数:  0/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:1.22 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Shoot] 時間:170.65s | 弾数:  5/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:172.03s | 弾数:  4/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:173.42s | 弾数:  3/6   | Pellets: 1 | Dmg:    89,223 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Shoot] 時間:174.80s | 弾数:  2/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:176.18s | 弾数:  1/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Shoot] 時間:177.57s | 弾数:  0/6   | Pellets: 1 | Dmg:    71,378 | Buffs: dummy_buff:0.08 | [桜茶 x10 (Val:0.82)]
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B2
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to サクラ：ブルーム・イン・サマー
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B3
+[Stack] Applied Skill 1: 桜茶 (Stack:桜茶 10->10) to Dummy_B1
+[Action] Reloading... (100 frames)
+[Action] Reload Complete. Ammo: 6
+[Burst] Activate!
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (被ダメ軽減) (dummy_buff: 0.9072) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (攻撃力UP) (atk_buff_fix: 5062.5432) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B2
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to サクラ：ブルーム・イン・サマー
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B3
+[Buff] Applied バースト: 桜花らんまん (阻止部位ダメUP) (dummy_buff: 0.2354) to Dummy_B1

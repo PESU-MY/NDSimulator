@@ -1,0 +1,95 @@
+{
+  "name": "シグナル",
+  "weapon_type": "SMG",
+  "burst_stage": "2",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "スカウティング",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.00,
+    "damage_rate": 0.081,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "Skill 1: アタックシグナル",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "def_debuff",
+            "description": "対象に防御力n%▼",
+            "value_list": [0.0297, 0.033, 0.0363, 0.0396, 0.0429, 0.0462, 0.0495, 0.0528, 0.0561, 0.0594],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "dummy_buff",
+            "description": "対象に攻撃力n%▼",
+            "value_list": [0.0297, 0.033, 0.0363, 0.0396, 0.0429, 0.0462, 0.0495, 0.0528, 0.0561, 0.0594],
+            "duration": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: ウェイティング・フォー・シグナル",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "drain",
+        "value_list": [0.2204, 0.2448, 0.2693, 0.2938, 0.3183, 0.3428, 0.3673, 0.3918, 0.4163, 0.4408],
+        "duration": 10,
+        "description": "攻撃ダメージのn%を回復"
+      }
+    },
+    {
+      "name": "バースト: エマージェンシー・シグナル",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [1.1461, 1.2734, 1.4008, 1.5281, 1.6555, 1.7828, 1.9102, 2.0375, 2.1648, 2.2922]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "def_debuff",
+            "description": "対象に防御力n%▼",
+            "value_list": [0.0617, 0.0685, 0.0754, 0.0822, 0.0891, 0.096, 0.1028, 0.1097, 0.1165, 0.1234],
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}
