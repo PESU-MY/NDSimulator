@@ -3,7 +3,7 @@ Character: Dummy_B1 (Atk:1)
 Character: Dummy_B2 (Atk:1)
 Character: シンデレラ (Atk:17059)
 Character: Dummy_B3 (Atk:1)
-Character: Dummy_B3 (Atk:1)
+Character: グレイブ (Atk:21307)
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] シンデレラ used Burst Stage 3

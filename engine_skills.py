@@ -180,10 +180,20 @@ class SkillEngineMixin:
 
     def apply_skill(self, skill, caster, frame, is_full_burst):
         if skill.trigger_type not in ['manual', 'pellet_hit', 'critical_hit']:
+            # 既存のIDチェック
             s_id = id(skill)
             if s_id in self.executed_skill_ids:
                 return 0
             self.executed_skill_ids.add(s_id)
+
+            # ▼▼▼ 追加: 名前と発動者による重複チェック (別オブジェクト対策) ▼▼▼
+            # "キャラ名_スキル名_トリガー" をキーにして、同一フレームでの多重発動を完全に防ぐ
+            # executed_skill_ids は set なので文字列も格納可能です
+            unique_key = f"NAME_CHECK::{caster.name}::{skill.name}::{skill.trigger_type}"
+            if unique_key in self.executed_skill_ids:
+                return 0
+            self.executed_skill_ids.add(unique_key)
+            # ▲▲▲ 追加ここまで ▲▲▲
         
         if not self.should_apply_skill(skill, frame, caster): return 0
         

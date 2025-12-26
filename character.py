@@ -11,20 +11,17 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.name = name
         self.weapon = weapon_config
         
-        # ▼▼▼ 修正: スキルリストの重複排除処理を追加 ▼▼▼
-        # 受け取ったskillsリストに同じ名前・トリガーのスキルが重複している場合、1つに絞ります
+        # ▼▼▼ 前半のブロック（これは正しいので残す） ▼▼▼
         self.skills = []
         seen_skills = set()
         for s in skills:
-            # 名前とトリガータイプが同じなら重複とみなす
             unique_key = (s.name, s.trigger_type)
             if unique_key not in seen_skills:
                 self.skills.append(s)
                 seen_skills.add(unique_key)
-        # ▲▲▲ 修正ここまで ▲▲▲
         
-        # 元のコード（削除またはコメントアウト）:
-        # self.skills = skills
+        # ▼▼▼ 後半のブロック（unique_skills = {} ...）は削除してください ▼▼▼
+        # このブロックがあると、同名のスキル（発動条件違い）が消えてしまいますself.skills = skills
         
         self.base_atk = base_atk
         self.base_hp = base_hp

@@ -188,7 +188,7 @@ dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_b3]
+all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, burst2_nikke]
 
 # 4. バーストローテーション
 rotation = [
