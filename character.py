@@ -11,17 +11,23 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.name = name
         self.weapon = weapon_config
         
-        # ▼▼▼ 前半のブロック（これは正しいので残す） ▼▼▼
+        # ▼▼▼ 正しい重複排除ブロック（残す） ▼▼▼
         self.skills = []
         seen_skills = set()
         for s in skills:
+            # 名前とトリガーが完全に一致するものだけを重複とみなす
             unique_key = (s.name, s.trigger_type)
             if unique_key not in seen_skills:
                 self.skills.append(s)
                 seen_skills.add(unique_key)
         
-        # ▼▼▼ 後半のブロック（unique_skills = {} ...）は削除してください ▼▼▼
-        # このブロックがあると、同名のスキル（発動条件違い）が消えてしまいますself.skills = skills
+        # ▼▼▼ 削除するブロック（ここを削除してください！） ▼▼▼
+        # unique_skills = {}
+        # for s in skills:
+        #     if s.name not in unique_skills:
+        #         unique_skills[s.name] = s
+        # self.skills = list(unique_skills.values())
+        # ▲▲▲▲▲▲
         
         self.base_atk = base_atk
         self.base_hp = base_hp
