@@ -11,15 +11,21 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.name = name
         self.weapon = weapon_config
         
-        # ▼▼▼ 正しい重複排除ブロック（残す） ▼▼▼
-        self.skills = []
-        seen_skills = set()
+        # ▼▼▼ 修正: スキルリストの重複排除処理を追加 ▼▼▼
+        # 同じ名前、同じトリガータイプのスキルが複数ある場合、1つに絞る
+        unique_skills = {}
         for s in skills:
-            # 名前とトリガーが完全に一致するものだけを重複とみなす
-            unique_key = (s.name, s.trigger_type)
-            if unique_key not in seen_skills:
-                self.skills.append(s)
-                seen_skills.add(unique_key)
+            # キーを (スキル名, トリガータイプ) にすることで、同名でもトリガーが違う場合は維持
+            key = (s.name, s.trigger_type)
+            if key not in unique_skills:
+                unique_skills[key] = s
+            else:
+                # 既に存在する場合、こちらのオブジェクトを採用するか、あるいは無視する
+                # 基本的にJSON定義のミスで重複している場合は無視でよい
+                pass
+        
+        self.skills = list(unique_skills.values())
+        # ▲▲▲ 修正ここまで ▲▲▲
         
        
         

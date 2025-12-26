@@ -179,18 +179,20 @@ class SkillEngineMixin:
         return True
 
     def apply_skill(self, skill, caster, frame, is_full_burst):
-        # ▼▼▼ 修正: last_used_frame による強力な重複ガード ▼▼▼
-        # manual(派生スキル), pellet_hit/critical_hit(多段ヒット) 以外は
-        # 同一フレームでの多重発動を禁止する
-        if skill.trigger_type not in ['manual', 'pellet_hit', 'critical_hit']:
+        # ▼▼▼ 修正: manualトリガーも含めて重複チェックを行う（pellet_hit, critical_hitのみ除外） ▼▼▼
+        # 元のコード: if skill.trigger_type not in ['manual', 'pellet_hit', 'critical_hit']:
+        
+        # 修正案: manual もチェック対象に含めるが、意図的な連打を防ぐためキーに識別子を含めるなどの検討が必要。
+        # 今回のケースでは「同一フレーム」「同一スキル名」の重複を防ぎたいため、以下のように範囲を広げます。
+        
+        if skill.trigger_type not in ['pellet_hit', 'critical_hit']:
             # このフレームですでに発動済みならスキップ
             if getattr(skill, 'last_used_frame', -1) == frame:
                 return 0
             
-            # 発動時刻を記録
             skill.last_used_frame = frame
             
-            # 念のための既存IDチェックも残しておきます
+            # 重複実行IDチェック
             unique_key = f"NAME_CHECK::{caster.name}::{skill.name}::{skill.trigger_type}"
             if unique_key in self.executed_skill_ids:
                 return 0
