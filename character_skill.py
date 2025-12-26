@@ -38,6 +38,10 @@ class CharacterSkillMixin:
                 elif trigger_type == 'on_burst_3_enter': is_triggered = True
                 elif trigger_type == 'on_start': is_triggered = True
                 elif trigger_type == 'on_burst_end': is_triggered = True
+
+                # ▼▼▼ 追加: リロード完了トリガーの判定 ▼▼▼
+                elif trigger_type == 'reload_complete': is_triggered = True
+                # ▲▲▲ 追加ここまで ▲▲▲
                 
                 elif trigger_type in ['pellet_hit', 'critical_hit']:
                     if skill.trigger_value > 0:

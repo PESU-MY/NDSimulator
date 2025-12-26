@@ -11,11 +11,20 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.name = name
         self.weapon = weapon_config
         
-        self.skills = skills 
-        for s in self.skills:
-            if not s.owner_name: s.owner_name = self.name
-            if not hasattr(s, 'last_used_frame'):
-                s.last_used_frame = -1
+        # ▼▼▼ 修正: スキルリストの重複排除処理を追加 ▼▼▼
+        # 受け取ったskillsリストに同じ名前・トリガーのスキルが重複している場合、1つに絞ります
+        self.skills = []
+        seen_skills = set()
+        for s in skills:
+            # 名前とトリガータイプが同じなら重複とみなす
+            unique_key = (s.name, s.trigger_type)
+            if unique_key not in seen_skills:
+                self.skills.append(s)
+                seen_skills.add(unique_key)
+        # ▲▲▲ 修正ここまで ▲▲▲
+        
+        # 元のコード（削除またはコメントアウト）:
+        # self.skills = skills
         
         self.base_atk = base_atk
         self.base_hp = base_hp
@@ -25,6 +34,16 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         # ▼▼▼ 追加: 部隊情報 ▼▼▼
         self.squad = squad
         # ▲▲▲ 追加ここまで ▲▲▲
+
+        # ▼▼▼ 追加: スキルの重複排除 ▼▼▼
+        # スキル名が同じものは1つだけ残す
+        unique_skills = {}
+        for s in skills:
+            # 同じ名前のスキルが既にあればスキップ（あるいは上書き）
+            if s.name not in unique_skills:
+                unique_skills[s.name] = s
+        self.skills = list(unique_skills.values())
+        # ▲▲▲
         
         self.is_dummy = is_dummy
 

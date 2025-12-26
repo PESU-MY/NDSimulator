@@ -184,7 +184,7 @@ class SkillEngineMixin:
             if s_id in self.executed_skill_ids:
                 return 0
             self.executed_skill_ids.add(s_id)
-
+        
         if not self.should_apply_skill(skill, frame, caster): return 0
         
         total_dmg = 0

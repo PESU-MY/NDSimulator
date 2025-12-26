@@ -151,6 +151,7 @@ class CharacterActionMixin:
                     # ▼▼▼ 追加: リロード完了トリガー ▼▼▼
                     damage_this_frame += self.process_trigger('reload_complete', 0, frame, is_full_burst, simulator)
                     # ▲▲▲
+                    
 
         elif self.weapon.type == "MG":
             if self.state == "READY":
@@ -194,6 +195,7 @@ class CharacterActionMixin:
                     # ▼▼▼ 追加: リロード完了トリガー ▼▼▼
                     damage_this_frame += self.process_trigger('reload_complete', 0, frame, is_full_burst, simulator)
                     # ▲▲▲
+                    
 
         else: 
             if self.state == "READY":
@@ -219,11 +221,17 @@ class CharacterActionMixin:
             elif self.state == "RELOADING":
                 if self.state_timer == 0: self.current_action_duration = self.get_buffed_frames('reload', self.weapon.reload_frames, frame)
                 self.state_timer += 1
-                if self.state_timer >= self.current_action_duration: self.current_ammo = self.current_max_ammo; self.state = "READY"; self.state_timer=0
-                self.buff_manager.remove_reload_buffs()
+                # ▼▼▼ 修正: if文をブロック化し、処理を中に含める ▼▼▼
+                if self.state_timer >= self.current_action_duration:
+                    self.current_ammo = self.current_max_ammo
+                    self.state = "READY"
+                    self.state_timer = 0
+                    
+                    self.buff_manager.remove_reload_buffs()
 
-                # ▼▼▼ 追加: リロード完了トリガー ▼▼▼
-                damage_this_frame += self.process_trigger('reload_complete', 0, frame, is_full_burst, simulator)
-                # ▲▲▲
+                    # ▼▼▼ 追加: リロード完了トリガー ▼▼▼
+                    damage_this_frame += self.process_trigger('reload_complete', 0, frame, is_full_burst, simulator)
+                    # ▲▲▲
+
         
         return damage_this_frame
