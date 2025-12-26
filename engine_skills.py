@@ -179,35 +179,19 @@ class SkillEngineMixin:
         return True
 
     def apply_skill(self, skill, caster, frame, is_full_burst):
-        # ▼▼▼ 修正: manualトリガーも含めて重複チェックを行う（pellet_hit, critical_hitのみ除外） ▼▼▼
-        # 元のコード: if skill.trigger_type not in ['manual', 'pellet_hit', 'critical_hit']:
-        
-        # 修正案: manual もチェック対象に含めるが、意図的な連打を防ぐためキーに識別子を含めるなどの検討が必要。
-        # 今回のケースでは「同一フレーム」「同一スキル名」の重複を防ぎたいため、以下のように範囲を広げます。
-        
-        # ▼▼▼ 調査用ログ（問題解決後に削除してください） ▼▼▼
-        if "放熱中" in skill.name or "チャージ速度" in skill.name:
-            print(f"[DEBUG] Frame:{frame} | Skill:{skill.name} | Type:{skill.trigger_type} | ID:{id(skill)}")
-        # ▲▲▲
-        
-        # ▼▼▼ 修正: manualトリガーも含めて重複チェックを行うため、除外リストから削除 ▼▼▼
-        # pellet_hit, critical_hit は1フレームに複数回発動して良いので除外のままにする
+        # ▼▼▼ 修正1: manual を除外リストから削除 (派生スキルの重複発動を防止) ▼▼▼
         if skill.trigger_type not in ['pellet_hit', 'critical_hit']:
-            
-            # このフレームですでに発動済みならスキップ (オブジェクトごとのチェック)
+            # このフレームですでに発動済みならスキップ
             if getattr(skill, 'last_used_frame', -1) == frame:
                 return 0
             
             skill.last_used_frame = frame
             
-            # 重複実行IDチェック (同名・同トリガーのスキルが別オブジェクトとして存在する場合の対策)
             unique_key = f"NAME_CHECK::{caster.name}::{skill.name}::{skill.trigger_type}"
             if unique_key in self.executed_skill_ids:
-                # デバッグ用: もしここでブロックされたらログに出るはず（通常は出さない）
-                # print(f"Blocked duplicate skill: {unique_key} at frame {frame}")
                 return 0
             self.executed_skill_ids.add(unique_key)
-        # ▲▲▲ 修正ここまで ▲▲▲
+        # ▲▲▲ 修正1ここまで ▲▲▲
         
         if not self.should_apply_skill(skill, frame, caster): return 0
         
@@ -217,17 +201,14 @@ class SkillEngineMixin:
         if skill.effect_type == 'cumulative_stages':
             if skill.kwargs.get('trigger_all_stages'):
                 for i, stage_data in enumerate(skill.stages):
-                    # ▼▼▼ 追加: trigger_type が part_break の場合、モード設定をチェックしてスキップ ▼▼▼
-                    # ステージが辞書の場合の判定
                     if isinstance(stage_data, dict):
                         t_type = stage_data.get('trigger_type')
                         if t_type == 'part_break' and not getattr(self, 'part_break_mode', False):
                             continue
-                    # ステージがSkillオブジェクトの場合の判定
                     elif isinstance(stage_data, Skill):
                         if stage_data.trigger_type == 'part_break' and not getattr(self, 'part_break_mode', False):
                             continue
-                    # ▲▲▲ 追加ここまで ▲▲▲
+                            
                     if isinstance(stage_data, Skill):
                         total_dmg += self.apply_skill(stage_data, caster, frame, is_full_burst)
                     elif isinstance(stage_data, dict):
@@ -239,13 +220,10 @@ class SkillEngineMixin:
                             name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
                             effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
                         )
-                        # ▼▼▼ 修正: ターゲット/条件の継承ロジック ▼▼▼
-                        # ステージ設定があればそれが優先され、なければ親スキルの設定を引き継ぐ
                         if not temp_skill.target:
                             temp_skill.target = skill.target
                         if not temp_skill.target_condition:
                             temp_skill.target_condition = skill.target_condition
-                        # ▲▲▲ 修正ここまで ▲▲▲
                         temp_skill.owner_name = caster.name
                         total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
             else:
@@ -264,14 +242,10 @@ class SkillEngineMixin:
                             name=f"{skill.name}_Stage_{i}", trigger_type="manual", trigger_value=0,
                             effect_type=stage_data.get('effect_type', 'buff'), **init_kwargs
                         )
-                        # ▼▼▼ 修正: 継承ロジック ▼▼▼
                         if not temp_skill.target:
                             temp_skill.target = skill.target
                         if not temp_skill.target_condition:
                             temp_skill.target_condition = skill.target_condition
-                        # ▲▲▲ 修正ここまで ▲▲▲
-                        temp_skill.target = skill.target
-                        temp_skill.target_condition = skill.target_condition
                         temp_skill.owner_name = caster.name
                         total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
             return total_dmg
@@ -280,60 +254,35 @@ class SkillEngineMixin:
         if skill.target == 'self':
             if self.check_target_condition(skill.target_condition, caster, caster, frame): targets.append(caster)
         elif skill.target == 'allies':
-            # ▼▼▼ 追加: highest_atk の処理 ▼▼▼
-            # 1. まず通常の条件でフィルタリング
             candidates = []
             for char in self.characters:
                 if self.check_target_condition(skill.target_condition, caster, char, frame): 
                     candidates.append(char)
             
-            # 2. 最高攻撃力指定のチェックとソート
             if skill.target_condition and skill.target_condition.get('type') == 'highest_atk':
                 count = skill.target_condition.get('count', 1)
-                # 現在の攻撃力で降順ソート
                 candidates.sort(key=lambda c: c.get_current_atk(frame), reverse=True)
-                # 上位N機を選択
                 targets = candidates[:count]
-                
-                # デバッグ用ログ（必要ならコメントアウト解除）
                 target_names = [t.name for t in targets]
                 self.log(f"[Target] Selected Top {count} ATK: {target_names}", target_name=caster.name)
-            else:
-                targets = candidates
-            # ▲▲▲ 追加ここまで ▲▲▲
-
-            # ▼▼▼ 追加: HP最低の対象を選択 (lowest_hp) ▼▼▼
-            if skill.target_condition and skill.target_condition.get('type') == 'lowest_hp':
+            elif skill.target_condition and skill.target_condition.get('type') == 'lowest_hp':
                 count = skill.target_condition.get('count', 1)
                 candidates = []
                 for char in self.characters:
-                    # 対象条件（属性など）があればチェック
                     if self.check_target_condition(skill.target_condition, caster, char, frame): 
                          candidates.append(char)
-                
-                # 現在HP割合(または絶対値)で昇順ソート。ここでは絶対値を採用。
-                # HP割合で見たい場合は char.current_hp / char.base_hp (バフ込み最大HP取得は重いので簡易的でも可)
-                # ここでは簡易的に「現在ダメージを受けている量」等の管理がないため、
-                # シミュレータ仕様上「現在HP」の概念が希薄だが、
-                # プロパティとして current_hp がある前提、あるいは base_hp で代用（全員無傷ならランダム/登録順）
-                # ※このシミュレータのCharacterクラスには current_hp が明示されていないため、
-                #   便宜上 base_hp (最大HP) を基準にするか、被ダメージロジックがあればそれを参照する。
-                #   今回は「最大HP」が低い順として実装する（またはダミー的にAtk順の逆など）
-                #   → 要求仕様の「HP回復」の文脈から、回復対象を選びたい意図がある。
-                #   → とりあえず base_hp の低い順とする。
                 candidates.sort(key=lambda c: c.base_hp)
                 targets = candidates[:count]
                 self.log(f"[Target] Selected Lowest {count} HP: {[t.name for t in targets]}", target_name=caster.name)
-            # ▲▲▲ 追加ここまで ▲▲▲
+            else:
+                targets = candidates
 
         elif skill.target == 'enemy':
             targets.append(caster) 
 
         if not targets and skill.effect_type == 'damage': targets.append(caster)
-
-        # =========================================================================
-        # ▼▼▼ 追加修正: ターゲットリストの強制重複排除 (名前ベース) ▼▼▼
-        # self.characters に重複が混入していても、ここで強制的に1キャラ1回に絞り込みます
+        
+        # ▼▼▼ 修正2: ターゲットリストの強制重複排除 (ログ大量重複の決定的な対策) ▼▼▼
         if targets:
             seen_names = set()
             unique_targets = []
@@ -342,20 +291,16 @@ class SkillEngineMixin:
                     unique_targets.append(t)
                     seen_names.add(t.name)
             targets = unique_targets
-        # ▲▲▲ 追加ここまで ▲▲▲
-        # =========================================================================
-        
-        # ▼▼▼ 追加: フルバースト時間短縮効果 ▼▼▼
+        # ▲▲▲ 修正2ここまで ▲▲▲
+
         if skill.effect_type == 'reduce_full_burst_time':
             val = kwargs.get('value', 0)
             if not hasattr(self, 'full_burst_reduction'): self.full_burst_reduction = 0.0
             self.full_burst_reduction += val
             self.log(f"[Burst] Scheduled Full Burst reduction: +{val}s (Total: {self.full_burst_reduction}s)", target_name=caster.name)
             return 0
-        # ▲▲▲ 追加ここまで ▲▲▲
 
         if skill.effect_type == 'cooldown_reduction':
-            # ... (既存コード) ...
             reduce_sec = kwargs.get('value', 0)
             reduce_frames = reduce_sec * self.FPS
             for char in self.characters:
@@ -364,81 +309,52 @@ class SkillEngineMixin:
                 self.log(f"[CT Reduce] Reduced cooldowns by {reduce_sec:.2f}s (Source: {caster.name})", target_name="System")
             return 0
         
-        # ▼▼▼ ここに挿入してください ▼▼▼
         if skill.effect_type == 'decrease_debuff_stack_count':
             tag = kwargs.get('tag', 'debuff')
             amount = int(kwargs.get('value', 1))
             for target in targets:
-                # decrease_stack_count_by_tag は buff_manager.py に追加が必要
                 if target.buff_manager.decrease_stack_count_by_tag(tag, amount):
                     self.log(f"[Debuff Cleanse] Decreased '{tag}' stacks by {amount} for {target.name}", target_name=caster.name)
             return 0
-        # ▲▲▲ 挿入ここまで ▲▲▲
 
-        # ▼▼▼ 追加: バフ/デバフの削除処理 (remove_buff) ▼▼▼
         if skill.effect_type == 'remove_buff':
             tag = kwargs.get('tag')
             if tag:
                 for target in targets:
-                    # remove_buffs_by_tag は buff_manager.py に既存のメソッドです
                     target.buff_manager.remove_buffs_by_tag(tag, frame)
                     self.log(f"[Remove Buff] Removed buffs with tag '{tag}' from {target.name}", target_name=caster.name)
             return 0
-        # ▲▲▲ 追加ここまで ▲▲▲
 
-        # ▼▼▼ 追加: 最大装弾数による効果量スケーリング ▼▼▼
-        # JSON記述例: "scale_by_max_ammo": true, "value": 0.015 (1発につき1.5%)
         if kwargs.get('scale_by_max_ammo'):
             ratio = kwargs.get('value', 0)
-            # 現在の最大装弾数を取得（バフ込み）
-            # ※CharacterActionMixinが統合されている前提
             current_max_ammo = caster.current_max_ammo
-            
-            # 効果量 = 係数 × 最大装弾数
             kwargs['value'] = ratio * current_max_ammo
             self.log(f"[Scale] Value scaled by MaxAmmo({current_max_ammo}): {ratio} -> {kwargs['value']:.4f}", target_name=caster.name)
-        # ▲▲▲ 追加ここまで ▲▲▲
 
-        # ▼▼▼ 修正箇所: ステータス参照のロジック変更 (HP対応) ▼▼▼
         if kwargs.get('scale_by_caster_stats'):
             ratio = kwargs.get('value', 0)
-            # stat_type: 'base' (基礎ステータス) or 'finally' (バフ込み現在値)
             stat_type = kwargs.get('stat_type', 'base') 
-            # target_stat: 'atk' (攻撃力) or 'max_hp' (最大HP) - デフォルトは atk
             target_stat = kwargs.get('target_stat', 'atk')
-            
             val_to_scale = 0
-            
             if target_stat == 'atk':
                 if stat_type == 'finally': 
                     val_to_scale = caster.get_current_atk(frame)
                 else:
                     val_to_scale = caster.base_atk
-                    
             elif target_stat == 'max_hp':
-                # 最大HPの計算
                 if stat_type == 'finally':
-                    # バフ込み最大HP = 基礎HP * (1 + rate) + fixed
                     rate = caster.buff_manager.get_total_value('max_hp_rate', frame)
                     fixed = caster.buff_manager.get_total_value('max_hp_fixed', frame)
                     val_to_scale = caster.base_hp * (1.0 + rate) + fixed
                 else:
                     val_to_scale = caster.base_hp
-            
             if val_to_scale > 0: kwargs['value'] = val_to_scale * ratio
-        # ▲▲▲ 修正ここまで ▲▲▲
 
-        # ▼▼▼ 追加: スタック数による効果量補正 (copy_stack_count) ▼▼▼
-        # バフや回復など、valueを持つあらゆる効果に対してスタック倍率を適用可能にする
         if 'copy_stack_count' in kwargs and 'value' in kwargs:
             stack_name = kwargs['copy_stack_count']
-            # 基本は発動者(caster)のスタックを参照
             count = caster.buff_manager.get_stack_count(stack_name, frame)
-            
-            # スタック数に応じて値を乗算
             kwargs['value'] *= count
             self.log(f"[Stack Scale] Value scaled by {stack_name} (x{count}) -> {kwargs['value']:.4f}", target_name=caster.name)
-        # ▲▲▲ 追加ここまで ▲▲▲
 
         if skill.effect_type == 'activate_flag':
             flag_name = kwargs.get('flag_name')
@@ -447,54 +363,36 @@ class SkillEngineMixin:
                 self.log(f"[Flag] {t.name}: Activated {flag_name}", target_name=t.name)
             return 0
         
-        # ▼▼▼ 追加: デバフ解除 (Cleanse) ▼▼▼
         if skill.effect_type == 'cleanse_debuff':
-            count = int(kwargs.get('value', 1)) # 解除する個数
-            target_tag = kwargs.get('tag', 'debuff') # 解除対象タグ (デフォルト: debuff)
-            
+            count = int(kwargs.get('value', 1)) 
+            target_tag = kwargs.get('tag', 'debuff') 
             for target in targets:
                 removed = target.buff_manager.remove_debuffs_lifo(target_tag, count, frame)
                 if removed > 0:
                     self.log(f"[Cleanse] Removed {removed} stacks of '{target_tag}' from {target.name}", target_name=caster.name)
             return 0
-        # ▲▲▲ 追加ここまで ▲▲▲
 
-        # ▼▼▼ 追加: デバフ免疫 (Immunity) 付与 ▼▼▼
         if skill.effect_type == 'immunity_buff':
-            # 1. 既存のデバフを削除 (仕様: 免疫付与時にデバフがあれば削除)
             for target in targets:
-                # 'debuff'タグをすべて削除
                 removed = target.buff_manager.remove_debuffs_lifo('debuff', 999, frame)
                 if removed > 0:
                     self.log(f"[Immunity] Cleansed {removed} debuffs from {target.name} upon immunity grant", target_name=caster.name)
-            
-            # 2. 免疫バフ自体を付与 (tag='immunity' を付けるのが重要)
-            # kwargsを継承して buff として処理
             kwargs['tag'] = 'immunity' 
-            # もし buff_type が指定されていなければダミーを設定
             if 'buff_type' not in kwargs: kwargs['buff_type'] = 'debuff_immunity_status'
-            
-            # 以降の buff 処理へ流すため、effect_type を書き換えて fall through させるか、
-            # ここで buff 処理を呼ぶ。ここではコード重複を避けるため buff ブロックへ誘導する変数を設定
             skill.effect_type = 'stack_buff' if 'stack_name' in kwargs else 'buff'
-            # (下の buff ブロックで処理される)
-        # ▲▲▲ 追加ここまで ▲▲▲
         
-        # ▼▼▼ 追加: スタック名指定での削除処理 (remove_stacks) ▼▼▼
-        # JSONのkwargsに "remove_stacks": ["name1", "name2"] と記述して使用
         remove_stacks = kwargs.get('remove_stacks')
         if remove_stacks:
             for stack_name in remove_stacks:
                 for t in targets:
                     t.buff_manager.remove_stack(stack_name)
                     self.log(f"[Remove] Removed stack '{stack_name}' from {t.name}", target_name=caster.name)
-        # ▲▲▲ 追加ここまで ▲▲▲
 
         if skill.remove_tags:
             for tag in skill.remove_tags:
                 for t in targets:
                     t.buff_manager.remove_buffs_by_tag(tag, frame)
-                self.enemy_debuffs.remove_buffs_by_tag(tag, frame) # 敵からも削除
+                self.enemy_debuffs.remove_buffs_by_tag(tag, frame)
                 self.log(f"[Remove] Removed tags {tag} from targets via {skill.name}", target_name=caster.name)
 
         for target in targets:
@@ -514,22 +412,16 @@ class SkillEngineMixin:
                 target.buff_manager.add_buff('conversion_hp_to_atk', rate, skill.kwargs.get('duration', 0) * self.FPS, frame, source=skill.name)
                 self.log(f"[Buff] {target.name}: HP to ATK conversion ({rate})", target_name=target.name)
             
-            # ▼▼▼ 修正: Heal実装 ▼▼▼
             elif skill.effect_type == 'heal':
                 base_heal = kwargs.get('value', 0)
-                # healメソッドを使用して回復処理を実行
                 target.heal(base_heal, skill.name, frame, self)
-            # ▲▲▲
 
-            # ▼▼▼ 追加: Regenerate実装 ▼▼▼
             elif skill.effect_type == 'regenerate':
                 heal_per_tick = kwargs.get('value', 0)
                 interval_sec = kwargs.get('interval', 1.0)
                 interval_frames = int(interval_sec * self.FPS)
                 duration_sec = kwargs.get('duration', 0)
                 end_frame = frame + (duration_sec * self.FPS)
-                
-                # Active HoT リストに追加
                 target.active_hots.append({
                     'source': skill.name,
                     'heal_value': heal_per_tick,
@@ -538,36 +430,27 @@ class SkillEngineMixin:
                     'end_frame': end_frame
                 })
                 self.log(f"[Regen] Applied Regen to {target.name} (Val:{heal_per_tick:.0f}, Int:{interval_sec}s, Dur:{duration_sec}s)", target_name=caster.name)
-            # ▲▲▲
 
-            # ▼▼▼ 追加: 固定値リロードの実装 ▼▼▼
             elif skill.effect_type == 'refill_ammo_fixed':
                 amount = int(kwargs.get('value', 0))
                 target.current_ammo = min(target.current_max_ammo, target.current_ammo + amount)
                 self.log(f"[Ammo] Refilled {amount} ammo (Fixed) for {target.name}", target_name=target.name)
-            # ▲▲▲▲▲▲
 
-            # ▼▼▼ 修正: バリア (Shield) 効果の実装（タグ対応） ▼▼▼
             elif skill.effect_type == 'shield':
                 value = kwargs.get('value', 1.0)
                 duration = kwargs.get('duration', 0) * self.FPS
-                
-                # JSONで "tag" 指定があればそれを使い、なければ "barrier" をデフォルトとする
                 tag_name = kwargs.get('tag', 'barrier') 
-                
                 target.buff_manager.add_buff(
                     'shield', value, duration, frame, 
-                    source=skill.name, tag=tag_name  # ← ここを変数に変更
+                    source=skill.name, tag=tag_name
                 )
                 self.log(f"[Barrier] {target.name} applied Shield ({tag_name}) (Val:{value}, Dur:{kwargs.get('duration')}s)", target_name=target.name)
-            # ▲▲▲ 修正ここまで ▲▲▲
 
             elif skill.effect_type in ['buff', 'stack_buff', 'debuff']:
-                # 1. 変数定義 (すべて stack_name で統一)
                 b_type = kwargs.get('buff_type', 'atk_buff_rate')
                 val = kwargs.get('value', 0)
                 dur = kwargs.get('duration', 0) * self.FPS
-                stack_name = kwargs.get('stack_name')  # ★ここで定義
+                stack_name = kwargs.get('stack_name')
                 max_stack = kwargs.get('max_stack', 1)
                 tag = kwargs.get('tag')
                 shot_dur = kwargs.get('shot_duration', 0)
@@ -576,45 +459,36 @@ class SkillEngineMixin:
                 is_extend = kwargs.get('is_extend', False)
                 st_amount = kwargs.get('stack_amount', 1) 
 
-                # 2. 免疫チェック
                 is_debuff = False
                 if tag and ('debuff' in tag): is_debuff = True
                 if 'debuff' in b_type: is_debuff = True
                 
                 if is_debuff:
-                    # リストをコピーして回す
                     for target_item in targets[:]:
                         if target_item.buff_manager.has_active_immunity(frame):
                             if target_item.buff_manager.consume_immunity_stack(frame):
                                 self.log(f"[Immunity] Blocked debuff '{b_type}' on {target_item.name}", target_name=target_item.name)
                                 targets.remove(target_item)
-
                 if not targets: return 0
 
-                # 3. 適用処理
                 for target in targets:
                     manager = target.buff_manager
                     if skill.target == 'enemy':
                         manager = self.enemy_debuffs
                     
-                    # 延長処理
                     if is_extend and tag:
-                        # extend_buff が存在するか確認して実行
                         if hasattr(manager, 'extend_buff') and manager.extend_buff(tag, dur, frame):
                             self.log(f"[Buff Extend] Extended '{tag}' on {target.name}", target_name=target.name)
                             continue
 
-                    # 新規/上書き付与
                     if not is_extend:
-                        # スタック数の変化をログに出すための事前チェック
                         prev_count = 0
                         if stack_name:
-                             # ★ここがエラーの原因箇所でした。stack_name に修正済みです。
                              prev_count = manager.get_stack_count(stack_name, frame)
 
                         manager.add_buff(
                             b_type, val, dur, frame, source=skill.name,
-                            stack_name=stack_name, # ★修正済み
+                            stack_name=stack_name,
                             max_stack=max_stack, tag=tag,
                             shot_duration=shot_dur, remove_on_reload=rem_reload,
                             linked_remove_tag=linked_remove_tag,
@@ -623,83 +497,52 @@ class SkillEngineMixin:
                         
                         t_str = "Enemy" if skill.target == 'enemy' else target.name
                         if stack_name:
-                            # ★修正済み
                             new_count = manager.get_stack_count(stack_name, frame)
                             self.log(f"[Stack] Applied {skill.name} (Stack:{stack_name} {prev_count}->{new_count}) to {t_str}", target_name=caster.name)
                         else:
                             self.log(f"[Buff] Applied {skill.name} ({b_type}: {val}) to {t_str}", target_name=caster.name)
-                        
 
-                # 減少HP率に応じた効果量のスケーリング
                 if kwargs.get('scale_by_missing_hp_percentage'):
                     max_hp = target.get_current_max_hp(frame)
                     if max_hp > 0:
-                        # 減少率(%)を計算 (例: HP60%なら減少40% -> 40.0)
                         missing_ratio = 1.0 - (target.current_hp / max_hp)
                         missing_percent = missing_ratio * 100.0
-                        
-                        # 元の値(1%あたりの上昇量)に減少%を掛ける
-                        # 例: 0.96% * 40 = 38.4% (0.384)
                         scaled_val = val * missing_percent
-                        
                         self.log(f"[HP Scale] Scaled by missing HP {missing_percent:.1f}% (Base:{val:.4f} -> Final:{scaled_val:.4f})", target_name=target.name)
                         val = scaled_val
-                # -----------------
-                
-                # ▼▼▼ 追加: ステータスコピー (基礎値・最大ステータス参照版) ▼▼▼
+
                 if kwargs.get('scale_by_reference', False):
-                    ref_stat = kwargs.get('reference_stat', 'atk') # 'atk' or 'max_hp'
-                    
-                    # 1. 参照すべき最大値を持つキャラを探す
+                    ref_stat = kwargs.get('reference_stat', 'atk')
                     target_char = None
                     max_val = -1.0
-                    
                     for char in self.characters:
-                        if char.base_hp <= 0: continue # 戦闘不能は除外
-                        
-                        # フィルタリング条件があれば適用 (例: 火力型のみ対象など)
+                        if char.base_hp <= 0: continue
                         ref_cond = kwargs.get('reference_condition')
                         if ref_cond and not self.check_target_condition(ref_cond, caster, char, frame):
                             continue
-
-                        # 基礎ステータスを取得
                         check_val = char.base_hp if ref_stat == 'max_hp' else char.base_atk
-                        
-                        # 最大値を更新
                         if check_val > max_val:
                             max_val = check_val
                             target_char = char
-                    
                     if target_char:
-                        # 2. 値の計算 (基礎値 * 割合)
-                        # value は「割合(%)」として設定されている
                         calculated_val = max_val * val
-                        
                         self.log(f"[Stat Copy] Copied Base {ref_stat} from {target_char.name} (Base:{max_val:,.0f} x {val:.2%} = {calculated_val:,.0f})", target_name=caster.name)
-                        
-                        # 3. 固定値として適用するために value を上書き
                         val = calculated_val
-                # ▲▲▲
                 
-                # ▼▼▼ 追加: 最大HP増加時の現在HP同期処理 ▼▼▼
                 if b_type == 'max_hp_rate':
                     update_current = kwargs.get('update_current_hp', False)
                     if update_current:
                         old_max_hp = target.get_current_max_hp(frame)
-                        
                         if skill.effect_type == 'stack_buff':
                             target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, stack_name=stack_name, max_stack=kwargs.get('max_stack', 1), tag=tag)
                         else:
                             target.buff_manager.add_buff(b_type, val, dur, frame, source=skill.name, tag=tag)
-                            
                         new_max_hp = target.get_current_max_hp(frame)
                         hp_diff = new_max_hp - old_max_hp
                         if hp_diff > 0:
                             target.current_hp += hp_diff
                             self.log(f"[HP Mod] Increased Current HP by {hp_diff:.0f} due to MaxHP buff", target_name=target.name)
-                        
                         continue
-                # ▲▲▲
                 
                 added_stack_count = 0
                 if b_type in ['def_debuff', 'taken_dmg_debuff']:
@@ -742,31 +585,24 @@ class SkillEngineMixin:
                 self.log(f"[DoT] Applied/Stacked {stack_name} on Enemy (via {target.name})", target_name=target.name)
 
             elif skill.effect_type == 'dot':
-                # 変数取得
                 raw_profile = skill.kwargs.get('profile', {})
-                mult = skill.kwargs.get('multiplier', 0) # multiplierの取得方法を統一
-                if not mult and 'multiplier_list' in skill.kwargs: # リストがある場合の保険
-                     mult = skill.kwargs['multiplier_list'][0] # 簡易的な取得
+                mult = skill.kwargs.get('multiplier', 0)
+                if not mult and 'multiplier_list' in skill.kwargs:
+                     mult = skill.kwargs['multiplier_list'][0]
 
                 full_profile = DamageProfile.create(**raw_profile)
-                
                 duration_sec = skill.kwargs.get('duration', 0)
                 interval = skill.kwargs.get('interval', 1.0)
                 tag = skill.kwargs.get('tag')
-                is_extend = skill.kwargs.get('is_extend', False) # 延長フラグ
-
-                # DoTのキーを決定（タグがあればタグ、なければスキル名）
+                is_extend = skill.kwargs.get('is_extend', False)
                 key = tag if tag else skill.name
 
                 for target in targets:
-                    # ▼▼▼ 延長処理 ▼▼▼
                     if is_extend and tag and key in target.active_dots:
                         dot = target.active_dots[key]
                         remaining = max(0, dot['end_frame'] - frame)
                         dot['end_frame'] = frame + remaining + (duration_sec * self.FPS)
                         self.log(f"[DoT Extend] Extended '{tag}' on {target.name}", target_name=target.name)
-                    
-                    # ▼▼▼ 新規作成 / 上書き処理 ▼▼▼
                     elif not is_extend:
                         target.active_dots[key] = {
                             'source': skill.name,
@@ -784,35 +620,25 @@ class SkillEngineMixin:
                         self.log(f"[DoT] Applied {skill.name} ({tag}) on {target.name}", target_name=target.name)
 
             elif skill.effect_type == 'damage':
-                # ▼▼▼ 修正: DamageProfileの生成ロジック (createメソッドを使用) ▼▼▼
-                # 補正ロジック
                 if kwargs.get('damage_type') == 'ignore_def':
                     kwargs['is_ignore_def'] = True
                 if 'is_skill_damage' not in kwargs:
                     kwargs['is_skill_damage'] = True
                     
                 profile = DamageProfile.create(**kwargs)
-                
                 mult = kwargs.get('value', 0)
                 if mult == 0: mult = kwargs.get('multiplier', 1.0)
-                
                 loops = int(kwargs.get('loop_count', 1))
-                # ▼▼▼ 追加: スタック数による倍率補正処理 ▼▼▼
-                # 1. 自身のバフスタック数でスケール (シンデレラ用)
                 if 'copy_stack_count' in kwargs:
                     stack_name = kwargs['copy_stack_count']
                     stack_count = caster.buff_manager.get_stack_count(stack_name, frame)
                     mult *= stack_count
                     self.log(f"[Dmg Scale] Scaled by self stack '{stack_name}': x{stack_count} -> {mult:.4f}", target_name=caster.name)
-
-                # 2. ターゲットのデバフスタック数でスケール (アスカWILLE用など)
                 elif kwargs.get('scale_by_target_stack') and targets:
                     stack_name = kwargs.get('stack_name')
-                    # ターゲットが複数の場合は代表して1体目、あるいは個別に計算が必要だが簡略化
                     target_stack = self.enemy_debuffs.get_stack_count(stack_name, frame)
                     mult *= target_stack
                     self.log(f"[Dmg Scale] Scaled by enemy stack '{stack_name}': x{target_stack} -> {mult:.4f}", target_name=targets[0].name)
-                # ▲▲▲ 追加ここまで ▲▲▲
             
                 skill_dmg = 0
                 for _ in range(loops):
@@ -846,62 +672,41 @@ class SkillEngineMixin:
                     if 'stages' in sub_data: act_skill.stages = sub_data['stages']
                     self.scheduled_actions.append({'frame': exec_frame, 'skill': act_skill, 'caster': caster})
 
-            # ▼▼▼ 追加: バースト段階の再突入・維持機能 (reenter_burst_stage) ▼▼▼
             elif skill.effect_type == 'reenter_burst_stage':
                 val = int(kwargs.get('value', 1))
-                # シミュレーター本体(self)に再突入ターゲットを予約
                 self.reenter_burst_target = f"BURST_{val}"
                 self.log(f"[Burst] Reserved re-entry to BURST_{val}", target_name=caster.name)
-            # ▲▲▲ 追加ここまで ▲▲▲
-                
-            # ▼▼▼ 追加: スタック数の強制設定処理 ▼▼▼
+
             elif skill.effect_type == 'set_stack':
                 stack_name = kwargs.get('stack_name')
                 val = int(kwargs.get('value', 0))
                 for target in targets:
-                    # BuffManagerに実装済みの set_stack_count を利用
                     target.buff_manager.set_stack_count(stack_name, val)
                     self.log(f"[Stack Set] {target.name}: {stack_name} set to {val}", target_name=target.name)
-            # ▲▲▲ 追加ここまで ▲▲▲
 
             elif skill.effect_type == 'increase_current_stack_count':
-                delta = int(kwargs.get('value', 1))  # 変数名は delta
-                
+                delta = int(kwargs.get('value', 1))
                 ignore_tags = kwargs.get('ignore_tags', ["debuff", "negative_buff"])
-                
                 for target in targets:
-                    # 引数を val から delta に変更
                     count = target.buff_manager.modify_active_stack_counts(delta, frame, ignore_tags=ignore_tags)
                     if count > 0:
                         self.log(f"[Stack Up] Increased stack count for {count} buffs on {target.name}", target_name=caster.name)
                 return 0
-            # ▲▲▲ 修正ここまで ▲▲▲
             
-            # ▼▼▼ 追加: 気絶(Stun)効果 ▼▼▼
             elif skill.effect_type == 'stun':
                 duration = kwargs.get('duration', 0) * self.FPS
                 tag_name = kwargs.get('tag', 'stun')
-                
-                # 気絶はバフの一種として実装し、CharacterAction/EngineBurstでタグをチェックする
-                # 値は関係ないので0、スタックもしない
                 for target in targets:
                     target.buff_manager.add_buff(
                         'stun_status', 0, duration, frame, 
                         source=skill.name, tag=tag_name
                     )
                     self.log(f"[Stun] {target.name} is stunned for {kwargs.get('duration')}s", target_name=target.name)
-            # ▲▲▲ 追加ここまで ▲▲▲
 
             elif skill.effect_type == 'lose_hp':
-                # value は割合として扱う (例: 0.0201 = 2.01%)
                 ratio = kwargs.get('value', 0)
-                
-                # 現在HPに基づいて減少量を計算
                 loss = target.current_hp * ratio
-                
-                # HPを減少させる (最低1は残すか、0にするかは仕様次第ですが、一旦0許容で減少)
                 target.current_hp = max(0, target.current_hp - loss)
-                
                 self.log(f"[Lose HP] Lost {loss:.0f} HP (Current: {target.current_hp:.0f}/{target.get_current_max_hp(frame):.0f})", target_name=target.name)
 
             elif skill.effect_type == 'weapon_change':
