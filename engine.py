@@ -13,8 +13,17 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
     def __init__(self, characters, burst_rotation, enemy_element="None", enemy_core_size=3.0, enemy_size=5.0, part_break_mode=False, burst_charge_time=5.0, log_file_path="simulation_log.txt"):
         self.FPS = 60
         self.TOTAL_FRAMES = 180 * self.FPS
+        # ▼▼▼ 修正: キャラクターリストの強制重複排除 ▼▼▼
+        # リスト内に同じ名前のキャラが複数いても、ここで1体に絞り込みます
+        unique_char_map = {}
+        for c in characters:
+            unique_char_map[c.name] = c
         
-        self.characters = characters 
+        # 重複のないリストとして登録
+        self.characters = list(unique_char_map.values())
+        # ▲▲▲ 修正ここまで ▲▲▲
+        
+        #self.characters = characters 
         self.burst_rotation = burst_rotation 
         self.burst_indices = [0, 0, 0] 
         

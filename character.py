@@ -21,13 +21,7 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
                 self.skills.append(s)
                 seen_skills.add(unique_key)
         
-        # ▼▼▼ 削除するブロック（ここを削除してください！） ▼▼▼
-        # unique_skills = {}
-        # for s in skills:
-        #     if s.name not in unique_skills:
-        #         unique_skills[s.name] = s
-        # self.skills = list(unique_skills.values())
-        # ▲▲▲▲▲▲
+       
         
         self.base_atk = base_atk
         self.base_hp = base_hp
@@ -38,15 +32,7 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.squad = squad
         # ▲▲▲ 追加ここまで ▲▲▲
 
-        # ▼▼▼ 追加: スキルの重複排除 ▼▼▼
-        # スキル名が同じものは1つだけ残す
-        unique_skills = {}
-        for s in skills:
-            # 同じ名前のスキルが既にあればスキップ（あるいは上書き）
-            if s.name not in unique_skills:
-                unique_skills[s.name] = s
-        self.skills = list(unique_skills.values())
-        # ▲▲▲
+        
         
         self.is_dummy = is_dummy
 
