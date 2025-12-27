@@ -1,0 +1,133 @@
+{
+  "name": "シン",
+  "weapon_type": "AR",
+  "burst_stage": "2",
+  "element": "Electric",
+  "class": "Defender",
+  "squad": "リアルカインドネス",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.00,
+    "damage_rate": 0.1365,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: センテンス・エンディングズ (HPコピー)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "max_hp_fixed",
+        "scale_by_reference": true,
+        "reference_stat": "max_hp",
+        "reference_condition": {
+          "type": "highest_max_hp",
+          "count": 1
+        },
+        "description": "最大HPが最も高い味方の最大HPのn%をコピー",
+        "value_list": [0.0794, 0.0872, 0.0951, 0.103, 0.1109, 0.1188, 0.1266, 0.1345, 0.1424, 0.1503],
+        "duration": 5
+      }
+    },
+    {
+      "name": "Skill 1: センテンス・エンディングズ (挑発)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_buff",
+        "description": "ヘイト：敵全体を挑発 (dummy)",
+        "duration": 5
+      }
+    },
+    {
+      "name": "Skill 2: ハリーオン (バーストゲージ)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "dummy_buff",
+        "value_list": [0.0808, 0.0898, 0.0988, 0.1078, 0.1167, 0.1257, 0.1347, 0.1437, 0.1527, 0.1617],
+        "duration": 5
+      }
+    },
+    {
+      "name": "Skill 2: ハリーオン (段階効果)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "drain",
+            "value_list": [0.0765, 0.085, 0.0935, 0.102, 0.1105, 0.119, 0.1275, 0.136, 0.1445, 0.153],
+            "duration": 5,
+            "description": "1段階：攻撃ダメージのn%回復"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "heal_effectiveness_buff",
+            "value_list": [0.255, 0.2833, 0.3116, 0.34, 0.3683, 0.3966, 0.425, 0.4533, 0.4816, 0.51],
+            "duration": 5,
+            "description": "2段階：受けるHP回復量n%▲"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "dummy_buff",
+            "value_list": [0.216, 0.24, 0.264, 0.288, 0.312, 0.336, 0.36, 0.384, 0.408, 0.432],
+            "duration": 5,
+            "description": "3段階：防御力n%▲ (dummy)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: ワード・オブ・キル",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "taken_dmg_debuff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 6,
+            "value_list": [0.0611, 0.0679, 0.0747, 0.0815, 0.0883, 0.0951, 0.1019, 0.1087, 0.1155, 0.1223],
+            "duration": 5,
+            "description": "敵が4機以上の時のみ、受けるダメージn%▲"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [0.8816, 0.9795, 1.0775, 1.1755, 1.2734, 1.3714, 1.4693, 1.5673, 1.6653, 1.7632]
+          }
+        }
+      ]
+    }
+  ]
+}

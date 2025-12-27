@@ -1,0 +1,103 @@
+{
+  "name": "スノーホワイト",
+  "weapon_type": "AR",
+  "burst_stage": "3",
+  "element": "Iron",
+  "class": "Attacker",
+  "squad": "パイオニア",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.50,
+    "damage_rate": 0.1471,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 純白の意志",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 1,
+            "multiplier_list": [0.5175, 0.552, 0.5865, 0.621, 0.6555, 0.69, 0.7245, 0.759, 0.7935, 0.828]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.0517, 0.0552, 0.0586, 0.0621, 0.0655, 0.069, 0.0724, 0.0759, 0.0793, 0.0828],
+            "duration": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: セブンスドワーフ：V&VI (ダメージ)",
+      "trigger_type": "time_interval",
+      "trigger_value": 15.0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 3,
+        "multiplier_list": [0.9046, 0.9649, 1.0252, 1.0855, 1.1458, 1.2061, 1.2664, 1.3267, 1.387, 1.4473],
+        "description": "攻撃範囲内の敵にダメージ"
+      }
+    },
+    {
+      "name": "Skill 2: セブンスドワーフ：V&VI (クリ率UP)",
+      "trigger_type": "time_interval",
+      "trigger_value": 15.0,
+      "condition": {
+        "is_full_burst": true
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "crit_rate_buff",
+        "value_list": [0.1631, 0.174, 0.1848, 0.1957, 0.2066, 0.2175, 0.2283, 0.2392, 0.2501, 0.261],
+        "duration": 10,
+        "description": "フルバースト中なら発動"
+      }
+    },
+    {
+      "name": "バースト: セブンスドワーフ：I",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "weapon_change",
+      "cooldown_time": 40.0,
+      "target": "self",
+      "kwargs": {
+        "duration": 0,
+        "shot_duration": 1,
+        "weapon_data": {
+          "name": "SnowWhite Burst",
+          "type": "CHARGE",
+          "weapon_class": "AR",
+          "effect_no": 5,
+          "multiplier_list": [1.2487, 1.665, 2.0812, 2.4975, 2.9137, 3.33, 3.7462, 4.1625, 4.5787, 4.995],
+          "max_ammo": 1,
+          "reload_frames": 0,
+          "windup_frames": 12,
+          "winddown_frames": 10,
+          "charge_time": 5.0,
+          "charge_mult": 10.0,
+          "hit_size": 1,
+          "is_pierce": true,
+          "description": "使用武器を変更(最大装弾数1発、チャージ5秒、1000%フルチャージ、貫通特化)"
+        }
+      }
+    }
+  ]
+}

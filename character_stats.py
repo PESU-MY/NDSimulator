@@ -1,4 +1,5 @@
 import random
+from utils import round_half_up  # ★追加
 
 class CharacterStatsMixin:
     def get_current_atk(self, frame):
@@ -159,13 +160,13 @@ class CharacterStatsMixin:
         if rate_buff <= -1.0: return 9999
         new_frame = original_frame * (1.0 - rate_buff)
         new_frame -= fixed_buff
-        return max(1, int(new_frame))
+        return max(1, int(round_half_up(new_frame)))
     
     def calculate_reduced_frame_attack(self, original_frame, rate_buff, fixed_buff):
         if rate_buff <= -1.0: return 9999
         new_frame = original_frame / (1.0 + rate_buff)
         new_frame -= fixed_buff
-        return max(1, int(new_frame))
+        return max(1, int(round_half_up(new_frame)))
 
     def get_buffed_frames(self, frame_type, original_frame, frame):
         # バフ無効化のチェック

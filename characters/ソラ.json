@@ -1,0 +1,106 @@
+{
+  "name": "ソラ",
+  "weapon_type": "RL",
+  "burst_stage": "1",
+  "element": "Wind",
+  "class": "Supporter",
+  "squad": "オーバー・ザ・ホライズン",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 搭乗手続き",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "heal_effectiveness_buff",
+        "value_list": [0.208, 0.224, 0.24, 0.256, 0.272, 0.288, 0.304, 0.32, 0.336, 0.352],
+        "duration": 99999,
+        "description": "味方全体に受ける回復量UP (与える回復量UPの代用)"
+      }
+    },
+    {
+      "name": "Skill 2: 秘密の手荷物",
+      "trigger_type": "time_interval",
+      "trigger_value": 15,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "max_hp_overflow",
+            "stack_name": "保存",
+            "max_stack": 5,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "base",
+            "value_list": [0.0317, 0.0341, 0.0366, 0.039, 0.0414, 0.0439, 0.0463, 0.0488, 0.0512, 0.0536],
+            "duration": 15,
+            "description": "最大HP超過回復量を保存"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "atk_buff_fix",
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "stat_type": "finally",
+            "value_list": [0.1403, 0.1511, 0.1619, 0.1727, 0.1835, 0.1943, 0.205, 0.2158, 0.2266, 0.2374],
+            "duration": 15
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: 胸の中の隠しごと",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "cooldown_time": 40.0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 4,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.3088, 0.3326, 0.3564, 0.3801, 0.4039, 0.4276, 0.4514, 0.4752, 0.4989, 0.5227],
+            "description": "スキル発動者の最終最大HP比例回復"
+          }
+        },
+        {
+          "effect_type": "dispel_debuff",
+          "target": "allies",
+          "kwargs": {
+            "value": 1
+          }
+        }
+      ]
+    }
+  ]
+}

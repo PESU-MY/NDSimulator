@@ -1,0 +1,114 @@
+{
+  "name": "ソーダ",
+  "weapon_type": "MG",
+  "burst_stage": "1",
+  "element": "Fire",
+  "class": "Supporter",
+  "squad": "メイド・フォー・ユー",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.50,
+    "damage_rate": 0.0557,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 整理整頓メイド",
+      "trigger_type": "shot_count",
+      "trigger_value": 180,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "max_hp_rate",
+        "stack_name": "メイド精神",
+        "max_stack": 5,
+        "update_current_hp": true,
+        "value_list": [0.0715, 0.078, 0.0845, 0.091, 0.0975, 0.104, 0.1105, 0.117, 0.1235, 0.13],
+        "duration": 10
+      }
+    },
+    {
+      "name": "Skill 2: 床掃除メイド",
+      "trigger_type": "time_interval",
+      "trigger_value": 12.0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.0204, 0.0217, 0.023, 0.0243, 0.0257, 0.027, 0.0283, 0.0296, 0.031, 0.0323],
+            "description": "スキル発動者の最終最大HP比例回復"
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "condition": {
+            "self_stack_min": 5,
+            "stack_name": "メイド精神"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.0537, 0.0619, 0.07, 0.0782, 0.0863, 0.0945, 0.1026, 0.1108, 0.1189, 0.1271],
+            "description": "フルスタック時追加回復"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: 大掃除メイド",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [1.1068, 1.3408, 1.5748, 1.8088, 2.0428, 2.2768, 2.5108, 2.7448, 2.9788, 3.2128],
+            "description": "ランダムな敵2機にダメージ (敵全体として記述)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 1,
+            "description": "気絶 (dummy)"
+          }
+        },
+        {
+          "effect_type": "increase_current_stack_count",
+          "target": "allies",
+          "target_condition": {
+            "element": "Fire"
+          },
+          "kwargs": {
+            "value": 1,
+            "description": "灼熱コードの味方のスタック可能バフのスタック量+1"
+          }
+        }
+      ]
+    }
+  ]
+}

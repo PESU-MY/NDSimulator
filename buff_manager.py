@@ -2,6 +2,10 @@ class BuffManager:
     def __init__(self):
         self.buffs = {}
         self.active_stacks = {}
+        # ▼▼▼ 追加: キャッシュ用変数 ▼▼▼
+        self.cache = {}          # { 'buff_type': total_value }
+        self.last_calc_frame = -1 # 最後に計算したフレーム
+        # ▲▲▲
 
     def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False, stack_amount=1, linked_remove_tag=None):
         buff_data = {
@@ -55,64 +59,85 @@ class BuffManager:
                 'unit_value': 0, 'end_frame': 99999999, 'tag': None, 'shot_life': 0, 'remove_on_reload': False
             }
 
-    def modify_active_stack_counts(self, delta, frame, ignore_tags=None):
+    def modify_active_stack_counts(self, delta, frame, ignore_tags=None, target_stack_name=None):
         if ignore_tags is None:
             ignore_tags = []
             
         modified_count = 0
         
-        if isinstance(self.buffs, dict):
-            all_buff_lists = self.buffs.values()
-        else:
-            all_buff_lists = [self.buffs]
-            
-        for buff_list in all_buff_lists:
-            for b in buff_list:
+        # 1. 通常バフの処理（既存ロジック）
+        # ※もし特定のスタック名が指定されている場合は、通常バフは対象外としてスキップしても良いが、
+        #   念のため既存の挙動（tag等による判定）は残しつつ、stack_name指定時は無視する制御を入れる。
+        if not target_stack_name:
+            if isinstance(self.buffs, dict):
+                all_buff_lists = self.buffs.values()
+            else:
+                all_buff_lists = [self.buffs]
                 
-                current_tag = b.get('tag')
-                
-                is_ignored = False
-                if current_tag:
-                    if isinstance(current_tag, list):
-                        # タグリストの中に ignore_tags に含まれるものが1つでもあれば除外
-                        if any(t in ignore_tags for t in current_tag):
-                            is_ignored = True
-                    else:
-                        # 文字列の場合
-                        if current_tag in ignore_tags:
-                            is_ignored = True
-                
-                if is_ignored:
-                    continue
-                # ▲▲▲ 修正ここまで ▲▲▲
+            for buff_list in all_buff_lists:
+                for b in buff_list:
+                    current_tag = b.get('tag')
+                    is_ignored = False
+                    if current_tag:
+                        if isinstance(current_tag, list):
+                            if any(t in ignore_tags for t in current_tag): is_ignored = True
+                        else:
+                            if current_tag in ignore_tags: is_ignored = True
+                    
+                    if is_ignored: continue
 
-                if 'stack_count' in b:
-                    old_count = b['stack_count']
-                    max_stack = b.get('max_stack', 1)
-                    
-                    # 新しいスタック数を計算（最大値を超えないように）
-                    new_count = max(1, min(max_stack, old_count + delta))
-                    
-                    # ▼▼▼ 修正: スタック増加操作 (delta > 0) なら無条件で時間リセット ▼▼▼
-                    if delta > 0:
-                        # スタック数が変わるか、既に最大値の場合でもリセットを実行
+                    if 'stack_count' in b:
+                        old_count = b['stack_count']
+                        max_stack = b.get('max_stack', 1)
+                        new_count = max(1, min(max_stack, old_count + delta))
                         
-                        # 時間リセット
-                        if 'duration_frames' in b:
-                             b['duration'] = b['duration_frames']
-                             b['start_frame'] = frame
-                        
-                        # スタック数を更新（値が変わっていれば）
-                        if new_count != old_count:
-                            b['stack_count'] = new_count
-                        
-                        # 「効果が適用された（リセット含む）」としてカウント
-                        modified_count += 1
-                        
-                    # ▼▼▼ スタック減少操作の場合 ▼▼▼
-                    elif new_count < old_count:
-                         b['stack_count'] = new_count
-                         modified_count += 1
+                        if delta > 0:
+                            if 'duration_frames' in b:
+                                 b['duration'] = b['duration_frames']
+                                 b['start_frame'] = frame
+                            if new_count != old_count:
+                                b['stack_count'] = new_count
+                            modified_count += 1
+                        elif new_count < old_count:
+                             b['stack_count'] = new_count
+                             modified_count += 1
+
+        # 2. スタックバフ（active_stacks）の処理 ★ここが重要
+        for stack_name, s_data in self.active_stacks.items():
+            # 名前指定がある場合、一致しないものはスキップ
+            if target_stack_name and stack_name != target_stack_name:
+                continue
+
+            current_tag = s_data.get('tag')
+            is_ignored = False
+            if current_tag:
+                if isinstance(current_tag, list):
+                    if any(t in ignore_tags for t in current_tag): is_ignored = True
+                else:
+                    if current_tag in ignore_tags: is_ignored = True
+            
+            if is_ignored: continue
+
+            # 増減処理
+            old_count = s_data['count']
+            max_stack = s_data['max_stack']
+            new_count = max(1, min(max_stack, old_count + delta))
+            
+            if delta > 0:
+                # スタック更新時は時間をリセット（延長）する
+                if s_data['end_frame'] > frame: # 期限切れでなければ
+                    original_duration = s_data['end_frame'] - s_data['start_frame']
+                    s_data['start_frame'] = frame
+                    s_data['end_frame'] = frame + original_duration
+                
+                if new_count != old_count:
+                    s_data['count'] = new_count
+                
+                modified_count += 1
+            
+            elif new_count < old_count:
+                s_data['count'] = new_count
+                modified_count += 1
                     
         return modified_count
 
@@ -275,6 +300,16 @@ class BuffManager:
         return False
 
     def get_total_value(self, buff_type, current_frame):
+        # ▼▼▼ 追加: キャッシュチェック ▼▼▼
+        # フレームが変わったらキャッシュをクリア
+        if current_frame != self.last_calc_frame:
+            self.cache = {}
+            self.last_calc_frame = current_frame
+        
+        # 既にこのフレームでこのバフタイプを計算済みなら、それを返す
+        if buff_type in self.cache:
+            return self.cache[buff_type]
+        # ▲▲▲
         total = 0.0
         if buff_type in self.buffs:
             valid_buffs = [b for b in self.buffs[buff_type] if b['end_frame'] >= current_frame or b['shot_life'] > 0]
@@ -288,6 +323,10 @@ class BuffManager:
             if stack['buff_type'] == buff_type:
                 total += stack['unit_value'] * stack['count']
         for name in expired_stacks: del self.active_stacks[name]
+
+        # ▼▼▼ 追加: 結果をキャッシュに保存 ▼▼▼
+        self.cache[buff_type] = total
+        # ▲▲▲
         return total
     
     def get_active_buffs(self, buff_type, current_frame):

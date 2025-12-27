@@ -24,6 +24,7 @@
         "buff_type": "atk_dmg_buff",
         "value_list": [0.1701, 0.1846, 0.199, 0.2134, 0.2279, 0.2423, 0.2567, 0.2712, 0.2856, 0.3],
         "shot_duration": 9,
+        "duration": 0,
         "description": "通常攻撃ダメージ倍率UP (9発維持)"
       }
     },
@@ -37,7 +38,8 @@
         "effect_no": 1,
         "buff_type": "atk_dmg_buff",
         "value_list": [0.1701, 0.1846, 0.199, 0.2134, 0.2279, 0.2423, 0.2567, 0.2712, 0.2856, 0.3],
-        "shot_duration": 9
+        "shot_duration": 9,
+        "duration": 0
       }
     },
     {

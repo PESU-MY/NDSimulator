@@ -203,8 +203,15 @@ class SkillEngineMixin:
         if skill.target == 'self':
             if self.check_target_condition(skill.target_condition, caster, caster, frame): targets.append(caster)
         elif skill.target == 'allies':
+            # ▼▼▼ 追加: highest_atk の処理 ▼▼▼
+            # 1. まず通常の条件でフィルタリング
             candidates = []
             for char in self.characters:
+                
+                # ★ここに以下の3行を追加してください
+                if skill.target_condition and skill.target_condition.get('exclude_self') and char == caster:
+                    continue
+                
                 if self.check_target_condition(skill.target_condition, caster, char, frame): 
                     candidates.append(char)
             
@@ -240,12 +247,28 @@ class SkillEngineMixin:
         
         # --- スキル効果処理 ---
 
+        # ▼▼▼ 修正: フルバースト時間短縮・延長効果 ▼▼▼
         if skill.effect_type == 'reduce_full_burst_time':
             val = kwargs.get('value', 0)
             if not hasattr(self, 'full_burst_reduction'): self.full_burst_reduction = 0.0
+            
+            # 設定値の保存（次回以降のため、あるいは集計用）
             self.full_burst_reduction += val
-            self.log(f"[Burst] Scheduled Full Burst reduction: +{val}s (Total: {self.full_burst_reduction}s)", target_name=caster.name)
+            
+            # ★追加: もし現在すでにフルバースト中なら、リアルタイムで終了時間を延長/短縮する
+            if getattr(self, 'burst_state', 'GEN') == 'FULL':
+                # valがマイナスなら延長。
+                # duration = 基本時間 - reduction なので、
+                # reduction が -2 減る(val)ということは、duration は +2 増える。
+                # 終了フレームに (-val * FPS) を加算する。
+                extend_frames = -val * self.FPS
+                self.burst_end_frame += extend_frames
+                
+                self.log(f"[Burst Extend] Immediate extension: {(-val):.2f}s (EndFrame: {self.burst_end_frame})", target_name=caster.name)
+            else:
+                self.log(f"[Burst] Scheduled Full Burst reduction: {val}s (Total: {self.full_burst_reduction}s)", target_name=caster.name)
             return 0
+        # ▲▲▲ 修正ここまで ▲▲▲
 
         if skill.effect_type == 'cooldown_reduction':
             reduce_sec = kwargs.get('value', 0)
@@ -618,9 +641,11 @@ class SkillEngineMixin:
             elif skill.effect_type == 'increase_current_stack_count':
                 delta = int(kwargs.get('value', 1))
                 ignore_tags = kwargs.get('ignore_tags', ["debuff", "negative_buff"])
-                count = target.buff_manager.modify_active_stack_counts(delta, frame, ignore_tags=ignore_tags)
-                if count > 0:
-                    self.log(f"[Stack Up] Increased stack count for {count} buffs on {target.name}", target_name=caster.name)
+                target_stack = kwargs.get('stack_name') # ★追加: 名前を取得
+                
+                for target in targets:
+                    # ★修正: target_stack_name 引数を追加して渡す
+                    count = target.buff_manager.modify_active_stack_counts(delta, frame, ignore_tags=ignore_tags, target_stack_name=target_stack)
             
             elif skill.effect_type == 'stun':
                 duration = kwargs.get('duration', 0) * self.FPS

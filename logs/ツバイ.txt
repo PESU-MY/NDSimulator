@@ -1,0 +1,624 @@
+[Shoot] 時間:  0.22s | 弾数:  8/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:  0.88s | 弾数:  7/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間:  1.55s | 弾数:  6/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間:  2.22s | 弾数:  5/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:  2.88s | 弾数:  4/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:  3.55s | 弾数:  3/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:  4.22s | 弾数:  2/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Shoot] 時間:  4.88s | 弾数:  1/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間:  6.73s | 弾数:  0/1   | Pellets: 1 | Dmg:   137,078 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:  7.12s | 弾数:  8/9   | Pellets:10 | Dmg:    39,714 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:  7.78s | 弾数:  7/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:  8.45s | 弾数:  6/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:  9.12s | 弾数:  5/9   | Pellets:10 | Dmg:    40,787 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:  9.78s | 弾数:  4/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 10.45s | 弾数:  3/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 11.12s | 弾数:  2/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 11.78s | 弾数:  1/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 12.45s | 弾数:  0/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 14.33s | 弾数:  8/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 15.00s | 弾数:  7/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 15.67s | 弾数:  6/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Shoot] 時間: 16.33s | 弾数:  5/9   | Pellets:10 | Dmg:    27,907 | Buffs: None
+[Shoot] 時間: 17.00s | 弾数:  4/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 17.67s | 弾数:  3/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 18.33s | 弾数:  2/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 19.00s | 弾数:  1/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 19.67s | 弾数:  0/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間: 21.78s | 弾数:  0/1   | Pellets: 1 | Dmg:   137,078 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 22.17s | 弾数:  8/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 22.83s | 弾数:  7/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 23.50s | 弾数:  6/9   | Pellets:10 | Dmg:    38,640 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 24.17s | 弾数:  5/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 24.83s | 弾数:  4/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 25.50s | 弾数:  3/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 26.17s | 弾数:  2/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 26.83s | 弾数:  1/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 27.50s | 弾数:  0/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 29.38s | 弾数:  8/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 30.05s | 弾数:  7/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 30.72s | 弾数:  6/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 31.38s | 弾数:  5/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間: 32.05s | 弾数:  4/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Shoot] 時間: 32.72s | 弾数:  3/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間: 33.38s | 弾数:  2/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Shoot] 時間: 34.05s | 弾数:  1/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 34.72s | 弾数:  0/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間: 36.83s | 弾数:  0/1   | Pellets: 1 | Dmg:   114,232 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 37.22s | 弾数:  8/9   | Pellets:10 | Dmg:    38,640 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 37.88s | 弾数:  7/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 38.55s | 弾数:  6/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 39.22s | 弾数:  5/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 39.88s | 弾数:  4/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 40.55s | 弾数:  3/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 41.22s | 弾数:  2/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 41.88s | 弾数:  1/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 42.55s | 弾数:  0/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 44.43s | 弾数:  8/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 45.10s | 弾数:  7/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 45.77s | 弾数:  6/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Shoot] 時間: 46.43s | 弾数:  5/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 47.10s | 弾数:  4/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間: 47.77s | 弾数:  3/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 48.43s | 弾数:  2/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Shoot] 時間: 49.10s | 弾数:  1/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 49.77s | 弾数:  0/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間: 51.88s | 弾数:  0/1   | Pellets: 1 | Dmg:   114,232 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 52.27s | 弾数:  8/9   | Pellets:10 | Dmg:    38,640 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 52.93s | 弾数:  7/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 53.60s | 弾数:  6/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 54.27s | 弾数:  5/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 54.93s | 弾数:  4/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 55.60s | 弾数:  3/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 56.27s | 弾数:  2/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 56.93s | 弾数:  1/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 57.60s | 弾数:  0/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 59.48s | 弾数:  8/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 60.15s | 弾数:  7/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 60.82s | 弾数:  6/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 61.48s | 弾数:  5/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 62.15s | 弾数:  4/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 62.82s | 弾数:  3/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Shoot] 時間: 63.48s | 弾数:  2/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Shoot] 時間: 64.15s | 弾数:  1/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 64.82s | 弾数:  0/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間: 66.93s | 弾数:  0/1   | Pellets: 1 | Dmg:   137,078 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 67.32s | 弾数:  8/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 67.98s | 弾数:  7/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 68.65s | 弾数:  6/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 69.32s | 弾数:  5/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 69.98s | 弾数:  4/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 70.65s | 弾数:  3/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 71.32s | 弾数:  2/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 71.98s | 弾数:  1/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 72.65s | 弾数:  0/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 74.53s | 弾数:  8/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 75.20s | 弾数:  7/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 75.87s | 弾数:  6/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Shoot] 時間: 76.53s | 弾数:  5/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間: 77.20s | 弾数:  4/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間: 77.87s | 弾数:  3/9   | Pellets:10 | Dmg:    26,834 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 78.53s | 弾数:  2/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間: 79.20s | 弾数:  1/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 79.87s | 弾数:  0/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間: 81.98s | 弾数:  0/1   | Pellets: 1 | Dmg:   114,232 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 82.37s | 弾数:  8/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 83.03s | 弾数:  7/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 83.70s | 弾数:  6/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 84.37s | 弾数:  5/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 85.03s | 弾数:  4/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 85.70s | 弾数:  3/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 86.37s | 弾数:  2/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 87.03s | 弾数:  1/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 87.70s | 弾数:  0/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 89.58s | 弾数:  8/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間: 90.25s | 弾数:  7/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 90.92s | 弾数:  6/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 91.58s | 弾数:  5/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間: 92.25s | 弾数:  4/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間: 92.92s | 弾数:  3/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 93.58s | 弾数:  2/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 94.25s | 弾数:  1/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間: 94.92s | 弾数:  0/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間: 97.03s | 弾数:  0/1   | Pellets: 1 | Dmg:   114,232 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 97.42s | 弾数:  8/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 98.08s | 弾数:  7/9   | Pellets:10 | Dmg:    38,640 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間: 98.75s | 弾数:  6/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間: 99.42s | 弾数:  5/9   | Pellets:10 | Dmg:    39,714 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:100.08s | 弾数:  4/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:100.75s | 弾数:  3/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:101.42s | 弾数:  2/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:102.08s | 弾数:  1/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:102.75s | 弾数:  0/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:104.63s | 弾数:  8/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:105.30s | 弾数:  7/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:105.97s | 弾数:  6/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:106.63s | 弾数:  5/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間:107.30s | 弾数:  4/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:107.97s | 弾数:  3/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:108.63s | 弾数:  2/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間:109.30s | 弾数:  1/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:109.97s | 弾数:  0/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間:112.08s | 弾数:  0/1   | Pellets: 1 | Dmg:   137,078 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:112.47s | 弾数:  8/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:113.13s | 弾数:  7/9   | Pellets:10 | Dmg:    39,714 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:113.80s | 弾数:  6/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:114.47s | 弾数:  5/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:115.13s | 弾数:  4/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:115.80s | 弾数:  3/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:116.47s | 弾数:  2/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:117.13s | 弾数:  1/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:117.80s | 弾数:  0/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:119.68s | 弾数:  8/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:120.35s | 弾数:  7/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:121.02s | 弾数:  6/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Shoot] 時間:121.68s | 弾数:  5/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:122.35s | 弾数:  4/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:123.02s | 弾数:  3/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間:123.68s | 弾数:  2/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間:124.35s | 弾数:  1/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Shoot] 時間:125.02s | 弾数:  0/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間:127.13s | 弾数:  0/1   | Pellets: 1 | Dmg:   137,078 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:127.52s | 弾数:  8/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:128.18s | 弾数:  7/9   | Pellets:10 | Dmg:    40,787 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:128.85s | 弾数:  6/9   | Pellets:10 | Dmg:    38,640 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:129.52s | 弾数:  5/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:130.18s | 弾数:  4/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:130.85s | 弾数:  3/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:131.52s | 弾数:  2/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:132.18s | 弾数:  1/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:132.85s | 弾数:  0/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:134.73s | 弾数:  8/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:135.40s | 弾数:  7/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:136.07s | 弾数:  6/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間:136.73s | 弾数:  5/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:137.40s | 弾数:  4/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:138.07s | 弾数:  3/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Shoot] 時間:138.73s | 弾数:  2/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:139.40s | 弾数:  1/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Shoot] 時間:140.07s | 弾数:  0/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間:142.18s | 弾数:  0/1   | Pellets: 1 | Dmg:   114,232 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:142.57s | 弾数:  8/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:143.23s | 弾数:  7/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:143.90s | 弾数:  6/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:144.57s | 弾数:  5/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:145.23s | 弾数:  4/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:145.90s | 弾数:  3/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:146.57s | 弾数:  2/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:147.23s | 弾数:  1/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:147.90s | 弾数:  0/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:149.78s | 弾数:  8/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:150.45s | 弾数:  7/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:151.12s | 弾数:  6/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Shoot] 時間:151.78s | 弾数:  5/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:152.45s | 弾数:  4/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間:153.12s | 弾数:  3/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:153.78s | 弾数:  2/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:154.45s | 弾数:  1/9   | Pellets:10 | Dmg:    24,687 | Buffs: None
+[Shoot] 時間:155.12s | 弾数:  0/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間:157.23s | 弾数:  0/1   | Pellets: 1 | Dmg:   114,232 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:157.62s | 弾数:  8/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:158.28s | 弾数:  7/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:158.95s | 弾数:  6/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:159.62s | 弾数:  5/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:160.28s | 弾数:  4/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:160.95s | 弾数:  3/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:161.62s | 弾数:  2/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:162.28s | 弾数:  1/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:162.95s | 弾数:  0/9   | Pellets:10 | Dmg:    32,200 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:164.83s | 弾数:  8/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:165.50s | 弾数:  7/9   | Pellets:10 | Dmg:    33,274 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:166.17s | 弾数:  6/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間:166.83s | 弾数:  5/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Shoot] 時間:167.50s | 弾数:  4/9   | Pellets:10 | Dmg:    26,834 | Buffs: None
+[Shoot] 時間:168.17s | 弾数:  3/9   | Pellets:10 | Dmg:    23,613 | Buffs: None
+[Shoot] 時間:168.83s | 弾数:  2/9   | Pellets:10 | Dmg:    22,540 | Buffs: None
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:169.50s | 弾数:  1/9   | Pellets:10 | Dmg:    21,467 | Buffs: None
+[Shoot] 時間:170.17s | 弾数:  0/9   | Pellets:10 | Dmg:    25,760 | Buffs: None
+[Burst] Activate!
+[Weapon Change] ツバイ changed weapon to Zwei Burst
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied バースト: 過充電方程式 (貫通バフ) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (1発) (pierce_dmg_buff: 0.1548) to Dummy_B3
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B1
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to ツバイ
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to スノーホワイト
+[Buff] Applied Skill 1: 貫通力計算式 (持続) (pierce_dmg_buff: 0.1006) to Dummy_B3
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (クリ率) (crit_rate_buff: 0.1863) to Dummy_B3
+[Shoot] 時間:172.28s | 弾数:  0/1   | Pellets: 1 | Dmg:   114,232 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:172.67s | 弾数:  8/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:173.33s | 弾数:  7/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:174.00s | 弾数:  6/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:174.67s | 弾数:  5/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:175.33s | 弾数:  4/9   | Pellets:10 | Dmg:    38,640 | Buffs: pierce_dmg_buff:0.26 | crit_rate_buff:0.19
+[Shoot] 時間:176.00s | 弾数:  3/9   | Pellets:10 | Dmg:    34,347 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:176.67s | 弾数:  2/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B1
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to ツバイ
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to スノーホワイト
+[Buff] Applied Skill 2: 構造分析 (遮蔽回復) (dummy_buff: 0.0752) to Dummy_B3
+[Shoot] 時間:177.33s | 弾数:  1/9   | Pellets:10 | Dmg:    35,420 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:178.00s | 弾数:  0/9   | Pellets:10 | Dmg:    37,567 | Buffs: pierce_dmg_buff:0.26
+[Shoot] 時間:179.88s | 弾数:  8/9   | Pellets:10 | Dmg:    36,494 | Buffs: pierce_dmg_buff:0.26

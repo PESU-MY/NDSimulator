@@ -159,6 +159,7 @@
             "buff_type": "charge_speed_rate",
             "value_list": -3.0,
             "shot_duration": 1,
+            "duration" : 0,
             "tag": [
               "debuff"
             ],
@@ -173,6 +174,7 @@
             "buff_type": "charge_dmg_buff",
             "value_list": [8.8637, 9.5455, 10.2273, 10.9092, 11.591, 12.2728, 12.9546, 13.6365, 14.3183, 15],
             "shot_duration": 1,
+            "duration" : 0,
             "tag": [
               "special_mod_c"
             ]

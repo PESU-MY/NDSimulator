@@ -29,7 +29,8 @@
             "effect_no": 1,
             "buff_type": "charge_speed_rate",
             "value_list": [0.0892, 0.0937, 0.0983, 0.1028, 0.1074, 0.1119, 0.1165, 0.121, 0.1255, 0.1301],
-            "shot_duration": 1
+            "shot_duration": 1,
+            "duration": 0
           }
         },
         {
@@ -41,7 +42,8 @@
             "scale_by_max_ammo": true,
             "description": "最終最大装弾数1発ごとにチャージダメージUP",
             "value_list": [0.0139, 0.0146, 0.0153, 0.016, 0.0167, 0.0174, 0.0181, 0.0188, 0.0195, 0.0201],
-            "shot_duration": 1
+            "shot_duration": 1,
+            "duration": 0
           }
         }
       ]
@@ -100,6 +102,7 @@
             "buff_type": "charge_speed_rate",
             "value": -3.0,
             "shot_duration": 1,
+            "duration": 0,
             "tag": ["debuff"],
             "linked_remove_tag": "ice_witch_dmg"
           }
@@ -112,6 +115,7 @@
             "buff_type": "charge_dmg_buff",
             "value_list": [8.8637, 9.5455, 10.2273, 10.9092, 11.591, 12.2728, 12.9546, 13.6365, 14.3183, 15],
             "shot_duration": 1,
+            "duration": 0,
             "tag": ["ice_witch_dmg"]
           }
         }

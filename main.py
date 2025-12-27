@@ -173,9 +173,9 @@ dummy_barrier_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/シンデレラ.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/スノーホワイト.json', skill_level=10)
 burst3_nikke_2 = create_character_from_json('characters/アニス：スパークリングサマー.json', skill_level=10)
-burst2_nikke = create_character_from_json('characters/グレイブ.json', skill_level=10)
+burst2_nikke = create_character_from_json('characters/ツバイ.json', skill_level=10)
 burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
 burst1_nikke = create_character_from_json('characters/リター.json', skill_level=10)
 saitotu = create_character_from_json('characters/アリス_ワンダーランドバニー.json', skill_level=10)
@@ -189,12 +189,12 @@ dummy_b3 = create_dummy_character("Dummy_B3", 3, "SMG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, burst2_nikke]
+all_characters = [dummy_b1, burst2_nikke, burst3_nikke, dummy_b3, dummy_b3]
 
 # 4. バーストローテーション
 rotation = [
     [dummy_b1],
-    [dummy_b2],
+    [burst2_nikke],
     [burst3_nikke, dummy_b3] 
 ]
 # 5. シミュレーター初期化
@@ -210,27 +210,6 @@ sim = NikkeSimulator(
 
 # 汎用フラグの設定例
 sim.special_mode = False 
-# ▼▼▼▼▼ スキル重複証明用デバッグコード ▼▼▼▼▼
-print("\n" + "="*50)
-print("【デバッグ】キャラクター別 スキル保持状況確認")
-print("="*50)
-
-for char in sim.characters:
-    print(f"■ キャラクター: {char.name}")
-    seen_skills = {}
-    for i, skill in enumerate(char.skills):
-        # スキル名とトリガータイプを表示（reprで隠し文字も可視化）
-        s_info = f"Name:{repr(skill.name)}, Trigger:{skill.trigger_type}"
-        print(f"  - [{i}] {s_info} | ID:{id(skill)}")
-        
-        # 名前とトリガーが完全に一致するものがあるかチェック
-        key = (skill.name, skill.trigger_type)
-        if key in seen_skills:
-            prev_i = seen_skills[key]
-            print(f"    >>>> ⚠️ 警告: Index[{prev_i}] と完全に一致するスキルが重複登録されています！")
-        seen_skills[key] = i
-print("="*50 + "\n")
-# ▲▲▲▲▲ 追加ここまで ▲▲▲▲▲
 # 6. 実行
 print("シミュレーションを開始します...")
 results = sim.run()
