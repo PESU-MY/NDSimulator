@@ -191,3 +191,50 @@ main.py で sim.special_mode = True のように変数をセットし、JSONの 
    リロードが完了した瞬間に発動するトリガーを追加。
    trigger_type: "reload_complete"
    用途: 「リロード完了後の初弾のみ強化（硫酸弾）」などの実装に使用。
+
+1. リロード・攻撃速度計算の仕様変更 (Update)
+内容: calculate_reduced_frame（リロード・チャージ短縮）および calculate_reduced_frame_attack（攻撃速度）の計算において、小数点以下の処理を 「四捨五入 (round_half_up)」 に統一しました。
+
+理由: 微小なバフ（例: 3F間隔の武器に数%のバフ）で意図せずフレーム短縮が発生するのを防ぐため。
+
+記述場所: 「3. コアロジック仕様 - 時間短縮計算」セクション。
+
+2. スタック増加処理の修正 (Fix)
+内容: increase_current_stack_count 効果において、stack_name を明示的に指定した場合、active_stacks（スタックバフ）を正しく操作するように buff_manager.py と engine_skills.py を修正しました。
+
+挙動: 名前指定時はそのスタックのみ増加、名前なし時は「通常のバフを除く、全てのスタックバフ」が増加します。
+
+記述場所: 「4. スキル効果・トリガーの実装詳細」セクション。
+
+3. 遮蔽物HP回復の実装 (New Feature)
+内容: 遮蔽物のHPを回復する機能を追加しました。
+
+Effect Type: cover_heal
+
+Trigger: on_receive_cover_heal（回復を受けた時に発動）
+
+Method: Character.recover_cover_hp
+
+JSON仕様: value が 2.0 (200%) 以下なら「割合回復（最大HP×value）」、それより大きければ「固定値回復」とみなす簡易判定ロジックを実装。
+
+記述場所: 「6. 最新の更新・変更点」セクション。
+
+4. 高速化・キャッシュの実装 (Optimization)
+内容: buff_manager.py に計算結果のキャッシュ機能を追加しました。
+
+仕様: フレーム単位でキャッシュを管理。同一フレーム内でのステータス再計算をスキップし、フレーム変更時にキャッシュをクリア（期限切れバフの掃除を実行）します。
+
+記述場所: 「6. 最新の更新・変更点」または「1. プロジェクト構造 - buff_manager.py」セクション。
+
+5. 「回数制限付きバフ」の定義ルール (Rule)
+内容: 「n回攻撃したら消える」バフを定義する場合、shot_duration を設定し、duration（秒数）は設定しない（または0にする） こと。
+
+理由: 現在の仕様では duration が設定されていると、回数を使い切っても時間が残っていればバフが消滅しないため。
+
+記述場所: 「2. JSONデータ記述ルール」セクション。
+
+6. 確率発動スキルの記述 (Rule)
+内容: 攻撃時に確率で発動する場合、kwargs に "probability": 10 (10%の意味) を記述し、trigger_type は shot_count、trigger_value は 1 とする。
+
+記述場所: 「2. JSONデータ記述ルール」セクション。
+
