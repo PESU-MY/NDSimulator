@@ -29,7 +29,7 @@
             "effect_no": 1,
             "buff_type": "dummy_buff",
             "description": "防御力n%▲ (dummy)",
-            "value_list": [0.0915, 0.0985, 0.1056, 0.1126, 0.1196, 0.1267, 0.1337, 0.1408, 0.1478, 0.1548],
+            "value_list": [0.1512, 0.1632, 0.1752, 0.1872, 0.1992, 0.2112, 0.2232, 0.2352, 0.2472, 0.2592],
             "duration": 10
           }
         },
@@ -81,7 +81,7 @@
           },
           "stages": [
             {
-              "effect_type": "refill_ammo",
+              "effect_type": "ammo_charge",
               "target": "allies",
               "kwargs": {
                 "effect_no": 4,

@@ -75,9 +75,7 @@
         {
           "effect_type": "damage",
           "target": "enemy",
-          "profile": {
-            "is_skill_damage": true
-          },
+          "is_skill_damage": true,
           "kwargs": {
             "effect_no": 4,
             "multiplier_list": [0.6727, 0.7339, 0.7951, 0.8562, 0.9174, 0.9786, 1.0397, 1.1009, 1.1621, 1.2232]
@@ -100,9 +98,7 @@
             "self_stack_min": 5,
             "stack_name": "hacking_code"
           },
-          "profile": {
-            "is_skill_damage": true
-          },
+          "is_skill_damage": true,
           "kwargs": {
             "effect_no": 6,
             "multiplier_list": [0.6727, 0.7339, 0.7951, 0.8562, 0.9174, 0.9786, 1.0397, 1.1009, 1.1621, 1.2232]

@@ -72,10 +72,8 @@
     "kwargs": {
       "effect_no" : 3, 
       "multiplier_list": [1.8, 2.4, 3, 3.6, 4.2, 4.8, 5.4, 6, 6.6, 7.2],
-      "profile": {
-        "is_skill_damage": true,
-        "force_full_burst": true
-      }
+      "is_skill_damage": true,
+      "force_full_burst": true
     }
   }
 }

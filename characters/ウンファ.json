@@ -76,9 +76,7 @@
         {
           "effect_type": "damage",
           "target": "enemy",
-          "profile": {
-            "is_skill_damage": true
-          },
+          
           "kwargs": {
             "effect_no": 4,
             "multiplier_list": [0.4281, 0.4757, 0.5232, 0.5708, 0.6184, 0.666, 0.7135, 0.7611, 0.8087, 0.8562]

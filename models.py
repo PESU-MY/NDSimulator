@@ -48,11 +48,26 @@ class WeaponConfig:
         if self.type == "MG":
             if 'warmup_table' not in data:
                 data['warmup_table'] = [[10, 6], [10, 5], [15, 2], [9999, 1]]
+            # ▼▼▼ 修正: データ形式の自動判定ロジック ▼▼▼
+            # テーブルの先頭が [1, ...], [2, ...] と連番で始まっている場合、
+            # 「期間(Duration)」ではなく「弾数インデックス(Shot Index)」とみなして
+            # 各段階の期間を「1」として処理する
+            is_index_format = False
+            table = data['warmup_table']
+            if len(table) >= 2 and table[0][0] == 1 and table[1][0] == 2:
+                is_index_format = True
+
             current_sum = 0
-            for count, interval in data['warmup_table']:
+            for val, interval in table:
+                duration = val
+                if is_index_format:
+                    duration = 1 # 連番形式なら、各エントリは1発分とみなす
+                
                 self.mg_warmup_map.append({'start': current_sum, 'interval': interval})
-                current_sum += count 
+                current_sum += duration
+            
             self.mg_max_warmup = current_sum + self.windup_frames
+            # ▲▲▲ 修正ここまで ▲▲▲
 
 class DamageProfile:
     @staticmethod

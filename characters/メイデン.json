@@ -81,10 +81,8 @@
         "kwargs": {
           "effect_no" : 3, 
           "multiplier_list": [2.7056, 2.9137, 3.1218, 3.33, 3.5381, 3.7462, 3.9543, 4.1625, 4.3706, 4.5787],
-          "profile": {
-            "is_skill_damage": true,
-            "force_full_burst": true
-          }
+          "is_skill_damage": true,
+          "force_full_burst": true
         }
       },
       {
@@ -96,10 +94,8 @@
         "kwargs": {
           "effect_no" : 4, 
           "multiplier_list": [2.7056, 2.9137, 3.1218, 3.33, 3.5381, 3.7462, 3.9543, 4.1625, 4.3706, 4.5787],
-          "profile": {
-            "is_skill_damage": true,
-            "force_full_burst": true
-          }
+          "is_skill_damage": true,
+          "force_full_burst": true
         },
         "description": "復讐状態なら追加ダメージ"
       }

@@ -1,0 +1,95 @@
+{
+  "name": "プリム",
+  "weapon_type": "SR",
+  "burst_stage": "1",
+  "element": "Iron",
+  "class": "Supporter",
+  "squad": "カフェ・スウィーティー",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 1.50,
+    "damage_rate": 0.6595,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: …眠い",
+      "trigger_type": "shot_count",
+      "trigger_value": 4,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "debuff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "def_debuff",
+            "value_list": [0.0935, 0.1008, 0.108, 0.1152, 0.1224, 0.1296, 0.1368, 0.144, 0.1512, 0.1584],
+            "duration": 10,
+            "description": "対象に防御力ダウン"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: …あ",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "max_hp_rate",
+        "update_current_hp": true,
+        "value_list": [0.036, 0.0388, 0.0415, 0.0443, 0.0471, 0.0498, 0.0526, 0.0554, 0.0582, 0.0609],
+        "duration": 4
+      }
+    },
+    {
+      "name": "バースト: …メンドイ",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [0.6007, 0.6469, 0.6931, 0.7393, 0.7856, 0.8318, 0.878, 0.9242, 0.9704, 1.0166]
+          }
+        },
+        {
+          "effect_type": "debuff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "def_debuff",
+            "value_list": [0.0583, 0.0627, 0.0672, 0.0717, 0.0762, 0.0807, 0.0852, 0.0897, 0.0941, 0.0986],
+            "duration": 10,
+            "description": "防御が高い敵10機に防御ダウン"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "max_hp_rate",
+            "update_current_hp": true,
+            "value_list": [0.1788, 0.1925, 0.2063, 0.22, 0.2338, 0.2476, 0.2613, 0.2751, 0.2888, 0.3026],
+            "duration": 4
+          }
+        }
+      ]
+    }
+  ]
+}

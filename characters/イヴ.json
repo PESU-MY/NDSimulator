@@ -46,10 +46,8 @@
           "kwargs": {
             "loop_count": 3,
             "multiplier_list": [1.4182, 1.5272, 1.6363, 1.7454, 1.8545, 1.9636, 2.0727, 2.1818, 2.2909, 2.4],
-            "profile": {
-              "is_skill_damage": true,
-              "is_special_skill_damage": true
-            }
+            "is_skill_damage": true,
+            "is_special_skill_damage": true
           }
         },
         {

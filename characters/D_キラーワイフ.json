@@ -85,9 +85,7 @@
         "kwargs": {
           "effect_no": 4,
           "multiplier_list": [1.5912, 1.7136, 1.836, 1.9584, 2.0808, 2.2032, 2.3256, 2.448, 2.5704, 2.6928],
-          "profile": {
-            "is_skill_damage": true
-          }
+          
         },
         "description": "バースト使用時に無条件発動する追加ダメージ"
       },

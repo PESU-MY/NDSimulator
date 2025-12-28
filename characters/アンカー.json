@@ -70,9 +70,7 @@
     "cooldown_time": 20.0,
     "effect_type": "damage",
     "target": "enemy",
-    "profile": {
-        "is_skill_damage": true
-    },
+    
     "kwargs": {
         "effect_no": 3,
         "multiplier_list": [1.332, 1.5222, 1.7125, 1.9028, 2.0931, 2.2834, 2.4737, 2.664, 2.8542, 3.0445]

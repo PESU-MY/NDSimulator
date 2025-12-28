@@ -69,9 +69,7 @@
       "kwargs": {
         "effect_no": 4,
         "multiplier_list": [1.0661, 1.1372, 1.2083, 1.2793, 1.3504, 1.4215, 1.4926, 1.5636, 1.6347, 1.7058],
-        "profile": {
-          "is_skill_damage": true
-        }
+        
       },
       "description": "15秒ごとに最も防御の高い敵5機にダメージ"
     },
@@ -99,9 +97,7 @@
           "kwargs": {
             "effect_no": 5,
             "multiplier_list": [0.9365, 0.999, 1.0614, 1.1238, 1.1863, 1.2487, 1.3111, 1.3736, 1.436, 1.4985],
-            "profile": {
-              "is_skill_damage": true
-            }
+            
           },
           "description": "全体ダメージ"
         },
@@ -132,9 +128,7 @@
           "kwargs": {
             "effect_no": 7,
             "multiplier_list": [1.8731, 1.998, 2.1228, 2.2477, 2.3726, 2.4975, 2.6223, 2.7472, 2.8721, 2.997],
-            "profile": {
-              "is_skill_damage": true
-            }
+            
           },
           "description": "マーキング2以上: 追加ダメージ1"
         },
@@ -148,9 +142,7 @@
           "kwargs": {
             "effect_no": 8,
             "multiplier_list": [2.1853, 2.331, 2.4766, 2.6223, 2.768, 2.9137, 3.0594, 3.2051, 3.3508, 3.4965],
-            "profile": {
-              "is_skill_damage": true
-            }
+            
           },
           "description": "マーキング3以上: 追加ダメージ2"
         }

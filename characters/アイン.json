@@ -46,10 +46,8 @@
       "kwargs": {
         "effect_no": 2,
         "multiplier_list": [0.5901, 0.6254, 0.6608, 0.6961, 0.7315, 0.7668, 0.8021, 0.8375, 0.8728, 0.9081],
-        "profile": {
-          "is_skill_damage": true,
-          "is_ignore_def": true
-        },
+        "is_skill_damage": true,
+        "is_ignore_def": true
         "stack_name": "Near Feather",
         "intervals": {
           "6": 18,
@@ -141,11 +139,9 @@
         "kwargs": {
           "effect_no": 6,
           "multiplier_list": [1.7032, 1.8473, 1.9914, 2.1355, 2.2796, 2.4238, 2.5679, 2.712, 2.8561, 3.0002],
-          "profile": {
-            "is_skill_damage": true,
-            "is_ignore_def": true,
-            "force_full_burst": true
-          }
+          "is_skill_damage": true,
+          "is_ignore_def": true,
+          "force_full_burst": true
         }
       },
       {

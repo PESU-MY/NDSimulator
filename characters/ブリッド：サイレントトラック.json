@@ -1,0 +1,99 @@
+{
+  "name": "ブリッド：サイレントトラック",
+  "weapon_type": "SG",
+  "burst_stage": "2",
+  "element": "Fire",
+  "class": "Supporter",
+  "squad": "インフィニティレール",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 1.50,
+    "damage_rate": 2.015,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 出発進行 (被ダメUP)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "taken_dmg_debuff",
+      "target": "enemy",
+      "target_condition": {
+        "element": "Wind"
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "value_list": [0.0893, 0.0962, 0.1031, 0.11, 0.1169, 0.1237, 0.1306, 0.1375, 0.1444, 0.1512],
+        "duration": 10,
+        "description": "風圧コードの敵全体に受けるダメージUP"
+      }
+    },
+    {
+      "name": "Skill 1: 出発進行 (全体ダメージ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [3.7582, 4.0473, 4.3364, 4.6254, 4.9145, 5.2036, 5.4927, 5.7818, 6.0709, 6.36]
+      }
+    },
+    {
+      "name": "Skill 2: 前途良好 (被ダメUP)",
+      "trigger_type": "shot_count",
+      "trigger_value": 10,
+      "effect_type": "taken_dmg_debuff",
+      "target": "enemy",
+      "target_condition": {
+        "element": "Wind"
+      },
+      "kwargs": {
+        "effect_no": 3,
+        "value_list": [0.0716, 0.0771, 0.0827, 0.0882, 0.0937, 0.0992, 0.1047, 0.1102, 0.1157, 0.1212],
+        "duration": 10,
+        "description": "HPが低い風圧コードの敵1機に受けるダメージUP"
+      }
+    },
+    {
+      "name": "Skill 2: 前途良好 (単体ダメージ)",
+      "trigger_type": "shot_count",
+      "trigger_value": 5,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 4,
+        "multiplier_list": [2.3932, 2.5773, 2.7614, 2.9454, 3.1295, 3.3136, 3.4977, 3.6818, 3.8659, 4.05],
+        "description": "HPが低い敵1機にダメージ"
+      }
+    },
+    {
+      "name": "バースト: 最大力行",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "exclude_self": true
+          },
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "value_list": [0.393, 0.4233, 0.4535, 0.4837, 0.514, 0.5442, 0.5744, 0.6047, 0.6349, 0.6652],
+            "duration": 10,
+            "description": "自分以外の味方に発動者基準攻撃力UP"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "name": "ネロ",
+  "weapon_type": "SMG",
+  "burst_stage": "2",
+  "element": "Fire",
+  "class": "Defender",
+  "squad": "ハッピーズー",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.30,
+    "damage_rate": 0.0839,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: ネコの恩返し (対象)",
+      "trigger_type": "on_receive_heal",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "dummy_buff",
+        "value_list": [0.0807, 0.0874, 0.0942, 0.1009, 0.1077, 0.1144, 0.1212, 0.1279, 0.1347, 0.1414],
+        "duration": 5,
+        "description": "回復してくれた対象の受けるダメージ軽減 (dummy)"
+      }
+    },
+    {
+      "name": "Skill 1: ネコの恩返し (スタック)",
+      "trigger_type": "on_receive_heal",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "dummy_buff",
+        "stack_name": "CatRepayment",
+        "max_stack": 5,
+        "value_list": [0.0524, 0.0559, 0.0595, 0.063, 0.0666, 0.0701, 0.0737, 0.0772, 0.0808, 0.0843],
+        "duration": 5,
+        "description": "ネコの恩返し：受けるダメージ軽減スタック (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: ネコの手 (被弾時)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "dummy_buff",
+        "value_list": [0.0533, 0.0566, 0.0598, 0.0631, 0.0663, 0.0696, 0.0728, 0.0761, 0.0794, 0.0826],
+        "description": "被弾時確率で敵の被ダメUP & 反撃 (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: ネコの手 (被弾時反撃)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 4,
+        "value_list": [0.624, 0.7302, 0.8365, 0.9428, 1.0491, 1.1554, 1.2617, 1.368, 1.4742, 1.5805],
+        "description": "被弾時確率で敵の被ダメUP & 反撃 (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: ネコの手 (最大HP)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "max_hp_rate",
+        "update_current_hp": true,
+        "value_list": [0.3868, 0.4108, 0.4348, 0.4588, 0.4828, 0.5068, 0.5308, 0.5548, 0.5788, 0.6028],
+        "duration": 99999
+      }
+    },
+    {
+      "name": "バースト: 大きくて乱暴なネコ",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 6,
+            "multiplier_list": [9.7531, 9.8971, 10.0411, 10.1851, 10.3291, 10.4731, 10.6171, 10.7611, 10.9051, 11.0491],
+            "description": "HPが最も高い敵1機にダメージ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "dummy_buff",
+            "description": "挑発 (dummy)",
+            "value": 1,
+            "duration_list": [8, 8, 8, 10, 10, 10, 15, 15, 15, 15]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "condition": {
+            "self_stack_min": 5,
+            "stack_name": "CatRepayment"
+          },
+          "kwargs": {
+            "effect_no": 8,
+            "buff_type": "heal_effectiveness_buff",
+            "value_list": [0.3848, 0.4088, 0.4328, 0.4568, 0.4808, 0.5048, 0.5288, 0.5528, 0.5768, 0.6008],
+            "duration": 15,
+            "description": "フルスタック時、受ける回復量UP"
+          }
+        }
+      ]
+    }
+  ]
+}

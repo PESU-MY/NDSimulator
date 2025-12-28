@@ -28,7 +28,8 @@
         "interval": 1,
         "stack_name": "Raven_DoT",
         "max_stack": 10,
-        "profile": { "is_dot": true, "is_elemental": true }
+        "is_dot": true,
+        "is_elemental": true
       }
     },
     {
@@ -103,7 +104,8 @@
         "effect_type": "damage",
         "effect_no" : 6, 
         "multiplier_list": [2.909, 3.1328, 3.3566, 3.5804, 3.8041, 4.0279, 4.2517, 4.4755, 4.6992, 4.923],
-        "profile": { "force_full_burst": true, "is_elemental": true }
+        "force_full_burst": true, 
+        "is_elemental": true
       },
       {
         "effect_type": "buff",

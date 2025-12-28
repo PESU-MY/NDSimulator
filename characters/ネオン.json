@@ -1,0 +1,80 @@
+{
+  "name": "ネオン",
+  "weapon_type": "SG",
+  "burst_stage": "1",
+  "element": "Fire",
+  "class": "Supporter",
+  "squad": "カウンターズ",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 1.8,
+    "damage_rate": 2.245,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: ネオン特製弾",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 2
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "crit_rate_buff",
+        "value_list": [0.0178, 0.0197, 0.0217, 0.0237, 0.0257, 0.0277, 0.0296, 0.0316, 0.0336, 0.0356],
+        "duration": 5
+      }
+    },
+    {
+      "name": "Skill 2: 火力最高！",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "crit_rate_buff",
+        "value_list": [0.2296, 0.2552, 0.2807, 0.3062, 0.3317, 0.3572, 0.3828, 0.4083, 0.4338, 0.4593],
+        "shot_duration": 2
+      }
+    },
+    {
+      "name": "バースト: 火力が全て！",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [1.9836, 2.351, 2.7183, 3.0857, 3.453, 3.8204, 4.1877, 4.5551, 4.9224, 5.2897],
+            "description": "最終防御力が最も高い敵1機にダメージ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "weapon_type": "SG"
+          },
+          "kwargs": {
+            "buff_type": "max_ammo_add",
+            "value": 3,
+            "duration": 10,
+            "description": "SG所持味方の最大装弾数3発UP"
+          }
+        }
+      ]
+    }
+  ]
+}

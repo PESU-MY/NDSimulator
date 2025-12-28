@@ -1,0 +1,135 @@
+{
+  "name": "ノワール",
+  "weapon_type": "SG",
+  "burst_stage": "3",
+  "element": "Wind",
+  "class": "Attacker",
+  "squad": "777",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 0.7,
+    "damage_rate": 2.046,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: ラッキーチャーム",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_hp_ratio_min": 0.7
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "target_stat": "atk",
+        "stat_type": "finally",
+        "value_list": [0.0832, 0.0896, 0.096, 0.1024, 0.1088, 0.1152, 0.1216, 0.128, 0.1344, 0.1408],
+        "duration": 1.1
+      }
+    },
+    {
+      "name": "Skill 2: ラビットツインズB (装弾数)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "max_ammo_add",
+        "value_list": [3, 3, 3, 3, 4, 4, 4, 4, 5, 5],
+        "duration": 10
+      }
+    },
+    {
+      "name": "Skill 2: ラビットツインズB (チャージ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "ammo_charge",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 3,
+        "value_list": [0.2602, 0.2756, 0.291, 0.3064, 0.3218, 0.3372, 0.3526, 0.368, 0.3834, 0.3988]
+      }
+    },
+    {
+      "name": "バースト: フィナーレ",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [2.0779, 2.2377, 2.3976, 2.5574, 2.7172, 2.8771, 3.0369, 3.1968, 3.3566, 3.5164]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "weapon_type",
+            "value": "SG"
+          },
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "hit_rate_buff",
+            "value_list": [0.0823, 0.0887, 0.095, 0.1013, 0.1077, 0.114, 0.1203, 0.1267, 0.133, 0.1393],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "weapon_type",
+            "value": "SG"
+          },
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "dummy",
+            "value_list": [0.1372, 0.1478, 0.1584, 0.1689, 0.1795, 0.19, 0.2006, 0.2112, 0.2217, 0.2323],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "condition": {
+            "has_squad_mate_present": true
+          },
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "hit_rate_buff",
+            "value_list": [0.0686, 0.0739, 0.0792, 0.0844, 0.0897, 0.095, 0.1003, 0.1056, 0.1108, 0.1161],
+            "duration": 30,
+            "description": "同じ部隊の味方がいる時、命中率UP"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "condition": {
+            "has_squad_mate_present": true
+          },
+          "kwargs": {
+            "effect_no": 8,
+            "buff_type": "dummy",
+            "value_list": [0.1144, 0.1232, 0.132, 0.1408, 0.1496, 0.1584, 0.1672, 0.176, 0.1848, 0.1936],
+            "duration": 30,
+            "description": "同じ部隊の味方がいる時、パーツダメUP"
+          }
+        }
+      ]
+    }
+  ]
+}

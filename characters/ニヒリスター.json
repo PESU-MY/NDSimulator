@@ -1,0 +1,116 @@
+{
+  "name": "ニヒリスター",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "ヘレティック",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: バーニングショット (自己バフ)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "pierce",
+            "value": 1,
+            "shot_duration": 1,
+            "duration": 0,
+            "description": "貫通特化 (1発)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "shot_duration": 1,
+            "duration": 0,
+            "description": "貫通範囲50%拡張 (dummy)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 1: バーニングショット (追加ダメージ)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 1,
+        "multiplier_list": [0.1128, 0.1562, 0.1995, 0.2429, 0.2863, 0.3297, 0.3731, 0.4165, 0.4599, 0.5033],
+        "description": "2機以上命中時、追加ダメージ (special_mode)"
+      }
+    },
+    {
+      "name": "Skill 2: メギドフレイム",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [0.6656, 0.7168, 0.7679, 0.8192, 0.8704, 0.9216, 0.9727, 1.024, 1.0752, 1.1264]
+      }
+    },
+    {
+      "name": "バースト: バーンアポカリプス",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [0.9984, 1.0636, 1.1289, 1.1942, 1.2595, 1.3248, 1.39, 1.4553, 1.5206, 1.5859]
+          }
+        },
+        {
+          "effect_type": "dot",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "interval": 1.0,
+            "multiplier_list": [0.0748, 0.0812, 0.0875, 0.0938, 0.1002, 0.1065, 0.1128, 0.1192, 0.1255, 0.1319],
+            "duration": 10,
+            "description": "火傷ダメージ (1秒間隔)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "max_ammo_add",
+            "value_list": [3, 4, 4, 4, 4, 5, 5, 5, 6, 6],
+            "duration": 15
+          }
+        }
+      ]
+    }
+  ]
+}

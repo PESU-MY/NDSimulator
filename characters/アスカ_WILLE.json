@@ -28,9 +28,7 @@
       "kwargs": {
         "effect_no" : 1,
         "multiplier_list": [2.7882, 3.0027, 3.2172, 3.4317, 3.6462, 3.8607, 4.0751, 4.2896, 4.5041, 4.7186],
-        "profile": {
-          "is_skill_damage": true
-        }
+        
       },
       "description": "50回命中時に発動（常時）"
     },
@@ -53,9 +51,7 @@
           "kwargs": {
             "effect_no" : 2,
             "multiplier_list": [0.0922, 0.0993, 0.1065, 0.1136, 0.1207, 0.1278, 0.1349, 0.142, 0.1491, 0.1562],
-            "profile": {
-              "is_skill_damage": true
-            }
+            
           }
         },
         {
@@ -167,10 +163,7 @@
                 "effect_no": 9,
                 "multiplier_list": [0.0391, 0.0421, 0.0451, 0.0481, 0.0511, 0.0541, 0.0572, 0.0602, 0.0632, 0.0662],
                 "scale_by_target_stack": true,
-                "stack_name": "AntiATField",
-                "profile": {
-                  "is_skill_damage": true
-                }
+                "stack_name": "AntiATField"
               },
               "description": "殲滅攻撃（スタック数比例）"
             },

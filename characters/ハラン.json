@@ -1,0 +1,111 @@
+{
+  "name": "ハラン",
+  "weapon_type": "SR",
+  "burst_stage": "3",
+  "element": "Electric",
+  "class": "Attacker",
+  "squad": "インヘルト",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.30,
+    "damage_rate": 0.7089,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 疫病転移 (攻撃時)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "dot",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 1,
+        "probability": 25,
+        "interval": 1.0,
+        "multiplier_list": [0.108, 0.1152, 0.1224, 0.1296, 0.1368, 0.144, 0.1512, 0.1584, 0.1656, 0.1728],
+        "duration": 5,
+        "description": "攻撃時25%でウイルス転移(持続ダメ)"
+      }
+    },
+    {
+      "name": "Skill 1: 疫病転移 (敵撃破時)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "dot",
+      "target": "enemy",
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "kwargs": {
+        "effect_no": 2,
+        "probability": 25,
+        "interval": 1.0,
+        "multiplier_list": [0.108, 0.1152, 0.1224, 0.1296, 0.1368, 0.144, 0.1512, 0.1584, 0.1656, 0.1728],
+        "duration": 5,
+        "description": "撃破時25%でウイルス転移(持続ダメ)"
+      }
+    },
+    {
+      "name": "Skill 2: 捕食 (フルチャージ)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "pierce",
+            "value": 1,
+            "shot_duration": 1,
+            "description": "貫通特化 (1発)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "crit_rate_buff",
+            "value_list": [0.0184, 0.0196, 0.0209, 0.0221, 0.0233, 0.0246, 0.0258, 0.027, 0.0282, 0.0295],
+            "shot_duration": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 捕食 (敵撃破)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "atk_buff_rate",
+        "stack_name": "Predation",
+        "max_stack": 15,
+        "value_list": [0.0189, 0.0201, 0.0214, 0.0226, 0.0239, 0.0252, 0.0264, 0.0277, 0.0289, 0.0302],
+        "duration": 10,
+        "description": "敵撃破時、攻撃力UP (special_mode)"
+      }
+    },
+    {
+      "name": "バースト: 死滅の刀",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 5,
+        "multiplier_list": [6.2437, 6.66, 7.0762, 7.4925, 7.9087, 8.325, 8.7412, 9.1575, 9.5737, 9.99]
+      }
+    }
+  ]
+}

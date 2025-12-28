@@ -1,0 +1,76 @@
+{
+  "name": "ブリッド",
+  "weapon_type": "AR",
+  "burst_stage": "3",
+  "element": "Water",
+  "class": "Attacker",
+  "squad": "インフィニティレール",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.30,
+    "damage_rate": 0.1429,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: アクセラレーション",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [0.1094, 0.1178, 0.1263, 0.1347, 0.1431, 0.1515, 0.16, 0.1684, 0.1768, 0.1852],
+        "duration": 10
+      }
+    },
+    {
+      "name": "Skill 2: リーク",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [1.248, 1.344, 1.44, 1.536, 1.632, 1.728, 1.824, 1.92, 2.016, 2.112],
+        "description": "防御力が高い敵1機にダメージ"
+      }
+    },
+    {
+      "name": "バースト: AZX",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "target": "enemy",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [7.92, 8.64, 9.36, 10.08, 10.8, 11.52, 12.24, 12.96, 13.68, 14.4]
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "condition": {
+            "self_hp_ratio_min": 1
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [7.92, 8.64, 9.36, 10.08, 10.8, 11.52, 12.24, 12.96, 13.68, 14.4],
+            "description": "HP最大時、追加ダメージ",
+            "is_skill_damage": true,
+            "force_full_burst": true
+          }
+        }
+      ]
+    }
+  ]
+}

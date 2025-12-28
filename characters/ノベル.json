@@ -1,0 +1,103 @@
+{
+  "name": "ノベル",
+  "weapon_type": "SMG",
+  "burst_stage": "2",
+  "element": "Iron",
+  "class": "Defender",
+  "squad": "プロトコール",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.00,
+    "damage_rate": 0.081,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 怪しいのであります！",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.0,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "target_condition": {
+        "type": "highest_def",
+        "count": 3
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 1,
+            "multiplier_list": [0.2618, 0.2909, 0.32, 0.349, 0.3781, 0.4072, 0.4363, 0.4654, 0.4945, 0.5236],
+            "description": "防御が高い敵3機にダメージ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "def_debuff",
+            "value_list": [0.0352, 0.0391, 0.0431, 0.047, 0.0509, 0.0548, 0.0587, 0.0626, 0.0666, 0.0705],
+            "duration": 5,
+            "description": "防御力ダウン (dummy)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 探偵グッズであります！",
+      "trigger_type": "shot_count",
+      "trigger_value": 100,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "dummy_buff",
+        "stack_name": "証拠品収集",
+        "max_stack": 5,
+        "value_list": [0.0675, 0.075, 0.0825, 0.09, 0.0975, 0.105, 0.1125, 0.12, 0.1275, 0.135],
+        "duration": 15,
+        "description": "防御力UPスタック (dummy)"
+      }
+    },
+    {
+      "name": "バースト: 事件解決であります！",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [1.653, 1.8367, 2.0204, 2.204, 2.3877, 2.5714, 2.7551, 2.9387, 3.1224, 3.3061],
+            "description": "攻撃が高い敵1機にダメージ"
+          }
+        },
+        {
+          "effect_type": "taken_dmg_debuff",
+          "target": "enemy",
+          "condition": {
+            "self_stack_min": 5,
+            "stack_name": "証拠品収集"
+          },
+          "kwargs": {
+            "effect_no": 5,
+            "value_list": [0.3375, 0.375, 0.4125, 0.45, 0.4875, 0.525, 0.5625, 0.6, 0.6375, 0.675],
+            "duration": 5,
+            "description": "フルスタック時、対象の受けるダメージUP"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -70,9 +70,7 @@
         "kwargs": {
           "effect_no" : 7,
           "multiplier_list": [1.3852, 1.7049, 2.0246, 2.3443, 2.664, 2.9836, 3.3033, 3.623, 3.9427, 4.2624],
-          "profile": {
-            "is_skill_damage": true
-          }
+          
         }
       },
       {
