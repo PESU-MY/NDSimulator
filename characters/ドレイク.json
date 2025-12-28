@@ -1,0 +1,90 @@
+{
+  "name": "ドレイク",
+  "weapon_type": "SG",
+  "burst_stage": "3",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "メティス",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 1.5,
+    "damage_rate": 2.143,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: オーバーチャージ",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "hit_rate_buff",
+            "value_list": [0.07, 0.0754, 0.0808, 0.0862, 0.0915, 0.0969, 0.1023, 0.1077, 0.1131, 0.1185],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.07, 0.0754, 0.0808, 0.0862, 0.0915, 0.0969, 0.1023, 0.1077, 0.1131, 0.1185],
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: サンダーボルト",
+      "trigger_type": "shot_count",
+      "trigger_value": 10,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 3,
+        "multiplier_list": [0.5824, 0.6272, 0.6719, 0.7168, 0.7616, 0.8064, 0.8511, 0.896, 0.9407, 0.9855],
+        "description": "敵3機にダメージ (条件無視)"
+      }
+    },
+    {
+      "name": "バースト: ドレイクスペシャル",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [7.41, 7.98, 8.55, 9.12, 9.69, 10.26, 10.83, 11.4, 11.97, 12.54]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "max_ammo_rate",
+            "value_list": [0.4265, 0.4593, 0.4921, 0.525, 0.5578, 0.5906, 0.6234, 0.6562, 0.689, 0.7218],
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}

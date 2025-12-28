@@ -1,0 +1,123 @@
+{
+  "name": "ドラー",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Wind",
+  "class": "Supporter",
+  "squad": "タレント",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 企業家精神",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [0.0888, 0.0969, 0.105, 0.1131, 0.1212, 0.1293, 0.1373, 0.1454, 0.1535, 0.1616],
+        "duration": 5
+      }
+    },
+    {
+      "name": "Skill 2: リスク共有 (FB開始時)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": false
+      },
+      "stages": [
+        {
+          "effect_type": "cooldown_reduction",
+          "target": "allies",
+          "kwargs": {
+            "value": 1.82,
+            "description": "CD短縮(1回目: 1.82s)"
+          }
+        },
+        {
+          "effect_type": "cooldown_reduction",
+          "target": "allies",
+          "kwargs": {
+            "value": 2.2,
+            "description": "CD短縮(2回目: 2.2s)"
+          }
+        },
+        {
+          "effect_type": "cooldown_reduction",
+          "target": "allies",
+          "kwargs": {
+            "value": 2.6,
+            "description": "CD短縮(3回目: 2.6s)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: リスク共有 (バースト使用時)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": false
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.0118, 0.0191, 0.0264, 0.0336, 0.0409, 0.0481, 0.0554, 0.0627, 0.0699, 0.0772],
+            "duration": 5,
+            "description": "攻撃力UP(1回目)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "crit_rate_buff",
+            "value_list": [0.0105, 0.014, 0.0175, 0.021, 0.0245, 0.028, 0.0315, 0.035, 0.0385, 0.0421],
+            "duration": 5,
+            "description": "クリ率UP(2回目)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "crit_dmg_buff",
+            "value_list": [0.0385, 0.0489, 0.0593, 0.0698, 0.0802, 0.0906, 0.101, 0.1114, 0.1218, 0.1322],
+            "duration": 5,
+            "description": "クリダメUP(3回目)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: R&Dショット",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "cooldown_time": 20.0,
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 5,
+        "multiplier_list": [4.0408, 4.4081, 4.7755, 5.1428, 5.5102, 5.8775, 6.2448, 6.6122, 6.9795, 7.3469],
+        "description": "最終防御力が最も高い敵1機にダメージ"
+      }
+    }
+  ]
+}

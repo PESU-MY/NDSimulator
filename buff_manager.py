@@ -7,7 +7,7 @@ class BuffManager:
         self.last_calc_frame = -1 # 最後に計算したフレーム
         # ▲▲▲
 
-    def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False, stack_amount=1, linked_remove_tag=None):
+    def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False, stack_amount=1, linked_remove_tag=None, disable_stack_increase=False): # ← 引数追加
         buff_data = {
             'val': value, 'end_frame': current_frame + duration_frames, 
             'source': source, 'tag': tag, 'shot_life': shot_duration, 'remove_on_reload': remove_on_reload
@@ -33,6 +33,7 @@ class BuffManager:
                     'tag': tag, 'shot_life': shot_duration, 'remove_on_reload': remove_on_reload,
                     'start_frame': current_frame  # ▼ 追加
                     ,'linked_remove_tag': linked_remove_tag # ▼ 追加
+                    ,'disable_stack_increase': disable_stack_increase # ← 保存
                 }
                 return stack_amount
         else:
@@ -107,6 +108,12 @@ class BuffManager:
             # 名前指定がある場合、一致しないものはスキップ
             if target_stack_name and stack_name != target_stack_name:
                 continue
+            
+            # ▼▼▼ 追加: 増加不可フラグのチェック ▼▼▼
+            # ターゲット名指定がない(全体効果の)場合、かつフラグがTrueならスキップ
+            if not target_stack_name and s_data.get('disable_stack_increase', False):
+                continue
+            # ▲▲▲ 追加ここまで ▲▲▲
 
             current_tag = s_data.get('tag')
             is_ignored = False

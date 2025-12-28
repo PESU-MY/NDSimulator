@@ -151,12 +151,15 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.cover_hp = min(self.max_cover_hp, self.cover_hp + heal_amount)
         actual_heal = self.cover_hp - prev_cover_hp
         
-        if actual_heal > 0:
-            simulator.log(f"[Cover Heal] {self.name} cover repaired (Val: {heal_amount:.0f} -> Actual: {actual_heal:.0f}) (Src: {source_name}, CoverHP: {self.cover_hp:.0f}/{self.max_cover_hp:.0f})", target_name=self.name)
-            
-            # トリガー発火
-            is_fb = (simulator.burst_state == "FULL")
-            self.process_trigger('on_receive_cover_heal', actual_heal, frame, is_fb, simulator)
+        # ▼▼▼ 修正: if actual_heal > 0: の条件を削除し、回復量が0でも処理を通す ▼▼▼
+        # 以前: if actual_heal > 0:
+        
+        # ログ出力（回復量が0でも「受けた」事実は残す）
+        simulator.log(f"[Cover Heal] {self.name} cover repaired (Val: {heal_amount:.0f} -> Actual: {actual_heal:.0f}) (Src: {source_name}, CoverHP: {self.cover_hp:.0f}/{self.max_cover_hp:.0f})", target_name=self.name)
+        
+        # トリガー発火
+        is_fb = (simulator.burst_state == "FULL")
+        self.process_trigger('on_receive_cover_heal', actual_heal, frame, is_fb, simulator)
             
         return actual_heal
-    # ▲▲▲ 追加ここまで ▲▲▲
+    # ▲▲▲ 修正ここまで ▲▲▲

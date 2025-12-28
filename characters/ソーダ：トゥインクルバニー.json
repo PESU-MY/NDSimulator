@@ -7,7 +7,7 @@
   "squad": "メイド・フォー・ユー",
   "stats": {
     "max_ammo": 9,
-    "reload_time": 0.67,
+    "reload_time": 2.0,
     "damage_rate": 2.316,
     "core_damage_rate": 2.0
   },

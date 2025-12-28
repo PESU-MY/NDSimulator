@@ -78,9 +78,9 @@ class CharacterSkillMixin:
                         interval = intervals.get(str(current_stack))
                         if interval and val % interval == 0: is_triggered = True
                 
-                if is_triggered and 'probability' in skill.kwargs:
-                    prob = skill.kwargs['probability']
-                    if random.random() * 100 > prob: is_triggered = False
+                #if is_triggered and 'probability' in skill.kwargs:
+                #    prob = skill.kwargs['probability']
+                #    if random.random() * 100 > prob: is_triggered = False
 
                 if is_triggered:
                     for _ in range(trigger_count):

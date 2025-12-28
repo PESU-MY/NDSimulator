@@ -6,7 +6,7 @@
   "class": "Supporter",
   "squad": "アンリミテッド",
   "stats": {
-    "max_ammo": 120,
+    "max_ammo": 60,
     "reload_time": 1.00,
     "damage_rate": 0.142,
     "core_damage_rate": 2.00

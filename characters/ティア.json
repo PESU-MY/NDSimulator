@@ -1,0 +1,170 @@
+{
+  "name": "ティア",
+  "weapon_type": "RL",
+  "burst_stage": "1",
+  "element": "Iron",
+  "class": "Defender",
+  "squad": "ダージリンパール",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 爬虫類愛好家",
+      "trigger_type": "on_receive_cover_heal",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "burst_cooldown_reduction",
+            "stack_name": "ReptileLover_CD",
+            "max_stack": 2,
+            "value_list": [7, 7, 7, 10, 10, 10, 13, 13, 13, 13],
+            "duration": 12,
+            "description": "バーストCT短縮 (2スタック)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.1746, 0.1908, 0.2071, 0.2234, 0.2397, 0.256, 0.2723, 0.2885, 0.3048, 0.3211],
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: カメレオンの隠れ身の術 (通常攻撃)",
+      "trigger_type": "shot_count",
+      "trigger_value": 5,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "dummy",
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "base",
+            "value_list": [0.1935, 0.2084, 0.2233, 0.2382, 0.2531, 0.2679, 0.2828, 0.2977, 0.3126, 0.3275],
+            "duration": 5,
+            "description": "発動者最大HP比例で遮蔽最大HP▲"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "description": "挑発 (dummy)",
+            "value": 1,
+            "duration": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: カメレオンの隠れ身の術 (バースト時)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "cover_heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 4,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.105, 0.1171, 0.1292, 0.1414, 0.1535, 0.1656, 0.1777, 0.1898, 0.202, 0.2141],
+            "description": "発動者最終最大HP比例で遮蔽HP回復"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "drain",
+            "value_list": [0.1803, 0.1847, 0.1891, 0.1934, 0.1978, 0.2022, 0.2065, 0.2109, 0.2153, 0.2196],
+            "duration": 10,
+            "description": "攻撃ダメージのn%回復"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: トカゲの保護",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "shield",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 6,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.2072, 0.2232, 0.2391, 0.255, 0.271, 0.2869, 0.3029, 0.3188, 0.3348, 0.3507],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "shield",
+          "target": "allies",
+          "target_condition": {
+            "not_self": true
+          },
+          "kwargs": {
+            "effect_no": 7,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.0603, 0.0649, 0.0696, 0.0742, 0.0789, 0.0835, 0.0881, 0.0928, 0.0974, 0.1021],
+            "duration": 10,
+            "description": "自分以外の味方にバリア"
+          }
+        },
+        {
+          "effect_type": "reenter_burst_stage",
+          "target": "allies",
+          "kwargs": {
+            "value": 1,
+            "description": "バースト再突入：1段階"
+          }
+        }
+      ]
+    }
+  ]
+}

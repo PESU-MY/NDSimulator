@@ -71,6 +71,25 @@ class BurstEngineMixin:
                     
                     char.current_cooldown = base_cd * self.FPS
                     # ▲▲▲ 修正ここまで ▲▲▲
+
+                    # ▼▼▼ 修正: クールダウン設定ロジック (基礎CT短縮バフ対応) ▼▼▼
+                    # 1. 基礎CTの決定
+                    if getattr(char, 'burst_skill_cooldown', None) is not None:
+                        base_cd = char.burst_skill_cooldown
+                    else:
+                        base_cd = 40.0
+                        if char.burst_stage in ['1', '2']: base_cd = 20.0 
+                    
+                    # 2. バフによる「最大CT短縮」を適用 (単位: 秒)
+                    # "burst_cooldown_reduction" という名前のバフ値を合計して引く
+                    reduction_val = char.buff_manager.get_total_value('burst_cooldown_reduction', frame)
+                    
+                    final_cd = max(0.0, base_cd - reduction_val)
+                    char.current_cooldown = final_cd * self.FPS
+                    
+                    if reduction_val > 0:
+                        self.log(f"[Burst CD] Max CD Reduced by {reduction_val:.1f}s (Base:{base_cd}s -> Final:{final_cd}s)", target_name=char.name)
+                    # ▲▲▲ 修正ここまで ▲▲▲
                     
                     self.log(f"[Burst] {char.name} used Burst Stage {self.burst_state.split('_')[1]}", target_name="System")
                     self.log(f"[Burst] Activate!", target_name=char.name)
