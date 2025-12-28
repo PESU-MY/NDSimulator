@@ -6,7 +6,7 @@
   "class": "Supporter",
   "squad": "アンリミテッド",
   "stats": {
-    "max_ammo": 60,
+    "max_ammo": 120,
     "reload_time": 1.00,
     "damage_rate": 0.142,
     "core_damage_rate": 2.00
@@ -19,15 +19,16 @@
       "effect_type": "cumulative_stages",
       "target": "self",
       "kwargs": {
-        "trigger_all_stages": true
+        "trigger_all_stages": true,
+        "effect_no": 1,
+        "probability_list": [2, 2, 3, 3, 3, 4, 4, 4, 5, 5]
       },
       "stages": [
         {
-          "effect_type": "refill_ammo",
+          "effect_type": "ammo_charge",
           "target": "self",
           "kwargs": {
             "effect_no": 2,
-            "probability": 5,
             "value_list": [0.0313, 0.0337, 0.0362, 0.0386, 0.041, 0.0434, 0.0458, 0.0482, 0.0506, 0.0531],
             "description": "攻撃時、5%の確率で弾丸チャージn%"
           }
@@ -35,12 +36,9 @@
         {
           "effect_type": "stack_buff",
           "target": "allies",
-          "condition": {
-            "probability": 5
-          },
           "kwargs": {
             "effect_no": 3,
-            "buff_type": "max_ammo_add",
+            "buff_type": "max_ammo_fixed",
             "stack_name": "応急改造",
             "max_stack": 3,
             "value_list": [1, 1, 1, 1, 1, 2, 2, 2, 2, 2],
@@ -49,14 +47,13 @@
           }
         },
         {
-          "effect_type": "buff",
+          "effect_type": "stack_buff",
           "target": "allies",
-          "condition": {
-            "probability": 5
-          },
           "kwargs": {
             "effect_no": 4,
             "buff_type": "crit_dmg_buff",
+            "max_stack": 3,
+            "stack_name": "応急改造_クリダメ",
             "value_list": [0.0296, 0.0321, 0.0347, 0.0372, 0.0397, 0.0423, 0.0448, 0.0473, 0.0499, 0.0524],
             "duration": 5,
             "description": "連動発動：クリダメUP"

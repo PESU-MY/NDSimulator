@@ -1,5 +1,6 @@
 from models import DamageProfile, Skill, WeaponConfig
 from utils import round_half_up
+import random
 
 class SkillEngineMixin:
     def check_target_condition(self, condition, caster, target, frame):
@@ -82,6 +83,16 @@ class SkillEngineMixin:
         return True
 
     def should_apply_skill(self, skill, frame, caster=None):
+        # ▼▼▼ 追加: 確率発動の判定 (Probability Check) ▼▼▼
+        # kwargsに "probability" が設定されている場合、その確率(%)で判定を行う
+        proc_rate = skill.kwargs.get('probability')
+        if proc_rate is not None:
+            # 0～100の乱数を生成し、確率より大きければ発動しない (Falseを返す)
+            # 例: probability: 10 (10%) -> randomが 10.1 なら False
+            if random.random() * 100 > float(proc_rate):
+                return False
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         if skill.condition:
             if "not_has_tag" in skill.condition:
                 tag = skill.condition["not_has_tag"]
