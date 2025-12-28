@@ -189,7 +189,7 @@
           "target": "allies",
           "kwargs": {
             "effect_no": 9,
-            "buff_type": "atk_buff_fix",
+            "buff_type": "atk_buff_fixed",
             "scale_by_caster_stats": true,
             "target_stat": "atk",
             "value_list": [0.0886, 0.0954, 0.1022, 0.109, 0.1159, 0.1227, 0.1295, 0.1363, 0.1431, 0.15],

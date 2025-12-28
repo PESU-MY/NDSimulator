@@ -766,6 +766,9 @@ class SkillEngineMixin:
             elif skill.effect_type == 'weapon_change':
                 new_weapon_data = kwargs.get('weapon_data')
                 duration = kwargs.get('duration', 0)
+                # ▼▼▼ 追加: タグ情報の取得 ▼▼▼
+                tags = kwargs.get('tag')
+                # ▲▲▲ 追加ここまで ▲▲▲
                 if new_weapon_data and target == caster:
                     target.is_weapon_changed = True
                     if 'max_ammo' in new_weapon_data:
@@ -783,5 +786,15 @@ class SkillEngineMixin:
                     else: target.weapon_change_end_frame = 0
                     target.state = "READY"; target.state_timer = 0
                     self.log(f"[Weapon Change] {target.name} changed weapon to {target.weapon.name}", target_name=target.name)
+
+                    # ▼▼▼ 追加: タグをダミーバフとして適用 ▼▼▼
+                    if tags:
+                        # 武器変更中であることを示すバフとして付与（効果値はダミーで1）
+                        target.buff_manager.add_buff(
+                            'weapon_change_mode', 1, duration * self.FPS, frame, 
+                            source=f"{skill.name}_Tags", tag=tags
+                        )
+                        self.log(f"[Weapon Tags] Applied tags {tags} for {duration}s", target_name=target.name)
+                    # ▲▲▲ 追加ここまで ▲▲▲
 
         return total_dmg

@@ -1,0 +1,1278 @@
+[Shoot] 時間:  1.17s | 弾数: 23/24  | Pellets: 1 | Dmg:    21,911 | Buffs: None
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  1.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00
+[Shoot] 時間:  1.52s | 弾数: 22/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  1.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00
+[Shoot] 時間:  1.87s | 弾数: 21/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  1.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00
+[Shoot] 時間:  2.22s | 弾数: 20/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  2.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00
+[Shoot] 時間:  2.57s | 弾数: 19/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  2.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00
+[Shoot] 時間:  2.92s | 弾数: 18/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  2.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 0->1) to シンデレラ
+[Shoot] 時間:  3.27s | 弾数: 17/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  3.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  3.62s | 弾数: 16/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  3.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  3.97s | 弾数: 15/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  3.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  4.32s | 弾数: 14/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  4.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  4.67s | 弾数: 13/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  4.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  5.02s | 弾数: 12/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  5.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x1 (Val:0.02)]
+[Burst] Activate!
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Skill Dmg] 時間:  5.05s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,004,744 | Hits:10 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
+[Dmg Scale] Scaled by self stack 'Beauty': x1 -> 0.2890
+[Skill Dmg] 時間:  5.05s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg:   169,424 | Hits:10 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  5.37s | 弾数: 11/24  | Pellets: 1 | Dmg:    70,591 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  5.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,076 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
+[Shoot] 時間:  5.72s | 弾数: 10/24  | Pellets: 1 | Dmg:    70,591 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  5.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,076 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x1 (Val:0.02)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 1->2) to シンデレラ
+[Shoot] 時間:  6.07s | 弾数:  9/24  | Pellets: 1 | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  6.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  6.42s | 弾数:  8/24  | Pellets: 1 | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  6.42s | 名前:Skill 1: 追加ダメージ           | Dmg:   100,943 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  6.77s | 弾数:  7/24  | Pellets: 1 | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  6.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  7.12s | 弾数:  6/24  | Pellets: 1 | Dmg:    71,185 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  7.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  7.47s | 弾数:  5/24  | Pellets: 1 | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  7.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  7.82s | 弾数:  4/24  | Pellets: 1 | Dmg:    71,185 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  7.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  8.17s | 弾数:  3/24  | Pellets: 1 | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  8.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  8.52s | 弾数:  2/24  | Pellets: 1 | Dmg:    59,321 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  8.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Shoot] 時間:  8.87s | 弾数:  1/24  | Pellets: 1 | Dmg:    71,185 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  8.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    75,707 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x2 (Val:0.03)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 2->3) to シンデレラ
+[Shoot] 時間:  9.22s | 弾数:  0/24  | Pellets: 1 | Dmg:    59,816 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:  9.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,339 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x3 (Val:0.05)]
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 24
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 3->4) to シンデレラ
+[Shoot] 時間: 12.55s | 弾数: 23/24  | Pellets: 1 | Dmg:    60,311 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 12.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Shoot] 時間: 12.90s | 弾数: 22/24  | Pellets: 1 | Dmg:    72,373 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 12.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Shoot] 時間: 13.25s | 弾数: 21/24  | Pellets: 1 | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 13.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Shoot] 時間: 13.60s | 弾数: 20/24  | Pellets: 1 | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 13.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Shoot] 時間: 13.95s | 弾数: 19/24  | Pellets: 1 | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 13.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Shoot] 時間: 14.30s | 弾数: 18/24  | Pellets: 1 | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 14.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Shoot] 時間: 14.65s | 弾数: 17/24  | Pellets: 1 | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 14.65s | 名前:Skill 1: 追加ダメージ           | Dmg:   102,628 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x4 (Val:0.06)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 4->5) to シンデレラ
+[Shoot] 時間: 15.00s | 弾数: 16/24  | Pellets: 1 | Dmg:    60,311 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x5 (Val:0.08)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 15.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    76,971 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x5 (Val:0.08)]
+[Shoot] 時間: 15.35s | 弾数: 15/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 15.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Shoot] 時間: 15.70s | 弾数: 14/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 15.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Shoot] 時間: 16.05s | 弾数: 13/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 16.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Shoot] 時間: 16.40s | 弾数: 12/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 16.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Shoot] 時間: 16.75s | 弾数: 11/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 16.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Shoot] 時間: 17.10s | 弾数: 10/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 17.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Shoot] 時間: 17.45s | 弾数:  9/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 17.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Shoot] 時間: 17.80s | 弾数:  8/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 17.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x5 (Val:0.08)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 5->6) to シンデレラ
+[Shoot] 時間: 18.15s | 弾数:  7/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 18.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Shoot] 時間: 18.50s | 弾数:  6/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 18.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Shoot] 時間: 18.85s | 弾数:  5/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 18.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Shoot] 時間: 19.20s | 弾数:  4/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 19.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Shoot] 時間: 19.55s | 弾数:  3/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 19.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Shoot] 時間: 19.90s | 弾数:  2/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 19.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x6 (Val:0.10)]
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Shoot] 時間: 20.25s | 弾数:  1/24  | Pellets: 1 | Dmg:    61,301 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x6 (Val:0.10)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 20.25s | 名前:Skill 1: 追加ダメージ           | Dmg:   104,313 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x6 (Val:0.10)]
+[Shoot] 時間: 20.60s | 弾数:  0/24  | Pellets: 1 | Dmg:    73,561 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x6 (Val:0.10)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 20.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    78,235 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x6 (Val:0.10)]
+[Action] Reloading... (120 frames)
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 6->7) to シンデレラ
+[Action] Reload Complete. Ammo: 24
+[Shoot] 時間: 23.93s | 弾数: 23/24  | Pellets: 1 | Dmg:    61,796 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 23.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    78,867 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x7 (Val:0.11)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 7->8) to シンデレラ
+[Shoot] 時間: 24.28s | 弾数: 22/24  | Pellets: 1 | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 24.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Shoot] 時間: 24.63s | 弾数: 21/24  | Pellets: 1 | Dmg:    74,749 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 24.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Shoot] 時間: 24.98s | 弾数: 20/24  | Pellets: 1 | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 24.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Shoot] 時間: 25.33s | 弾数: 19/24  | Pellets: 1 | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 25.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Shoot] 時間: 25.68s | 弾数: 18/24  | Pellets: 1 | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 25.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Shoot] 時間: 26.03s | 弾数: 17/24  | Pellets: 1 | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 26.03s | 名前:Skill 1: 追加ダメージ           | Dmg:   105,998 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Shoot] 時間: 26.38s | 弾数: 16/24  | Pellets: 1 | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 26.38s | 名前:Skill 1: 追加ダメージ           | Dmg:   105,998 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Shoot] 時間: 26.73s | 弾数: 15/24  | Pellets: 1 | Dmg:    62,291 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 26.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    79,498 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x8 (Val:0.13)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 8->9) to シンデレラ
+[Shoot] 時間: 27.08s | 弾数: 14/24  | Pellets: 1 | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 27.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Shoot] 時間: 27.43s | 弾数: 13/24  | Pellets: 1 | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 27.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Shoot] 時間: 27.78s | 弾数: 12/24  | Pellets: 1 | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 27.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Shoot] 時間: 28.13s | 弾数: 11/24  | Pellets: 1 | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 28.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Shoot] 時間: 28.48s | 弾数: 10/24  | Pellets: 1 | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 28.48s | 名前:Skill 1: 追加ダメージ           | Dmg:   106,840 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Shoot] 時間: 28.83s | 弾数:  9/24  | Pellets: 1 | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 28.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Shoot] 時間: 29.18s | 弾数:  8/24  | Pellets: 1 | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 29.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Shoot] 時間: 29.53s | 弾数:  7/24  | Pellets: 1 | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 29.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Shoot] 時間: 29.88s | 弾数:  6/24  | Pellets: 1 | Dmg:    62,786 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 29.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    80,130 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x9 (Val:0.14)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 9->10) to シンデレラ
+[Shoot] 時間: 30.23s | 弾数:  5/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 30.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Shoot] 時間: 30.58s | 弾数:  4/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 30.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Shoot] 時間: 30.93s | 弾数:  3/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 30.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Shoot] 時間: 31.28s | 弾数:  2/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 31.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Shoot] 時間: 31.63s | 弾数:  1/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 31.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Shoot] 時間: 31.98s | 弾数:  0/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 31.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x10 (Val:0.16)]
+[Action] Reloading... (120 frames)
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 10->11) to シンデレラ
+[Action] Reload Complete. Ammo: 24
+[Burst] Activate!
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Skill Dmg] 時間: 35.15s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,425,944 | Hits:10 | Buffs:conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
+[Dmg Scale] Scaled by self stack 'Beauty': x11 -> 3.1790
+[Skill Dmg] 時間: 35.15s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 1,957,367 | Hits:10 | Buffs:conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
+[Shoot] 時間: 35.32s | 弾数: 23/24  | Pellets: 1 | Dmg:    63,776 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 35.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    81,394 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
+[Shoot] 時間: 35.67s | 弾数: 22/24  | Pellets: 1 | Dmg:    76,532 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 35.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    81,394 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x11 (Val:0.18)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 11->12) to シンデレラ
+[Shoot] 時間: 36.02s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 36.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 36.37s | 弾数: 20/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 36.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 36.72s | 弾数: 19/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 36.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 37.07s | 弾数: 18/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 37.07s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 37.42s | 弾数: 17/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 37.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 37.77s | 弾数: 16/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 37.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 38.12s | 弾数: 15/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 38.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 38.47s | 弾数: 14/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 38.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 38.82s | 弾数: 13/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 38.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 39.17s | 弾数: 12/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 39.17s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 39.52s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 39.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 39.87s | 弾数: 10/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 39.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 40.22s | 弾数:  9/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 40.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 40.57s | 弾数:  8/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 40.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 40.92s | 弾数:  7/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 40.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 41.27s | 弾数:  6/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 41.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 41.62s | 弾数:  5/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 41.62s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 41.97s | 弾数:  4/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 41.97s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 42.32s | 弾数:  3/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 42.32s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 42.67s | 弾数:  2/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 42.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 43.02s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 43.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 43.37s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 43.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Action] Reload Complete. Ammo: 24
+[Shoot] 時間: 46.70s | 弾数: 23/24  | Pellets: 1 | Dmg:    21,911 | Buffs: [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 46.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 47.05s | 弾数: 22/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 47.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 47.40s | 弾数: 21/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 47.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 47.75s | 弾数: 20/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 47.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 48.10s | 弾数: 19/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 48.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 48.45s | 弾数: 18/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 48.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 48.80s | 弾数: 17/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 48.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 49.15s | 弾数: 16/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 49.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 49.50s | 弾数: 15/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 49.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 49.85s | 弾数: 14/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 49.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Shoot] 時間: 50.20s | 弾数: 13/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 50.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 50.55s | 弾数: 12/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 50.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 50.90s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 50.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 51.25s | 弾数: 10/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 51.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 51.60s | 弾数:  9/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 51.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 51.95s | 弾数:  8/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 51.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 52.30s | 弾数:  7/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 52.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 52.65s | 弾数:  6/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 52.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 53.00s | 弾数:  5/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 53.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 53.35s | 弾数:  4/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 53.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 53.70s | 弾数:  3/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 53.70s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 54.05s | 弾数:  2/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 54.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 54.40s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 54.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 54.75s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 54.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 24
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 58.08s | 弾数: 23/24  | Pellets: 1 | Dmg:    77,126 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 58.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 58.43s | 弾数: 22/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 58.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 58.78s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 58.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 59.13s | 弾数: 20/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 59.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 59.48s | 弾数: 19/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 59.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 59.83s | 弾数: 18/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 59.83s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 60.18s | 弾数: 17/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 60.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 60.53s | 弾数: 16/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 60.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 60.88s | 弾数: 15/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 60.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 61.23s | 弾数: 14/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 61.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 61.58s | 弾数: 13/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 61.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 61.93s | 弾数: 12/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 61.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 62.28s | 弾数: 11/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 62.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 62.63s | 弾数: 10/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 62.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 62.98s | 弾数:  9/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 62.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 63.33s | 弾数:  8/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 63.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 63.68s | 弾数:  7/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 63.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 64.03s | 弾数:  6/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 64.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 64.38s | 弾数:  5/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 64.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 64.73s | 弾数:  4/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 64.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 65.08s | 弾数:  3/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 65.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Burst] Activate!
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Skill Dmg] 時間: 65.25s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 6,561,677 | Hits:10 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Dmg Scale] Scaled by self stack 'Beauty': x12 -> 3.4680
+[Skill Dmg] 時間: 65.25s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,151,885 | Hits:10 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 65.43s | 弾数:  2/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 65.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 65.78s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 65.78s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 66.13s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 66.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 24
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 69.47s | 弾数: 23/24  | Pellets: 1 | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 69.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 69.82s | 弾数: 22/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 69.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 70.17s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 70.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 70.52s | 弾数: 20/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 70.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 70.87s | 弾数: 19/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 70.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 71.22s | 弾数: 18/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 71.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 71.57s | 弾数: 17/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 71.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 71.92s | 弾数: 16/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 71.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 72.27s | 弾数: 15/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 72.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 72.62s | 弾数: 14/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 72.62s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 72.97s | 弾数: 13/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 72.97s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 73.32s | 弾数: 12/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 73.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 73.67s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 73.67s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 74.02s | 弾数: 10/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 74.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 74.37s | 弾数:  9/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 74.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 74.72s | 弾数:  8/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 74.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 75.07s | 弾数:  7/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 75.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 75.42s | 弾数:  6/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 75.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 75.77s | 弾数:  5/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 75.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 76.12s | 弾数:  4/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 76.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 76.47s | 弾数:  3/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 76.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 76.82s | 弾数:  2/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 76.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 77.17s | 弾数:  1/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 77.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 77.52s | 弾数:  0/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 77.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Action] Reload Complete. Ammo: 24
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Shoot] 時間: 80.85s | 弾数: 23/24  | Pellets: 1 | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 80.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 81.20s | 弾数: 22/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 81.20s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 81.55s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 81.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 81.90s | 弾数: 20/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 81.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 82.25s | 弾数: 19/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 82.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 82.60s | 弾数: 18/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 82.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 82.95s | 弾数: 17/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 82.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 83.30s | 弾数: 16/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 83.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 83.65s | 弾数: 15/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 83.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 84.00s | 弾数: 14/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 84.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 84.35s | 弾数: 13/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 84.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 84.70s | 弾数: 12/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 84.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 85.05s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 85.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 85.40s | 弾数: 10/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 85.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 85.75s | 弾数:  9/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 85.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 86.10s | 弾数:  8/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 86.10s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 86.45s | 弾数:  7/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 86.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 86.80s | 弾数:  6/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 86.80s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 87.15s | 弾数:  5/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 87.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 87.50s | 弾数:  4/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 87.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 87.85s | 弾数:  3/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 87.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 88.20s | 弾数:  2/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 88.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 88.55s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 88.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 88.90s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 88.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Action] Reload Complete. Ammo: 24
+[Shoot] 時間: 92.23s | 弾数: 23/24  | Pellets: 1 | Dmg:    21,911 | Buffs: [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 92.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 92.58s | 弾数: 22/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 92.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 92.93s | 弾数: 21/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 92.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 93.28s | 弾数: 20/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 93.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 93.63s | 弾数: 19/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 93.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 93.98s | 弾数: 18/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 93.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 94.33s | 弾数: 17/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 94.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 94.68s | 弾数: 16/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 94.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 95.03s | 弾数: 15/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 95.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Burst] Activate!
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Skill Dmg] 時間: 95.35s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,741,468 | Hits:10 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Dmg Scale] Scaled by self stack 'Beauty': x12 -> 3.4680
+[Skill Dmg] 時間: 95.35s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,221,301 | Hits:10 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 95.38s | 弾数: 14/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 95.38s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 95.73s | 弾数: 13/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 95.73s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 96.08s | 弾数: 12/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 96.08s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 96.43s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 96.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 96.78s | 弾数: 10/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 96.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 97.13s | 弾数:  9/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 97.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 97.48s | 弾数:  8/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 97.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 97.83s | 弾数:  7/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 97.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 98.18s | 弾数:  6/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 98.18s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 98.53s | 弾数:  5/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 98.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 98.88s | 弾数:  4/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 98.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間: 99.23s | 弾数:  3/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 99.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 99.58s | 弾数:  2/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 99.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間: 99.93s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間: 99.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:100.28s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:100.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Action] Reload Complete. Ammo: 24
+[Shoot] 時間:103.62s | 弾数: 23/24  | Pellets: 1 | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:103.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:103.97s | 弾数: 22/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:103.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:104.32s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:104.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:104.67s | 弾数: 20/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:104.67s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:105.02s | 弾数: 19/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:105.02s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:105.37s | 弾数: 18/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:105.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:105.72s | 弾数: 17/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:105.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:106.07s | 弾数: 16/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:106.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:106.42s | 弾数: 15/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:106.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:106.77s | 弾数: 14/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:106.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:107.12s | 弾数: 13/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:107.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:107.47s | 弾数: 12/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:107.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:107.82s | 弾数: 11/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:107.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:108.17s | 弾数: 10/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:108.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:108.52s | 弾数:  9/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:108.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:108.87s | 弾数:  8/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:108.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:109.22s | 弾数:  7/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:109.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:109.57s | 弾数:  6/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:109.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:109.92s | 弾数:  5/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:109.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:110.27s | 弾数:  4/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:110.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Shoot] 時間:110.62s | 弾数:  3/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:110.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:110.97s | 弾数:  2/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:110.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:111.32s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:111.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:111.67s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:111.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 24
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:115.00s | 弾数: 23/24  | Pellets: 1 | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:115.00s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:115.35s | 弾数: 22/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:115.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:115.70s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:115.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:116.05s | 弾数: 20/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:116.05s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:116.40s | 弾数: 19/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:116.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:116.75s | 弾数: 18/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:116.75s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:117.10s | 弾数: 17/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:117.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:117.45s | 弾数: 16/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:117.45s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:117.80s | 弾数: 15/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:117.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:118.15s | 弾数: 14/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:118.15s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:118.50s | 弾数: 13/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:118.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:118.85s | 弾数: 12/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:118.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:119.20s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:119.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:119.55s | 弾数: 10/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:119.55s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:119.90s | 弾数:  9/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:119.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:120.25s | 弾数:  8/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:120.25s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:120.60s | 弾数:  7/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:120.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:120.95s | 弾数:  6/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:120.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:121.30s | 弾数:  5/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:121.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:121.65s | 弾数:  4/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:121.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:122.00s | 弾数:  3/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:122.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:122.35s | 弾数:  2/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:122.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:122.70s | 弾数:  1/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:122.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:123.05s | 弾数:  0/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:123.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Action] Reload Complete. Ammo: 24
+[Burst] Activate!
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Skill Dmg] 時間:125.45s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,741,468 | Hits:10 | Buffs:conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Dmg Scale] Scaled by self stack 'Beauty': x12 -> 3.4680
+[Skill Dmg] 時間:125.45s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,082,470 | Hits:10 | Buffs:conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:126.38s | 弾数: 23/24  | Pellets: 1 | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:126.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:126.73s | 弾数: 22/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:126.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:127.08s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:127.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:127.43s | 弾数: 20/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:127.43s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:127.78s | 弾数: 19/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:127.78s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:128.13s | 弾数: 18/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:128.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:128.48s | 弾数: 17/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:128.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:128.83s | 弾数: 16/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:128.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:129.18s | 弾数: 15/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:129.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:129.53s | 弾数: 14/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:129.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:129.88s | 弾数: 13/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:129.88s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:130.23s | 弾数: 12/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:130.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:130.58s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:130.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:130.93s | 弾数: 10/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:130.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:131.28s | 弾数:  9/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:131.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:131.63s | 弾数:  8/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:131.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:131.98s | 弾数:  7/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:131.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:132.33s | 弾数:  6/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:132.33s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:132.68s | 弾数:  5/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:132.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:133.03s | 弾数:  4/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:133.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:133.38s | 弾数:  3/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:133.38s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:133.73s | 弾数:  2/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:133.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:134.08s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:134.08s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:134.43s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:134.43s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Action] Reload Complete. Ammo: 24
+[Shoot] 時間:137.77s | 弾数: 23/24  | Pellets: 1 | Dmg:    21,911 | Buffs: [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:137.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:138.12s | 弾数: 22/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:138.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:138.47s | 弾数: 21/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:138.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:138.82s | 弾数: 20/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:138.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:139.17s | 弾数: 19/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:139.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:139.52s | 弾数: 18/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:139.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:139.87s | 弾数: 17/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:139.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:140.22s | 弾数: 16/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:140.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Shoot] 時間:140.57s | 弾数: 15/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:140.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:140.92s | 弾数: 14/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:140.92s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:141.27s | 弾数: 13/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:141.27s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:141.62s | 弾数: 12/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:141.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:141.97s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:141.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:142.32s | 弾数: 10/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:142.32s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:142.67s | 弾数:  9/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:142.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:143.02s | 弾数:  8/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:143.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:143.37s | 弾数:  7/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:143.37s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:143.72s | 弾数:  6/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:143.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:144.07s | 弾数:  5/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:144.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:144.42s | 弾数:  4/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:144.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:144.77s | 弾数:  3/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:144.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:145.12s | 弾数:  2/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:145.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:145.47s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:145.47s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:145.82s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:145.82s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Action] Reload Complete. Ammo: 24
+[Shoot] 時間:149.15s | 弾数: 23/24  | Pellets: 1 | Dmg:    77,126 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:149.15s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:149.50s | 弾数: 22/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:149.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:149.85s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:149.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:150.20s | 弾数: 20/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:150.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:150.55s | 弾数: 19/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:150.55s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:150.90s | 弾数: 18/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:150.90s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:151.25s | 弾数: 17/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:151.25s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:151.60s | 弾数: 16/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:151.60s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:151.95s | 弾数: 15/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:151.95s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:152.30s | 弾数: 14/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:152.30s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:152.65s | 弾数: 13/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:152.65s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:153.00s | 弾数: 12/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:153.00s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:153.35s | 弾数: 11/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:153.35s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:153.70s | 弾数: 10/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:153.70s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:154.05s | 弾数:  9/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:154.05s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:154.40s | 弾数:  8/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:154.40s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:154.75s | 弾数:  7/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:154.75s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:155.10s | 弾数:  6/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:155.10s | 名前:Skill 1: 追加ダメージ           | Dmg:    34,954 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:155.45s | 弾数:  5/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:155.45s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Burst] Activate!
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Skill Dmg] 時間:155.55s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_0 | Dmg: 5,741,468 | Hits:10 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Dmg Scale] Scaled by self stack 'Beauty': x12 -> 3.4680
+[Skill Dmg] 時間:155.55s | 名前:Burst: ガラスの靴・フルコンタクト_Stage_1 | Dmg: 2,290,717 | Hits:10 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:155.80s | 弾数:  4/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:155.80s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:156.15s | 弾数:  3/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:156.15s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:156.50s | 弾数:  2/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:156.50s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:156.85s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:156.85s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:157.20s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:157.20s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Action] Reload Complete. Ammo: 24
+[Shoot] 時間:160.53s | 弾数: 23/24  | Pellets: 1 | Dmg:    77,126 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:160.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:160.88s | 弾数: 22/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:160.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:161.23s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:161.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:161.58s | 弾数: 20/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:161.58s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:161.93s | 弾数: 19/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:161.93s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:162.28s | 弾数: 18/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:162.28s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:162.63s | 弾数: 17/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:162.63s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:162.98s | 弾数: 16/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:162.98s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:163.33s | 弾数: 15/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:163.33s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:163.68s | 弾数: 14/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:163.68s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:164.03s | 弾数: 13/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:164.03s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:164.38s | 弾数: 12/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:164.38s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:164.73s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:164.73s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:165.08s | 弾数: 10/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:165.08s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:165.43s | 弾数:  9/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:165.43s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:165.78s | 弾数:  8/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:165.78s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:166.13s | 弾数:  7/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:166.13s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:166.48s | 弾数:  6/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:166.48s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:166.83s | 弾数:  5/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:166.83s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:167.18s | 弾数:  4/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:167.18s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:167.53s | 弾数:  3/24  | Pellets: 1 | Dmg:    27,388 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:167.53s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:167.88s | 弾数:  2/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:167.88s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:168.23s | 弾数:  1/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:168.23s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:168.58s | 弾数:  0/24  | Pellets: 1 | Dmg:    21,911 | Buffs: charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:168.58s | 名前:Skill 1: 追加ダメージ           | Dmg:    23,303 | Hits:1 | Buffs:charge_speed_rate:1.00 | [Beauty x12 (Val:0.19)]
+[Action] Reloading... (120 frames)
+[Buff] シンデレラ: HP to ATK conversion (0.0271)
+[Action] Reload Complete. Ammo: 24
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:171.92s | 弾数: 23/24  | Pellets: 1 | Dmg:    64,272 | Buffs: conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:171.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:172.27s | 弾数: 22/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:172.27s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:172.62s | 弾数: 21/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:172.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:172.97s | 弾数: 20/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:172.97s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:173.32s | 弾数: 19/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:173.32s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:173.67s | 弾数: 18/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:173.67s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:174.02s | 弾数: 17/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:174.02s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:174.37s | 弾数: 16/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:174.37s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:174.72s | 弾数: 15/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:174.72s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:175.07s | 弾数: 14/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:175.07s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:175.42s | 弾数: 13/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:175.42s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:175.77s | 弾数: 12/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:175.77s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:176.12s | 弾数: 11/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:176.12s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:176.47s | 弾数: 10/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:176.47s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:176.82s | 弾数:  9/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:176.82s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ
+[Shoot] 時間:177.17s | 弾数:  8/24  | Pellets: 1 | Dmg:    77,126 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:177.17s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:177.52s | 弾数:  7/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:177.52s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:177.87s | 弾数:  6/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:177.87s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:178.22s | 弾数:  5/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:178.22s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:178.57s | 弾数:  4/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:178.57s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:178.92s | 弾数:  3/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:178.92s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:179.27s | 弾数:  2/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:179.27s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:179.62s | 弾数:  1/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:179.62s | 名前:Skill 1: 追加ダメージ           | Dmg:    82,026 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Shoot] 時間:179.97s | 弾数:  0/24  | Pellets: 1 | Dmg:    64,272 | Buffs: charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Buff] Applied Skill 1: チャージ速度UP (charge_speed_rate: 1.0) to シンデレラ
+[Skill Dmg] 時間:179.97s | 名前:Skill 1: 追加ダメージ           | Dmg:   109,368 | Hits:1 | Buffs:charge_speed_rate:1.00 | conversion_hp_to_atk:0.03 | [Beauty x12 (Val:0.19)]
+[Stack] Applied Skill 2: 美しさスタック (Stack:Beauty 12->12) to シンデレラ

@@ -176,7 +176,7 @@ dummy_barrier_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/2B.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/シンデレラ.json', skill_level=10)
 burst3_nikke_2 = create_character_from_json('characters/アニス：スパークリングサマー.json', skill_level=10)
 burst2_nikke = create_character_from_json('characters/ナユタ.json', skill_level=10)
 burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
@@ -192,12 +192,12 @@ dummy_b3 = create_dummy_character("Dummy_B3", 3, "SG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, burst2_nikke, burst3_nikke, dummy_b3, dummy_b1]
+all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_b1]
 
 # 4. バーストローテーション
 rotation = [
     [dummy_b1],
-    [burst2_nikke],
+    [dummy_b2],
     [burst3_nikke, dummy_b3] 
 ]
 

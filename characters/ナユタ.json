@@ -50,7 +50,7 @@
           "target": "allies",
           "kwargs": {
             "effect_no": 2,
-            "buff_type": "atk_buff_fix",
+            "buff_type": "atk_buff_fixed",
             "scale_by_caster_stats": true,
             "target_stat": "atk",
             "value_list": [0.1782, 0.1919, 0.2056, 0.2193, 0.233, 0.2467, 0.2604, 0.2742, 0.2879, 0.3016],
@@ -83,7 +83,7 @@
     },
     {
       "name": "Skill 1: 雑毒之善 (攻撃時)",
-      "trigger_type": "full_charge_count",
+      "trigger_type": "shot_count",
       "trigger_value": 1,
       "condition": {
         "self_has_tag": "記憶燃焼"
@@ -216,7 +216,7 @@
           "target": "self",
           "kwargs": {
             "duration": 10,
-            "tag": ["記憶燃焼","ignore_charge_speed_buffs"],
+            "tag": ["記憶燃焼", "ignore_charge_speed_buffs"],
             "weapon_data": {
               "name": "Nayuta Burst",
               "type": "CHARGE",
