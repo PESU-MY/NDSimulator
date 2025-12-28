@@ -142,16 +142,16 @@ class CharacterStatsMixin:
         # ▲▲▲ 修正ここまで ▲▲▲
 
         total_dmg = layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem * layer_special
-        #if self.name == "グレイブ":
-        #    if mult != 0.1012:
-        #        print(f"--- [DEBUG] Damage Calc ({self.name}) ---")
-        #        print(f"  SkillMult: {mult:.4f}")
-        #        print(f"  1.FinalAtk: {final_atk:.1f} (Base:{self.base_atk} + Rate:{self.buff_manager.get_total_value('atk_buff_rate', frame):.2f} + Fix:{self.buff_manager.get_total_value('atk_buff_fixed', frame):.1f})")
-        #        print(f"  2.Split: {profile['is_pierce']} ")
-        #        print(f"  3.CritLayer: {layer_crit:.2f} (FullBurst:{is_full_burst}, IsCrit:{is_crit_hit})")
-        #        print(f"  4.DmgLayer : {layer_dmg:.2f} (IgnoreDefBuff:{self.buff_manager.get_total_value('atk_dmg_buff', frame):.2f}, TotalBucket:{bucket_dmg:.2f})")
-        #        print(f"  Total: {total_dmg:,.0f}")
-        #        print(f"----------------------------------------")
+        if self.name == "ナユタ":
+            if mult > 2.7:
+                print(f"--- [DEBUG] Damage Calc ({self.name}) ---")
+                print(f"  SkillMult: {mult:.4f}")
+                print(f"  1.FinalAtk: {final_atk:.1f} (Base:{self.base_atk} + Rate:{self.buff_manager.get_total_value('atk_buff_rate', frame):.2f} + Fix:{self.buff_manager.get_total_value('atk_buff_fixed', frame):.1f})")
+                print(f"  2.Split: {profile['is_pierce']} ")
+                print(f"  3.CritLayer: {layer_crit:.2f} (FullBurst:{is_full_burst}, IsCrit:{is_crit_hit})")
+                print(f"  4.DmgLayer : {layer_dmg:.2f} (IgnoreDefBuff:{self.buff_manager.get_total_value('atk_dmg_buff', frame):.2f}, TotalBucket:{bucket_dmg:.2f})")
+                print(f"  Total: {total_dmg:,.0f}")
+                print(f"----------------------------------------")
             
         # 最終計算に layer_special を乗算
         return total_dmg, is_crit_hit
@@ -174,6 +174,57 @@ class CharacterStatsMixin:
         if frame_type == 'charge' and self.weapon.disable_charge_buffs: return int(original_frame)
         if frame_type == 'attack' and self.weapon.disable_attack_speed_buffs: return int(original_frame)
         
+        # ▼▼▼ 追加: バフ/タグによる一時的なバフ無効化チェック ▼▼▼
+        # "ignore_{frame_type}_speed_buffs" タグを持つバフが有効な場合、バフ計算をスキップして元の値を返す
+        # 対応タグ: 
+        #   - ignore_reload_speed_buffs
+        #   - ignore_charge_speed_buffs
+        #   - ignore_attack_speed_buffs
+        # ▼▼▼ 修正: バフ無効化チェックとホワイトリスト処理 ▼▼▼
+        ignore_tag = f"ignore_{frame_type}_speed_buffs"
+
+        # 無効化タグを持つバフが存在するかチェック
+        ignore_buffs = self.buff_manager.get_buffs_by_tag(ignore_tag, frame)
+        
+        if ignore_buffs:
+            # 無効化が有効な場合、例外的に許可するタグ(allow_tags)を収集
+            allowed_tags = set()
+            for b in ignore_buffs:
+                # バフの定義から "allow_tags" (リスト or 文字列) を取得して追加
+                # ※ kwargsはバフデータには保存されていない場合があるため、
+                #    add_buff時に 'allow_tags' をバフデータとして保存させるか、
+                #    ここでは簡易的にバフデータに追加属性を持たせる修正が必要。
+                #    現状の add_buff 実装だと kwargs は保存されないので、
+                #    JSONで指定する際はバフのパラメータとして渡す必要がある。
+                
+                # add_buffの修正が手間なら、ここには「allow_tags」というキーが
+                # バフデータ辞書に入っている前提で動くコードを書く。
+                tags = b.get('allow_tags')
+                if tags:
+                    if isinstance(tags, list):
+                        allowed_tags.update(tags)
+                    else:
+                        allowed_tags.add(tags)
+            
+            # 許可タグがなければ固定値(バフなし)を返す
+            if not allowed_tags:
+                return int(original_frame)
+            
+            # 許可タグがある場合、それらを持つバフだけを合算して適用する
+            rate = self.buff_manager.get_total_value_with_filter(f'{frame_type}_speed_rate', frame, allowed_tags)
+            fixed = 0
+            if frame_type in ['reload', 'charge']:
+                fixed = self.buff_manager.get_total_value_with_filter(f'{frame_type}_speed_fixed', frame, allowed_tags)
+
+            if rate <= -1.0: rate = -0.99
+            
+            if frame_type == 'attack':
+                return self.calculate_reduced_frame_attack(original_frame, rate, fixed)
+            else:
+                return self.calculate_reduced_frame(original_frame, rate, fixed)
+
+        # ▲▲▲ 修正ここまで (以下、通常の計算ロジック) ▲▲▲
+
         rate = self.buff_manager.get_total_value(f'{frame_type}_speed_rate', frame)
         if rate <= -1.0: rate = -0.99
         

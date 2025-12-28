@@ -58,7 +58,6 @@
         "buff_type": "atk_buff_fixed",
         "scale_by_caster_stats": true,
         "target_stat": "atk",
-        "stat_type": "finally",
         "value_list": [0.0549, 0.0633, 0.0718, 0.0802, 0.0887, 0.0971, 0.1056, 0.114, 0.1224, 0.1309],
         "duration": 5
       }

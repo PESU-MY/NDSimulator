@@ -111,7 +111,42 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.weapon_change_end_frame = 0
         self.weapon_change_ammo_specified = False
 
-    def heal(self, amount, source_name, frame, simulator):
+    # ▼▼▼ 修正: healメソッド (引数 is_distributed を追加) ▼▼▼
+    def heal(self, amount, source_name, frame, simulator, is_distributed=False):
+        # 1. 回復分配ロジック (Distribution Logic)
+        # 自身が分配バフを持っており、かつこれが「分配後の回復」でない場合に発動
+        dist_val = self.buff_manager.get_total_value('distribute_heal_buff', frame)
+        
+        if dist_val > 0 and not is_distributed:
+            # 分配対象者の収集と総バフ量の計算
+            targets = []
+            total_dist_val = 0
+            
+            # simulator経由で全キャラを走査
+            for char in simulator.characters:
+                if char.base_hp <= 0: continue # 戦闘不能者は除外（仕様によるが通常は回復しない）
+                
+                c_val = char.buff_manager.get_total_value('distribute_heal_buff', frame)
+                if c_val > 0:
+                    targets.append((char, c_val))
+                    total_dist_val += c_val
+            
+            # 分配実行
+            if total_dist_val > 0:
+                simulator.log(f"[Heal Dist] Distributing {amount:.0f} heal among {len(targets)} targets (Total Buff: {total_dist_val})", target_name=self.name)
+                
+                for t_char, t_val in targets:
+                    # 配分計算: (個人のバフ量 / 全体のバフ量) * 回復量
+                    ratio = t_val / total_dist_val
+                    share_amount = amount * ratio
+                    
+                    # 再帰呼び出し (is_distributed=True で無限ループ防止 & トリガー阻止)
+                    t_char.heal(share_amount, source_name, frame, simulator, is_distributed=True)
+                
+                # 元の回復処理は分配に置き換わったため終了
+                return 0
+
+        # 2. 通常の回復処理 (Normal Heal)
         heal_rate = self.buff_manager.get_total_value('heal_effectiveness_buff', frame)
         final_heal = amount * (1.0 + heal_rate)
         if final_heal <= 0: return 0
@@ -124,16 +159,18 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.current_hp = min(cap_hp, self.current_hp + final_heal)
         actual_heal = self.current_hp - prev_hp
         
-        # ▼▼▼ 修正: HPが増えなくても(0でも)トリガーを発火させる ▼▼▼
-        # ログは回復が発生したことを記録
-        simulator.log(f"[Heal] {self.name} received heal (Val: {final_heal:.0f} -> Actual: {actual_heal:.0f}) (Src: {source_name}, HP: {self.current_hp:.0f}/{max_hp:.0f})", target_name=self.name)
+        # ログ出力
+        dist_tag = " (Distributed)" if is_distributed else ""
+        simulator.log(f"[Heal{dist_tag}] {self.name} received heal (Val: {final_heal:.0f} -> Actual: {actual_heal:.0f}) (Src: {source_name}, HP: {self.current_hp:.0f}/{max_hp:.0f})", target_name=self.name)
         
-        is_fb = (simulator.burst_state == "FULL")
-        self.process_trigger('on_receive_heal', actual_heal, frame, is_fb, simulator)
-        # ▲▲▲
-        #     
+        # 3. トリガー発火判定
+        # 分配された回復ではトリガーを発動しない
+        if not is_distributed:
+            is_fb = (simulator.burst_state == "FULL")
+            self.process_trigger('on_receive_heal', actual_heal, frame, is_fb, simulator)
+            
         return actual_heal
-    # ▲▲▲
+    # ▲▲▲ 修正ここまで ▲▲▲
     # ▼▼▼ 追加: 遮蔽物HP回復メソッド ▼▼▼
     def recover_cover_hp(self, value, source_name, frame, simulator):
         # 遮蔽物が既に破壊されている(0以下)場合は回復不能とする（「復活」スキルでない限り）

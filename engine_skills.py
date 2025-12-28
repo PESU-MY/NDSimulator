@@ -482,6 +482,7 @@ class SkillEngineMixin:
                 st_amount = kwargs.get('stack_amount', 1) 
                 # ▼▼▼ 追加: フラグの取得 ▼▼▼
                 disable_inc = kwargs.get('disable_stack_increase', False)
+                allow_tags = kwargs.get('allow_tags') # ← 取得
                 # ▲▲▲ 追加ここまで ▲▲▲
 
                 is_debuff = False
@@ -515,7 +516,8 @@ class SkillEngineMixin:
                         shot_duration=shot_dur, remove_on_reload=rem_reload,
                         linked_remove_tag=linked_remove_tag,
                         stack_amount=st_amount,
-                        disable_stack_increase=disable_inc # ← 引数渡し
+                        disable_stack_increase=disable_inc, # ← 引数渡し
+                        allow_tags=allow_tags # ← 渡す
                     )
                     
                     t_str = "Enemy" if skill.target == 'enemy' else target.name

@@ -1,0 +1,238 @@
+{
+  "name": "ナユタ",
+  "weapon_type": "SMG",
+  "burst_stage": "2",
+  "element": "Wind",
+  "class": "Supporter",
+  "squad": "パイオニア",
+  "stats": {
+    "damage_rate": 0.0873,
+    "max_ammo": 120,
+    "reload_time": 1.5,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 雑毒之善 (不屈)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy",
+        "value": 1,
+        "duration": 9,
+        "description": "戦闘開始時、不屈"
+      }
+    },
+    {
+      "name": "Skill 1: 雑毒之善 (記憶吸収連動)",
+      "trigger_type": "time_interval",
+      "trigger_value": 3.0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "core_dmg_buff",
+            "value_list": [0.1572, 0.1677, 0.1782, 0.1886, 0.1991, 0.2096, 0.2201, 0.2306, 0.2411, 0.2515],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_fix",
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "value_list": [0.1782, 0.1919, 0.2056, 0.2193, 0.233, 0.2467, 0.2604, 0.2742, 0.2879, 0.3016],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.1477, 0.1591, 0.1705, 0.1818, 0.1932, 0.2046, 0.216, 0.2273, 0.2387, 0.25],
+            "description": "発動者HP回復"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "distribute_heal_buff",
+            "value": 1,
+            "duration": 5,
+            "description": "HP回復分配"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 1: 雑毒之善 (攻撃時)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "記憶燃焼"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [0.8846, 0.9527, 1.0208, 1.0888, 1.1569, 1.2249, 1.293, 1.361, 1.4291, 1.5]
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "multiplier_list": [2.2186, 2.3893, 2.56, 2.7306, 2.9013, 3.072, 3.2426, 3.4133, 3.584, 3.8046]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 有為転変 (スタック付与)",
+      "trigger_type": "time_interval",
+      "trigger_value": 3.0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 6,
+        "buff_type": "hit_rate_buff",
+        "stack_name": "記憶吸収",
+        "max_stack": 30,
+        "value_list": [0.0083, 0.0089, 0.0096, 0.0102, 0.0108, 0.0115, 0.0121, 0.0128, 0.0134, 0.014],
+        "duration": 99999,
+        "disable_stack_increase": true,
+        "description": "スタック量増減効果無効"
+      }
+    },
+    {
+      "name": "Skill 2: 有為転変 (スタック効果)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "condition": {
+            "self_stack_min": 2,
+            "stack_name": "記憶吸収"
+          },
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.0898, 0.0967, 0.1036, 0.1105, 0.1175, 0.1244, 0.1313, 0.1382, 0.1451, 0.152],
+            "duration": 1.1
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "condition": {
+            "self_stack_min": 10,
+            "stack_name": "記憶吸収"
+          },
+          "kwargs": {
+            "effect_no": 8,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.1198, 0.129, 0.1382, 0.1474, 0.1566, 0.1658, 0.1751, 0.1843, 0.1935, 0.2027],
+            "duration": 1.1
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "condition": {
+            "self_stack_min": 30,
+            "stack_name": "記憶吸収"
+          },
+          "kwargs": {
+            "effect_no": 9,
+            "buff_type": "core_dmg_buff",
+            "value_list": [0.1244, 0.1339, 0.1435, 0.1531, 0.1627, 0.1722, 0.1818, 0.1914, 0.2009, 0.2105],
+            "duration": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: 苦行難行",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 10,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.2094, 0.2255, 0.2417, 0.2578, 0.2739, 0.29, 0.3061, 0.3222, 0.3383, 0.3545],
+            "duration": 15
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 11,
+            "multiplier_list": [3.8133, 4.1066, 4.4, 4.6933, 4.9866, 5.28, 5.5733, 5.8666, 6.16, 6.4533]
+          }
+        },
+        {
+          "effect_type": "weapon_change",
+          "target": "self",
+          "kwargs": {
+            "duration": 10,
+            "tag": ["記憶燃焼","ignore_charge_speed_buffs"],
+            "weapon_data": {
+              "name": "Nayuta Burst",
+              "type": "CHARGE",
+              "effect_no": 12,
+              "multiplier_list": [1.6362, 1.7621, 1.888, 2.0138, 2.1397, 2.2656, 2.3914, 2.5173, 2.6432, 2.7518],
+              "max_ammo": 999,
+              "charge_time": 1.8,
+              "hit_size": 1,
+              "charge_mult": 2.5,
+              "windup_frames": 0,
+              "winddown_frames": 0,
+              "description": "記憶燃焼：1.8秒チャージ、250%フルチャ、装弾数無限"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

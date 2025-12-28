@@ -7,12 +7,13 @@ class BuffManager:
         self.last_calc_frame = -1 # 最後に計算したフレーム
         # ▲▲▲
 
-    def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False, stack_amount=1, linked_remove_tag=None, disable_stack_increase=False): # ← 引数追加
+    def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False, stack_amount=1, linked_remove_tag=None, disable_stack_increase=False, allow_tags=None): # ← 引数追加
         buff_data = {
             'val': value, 'end_frame': current_frame + duration_frames, 
             'source': source, 'tag': tag, 'shot_life': shot_duration, 'remove_on_reload': remove_on_reload
             ,'start_frame': current_frame  # ▼ 追加: 開始フレームを記録 (LIFO用)
             ,'linked_remove_tag': linked_remove_tag  # ▼ 追加: 連動削除する対象のタグ
+            ,'allow_tags': allow_tags # ← 保存
         }
         if stack_name:
             if stack_name in self.active_stacks:
@@ -25,6 +26,7 @@ class BuffManager:
                 stack_data['shot_life'] = shot_duration
                 stack_data['remove_on_reload'] = remove_on_reload
                 stack_data['linked_remove_tag'] = linked_remove_tag # ▼ 追加
+                stack_data['allow_tags'] = allow_tags # ← 保存
                 return stack_data['count']
             else:
                 self.active_stacks[stack_name] = {
@@ -34,6 +36,7 @@ class BuffManager:
                     'start_frame': current_frame  # ▼ 追加
                     ,'linked_remove_tag': linked_remove_tag # ▼ 追加
                     ,'disable_stack_increase': disable_stack_increase # ← 保存
+                    ,'allow_tags': allow_tags # ← 保存
                 }
                 return stack_amount
         else:
@@ -405,6 +408,60 @@ class BuffManager:
         return False
     # ▲▲▲ 追加ここまで ▲▲▲
 
+    # ▼▼▼ 追加: 指定タグを持つアクティブなバフデータを取得 ▼▼▼
+    def get_buffs_by_tag(self, tag, current_frame):
+        """指定されたタグを持つアクティブなバフのリストを返す"""
+        found_buffs = []
+        
+        def is_match(b_tag):
+            if isinstance(b_tag, list): return tag in b_tag
+            return b_tag == tag
+
+        # 通常バフ検索
+        for b_list in self.buffs.values():
+            for b in b_list:
+                if is_match(b.get('tag')) and (b['end_frame'] >= current_frame or b['shot_life'] > 0):
+                    found_buffs.append(b)
+        
+        # スタックバフ検索
+        for s_data in self.active_stacks.values():
+            if is_match(s_data.get('tag')) and (s_data['end_frame'] >= current_frame or s_data['shot_life'] > 0):
+                found_buffs.append(s_data)
+                
+        return found_buffs
+
+    # ▼▼▼ 追加: 指定タグを持つバフのみを合計するフィルタリング計算 ▼▼▼
+    def get_total_value_with_filter(self, buff_type, current_frame, allowed_tags=None):
+        """allowed_tagsに含まれるタグを持つバフのみを合計する"""
+        if not allowed_tags:
+            return 0.0
+            
+        total = 0.0
+        
+        def is_allowed(b_tag):
+            if not b_tag: return False
+            if isinstance(b_tag, list):
+                # バフのタグリストのどれか一つでも許可リストに入っていればOK
+                return any(t in allowed_tags for t in b_tag)
+            return b_tag in allowed_tags
+
+        # 通常バフ
+        if buff_type in self.buffs:
+            for b in self.buffs[buff_type]:
+                if b['end_frame'] >= current_frame or b['shot_life'] > 0:
+                    if is_allowed(b.get('tag')):
+                        total += b['val']
+
+        # スタックバフ
+        for stack in self.active_stacks.values():
+            if stack['buff_type'] == buff_type:
+                if stack['end_frame'] >= current_frame or stack['shot_life'] > 0:
+                    if is_allowed(stack.get('tag')):
+                        total += stack['unit_value'] * stack['count']
+                        
+        return total
+    # ▲▲▲ 追加ここまで ▲▲▲
+    
     def extend_buff(self, tag, duration_frames, frame):
         """
         指定されたタグを持つバフ(またはスタック)の終了時間を延長する。

@@ -118,7 +118,6 @@
             "buff_type": "atk_buff_fix",
             "scale_by_caster_stats": true,
             "target_stat": "atk",
-            "stat_type": "finally",
             "value_list": [0.0956, 0.1029, 0.1103, 0.1176, 0.125, 0.1324, 0.1397, 0.1471, 0.1544, 0.1618],
             "duration": 10,
             "description": "発動者基準攻撃力UP"
@@ -135,7 +134,6 @@
             "buff_type": "atk_buff_fix",
             "scale_by_caster_stats": true,
             "target_stat": "atk",
-            "stat_type": "finally",
             "value_list": [0.1716, 0.187, 0.2024, 0.2178, 0.2332, 0.2486, 0.264, 0.2794, 0.2948, 0.3102],
             "duration": 10,
             "description": "バリア適用時、追加で発動者基準攻撃力UP"
