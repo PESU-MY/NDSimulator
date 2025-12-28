@@ -1,0 +1,31 @@
+=== Simulation Start ===
+Character: Dummy_B1 (Atk:1)
+Character: デルタ：ニンジャシーフ (Atk:17059)
+Character: 2B (Atk:17059)
+Character: Dummy_B3 (Atk:1)
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] デルタ：ニンジャシーフ used Burst Stage 2
+[Burst] 2B used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for 2B at frame 903
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] デルタ：ニンジャシーフ used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 3003
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] デルタ：ニンジャシーフ used Burst Stage 2
+[Burst] 2B used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for 2B at frame 5103
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] デルタ：ニンジャシーフ used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 7203
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] デルタ：ニンジャシーフ used Burst Stage 2
+[Burst] 2B used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for 2B at frame 9303
+[Burst] Dummy_B1 used Burst Stage 1

@@ -1,0 +1,152 @@
+{
+  "name": "トーブ",
+  "weapon_type": "AR",
+  "burst_stage": "1",
+  "element": "Water",
+  "class": "Supporter",
+  "squad": "アンリミテッド",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.00,
+    "damage_rate": 0.142,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 代用弾丸",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "refill_ammo",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "probability": 5,
+            "value_list": [0.0313, 0.0337, 0.0362, 0.0386, 0.041, 0.0434, 0.0458, 0.0482, 0.0506, 0.0531],
+            "description": "攻撃時、5%の確率で弾丸チャージn%"
+          }
+        },
+        {
+          "effect_type": "stack_buff",
+          "target": "allies",
+          "condition": {
+            "probability": 5
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "max_ammo_add",
+            "stack_name": "応急改造",
+            "max_stack": 3,
+            "value_list": [1, 1, 1, 1, 1, 2, 2, 2, 2, 2],
+            "duration": 5,
+            "description": "連動発動：応急改造スタック付与"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "condition": {
+            "probability": 5
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "crit_dmg_buff",
+            "value_list": [0.0296, 0.0321, 0.0347, 0.0372, 0.0397, 0.0423, 0.0448, 0.0473, 0.0499, 0.0524],
+            "duration": 5,
+            "description": "連動発動：クリダメUP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 改造成功 (クリ率)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_stack_min": 3,
+        "stack_name": "応急改造"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "crit_rate_buff",
+        "value_list": [0.0196, 0.0211, 0.0226, 0.0241, 0.0257, 0.0272, 0.0287, 0.0302, 0.0317, 0.0332],
+        "duration": 1.1
+      }
+    },
+    {
+      "name": "Skill 2: 改造成功 (攻撃速度)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_stack_min": 3,
+        "stack_name": "応急改造"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "weapon_type",
+        "value": "SG"
+      },
+      "kwargs": {
+        "effect_no": 6,
+        "buff_type": "attack_speed_rate",
+        "value_list": [0.2496, 0.2688, 0.288, 0.3072, 0.3264, 0.3456, 0.3648, 0.384, 0.4032, 0.4224],
+        "duration": 1.1
+      }
+    },
+    {
+      "name": "バースト: その場しのぎの奇跡",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "atk_buff_fix",
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "stat_type": "finally",
+            "value_list": [0.0137, 0.0147, 0.0158, 0.0168, 0.0179, 0.019, 0.02, 0.0211, 0.0221, 0.0232],
+            "duration": 10,
+            "copy_stack_count": "応急改造",
+            "description": "味方全体攻撃力UP & 応急改造スタックコピー"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "weapon_type",
+            "value": "SG"
+          },
+          "kwargs": {
+            "effect_no": 8,
+            "buff_type": "atk_buff_fix",
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "stat_type": "finally",
+            "value_list": [0.1431, 0.1541, 0.1651, 0.1761, 0.1871, 0.1981, 0.2091, 0.2201, 0.2311, 0.2421],
+            "duration": 10,
+            "copy_stack_count": "応急改造",
+            "description": "SG所持味方攻撃力UP & 応急改造スタックコピー"
+          }
+        }
+      ]
+    }
+  ]
+}

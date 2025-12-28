@@ -176,9 +176,9 @@ dummy_barrier_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/スノーホワイト.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/2B.json', skill_level=10)
 burst3_nikke_2 = create_character_from_json('characters/アニス：スパークリングサマー.json', skill_level=10)
-burst2_nikke = create_character_from_json('characters/ツバイ.json', skill_level=10)
+burst2_nikke = create_character_from_json('characters/デルタ：ニンジャシーフ.json', skill_level=10)
 burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
 burst1_nikke = create_character_from_json('characters/リター.json', skill_level=10)
 saitotu = create_character_from_json('characters/アリス_ワンダーランドバニー.json', skill_level=10)
