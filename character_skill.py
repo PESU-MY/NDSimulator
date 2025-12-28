@@ -55,6 +55,10 @@ class CharacterSkillMixin:
 
                 elif trigger_type == 'on_receive_heal': is_triggered = True
 
+                # ▼▼▼ 追加: 遮蔽物回復受領時のトリガー判定 ▼▼▼
+                elif trigger_type == 'on_receive_cover_heal': is_triggered = True
+                # ▲▲▲ 追加ここまで ▲▲▲
+
                 # ▼▼▼ 追加: バースト終了後からの経過時間トリガー ▼▼▼
                 elif trigger_type == 'interval_after_burst_end':
                     # バースト終了記録があり、かつ現在時刻がそれより後の場合

@@ -31,6 +31,12 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         
         self.base_atk = base_atk
         self.base_hp = base_hp
+
+        # ▼▼▼ 追加: 遮蔽物HPの初期化 ▼▼▼
+        # 一般的に遮蔽物HPは本体HPと同等とみなす（別途定義がない場合）
+        self.cover_hp = self.base_hp
+        self.max_cover_hp = self.base_hp
+
         self.element = element
         self.burst_stage = str(burst_stage)
         self.character_class = character_class
@@ -128,3 +134,29 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         #     
         return actual_heal
     # ▲▲▲
+    # ▼▼▼ 追加: 遮蔽物HP回復メソッド ▼▼▼
+    def recover_cover_hp(self, value, source_name, frame, simulator):
+        # 遮蔽物が既に破壊されている(0以下)場合は回復不能とする（「復活」スキルでない限り）
+        if self.cover_hp <= 0:
+            return 0
+            
+        # 値が2.0以下なら割合回復、それ以上なら固定値回復と判定
+        heal_amount = 0
+        if value <= 2.0:
+            heal_amount = self.max_cover_hp * value
+        else:
+            heal_amount = value
+            
+        prev_cover_hp = self.cover_hp
+        self.cover_hp = min(self.max_cover_hp, self.cover_hp + heal_amount)
+        actual_heal = self.cover_hp - prev_cover_hp
+        
+        if actual_heal > 0:
+            simulator.log(f"[Cover Heal] {self.name} cover repaired (Val: {heal_amount:.0f} -> Actual: {actual_heal:.0f}) (Src: {source_name}, CoverHP: {self.cover_hp:.0f}/{self.max_cover_hp:.0f})", target_name=self.name)
+            
+            # トリガー発火
+            is_fb = (simulator.burst_state == "FULL")
+            self.process_trigger('on_receive_cover_heal', actual_heal, frame, is_fb, simulator)
+            
+        return actual_heal
+    # ▲▲▲ 追加ここまで ▲▲▲

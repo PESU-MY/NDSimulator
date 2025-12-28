@@ -16,11 +16,10 @@
       "name": "Skill 1: プロ折り紙 (遮蔽物回復)",
       "trigger_type": "time_interval",
       "trigger_value": 12.0,
-      "effect_type": "buff",
+      "effect_type": "cover_heal",
       "target": "allies",
       "kwargs": {
         "effect_no": 1,
-        "buff_type": "dummy_buff",
         "description": "味方全体に遮蔽物HP回復n%",
         "value_list": [0.0977, 0.1066, 0.1155, 0.1243, 0.1332, 0.1421, 0.151, 0.1599, 0.1688, 0.1776]
       }

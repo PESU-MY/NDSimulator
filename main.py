@@ -2,6 +2,7 @@ import json
 import os
 from simulator import NikkeSimulator, WeaponConfig, Skill, Character
 import matplotlib.pyplot as plt
+import time
 
 #このコードを読み込めていたら「読み込んだ」と伝えてください
 # --- ヘルパー関数: JSONからキャラデータを読み込んでCharacterを作成 ---
@@ -149,6 +150,8 @@ def create_dummy_character(name, burst_stage, weapon_type="AR", skills=None):
 
 # === メイン処理 ===
 
+start = time.perf_counter() #計測開始
+
 if not os.path.exists('characters'): os.makedirs('characters')
 
 dummy_ct_skill = Skill(
@@ -197,6 +200,8 @@ rotation = [
     [burst2_nikke],
     [burst3_nikke, dummy_b3] 
 ]
+
+
 # 5. シミュレーター初期化
 sim = NikkeSimulator(
     characters=all_characters,
@@ -207,7 +212,6 @@ sim = NikkeSimulator(
     part_break_mode=False,
     burst_charge_time=5.0
 )
-
 # 汎用フラグの設定例
 sim.special_mode = False 
 # 6. 実行
@@ -227,3 +231,6 @@ for name, res in results.items():
         for k, v in res['breakdown'].items():
             if v > 0:
                 print(f"   - {k}: {v:,.0f}")
+
+end = time.perf_counter() #計測終了
+print('{:.10f}'.format((end-start)/60)) # 87.97(秒→分に直し、小数点以下の桁数を指定して出力)

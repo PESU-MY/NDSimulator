@@ -58,7 +58,20 @@
           }
         }
       ]
+    },
+    {
+      "name": "Skill 2: ボルトブースト (遮蔽物回復)",
+      "trigger_type": "time_interval",
+      "trigger_value": 15.0,
+      "effect_type": "cover_heal",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "description": "味方全体に遮蔽物HP回復n%",
+        "value_list": [0.2887, 0.315, 0.3412, 0.3675, 0.3937, 0.42, 0.4462, 0.4725, 0.4987, 0.525]
+      }
     }
+      
   ],
   "burst_skill": {
     "name": "Liter Burst Skill",

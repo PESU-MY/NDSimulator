@@ -73,6 +73,7 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
             self.log_handles[target_name].write(message + '\n')
         else:
             self.log_handles["System"].write(f"[{target_name}] {message}\n")
+        #pass #計測のため無効化
 
     def tick(self, frame):
         self.executed_skill_ids.clear()

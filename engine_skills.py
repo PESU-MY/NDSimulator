@@ -121,6 +121,67 @@ class SkillEngineMixin:
                 flag_name = skill.condition["simulation_flag"]
                 if not getattr(self, flag_name, False):
                     return False
+                
+            # ▼▼▼ 追加: 部隊内のクラス存在判定 ▼▼▼
+            # 味方に指定クラスがいるか (has_ally_class)
+            if "has_ally_class" in skill.condition:
+                target_class = skill.condition["has_ally_class"]
+                exclude_self = skill.condition.get("exclude_self", True) # デフォルトで自分を除外
+                found = False
+                for char in self.characters:
+                    if char.base_hp <= 0: continue
+                    if exclude_self and char == caster: continue
+                    
+                    if char.character_class == target_class:
+                        found = True
+                        break
+                if not found: return False
+
+            # 味方に指定クラスがいないか (not_has_ally_class)
+            if "not_has_ally_class" in skill.condition:
+                target_class = skill.condition["not_has_ally_class"]
+                exclude_self = skill.condition.get("exclude_self", True)
+                found = False
+                for char in self.characters:
+                    if char.base_hp <= 0: continue
+                    if exclude_self and char == caster: continue
+                    
+                    if char.character_class == target_class:
+                        found = True
+                        break
+                # 見つかったらNG
+                if found: return False
+            # ▲▲▲ 追加ここまで ▲▲▲
+
+            # ▼▼▼ 追加: 部隊内のバースト段階存在判定 ▼▼▼
+            # 味方に指定バースト段階がいるか (has_ally_burst_stage)
+            if "has_ally_burst_stage" in skill.condition:
+                target_stage = str(skill.condition["has_ally_burst_stage"])
+                exclude_self = skill.condition.get("exclude_self", True)
+                found = False
+                for char in self.characters:
+                    if char.base_hp <= 0: continue
+                    if exclude_self and char == caster: continue
+                    
+                    if str(char.burst_stage) == target_stage:
+                        found = True
+                        break
+                if not found: return False
+
+            # 味方に指定バースト段階がいないか (not_has_ally_burst_stage)
+            if "not_has_ally_burst_stage" in skill.condition:
+                target_stage = str(skill.condition["not_has_ally_burst_stage"])
+                exclude_self = skill.condition.get("exclude_self", True)
+                found = False
+                for char in self.characters:
+                    if char.base_hp <= 0: continue
+                    if exclude_self and char == caster: continue
+                    
+                    if str(char.burst_stage) == target_stage:
+                        found = True
+                        break
+                if found: return False
+            # ▲▲▲ 追加ここまで ▲▲▲
 
         if skill.condition and "has_squad_mate_present" in skill.condition and caster:
             target_squad = caster.squad
@@ -246,6 +307,23 @@ class SkillEngineMixin:
         if not targets and skill.effect_type == 'damage': targets.append(caster)
         
         # --- スキル効果処理 ---
+
+        # ▼▼▼ 追加: バースト段階変更効果 ▼▼▼
+        if skill.effect_type == 'change_burst_stage':
+            new_stage = str(kwargs.get('value', '1'))
+            # ターゲット全員のバースト段階を変更
+            # (通常は自分自身に対して使う)
+            # ターゲット選定ロジックは既存のものを利用
+            targets = []
+            if skill.target == 'self': targets = [caster]
+            # 必要なら他のターゲットロジックも追加
+
+            for target in targets:
+                old_stage = target.burst_stage
+                target.burst_stage = new_stage
+                self.log(f"[Burst Change] {target.name} burst stage changed: {old_stage} -> {new_stage}", target_name=caster.name)
+            return 0
+        # ▲▲▲ 追加ここまで ▲▲▲
 
         # ▼▼▼ 修正: フルバースト時間短縮・延長効果 ▼▼▼
         if skill.effect_type == 'reduce_full_burst_time':
@@ -661,6 +739,12 @@ class SkillEngineMixin:
                 loss = target.current_hp * ratio
                 target.current_hp = max(0, target.current_hp - loss)
                 self.log(f"[Lose HP] Lost {loss:.0f} HP (Current: {target.current_hp:.0f}/{target.get_current_max_hp(frame):.0f})", target_name=target.name)
+
+            # ▼▼▼ 追加: 遮蔽物回復スキルの適用 ▼▼▼
+            elif skill.effect_type == 'cover_heal':
+                val = kwargs.get('value', 0)
+                target.recover_cover_hp(val, skill.name, frame, self)
+            # ▲▲▲ 追加ここまで ▲▲▲
 
             elif skill.effect_type == 'weapon_change':
                 new_weapon_data = kwargs.get('weapon_data')
