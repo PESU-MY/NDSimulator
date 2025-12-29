@@ -1,0 +1,420 @@
+[Shoot] 時間:  0.22s | 弾数:  8/9   | Pellets:10 | Dmg:    54,282 | Buffs: None
+[Shoot] 時間:  0.88s | 弾数:  7/9   | Pellets:10 | Dmg:    51,814 | Buffs: None
+[Shoot] 時間:  1.55s | 弾数:  6/9   | Pellets:10 | Dmg:    54,282 | Buffs: None
+[Shoot] 時間:  2.22s | 弾数:  5/9   | Pellets:10 | Dmg:    54,282 | Buffs: None
+[Shoot] 時間:  2.88s | 弾数:  4/9   | Pellets:10 | Dmg:    59,216 | Buffs: None
+[Shoot] 時間:  3.55s | 弾数:  3/9   | Pellets:10 | Dmg:    51,814 | Buffs: None
+[Shoot] 時間:  4.22s | 弾数:  2/9   | Pellets:10 | Dmg:    51,814 | Buffs: None
+[Shoot] 時間:  4.88s | 弾数:  1/9   | Pellets:10 | Dmg:    54,282 | Buffs: None
+[Burst] Activate!
+[Skill Dmg] 時間:  5.02s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   263,674 | Hits:1 | Buffs:None
+[Shoot] 時間:  5.55s | 弾数:  0/9   | Pellets:10 | Dmg:   103,599 | Buffs: None
+[Heal] ペッパー received heal (Val: 28812 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 0->1) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 0->1) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 0->1) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 0->1) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 0->1) to Dummy_B1
+[Shoot] 時間:  7.93s | 弾数:  8/9   | Pellets:10 | Dmg:   107,052 | Buffs: [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間:  8.60s | 弾数:  7/9   | Pellets:10 | Dmg:   103,599 | Buffs: [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間:  9.27s | 弾数:  6/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間:  9.93s | 弾数:  5/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x1 (Val:0.07)]
+[Skill Dmg] 時間: 10.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    71,571 | Hits:1 | Buffs:[RefreshHeart x1 (Val:0.07)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間: 10.60s | 弾数:  4/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間: 11.27s | 弾数:  3/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間: 11.93s | 弾数:  2/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間: 12.60s | 弾数:  1/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間: 13.27s | 弾数:  0/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x1 (Val:0.07)]
+[Heal] ペッパー received heal (Val: 30693 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 1->2) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 1->2) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 1->2) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 1->2) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 1->2) to Dummy_B1
+[Shoot] 時間: 15.65s | 弾数:  8/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 16.32s | 弾数:  7/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 16.98s | 弾数:  6/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 17.65s | 弾数:  5/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 18.32s | 弾数:  4/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 18.98s | 弾数:  3/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 19.65s | 弾数:  2/9   | Pellets:10 | Dmg:    61,684 | Buffs: [RefreshHeart x2 (Val:0.13)]
+[Skill Dmg] 時間: 20.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    34,091 | Hits:1 | Buffs:[RefreshHeart x2 (Val:0.13)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Burst] Activate!
+[Skill Dmg] 時間: 20.02s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   395,511 | Hits:1 | Buffs:[RefreshHeart x2 (Val:0.13)]
+[Heal] ペッパー received heal (Val: 256795 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間: 20.32s | 弾数:  1/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x7 (Val:0.46)]
+[Shoot] 時間: 20.98s | 弾数:  0/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x7 (Val:0.46)]
+[Heal] ペッパー received heal (Val: 41981 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 7->8) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 7->8) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 7->8) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 7->8) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 7->8) to Dummy_B1
+[Shoot] 時間: 23.37s | 弾数:  8/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 24.03s | 弾数:  7/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 24.70s | 弾数:  6/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 25.37s | 弾数:  5/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 26.03s | 弾数:  4/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 26.70s | 弾数:  3/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 27.37s | 弾数:  2/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 28.03s | 弾数:  1/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 28.70s | 弾数:  0/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x8 (Val:0.52)]
+[Heal] ペッパー received heal (Val: 43863 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 8->9) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 8->9) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 8->9) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 8->9) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 8->9) to Dummy_B1
+[Skill Dmg] 時間: 30.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    51,137 | Hits:1 | Buffs:[RefreshHeart x9 (Val:0.59)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間: 31.08s | 弾数:  8/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 31.75s | 弾数:  7/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 32.42s | 弾数:  6/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 33.08s | 弾数:  5/9   | Pellets:10 | Dmg:    61,684 | Buffs: [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 33.75s | 弾数:  4/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 34.42s | 弾数:  3/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x9 (Val:0.59)]
+[Burst] Activate!
+[Skill Dmg] 時間: 35.07s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   263,674 | Hits:1 | Buffs:[RefreshHeart x9 (Val:0.59)]
+[Heal] ペッパー received heal (Val: 337352 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間: 35.08s | 弾数:  2/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x14 (Val:0.91)]
+[Shoot] 時間: 35.75s | 弾数:  1/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x14 (Val:0.91)]
+[Shoot] 時間: 36.42s | 弾数:  0/9   | Pellets:10 | Dmg:   117,412 | Buffs: [RefreshHeart x14 (Val:0.91)]
+[Heal] ペッパー received heal (Val: 55151 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 14->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 14->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 14->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 14->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 14->15) to Dummy_B1
+[Shoot] 時間: 38.80s | 弾数:  8/9   | Pellets:10 | Dmg:   103,599 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 39.47s | 弾数:  7/9   | Pellets:10 | Dmg:   103,599 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間: 40.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    71,571 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間: 40.13s | 弾数:  6/9   | Pellets:10 | Dmg:    61,684 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 40.80s | 弾数:  5/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 41.47s | 弾数:  4/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 42.13s | 弾数:  3/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 42.80s | 弾数:  2/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 43.47s | 弾数:  1/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 44.13s | 弾数:  0/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間: 46.52s | 弾数:  8/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 47.18s | 弾数:  7/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 47.85s | 弾数:  6/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 48.52s | 弾数:  5/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 49.18s | 弾数:  4/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 49.85s | 弾数:  3/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間: 50.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    51,137 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Burst] Activate!
+[Skill Dmg] 時間: 50.07s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   263,674 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間: 50.52s | 弾数:  2/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 51.18s | 弾数:  1/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 51.85s | 弾数:  0/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間: 54.23s | 弾数:  8/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 54.90s | 弾数:  7/9   | Pellets:10 | Dmg:    86,357 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 55.57s | 弾数:  6/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 56.23s | 弾数:  5/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 56.90s | 弾数:  4/9   | Pellets:10 | Dmg:    83,890 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 57.57s | 弾数:  3/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 58.23s | 弾数:  2/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 58.90s | 弾数:  1/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 59.57s | 弾数:  0/9   | Pellets:10 | Dmg:    81,423 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Skill Dmg] 時間: 60.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    51,137 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間: 61.95s | 弾数:  8/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 62.62s | 弾数:  7/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 63.28s | 弾数:  6/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 63.95s | 弾数:  5/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 64.62s | 弾数:  4/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Burst] Activate!
+[Skill Dmg] 時間: 65.12s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   263,674 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間: 65.28s | 弾数:  3/9   | Pellets:10 | Dmg:   103,599 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 65.95s | 弾数:  2/9   | Pellets:10 | Dmg:   107,052 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 66.62s | 弾数:  1/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 67.28s | 弾数:  0/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間: 69.67s | 弾数:  8/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間: 70.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    71,571 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間: 70.33s | 弾数:  7/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 71.00s | 弾数:  6/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 71.67s | 弾数:  5/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 72.33s | 弾数:  4/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 73.00s | 弾数:  3/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 73.67s | 弾数:  2/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 74.33s | 弾数:  1/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 75.00s | 弾数:  0/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間: 77.38s | 弾数:  8/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 78.05s | 弾数:  7/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 78.72s | 弾数:  6/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 79.38s | 弾数:  5/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間: 80.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    34,091 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間: 80.05s | 弾数:  4/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Burst] Activate!
+[Skill Dmg] 時間: 80.12s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   263,674 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間: 80.72s | 弾数:  3/9   | Pellets:10 | Dmg:    81,423 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 81.38s | 弾数:  2/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 82.05s | 弾数:  1/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 82.72s | 弾数:  0/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間: 85.10s | 弾数:  8/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 85.77s | 弾数:  7/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 86.43s | 弾数:  6/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 87.10s | 弾数:  5/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 87.77s | 弾数:  4/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 88.43s | 弾数:  3/9   | Pellets:10 | Dmg:    81,423 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 89.10s | 弾数:  2/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 89.77s | 弾数:  1/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間: 90.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    51,137 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間: 90.43s | 弾数:  0/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間: 92.82s | 弾数:  8/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 93.48s | 弾数:  7/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 94.15s | 弾数:  6/9   | Pellets:10 | Dmg:    61,684 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 94.82s | 弾数:  5/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Burst] Activate!
+[Skill Dmg] 時間: 95.17s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   263,674 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間: 95.48s | 弾数:  4/9   | Pellets:10 | Dmg:   113,959 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 96.15s | 弾数:  3/9   | Pellets:10 | Dmg:   107,052 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 96.82s | 弾数:  2/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 97.48s | 弾数:  1/9   | Pellets:10 | Dmg:   124,319 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 98.15s | 弾数:  0/9   | Pellets:10 | Dmg:   117,412 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Skill Dmg] 時間:100.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    95,428 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間:100.53s | 弾数:  8/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:101.20s | 弾数:  7/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:101.87s | 弾数:  6/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:102.53s | 弾数:  5/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:103.20s | 弾数:  4/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:103.87s | 弾数:  3/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:104.53s | 弾数:  2/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:105.20s | 弾数:  1/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:105.87s | 弾数:  0/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間:108.25s | 弾数:  8/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:108.92s | 弾数:  7/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:109.58s | 弾数:  6/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間:110.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    34,091 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Burst] Activate!
+[Skill Dmg] 時間:110.17s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   395,511 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間:110.25s | 弾数:  5/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:110.92s | 弾数:  4/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:111.58s | 弾数:  3/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:112.25s | 弾数:  2/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:112.92s | 弾数:  1/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:113.58s | 弾数:  0/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間:115.97s | 弾数:  8/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:116.63s | 弾数:  7/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:117.30s | 弾数:  6/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:117.97s | 弾数:  5/9   | Pellets:10 | Dmg:    83,890 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:118.63s | 弾数:  4/9   | Pellets:10 | Dmg:    88,825 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:119.30s | 弾数:  3/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:119.97s | 弾数:  2/9   | Pellets:10 | Dmg:    81,423 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間:120.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    51,137 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間:120.63s | 弾数:  1/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:121.30s | 弾数:  0/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間:123.68s | 弾数:  8/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:124.35s | 弾数:  7/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:125.02s | 弾数:  6/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Burst] Activate!
+[Skill Dmg] 時間:125.22s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   263,674 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間:125.68s | 弾数:  5/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:126.35s | 弾数:  4/9   | Pellets:10 | Dmg:   103,599 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:127.02s | 弾数:  3/9   | Pellets:10 | Dmg:   103,599 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:127.68s | 弾数:  2/9   | Pellets:10 | Dmg:   103,599 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:128.35s | 弾数:  1/9   | Pellets:10 | Dmg:   107,052 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:129.02s | 弾数:  0/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Skill Dmg] 時間:130.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    71,571 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間:131.40s | 弾数:  8/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:132.07s | 弾数:  7/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:132.73s | 弾数:  6/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:133.40s | 弾数:  5/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:134.07s | 弾数:  4/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:134.73s | 弾数:  3/9   | Pellets:10 | Dmg:    61,684 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:135.40s | 弾数:  2/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:136.07s | 弾数:  1/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:136.73s | 弾数:  0/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間:139.12s | 弾数:  8/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:139.78s | 弾数:  7/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間:140.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    34,091 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Burst] Activate!
+[Skill Dmg] 時間:140.22s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   395,511 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間:140.45s | 弾数:  6/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:141.12s | 弾数:  5/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:141.78s | 弾数:  4/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:142.45s | 弾数:  3/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:143.12s | 弾数:  2/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:143.78s | 弾数:  1/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:144.45s | 弾数:  0/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間:146.83s | 弾数:  8/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:147.50s | 弾数:  7/9   | Pellets:10 | Dmg:    83,890 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:148.17s | 弾数:  6/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:148.83s | 弾数:  5/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:149.50s | 弾数:  4/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間:150.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    51,137 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間:150.17s | 弾数:  3/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:150.83s | 弾数:  2/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:151.50s | 弾数:  1/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:152.17s | 弾数:  0/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間:154.55s | 弾数:  8/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:155.22s | 弾数:  7/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Burst] Activate!
+[Skill Dmg] 時間:155.27s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   263,674 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間:155.88s | 弾数:  6/9   | Pellets:10 | Dmg:   110,506 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:156.55s | 弾数:  5/9   | Pellets:10 | Dmg:   113,959 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:157.22s | 弾数:  4/9   | Pellets:10 | Dmg:   107,052 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:157.88s | 弾数:  3/9   | Pellets:10 | Dmg:   103,599 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:158.55s | 弾数:  2/9   | Pellets:10 | Dmg:   117,412 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:159.22s | 弾数:  1/9   | Pellets:10 | Dmg:   117,412 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:159.88s | 弾数:  0/9   | Pellets:10 | Dmg:   117,412 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Skill Dmg] 時間:160.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    71,571 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Shoot] 時間:162.27s | 弾数:  8/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:162.93s | 弾数:  7/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:163.60s | 弾数:  6/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:164.27s | 弾数:  5/9   | Pellets:10 | Dmg:    54,282 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:164.93s | 弾数:  4/9   | Pellets:10 | Dmg:    59,216 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:165.60s | 弾数:  3/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:166.27s | 弾数:  2/9   | Pellets:10 | Dmg:    51,814 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:166.93s | 弾数:  1/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:167.60s | 弾数:  0/9   | Pellets:10 | Dmg:    56,749 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間:169.98s | 弾数:  8/9   | Pellets:10 | Dmg:    49,347 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間:170.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    34,091 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy
+[Burst] Activate!
+[Skill Dmg] 時間:170.27s | 名前:バースト: ペッパーセラピー_Stage_0    | Dmg:   395,511 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 647453/647453)
+[Shoot] 時間:170.65s | 弾数:  7/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:171.32s | 弾数:  6/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:171.98s | 弾数:  5/9   | Pellets:10 | Dmg:    86,357 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:172.65s | 弾数:  4/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:173.32s | 弾数:  3/9   | Pellets:10 | Dmg:    74,021 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:173.98s | 弾数:  2/9   | Pellets:10 | Dmg:    81,423 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:174.65s | 弾数:  1/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:175.32s | 弾数:  0/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Heal] ペッパー received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 647453/647453)
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to ペッパー
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B2
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to イサベル
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B3
+[Stack] Applied Skill 1: リフレッシュハート (スタック) (Stack:RefreshHeart 15->15) to Dummy_B1
+[Shoot] 時間:177.70s | 弾数:  8/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:178.37s | 弾数:  7/9   | Pellets:10 | Dmg:    83,890 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:179.03s | 弾数:  6/9   | Pellets:10 | Dmg:    76,488 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:179.70s | 弾数:  5/9   | Pellets:10 | Dmg:    78,955 | Buffs: [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間:180.00s | 名前:Skill 2: ビタミンパワー_Stage_0  | Dmg:    51,137 | Hits:1 | Buffs:[RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Skill 2: ビタミンパワー_Stage_1 (dummy_buff: 0.0355) to Enemy

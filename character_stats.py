@@ -17,9 +17,11 @@ class CharacterStatsMixin:
         final_atk = self.get_current_atk(frame)
         
         # 2. 防御力・貫通計算
-        def_debuff = self.buff_manager.get_total_value('def_debuff', frame)
+        # ▼▼▼ 修正: self（攻撃者）の防御デバフ参照を削除 ▼▼▼
+        def_debuff = 0
         if debuff_manager:
-            def_debuff += debuff_manager.get_total_value('def_debuff', frame)
+            def_debuff = debuff_manager.get_total_value('def_debuff', frame)
+        # ▲▲▲ 修正ここまで ▲▲▲
             
         # ▼▼▼ 修正: 通常攻撃の防御無視判定を追加 ▼▼▼
         # profile自体に無視フラグがある(スキル用)か、
@@ -112,10 +114,15 @@ class CharacterStatsMixin:
         layer_dmg = 1.0 + bucket_dmg
         
         # 7. 被ダメージデバフ
-        taken_dmg_val = self.buff_manager.get_total_value('taken_dmg_debuff', frame)
+        # ▼▼▼ 修正: self（攻撃者）の被ダメデバフを参照していたのを削除 ▼▼▼
+        # 以前: taken_dmg_val = self.buff_manager.get_total_value('taken_dmg_debuff', frame)
+        
+        taken_dmg_val = 0
         if debuff_manager:
             taken_dmg_val += debuff_manager.get_total_value('taken_dmg_debuff', frame)
         layer_taken = 1.0 + taken_dmg_val
+        
+        # ▲▲▲ 修正ここまで ▲▲▲
         
         # 8. その他レイヤー
         layer_split = 1.0

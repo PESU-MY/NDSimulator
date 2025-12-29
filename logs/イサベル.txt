@@ -1,0 +1,311 @@
+[Shoot] 時間:  0.22s | 弾数:  8/9   | Pellets:10 | Dmg:    59,227 | Buffs: None
+[Shoot] 時間:  0.88s | 弾数:  7/9   | Pellets:10 | Dmg:    59,227 | Buffs: None
+[Shoot] 時間:  1.55s | 弾数:  6/9   | Pellets:10 | Dmg:    53,842 | Buffs: None
+[Shoot] 時間:  2.22s | 弾数:  5/9   | Pellets:10 | Dmg:    56,534 | Buffs: None
+[Shoot] 時間:  2.88s | 弾数:  4/9   | Pellets:10 | Dmg:    61,919 | Buffs: None
+[Shoot] 時間:  3.55s | 弾数:  3/9   | Pellets:10 | Dmg:    59,227 | Buffs: None
+[Shoot] 時間:  4.22s | 弾数:  2/9   | Pellets:10 | Dmg:    64,611 | Buffs: None
+[Shoot] 時間:  4.88s | 弾数:  1/9   | Pellets:10 | Dmg:    69,995 | Buffs: None
+[Burst] Activate!
+[Stack] Applied S1: ターゲットマーキング - スタック (Stack:TargetMarking 0->1) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_0 (crit_rate_buff: 0.0626) to イサベル
+[Skill Dmg] 時間:  5.05s | 名前:Burst: ソニックチェイサー_Stage_0  | Dmg:    57,439 | Hits:1 | Buffs:crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)]
+[Burst] Scheduled Full Burst reduction: 5.0s (Total: 5.0s)
+[Buff] Applied Burst: ソニックチェイサー_Stage_2 (taken_dmg_debuff: 0.3996) to Enemy
+[Buff] Applied Burst: ソニックチェイサー (ダミー) (atk_buff_rate: 0) to イサベル
+[Heal] イサベル received heal (Val: 28812 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:  5.55s | 弾数:  0/9   | Pellets:10 | Dmg:   120,572 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間:  7.78s | 弾数:  8/9   | Pellets:10 | Dmg:   131,876 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間:  8.45s | 弾数:  7/9   | Pellets:10 | Dmg:   124,340 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間:  9.12s | 弾数:  6/9   | Pellets:10 | Dmg:   116,804 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間:  9.78s | 弾数:  5/9   | Pellets:10 | Dmg:   116,804 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間: 10.45s | 弾数:  4/9   | Pellets:10 | Dmg:    61,919 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間: 11.12s | 弾数:  3/9   | Pellets:10 | Dmg:    61,919 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間: 11.78s | 弾数:  2/9   | Pellets:10 | Dmg:    64,611 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間: 12.45s | 弾数:  1/9   | Pellets:10 | Dmg:    53,842 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Shoot] 時間: 13.12s | 弾数:  0/9   | Pellets:10 | Dmg:    64,611 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x1 (Val:0.07)]
+[Heal] イサベル received heal (Val: 30693 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 15.35s | 弾数:  8/9   | Pellets:10 | Dmg:    64,611 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 16.02s | 弾数:  7/9   | Pellets:10 | Dmg:    59,227 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 16.68s | 弾数:  6/9   | Pellets:10 | Dmg:    56,534 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 17.35s | 弾数:  5/9   | Pellets:10 | Dmg:    56,534 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 18.02s | 弾数:  4/9   | Pellets:10 | Dmg:    78,071 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 18.68s | 弾数:  3/9   | Pellets:10 | Dmg:    56,534 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x2 (Val:0.13)]
+[Shoot] 時間: 19.35s | 弾数:  2/9   | Pellets:10 | Dmg:    64,611 | Buffs: crit_rate_buff:0.06 | [TargetMarking x1 (Val:0.00)] | [RefreshHeart x2 (Val:0.13)]
+[Heal] イサベル received heal (Val: 256795 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Shoot] 時間: 20.02s | 弾数:  1/9   | Pellets:10 | Dmg:    56,534 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x7 (Val:0.46)]
+[Shoot] 時間: 20.68s | 弾数:  0/9   | Pellets:10 | Dmg:    91,532 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x7 (Val:0.46)]
+[Heal] イサベル received heal (Val: 41981 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 22.92s | 弾数:  8/9   | Pellets:10 | Dmg:    88,840 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 23.58s | 弾数:  7/9   | Pellets:10 | Dmg:    83,456 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 24.25s | 弾数:  6/9   | Pellets:10 | Dmg:    88,840 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 24.92s | 弾数:  5/9   | Pellets:10 | Dmg:    88,840 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 25.58s | 弾数:  4/9   | Pellets:10 | Dmg:    86,148 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 26.25s | 弾数:  3/9   | Pellets:10 | Dmg:    80,763 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 26.92s | 弾数:  2/9   | Pellets:10 | Dmg:    88,840 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 27.58s | 弾数:  1/9   | Pellets:10 | Dmg:    83,456 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x8 (Val:0.52)]
+[Shoot] 時間: 28.25s | 弾数:  0/9   | Pellets:10 | Dmg:    88,840 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x8 (Val:0.52)]
+[Heal] イサベル received heal (Val: 43863 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 30.48s | 弾数:  8/9   | Pellets:10 | Dmg:    61,919 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 31.15s | 弾数:  7/9   | Pellets:10 | Dmg:    59,227 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 31.82s | 弾数:  6/9   | Pellets:10 | Dmg:    59,227 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 32.48s | 弾数:  5/9   | Pellets:10 | Dmg:    61,919 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 33.15s | 弾数:  4/9   | Pellets:10 | Dmg:    59,227 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 33.82s | 弾数:  3/9   | Pellets:10 | Dmg:    59,227 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x9 (Val:0.59)]
+[Shoot] 時間: 34.48s | 弾数:  2/9   | Pellets:10 | Dmg:    72,687 | Buffs: crit_rate_buff:0.06 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x9 (Val:0.59)]
+[Heal] イサベル received heal (Val: 337352 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Burst] Activate!
+[Stack] Applied S1: ターゲットマーキング - スタック (Stack:TargetMarking 3->3) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_0 (crit_rate_buff: 0.0626) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_1 (crit_dmg_buff: 0.1803) to イサベル
+[Skill Dmg] 時間: 35.10s | 名前:Burst: ソニックチェイサー_Stage_0  | Dmg:    38,293 | Hits:1 | Buffs:crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x14 (Val:0.91)]
+[Burst] Scheduled Full Burst reduction: 5.0s (Total: 5.0s)
+[Buff] Applied Burst: ソニックチェイサー_Stage_2 (taken_dmg_debuff: 0.3996) to Enemy
+[Skill Dmg] 時間: 35.10s | 名前:Burst: ソニックチェイサー_Stage_3  | Dmg:    76,585 | Hits:1 | Buffs:crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x14 (Val:0.91)]
+[Skill Dmg] 時間: 35.10s | 名前:Burst: ソニックチェイサー_Stage_4  | Dmg:   150,134 | Hits:1 | Buffs:crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x14 (Val:0.91)]
+[Buff] Applied Burst: ソニックチェイサー (ダミー) (atk_buff_rate: 0) to イサベル
+[Shoot] 時間: 35.15s | 弾数:  1/9   | Pellets:10 | Dmg:   118,163 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x14 (Val:0.91)]
+[Shoot] 時間: 35.82s | 弾数:  0/9   | Pellets:10 | Dmg:   130,825 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x14 (Val:0.91)]
+[Heal] イサベル received heal (Val: 55151 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 38.05s | 弾数:  8/9   | Pellets:10 | Dmg:   128,416 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 38.72s | 弾数:  7/9   | Pellets:10 | Dmg:   125,699 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 39.38s | 弾数:  6/9   | Pellets:10 | Dmg:   123,290 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 40.05s | 弾数:  5/9   | Pellets:10 | Dmg:   130,825 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 40.72s | 弾数:  4/9   | Pellets:10 | Dmg:    68,494 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 41.38s | 弾数:  3/9   | Pellets:10 | Dmg:    53,842 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 42.05s | 弾数:  2/9   | Pellets:10 | Dmg:    59,227 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 42.72s | 弾数:  1/9   | Pellets:10 | Dmg:    64,831 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 43.38s | 弾数:  0/9   | Pellets:10 | Dmg:    70,215 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 45.62s | 弾数:  8/9   | Pellets:10 | Dmg:    68,494 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 46.28s | 弾数:  7/9   | Pellets:10 | Dmg:    61,168 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 46.95s | 弾数:  6/9   | Pellets:10 | Dmg:    61,168 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 47.62s | 弾数:  5/9   | Pellets:10 | Dmg:    53,842 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 48.28s | 弾数:  4/9   | Pellets:10 | Dmg:    73,878 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 48.95s | 弾数:  3/9   | Pellets:10 | Dmg:    61,168 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 49.62s | 弾数:  2/9   | Pellets:10 | Dmg:    64,831 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Shoot] 時間: 50.28s | 弾数:  1/9   | Pellets:10 | Dmg:    80,763 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 50.95s | 弾数:  0/9   | Pellets:10 | Dmg:    88,089 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 53.18s | 弾数:  8/9   | Pellets:10 | Dmg:    95,415 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 53.85s | 弾数:  7/9   | Pellets:10 | Dmg:    88,089 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 54.52s | 弾数:  6/9   | Pellets:10 | Dmg:    97,136 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 55.18s | 弾数:  5/9   | Pellets:10 | Dmg:    88,089 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 55.85s | 弾数:  4/9   | Pellets:10 | Dmg:    88,089 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 56.52s | 弾数:  3/9   | Pellets:10 | Dmg:    88,089 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 57.18s | 弾数:  2/9   | Pellets:10 | Dmg:    91,752 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 57.85s | 弾数:  1/9   | Pellets:10 | Dmg:    84,426 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 58.52s | 弾数:  0/9   | Pellets:10 | Dmg:   102,521 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 60.75s | 弾数:  8/9   | Pellets:10 | Dmg:    64,831 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 61.42s | 弾数:  7/9   | Pellets:10 | Dmg:    61,168 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 62.08s | 弾数:  6/9   | Pellets:10 | Dmg:    57,505 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 62.75s | 弾数:  5/9   | Pellets:10 | Dmg:    64,831 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 63.42s | 弾数:  4/9   | Pellets:10 | Dmg:    57,505 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 64.08s | 弾数:  3/9   | Pellets:10 | Dmg:    57,505 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 64.75s | 弾数:  2/9   | Pellets:10 | Dmg:    61,168 | Buffs: crit_rate_buff:0.06 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Burst] Activate!
+[Stack] Applied S1: ターゲットマーキング - スタック (Stack:TargetMarking 3->3) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_0 (crit_rate_buff: 0.0626) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_1 (crit_dmg_buff: 0.1803) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_2 (atk_buff_rate: 0.1728) to イサベル
+[Skill Dmg] 時間: 65.15s | 名前:Burst: ソニックチェイサー_Stage_0  | Dmg:    44,910 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Burst] Scheduled Full Burst reduction: 5.0s (Total: 5.0s)
+[Buff] Applied Burst: ソニックチェイサー_Stage_2 (taken_dmg_debuff: 0.3996) to Enemy
+[Skill Dmg] 時間: 65.15s | 名前:Burst: ソニックチェイサー_Stage_3  | Dmg:    89,819 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間: 65.15s | 名前:Burst: ソニックチェイサー_Stage_4  | Dmg:   104,789 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Burst: ソニックチェイサー (ダミー) (atk_buff_rate: 0) to イサベル
+[Shoot] 時間: 65.42s | 弾数:  1/9   | Pellets:10 | Dmg:   162,631 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 66.08s | 弾数:  0/9   | Pellets:10 | Dmg:   156,619 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 68.32s | 弾数:  8/9   | Pellets:10 | Dmg:   153,432 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 68.98s | 弾数:  7/9   | Pellets:10 | Dmg:   150,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 69.65s | 弾数:  6/9   | Pellets:10 | Dmg:   138,582 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 70.32s | 弾数:  5/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 70.98s | 弾数:  4/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 71.65s | 弾数:  3/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 72.32s | 弾数:  2/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 72.98s | 弾数:  1/9   | Pellets:10 | Dmg:    63,146 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 73.65s | 弾数:  0/9   | Pellets:10 | Dmg:    80,330 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 75.88s | 弾数:  8/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 76.55s | 弾数:  7/9   | Pellets:10 | Dmg:    88,921 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 77.22s | 弾数:  6/9   | Pellets:10 | Dmg:    86,644 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 77.88s | 弾数:  5/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 78.55s | 弾数:  4/9   | Pellets:10 | Dmg:    80,330 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 79.22s | 弾数:  3/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 79.88s | 弾数:  2/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Shoot] 時間: 80.55s | 弾数:  1/9   | Pellets:10 | Dmg:   116,199 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 81.22s | 弾数:  0/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 83.45s | 弾数:  8/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 84.12s | 弾数:  7/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 84.78s | 弾数:  6/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 85.45s | 弾数:  5/9   | Pellets:10 | Dmg:   116,199 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 86.12s | 弾数:  4/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 86.78s | 弾数:  3/9   | Pellets:10 | Dmg:   109,626 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 87.45s | 弾数:  2/9   | Pellets:10 | Dmg:   107,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 88.12s | 弾数:  1/9   | Pellets:10 | Dmg:    94,719 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 88.78s | 弾数:  0/9   | Pellets:10 | Dmg:   111,903 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 91.02s | 弾数:  8/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 91.68s | 弾数:  7/9   | Pellets:10 | Dmg:    80,330 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 92.35s | 弾数:  6/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 93.02s | 弾数:  5/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 93.68s | 弾数:  4/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 94.35s | 弾数:  3/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 95.02s | 弾数:  2/9   | Pellets:10 | Dmg:    78,053 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Burst] Activate!
+[Stack] Applied S1: ターゲットマーキング - スタック (Stack:TargetMarking 3->3) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_0 (crit_rate_buff: 0.0626) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_1 (crit_dmg_buff: 0.1803) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_2 (atk_buff_rate: 0.1728) to イサベル
+[Skill Dmg] 時間: 95.20s | 名前:Burst: ソニックチェイサー_Stage_0  | Dmg:    44,910 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Burst] Scheduled Full Burst reduction: 5.0s (Total: 5.0s)
+[Buff] Applied Burst: ソニックチェイサー_Stage_2 (taken_dmg_debuff: 0.3996) to Enemy
+[Skill Dmg] 時間: 95.20s | 名前:Burst: ソニックチェイサー_Stage_3  | Dmg:    89,819 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間: 95.20s | 名前:Burst: ソニックチェイサー_Stage_4  | Dmg:   176,077 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Burst: ソニックチェイサー (ダミー) (atk_buff_rate: 0) to イサベル
+[Shoot] 時間: 95.68s | 弾数:  1/9   | Pellets:10 | Dmg:   132,569 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 96.35s | 弾数:  0/9   | Pellets:10 | Dmg:   144,594 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間: 98.58s | 弾数:  8/9   | Pellets:10 | Dmg:   150,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 99.25s | 弾数:  7/9   | Pellets:10 | Dmg:   144,594 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間: 99.92s | 弾数:  6/9   | Pellets:10 | Dmg:   150,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:100.58s | 弾数:  5/9   | Pellets:10 | Dmg:    63,146 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:101.25s | 弾数:  4/9   | Pellets:10 | Dmg:    73,757 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:101.92s | 弾数:  3/9   | Pellets:10 | Dmg:    82,348 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:102.58s | 弾数:  2/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:103.25s | 弾数:  1/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:103.92s | 弾数:  0/9   | Pellets:10 | Dmg:    80,330 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:106.15s | 弾数:  8/9   | Pellets:10 | Dmg:    78,053 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:106.82s | 弾数:  7/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:107.48s | 弾数:  6/9   | Pellets:10 | Dmg:    90,940 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:108.15s | 弾数:  5/9   | Pellets:10 | Dmg:    82,348 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:108.82s | 弾数:  4/9   | Pellets:10 | Dmg:    82,348 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:109.48s | 弾数:  3/9   | Pellets:10 | Dmg:    80,330 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:110.15s | 弾数:  2/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Shoot] 時間:110.82s | 弾数:  1/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:111.48s | 弾数:  0/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:113.72s | 弾数:  8/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:114.38s | 弾数:  7/9   | Pellets:10 | Dmg:    94,719 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:115.05s | 弾数:  6/9   | Pellets:10 | Dmg:   111,644 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:115.72s | 弾数:  5/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:116.38s | 弾数:  4/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:117.05s | 弾数:  3/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:117.72s | 弾数:  2/9   | Pellets:10 | Dmg:   109,626 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:118.38s | 弾数:  1/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:119.05s | 弾数:  0/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:121.28s | 弾数:  8/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:121.95s | 弾数:  7/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:122.62s | 弾数:  6/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:123.28s | 弾数:  5/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:123.95s | 弾数:  4/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:124.62s | 弾数:  3/9   | Pellets:10 | Dmg:    80,071 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Burst] Activate!
+[Stack] Applied S1: ターゲットマーキング - スタック (Stack:TargetMarking 3->3) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_0 (crit_rate_buff: 0.0626) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_1 (crit_dmg_buff: 0.1803) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_2 (atk_buff_rate: 0.1728) to イサベル
+[Skill Dmg] 時間:125.25s | 名前:Burst: ソニックチェイサー_Stage_0  | Dmg:    44,910 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Burst] Scheduled Full Burst reduction: 5.0s (Total: 5.0s)
+[Buff] Applied Burst: ソニックチェイサー_Stage_2 (taken_dmg_debuff: 0.3996) to Enemy
+[Skill Dmg] 時間:125.25s | 名前:Burst: ソニックチェイサー_Stage_3  | Dmg:   150,923 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間:125.25s | 名前:Burst: ソニックチェイサー_Stage_4  | Dmg:   176,077 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Burst: ソニックチェイサー (ダミー) (atk_buff_rate: 0) to イサベル
+[Shoot] 時間:125.28s | 弾数:  2/9   | Pellets:10 | Dmg:   144,594 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:125.95s | 弾数:  1/9   | Pellets:10 | Dmg:   159,444 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:126.62s | 弾数:  0/9   | Pellets:10 | Dmg:   159,444 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:128.85s | 弾数:  8/9   | Pellets:10 | Dmg:   150,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:129.52s | 弾数:  7/9   | Pellets:10 | Dmg:   150,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:130.18s | 弾数:  6/9   | Pellets:10 | Dmg:   150,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:130.85s | 弾数:  5/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:131.52s | 弾数:  4/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:132.18s | 弾数:  3/9   | Pellets:10 | Dmg:    82,348 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:132.85s | 弾数:  2/9   | Pellets:10 | Dmg:    84,625 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:133.52s | 弾数:  1/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:134.18s | 弾数:  0/9   | Pellets:10 | Dmg:    84,625 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:136.42s | 弾数:  8/9   | Pellets:10 | Dmg:    63,146 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:137.08s | 弾数:  7/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:137.75s | 弾数:  6/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:138.42s | 弾数:  5/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:139.08s | 弾数:  4/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:139.75s | 弾数:  3/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Shoot] 時間:140.42s | 弾数:  2/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:141.08s | 弾数:  1/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:141.75s | 弾数:  0/9   | Pellets:10 | Dmg:   105,330 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:143.98s | 弾数:  8/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:144.65s | 弾数:  7/9   | Pellets:10 | Dmg:   116,199 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:145.32s | 弾数:  6/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:145.98s | 弾数:  5/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:146.65s | 弾数:  4/9   | Pellets:10 | Dmg:   107,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:147.32s | 弾数:  3/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:147.98s | 弾数:  2/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:148.65s | 弾数:  1/9   | Pellets:10 | Dmg:   107,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:149.32s | 弾数:  0/9   | Pellets:10 | Dmg:    99,015 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:151.55s | 弾数:  8/9   | Pellets:10 | Dmg:    73,757 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:152.22s | 弾数:  7/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:152.88s | 弾数:  6/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:153.55s | 弾数:  5/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:154.22s | 弾数:  4/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:154.88s | 弾数:  3/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Burst] Activate!
+[Stack] Applied S1: ターゲットマーキング - スタック (Stack:TargetMarking 3->3) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_0 (crit_rate_buff: 0.0626) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_1 (crit_dmg_buff: 0.1803) to イサベル
+[Buff] Applied S1: ターゲットマーキング_Stage_2 (atk_buff_rate: 0.1728) to イサベル
+[Skill Dmg] 時間:155.30s | 名前:Burst: ソニックチェイサー_Stage_0  | Dmg:    44,910 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Burst] Scheduled Full Burst reduction: 5.0s (Total: 5.0s)
+[Buff] Applied Burst: ソニックチェイサー_Stage_2 (taken_dmg_debuff: 0.3996) to Enemy
+[Skill Dmg] 時間:155.30s | 名前:Burst: ソニックチェイサー_Stage_3  | Dmg:    89,819 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Skill Dmg] 時間:155.30s | 名前:Burst: ソニックチェイサー_Stage_4  | Dmg:   104,789 | Hits:1 | Buffs:crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Buff] Applied Burst: ソニックチェイサー (ダミー) (atk_buff_rate: 0) to イサベル
+[Shoot] 時間:155.55s | 弾数:  2/9   | Pellets:10 | Dmg:   138,582 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:156.22s | 弾数:  1/9   | Pellets:10 | Dmg:   138,582 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:156.88s | 弾数:  0/9   | Pellets:10 | Dmg:   144,594 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:159.12s | 弾数:  8/9   | Pellets:10 | Dmg:   168,644 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:159.78s | 弾数:  7/9   | Pellets:10 | Dmg:   138,582 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:160.45s | 弾数:  6/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:161.12s | 弾数:  5/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:161.78s | 弾数:  4/9   | Pellets:10 | Dmg:    78,053 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:162.45s | 弾数:  3/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:163.12s | 弾数:  2/9   | Pellets:10 | Dmg:    78,053 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:163.78s | 弾数:  1/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:164.45s | 弾数:  0/9   | Pellets:10 | Dmg:    78,053 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:166.68s | 弾数:  8/9   | Pellets:10 | Dmg:    80,330 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:167.35s | 弾数:  7/9   | Pellets:10 | Dmg:    76,034 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:168.02s | 弾数:  6/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:168.68s | 弾数:  5/9   | Pellets:10 | Dmg:    67,442 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:169.35s | 弾数:  4/9   | Pellets:10 | Dmg:    71,738 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:170.02s | 弾数:  3/9   | Pellets:10 | Dmg:    80,330 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 348861 -> Actual: 0) (Src: バースト: ペッパーセラピー_Stage_2, HP: 583734/583734)
+[Shoot] 時間:170.68s | 弾数:  2/9   | Pellets:10 | Dmg:   109,626 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:171.35s | 弾数:  1/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:172.02s | 弾数:  0/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:174.25s | 弾数:  8/9   | Pellets:10 | Dmg:   113,921 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:174.92s | 弾数:  7/9   | Pellets:10 | Dmg:   109,626 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Heal] イサベル received heal (Val: 57033 -> Actual: 0) (Src: Skill 1: リフレッシュハート (回復), HP: 583734/583734)
+[Shoot] 時間:175.58s | 弾数:  6/9   | Pellets:10 | Dmg:    94,719 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:176.25s | 弾数:  5/9   | Pellets:10 | Dmg:   107,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:176.92s | 弾数:  4/9   | Pellets:10 | Dmg:   107,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:177.58s | 弾数:  3/9   | Pellets:10 | Dmg:   105,330 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:178.25s | 弾数:  2/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:178.92s | 弾数:  1/9   | Pellets:10 | Dmg:   103,311 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]
+[Shoot] 時間:179.58s | 弾数:  0/9   | Pellets:10 | Dmg:   107,607 | Buffs: crit_rate_buff:0.06 | atk_buff_rate:0.17 | crit_dmg_buff:0.18 | [TargetMarking x3 (Val:0.00)] | [RefreshHeart x15 (Val:0.98)]

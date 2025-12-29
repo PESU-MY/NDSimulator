@@ -27,8 +27,7 @@
       "target": "enemy",
       "kwargs": {
         "effect_no" : 1,
-        "multiplier_list": [2.7882, 3.0027, 3.2172, 3.4317, 3.6462, 3.8607, 4.0751, 4.2896, 4.5041, 4.7186],
-        
+        "multiplier_list": [2.7882, 3.0027, 3.2172, 3.4317, 3.6462, 3.8607, 4.0751, 4.2896, 4.5041, 4.7186]
       },
       "description": "50回命中時に発動（常時）"
     },
@@ -50,13 +49,12 @@
           "target": "enemy",
           "kwargs": {
             "effect_no" : 2,
-            "multiplier_list": [0.0922, 0.0993, 0.1065, 0.1136, 0.1207, 0.1278, 0.1349, 0.142, 0.1491, 0.1562],
-            
+            "multiplier_list": [0.0922, 0.0993, 0.1065, 0.1136, 0.1207, 0.1278, 0.1349, 0.142, 0.1491, 0.1562]
           }
         },
         {
           "effect_type": "stack_buff",
-          "target": "self",
+          "target": "enemy",
           "kwargs": {
             "stack_name": "AntiATField",
             "buff_type": "taken_dmg_debuff",

@@ -1,0 +1,66 @@
+{
+  "name": "プロダクト08",
+  "weapon_type": "SR",
+  "burst_stage": "1",
+  "element": "Electric",
+  "class": "Supporter",
+  "squad": "リプレイス",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 戦術：装甲補強",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "lowest_hp",
+        "count": 1
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "probability": 20,
+        "buff_type": "def_buff",
+        "value_list": [0.0227, 0.0303, 0.0378, 0.0454, 0.053, 0.0606, 0.0681, 0.0757, 0.0833, 0.0909],
+        "duration": 5,
+        "description": "通常攻撃命中時20%で防御UP"
+      }
+    },
+    {
+      "name": "Skill 2: 戦術：精密射撃",
+      "trigger_type": "time_interval",
+      "trigger_value": 17.0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 1
+      },
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "crit_rate_buff",
+        "value_list": [0.0574, 0.0766, 0.0958, 0.1149, 0.1341, 0.1532, 0.1724, 0.1916, 0.2107, 0.2299],
+        "duration": 5
+      }
+    },
+    {
+      "name": "バースト: 戦術：出力上昇",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "atk_buff_rate",
+        "value_list": [0.0484, 0.0646, 0.0808, 0.0969, 0.1131, 0.1293, 0.1454, 0.1616, 0.1777, 0.1939],
+        "duration": 10
+      }
+    }
+  ]
+}

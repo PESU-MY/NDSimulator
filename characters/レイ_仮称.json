@@ -34,17 +34,12 @@
           }
         },
         {
-          "effect_type": "stack_buff",
-          "target": "enemy",
-          "kwargs": {
-            "stack_name": "AntiATField",
-            "buff_type": "taken_dmg_debuff",
-            "value": 0.0083,
-            "stack_amount": 10,
-            "max_stack": 30,
-            "duration": 30,
-            "tag": "anti_at_field"
-          }
+        "effect_type": "increase_current_stack_count",
+        "target": "enemy",
+        "kwargs": {
+          "stack_name": "AntiATField",
+          "value": 10
+        }
         }
       ]
     },

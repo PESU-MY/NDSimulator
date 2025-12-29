@@ -179,7 +179,7 @@
       },
       {
         "effect_type": "buff",
-        "target": "allies",
+        "target": "enemy",
         "kwargs": {
           "buff_type": "taken_dmg_debuff",
           "effect_no": 9,

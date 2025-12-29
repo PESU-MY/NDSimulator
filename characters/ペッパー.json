@@ -1,0 +1,130 @@
+{
+  "name": "ペッパー",
+  "weapon_type": "SG",
+  "burst_stage": "1",
+  "element": "Wind",
+  "class": "Supporter",
+  "squad": "セラフィム",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 2,
+    "damage_rate": 2.316,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: リフレッシュハート (回復)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "heal",
+      "target": "allies",
+      "target_condition": {
+        "type": "lowest_hp_ratio",
+        "count": 1
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [0.0263, 0.0283, 0.0303, 0.0324, 0.0344, 0.0364, 0.0384, 0.0405, 0.0425, 0.0445],
+        "description": "HP割合が低い味方1機を回復"
+      }
+    },
+    {
+      "name": "Skill 1: リフレッシュハート (スタック)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "heal_effectiveness_buff",
+        "stack_name": "RefreshHeart",
+        "max_stack": 15,
+        "value_list": [0.0386, 0.0415, 0.0445, 0.0475, 0.0504, 0.0534, 0.0564, 0.0594, 0.0623, 0.0653],
+        "duration": 15,
+        "description": "受ける回復量UPスタック"
+      }
+    },
+    {
+      "name": "Skill 2: ビタミンパワー",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.0,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 1
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [0.9454, 1.0181, 1.0909, 1.1636, 1.2363, 1.309, 1.3818, 1.4545, 1.5272, 1.6]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "dummy_buff",
+            "value_list": [0.021, 0.0226, 0.0242, 0.0258, 0.0274, 0.029, 0.0307, 0.0323, 0.0339, 0.0355],
+            "duration": 5,
+            "description": "攻撃力ダウン (dummy)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: ペッパーセラピー",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "multiplier_list": [7.3125, 7.875, 8.4375, 9.0, 9.5625, 10.125, 10.6875, 11.25, 11.8125, 12.375]
+          }
+        },
+        {
+          "effect_type": "increase_current_stack_count",
+          "target": "allies",
+          "kwargs": {
+            "value": 1,
+            "description": "スタック量1個増加 (dummy)"
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "condition": {
+            "self_stack_min": 5,
+            "stack_name": "RefreshHeart"
+          },
+          "kwargs": {
+            "effect_no": 6,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.1608, 0.1732, 0.1856, 0.198, 0.2103, 0.2227, 0.2351, 0.2475, 0.2598, 0.2722],
+            "description": "フルスタック時、味方全体回復"
+          }
+        }
+      ]
+    }
+  ]
+}
