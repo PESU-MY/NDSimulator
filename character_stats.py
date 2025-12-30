@@ -172,8 +172,9 @@ class CharacterStatsMixin:
                 print(f"  Total: {total_dmg:,.0f}")
                 print(f"----------------------------------------")
             
-        # 最終計算に layer_special を乗算
-        return total_dmg, is_crit_hit
+        # ▼▼▼ 修正: 戻り値に is_core を追加 ▼▼▼
+        return total_dmg, is_crit_hit, is_core
+        # ▲▲▲ 修正ここまで ▲▲▲
 
     def calculate_reduced_frame(self, original_frame, rate_buff, fixed_buff):
         if rate_buff <= -1.0: return 9999
@@ -264,3 +265,23 @@ class CharacterStatsMixin:
         fixed = self.buff_manager.get_total_value('max_hp_fixed', frame)
         return self.base_hp * (1.0 + rate) + fixed
     # ▲▲▲
+
+    def get_charge_time(self, frame):
+        base_time = self.weapon.charge_time
+        if base_time <= 0: return 0
+        
+        # チャージ速度バフ(%)
+        speed_buff = self.buff_manager.get_total_value('charge_speed', frame)
+        
+        # ▼▼▼ 追加: チャージ時間固定減少(秒) ▼▼▼
+        # "charge_time_cut" というバフ値を参照して、ベース時間から直接引く
+        # 例: 1.5秒 - 0.2秒 = 1.3秒
+        fixed_reduction = self.buff_manager.get_total_value('charge_time_cut', frame)
+        base_time = max(0, base_time - fixed_reduction)
+        # ▲▲▲ 追加ここまで ▲▲▲
+
+        # 速度バフの適用 (100% + バフ%)
+        # ゲーム内挙動に合わせて、固定値減少 -> 速度計算 の順で適用と仮定
+        final_time = base_time / (1.0 + speed_buff)
+        
+        return max(0, final_time)

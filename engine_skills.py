@@ -225,6 +225,11 @@ class SkillEngineMixin:
             self.executed_skill_ids.add(unique_key)
         
         if not self.should_apply_skill(skill, frame, caster): return 0
+
+        # ▼▼▼▼▼ 【重要】ここに追加してください ▼▼▼▼▼
+        # この行がないと、回数がカウントされず、max_trigger_countが機能しません
+        skill.current_usage_count += 1
+        # ▲▲▲▲▲ 追加ここまで ▲▲▲▲▲
         
         total_dmg = 0
         kwargs = skill.kwargs.copy()
@@ -426,6 +431,12 @@ class SkillEngineMixin:
                     val_to_scale = caster.base_hp * (1.0 + rate) + fixed
                 else:
                     val_to_scale = caster.base_hp
+            # ▼▼▼ 追加: チャージ速度(charge_speed)の参照 ▼▼▼
+            elif target_stat == 'charge_speed':
+                # 現在のチャージ速度バフ合計値を取得 (例: 10%なら 0.1)
+                # 基本チャージ速度という概念は通常0なので、バフの積み上げ値を参照
+                val_to_scale = caster.buff_manager.get_total_value('charge_speed', frame)
+            # ▲▲▲ 追加ここまで ▲▲▲
             if val_to_scale > 0: kwargs['value'] = val_to_scale * ratio
 
         # ▼▼▼ 追加: 補正係数 (scaling_factor) の適用 ▼▼▼

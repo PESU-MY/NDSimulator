@@ -1,0 +1,209 @@
+{
+  "name": "マナ",
+  "weapon_type": "AR",
+  "burst_stage": "3",
+  "element": "Wind",
+  "class": "Attacker",
+  "squad": "M.M.R.",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.67,
+    "damage_rate": 0.1507,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: マターガンマ (状態付与)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "max_trigger_count": 1,
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "tag": "MatterGamma",
+        "value_list": [0.3432, 0.3696, 0.396, 0.4224, 0.4488, 0.4752, 0.5016, 0.528, 0.5544, 0.5808],
+        "duration": 99999,
+        "description": "マターガンマ状態: 攻撃力UP (持続)"
+      }
+    },
+    {
+      "name": "Skill 1: マターガンマ (回復)",
+      "trigger_type": "shot_count",
+      "trigger_value": 10,
+      "condition": {
+        "self_has_tag": "MatterGamma"
+      },
+      "effect_type": "heal",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [0.012, 0.013, 0.0139, 0.0148, 0.0158, 0.0167, 0.0176, 0.0186, 0.0195, 0.0204],
+        "description": "マターガンマ状態なら味方全体回復"
+      }
+    },
+    {
+      "name": "Skill 1: マターガンマ (復活・解除)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "味方戦闘不能時(未実装トリガー)"
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "dummy_buff",
+            "value_list": [0.5672, 0.6109, 0.6545, 0.6981, 0.7418, 0.7854, 0.829, 0.8727, 0.9163, 0.96],
+            "description": "復活 (dummy)"
+          }
+        },
+        {
+          "effect_type": "remove_buff",
+          "target": "self",
+          "kwargs": {
+            "tag": "MatterGamma",
+            "description": "マターガンマ解除"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: マターシグマ (状態付与)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "dummy_buff",
+        "tag": "MatterSigma",
+        "value_list": [0.416, 0.448, 0.48, 0.512, 0.544, 0.576, 0.608, 0.64, 0.672, 0.704],
+        "duration": 99999,
+        "description": "マターシグマ状態: バーストチャージ速度UP (dummy)"
+      }
+    },
+    {
+      "name": "バースト: マターシグマ (発動時効果)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "MatterSigma"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.1248, 0.1344, 0.144, 0.1536, 0.1632, 0.1728, 0.1824, 0.192, 0.2016, 0.2112],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.3744, 0.4032, 0.432, 0.4608, 0.4896, 0.5184, 0.5472, 0.576, 0.6048, 0.6336],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "remove_buff",
+          "target": "self",
+          "kwargs": {
+            "tag": "MatterSigma",
+            "description": "マターシグマ解除"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: マターシグマ (チャージ時間短縮)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_base_charge_time",
+        "count": 1
+      },
+      "kwargs": {
+        "effect_no": 7,
+        "buff_type": "charge_time_cut",
+        "value_list": [0.09, 0.1, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18],
+        "duration": 10,
+        "description": "チャージ時間秒数短縮"
+      }
+    },
+    {
+      "name": "バースト: マターシグマ (再付与)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "condition": {
+        "is_last_burst_user": true
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 8,
+        "buff_type": "dummy_buff",
+        "tag": "MatterSigma",
+        "value_list": [0.416, 0.448, 0.48, 0.512, 0.544, 0.576, 0.608, 0.64, 0.672, 0.704],
+        "duration": 99999,
+        "description": "マターシグマ再付与 (バーストチャージ速度UP dummy)"
+      }
+    },
+    {
+      "name": "バースト: フェイタルエラー！",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 9,
+            "buff_type": "dot_dmg_buff",
+            "value_list": [0.312, 0.336, 0.36, 0.384, 0.408, 0.432, 0.456, 0.48, 0.504, 0.528],
+            "duration": 10,
+            "description": "持続ダメージUP"
+          }
+        },
+        {
+          "effect_type": "dot",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 10,
+            "interval": 1.0,
+            "duration": 10,
+            "multiplier_list": [2.34, 2.52, 2.7, 2.88, 3.06, 3.24, 3.42, 3.6, 3.78, 3.96],
+            "description": "照準線に最も近い敵1機に持続ダメージ (dummyターゲット)"
+          }
+        }
+      ]
+    }
+  ]
+}

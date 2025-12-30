@@ -1,0 +1,100 @@
+{
+  "name": "パワー",
+  "weapon_type": "RL",
+  "burst_stage": "3",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "デビルハンター",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 血の魔人",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "stack_name": "BloodFiend",
+        "max_stack": 5,
+        "value_list": [0.0378, 0.0407, 0.0436, 0.0465, 0.0494, 0.0523, 0.0552, 0.0581, 0.061, 0.064],
+        "duration": 3,
+        "description": "フルチャージ攻撃時、攻撃力UPスタック"
+      }
+    },
+    {
+      "name": "Skill 2: 血の爆発 (爆発範囲)",
+      "trigger_type": "shot_count",
+      "trigger_value": 18,
+      "condition": {
+        "self_stack_min": 5,
+        "stack_name": "BloodFiend"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "dummy_buff",
+        "value_list": [0.1521, 0.1781, 0.2041, 0.2301, 0.2561, 0.2821, 0.3081, 0.3341, 0.3601, 0.3861],
+        "duration": 10,
+        "description": "爆発範囲UP (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: 血の爆発 (弾丸チャージ)",
+      "trigger_type": "shot_count",
+      "trigger_value": 18,
+      "condition": {
+        "self_stack_min": 5,
+        "stack_name": "BloodFiend"
+      },
+      "effect_type": "refill_ammo",
+      "target": "self",
+      "kwargs": {
+        "rate": 1.0,
+        "max_trigger_count": 1, 
+        "description": "弾丸チャージ100% (戦闘中1回)"
+      }
+    },
+    {
+      "name": "バースト: 血のハンマー",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [9.36, 10.08, 10.8, 11.52, 12.24, 12.96, 13.68, 14.4, 15.12, 15.84]
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "condition": {
+            "self_stack_min": 5,
+            "stack_name": "BloodFiend"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [9.36, 10.08, 10.8, 11.52, 12.24, 12.96, 13.68, 14.4, 15.12, 15.84],
+            "description": "フルスタック時、追加ダメージ",
+            "force_full_burst": true
+          }
+        }
+      ]
+    }
+  ]
+}

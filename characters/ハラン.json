@@ -59,7 +59,7 @@
           "effect_type": "buff",
           "target": "self",
           "kwargs": {
-            "buff_type": "pierce",
+            "buff_type": "is_pierce",
             "value": 1,
             "shot_duration": 1,
             "description": "貫通特化 (1発)"

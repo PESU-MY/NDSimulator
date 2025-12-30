@@ -352,3 +352,20 @@ JSONには、formatted.txt に明示的な指定がない限り記載しなく�
   "effect_type": "stack_buff",
   ...
 }
+
+■ マシンガン（MG）の設定
+- warmup_table の配列の1つ目が「1, 2, 3...」と連番で始まっている場合、プログラムは自動的に「1発ごとの設定」と解釈して読み込みます。
+  （従来の Duration 形式か、Index 形式かを気にする必要はありませんが、連番データは正しく連番にしてください）
+
+■ デバフ系スキルの記述ルール（重要）
+- `taken_dmg_debuff`（被ダメージ上昇）や `def_debuff`（防御ダウン）は、必ず `"target": "enemy"` を指定してください。
+- 以前のように `target: "self"` で自分に付与しても、ダメージ計算には反映されません（修正済み）。
+
+■ ダメージスキルの記述簡略化
+- 通常の `effect_type: "damage"` の場合、`profile` キーは不要です。
+  `is_pierce` や `is_ignore_def` などのフラグは、`kwargs` 直下に記述してください。
+  （`effect_type: "dot"` の場合のみ、引き続き `profile` キー内への記述が有効です）
+
+■ 数値の調整（scaling_factor）
+- ゲーム内の表記（例: 1.12%）をそのまま `value` に書きつつ、計算では特殊な倍率（例: HPの1/5）を適用したい場合、
+  `"scaling_factor": 0.2` のように追記することで、`value * scaling_factor` の値が適用されます。
