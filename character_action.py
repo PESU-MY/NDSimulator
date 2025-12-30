@@ -72,6 +72,9 @@ class CharacterActionMixin:
             total_shot_dmg = 0
             hit_count = 0
             crit_count = 0
+            # ▼▼▼ 修正: ここに初期化を追加してください ▼▼▼
+            core_hit_count = 0
+            # ▲▲▲
             
             for _ in range(current_pellets):
                 # ▼▼▼ 修正: 戻り値を3つ (dmg, is_crit, is_core) で受け取る ▼▼▼
@@ -115,7 +118,7 @@ class CharacterActionMixin:
             # ▼▼▼ 追加: core_hit トリガーの発火 ▼▼▼
             damage_this_frame += self.process_trigger('core_hit', self.cumulative_core_hits, frame, is_full_burst, simulator, delta=core_hit_count)
             # ▲▲▲ 追加ここまで ▲▲▲
-            
+
             # ▼▼▼ 追加: フルチャージ攻撃判定とトリガー処理 ▼▼▼
             # 現状のシミュ仕様では、SR/RL/CHARGEタイプは必ずチャージ時間を経て発射されるため、常にフルチャージ扱いとする。
             # 将来タップ撃ちを実装する場合は、ここでチャージ率などを判定する。

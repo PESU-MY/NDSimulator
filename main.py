@@ -176,7 +176,7 @@ dummy_barrier_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/パワー.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/モダニア.json', skill_level=10)
 burst3_nikke_2 = create_character_from_json('characters/アニス：スパークリングサマー.json', skill_level=10)
 burst2_nikke = create_character_from_json('characters/クラウン.json', skill_level=10)
 burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
@@ -189,16 +189,17 @@ print(">>> キャラクター読み込み完了\n")
 dummy_b1 = create_dummy_character("Dummy_B1", 1, "SMG", skills=[dummy_ct_skill])
 dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG")
 dummy_b3 = create_dummy_character("Dummy_B3", 3, "SG")
+dummy_b3_2 = create_dummy_character("Dummy_B3", 3, "SG")
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_b3]
+all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_b3_2]
 
 # 4. バーストローテーション
 rotation = [
     [dummy_b1],
     [dummy_b2],
-    [burst3_nikke, dummy_b3] 
+    [burst3_nikke, dummy_b3_2] 
 ]
 
 

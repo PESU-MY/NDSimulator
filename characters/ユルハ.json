@@ -1,0 +1,96 @@
+{
+  "name": "ユルハ",
+  "weapon_type": "SR",
+  "burst_stage": "3",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "トライアングル",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 1.87,
+    "damage_rate": 0.6823,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: バイティングリーダーシップ",
+      "trigger_type": "dummy",
+      "trigger_value": 30,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "crit_rate_buff",
+        "tag": "Serenity",
+        "value_list": [0.145, 0.1561, 0.1673, 0.1784, 0.1896, 0.2007, 0.2119, 0.223, 0.2342, 0.2453],
+        "duration": 20,
+        "description": "30回被弾時、平常心(クリ率UP)付与 (dummyトリガー)"
+      }
+    },
+    {
+      "name": "Skill 2: ウィークメイカー",
+      "trigger_type": "time_interval",
+      "trigger_value": 30.0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.5362, 0.5775, 0.6187, 0.66, 0.7012, 0.7425, 0.7837, 0.825, 0.8662, 0.9075],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 10,
+            "description": "受けるダメージ均等分配 (dummy)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: ヒステリックワーカー",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [2.7056, 2.9137, 3.1218, 3.33, 3.5381, 3.7462, 3.9543, 4.1625, 4.3706, 4.5787]
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "condition": {
+            "self_has_tag": "Serenity"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [2.7056, 2.9137, 3.1218, 3.33, 3.5381, 3.7462, 3.9543, 4.1625, 4.3706, 4.5787],
+            "description": "平常心状態なら追加ダメージ",
+            "force_full_burst": true
+          }
+        }
+      ]
+    }
+  ]
+}

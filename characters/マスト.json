@@ -37,7 +37,7 @@
       "trigger_type": "time_interval",
       "trigger_value": 1.0,
       "condition": {
-        "self_hp_ratio_max": 0.7
+        "hp_ratio_max": 0.7
       },
       "effect_type": "cumulative_stages",
       "target": "self",

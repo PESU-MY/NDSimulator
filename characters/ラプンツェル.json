@@ -1,0 +1,127 @@
+{
+  "name": "ラプンツェル",
+  "weapon_type": "RL",
+  "burst_stage": "1",
+  "element": "Iron",
+  "class": "Supporter",
+  "squad": "パイオニア",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.30,
+    "damage_rate": 0.6295,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: サクリファイス",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "heal",
+      "target": "allies",
+      "target_condition": {
+        "type": "lowest_hp_ratio",
+        "count": 3
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [0.0252, 0.0268, 0.0285, 0.0302, 0.0319, 0.0336, 0.0352, 0.0369, 0.0386, 0.0403],
+        "description": "HP割合が低い味方3機を回復"
+      }
+    },
+    {
+      "name": "Skill 2: ディヴァインブレス",
+      "trigger_type": "time_interval",
+      "trigger_value": 15.0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 2
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "highest_atk",
+            "count": 2
+          },
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "max_hp_rate",
+            "update_current_hp": true,
+            "value_list": [0.0511, 0.0546, 0.058, 0.0614, 0.0648, 0.0682, 0.0716, 0.075, 0.0784, 0.0819],
+            "duration": 15
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "highest_atk",
+            "count": 2
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "heal_effectiveness_buff",
+            "value_list": [0.0853, 0.0909, 0.0966, 0.1023, 0.108, 0.1137, 0.1194, 0.1251, 0.1308, 0.1365],
+            "duration": 15
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: ガーデンオブシャングリラ",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 60.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 4,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.1856, 0.2103, 0.2351, 0.2598, 0.2846, 0.3093, 0.3341, 0.3588, 0.3836, 0.4083],
+            "description": "発動者の最大HP基準で回復"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "dummy_buff",
+            "value_list": [0.3712, 0.4207, 0.4702, 0.5197, 0.5692, 0.6187, 0.6682, 0.7177, 0.7672, 0.8167],
+            "description": "戦闘不能味方1機復活 (dummy)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "condition": {
+            "hp_ratio_max": 0.3
+          },
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 1,
+            "description": "自分HP30%以下で敵全体気絶 (dummy)"
+          }
+        }
+      ]
+    }
+  ]
+}

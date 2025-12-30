@@ -158,7 +158,6 @@
         "effect_no": 7,
         "scale_by_caster_stats": true,
         "target_stat": "atk",
-        "stat_type": "finally",
         "value_list": [0.909, 0.9917, 1.0743, 1.1569, 1.2396, 1.3222, 1.4049, 1.4875, 1.5702, 1.6528],
         "description": "忍法救急キット (蓄積の代わりに即時回復で代用)"
       }

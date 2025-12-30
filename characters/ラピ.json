@@ -1,0 +1,99 @@
+{
+  "name": "ラピ",
+  "weapon_type": "AR",
+  "burst_stage": "3",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "カウンターズ",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.00,
+    "damage_rate": 0.1365,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: フォーメーションF.F",
+      "trigger_type": "dummy",
+      "trigger_value": 20,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [0.109, 0.1212, 0.1333, 0.1454, 0.1575, 0.1696, 0.1818, 0.1939, 0.206, 0.2181],
+        "duration": 20,
+        "description": "20回被弾時、攻撃力UP (被弾トリガー未実装のためdummy)"
+      }
+    },
+    {
+      "name": "Skill 2: ミサイル",
+      "trigger_type": "time_interval",
+      "trigger_value": 20.0,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 1
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 2,
+            "multiplier_list": [3.0857, 3.3306, 3.5755, 3.8204, 4.0653, 4.3102, 4.5551, 4.8, 5.0448, 5.2897]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 5,
+            "tag": "taunt",
+            "description": "挑発 (dummy)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: 多弾頭ミサイル",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "target_condition": {
+            "type": "highest_atk",
+            "count": 1
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [3.2886, 3.654, 4.0194, 4.3848, 4.7502, 5.1156, 5.481, 5.8464, 6.2118, 6.5772]
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.3037, 0.3375, 0.3712, 0.405, 0.4387, 0.4725, 0.5062, 0.54, 0.5737, 0.6075],
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}

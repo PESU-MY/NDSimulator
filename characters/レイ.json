@@ -1,0 +1,123 @@
+{
+  "name": "レイ",
+  "weapon_type": "MG",
+  "burst_stage": "3",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "NERV",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.50,
+    "damage_rate": 0.0557,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 先頭制圧 (有利コードダメUP)",
+      "trigger_type": "shot_count",
+      "trigger_value": 100,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "elemental_buff",
+        "value_list": [0.2291, 0.2372, 0.2454, 0.2535, 0.2616, 0.2698, 0.2779, 0.2861, 0.2942, 0.3023],
+        "duration": 3,
+        "description": "有利コード攻撃ダメージUP"
+      }
+    },
+    {
+      "name": "Skill 1: 先頭制圧 (追加ダメージ)",
+      "trigger_type": "shot_count",
+      "trigger_value": 100,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [0.7332, 0.7766, 0.82, 0.8634, 0.9068, 0.9502, 0.9936, 1.037, 1.0804, 1.1237],
+        "description": "照準線に最も近い敵に追加ダメージ"
+      }
+    },
+    {
+      "name": "Skill 2: 攻撃支援 (バリア特効)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "dummy_buff",
+        "value_list": [4.7272, 4.9803, 5.2334, 5.4865, 5.7396, 5.9927, 6.2458, 6.4989, 6.752, 7.005],
+        "duration": 99999,
+        "description": "バリアに与えるダメージUP (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: 攻撃支援 (攻撃力UP)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "element": "Fire"
+      },
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "target_stat": "atk",
+        "value_list": [0.1697, 0.1786, 0.1876, 0.1966, 0.2055, 0.2145, 0.2234, 0.2324, 0.2414, 0.2503],
+        "duration": 10,
+        "description": "発動者攻撃力基準で攻撃力UP"
+      }
+    },
+    {
+      "name": "バースト: 殲滅用榴弾",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "shield",
+          "target": "allies",
+          "target_condition": {
+            "element": "Fire"
+          },
+          "kwargs": {
+            "effect_no": 5,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "value_list": [0.0998, 0.1036, 0.1075, 0.1113, 0.1152, 0.119, 0.1228, 0.1267, 0.1305, 0.1344],
+            "duration": 10,
+            "description": "発動者最大HP基準でバリア"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Fire"
+          },
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [0.2981, 0.3184, 0.3386, 0.3588, 0.379, 0.3993, 0.4195, 0.4397, 0.4599, 0.4802],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [6.5454, 6.9184, 7.2913, 7.6643, 8.0372, 8.4102, 8.7832, 9.1561, 9.5291, 9.902]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": "ライ",
+  "weapon_type": "SMG",
+  "burst_stage": "1",
+  "element": "Water",
+  "class": "Defender",
+  "squad": "スクールサークル",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.83,
+    "damage_rate": 0.0915,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 先輩の応援 (バーストチャージ)",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "dummy_buff",
+        "value_list": [1.35, 1.48, 1.6, 1.72, 1.85, 1.97, 2.09, 2.22, 2.34, 2.47],
+        "description": "バーストゲージチャージ (dummy)"
+      }
+    },
+    {
+      "name": "Skill 1: 先輩の応援 (デコイ回復)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "dummy_buff",
+        "value_list": [0.0115, 0.0126, 0.0136, 0.0147, 0.0157, 0.0168, 0.0178, 0.0189, 0.02, 0.021],
+        "description": "デコイ回復 (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: 先輩の気合",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "dummy_buff",
+        "value_list": [0.528, 0.576, 0.624, 0.672, 0.72, 0.768, 0.816, 0.864, 0.912, 0.96],
+        "duration": 240,
+        "description": "デコイ生成 (dummy)"
+      }
+    },
+    {
+      "name": "バースト: 先輩のお手本",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 5,
+            "tag": "taunt",
+            "description": "敵全体を挑発 (dummy)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "dummy_buff",
+            "value_list": [0.0792, 0.0864, 0.0936, 0.1008, 0.108, 0.1152, 0.1224, 0.1296, 0.1368, 0.144],
+            "duration": 10,
+            "description": "受けるダメージダウン (dummy)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "dummy_buff",
+            "value_list": [0.0161, 0.0168, 0.0176, 0.0183, 0.0191, 0.0198, 0.0205, 0.0213, 0.022, 0.0227],
+            "duration": 10,
+            "description": "デコイ持続回復 (dummy)"
+          }
+        }
+      ]
+    }
+  ]
+}

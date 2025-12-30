@@ -83,7 +83,6 @@
         "buff_type": "atk_buff_fixed",
         "scale_by_caster_stats": true,
         "target_stat": "atk",
-        "stat_type": "finally",
         "value_list": [0.1817, 0.1957, 0.2097, 0.2237, 0.2377, 0.2517, 0.2657, 0.2798, 0.2938, 0.3078],
         "duration": 5,
         "description": "発動者攻撃力基準で攻撃力UP"

@@ -1,0 +1,146 @@
+{
+  "name": "レム",
+  "weapon_type": "MG",
+  "burst_stage": "2",
+  "element": "Water",
+  "class": "Supporter",
+  "squad": "エミリア陣営",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.50,
+    "damage_rate": 0.0557,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: レムにお任せください！ (攻撃力スタック)",
+      "trigger_type": "shot_count",
+      "trigger_value": 15,
+      "condition": {
+        "self_has_tag": "OniNoKi"
+      },
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "max_stack": 30,
+        "value_list": [0.0249, 0.0268, 0.0288, 0.0307, 0.0326, 0.0345, 0.0364, 0.0384, 0.0403, 0.0422],
+        "duration": 10,
+        "description": "鬼の気状態なら攻撃力UP (スタック)"
+      }
+    },
+    {
+      "name": "Skill 1: レムにお任せください！ (回復分配)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "distribute_heal_buff",
+        "value": 1,
+        "duration": 10,
+        "description": "HP回復均等分配 (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: レムが治療します！ (ドレイン)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "drain",
+        "value_list": [0.2496, 0.2688, 0.288, 0.3072, 0.3264, 0.3456, 0.3648, 0.384, 0.4032, 0.4224],
+        "duration": 99999,
+        "description": "攻撃ダメージのn%回復 (持続)"
+      }
+    },
+    {
+      "name": "Skill 2: レムが治療します！ (分配・自分)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "distribute_heal_buff",
+        "value": 1,
+        "duration": 99999,
+        "description": "HP回復均等分配 (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: レムが治療します！ (分配・味方)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "weapon_type": "RL",
+        "type": "highest_atk",
+        "count": 2
+      },
+      "kwargs": {
+        "buff_type": "distribute_heal_buff",
+        "value": 1,
+        "duration": 99999,
+        "description": "HP回復均等分配 (RL所持攻撃力上位2機) (dummy)"
+      }
+    },
+    {
+      "name": "バースト: レムは許しません！",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "crit_rate_buff",
+            "tag": "OniNoKi",
+            "value_list": [0.074, 0.104, 0.1376, 0.1729, 0.2037, 0.2369, 0.2725, 0.3078, 0.336, 0.378],
+            "duration": 10,
+            "description": "鬼の気：クリティカル確率UP"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "weapon_type": "RL"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "value_list": [0.3001, 0.3231, 0.3462, 0.3693, 0.3924, 0.4155, 0.4386, 0.4617, 0.4847, 0.5078],
+            "duration": 10,
+            "description": "RL所持味方に発動者攻撃力基準で攻撃力UP"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "weapon_type": "RL"
+          },
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "max_ammo_fixed",
+            "value_list": [3, 3, 4, 4, 4, 4, 5, 5, 5, 5],
+            "duration": 10,
+            "description": "RL所持味方に最大装弾数UP"
+          }
+        }
+      ]
+    }
+  ]
+}

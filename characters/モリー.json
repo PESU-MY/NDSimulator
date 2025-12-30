@@ -1,0 +1,164 @@
+{
+  "name": "モリー",
+  "weapon_type": "AR",
+  "burst_stage": "2",
+  "element": "Wind",
+  "class": "Defender",
+  "squad": "インキュベーター",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.00,
+    "damage_rate": 0.1365,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: モグラ隠れ (開幕バリア)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "shield",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "tag": "DesperateResistance",
+        "value_list": [0.2371, 0.2553, 0.2736, 0.2918, 0.31, 0.3283, 0.3465, 0.3648, 0.383, 0.4012],
+        "duration": 99999,
+        "description": "必死の抵抗: バリア (持続)"
+      }
+    },
+    {
+      "name": "Skill 1: モグラ隠れ (再付与)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "condition": {
+        "self_not_has_tag": "DesperateResistance"
+      },
+      "effect_type": "shield",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "tag": "DesperateResistance",
+        "value_list": [0.2371, 0.2553, 0.2736, 0.2918, 0.31, 0.3283, 0.3465, 0.3648, 0.383, 0.4012],
+        "duration": 99999,
+        "description": "必死の抵抗状態でなければ再付与"
+      }
+    },
+    {
+      "name": "Skill 1: モグラ隠れ (終了時)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "max_hp_rate",
+        "max_stack": 5,
+        "value_list": [0.0299, 0.0322, 0.0345, 0.0368, 0.0391, 0.0414, 0.0437, 0.046, 0.0483, 0.0506],
+        "duration": 99999,
+        "description": "必死の抵抗終了時、最大HPUP (持続/スタック) (dummyトリガー)"
+      }
+    },
+    {
+      "name": "Skill 2: 必死のサポート (挑発)",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "condition": {
+        "self_has_tag": "DesperateResistance"
+      },
+      "effect_type": "buff",
+      "target": "enemy",
+      "kwargs": {
+        "buff_type": "dummy_buff",
+        "value": 1,
+        "duration": 4,
+        "tag": "taunt",
+        "description": "挑発 (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: 必死のサポート (DoT強化)",
+      "trigger_type": "time_interval",
+      "trigger_value": 15.0,
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "effect_type": "stack_buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "dot_dmg_buff",
+        "max_stack": 5,
+        "value_list": [0.012, 0.0129, 0.0138, 0.0147, 0.0157, 0.0166, 0.0175, 0.0184, 0.0194, 0.0203],
+        "duration": 15,
+        "description": "パーツ破壊時(special_mode/15秒毎): 持続ダメージUP"
+      }
+    },
+    {
+      "name": "Skill 2: 必死のサポート (DoT付与)",
+      "trigger_type": "time_interval",
+      "trigger_value": 15.0,
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "effect_type": "dot",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 5,
+        "interval": 1.0,
+        "multiplier_list": [0.1372, 0.1478, 0.1584, 0.1689, 0.1795, 0.19, 0.2006, 0.2112, 0.2217, 0.2323],
+        "duration": 15,
+        "description": "パーツ破壊時(special_mode/15秒毎): 持続ダメージ"
+      }
+    },
+    {
+      "name": "バースト: 弱者の生存術 (バリア回復)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "DesperateResistance"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 6,
+        "buff_type": "dummy_buff",
+        "value_list": [0.0889, 0.0957, 0.1026, 0.1094, 0.1162, 0.1231, 0.1299, 0.1368, 0.1436, 0.1504],
+        "description": "必死の抵抗状態ならバリアHP回復 (dummy)"
+      }
+    },
+    {
+      "name": "バースト: 弱者の生存術 (HP強化)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "condition": {
+        "self_not_has_tag": "DesperateResistance"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 7,
+        "buff_type": "max_hp_rate",
+        "value_list": [0.0596, 0.0642, 0.0688, 0.0734, 0.078, 0.0826, 0.0872, 0.0918, 0.0963, 0.1009],
+        "duration": 10,
+        "description": "必死の抵抗状態でなければ最大HPUP"
+      }
+    },
+    {
+      "name": "バースト: 弱者の生存術 (共通)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 8,
+        "buff_type": "dot_dmg_buff",
+        "value_list": [0.06, 0.0646, 0.0693, 0.0739, 0.0785, 0.0831, 0.0877, 0.0923, 0.097, 0.1016],
+        "duration": 10
+      }
+    }
+  ]
+}

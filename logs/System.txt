@@ -1,64 +1,55 @@
 === Simulation Start ===
 Character: Dummy_B1 (Atk:1)
 Character: Dummy_B2 (Atk:1)
-Character: パワー (Atk:25554)
+Character: モダニア (Atk:25554)
 Character: Dummy_B3 (Atk:1)
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] パワー used Burst Stage 3
+[Burst] モダニア used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for パワー at frame 903
+[Burst] Recorded burst end time for モダニア at frame 1203
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Dummy_B3 at frame 1806
+[Burst] Recorded burst end time for Dummy_B3 at frame 2106
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] パワー used Burst Stage 3
+[Burst] モダニア used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for パワー at frame 2709
-[Burst] Dummy_B1 used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Dummy_B3 at frame 3612
-[Burst] Dummy_B1 used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] パワー used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for パワー at frame 4515
+[Burst] Recorded burst end time for モダニア at frame 3309
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Dummy_B3 at frame 5418
+[Burst] Recorded burst end time for Dummy_B3 at frame 4212
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] パワー used Burst Stage 3
+[Burst] モダニア used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for パワー at frame 6321
-[Burst] Dummy_B1 used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] Dummy_B3 used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Dummy_B3 at frame 7224
-[Burst] Dummy_B1 used Burst Stage 1
-[Burst] Dummy_B2 used Burst Stage 2
-[Burst] パワー used Burst Stage 3
-[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for パワー at frame 8127
+[Burst] Recorded burst end time for モダニア at frame 5415
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for Dummy_B3 at frame 9030
+[Burst] Recorded burst end time for Dummy_B3 at frame 6318
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
-[Burst] パワー used Burst Stage 3
+[Burst] モダニア used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
-[Burst] Recorded burst end time for パワー at frame 9933
+[Burst] Recorded burst end time for モダニア at frame 7521
 [Burst] Dummy_B1 used Burst Stage 1
 [Burst] Dummy_B2 used Burst Stage 2
 [Burst] Dummy_B3 used Burst Stage 3
 [CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 8424
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] モダニア used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for モダニア at frame 9627
+[Burst] Dummy_B1 used Burst Stage 1
+[Burst] Dummy_B2 used Burst Stage 2
+[Burst] Dummy_B3 used Burst Stage 3
+[CT Reduce] Reduced cooldowns by 5.00s (Source: Dummy_B1)
+[Burst] Recorded burst end time for Dummy_B3 at frame 10530

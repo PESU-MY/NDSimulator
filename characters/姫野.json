@@ -1,0 +1,113 @@
+{
+  "name": "姫野",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Wind",
+  "class": "Supporter",
+  "squad": "デビルハンター",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.30,
+    "damage_rate": 0.7089,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 弱点攻略",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "debuff",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "def_debuff",
+        "value_list": [0.0303, 0.0347, 0.039, 0.0433, 0.0477, 0.052, 0.0564, 0.0607, 0.065, 0.0694],
+        "duration": 3,
+        "description": "防御力ダウン (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: 見えない手",
+      "trigger_type": "time_interval",
+      "trigger_value": 20.0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "weapon_type": "SR"
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "weapon_type": "SR"
+          },
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.0147, 0.0253, 0.0359, 0.0464, 0.057, 0.0675, 0.0781, 0.0887, 0.0992, 0.1098],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "weapon_type": "SR"
+          },
+          "kwargs": {
+            "buff_type": "max_ammo_fixed",
+            "value": 2,
+            "duration": 10,
+            "description": "最大装弾数2発UP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: ゴースト",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "highest_atk",
+            "count": 1,
+            "exclude_self": true
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "charge_dmg_buff",
+            "value_list": [0.0756, 0.0936, 0.1116, 0.1296, 0.1476, 0.1656, 0.1836, 0.2016, 0.2196, 0.2376],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "highest_atk",
+            "count": 1,
+            "exclude_self": true
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "crit_rate_buff",
+            "value_list": [0.0852, 0.0939, 0.1026, 0.1113, 0.12, 0.1287, 0.1374, 0.1461, 0.1548, 0.1635],
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}
