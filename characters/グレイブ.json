@@ -80,7 +80,7 @@
           "target": "allies",
           "kwargs": {
             "effect_no": 1,
-            "buff_type": "burst_charge_speed_buff",
+            "buff_type": "dummy_buff",
             "value_list": [0.2302, 0.2479, 0.2656, 0.2833, 0.301, 0.3187, 0.3364, 0.3542, 0.3719, 0.3896],
             "duration": 1.1
           }

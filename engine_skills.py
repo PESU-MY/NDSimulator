@@ -93,6 +93,12 @@ class SkillEngineMixin:
                 return False
         # ▲▲▲ 追加ここまで ▲▲▲
 
+        # ▼▼▼ 追加: 最大発動回数のチェック ▼▼▼
+        if skill.max_trigger_count is not None:
+            if skill.current_usage_count >= skill.max_trigger_count:
+                return False
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         if skill.condition:
             if "not_has_tag" in skill.condition:
                 tag = skill.condition["not_has_tag"]
@@ -249,7 +255,10 @@ class SkillEngineMixin:
                         temp_skill.owner_name = caster.name
                         total_dmg += self.apply_skill(temp_skill, caster, frame, is_full_burst)
             else:
-                skill.current_usage_count += 1
+                # ▼▼▼ 修正: 重複インクリメントの削除 ▼▼▼
+                # 以前: skill.current_usage_count += 1 
+                # apply_skill冒頭で加算済みのため、ここでは削除します
+                # ▲▲▲ 修正ここまで ▲▲▲
                 max_apply_idx = min(len(skill.stages), skill.current_usage_count)
                 for i in range(max_apply_idx):
                     stage_data = skill.stages[i]
@@ -286,8 +295,18 @@ class SkillEngineMixin:
                 
                 if self.check_target_condition(skill.target_condition, caster, char, frame): 
                     candidates.append(char)
+
+            # ▼▼▼ 追加: 元のチャージ時間が長い順 (highest_base_charge_time) ▼▼▼
+            if skill.target_condition and skill.target_condition.get('type') == 'highest_base_charge_time':
+                count = skill.target_condition.get('count', 1)
+                # 武器の基礎チャージ時間 (charge_time) を参照して降順ソート
+                # チャージしない武器は 0 として扱われるため、SR/RL等が優先されます
+                candidates.sort(key=lambda c: getattr(c.weapon, 'charge_time', 0), reverse=True)
+                targets = candidates[:count]
+                self.log(f"[Target] Selected Top {count} Base Charge Time: {[t.name for t in targets]}", target_name=caster.name)
+            # ▲▲▲ 追加ここまで ▲▲▲
             
-            if skill.target_condition and skill.target_condition.get('type') == 'highest_atk':
+            elif skill.target_condition and skill.target_condition.get('type') == 'highest_atk':
                 count = skill.target_condition.get('count', 1)
                 candidates.sort(key=lambda c: c.get_current_atk(frame), reverse=True)
                 targets = candidates[:count]
@@ -408,6 +427,16 @@ class SkillEngineMixin:
                 else:
                     val_to_scale = caster.base_hp
             if val_to_scale > 0: kwargs['value'] = val_to_scale * ratio
+
+        # ▼▼▼ 追加: 補正係数 (scaling_factor) の適用 ▼▼▼
+        # ゲーム内数値(value)を維持しつつ、計算用に補正(1/5など)を掛けたい場合に使用
+        if 'scaling_factor' in kwargs:
+            factor = kwargs['scaling_factor']
+            # value(数値)が更新されている可能性があるため再取得して計算
+            current_val = kwargs.get('value', 0)
+            kwargs['value'] = current_val * factor
+            self.log(f"[Scaling] Applied factor {factor} (Base:{current_val:.6f} -> Final:{kwargs['value']:.6f})", target_name=caster.name)
+        # ▲▲▲ 追加ここまで ▲▲▲
 
         if 'copy_stack_count' in kwargs and 'value' in kwargs:
             stack_name = kwargs['copy_stack_count']
@@ -740,7 +769,18 @@ class SkillEngineMixin:
                 
                 for target in targets:
                     # ★修正: target_stack_name 引数を追加して渡す
+                    # ▼▼▼ 追加: 強力な重複適用ガード ▼▼▼
+                    # 同一フレーム・同一ターゲット・同一スタック名での増加処理は1回のみ許可する
+                    # これにより、allies指定などでループが重複しても、2回目以降は無視される
+                    guard_key = f"STACK_INC_GUARD::{frame}::{target.name}::{target_stack}"
+                    if guard_key in self.executed_skill_ids:
+                        continue
+                    self.executed_skill_ids.add(guard_key)
+                    # ▲▲▲ 追加ここまで ▲▲▲
                     count = target.buff_manager.modify_active_stack_counts(delta, frame, ignore_tags=ignore_tags, target_stack_name=target_stack)
+
+                    if count > 0:
+                        self.log(f"[Stack Inc] {target.name}: Increased '{target_stack}' by {delta}", target_name=caster.name)
             
             elif skill.effect_type == 'stun':
                 duration = kwargs.get('duration', 0) * self.FPS

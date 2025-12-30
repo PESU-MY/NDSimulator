@@ -1,0 +1,123 @@
+{
+  "name": "マクスウェル",
+  "weapon_type": "SR",
+  "burst_stage": "3",
+  "element": "Iron",
+  "class": "Attacker",
+  "squad": "メティス",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: ストレートショット",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 2
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "highest_atk",
+            "count": 2
+          },
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "charge_speed_rate",
+            "value_list": [0.0265, 0.0285, 0.0306, 0.0326, 0.0346, 0.0367, 0.0387, 0.0408, 0.0428, 0.0448],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "highest_atk",
+            "count": 2
+          },
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.2546, 0.2742, 0.2938, 0.3134, 0.333, 0.3526, 0.3722, 0.3918, 0.4114, 0.431],
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: エレクトリックショット",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "crit_rate_buff",
+            "value_list": [0.0285, 0.0307, 0.0329, 0.0351, 0.0373, 0.0395, 0.0417, 0.0439, 0.0461, 0.0483],
+            "duration": 1.1,
+            "description": "敵5機以上時 (維持)"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "crit_dmg_buff",
+            "value_list": [0.0822, 0.0885, 0.0948, 0.1012, 0.1075, 0.1138, 0.1201, 0.1265, 0.1328, 0.1391],
+            "duration": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: ピアスショット",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "change_weapon",
+      "target": "self",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "duration": 0,
+        "shot_duration": 1,
+        "weapon_data": {
+          "name": "Maxwell Burst",
+          "type": "CHARGE",
+          "effect_no": 5,
+          "multiplier_list": [1.4485, 2.1914, 2.9342, 3.6771, 4.42, 5.1628, 5.9057, 6.6485, 7.3914, 8.1342],
+          "max_ammo": 1,
+          "reload_frames": 0,
+          "windup_frames": 12,
+          "winddown_frames": 10,
+          "charge_time": 2,
+          "charge_mult": 3.0,
+          "hit_size": 1,
+          "is_pierce": true,
+          "description": "使用武器を変更()"
+        }
+      }
+    }
+  ]
+}

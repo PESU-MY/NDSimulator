@@ -311,3 +311,16 @@ JSONの "trigger_type"（いつ発動するか）や、
                               ※ このタグが付与されている間、物理的な防御力計算がスキップされる
 
 force_full_burst : フルバースト時の補正が乗る。特殊なダメージにのみ乗るので基本は手動で設定する
+
+【Buff Types】
+def_debuff_fixed        : 防御力を固定値でダウンさせる（計算結果は0未満にはならない）
+
+【Skill Attributes (kwargs以外)】
+max_trigger_count       : (int) 戦闘中、この回数までしか発動しない。trigger_typeに関わらず制限される。
+
+【Target Conditions】
+highest_base_charge_time: (type) 武器の基礎チャージ時間（charge_time）が長い順にソートして選択。
+                          RL/SR以外は0として扱われる。
+
+【Scaling Options】
+scaling_factor          : (float) scale_by_caster_stats 等で計算された最終値に、さらにこの値を乗算する。

@@ -16,12 +16,15 @@ class CharacterStatsMixin:
         # 1. 攻撃力計算
         final_atk = self.get_current_atk(frame)
         
-        # 2. 防御力・貫通計算
-        # ▼▼▼ 修正: self（攻撃者）の防御デバフ参照を削除 ▼▼▼
-        def_debuff = 0
+        # ▼▼▼ 追加: 固定値防御デバフの取得 ▼▼▼
+        def_debuff_fixed = 0
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         if debuff_manager:
             def_debuff = debuff_manager.get_total_value('def_debuff', frame)
-        # ▲▲▲ 修正ここまで ▲▲▲
+            # ▼▼▼ 追加: 固定値の取得 ▼▼▼
+            def_debuff_fixed = debuff_manager.get_total_value('def_debuff_fixed', frame)
+            # ▲▲▲ 追加ここまで ▲▲▲
             
         # ▼▼▼ 修正: 通常攻撃の防御無視判定を追加 ▼▼▼
         # profile自体に無視フラグがある(スキル用)か、
@@ -30,7 +33,16 @@ class CharacterStatsMixin:
         if self.buff_manager.has_active_tag("ignore_def_active", frame):
             is_ignoring = True
             
-        effective_def = enemy_def * (1.0 - def_debuff) if not is_ignoring else 0
+        # ▼▼▼ 修正: 計算式の変更 (割合ダウン後に固定値を引き、0未満防止) ▼▼▼
+        if is_ignoring:
+            effective_def = 0
+        else:
+            # 割合ダウンを先に適用し、その後に固定値を引く
+            effective_def = enemy_def * (1.0 - def_debuff)
+            effective_def -= def_debuff_fixed
+            
+            # 0以下にはならない
+            if effective_def < 0: effective_def = 0
         # ▲▲▲ 修正ここまで ▲▲▲
         raw_damage_diff = final_atk - effective_def
         if raw_damage_diff <= 0: return 1.0, False

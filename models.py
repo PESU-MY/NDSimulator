@@ -115,3 +115,8 @@ class Skill:
         
         # --- 追加: 同一フレームでの多重発動防止用 ---
         self.last_used_frame = -1
+
+        # ▼▼▼ 追加: 最大発動回数制限 (戦闘中N回まで) ▼▼▼
+        # JSONで "max_trigger_count": 1 と指定すれば、1回発動後に停止する
+        self.max_trigger_count = kwargs.get('max_trigger_count', None)
+        # ▲▲▲ 追加ここまで ▲▲▲

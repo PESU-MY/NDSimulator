@@ -41,7 +41,7 @@
         "effect_no": 2,
         "buff_type": "heal_effectiveness_buff",
         "stack_name": "RefreshHeart",
-        "max_stack": 15,
+        "max_stack": 5,
         "value_list": [0.0386, 0.0415, 0.0445, 0.0475, 0.0504, 0.0534, 0.0564, 0.0594, 0.0623, 0.0653],
         "duration": 15,
         "description": "受ける回復量UPスタック"
