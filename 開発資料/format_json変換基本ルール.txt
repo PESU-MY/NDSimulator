@@ -369,16 +369,30 @@ JSONには、formatted.txt に明示的な指定がない限り記載しなく�
 ■ 数値の調整（scaling_factor）
 - ゲーム内の表記（例: 1.12%）をそのまま `value` に書きつつ、計算では特殊な倍率（例: HPの1/5）を適用したい場合、
   `"scaling_factor": 0.2` のように追記することで、`value * scaling_factor` の値が適用されます。
-
 ■ 新規トリガータイプ
 - コア命中時
   "trigger_type": "core_hit",
-  "trigger_value": 1  // 1回命中するたびに発動
-  
-  記述例:
-  {
-    "trigger_type": "core_hit",
-    "trigger_value": 1,
-    "effect_type": "buff",
-    "kwargs": { "buff_type": "pierce_dmg_buff", "value": 0.1, "duration": 10 }
+  "trigger_value": 1
+  ※ 攻撃がコアに命中するたびにカウントが進みます。
+
+■ バフの種類による条件指定
+- 特定のバフ効果がかかっているかを条件にする場合、タグを付けなくても `buff_type` で判定可能です。
+
+  記述例: 自分に「命中率バフ」がかかっている時
+  "condition": {
+    "self_has_buff_type": "hit_rate_buff"
   }
+
+  記述例: ターゲットに「分配ダメージバフ」がかかっている時
+  "target_condition": {
+    "has_buff_type": "split_dmg_buff"
+  }
+
+  【主な buff_type 一覧】
+  - hit_rate_buff       (命中率)
+  - split_dmg_buff      (分配ダメージ)
+  - dot_dmg_buff        (持続ダメージ強化 ※DoT付与状態ではない)
+  - atk_buff_rate       (攻撃力%)
+  - charge_speed        (チャージ速度)
+  - reload_speed_rate   (リロード速度)
+  - shield              (バリア)

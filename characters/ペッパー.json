@@ -19,7 +19,7 @@
       "effect_type": "heal",
       "target": "allies",
       "target_condition": {
-        "type": "lowest_hp_ratio",
+        "type": "lowest_hp",
         "count": 1
       },
       "kwargs": {

@@ -322,6 +322,9 @@ max_trigger_count       : (int) 戦闘中、この回数までしか発動しな
 【Target Conditions】
 highest_base_charge_time: (type) 武器の基礎チャージ時間（charge_time）が長い順にソートして選択。
                           RL/SR以外は0として扱われる。
-
+has_buff_type           : (str) 対象が指定した buff_type のバフを持っているか。
+not_has_buff_type       : (str) 対象が指定した buff_type のバフを持っていないか。
+self_has_buff_type      : (str) 発動者が指定した buff_type のバフを持っているか。
+self_not_has_buff_type  : (str) 発動者が指定した buff_type のバフを持っていないか。
 【Scaling Options】
 scaling_factor          : (float) scale_by_caster_stats 等で計算された最終値に、さらにこの値を乗算する。

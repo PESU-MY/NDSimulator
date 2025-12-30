@@ -60,7 +60,7 @@
           "effect_type": "damage",
           "target": "enemy",
           "condition": {
-            "self_hp_ratio_min": 1
+            "hp_ratio_min": 1
           },
           "kwargs": {
             "effect_no": 4,

@@ -287,3 +287,15 @@ JSON仕様: value が 2.0 (200%) 以下なら「割合回復（最大HP×value�
 
 2. 確認事項
    - 貫通ダメージバフ: `pierce_dmg_buff` は既にダメージ計算（バケット2）に実装済みであることを確認。
+
+【直近の修正・実装項目】（YYYY/MM/DD 更新）
+
+1. コアヒット時トリガーの実装
+   - トリガータイプ `core_hit` を実装。
+   - `CharacterStatsMixin.calculate_strict_damage` の戻り値を `(damage, is_crit)` から `(damage, is_crit, is_core)` の3値に変更。
+   - これに伴い、`character_action.py`, `engine.py`, `engine_skills.py` の呼び出し元を修正し、戻り値を3つで受け取るように統一。
+
+2. バフ種類による条件判定の実装
+   - タグ（tag）ではなく、バフの内部タイプ（buff_type）で判定を行う条件キーを追加。
+   - `self_has_buff_type` / `has_buff_type`: 指定した種類のバフ（例: hit_rate_buff, split_dmg_buff）を持っていればTrue。
+   - `engine_skills.py` の `should_apply_skill` および `check_target_condition` に判定ロジックを追加。

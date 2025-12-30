@@ -1,0 +1,105 @@
+{
+  "name": "ミサト",
+  "weapon_type": "SMG",
+  "burst_stage": "1",
+  "element": "Iron",
+  "class": "Supporter",
+  "squad": "NERV",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.00,
+    "damage_rate": 0.081,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 射撃マニュアル (スタック)",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "hit_rate_buff",
+        "stack_name": "ShootingManual",
+        "max_stack": 3,
+        "value_list": [0.0252, 0.028, 0.0308, 0.0336, 0.0364, 0.0392, 0.042, 0.0448, 0.0476, 0.0504],
+        "duration": 5,
+        "description": "射撃マニュアル：命中率UPスタック"
+      }
+    },
+    {
+      "name": "Skill 1: 射撃マニュアル (回復)",
+      "trigger_type": "shot_count",
+      "trigger_value": 120,
+      "effect_type": "heal",
+      "target": "allies",
+      "target_condition": {
+        "type": "lowest_hp",
+        "count": 1
+      },
+      "kwargs": {
+        "effect_no": 2,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [0.0402, 0.0447, 0.0491, 0.0536, 0.0581, 0.0625, 0.067, 0.0715, 0.076, 0.0804],
+        "description": "HP割合が低い味方1機を回復"
+      }
+    },
+    {
+      "name": "Skill 2: 回復補助 (バリア特効)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_stack_min": 1,
+        "stack_name": "ShootingManual"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "dummy_buff",
+        "value_list": [0.75, 0.8333, 0.9166, 1.0, 1.0833, 1.1666, 1.25, 1.3333, 1.4166, 1.5],
+        "duration": 1.1,
+        "description": "バリアに与えるダメージUP (dummy)"
+      }
+    },
+    {
+      "name": "Skill 2: 回復補助 (与回復量UP)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_stack_min": 3,
+        "stack_name": "ShootingManual"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "heal_effectiveness_buff",
+        "value_list": [0.1502, 0.1669, 0.1836, 0.2003, 0.217, 0.2337, 0.2504, 0.2671, 0.2838, 0.3005],
+        "duration": 1.1,
+        "description": "与えるHP回復量UP"
+      }
+    },
+    {
+      "name": "バースト: 休息命令",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "regenerate",
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [0.0242, 0.0271, 0.03, 0.033, 0.0359, 0.0388, 0.0418, 0.0447, 0.0476, 0.0506],
+        "duration": 5,
+        "description": "1秒間隔で持続回復"
+      }
+    }
+  ]
+}

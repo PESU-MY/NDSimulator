@@ -1,0 +1,82 @@
+{
+  "name": "ミルク",
+  "weapon_type": "SR",
+  "burst_stage": "1",
+  "element": "Water",
+  "class": "Attacker",
+  "squad": "カフェ・スウィーティー",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 負けず嫌い",
+      "trigger_type": "time_interval",
+      "trigger_value": 20.0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 2
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [0.1751, 0.191, 0.2069, 0.2228, 0.2387, 0.2546, 0.2706, 0.2865, 0.3024, 0.3183],
+        "duration": 10
+      }
+    },
+    {
+      "name": "Skill 2: ミルクドーピング",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "hp_ratio_min": 0.8
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "crit_dmg_buff",
+        "value_list": [0.0612, 0.0668, 0.0723, 0.0779, 0.0835, 0.089, 0.0946, 0.1002, 0.1057, 0.1113],
+        "duration": 1.1,
+        "description": "HP80%以上で維持"
+      }
+    },
+    {
+      "name": "バースト: 勝利に向かって",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [2.0204, 2.204, 2.3877, 2.5714, 2.7551, 2.9387, 3.1224, 3.3061, 3.4897, 3.6734],
+            "description": "最終防御力が最も高い敵1機にダメージ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "drain",
+            "value_list": [0.0888, 0.0969, 0.105, 0.1131, 0.1212, 0.1293, 0.1373, 0.1454, 0.1535, 0.1616],
+            "duration": 10,
+            "description": "攻撃ダメージのn%回復"
+          }
+        }
+      ]
+    }
+  ]
+}

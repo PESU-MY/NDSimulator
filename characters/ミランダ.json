@@ -1,0 +1,109 @@
+{
+  "name": "ミランダ",
+  "weapon_type": "SMG",
+  "burst_stage": "1",
+  "element": "Fire",
+  "class": "Supporter",
+  "squad": "A.C.P.U.",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.43,
+    "damage_rate": 0.108,
+    "core_damage_rate": 2.50
+  },
+  "skills": [
+    {
+      "name": "Skill 1: ヘルスアップ！ (全体)",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "hit_rate_buff",
+        "value_list": [0.0331, 0.0355, 0.0378, 0.0402, 0.0426, 0.0449, 0.0473, 0.0496, 0.052, 0.0544],
+        "duration": 5,
+        "description": "味方全体に命中率UP"
+      }
+    },
+    {
+      "name": "Skill 1: ヘルスアップ！ (SMG限定)",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "weapon_type": "SMG"
+      },
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "hit_rate_buff",
+        "value_list": [0.0209, 0.0228, 0.0247, 0.0266, 0.0285, 0.0303, 0.0322, 0.0341, 0.036, 0.0379],
+        "duration": 5,
+        "description": "SMG所持味方に命中率UP"
+      }
+    },
+    {
+      "name": "Skill 2: ウェイクアップ！",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "crit_dmg_buff",
+        "value_list": [0.1949, 0.2099, 0.2249, 0.2399, 0.2549, 0.2699, 0.2849, 0.2999, 0.3149, 0.3299],
+        "duration": 10
+      }
+    },
+    {
+      "name": "バースト: パワーアップ！",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 1,
+        "exclude_self": true
+      },
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "自分を除く攻撃力最大1機(不在時自分)"
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "highest_atk",
+            "count": 1,
+            "exclude_self": true
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.2387, 0.2571, 0.2755, 0.2938, 0.3122, 0.3306, 0.3489, 0.3673, 0.3857, 0.404],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "highest_atk",
+            "count": 1,
+            "exclude_self": true
+          },
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "crit_dmg_buff",
+            "value_list": [0.3322, 0.3578, 0.3834, 0.4089, 0.4345, 0.4601, 0.4856, 0.5112, 0.5367, 0.5623],
+            "duration": 10
+          }
+        }
+      ]
+    }
+  ]
+}

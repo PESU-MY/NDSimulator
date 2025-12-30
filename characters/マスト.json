@@ -125,7 +125,7 @@
           "target": "self",
           "kwargs": {
             "effect_no": 4,
-            "buff_type": "max_hp_buff",
+            "buff_type": "max_hp_rate",
             "scale_by_caster_stats": true,
             "target_stat": "max_hp",
             "stat_type": "finally",
@@ -145,7 +145,7 @@
           },
           "kwargs": {
             "effect_no": 4,
-            "buff_type": "max_hp_buff",
+            "buff_type": "max_hp_rate",
             "scale_by_caster_stats": true,
             "target_stat": "max_hp",
             "stat_type": "finally",

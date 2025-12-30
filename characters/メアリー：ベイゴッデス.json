@@ -1,0 +1,162 @@
+{
+  "name": "メアリー：ベイゴッデス",
+  "weapon_type": "SR",
+  "burst_stage": "1",
+  "element": "Water",
+  "class": "Supporter",
+  "squad": "セラフィム",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 1.50,
+    "damage_rate": 0.6595,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 海辺の日差し",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": false,
+        "description": "フルバースト時、段階別に持続回復 (下位効果スタック)"
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "regenerate",
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.0062, 0.0067, 0.0072, 0.0076, 0.0081, 0.0086, 0.0091, 0.0096, 0.01, 0.0105],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "regenerate",
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.0218, 0.0235, 0.0252, 0.0268, 0.0285, 0.0302, 0.0319, 0.0336, 0.0352, 0.0369],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "regenerate",
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.0405, 0.0436, 0.0468, 0.0499, 0.053, 0.0561, 0.0592, 0.0624, 0.0655, 0.0686],
+            "duration": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 足を濡らす波",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "element": "Water"
+      },
+      "kwargs": {
+        "trigger_all_stages": false,
+        "description": "バースト使用時、段階別に有利コードダメUP (下位効果スタック)"
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "element_damage_buff",
+            "value_list": [0.0343, 0.0536, 0.073, 0.0924, 0.1117, 0.1311, 0.1504, 0.1698, 0.1892, 0.2085],
+            "duration": 3
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "element_damage_buff",
+            "value_list": [0.0343, 0.0459, 0.0575, 0.0691, 0.0807, 0.0924, 0.104, 0.1156, 0.1272, 0.1388],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "element_damage_buff",
+            "value_list": [0.0297, 0.0357, 0.0417, 0.0476, 0.0536, 0.0596, 0.0656, 0.0716, 0.0776, 0.0836],
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: 静かな水面",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "atk_buff_rate",
+            "value_list": [0.1372, 0.1478, 0.1584, 0.1689, 0.1795, 0.19, 0.2006, 0.2112, 0.2217, 0.2323],
+            "duration": 3
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 8,
+            "buff_type": "max_hp_rate",
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [0.1647, 0.1774, 0.19, 0.2027, 0.2154, 0.228, 0.2407, 0.2534, 0.2661, 0.2787],
+            "duration": 10,
+            "description": "発動者の最大HP基準で最大HP UP"
+          }
+        }
+      ]
+    }
+  ]
+}

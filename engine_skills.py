@@ -80,6 +80,18 @@ class SkillEngineMixin:
         if "squad" in condition:
             if target.squad != condition["squad"]: return False
 
+        # ▼▼▼ 追加: ターゲットが指定した種類のバフを持っているか ▼▼▼
+        # 使用例: "has_buff_type": "shield" (バリア持ちのみ対象)
+        if "has_buff_type" in condition:
+            b_type = condition["has_buff_type"]
+            # get_active_buffs はそのタイプの有効なバフのリストを返す。空ならFalse
+            if not target.buff_manager.get_active_buffs(b_type, frame): return False
+        
+        if "not_has_buff_type" in condition:
+            b_type = condition["not_has_buff_type"]
+            if target.buff_manager.get_active_buffs(b_type, frame): return False
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         return True
 
     def should_apply_skill(self, skill, frame, caster=None):
@@ -198,6 +210,17 @@ class SkillEngineMixin:
                         found = True
                         break
                 if found: return False
+            # ▲▲▲ 追加ここまで ▲▲▲
+
+            # ▼▼▼ 追加: 自身が指定した種類のバフを持っているか ▼▼▼
+            # 使用例: "self_has_buff_type": "hit_rate_buff"
+            if "self_has_buff_type" in skill.condition and caster:
+                b_type = skill.condition["self_has_buff_type"]
+                if not caster.buff_manager.get_active_buffs(b_type, frame): return False
+            
+            if "self_not_has_buff_type" in skill.condition and caster:
+                b_type = skill.condition["self_not_has_buff_type"]
+                if caster.buff_manager.get_active_buffs(b_type, frame): return False
             # ▲▲▲ 追加ここまで ▲▲▲
 
         if skill.condition and "has_squad_mate_present" in skill.condition and caster:
