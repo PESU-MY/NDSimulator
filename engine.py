@@ -132,11 +132,13 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
                     if frame <= dot['end_frame']:
                         total_mult = dot['multiplier'] * dot.get('count', 1)
                         profile = dot.get('profile', DamageProfile.create())
-                        dmg, _ = char.calculate_strict_damage(
+                        # ▼▼▼ 修正: 戻り値を3つ受け取る (dmg, _, _) ▼▼▼
+                        dmg, _, _ = char.calculate_strict_damage(
                             total_mult, profile, is_full_burst, frame, 
                             self.ENEMY_DEF, self.enemy_element, self.enemy_core_size, self.enemy_size,
                             debuff_manager=self.enemy_debuffs
                         )
+                        # ▲▲▲ 修正ここまで ▲▲▲
                         
                         self.log(f"[DoT] 時間:{frame/60:>6.2f}s | Source:{name} | Dmg:{dmg:10,.0f} | Stacks:{dot.get('count', 1)}", target_name=char.name)
 

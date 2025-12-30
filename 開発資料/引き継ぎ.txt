@@ -277,3 +277,13 @@ JSON仕様: value が 2.0 (200%) 以下なら「割合回復（最大HP×value�
    - スケーリング補正: JSONの value を維持したまま計算倍率を変えられる scaling_factor を実装。
    - 回数限定スキル: 戦闘中にN回しか発動しない max_trigger_count を実装。
    - ターゲット条件: 元のチャージ時間が長い順に選択する highest_base_charge_time を実装。
+
+【直近の修正・実装項目】（YYYY/MM/DD 更新）
+
+1. 機能追加・仕様変更
+   - コアヒット時トリガーの実装: `trigger_type: "core_hit"` を実装。
+     これに伴い、`calculate_strict_damage` の戻り値を `(damage, is_crit)` から `(damage, is_crit, is_core)` の3値に変更。
+     `character_action.py`, `engine.py`, `engine_skills.py` の呼び出し元を全て修正済み。
+
+2. 確認事項
+   - 貫通ダメージバフ: `pierce_dmg_buff` は既にダメージ計算（バケット2）に実装済みであることを確認。

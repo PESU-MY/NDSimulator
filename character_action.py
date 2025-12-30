@@ -74,18 +74,29 @@ class CharacterActionMixin:
             crit_count = 0
             
             for _ in range(current_pellets):
-                dmg, is_crit = self.calculate_strict_damage(
+                # ▼▼▼ 修正: 戻り値を3つ (dmg, is_crit, is_core) で受け取る ▼▼▼
+                dmg, is_crit, is_core = self.calculate_strict_damage(
                     per_pellet_multiplier, prof, is_full_burst, frame, 
                     enemy_def=simulator.ENEMY_DEF, enemy_element=simulator.enemy_element,
                     enemy_core_size=simulator.enemy_core_size, enemy_size=simulator.enemy_size,
                     debuff_manager=simulator.enemy_debuffs 
                 )
+                # ▲▲▲ 修正ここまで ▲▲▲
                 total_shot_dmg += dmg
                 if dmg > 0: hit_count += 1
                 if is_crit: crit_count += 1
+
+                # ▼▼▼ 追加: コアヒットカウント ▼▼▼
+                if is_core: core_hit_count += 1
+                # ▲▲▲
             
             self.cumulative_pellet_hits += hit_count
             self.cumulative_crit_hits += crit_count
+
+            # ▼▼▼ 追加: 累計コアヒット数の加算 (未定義なら初期化) ▼▼▼
+            if not hasattr(self, 'cumulative_core_hits'): self.cumulative_core_hits = 0
+            self.cumulative_core_hits += core_hit_count
+            # ▲▲▲
             
             self.total_damage += total_shot_dmg
             self.damage_breakdown['Weapon Attack'] += total_shot_dmg
@@ -100,6 +111,11 @@ class CharacterActionMixin:
             damage_this_frame += self.process_trigger('ammo_empty', self.current_ammo, frame, is_full_burst, simulator)
             damage_this_frame += self.process_trigger('pellet_hit', self.cumulative_pellet_hits, frame, is_full_burst, simulator, delta=hit_count)
             damage_this_frame += self.process_trigger('critical_hit', self.cumulative_crit_hits, frame, is_full_burst, simulator, delta=crit_count)
+
+            # ▼▼▼ 追加: core_hit トリガーの発火 ▼▼▼
+            damage_this_frame += self.process_trigger('core_hit', self.cumulative_core_hits, frame, is_full_burst, simulator, delta=core_hit_count)
+            # ▲▲▲ 追加ここまで ▲▲▲
+            
             # ▼▼▼ 追加: フルチャージ攻撃判定とトリガー処理 ▼▼▼
             # 現状のシミュ仕様では、SR/RL/CHARGEタイプは必ずチャージ時間を経て発射されるため、常にフルチャージ扱いとする。
             # 将来タップ撃ちを実装する場合は、ここでチャージ率などを判定する。

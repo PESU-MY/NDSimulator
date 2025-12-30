@@ -369,3 +369,16 @@ JSONには、formatted.txt に明示的な指定がない限り記載しなく�
 ■ 数値の調整（scaling_factor）
 - ゲーム内の表記（例: 1.12%）をそのまま `value` に書きつつ、計算では特殊な倍率（例: HPの1/5）を適用したい場合、
   `"scaling_factor": 0.2` のように追記することで、`value * scaling_factor` の値が適用されます。
+
+■ 新規トリガータイプ
+- コア命中時
+  "trigger_type": "core_hit",
+  "trigger_value": 1  // 1回命中するたびに発動
+  
+  記述例:
+  {
+    "trigger_type": "core_hit",
+    "trigger_value": 1,
+    "effect_type": "buff",
+    "kwargs": { "buff_type": "pierce_dmg_buff", "value": 0.1, "duration": 10 }
+  }

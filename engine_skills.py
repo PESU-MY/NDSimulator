@@ -732,11 +732,13 @@ class SkillEngineMixin:
             
                 skill_dmg = 0
                 for _ in range(loops):
-                    d, _ = caster.calculate_strict_damage(
+                    # ▼▼▼ 修正: 戻り値を3つ受け取る (d, _, _) ▼▼▼
+                    d, _, _ = caster.calculate_strict_damage(
                         mult, profile, is_full_burst, frame, 
                         self.ENEMY_DEF, self.enemy_element, self.enemy_core_size, self.enemy_size,
                         debuff_manager=self.enemy_debuffs
                     )
+                    # ▲▲▲ 修正ここまで ▲▲▲
                     skill_dmg += d
                 
                 buff_debug = caster.buff_manager.get_active_buffs_debug(frame)
