@@ -115,7 +115,19 @@ class CharacterStatsMixin:
         is_pierce_buff = self.buff_manager.get_total_value('is_pierce', frame)
         if profile['is_pierce'] or is_pierce_buff > 0: 
             bucket_dmg += self.buff_manager.get_total_value('pierce_dmg_buff', frame)
-            
+
+        # ▼▼▼ 追加: 発射体爆発ダメージバフの計算 ▼▼▼
+        is_explosive_buff = self.buff_manager.get_total_value('is_explosive', frame)
+        if profile['is_explosive'] or is_explosive_buff > 0:
+            bucket_dmg += self.buff_manager.get_total_value('explosive_dmg_buff', frame)
+        # ▲▲▲ 追加ここまで ▲▲▲
+
+        # ▼▼▼ 追加: 発射体付着ダメージバフの計算 ▼▼▼
+        is_sticky_buff = self.buff_manager.get_total_value('is_sticky', frame)
+        if profile['is_sticky'] or is_sticky_buff > 0:
+            bucket_dmg += self.buff_manager.get_total_value('sticky_dmg_buff', frame)
+        # ▲▲▲ 追加ここまで ▲▲▲
+
         if profile['is_ignore_def']: 
             bucket_dmg += self.buff_manager.get_total_value('ignore_def_dmg_buff', frame)
             

@@ -299,3 +299,15 @@ JSON仕様: value が 2.0 (200%) 以下なら「割合回復（最大HP×value�
    - タグ（tag）ではなく、バフの内部タイプ（buff_type）で判定を行う条件キーを追加。
    - `self_has_buff_type` / `has_buff_type`: 指定した種類のバフ（例: hit_rate_buff, split_dmg_buff）を持っていればTrue。
    - `engine_skills.py` の `should_apply_skill` および `check_target_condition` に判定ロジックを追加。
+
+【直近の修正・実装項目】（YYYY/MM/DD 更新）
+
+1. 新規属性・ダメージ計算の実装
+   - 発射体爆発ダメージ (`is_explosive`) と 発射体付着ダメージ (`is_sticky`) を実装。
+   - `models.py`: WeaponConfigで `is_explosive`, `is_sticky` フラグを読み込めるように拡張。
+   - `character_action.py`: 射撃時の DamageProfile に武器の属性フラグを反映。
+   - `character_stats.py`: ダメージ計算（バケット2）にて、攻撃が該当属性を持つ場合に `explosive_dmg_buff` / `sticky_dmg_buff` を加算する処理を追加。
+
+2. 武器データの更新
+   - ロケットランチャー（RL）の標準定義 (`weapons/rl_standard.json`) に `is_explosive: true` を追加。
+     これにより、RLの通常攻撃は自動的に「爆発ダメージ」として扱われる。

@@ -58,7 +58,9 @@ class CharacterActionMixin:
                 is_weapon_attack=True, 
                 is_charge_attack=(self.weapon.type in ["RL", "SR", "CHARGE"]), 
                 charge_mult=self.weapon.charge_mult if self.weapon.type in ["RL", "SR", "CHARGE"] else 1.0, 
-                force_full_burst=force_fb, is_pierce=self.weapon.is_pierce
+                force_full_burst=force_fb, is_pierce=self.weapon.is_pierce,
+                is_explosive=getattr(self.weapon, 'is_explosive', False),
+                is_sticky=getattr(self.weapon, 'is_sticky', False)
             )
             base_pellets = 10 if self.weapon.weapon_class == "SG" else 1
             pellet_add = self.buff_manager.get_total_value('pellet_count_add', frame)

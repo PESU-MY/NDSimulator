@@ -34,6 +34,11 @@ class WeaponConfig:
         self.hit_size = data.get('hit_size', default_hit_sizes.get(self.weapon_class, 5))
         
         self.is_pierce = data.get('is_pierce', False)
+
+        # ▼▼▼ 追加: 爆発・付着フラグの読み込み ▼▼▼
+        self.is_explosive = data.get('is_explosive', False)
+        self.is_sticky = data.get('is_sticky', False)
+        # ▲▲▲ 追加ここまで ▲▲▲
         self.disable_reload_buffs = data.get('disable_reload_buffs', False)
         self.disable_charge_buffs = data.get('disable_charge_buffs', False)
         self.disable_attack_speed_buffs = data.get('disable_attack_speed_buffs', False)

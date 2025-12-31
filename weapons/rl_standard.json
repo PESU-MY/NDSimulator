@@ -9,5 +9,6 @@
   "winddown_frames": 10,
   "charge_time": 1,
   "charge_mult": 2.5,
-  "hit_size": 1
+  "hit_size": 1,
+  "is_explosive": true
 }

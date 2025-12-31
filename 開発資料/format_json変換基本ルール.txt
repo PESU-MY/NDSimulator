@@ -396,3 +396,22 @@ JSONには、formatted.txt に明示的な指定がない限り記載しなく�
   - charge_speed        (チャージ速度)
   - reload_speed_rate   (リロード速度)
   - shield              (バリア)
+
+■ 武器データの記述（weapons/*.json）
+- ロケットランチャー等、通常攻撃を「爆発」扱いにする場合
+  "is_explosive": true
+
+- 「付着」扱いにする場合（現状は特定のスキル武器等を想定）
+  "is_sticky": true
+
+■ 爆発・付着関連のバフ記述（スキルのkwargs）
+- 【属性付与】 攻撃を爆発/付着属性扱いにしたい場合（A2のバーサクモード等）
+  "buff_type": "is_explosive"  (または "is_sticky")
+  "value": 1
+
+- 【ダメージ強化】 爆発/付着ダメージをアップさせたい場合
+  "buff_type": "explosive_dmg_buff" (または "sticky_dmg_buff")
+  "value": 0.15  // 15%UP
+  
+  ※ ロケットランチャー(RL)は元々 `is_explosive` を持っているため、
+     RLキャラには `explosive_dmg_buff` を付与するだけでダメージが伸びます。
