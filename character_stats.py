@@ -133,6 +133,13 @@ class CharacterStatsMixin:
         is_sticky_buff = self.buff_manager.get_total_value('is_sticky', frame)
         if profile['is_sticky'] or is_sticky_buff > 0:
             bucket_dmg += self.buff_manager.get_total_value('sticky_dmg_buff', frame)
+
+        # ▼▼▼ 追加: 順番攻撃ダメージバフの計算 ▼▼▼
+        # プロファイルにフラグがあるか、または「順番攻撃化バフ(is_sequential)」が付与されている場合に加算
+        is_sequential_buff = self.buff_manager.get_total_value('is_sequential', frame)
+        if profile.get('is_sequential', False) or is_sequential_buff > 0:
+            bucket_dmg += self.buff_manager.get_total_value('sequential_attack_dmg_buff', frame)
+        # ▲▲▲ 追加ここまで ▲▲▲
         # ▲▲▲ 追加ここまで ▲▲▲
         # ▼▼▼ 修正: 防御無視ダメージバフの加算条件を変更 ▼▼▼
         # 修正前: if profile['is_ignore_def']: 

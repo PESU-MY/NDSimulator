@@ -322,6 +322,8 @@ force_full_burst : フルバースト時の補正が乗る。特殊なダメー�
 def_debuff_fixed        : 防御力を固定値でダウンさせる（計算結果は0未満にはならない）
 explosive_dmg_buff      : 発射体爆発ダメージを増加させる（攻撃が is_explosive 属性を持つ場合のみ有効）
 sticky_dmg_buff         : 発射体付着ダメージを増加させる（攻撃が is_sticky 属性を持つ場合のみ有効）
+sequential_attack_dmg_buff : 順番攻撃ダメージを増加させる（攻撃が is_sequential 属性を持つ場合のみ有効）
+is_sequential              : (Flag) 攻撃に「順番攻撃」属性を付与する。
 
 【Skill Attributes (kwargs以外)】
 max_trigger_count       : (int) 戦闘中、この回数までしか発動しない。trigger_typeに関わらず制限される。

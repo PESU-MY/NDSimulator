@@ -83,7 +83,7 @@ class DamageProfile:
             'is_weapon_attack': False, 'range_bonus_active': False,
             'is_charge_attack': False, 'is_part_damage': False,
             'is_pierce': False, 'is_ignore_def': False,
-            'is_dot': False, 'is_sticky': False, 'is_explosive': False,
+            'is_dot': False, 'is_sticky': False, 'is_explosive': False,'is_sequential': False,
             'is_split': False, 'is_elemental': False,
             'burst_buff_enabled': True,
             'force_full_burst': False, 
