@@ -1,0 +1,111 @@
+{
+  "name": "紅蓮",
+  "weapon_type": "AR",
+  "burst_stage": "3",
+  "element": "Electric",
+  "class": "Attacker",
+  "squad": "パイオニア",
+  "stats": {
+    "max_ammo": 20,
+    "reload_time": 2.30,
+    "damage_rate": 0.2708,
+    "core_damage_rate": 2.00
+  },
+  "skills": [
+    {
+      "name": "Skill 1: 肉斬骨断",
+      "trigger_type": "shot_count",
+      "trigger_value": 10,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "atk_buff_rate",
+            "max_stack": 5,
+            "value_list": [0.1748, 0.1811, 0.1874, 0.1937, 0.2, 0.2063, 0.2126, 0.2189, 0.2252, 0.2315],
+            "duration": 5,
+            "description": "攻撃力UP (スタック)"
+          }
+        },
+        {
+          "effect_type": "lose_hp",
+          "target": "self",
+          "kwargs": {
+            "value": 0.0401,
+            "description": "現在HP減少"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 身剣合一 (反撃)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [0.8639, 0.9215, 0.9791, 1.0368, 1.0944, 1.152, 1.2096, 1.2672, 1.3248, 1.3824],
+        "description": "被弾時30%で反撃 (dummyトリガー)"
+      }
+    },
+    {
+      "name": "Skill 2: 身剣合一 (クリダメUP)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "hp_ratio_max": 0.6
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "crit_dmg_buff",
+        "value_list": [0.0413, 0.044, 0.0468, 0.0495, 0.0523, 0.0551, 0.0578, 0.0606, 0.0633, 0.0661],
+        "duration": 1.1,
+        "description": "HP60%以下でクリティカルダメージUP (持続)"
+      }
+    },
+    {
+      "name": "バースト: 紅蓮一閃",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "condition": {
+            "hp_ratio_max": 0.5
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "crit_rate_buff",
+            "value_list": [0.1223, 0.1305, 0.1386, 0.1468, 0.1549, 0.1631, 0.1712, 0.1794, 0.1875, 0.1957],
+            "duration": 10,
+            "description": "HP50%以下でクリティカル確率UP"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "multiplier_list": [5.3071, 5.661, 6.0148, 6.3686, 6.7224, 7.0762, 7.43, 7.7838, 8.1376, 8.4915]
+          }
+        }
+      ]
+    }
+  ]
+}
