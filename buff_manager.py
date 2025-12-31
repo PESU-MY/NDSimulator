@@ -8,6 +8,7 @@ class BuffManager:
         # ▲▲▲
 
     def add_buff(self, buff_type, value, duration_frames, current_frame, source=None, stack_name=None, max_stack=1, tag=None, shot_duration=0, remove_on_reload=False, stack_amount=1, linked_remove_tag=None, disable_stack_increase=False, allow_tags=None): # ← 引数追加
+        self.cache = {} # ★追加
         buff_data = {
             'val': value, 'end_frame': current_frame + duration_frames, 
             'source': source, 'tag': tag, 'shot_life': shot_duration, 'remove_on_reload': remove_on_reload
@@ -15,9 +16,14 @@ class BuffManager:
             ,'linked_remove_tag': linked_remove_tag  # ▼ 追加: 連動削除する対象のタグ
             ,'allow_tags': allow_tags # ← 保存
         }
+
         if stack_name:
             if stack_name in self.active_stacks:
                 stack_data = self.active_stacks[stack_name]
+                # ▼▼▼ 修正: 最大スタック数を動的に計算 ▼▼▼
+                eff_max = self.get_effective_max_stack(stack_name, stack_data['max_stack'], current_frame)
+                stack_data['count'] = min(eff_max, stack_data['count'] + stack_amount)
+                # ▲▲▲ 修正ここまで (以前は min(stack_data['max_stack'], ...) でした)
                 stack_data['count'] = min(stack_data['max_stack'], stack_data['count'] + stack_amount)
                 stack_data['start_frame'] = current_frame
                 stack_data['end_frame'] = current_frame + duration_frames
@@ -29,7 +35,9 @@ class BuffManager:
                 stack_data['allow_tags'] = allow_tags # ← 保存
                 return stack_data['count']
             else:
+                eff_max = self.get_effective_max_stack(stack_name, max_stack, current_frame)
                 self.active_stacks[stack_name] = {
+                    'count': min(eff_max, stack_amount),
                     'count': min(max_stack, stack_amount), 'max_stack': max_stack, 'buff_type': buff_type,
                     'unit_value': value, 'end_frame': current_frame + duration_frames,
                     'tag': tag, 'shot_life': shot_duration, 'remove_on_reload': remove_on_reload,
@@ -130,7 +138,7 @@ class BuffManager:
 
             # 増減処理
             old_count = s_data['count']
-            max_stack = s_data['max_stack']
+            max_stack = self.get_effective_max_stack(stack_name, s_data['max_stack'], frame)
             new_count = max(1, min(max_stack, old_count + delta))
             
             if delta > 0:
@@ -490,3 +498,11 @@ class BuffManager:
                     extended = True
                 
         return extended
+    
+    # ▼▼▼ 追加: 実質的な最大スタック数を計算するメソッド ▼▼▼
+    def get_effective_max_stack(self, stack_name, base_max, current_frame):
+        # "max_stack_<スタック名>" というバフ値があれば、それをベース最大値に加算する
+        # 例: max_stack_LockOn が 10 なら、最大数が +10 される
+        bonus = self.get_total_value(f"max_stack_{stack_name}", current_frame)
+        return int(base_max + bonus)
+    # ▲▲▲ 追加ここまで ▲▲▲

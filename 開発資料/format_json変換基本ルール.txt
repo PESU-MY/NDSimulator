@@ -429,3 +429,16 @@ JSONには、formatted.txt に明示的な指定がない限り記載しなく�
 - 「チャージ中、n秒ごとに」という効果
   "trigger_type": "charging_time",
   "trigger_value": 0.2  // 秒数指定
+
+  ■ チャージ時間・スタック数関連の特殊バフ
+
+- チャージ時間を固定する
+  "buff_type": "charge_time_fixed",
+  "value": 3.2  // 秒数指定。武器の基本チャージ時間より優先される。
+
+- 特定のスタックバフの最大数を増やす
+  バフタイプ名を "max_stack_" + "対象のスタック名" とする。
+  
+  記述例: "LockOn" スタックの上限を10増やす
+  "buff_type": "max_stack_LockOn",
+  "value": 10

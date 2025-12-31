@@ -297,7 +297,14 @@ class CharacterStatsMixin:
     # ▲▲▲
 
     def get_charge_time(self, frame):
-        base_time = self.weapon.charge_time
+        # ▼▼▼ 追加: 固定チャージ時間の確認 ▼▼▼
+        # "charge_time_fixed" バフがある場合、それをベース時間として強制適用する
+        fixed_val = self.buff_manager.get_total_value('charge_time_fixed', frame)
+        if fixed_val > 0:
+            base_time = fixed_val
+        else:
+            base_time = self.weapon.charge_time
+        # ▲▲▲ 追加ここまで ▲▲▲
         if base_time <= 0: return 0
         
         # チャージ速度バフ(%)

@@ -152,25 +152,52 @@ class CharacterActionMixin:
                 if self.state_timer == 0: self.current_action_duration = self.get_buffed_frames('attack', self.weapon.windup_frames, frame)
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration: self.state = "CHARGING"; self.state_timer = 0
-            elif self.state == "CHARGING":
-                if self.state_timer == 0:
-                    base_frames = max(1, self.weapon.charge_time * simulator.FPS)
-                    self.current_action_duration = self.get_buffed_frames('charge', base_frames, frame)
-
-                # ▼▼▼ 追加: チャージ時間トリガーの処理 ▼▼▼
-                # 累積チャージ時間を初期化・加算
-                if not hasattr(self, 'cumulative_charge_time'): self.cumulative_charge_time = 0.0
+            # ▼▼▼ 修正: リアルタイムチャージ計算への変更 ▼▼▼
                 
+                # 1. チャージ開始時の初期化
+                if self.state_timer == 0:
+                    self.charge_progress = 0.0  # 現在のチャージ量（0%からスタート）
+
+                # 2. 目標チャージ量の計算（ベース時間の再計算）
+                #    固定時間バフ(charge_time_fixed)があればそれを優先、なければ武器の基本値
+                fixed_val = self.buff_manager.get_total_value('charge_time_fixed', frame)
+                if fixed_val > 0:
+                    base_sec = fixed_val
+                else:
+                    base_sec = self.weapon.charge_time
+                
+                #    チャージ時間短縮(charge_time_cut)の適用
+                cut_val = self.buff_manager.get_total_value('charge_time_cut', frame)
+                base_sec = max(0, base_sec - cut_val)
+                
+                #    必要量（フレーム数換算）
+                required_progress = base_sec * simulator.FPS
+
+                # 3. 現在の速度でチャージを進める
+                #    速度バフ/デバフを取得 (例: +50%なら1.5倍速、-50%なら0.5倍速で進む)
+                speed_buff = self.buff_manager.get_total_value('charge_speed', frame)
+                current_speed_mult = 1.0 + speed_buff
+                
+                #    速度が0以下にならないよう最低保証（止まってしまうのを防ぐ場合）
+                current_speed_mult = max(0.01, current_speed_mult)
+                
+                self.charge_progress += current_speed_mult
+
+                # 4. トリガー処理 (charging_time) ※前回実装分を維持
+                if not hasattr(self, 'cumulative_charge_time'): self.cumulative_charge_time = 0.0
                 dt = 1.0 / simulator.FPS
                 self.cumulative_charge_time += dt
-                
-                # トリガー 'charging_time' を発火
-                # JSONで "trigger_value": 0.2 とすれば、0.2秒経過するたびに発動します
                 damage_this_frame += self.process_trigger('charging_time', self.cumulative_charge_time, frame, is_full_burst, simulator, delta=dt)
-                # ▲▲▲ 追加ここまで ▲▲▲
-                
+
                 self.state_timer += 1
-                if self.state_timer >= self.current_action_duration: self.state = "SHOOTING"; self.state_timer = 0
+
+                # 5. チャージ完了判定
+                #    進捗が必要量に達したら発射へ移行
+                if self.charge_progress >= required_progress:
+                    self.state = "SHOOTING"
+                    self.state_timer = 0
+                    self.charge_progress = 0.0
+                # ▲▲▲ 修正ここまで ▲▲▲
             elif self.state == "SHOOTING":
                 perform_shoot()
                 self.state = "WINDDOWN"; self.state_timer = 0
