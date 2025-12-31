@@ -157,7 +157,9 @@ is_sticky               : (Flag) 攻撃に「発射体付着」属性を付与�
 リロード完了時              : reload_complete
                               ※ trigger_value: 0
 | **遮蔽物回復を受けた時** | `on_receive_cover_heal` | `trigger_value`: 0 |
-
+full_charge             : フルチャージ攻撃を行った時（ダメージ計算前）。値は常に1。
+full_charge_count       : フルチャージ攻撃を行った時（ダメージ計算後）。値は累積回数。
+charging_time           : チャージ中の累積経過時間に応じて発動（trigger_valueで秒数を指定、例: 0.2）
 
 バースト段階変更            : change_burst_stage (effect_typeとして指定)
                               ※ kwargs: { "value": "1" }

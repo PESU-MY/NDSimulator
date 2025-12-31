@@ -415,3 +415,17 @@ JSONには、formatted.txt に明示的な指定がない限り記載しなく�
   
   ※ ロケットランチャー(RL)は元々 `is_explosive` を持っているため、
      RLキャラには `explosive_dmg_buff` を付与するだけでダメージが伸びます。
+
+■ フルチャージ攻撃関連のトリガー使い分け
+- 攻撃自体にバフを乗せたい場合（計算前判定）
+  "trigger_type": "full_charge",
+  "trigger_value": 1
+
+- 「フルチャージ攻撃○回ごと」など回数を条件にする場合（計算後判定）
+  "trigger_type": "full_charge_count",
+  "trigger_value": 5
+
+■ チャージ継続系スキルの記述
+- 「チャージ中、n秒ごとに」という効果
+  "trigger_type": "charging_time",
+  "trigger_value": 0.2  // 秒数指定

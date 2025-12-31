@@ -71,6 +71,14 @@ class CharacterActionMixin:
             current_pellets = int(max(1, current_pellets))
             per_pellet_multiplier = self.weapon.multiplier / current_pellets
 
+            # ▼▼▼ 既存: 計算後フルチャージ回数トリガー (full_charge_count) ▼▼▼
+            # ダメージ計算の「後」に発動。累積回数(count)で判定します。
+            # 位置は変更せず、ここ（ループ後）に残します。
+            if self.weapon.type in ["RL", "SR", "CHARGE"]:
+                self.cumulative_full_charge_count += 1
+                damage_this_frame += self.process_trigger('full_charge_count', self.cumulative_full_charge_count, frame, is_full_burst, simulator)
+            # ▲▲▲
+
             total_shot_dmg = 0
             hit_count = 0
             crit_count = 0
@@ -148,6 +156,19 @@ class CharacterActionMixin:
                 if self.state_timer == 0:
                     base_frames = max(1, self.weapon.charge_time * simulator.FPS)
                     self.current_action_duration = self.get_buffed_frames('charge', base_frames, frame)
+
+                # ▼▼▼ 追加: チャージ時間トリガーの処理 ▼▼▼
+                # 累積チャージ時間を初期化・加算
+                if not hasattr(self, 'cumulative_charge_time'): self.cumulative_charge_time = 0.0
+                
+                dt = 1.0 / simulator.FPS
+                self.cumulative_charge_time += dt
+                
+                # トリガー 'charging_time' を発火
+                # JSONで "trigger_value": 0.2 とすれば、0.2秒経過するたびに発動します
+                damage_this_frame += self.process_trigger('charging_time', self.cumulative_charge_time, frame, is_full_burst, simulator, delta=dt)
+                # ▲▲▲ 追加ここまで ▲▲▲
+                
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration: self.state = "SHOOTING"; self.state_timer = 0
             elif self.state == "SHOOTING":

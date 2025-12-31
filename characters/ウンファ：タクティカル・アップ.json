@@ -1,0 +1,210 @@
+{
+  "name": "ウンファ：タクティカル・アップ",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "Absolute",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.6904,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "hit_size": 1,
+    "core_hit_rate_fixed": 2.00
+  },
+  "skills": [
+    {
+      "name": "カモフラージュスカーフ (Burst Trigger)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_buff",
+        "tag": "camouflage",
+        "duration": 5.0,
+        "description": "カモフラージュ：単一攻撃対象から除外、直接攻撃を受けると解除"
+      }
+    },
+    {
+      "name": "カモフラージュスカーフ (Full Charge Trigger)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "is_full_burst": true
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_buff",
+        "tag": "camouflage",
+        "duration": 5.0,
+        "description": "カモフラージュ：単一攻撃対象から除外、直接攻撃を受けると解除"
+      }
+    },
+    {
+      "name": "カモフラージュスカーフ中バフ",
+      "trigger_type": "time_interval",
+      "trigger_value": 0.2,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "condition": {
+        "self_has_tag": "camouflage"
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "is_ignore_def",
+            "value": 1,
+            "duration": 0.3,
+            "description": "通常攻撃が防御力無視ダメージに変化"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "ignore_def_dmg_buff",
+            "effect_no": 1,
+            "value_list": [0.2496, 0.2688, 0.288, 0.3072, 0.3264, 0.3456, 0.3648, 0.384, 0.4032, 0.4224],
+            "duration": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "name": "フォーメーションAS (Basic)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "tag": "formation_as"
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "squad": "Absolute"
+          },
+          "kwargs": {
+            "buff_type": "crit_rate_buff",
+            "effect_no": 2,
+            "value_list": [0.0482, 0.0519, 0.0556, 0.0593, 0.0631, 0.0668, 0.0705, 0.0742, 0.0779, 0.0816],
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "charge_dmg_buff",
+            "effect_no": 3,
+            "value_list": [0.2471, 0.2661, 0.2851, 0.3041, 0.3231, 0.3421, 0.3611, 0.3801, 0.3991, 0.4181],
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "effect_no": 4,
+            "value_list": [0.2496, 0.2688, 0.288, 0.3072, 0.3264, 0.3456, 0.3648, 0.384, 0.4032, 0.4224],
+            "duration": 99999
+          }
+        }
+      ]
+    },
+    {
+      "name": "フォーメーションAS (Additional for LT)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_has_tag": "formation_lt"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "explosive_dmg_buff",
+            "effect_no": 5,
+            "value_list": [0.0302, 0.0325, 0.0348, 0.0371, 0.0394, 0.0418, 0.0441, 0.0464, 0.0487, 0.0511],
+            "duration": 1.1
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "ignore_def_dmg_buff",
+            "effect_no": 6,
+            "value_list": [0.183, 0.1971, 0.2112, 0.2252, 0.2393, 0.2534, 0.2675, 0.2816, 0.2956, 0.3097],
+            "duration": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "name": "徹甲炸裂弾：デバフ付与",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "徹甲炸裂弾"
+      },
+      "effect_type": "debuff",
+      "target": "enemy",
+      "kwargs": {
+        "buff_type": "taken_dmg_debuff",
+        "tag": "徹甲炸裂弾_debuff",
+        "effect_no": 8,
+        "value_list": [0.1647, 0.1774, 0.19, 0.2027, 0.2154, 0.228, 0.2407, 0.2534, 0.2661, 0.2787],
+        "duration": 10.0
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "徹甲炸裂弾",
+    "trigger_type": "on_burst_enter",
+    "trigger_value": 0,
+    "cooldown_time": 20.0,
+    "effect_type": "weapon_change",
+    "target": "self",
+    "kwargs": {
+      "duration": 0,
+      "shot_duration": 1,
+      "tag": "徹甲炸裂弾",
+      "weapon_data": {
+        "name": "Ewnha Burst",
+        "type": "CHARGE",
+        "weapon_class": "SR",
+        "multiplier_list": [0.624, 0.672, 0.72, 0.768, 0.816, 0.864, 0.9119, 0.9599, 1.008, 1.056],
+        "max_ammo": 1,
+        "reload_frames": 0,
+        "windup_frames": 0,
+        "winddown_frames": 10,
+        "charge_time": 0.3,
+        "charge_mult": 3.0,
+        "hit_size": 1,
+        "is_explosive": true,
+        "is_ignore_def": true,
+        "description": "使用武器を変更"
+      }
+    }
+  }
+}

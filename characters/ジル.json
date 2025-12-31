@@ -179,8 +179,7 @@
           "effect_type": "buff",
           "target": "self",
           "kwargs": {
-            "buff_type": "dummy_buff",
-            "tag": "ignore_def_active", 
+            "buff_type": "is_ignore_def",
             "value": 1.0,
             "duration": 10
           }

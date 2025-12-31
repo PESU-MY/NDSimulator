@@ -1,0 +1,1947 @@
+[Buff] Applied フォーメーションAS (Basic)_Stage_0 (crit_rate_buff: 0.0816) to ウンファ：タクティカル・アップ
+[Buff] Applied フォーメーションAS (Basic)_Stage_1 (charge_dmg_buff: 0.4181) to Dummy_B1
+[Buff] Applied フォーメーションAS (Basic)_Stage_1 (charge_dmg_buff: 0.4181) to ウンファ：タクティカル・アップ
+[Buff] Applied フォーメーションAS (Basic)_Stage_1 (charge_dmg_buff: 0.4181) to モダニア
+[Buff] Applied フォーメーションAS (Basic)_Stage_1 (charge_dmg_buff: 0.4181) to Dummy_B3
+[Buff] Applied フォーメーションAS (Basic)_Stage_2 (atk_buff_rate: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:  1.22s | 弾数:  5/6   | Pellets: 1 | Dmg:   146,457 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42
+[Shoot] 時間:  2.60s | 弾数:  4/6   | Pellets: 1 | Dmg:   146,457 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42
+[Shoot] 時間:  3.98s | 弾数:  3/6   | Pellets: 1 | Dmg:   183,072 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:  5.35s | 弾数:  0/1   | Pellets: 1 | Dmg:   559,851 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:  6.73s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:  8.12s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:  9.50s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 10.88s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 12.27s | 弾数:  1/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 13.65s | 弾数:  0/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 17.03s | 弾数:  5/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 18.42s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 19.80s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 21.18s | 弾数:  2/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 22.57s | 弾数:  1/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 23.95s | 弾数:  0/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 25.40s | 弾数:  0/1   | Pellets: 1 | Dmg:   466,542 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 26.78s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 28.17s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 29.55s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 30.93s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 32.32s | 弾数:  1/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 33.70s | 弾数:  0/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 37.08s | 弾数:  5/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 38.47s | 弾数:  4/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 39.85s | 弾数:  3/6   | Pellets: 1 | Dmg:   146,457 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | hit_rate_buff:0.09
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 40.45s | 弾数:  0/1   | Pellets: 1 | Dmg:   466,542 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 41.83s | 弾数:  5/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 43.22s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 44.60s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 45.98s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 47.37s | 弾数:  1/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 48.75s | 弾数:  0/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 52.13s | 弾数:  5/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 53.52s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 54.90s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 56.28s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 57.67s | 弾数:  1/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 59.05s | 弾数:  0/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 60.50s | 弾数:  0/1   | Pellets: 1 | Dmg:   466,542 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 61.88s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 63.27s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 64.65s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 66.03s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 67.42s | 弾数:  1/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 68.80s | 弾数:  0/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 72.18s | 弾数:  5/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 73.57s | 弾数:  4/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 74.95s | 弾数:  3/6   | Pellets: 1 | Dmg:   146,457 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | hit_rate_buff:0.09
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 75.55s | 弾数:  0/1   | Pellets: 1 | Dmg:   466,542 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 76.93s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 78.32s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 79.70s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 81.08s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 82.47s | 弾数:  1/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 83.85s | 弾数:  0/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 87.23s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 88.62s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 90.00s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 91.38s | 弾数:  2/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 92.77s | 弾数:  1/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 94.15s | 弾数:  0/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 95.60s | 弾数:  0/1   | Pellets: 1 | Dmg:   466,542 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 96.98s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 98.37s | 弾数:  4/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間: 99.75s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:101.13s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:102.52s | 弾数:  1/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:103.90s | 弾数:  0/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:107.28s | 弾数:  5/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:108.67s | 弾数:  4/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:110.05s | 弾数:  3/6   | Pellets: 1 | Dmg:   146,457 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | hit_rate_buff:0.09
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:110.65s | 弾数:  0/1   | Pellets: 1 | Dmg:   466,542 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:112.03s | 弾数:  5/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:113.42s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:114.80s | 弾数:  3/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:116.18s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:117.57s | 弾数:  1/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:118.95s | 弾数:  0/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:122.33s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:123.72s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:125.10s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:126.48s | 弾数:  2/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:127.87s | 弾数:  1/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:129.25s | 弾数:  0/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:130.70s | 弾数:  0/1   | Pellets: 1 | Dmg:   559,851 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:132.08s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:133.47s | 弾数:  4/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:134.85s | 弾数:  3/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:136.23s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:137.62s | 弾数:  1/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:139.00s | 弾数:  0/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:142.38s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:143.77s | 弾数:  4/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:145.15s | 弾数:  3/6   | Pellets: 1 | Dmg:   146,457 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | hit_rate_buff:0.09
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:145.75s | 弾数:  0/1   | Pellets: 1 | Dmg:   466,542 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:147.13s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:148.52s | 弾数:  4/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:149.90s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:151.28s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:152.67s | 弾数:  1/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:154.05s | 弾数:  0/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:157.43s | 弾数:  5/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:158.82s | 弾数:  4/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:160.20s | 弾数:  3/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:161.58s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:162.97s | 弾数:  1/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:164.35s | 弾数:  0/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Burst] Activate!
+[Buff] Applied カモフラージュスカーフ (Burst Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Weapon Change] ウンファ：タクティカル・アップ changed weapon to Ewnha Burst
+[Weapon Tags] Applied tags 徹甲炸裂弾 for 0s
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:165.80s | 弾数:  0/1   | Pellets: 1 | Dmg:   466,542 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:167.18s | 弾数:  5/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:168.57s | 弾数:  4/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:169.95s | 弾数:  3/6   | Pellets: 1 | Dmg:   312,482 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:171.33s | 弾数:  2/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:172.72s | 弾数:  1/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:174.10s | 弾数:  0/6   | Pellets: 1 | Dmg:   260,401 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ (Full Charge Trigger) (dummy_buff: 0) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reloading... (120 frames)
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Action] Reload Complete. Ammo: 6
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:177.48s | 弾数:  5/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ
+[Shoot] 時間:178.87s | 弾数:  4/6   | Pellets: 1 | Dmg:   208,321 | Buffs: crit_rate_buff:0.08 | charge_dmg_buff:0.42 | atk_buff_rate:0.42 | dummy_buff:0.00 | hit_rate_buff:0.09 | is_ignore_def:1.00 | ignore_def_dmg_buff:0.42
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_0 (is_ignore_def: 1) to ウンファ：タクティカル・アップ
+[Buff] Applied カモフラージュスカーフ中バフ_Stage_1 (ignore_def_dmg_buff: 0.4224) to ウンファ：タクティカル・アップ

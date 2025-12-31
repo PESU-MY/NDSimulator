@@ -29,10 +29,17 @@ class CharacterStatsMixin:
         # ▼▼▼ 修正: 通常攻撃の防御無視判定を追加 ▼▼▼
         # profile自体に無視フラグがある(スキル用)か、
         # またはバフマネージャーに "ignore_def_active" タグがある場合に防御無視
+        # ▼▼▼ 修正: 防御無視判定の拡張 ▼▼▼
         is_ignoring = profile['is_ignore_def']
         if self.buff_manager.has_active_tag("ignore_def_active", frame):
             is_ignoring = True
-            
+        
+        # ★追加: バフタイプ "is_ignore_def" の値による判定
+        # これにより、JSONで "buff_type": "is_ignore_def" を指定可能になります
+        if self.buff_manager.get_total_value('is_ignore_def', frame) > 0:
+            is_ignoring = True
+        # ▲▲▲ 修正ここまで ▲▲▲
+
         # ▼▼▼ 修正: 計算式の変更 (割合ダウン後に固定値を引き、0未満防止) ▼▼▼
         if is_ignoring:
             effective_def = 0
@@ -127,10 +134,13 @@ class CharacterStatsMixin:
         if profile['is_sticky'] or is_sticky_buff > 0:
             bucket_dmg += self.buff_manager.get_total_value('sticky_dmg_buff', frame)
         # ▲▲▲ 追加ここまで ▲▲▲
-
-        if profile['is_ignore_def']: 
+        # ▼▼▼ 修正: 防御無視ダメージバフの加算条件を変更 ▼▼▼
+        # 修正前: if profile['is_ignore_def']: 
+        # 修正後: すでに計算済みの is_ignoring (バフ込みの判定結果) を使用する
+        if is_ignoring: 
             bucket_dmg += self.buff_manager.get_total_value('ignore_def_dmg_buff', frame)
-            
+        # ▲▲▲ 修正ここまで ▲▲▲
+        #             
         if profile['is_dot']: bucket_dmg += self.buff_manager.get_total_value('dot_dmg_buff', frame)
         if profile['burst_buff_enabled'] and (is_full_burst or profile.get('force_full_burst', False)):
              bucket_dmg += self.buff_manager.get_total_value('burst_dmg_buff', frame)
@@ -173,14 +183,15 @@ class CharacterStatsMixin:
         # ▲▲▲ 修正ここまで ▲▲▲
 
         total_dmg = layer_atk * layer_weapon * layer_crit * layer_charge * layer_dmg * layer_split * layer_taken * layer_elem * layer_special
-        if self.name == "ナユタ":
-            if mult > 2.7:
+        if self.name == "ウンファ：タクティカル・アップ":
+            if mult > 1:
                 print(f"--- [DEBUG] Damage Calc ({self.name}) ---")
                 print(f"  SkillMult: {mult:.4f}")
                 print(f"  1.FinalAtk: {final_atk:.1f} (Base:{self.base_atk} + Rate:{self.buff_manager.get_total_value('atk_buff_rate', frame):.2f} + Fix:{self.buff_manager.get_total_value('atk_buff_fixed', frame):.1f})")
-                print(f"  2.Split: {profile['is_pierce']} ")
+                print(f"  2.is_explosive: {profile['is_explosive']} ")
+                print(f"  2.is_ignore_def: {profile['is_ignore_def']} ")
                 print(f"  3.CritLayer: {layer_crit:.2f} (FullBurst:{is_full_burst}, IsCrit:{is_crit_hit})")
-                print(f"  4.DmgLayer : {layer_dmg:.2f} (IgnoreDefBuff:{self.buff_manager.get_total_value('atk_dmg_buff', frame):.2f}, TotalBucket:{bucket_dmg:.2f})")
+                print(f"  4.DmgLayer : {layer_dmg:.2f} (IgnoreDefBuff:{self.buff_manager.get_total_value('ignore_def_dmg_buff', frame):.2f}, TotalBucket:{bucket_dmg:.2f})")
                 print(f"  Total: {total_dmg:,.0f}")
                 print(f"----------------------------------------")
             
