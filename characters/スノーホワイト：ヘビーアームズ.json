@@ -1,0 +1,323 @@
+{
+  "name": "スノーホワイト：ヘビーアームズ",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Water",
+  "class": "Attacker",
+  "squad": "Pilgrim",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.00,
+    "damage_rate": 0.6904,
+    "charge_time": 1.2,
+    "windup_frames": 12,
+    "winddown_frames": 10,
+    "hit_size": 1,
+    "core_hit_rate_fixed": 2.00
+  },
+  "skills": [
+    {
+      "name": "セブンスドワーフV+VI (Charge Loop)",
+      "trigger_type": "charging_time",
+      "trigger_value": 0.2,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "debuff",
+          "target": "enemy",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "tag": "lock_on",
+            "duration": 4.0,
+            "description": "ロックオン：攻撃対象を指定"
+          }
+        },
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "tag": "auto_fire_ready",
+            "stack_name": "auto_fire_ready",
+            "value": 1,
+            "max_stack": 5,
+            "duration": 10.0,
+            "description": "オートファイア準備：弾丸装填＆防御UP"
+          }
+        },
+        {
+          "effect_type": "debuff",
+          "target": "enemy",
+          "kwargs": {
+            "buff_type": "taken_dmg_debuff",
+            "tag": "lock_on_dmg_up",
+            "value": 0.042,
+            "duration": 4.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "セブンスドワーフV+VI (Full Charge Attack)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "multiplier": 0.419,
+            "description": "オートファイア：敵全体ダメージ"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "target_condition": {
+            "has_tag": "lock_on"
+          },
+          "kwargs": {
+            "is_sequential":true,
+            "multiplier": 1.0559,
+            "copy_stack_count": "auto_fire_ready",
+            "description": "オートファイア：ロックオン対象への順番攻撃（スタック数分倍率適用）"
+          }
+        }
+      ]
+    },
+    {
+      "name": "セブンスドワーフV+VI (Mode Control)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "seventh_dwarf_active_count"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "decrease_debuff_stack_count",
+          "target": "self",
+          "kwargs": {
+            "value": 1,
+            "tag": "seventh_dwarf_active_count",
+            "description": "使用回数減少"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "condition": {
+            "self_stack_max": {
+              "stack_name": "seventh_dwarf_active_count",
+              "count": 0
+            }
+          },
+          "kwargs": {
+            "buff_type": "remove_buff",
+            "tag": "seventh_dwarf_active_count",
+            "value": 1,
+            "duration": 0,
+            "description": "回数終了時にモード解除"
+          }
+        }
+      ]
+    },
+    {
+      "name": "セブンスドワーフV+VI (Cancel Condition)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "condition": {
+        "is_full_burst": false
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "remove_buff",
+        "tag": "seventh_dwarf_active_count",
+        "value": 1,
+        "duration": 0,
+        "description": "通常攻撃時(非フルバースト)にモード解除"
+      }
+    },
+    {
+      "name": "アナザーホワイト (Passive)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "charge_time_fixed",
+        "value": 1.2,
+        "duration": 99999,
+        "description": "チャージ時間1.2秒に固定"
+      }
+    },
+    {
+      "name": "アナザーホワイト (Full Charge Buff)",
+      "trigger_type": "full_charge",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "is_pierce",
+            "value": 1.0,
+            "duration": 5.0,
+            "description": "貫通特化（貫通属性付与・維持）"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 0.4684,
+            "duration": 5.0
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "part_dmg_buff",
+            "value": 0.6264,
+            "duration": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "アナザーホワイト (Burst III Enter)",
+      "trigger_type": "on_burst_3_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "value":  0.7392,
+        "duration": 10.0
+      }
+    },
+    {
+      "name": "アナザーホワイト (Active Mode Buff)",
+      "trigger_type": "full_charge",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "seventh_dwarf_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "charge_dmg_buff",
+            "value": 5.28,
+            "duration": 0,
+            "shot_duration": 1
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "sequential_attack_dmg_buff",
+            "value": 1.584,
+            "duration": 0,
+            "shot_duration": 1,
+            "description": "順番攻撃（オートファイア）ダメージUP"
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "セブンスドワーフ・フルアクティブ",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "atk_dmg_buff",
+          "value": 0.8448,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "stack_buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_buff",
+          "tag": "seventh_dwarf_active_count",
+          "stack_name": "seventh_dwarf_active_count",
+          "value": 2,
+          "max_stack": 2,
+          "duration": 10.0,
+          "linked_remove_tag" : "seventh_dwarf_mode",
+          "description": "使用回数: 2回（管理用スタック）"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_buff",
+          "tag": "seventh_dwarf_mode",
+          "duration": 10.0,
+          "description": "モード有効化タグ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "charge_time_fixed",
+          "tag": "seventh_dwarf_mode",
+          "value": 2.0,
+          "duration": 10.0
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "max_stack_auto_fire_ready",
+          "tag": "seventh_dwarf_mode",
+          "value": 10,
+          "duration": 10.0,
+          "description": "オートファイア準備の最大装填数+10"
+        }
+      }
+    ]
+  }
+}
