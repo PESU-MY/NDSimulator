@@ -7,29 +7,27 @@
   "squad": "Absolute",
   "stats": {
     "max_ammo": 6,
-    "reload_time": 2.00,
+    "reload_time": 2.0,
     "damage_rate": 0.6904,
-    "windup_frames": 12,
-    "winddown_frames": 10,
-    "hit_size": 1,
-    "core_hit_rate_fixed": 2.00
+    "core_damage_rate": 2.0
   },
   "skills": [
     {
-      "name": "カモフラージュスカーフ (Burst Trigger)",
+      "name": "S1: カモフラージュスカーフ (バースト使用時)",
       "trigger_type": "on_use_burst_skill",
       "trigger_value": 0,
       "effect_type": "buff",
       "target": "self",
       "kwargs": {
-        "buff_type": "dummy_buff",
+        "buff_type": "dummy_effect",
         "tag": "camouflage",
-        "duration": 5.0,
+        "value": 1,
+        "duration": 5,
         "description": "カモフラージュ：単一攻撃対象から除外、直接攻撃を受けると解除"
       }
     },
     {
-      "name": "カモフラージュスカーフ (Full Charge Trigger)",
+      "name": "S1: カモフラージュスカーフ (フルバースト中フルチャージ)",
       "trigger_type": "full_charge_count",
       "trigger_value": 1,
       "condition": {
@@ -38,21 +36,22 @@
       "effect_type": "buff",
       "target": "self",
       "kwargs": {
-        "buff_type": "dummy_buff",
+        "buff_type": "dummy_effect",
         "tag": "camouflage",
-        "duration": 5.0,
+        "value": 1,
+        "duration": 5,
         "description": "カモフラージュ：単一攻撃対象から除外、直接攻撃を受けると解除"
       }
     },
     {
-      "name": "カモフラージュスカーフ中バフ",
+      "name": "S1: カモフラージュスカーフ (持続効果)",
       "trigger_type": "time_interval",
       "trigger_value": 0.2,
-      "effect_type": "cumulative_stages",
-      "target": "self",
       "condition": {
         "self_has_tag": "camouflage"
       },
+      "effect_type": "cumulative_stages",
+      "target": "self",
       "kwargs": {
         "trigger_all_stages": true
       },
@@ -71,23 +70,36 @@
           "effect_type": "buff",
           "target": "self",
           "kwargs": {
-            "buff_type": "ignore_def_dmg_buff",
             "effect_no": 1,
+            "buff_type": "ignore_def_dmg_buff",
             "value_list": [0.2496, 0.2688, 0.288, 0.3072, 0.3264, 0.3456, 0.3648, 0.384, 0.4032, 0.4224],
-            "duration": 1.1
+            "duration": 0.3
           }
         }
       ]
     },
     {
-      "name": "フォーメーションAS (Basic)",
+      "name": "S2: フォーメーションAS (状態付与)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "tag": "formation_as",
+        "value": 1,
+        "duration": 99999,
+        "description": "フォーメーションAS適用中"
+      }
+    },
+    {
+      "name": "S2: フォーメーションAS (基本効果)",
       "trigger_type": "on_start",
       "trigger_value": 0,
       "effect_type": "cumulative_stages",
       "target": "self",
       "kwargs": {
-        "trigger_all_stages": true,
-        "tag": "formation_as"
+        "trigger_all_stages": true
       },
       "stages": [
         {
@@ -97,8 +109,8 @@
             "squad": "Absolute"
           },
           "kwargs": {
-            "buff_type": "crit_rate_buff",
             "effect_no": 2,
+            "buff_type": "crit_rate_buff",
             "value_list": [0.0482, 0.0519, 0.0556, 0.0593, 0.0631, 0.0668, 0.0705, 0.0742, 0.0779, 0.0816],
             "duration": 99999
           }
@@ -107,8 +119,8 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
-            "buff_type": "charge_dmg_buff",
             "effect_no": 3,
+            "buff_type": "charge_dmg_buff",
             "value_list": [0.2471, 0.2661, 0.2851, 0.3041, 0.3231, 0.3421, 0.3611, 0.3801, 0.3991, 0.4181],
             "duration": 99999
           }
@@ -117,8 +129,8 @@
           "effect_type": "buff",
           "target": "self",
           "kwargs": {
-            "buff_type": "atk_buff_rate",
             "effect_no": 4,
+            "buff_type": "atk_buff_rate",
             "value_list": [0.2496, 0.2688, 0.288, 0.3072, 0.3264, 0.3456, 0.3648, 0.384, 0.4032, 0.4224],
             "duration": 99999
           }
@@ -126,14 +138,14 @@
       ]
     },
     {
-      "name": "フォーメーションAS (Additional for LT)",
+      "name": "S2: フォーメーションAS (LT追加効果)",
       "trigger_type": "time_interval",
-      "trigger_value": 1.0,
+      "trigger_value": 1,
       "condition": {
         "self_has_tag": "formation_lt"
       },
       "effect_type": "cumulative_stages",
-      "target": "allies",
+      "target": "self",
       "kwargs": {
         "trigger_all_stages": true
       },
@@ -142,8 +154,8 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
-            "buff_type": "explosive_dmg_buff",
             "effect_no": 5,
+            "buff_type": "explosive_dmg_buff",
             "value_list": [0.0302, 0.0325, 0.0348, 0.0371, 0.0394, 0.0418, 0.0441, 0.0464, 0.0487, 0.0511],
             "duration": 1.1
           }
@@ -152,8 +164,8 @@
           "effect_type": "buff",
           "target": "allies",
           "kwargs": {
-            "buff_type": "ignore_def_dmg_buff",
             "effect_no": 6,
+            "buff_type": "ignore_def_dmg_buff",
             "value_list": [0.183, 0.1971, 0.2112, 0.2252, 0.2393, 0.2534, 0.2675, 0.2816, 0.2956, 0.3097],
             "duration": 1.1
           }
@@ -161,38 +173,38 @@
       ]
     },
     {
-      "name": "徹甲炸裂弾：デバフ付与",
-      "trigger_type": "shot_count",
+      "name": "Burst追加効果: 徹甲炸裂弾デバフ",
+      "trigger_type": "full_charge_count",
       "trigger_value": 1,
       "condition": {
-        "self_has_tag": "徹甲炸裂弾"
+        "self_has_tag": "armor_piercing_explosive_mode"
       },
       "effect_type": "debuff",
       "target": "enemy",
       "kwargs": {
-        "buff_type": "taken_dmg_debuff",
-        "tag": "徹甲炸裂弾_debuff",
         "effect_no": 8,
+        "buff_type": "taken_dmg_debuff",
+        "tag": "armor_piercing_explosive",
         "value_list": [0.1647, 0.1774, 0.19, 0.2027, 0.2154, 0.228, 0.2407, 0.2534, 0.2661, 0.2787],
-        "duration": 10.0
+        "duration": 10,
+        "description": "徹甲炸裂弾：受けるダメージUP"
       }
     }
   ],
   "burst_skill": {
-    "name": "徹甲炸裂弾",
-    "trigger_type": "on_burst_enter",
-    "trigger_value": 0,
+    "name": "Burst: 徹甲炸裂弾",
+    "trigger_type": "manual",
     "cooldown_time": 20.0,
     "effect_type": "weapon_change",
     "target": "self",
     "kwargs": {
-      "duration": 0,
-      "shot_duration": 1,
-      "tag": "徹甲炸裂弾",
+      "duration": 1.0,
+      "tag": "armor_piercing_explosive_mode",
       "weapon_data": {
-        "name": "Ewnha Burst",
+        "name": "Eunhwa Tactical Burst",
         "type": "CHARGE",
         "weapon_class": "SR",
+        "effect_no": 7,
         "multiplier_list": [0.624, 0.672, 0.72, 0.768, 0.816, 0.864, 0.9119, 0.9599, 1.008, 1.056],
         "max_ammo": 1,
         "reload_frames": 0,
@@ -203,7 +215,7 @@
         "hit_size": 1,
         "is_explosive": true,
         "is_ignore_def": true,
-        "description": "使用武器を変更"
+        "description": "使用武器変更：炸裂弾を発射して広範囲を攻撃する"
       }
     }
   }

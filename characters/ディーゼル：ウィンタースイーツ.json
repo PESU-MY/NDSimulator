@@ -1,0 +1,290 @@
+{
+  "name": "ディーゼル：ウィンタースイーツ",
+  "weapon_type": "RL",
+  "burst_stage": "3",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "インフィニティレール",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.0,
+    "charge_time": 1.0,
+    "charge_mult": 2.5
+  },
+  "skills": [
+    {
+      "name": "S1: あーあー、マイクテスト (イントロ確定)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "is_last_burst_user": true,
+        "self_not_has_tag": "dws_state_set"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "dws_intro_state",
+            "tag": ["dws_state_set", "dws_intro"],
+            "value": 0,
+            "max_stack": 1,
+            "duration": 99999,
+            "description": "初回フルバースト直前に自分がバーストを使用していた場合の永続状態"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "crit_dmg_buff",
+            "value_list": [0.1198, 0.129, 0.1382, 0.1474, 0.1567, 0.1659, 0.1751, 0.1843, 0.1935, 0.2028],
+            "duration": 99999,
+            "tag": "dws_intro",
+            "description": "イントロ：クリティカルダメージUP。解除不可/復活後維持は永続バフとして近似"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: あーあー、マイクテスト (クライマックス確定)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_not_has_tag": "dws_state_set"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "dws_climax_state",
+            "tag": ["dws_state_set", "dws_climax"],
+            "value": 0,
+            "max_stack": 1,
+            "duration": 99999,
+            "description": "初回フルバースト直前に自分がバーストを使用していなかった場合の永続状態"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "crit_dmg_buff",
+            "value_list": [0.1198, 0.129, 0.1382, 0.1474, 0.1567, 0.1659, 0.1751, 0.1843, 0.1935, 0.2028],
+            "duration": 99999,
+            "tag": "dws_climax",
+            "description": "クライマックス：クリティカルダメージUP。解除不可/復活後維持は永続バフとして近似"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: あーあー、マイクテスト (イントロ中DoT強化)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "dws_intro"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "dot_dmg_buff",
+        "value_list": [0.3556, 0.383, 0.4104, 0.4377, 0.4651, 0.4924, 0.5198, 0.5472, 0.5745, 0.6019],
+        "duration": 10,
+        "tag": "dws_intro_dot_buff",
+        "description": "イントロ状態のフルバースト発動時、自分に持続ダメージUP"
+      }
+    },
+    {
+      "name": "S1: あーあー、マイクテスト (クライマックス中DoT強化)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "dws_climax"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "dot_dmg_buff",
+        "value_list": [1.3888, 1.4956, 1.6024, 1.7093, 1.8161, 1.9229, 2.0298, 2.1366, 2.2434, 2.3503],
+        "duration": 10,
+        "tag": "dws_climax_dot_buff",
+        "description": "クライマックス状態のフルバースト発動時、自分に持続ダメージUP"
+      }
+    },
+    {
+      "name": "S2: 歌います！ (パーツ破壊時の消音)",
+      "trigger_type": "part_break",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "allies",
+      "target_condition": {
+        "exclude_self": true
+      },
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "stack_name": "dws_mute",
+        "tag": "dws_mute",
+        "value": 0,
+        "stack_amount": 3,
+        "max_stack": 3,
+        "duration": 99999,
+        "description": "自分以外の味方に消音：騒音公害免疫3スタック"
+      }
+    },
+    {
+      "name": "S2: 歌います！ (パーツ破壊時DoT強化)",
+      "trigger_type": "part_break",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "dot_dmg_buff",
+        "value_list": [0.402, 0.4329, 0.4639, 0.4948, 0.5257, 0.5567, 0.5876, 0.6185, 0.6494, 0.6804],
+        "duration": 15,
+        "tag": "dws_part_break_dot_buff",
+        "description": "パーツ破壊時、自分に持続ダメージUP"
+      }
+    },
+    {
+      "name": "S2: 歌います！ (フルチャージDoT強化)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 6,
+        "buff_type": "dot_dmg_buff",
+        "stack_name": "dws_full_charge_dot_buff",
+        "tag": "dws_full_charge_dot_buff",
+        "value_list": [1.8799, 2.0245, 2.1691, 2.3137, 2.4583, 2.6029, 2.7475, 2.8922, 3.0368, 3.1814],
+        "max_stack": 2,
+        "duration": 3,
+        "description": "フルチャージ攻撃時、自分に持続ダメージUP。最大2スタック"
+      }
+    },
+    {
+      "name": "S2: 歌います！ (フルバーストDoT)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "dot",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 7,
+        "value_list": [0.3742, 0.403, 0.4318, 0.4606, 0.4894, 0.5182, 0.547, 0.5758, 0.6045, 0.6333],
+        "duration": 9,
+        "interval": 1,
+        "tag": "dws_s2_full_burst_dot",
+        "is_dot": true,
+        "is_skill_damage": true,
+        "force_full_burst": true,
+        "description": "フルバースト発動時、ターゲットに持続ダメージ"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: ラララ♬",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "enemy",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "debuff",
+        "target": "enemy",
+        "kwargs": {
+          "effect_no": 8,
+          "buff_type": "taken_dmg_debuff",
+          "value_list": [0.1482, 0.1596, 0.171, 0.1824, 0.1938, 0.2052, 0.2166, 0.228, 0.2395, 0.2509],
+          "duration": 10,
+          "tag": ["dws_burst_taken_dmg", "debuff"],
+          "description": "敵全体への受けるダメージUP。単体敵として処理"
+        }
+      },
+      {
+        "effect_type": "dot",
+        "target": "enemy",
+        "kwargs": {
+          "effect_no": 9,
+          "value_list": [0.1089, 0.1172, 0.1256, 0.134, 0.1424, 0.1507, 0.1591, 0.1675, 0.1759, 0.1843],
+          "duration": 9,
+          "interval": 1,
+          "tag": "dws_burst_all_enemy_dot",
+          "is_dot": true,
+          "is_skill_damage": true,
+          "force_full_burst": true,
+          "description": "敵全体への持続ダメージ。単体敵として処理"
+        }
+      },
+      {
+        "effect_type": "dot",
+        "target": "enemy",
+        "kwargs": {
+          "effect_no": 10,
+          "value_list": [1.0707, 1.1531, 1.2355, 1.3178, 1.4002, 1.4826, 1.5649, 1.6473, 1.7297, 1.812],
+          "duration": 9,
+          "interval": 1,
+          "tag": "dws_burst_target_dot",
+          "is_dot": true,
+          "is_skill_damage": true,
+          "force_full_burst": true,
+          "description": "対象がターゲットなら同じ敵に持続ダメージ。単体敵では常に適用"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "condition": {
+          "self_has_tag": "dws_climax"
+        },
+        "target_condition": {
+          "exclude_self": true,
+          "not_has_tag": "dws_mute"
+        },
+        "kwargs": {
+          "buff_type": "hit_rate_buff",
+          "value": -1.0,
+          "duration": 1,
+          "tag": ["dws_noise_pollution", "debuff"],
+          "description": "クライマックス状態なら、自分を除く消音なし味方に騒音公害：命中率100%DOWN"
+        }
+      },
+      {
+        "effect_type": "decrease_debuff_stack_count",
+        "target": "allies",
+        "condition": {
+          "self_has_tag": "dws_climax"
+        },
+        "kwargs": {
+          "value": 1,
+          "tag": "dws_mute",
+          "description": "クライマックス状態なら、味方全体の消音スタックを1個消費"
+        }
+      }
+    ]
+  }
+}

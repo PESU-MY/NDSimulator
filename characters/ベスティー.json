@@ -22,6 +22,7 @@
         "buff_type": "dummy",
         "stack_name": "生存本能",
         "max_stack": 3,
+        "stack_amount": 2,
         "duration":45
       }
     },

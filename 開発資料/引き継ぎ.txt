@@ -82,7 +82,11 @@ heal メソッド: 全ての回復処理を集約。
 
 最大HPバフの同期:
 
-"kwargs": { "buff_type": "max_hp_rate", "update_current_hp": true } と記述すると、最大HPが増加した分だけ、現在HPも加算される（現在HP割合の維持ではないが、実数値として減らない挙動）。
+"kwargs": { "buff_type": "max_hp_rate", "update_current_hp": true } または { "buff_type": "max_hp_fixed", "update_current_hp": true } と記述すると、最大HPが増加した分だけ、現在HPも加算される（現在HP割合の維持ではないが、実数値として減らない挙動）。
+
+編成順条件:
+
+all_characters の並びを左から1,2,3,4,5番目として扱い、target_condition の "formation" で "adjacent" / "self_and_adjacent" / "front_row" / "back_row" / "leftmost" / "rightmost" などを指定可能。condition 側では "self_formation" で発動者自身の配置を判定できる。
 
 【ダメージ計算】
 

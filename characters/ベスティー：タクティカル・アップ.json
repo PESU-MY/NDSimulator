@@ -1,0 +1,157 @@
+{
+  "name": "ベスティー：タクティカル・アップ",
+  "weapon_type": "RL",
+  "burst_stage": "3",
+  "element": "Fire",
+  "class": "Attacker",
+  "squad": "Absolute",
+  "stats": {
+    "max_ammo": 8,
+    "reload_time": 2.0,
+    "damage_rate": 0.2244,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: ミサイルガイド",
+      "trigger_type": "full_charge",
+      "trigger_value": 1,
+      "condition": {
+        "self_not_has_tag": "missile_guide"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "charge_speed_rate",
+            "value": 1.0,
+            "duration": 0,
+            "shot_duration": 3,
+            "tag": "missile_guide",
+            "description": "ミサイルガイド：チャージ速度100%UP"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "charge_dmg_buff",
+            "value_list": [0.3456, 0.3722, 0.3988, 0.4254, 0.452, 0.4786, 0.5052, 0.5318, 0.5584, 0.585],
+            "duration": 0,
+            "shot_duration": 3,
+            "tag": "missile_guide"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: ミサイルガイド解除",
+      "trigger_type": "reload_complete",
+      "trigger_value": 0,
+      "effect_type": "remove_buff_by_tag",
+      "target": "self",
+      "kwargs": {
+        "tag": "missile_guide",
+        "description": "最大弾数のリロード完了時にミサイルガイド解除。現状は通常リロード完了で代用"
+      }
+    },
+    {
+      "name": "S2: モンスターステージ (防御無視ダメージ)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [1.5753, 1.6965, 1.8176, 1.9388, 2.06, 2.1812, 2.3024, 2.4236, 2.5448, 2.666],
+        "is_ignore_def": true,
+        "is_skill_damage": true,
+        "description": "フルチャージ攻撃命中時、対象へ防御力無視ダメージ"
+      }
+    },
+    {
+      "name": "S2: モンスターステージ (戦場コントロール中攻撃力)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "battlefield_control"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "atk_buff_rate",
+        "value_list": [0.1182, 0.1273, 0.1364, 0.1454, 0.1545, 0.1636, 0.1727, 0.1818, 0.1909, 0.2],
+        "duration": 3
+      }
+    },
+    {
+      "name": "S2: モンスターステージ (徹甲炸裂弾中爆発ダメージ)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "has_tag": "armor_piercing_explosive"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "explosive_dmg_buff",
+        "value_list": [0.1182, 0.1273, 0.1364, 0.1454, 0.1545, 0.1636, 0.1727, 0.1818, 0.1909, 0.2],
+        "duration": 3
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: ミサイルコンテナオンライン",
+    "trigger_type": "manual",
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 5,
+          "buff_type": "dummy_effect",
+          "value_list": [0.5909, 0.6363, 0.6818, 0.7272, 0.7727, 0.8181, 0.8636, 0.9091, 0.9545, 1.0],
+          "duration": 10,
+          "description": "爆発範囲UP。現状はダメージ計算に未反映"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 6,
+          "buff_type": "ignore_def_dmg_buff",
+          "value_list": [0.3545, 0.3818, 0.4091, 0.4363, 0.4636, 0.4909, 0.5181, 0.5454, 0.5727, 0.6],
+          "duration": 10
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "effect_no": 7,
+          "multiplier_list": [2.909, 3.1328, 3.3566, 3.5804, 3.8041, 4.0279, 4.2517, 4.4755, 4.6992, 4.923],
+          "is_ignore_def": true,
+          "is_skill_damage": true,
+          "is_special_skill_damage": true,
+          "description": "敵全体に防御力無視バーストスキルダメージ。敵1体として近似"
+        }
+      }
+    ]
+  }
+}

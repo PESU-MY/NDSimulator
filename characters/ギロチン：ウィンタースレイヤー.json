@@ -1,0 +1,977 @@
+{
+  "name": "ギロチン：ウィンタースレイヤー",
+  "weapon_type": "AR",
+  "burst_stage": "3",
+  "element": "Water",
+  "class": "Attacker",
+  "squad": "エクスターナー",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: 勇者の宿命 (勇者レベル初期化)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "stack_name": "gw_hero_level",
+        "tag": "gw_hero_level",
+        "value": 1,
+        "max_stack": 11,
+        "duration": 99999,
+        "description": "勇者レベル。初期1、経験値10スタックごとに+1、最大11"
+      }
+    },
+    {
+      "name": "S2: 勇者の資格 (非コア経験値)",
+      "trigger_type": "non_core_hit",
+      "trigger_value": 6,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "atk_buff_rate",
+        "stack_name": "gw_experience",
+        "tag": "gw_experience",
+        "value_list": [0.0107, 0.0115, 0.0124, 0.0132, 0.014, 0.0148, 0.0157, 0.0165, 0.0173, 0.0181],
+        "max_stack": 100,
+        "duration": 99999,
+        "description": "通常攻撃が6回命中した時、コアでなければ経験値+1"
+      }
+    },
+    {
+      "name": "S2: 勇者の資格 (コア経験値)",
+      "trigger_type": "core_hit",
+      "trigger_value": 3,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 6,
+        "buff_type": "atk_buff_rate",
+        "stack_name": "gw_experience",
+        "tag": "gw_experience",
+        "value_list": [0.0107, 0.0115, 0.0124, 0.0132, 0.014, 0.0148, 0.0157, 0.0165, 0.0173, 0.0181],
+        "max_stack": 100,
+        "duration": 99999,
+        "description": "コアに3回命中した時、経験値+1"
+      }
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値10)",
+      "trigger_type": "stack_count",
+      "trigger_value": 10,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff",
+            "description": "勇者レベル数に応じた水冷コード味方全体の有利コード攻撃ダメージUP"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff",
+            "description": "勇者レベル数に応じた水冷コード味方全体へのスキル発動者基準攻撃力UP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値20)",
+      "trigger_type": "stack_count",
+      "trigger_value": 20,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値30)",
+      "trigger_type": "stack_count",
+      "trigger_value": 30,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値40)",
+      "trigger_type": "stack_count",
+      "trigger_value": 40,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値50)",
+      "trigger_type": "stack_count",
+      "trigger_value": 50,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値60)",
+      "trigger_type": "stack_count",
+      "trigger_value": 60,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値70)",
+      "trigger_type": "stack_count",
+      "trigger_value": 70,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値80)",
+      "trigger_type": "stack_count",
+      "trigger_value": 80,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値90)",
+      "trigger_type": "stack_count",
+      "trigger_value": 90,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 勇者の宿命 (経験値100)",
+      "trigger_type": "stack_count",
+      "trigger_value": 100,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "gw_experience",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "gw_hero_level",
+            "tag": "gw_hero_level",
+            "value": 1,
+            "max_stack": 11,
+            "duration": 99999
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [0.0606, 0.0653, 0.07, 0.0746, 0.0793, 0.084, 0.0886, 0.0933, 0.098, 0.1026]
+          }
+        },
+        {
+          "effect_type": "heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "max_hp",
+            "value_list": [0.0144, 0.0155, 0.0166, 0.0177, 0.0188, 0.02, 0.0211, 0.0222, 0.0233, 0.0244]
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "elemental_buff",
+            "value_list": [0.0068, 0.0074, 0.0079, 0.0084, 0.0089, 0.0094, 0.01, 0.0106, 0.011, 0.0116],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Water"
+          },
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "stat_type": "finally",
+            "target_stat": "atk",
+            "value_list": [0.0055, 0.0058, 0.0063, 0.0067, 0.0071, 0.0075, 0.0079, 0.0084, 0.0088, 0.0091],
+            "copy_stack_count": "gw_hero_level",
+            "duration": 99999,
+            "tag": "gw_level_buff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 勇者の資格 (勇者レベル2以上)",
+      "trigger_type": "stack_count",
+      "trigger_value": 2,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "trigger_stack_name": "gw_hero_level",
+        "effect_no": 7,
+        "buff_type": "elemental_buff",
+        "value_list": [0.0437, 0.0476, 0.0507, 0.054, 0.0572, 0.0605, 0.0642, 0.0681, 0.0707, 0.0746],
+        "duration": 99999,
+        "tag": "gw_qualification",
+        "description": "自分の勇者レベルが2以上の時、有利コード攻撃ダメージUP"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: エクスターミネイション",
+    "trigger_type": "manual",
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "target_condition": {
+          "element": "Water"
+        },
+        "kwargs": {
+          "effect_no": 8,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [0.0599, 0.0645, 0.0691, 0.0737, 0.0783, 0.0829, 0.0876, 0.0922, 0.0968, 0.1014],
+          "duration": 10
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "target_condition": {
+          "element": "Water"
+        },
+        "kwargs": {
+          "effect_no": 9,
+          "buff_type": "elemental_buff",
+          "value_list": [0.1108, 0.1193, 0.1278, 0.1364, 0.1449, 0.1534, 0.1619, 0.1705, 0.179, 0.1875],
+          "duration": 10
+        }
+      },
+      {
+        "effect_type": "dot",
+        "target": "enemy",
+        "kwargs": {
+          "effect_no": 10,
+          "value_list": [0.1234, 0.1328, 0.1423, 0.1517, 0.1614, 0.1708, 0.1803, 0.1899, 0.1993, 0.2087],
+          "copy_stack_count": "gw_hero_level",
+          "duration": 10,
+          "interval": 1,
+          "is_dot": true,
+          "is_skill_damage": true,
+          "force_full_burst": true,
+          "description": "最終最大HPが最も高い敵1機への持続ダメージ。単体敵として近似"
+        }
+      }
+    ]
+  }
+}

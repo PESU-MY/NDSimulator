@@ -1,0 +1,99 @@
+{
+  "name": "チャイム",
+  "weapon_type": "SMG",
+  "burst_stage": "2",
+  "element": "Iron",
+  "class": "Supporter",
+  "squad": "ヴァイスリッター",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.0,
+    "damage_rate": 0.081,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: 王国一の臣下 (請願)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "name": "クラウン"
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "target_stat": "atk",
+        "value_list": [0.2745, 0.2956, 0.3168, 0.3379, 0.359, 0.3801, 0.4012, 0.4224, 0.4435, 0.4646],
+        "duration": 99999,
+        "tag": "chime_petition",
+        "description": "自分の王(キャラクター名がクラウン)に、スキル発動者基準で攻撃力UP"
+      }
+    },
+    {
+      "name": "S2: 王の秘書 (日課報告)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "name": "クラウン"
+      },
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "weapon_dmg_buff",
+        "value_list": [0.2731, 0.2941, 0.3151, 0.3361, 0.3571, 0.3781, 0.3991, 0.4202, 0.4412, 0.4622],
+        "duration": 10,
+        "tag": "chime_daily_report",
+        "description": "自分の王(キャラクター名がクラウン)に通常攻撃ダメージ倍率UP"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 王のために",
+    "trigger_type": "manual",
+    "cooldown_time": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "allies",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "reenter_burst_stage",
+        "target": "self",
+        "kwargs": {
+          "value": 2,
+          "description": "バースト再突入2段階"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 3,
+          "buff_type": "max_ammo_rate",
+          "value_list": [0.1182, 0.1272, 0.1363, 0.1454, 0.1545, 0.1636, 0.1727, 0.1818, 0.1909, 0.2],
+          "duration": 10
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "target_condition": {
+          "name": "クラウン"
+        },
+        "kwargs": {
+          "effect_no": 4,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [0.5462, 0.5882, 0.6303, 0.6723, 0.7143, 0.7563, 0.7983, 0.8404, 0.8824, 0.9244],
+          "duration": 10,
+          "tag": "chime_loyalty",
+          "description": "自分の王(キャラクター名がクラウン)に攻撃ダメージUP"
+        }
+      }
+    ]
+  }
+}

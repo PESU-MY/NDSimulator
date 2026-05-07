@@ -174,14 +174,25 @@ dummy_barrier_skill = Skill(
     tag = "debuff"
 )
 
+dummy_ammo_skill = Skill(
+    name = "装弾数100%バフ",
+    trigger_type="on_start", 
+    trigger_value=0,
+    effect_type = "buff",
+    buff_type = "max_ammo_rate",
+    target = "allies",
+    value = 1,
+    duration = 999,
+)
+
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/シンデレラ.json', skill_level=10)
-burst3_nikke_2 = create_character_from_json('characters/アニス：スパークリングサマー.json', skill_level=10)
-burst2_nikke = create_character_from_json('characters/ウンファ：タクティカル・アップ.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/ミハラ：ボンディングチェーン.json', skill_level=10)
+burst3_nikke_2 = create_character_from_json('characters/シンデレラ.json', skill_level=10)
+burst2_nikke = create_character_from_json('characters/フローラ.json', skill_level=10)
 burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
-burst1_nikke = create_character_from_json('characters/ペッパー.json', skill_level=10)
-saitotu = create_character_from_json('characters/ティア.json', skill_level=10)
+burst1_nikke = create_character_from_json('characters/ルージュ.json', skill_level=10)
+saitotu = create_character_from_json('characters/チャイム.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
 
 # 2. ダミーキャラの作成
@@ -189,17 +200,17 @@ print(">>> キャラクター読み込み完了\n")
 dummy_b1 = create_dummy_character("Dummy_B1", 1, "SMG", skills=[dummy_ct_skill])
 dummy_b2 = create_dummy_character("Dummy_B2", 2, "SMG")
 dummy_b3 = create_dummy_character("Dummy_B3", 3, "SG")
-dummy_b3_2 = create_dummy_character("Dummy_B3", 3, "SG")
+dummy_b3_2 = create_dummy_character("Dummy_B3_2", 3, "SG", skills=[dummy_ammo_skill])
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1, dummy_b2, burst3_nikke, dummy_b3, dummy_b3_2]
+all_characters = [dummy_b1,burst1_nikke,  dummy_b2, dummy_b3, dummy_b3_2]
 
 # 4. バーストローテーション
 rotation = [
-    [dummy_b1],
+    [burst1_nikke],
     [dummy_b2],
-    [burst3_nikke, dummy_b3_2] 
+    [dummy_b3,dummy_b3_2] 
 ]
 
 
@@ -207,7 +218,7 @@ rotation = [
 sim = NikkeSimulator(
     characters=all_characters,
     burst_rotation=rotation,
-    enemy_element="None", 
+    enemy_element="Fire", 
     enemy_core_size=3.0,
     enemy_size=100,
     part_break_mode=False,

@@ -160,6 +160,19 @@ JSON変換:
   -> target_condition: { "type": "highest_atk", "count": 2 }
   ※ "count" で対象人数を指定する。
 
+- 「自分と両隣にいる味方」
+  -> target_condition: { "formation": "self_and_adjacent" }
+- 「両隣にいる味方」
+  -> target_condition: { "formation": "adjacent" }
+- 「前列 / 後列」
+  -> target_condition: { "formation": "front_row" } / { "formation": "back_row" }
+  ※ 編成順は all_characters の並びを左から1,2,3,4,5番目として扱う。前列は1/3/5番目、後列は2/4番目。
+- 「自分が後列に配置されている時」
+  -> condition: { "self_formation": "back_row" }
+- 「両隣の誰かがHP90%以下になった時」のように、発動条件側で対象条件を見る場合
+  -> condition: { "any_target_condition_enter": { "formation": "adjacent", "hp_ratio_max": 0.9 } }
+  ※ false→true の成立時のみ発動。戦闘開始時点で条件成立していても初回発動させない場合は、同じ condition に "condition_enter_skip_initial": true を追加する。
+
 【重要：記述場所について】
 `target_condition` は、解析トラブルを防ぐため `kwargs` の中ではなく、
 可能な限り **スキルのトップレベル（effect_type と同階層）** に記述することを推奨する。

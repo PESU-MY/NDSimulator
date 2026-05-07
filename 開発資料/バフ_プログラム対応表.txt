@@ -89,6 +89,7 @@ MG立ち上げ速度UP            : mg_warmup_speed
 最大HPUP (％)               : max_hp_rate
                               ※ kwargs: { "update_current_hp": true } で現在HPも同期回復
 最大HPUP (固定値)           : max_hp_fixed
+                              ※ kwargs: { "update_current_hp": true } で現在HPも同期回復
 最大HP超過 (ヘルス増強)     : max_hp_overflow
                               ※ 回復時に最大HPを超えて保持できる割合 (1.0 = 200%)
 受ける回復量UP              : heal_effectiveness_buff
@@ -278,6 +279,19 @@ core_hit                : 攻撃が敵のコアに命中した時に発動（判
 | 条件 | キー名 | 値の型・備考 |
 | :--- | :--- | :--- |
 | **今回のバースト参加者** | `is_current_burst_participant` | `true`: 参加した味方<br>`false`: 参加していない味方<br>※`on_burst_enter` トリガー時のみ有効 |
+
+[編成順・配置条件]
+`self.characters` / `all_characters` の並びを左から1,2,3,4,5番目として扱う。
+| 条件 | キー名 | 備考 |
+| :--- | :--- | :--- |
+| **両隣** | `formation: "adjacent"` | `target_condition` 内で使用。発動者の左右1枠のみ。 |
+| **自分と両隣** | `formation: "self_and_adjacent"` | 発動者本人と左右1枠。 |
+| **一番左 / 一番右** | `formation: "leftmost"` / `"rightmost"` | 1番目 / 最後尾。 |
+| **前列 / 後列** | `formation: "front_row"` / `"back_row"` | 前列は1,3,5番目。後列は2,4番目。 |
+| **指定位置** | `formation_position` | 1始まり。例: `{ "formation_position": [1, 3, 5] }`。 |
+| **自分の配置** | `self_formation` / `self_formation_position` | `condition` 内で使用。例: `{ "self_formation": "back_row" }`。 |
+| **誰かが条件を満たす** | `any_target_condition` | `condition` 内で使用。指定した対象条件を満たす味方が1人以上いれば発動。 |
+| **条件成立の瞬間のみ** | `any_target_condition_enter` | `time_interval` 等と併用。false→trueになった時だけ発動。初回成立を無視する場合は `condition_enter_skip_initial: true`。 |
 [スタック判定]
 自身のスタック数 (以上)     : self_stack_min
                               ※ condition内で { "self_stack_min": 5, "stack_name": "..." }

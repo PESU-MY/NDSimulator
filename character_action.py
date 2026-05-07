@@ -59,6 +59,7 @@ class CharacterActionMixin:
                 is_charge_attack=(self.weapon.type in ["RL", "SR", "CHARGE"]), 
                 charge_mult=self.weapon.charge_mult if self.weapon.type in ["RL", "SR", "CHARGE"] else 1.0, 
                 force_full_burst=force_fb, is_pierce=self.weapon.is_pierce,
+                is_ignore_def=getattr(self.weapon, 'is_ignore_def', False),
                 is_explosive=getattr(self.weapon, 'is_explosive', False),
                 is_sticky=getattr(self.weapon, 'is_sticky', False)
             )
@@ -71,19 +72,16 @@ class CharacterActionMixin:
             current_pellets = int(max(1, current_pellets))
             per_pellet_multiplier = self.weapon.multiplier / current_pellets
 
-            # ▼▼▼ 既存: 計算後フルチャージ回数トリガー (full_charge_count) ▼▼▼
-            # ダメージ計算の「後」に発動。累積回数(count)で判定します。
-            # 位置は変更せず、ここ（ループ後）に残します。
+            # フルチャージ攻撃そのものに乗せたいバフは、ダメージ計算前に発火する。
             if self.weapon.type in ["RL", "SR", "CHARGE"]:
-                self.cumulative_full_charge_count += 1
-                damage_this_frame += self.process_trigger('full_charge_count', self.cumulative_full_charge_count, frame, is_full_burst, simulator)
-            # ▲▲▲
+                damage_this_frame += self.process_trigger('full_charge', 1, frame, is_full_burst, simulator)
 
             total_shot_dmg = 0
             hit_count = 0
             crit_count = 0
             # ▼▼▼ 修正: ここに初期化を追加してください ▼▼▼
             core_hit_count = 0
+            non_core_hit_count = 0
             # ▲▲▲
             
             for _ in range(current_pellets):
@@ -110,6 +108,9 @@ class CharacterActionMixin:
             if not hasattr(self, 'cumulative_core_hits'): self.cumulative_core_hits = 0
             self.cumulative_core_hits += core_hit_count
             # ▲▲▲
+            non_core_hit_count = max(0, hit_count - core_hit_count)
+            if not hasattr(self, 'cumulative_non_core_hits'): self.cumulative_non_core_hits = 0
+            self.cumulative_non_core_hits += non_core_hit_count
             
             self.total_damage += total_shot_dmg
             self.damage_breakdown['Weapon Attack'] += total_shot_dmg
@@ -128,6 +129,7 @@ class CharacterActionMixin:
             # ▼▼▼ 追加: core_hit トリガーの発火 ▼▼▼
             damage_this_frame += self.process_trigger('core_hit', self.cumulative_core_hits, frame, is_full_burst, simulator, delta=core_hit_count)
             # ▲▲▲ 追加ここまで ▲▲▲
+            damage_this_frame += self.process_trigger('non_core_hit', self.cumulative_non_core_hits, frame, is_full_burst, simulator, delta=non_core_hit_count)
 
             # ▼▼▼ 追加: フルチャージ攻撃判定とトリガー処理 ▼▼▼
             # 現状のシミュ仕様では、SR/RL/CHARGEタイプは必ずチャージ時間を経て発射されるため、常にフルチャージ扱いとする。
@@ -154,8 +156,7 @@ class CharacterActionMixin:
                 if self.state_timer >= self.current_action_duration: self.state = "CHARGING"; self.state_timer = 0
             elif self.state == "CHARGING":
                 if self.state_timer == 0:
-                    base_frames = max(1, self.weapon.charge_time * simulator.FPS)
-                    self.current_action_duration = self.get_buffed_frames('charge', base_frames, frame)
+                    self.cumulative_charge_time = 0.0
 
                 # ▼▼▼ 追加: チャージ時間トリガーの処理 ▼▼▼
                 # 累積チャージ時間を初期化・加算
@@ -168,6 +169,11 @@ class CharacterActionMixin:
                 # JSONで "trigger_value": 0.2 とすれば、0.2秒経過するたびに発動します
                 damage_this_frame += self.process_trigger('charging_time', self.cumulative_charge_time, frame, is_full_burst, simulator, delta=dt)
                 # ▲▲▲ 追加ここまで ▲▲▲
+
+                # チャージ中にバフや固定化が変わっても、現在の蓄積時間は維持したまま
+                # 必要チャージ時間だけを現在の状態から再計算する。
+                base_frames = max(1, self.weapon.charge_time * simulator.FPS)
+                self.current_action_duration = self.get_buffed_frames('charge', base_frames, frame)
                 
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration: self.state = "SHOOTING"; self.state_timer = 0

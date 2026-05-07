@@ -306,6 +306,8 @@ class BuffManager:
                 if is_match(b.get('tag')) and (b['end_frame'] >= current_frame or b['shot_life'] > 0): return True
         for stack in self.active_stacks.values():
             # 修正: is_match を使用
+            if stack.get('count', 1) <= 0:
+                continue
             if is_match(stack.get('tag')) and (stack['end_frame'] >= current_frame or stack['shot_life'] > 0): return True
         return False
 

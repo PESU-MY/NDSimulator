@@ -1,0 +1,224 @@
+{
+  "name": "エレグ：ブーム・アンド・ショック",
+  "weapon_type": "MG",
+  "burst_stage": "3",
+  "element": "Water",
+  "class": "Attacker",
+  "squad": "エレクトリックショック",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.5,
+    "damage_rate": 0.0557,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: ハローゴースト (キャプチャー数初期化)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "stack_name": "elegg_ghost_capture",
+        "tag": "elegg_ghost_capture",
+        "value": 1,
+        "stack_amount": 0,
+        "max_stack": 13,
+        "duration": 99999,
+        "description": "幽霊キャプチャー数。0から開始し、最大13"
+      }
+    },
+    {
+      "name": "S1: ハローゴースト (憑依)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "enemy",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "tag": "elegg_possession",
+        "value": 1,
+        "duration": 6,
+        "description": "ランダムな敵1機に憑依。敵1体環境では単体に付与"
+      }
+    },
+    {
+      "name": "S1: ハローゴースト (憑依再発動)",
+      "trigger_type": "time_interval",
+      "trigger_value": 6,
+      "effect_type": "buff",
+      "target": "enemy",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "tag": "elegg_possession",
+        "value": 1,
+        "duration": 6,
+        "description": "憑依の再発動周期6秒"
+      }
+    },
+    {
+      "name": "S2: ゴーストバスター (最大時キャプチャー発動ダメージ)",
+      "trigger_type": "time_interval",
+      "trigger_value": 6,
+      "condition": {
+        "stack_name": "elegg_ghost_capture",
+        "stack_min": 13
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 4,
+        "multiplier_list": [6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0],
+        "is_skill_damage": true,
+        "description": "幽霊キャプチャー数最大状態でキャプチャー発動時、敵全体へダメージ。敵1体として近似"
+      }
+    },
+    {
+      "name": "S1: ハローゴースト (幽霊キャプチャー)",
+      "trigger_type": "time_interval",
+      "trigger_value": 6,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "stack_name": "elegg_ghost_capture",
+        "tag": "elegg_ghost_capture",
+        "value": 1,
+        "max_stack": 13,
+        "duration": 99999,
+        "description": "必要命中回数100回を満たしたものとして6秒ごとに幽霊キャプチャー数+1"
+      }
+    },
+    {
+      "name": "S1: ハローゴースト (水冷攻撃力)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1,
+      "condition": {
+        "stack_name": "elegg_ghost_capture",
+        "stack_min": 1
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "element": "Water"
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "atk",
+        "value_list": [0.0957, 0.103, 0.1104, 0.1178, 0.1251, 0.1325, 0.1399, 0.1472, 0.1546, 0.162],
+        "duration": 0.98,
+        "description": "水冷コードの味方全体に、スキル発動者基準の攻撃力UP"
+      }
+    },
+    {
+      "name": "S1: ハローゴースト (水冷有利コード)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1,
+      "condition": {
+        "stack_name": "elegg_ghost_capture",
+        "stack_min": 4
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "element": "Water"
+      },
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "elemental_buff",
+        "value_list": [0.2068, 0.2227, 0.2386, 0.2545, 0.2704, 0.2864, 0.3023, 0.3182, 0.3341, 0.35],
+        "duration": 1.1,
+        "description": "幽霊キャプチャー数4以上で水冷コードの味方全体に有利コード攻撃ダメージUP"
+      }
+    },
+    {
+      "name": "S2: ゴーストバスター (バースト使用時攻撃力)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "atk_buff_rate",
+        "value_list": [0.2363, 0.2545, 0.2727, 0.2909, 0.3091, 0.3272, 0.3454, 0.3636, 0.3818, 0.4],
+        "duration": 10
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: サーティーンゴースト",
+    "trigger_type": "manual",
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "condition": {
+          "stack_name": "elegg_ghost_capture",
+          "stack_max": 12
+        },
+        "kwargs": {
+          "effect_no": 5,
+          "multiplier_list": [4.7272, 5.0909, 5.4545, 5.8181, 6.1818, 6.5454, 6.909, 7.2727, 7.6363, 8.0],
+          "loop_count": 6,
+          "is_skill_damage": true,
+          "is_sequential": true,
+          "force_full_burst": true,
+          "description": "幽霊キャプチャー数が13でない時、6回順番攻撃。敵1体として近似"
+        }
+      },
+      {
+        "effect_type": "increase_current_stack_count",
+        "target": "self",
+        "condition": {
+          "stack_name": "elegg_ghost_capture",
+          "stack_max": 12
+        },
+        "kwargs": {
+          "stack_name": "elegg_ghost_capture",
+          "value": -6,
+          "description": "幽霊キャプチャー数6減少、最低1を維持"
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "condition": {
+          "stack_name": "elegg_ghost_capture",
+          "stack_min": 13
+        },
+        "kwargs": {
+          "effect_no": 6,
+          "multiplier_list": [4.7272, 5.0909, 5.4545, 5.8181, 6.1818, 6.5454, 6.909, 7.2727, 7.6363, 8.0],
+          "loop_count": 13,
+          "is_skill_damage": true,
+          "is_sequential": true,
+          "force_full_burst": true,
+          "description": "幽霊キャプチャー数が13の時、13回順番攻撃。敵1体として近似"
+        }
+      },
+      {
+        "effect_type": "increase_current_stack_count",
+        "target": "self",
+        "condition": {
+          "stack_name": "elegg_ghost_capture",
+          "stack_min": 13
+        },
+        "kwargs": {
+          "stack_name": "elegg_ghost_capture",
+          "value": -9,
+          "description": "幽霊キャプチャー数9減少"
+        }
+      }
+    ]
+  }
+}

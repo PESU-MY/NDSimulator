@@ -1,0 +1,289 @@
+{
+  "name": "紅蓮：ブラックシャドウ",
+  "weapon_type": "RL",
+  "burst_stage": "3",
+  "element": "Wind",
+  "class": "Attacker",
+  "squad": "ゴッデス",
+  "stats": {
+    "charge_time": 0.3,
+    "charge_mult": 1.5,
+    "max_ammo": 9,
+    "reload_time": 2.0,
+    "damage_rate": 0.5729,
+    "windup_frames": 25,
+    "winddown_frames": 0,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: 花無十日紅・破竹 (通常カウント)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_not_has_tag": "scbs_burst_active"
+      },
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "stack_name": "scbs_s1_normal_count",
+        "tag": "scbs_s1_normal_count",
+        "value": 1,
+        "max_stack": 9,
+        "duration": 99999,
+        "description": "スキル1通常時のフルチャージ攻撃回数カウンタ"
+      }
+    },
+    {
+      "name": "S1: 花無十日紅・破竹 (3回)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_not_has_tag": "scbs_burst_active",
+        "stack_name": "scbs_s1_normal_count",
+        "stack_min": 3,
+        "stack_max": 3
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 1,
+        "multiplier_list": [1.9333, 1.9968, 2.0603, 2.1238, 2.1873, 2.2507, 2.3142, 2.3777, 2.4412, 2.5047],
+        "is_skill_damage": true,
+        "description": "最終防御力が最も低い敵1機へのダメージ。単体敵として近似"
+      }
+    },
+    {
+      "name": "S1: 花無十日紅・破竹 (6回)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_not_has_tag": "scbs_burst_active",
+        "stack_name": "scbs_s1_normal_count",
+        "stack_min": 6,
+        "stack_max": 6
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [3.2857, 3.4761, 3.6666, 3.8571, 4.0476, 4.238, 4.4285, 4.619, 4.8095, 5.0],
+        "is_split": true,
+        "is_skill_damage": true,
+        "description": "攻撃範囲内の敵への分配ダメージ。敵1体環境では単体分配として計算"
+      }
+    },
+    {
+      "name": "S1: 花無十日紅・破竹 (9回)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_not_has_tag": "scbs_burst_active",
+        "stack_name": "scbs_s1_normal_count",
+        "stack_min": 9,
+        "stack_max": 9
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 3,
+        "multiplier_list": [3.9047, 4.3047, 4.7047, 5.1047, 5.5047, 5.9047, 6.3047, 6.7047, 7.1047, 7.5047],
+        "is_split": true,
+        "is_skill_damage": true,
+        "description": "敵全体への分配ダメージ。敵1体環境では単体分配として計算"
+      }
+    },
+    {
+      "name": "S1: 花無十日紅・破竹 (通常カウントリセット)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_not_has_tag": "scbs_burst_active",
+        "stack_name": "scbs_s1_normal_count",
+        "stack_min": 9
+      },
+      "effect_type": "remove_buff_by_tag",
+      "target": "self",
+      "kwargs": {
+        "tag": "scbs_s1_normal_count"
+      }
+    },
+    {
+      "name": "S1: 花無十日紅・破竹 (バースト中カウント)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "scbs_burst_active"
+      },
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "stack_name": "scbs_s1_burst_count",
+        "tag": "scbs_s1_burst_count",
+        "value": 1,
+        "max_stack": 3,
+        "duration": 10,
+        "description": "バースト中はスキル1条件を1/2/3回として扱うためのカウンタ"
+      }
+    },
+    {
+      "name": "S1: 花無十日紅・破竹 (バースト中1回)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "scbs_burst_active",
+        "stack_name": "scbs_s1_burst_count",
+        "stack_min": 1,
+        "stack_max": 1
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 1,
+        "multiplier_list": [1.9333, 1.9968, 2.0603, 2.1238, 2.1873, 2.2507, 2.3142, 2.3777, 2.4412, 2.5047],
+        "is_skill_damage": true,
+        "description": "バースト中は3回条件を1回条件に変更"
+      }
+    },
+    {
+      "name": "S1: 花無十日紅・破竹 (バースト中2回)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "scbs_burst_active",
+        "stack_name": "scbs_s1_burst_count",
+        "stack_min": 2,
+        "stack_max": 2
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [3.2857, 3.4761, 3.6666, 3.8571, 4.0476, 4.238, 4.4285, 4.619, 4.8095, 5.0],
+        "is_split": true,
+        "is_skill_damage": true,
+        "description": "バースト中は6回条件を2回条件に変更。敵1体環境では単体分配として計算"
+      }
+    },
+    {
+      "name": "S1: 花無十日紅・破竹 (バースト中3回)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "scbs_burst_active",
+        "stack_name": "scbs_s1_burst_count",
+        "stack_min": 3,
+        "stack_max": 3
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 3,
+        "multiplier_list": [3.9047, 4.3047, 4.7047, 5.1047, 5.5047, 5.9047, 6.3047, 6.7047, 7.1047, 7.5047],
+        "is_split": true,
+        "is_skill_damage": true,
+        "description": "バースト中は9回条件を3回条件に変更。敵1体環境では単体分配として計算"
+      }
+    },
+    {
+      "name": "S1: 花無十日紅・破竹 (バースト中カウントリセット)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "scbs_burst_active",
+        "stack_name": "scbs_s1_burst_count",
+        "stack_min": 3
+      },
+      "effect_type": "remove_buff_by_tag",
+      "target": "self",
+      "kwargs": {
+        "tag": "scbs_s1_burst_count"
+      }
+    },
+    {
+      "name": "S2: 花無十日紅・修羅 (最大装弾数)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "max_ammo_rate",
+        "value_list": [0.4, 0.4222, 0.4444, 0.4666, 0.4888, 0.511, 0.5332, 0.5554, 0.5776, 0.6],
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: 花無十日紅・修羅 (弾丸チャージ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "delayed_action",
+      "target": "self",
+      "kwargs": {
+        "duration": 0.02,
+        "sub_effect": {
+          "effect_type": "ammo_charge",
+          "kwargs": {
+            "effect_no": 5,
+            "rate_list": [0.3, 0.3, 0.3, 0.6, 0.6, 0.6, 1.0, 1.0, 1.0, 1.0],
+            "description": "最大装弾数バフ反映後に弾丸チャージするため1フレーム遅延"
+          }
+        }
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 花無十日紅・満開",
+    "trigger_type": "manual",
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "remove_buff_by_tag",
+        "target": "self",
+        "kwargs": {
+          "tag": "scbs_s1_burst_count"
+        }
+      },
+      {
+        "effect_type": "stack_buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "stack_name": "scbs_burst_active",
+          "tag": "scbs_burst_active",
+          "value": 1,
+          "max_stack": 1,
+          "duration": 10,
+          "description": "スキル1のフルチャージ攻撃回数条件を1/2/3回に変更"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 6,
+          "buff_type": "atk_buff_rate",
+          "value_list": [0.1728, 0.2815, 0.3902, 0.4989, 0.6076, 0.7164, 0.8251, 0.9338, 1.0425, 1.1512],
+          "duration": 10
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 7,
+          "buff_type": "charge_dmg_buff",
+          "value_list": [0.8532, 0.9252, 0.9972, 1.0692, 1.1412, 1.2132, 1.2852, 1.3572, 1.4292, 1.5012],
+          "duration": 10
+        }
+      }
+    ]
+  }
+}

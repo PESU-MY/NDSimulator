@@ -52,7 +52,7 @@ class CharacterStatsMixin:
             if effective_def < 0: effective_def = 0
         # ▲▲▲ 修正ここまで ▲▲▲
         raw_damage_diff = final_atk - effective_def
-        if raw_damage_diff <= 0: return 1.0, False
+        if raw_damage_diff <= 0: return 1.0, False, False
         layer_atk = raw_damage_diff
         
         # 3. 武器倍率・スキル倍率
@@ -90,7 +90,7 @@ class CharacterStatsMixin:
             is_core = random.random() < (core_prob / hit_prob)
 
         is_hit = random.random() < hit_prob
-        if not is_hit: return 0.0, False
+        if not is_hit: return 0.0, False, False
         
         if is_core:
             core_dmg_buff = self.buff_manager.get_total_value('core_dmg_buff', frame)
@@ -144,6 +144,11 @@ class CharacterStatsMixin:
         if profile['is_dot']: bucket_dmg += self.buff_manager.get_total_value('dot_dmg_buff', frame)
         if profile['burst_buff_enabled'] and (is_full_burst or profile.get('force_full_burst', False)):
              bucket_dmg += self.buff_manager.get_total_value('burst_dmg_buff', frame)
+
+        # ▼▼▼ 追加: 順番攻撃ダメージバフの計算 (Skill 2) ▼▼▼
+        is_sequential_buff = self.buff_manager.get_total_value('is_sequential', frame)
+        if profile.get('is_sequential', False) or is_sequential_buff > 0:
+            bucket_dmg += self.buff_manager.get_total_value('sequential_dmg_buff', frame)
         
         layer_dmg = 1.0 + bucket_dmg
         

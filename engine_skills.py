@@ -3,6 +3,52 @@ from utils import round_half_up
 import random
 
 class SkillEngineMixin:
+    def _formation_index(self, character):
+        try:
+            return self.characters.index(character)
+        except (AttributeError, ValueError):
+            return None
+
+    def _check_formation_condition(self, formation, caster, target):
+        caster_idx = self._formation_index(caster)
+        target_idx = self._formation_index(target)
+        if caster_idx is None or target_idx is None:
+            return False
+
+        last_idx = len(self.characters) - 1
+        diff = target_idx - caster_idx
+        if formation == "adjacent":
+            return abs(diff) == 1
+        if formation == "self_and_adjacent":
+            return abs(diff) <= 1
+        if formation == "left_of_self":
+            return diff == -1
+        if formation == "right_of_self":
+            return diff == 1
+        if formation == "left_side":
+            return target_idx < caster_idx
+        if formation == "right_side":
+            return target_idx > caster_idx
+        if formation == "leftmost":
+            return target_idx == 0
+        if formation == "rightmost":
+            return target_idx == last_idx
+        if formation in ["front_row", "front"]:
+            return target_idx % 2 == 0
+        if formation in ["back_row", "back"]:
+            return target_idx % 2 == 1
+        return False
+
+    def _any_target_condition_matches(self, condition, caster, frame):
+        if not condition or not caster:
+            return False
+        for char in self.characters:
+            if getattr(char, "current_hp", 0) <= 0:
+                continue
+            if self.check_target_condition(condition, caster, char, frame):
+                return True
+        return False
+
     def check_target_condition(self, condition, caster, target, frame):
         if not condition: return True
         
@@ -15,6 +61,41 @@ class SkillEngineMixin:
 
         if 'class' in condition and target.character_class != condition['class']:
             return False
+        if "name" in condition:
+            expected_names = condition["name"]
+            if isinstance(expected_names, str):
+                expected_names = [expected_names]
+            if target.name not in expected_names:
+                return False
+        if "not_name" in condition:
+            blocked_names = condition["not_name"]
+            if isinstance(blocked_names, str):
+                blocked_names = [blocked_names]
+            if target.name in blocked_names:
+                return False
+        if condition.get("not_self") and target == caster:
+            return False
+        if "alive" in condition:
+            is_alive = getattr(target, "current_hp", 0) > 0
+            if is_alive != condition["alive"]:
+                return False
+        if "formation" in condition:
+            formations = condition["formation"]
+            if isinstance(formations, str):
+                formations = [formations]
+            if not any(self._check_formation_condition(f, caster, target) for f in formations):
+                return False
+        if "formation_index" in condition:
+            target_idx = self._formation_index(target)
+            if target_idx != int(condition["formation_index"]):
+                return False
+        if "formation_position" in condition:
+            target_idx = self._formation_index(target)
+            expected_positions = condition["formation_position"]
+            if isinstance(expected_positions, int):
+                expected_positions = [expected_positions]
+            if target_idx is None or target_idx + 1 not in expected_positions:
+                return False
         if 'element' in condition and target.element != condition['element']: return False
         if 'weapon_type' in condition and target.weapon.weapon_class != condition['weapon_type']: return False
         if 'burst_stage' in condition and str(target.burst_stage) != str(condition['burst_stage']): return False
@@ -94,7 +175,7 @@ class SkillEngineMixin:
 
         return True
 
-    def should_apply_skill(self, skill, frame, caster=None):
+    def should_apply_skill(self, skill, frame, caster=None, is_full_burst=False):
         # ▼▼▼ 追加: 確率発動の判定 (Probability Check) ▼▼▼
         # kwargsに "probability" が設定されている場合、その確率(%)で判定を行う
         proc_rate = skill.kwargs.get('probability')
@@ -126,6 +207,28 @@ class SkillEngineMixin:
                 tag = skill.condition["self_not_has_tag"]
                 if caster.buff_manager.has_active_tag(tag, frame): return False
 
+            if "self_has_active_dot" in skill.condition and caster:
+                dot_names = skill.condition["self_has_active_dot"]
+                if isinstance(dot_names, str):
+                    dot_names = [dot_names]
+                has_dot = False
+                for dot_name in dot_names:
+                    dot = caster.active_dots.get(dot_name)
+                    if dot and dot.get('count', 0) > 0 and dot.get('end_frame', -1) >= frame:
+                        has_dot = True
+                        break
+                if not has_dot:
+                    return False
+
+            if "self_not_has_active_dot" in skill.condition and caster:
+                dot_names = skill.condition["self_not_has_active_dot"]
+                if isinstance(dot_names, str):
+                    dot_names = [dot_names]
+                for dot_name in dot_names:
+                    dot = caster.active_dots.get(dot_name)
+                    if dot and dot.get('count', 0) > 0 and dot.get('end_frame', -1) >= frame:
+                        return False
+
             if skill.condition.get('is_last_burst_user'):
                 if self.last_burst_char_name != skill.owner_name: return False
 
@@ -140,9 +243,18 @@ class SkillEngineMixin:
                     if count < skill.condition["self_stack_min"]:
                         return False
 
+            if ("stack_min" in skill.condition or "stack_max" in skill.condition) and caster:
+                stack_name = skill.condition.get("stack_name")
+                if stack_name:
+                    count = caster.buff_manager.get_stack_count(stack_name, frame)
+                    min_v = skill.condition.get("stack_min", -999)
+                    max_v = skill.condition.get("stack_max", 999)
+                    if not (min_v <= count <= max_v):
+                        return False
+
             if "is_full_burst" in skill.condition:
                 required_state = skill.condition["is_full_burst"]
-                is_fb_now = (getattr(self, 'burst_state', 'GEN') == 'FULL')
+                is_fb_now = bool(is_full_burst)
                 if is_fb_now != required_state:
                     return False
             
@@ -151,8 +263,51 @@ class SkillEngineMixin:
                 if not getattr(self, flag_name, False):
                     return False
                 
+            if "self_formation" in skill.condition:
+                if not caster:
+                    return False
+                formations = skill.condition["self_formation"]
+                if isinstance(formations, str):
+                    formations = [formations]
+                if not any(self._check_formation_condition(f, caster, caster) for f in formations):
+                    return False
+
+            if "self_formation_position" in skill.condition:
+                if not caster:
+                    return False
+                caster_idx = self._formation_index(caster)
+                expected_positions = skill.condition["self_formation_position"]
+                if isinstance(expected_positions, int):
+                    expected_positions = [expected_positions]
+                if caster_idx is None or caster_idx + 1 not in expected_positions:
+                    return False
+
             # ▼▼▼ 追加: 部隊内のクラス存在判定 ▼▼▼
             # 味方に指定クラスがいるか (has_ally_class)
+            if "any_target_condition" in skill.condition:
+                if not caster:
+                    return False
+                sub_condition = skill.condition["any_target_condition"]
+                if not self._any_target_condition_matches(sub_condition, caster, frame):
+                    return False
+
+            if "any_target_condition_enter" in skill.condition:
+                if not caster:
+                    return False
+                sub_condition = skill.condition["any_target_condition_enter"]
+                is_active = self._any_target_condition_matches(sub_condition, caster, frame)
+                condition_states = getattr(skill, "_condition_enter_states", {})
+                state_key = repr(sub_condition)
+                if state_key not in condition_states and skill.condition.get("condition_enter_skip_initial"):
+                    condition_states[state_key] = is_active
+                    skill._condition_enter_states = condition_states
+                    return False
+                was_active = condition_states.get(state_key, False)
+                condition_states[state_key] = is_active
+                skill._condition_enter_states = condition_states
+                if not is_active or was_active:
+                    return False
+
             if "has_ally_class" in skill.condition:
                 target_class = skill.condition["has_ally_class"]
                 exclude_self = skill.condition.get("exclude_self", True) # デフォルトで自分を除外
@@ -247,7 +402,7 @@ class SkillEngineMixin:
                 return 0
             self.executed_skill_ids.add(unique_key)
         
-        if not self.should_apply_skill(skill, frame, caster): return 0
+        if not self.should_apply_skill(skill, frame, caster, is_full_burst): return 0
 
         # ▼▼▼▼▼ 【重要】ここに追加してください ▼▼▼▼▼
         # この行がないと、回数がカウントされず、max_trigger_countが機能しません
@@ -423,12 +578,16 @@ class SkillEngineMixin:
                     self.log(f"[Debuff Cleanse] Decreased '{tag}' stacks by {amount} for {target.name}", target_name=caster.name)
             return 0
 
-        if skill.effect_type == 'remove_buff':
+        if skill.effect_type in ['remove_buff', 'remove_buff_by_tag']:
             tag = kwargs.get('tag')
             if tag:
-                for target in targets:
-                    target.buff_manager.remove_buffs_by_tag(tag, frame)
-                    self.log(f"[Remove Buff] Removed buffs with tag '{tag}' from {target.name}", target_name=caster.name)
+                if skill.target == 'enemy':
+                    self.enemy_debuffs.remove_buffs_by_tag(tag, frame)
+                    self.log(f"[Remove Buff] Removed enemy buffs with tag '{tag}'", target_name=caster.name)
+                else:
+                    for target in targets:
+                        target.buff_manager.remove_buffs_by_tag(tag, frame)
+                        self.log(f"[Remove Buff] Removed buffs with tag '{tag}' from {target.name}", target_name=caster.name)
             return 0
 
         if kwargs.get('scale_by_max_ammo'):
@@ -571,6 +730,9 @@ class SkillEngineMixin:
                     prev_count = 0
                     if stack_name:
                             prev_count = manager.get_stack_count(stack_name, frame)
+                    old_max_hp = None
+                    if kwargs.get('update_current_hp', False) and b_type in ['max_hp_rate', 'max_hp_fixed'] and skill.target != 'enemy':
+                        old_max_hp = target.get_current_max_hp(frame)
 
                     manager.add_buff(
                         b_type, val, dur, frame, source=skill.name,
@@ -587,8 +749,17 @@ class SkillEngineMixin:
                     if stack_name:
                         new_count = manager.get_stack_count(stack_name, frame)
                         self.log(f"[Stack] Applied {skill.name} (Stack:{stack_name} {prev_count}->{new_count}) to {t_str}", target_name=caster.name)
+                        if skill.target != 'enemy' and new_count > prev_count:
+                            target.process_trigger('stack_count', stack_name, frame, is_full_burst, self, delta=new_count - prev_count)
                     else:
                         self.log(f"[Buff] Applied {skill.name} ({b_type}: {val}) to {t_str}", target_name=caster.name)
+
+                    if old_max_hp is not None:
+                        new_max_hp = target.get_current_max_hp(frame)
+                        hp_diff = new_max_hp - old_max_hp
+                        if hp_diff > 0:
+                            target.current_hp += hp_diff
+                            self.log(f"[HP Mod] Increased Current HP by {hp_diff:.0f} due to MaxHP buff", target_name=target.name)
 
                 if kwargs.get('scale_by_missing_hp_percentage'):
                     max_hp = target.get_current_max_hp(frame)
@@ -603,18 +774,6 @@ class SkillEngineMixin:
                 if kwargs.get('scale_by_reference', False):
                     # (Simplified for brevity, but referencing logic is here in original)
                     pass
-                
-                if b_type == 'max_hp_rate':
-                    update_current = kwargs.get('update_current_hp', False)
-                    if update_current:
-                        old_max_hp = target.get_current_max_hp(frame)
-                        # Re-add buff to ensure stats updated? The original logic did this.
-                        # Since we already added buff above, we just check HP diff.
-                        new_max_hp = target.get_current_max_hp(frame)
-                        hp_diff = new_max_hp - old_max_hp
-                        if hp_diff > 0:
-                            target.current_hp += hp_diff
-                            self.log(f"[HP Mod] Increased Current HP by {hp_diff:.0f} due to MaxHP buff", target_name=target.name)
                 
                 added_stack_count = 0
                 if skill.effect_type == 'stack_buff':
@@ -679,37 +838,63 @@ class SkillEngineMixin:
                 self.log(f"[Barrier] {target.name} applied Shield ({tag_name}) (Val:{value}, Dur:{kwargs.get('duration')}s)", target_name=target.name)
 
             elif skill.effect_type == 'stack_dot':
-                stack_name = skill.kwargs.get('stack_name', skill.name)
-                max_stack = skill.kwargs.get('max_stack', 1)
-                raw_profile = skill.kwargs.get('profile', {})
-                full_profile = DamageProfile.create(**raw_profile)
+                stack_name = kwargs.get('stack_name', skill.name)
+                max_stack = kwargs.get('max_stack', 1)
+                stack_amount = int(kwargs.get('stack_amount', 1))
+                if 'stack_amount_from_stack' in kwargs:
+                    amount_stack_name = kwargs['stack_amount_from_stack']
+                    stack_amount = max(0, caster.buff_manager.get_stack_count(amount_stack_name, frame))
+                profile_kwargs = kwargs.copy()
+                raw_profile = profile_kwargs.pop('profile', {})
+                if isinstance(raw_profile, dict):
+                    profile_kwargs.update(raw_profile)
+                full_profile = DamageProfile.create(**profile_kwargs)
                 
                 if stack_name in target.active_dots:
                     dot = target.active_dots[stack_name]
-                    dot['count'] = min(max_stack, dot['count'] + 1)
-                    dot['end_frame'] = frame + (skill.kwargs.get('duration', 0) * self.FPS)
+                    dot['count'] = min(max_stack, dot['count'] + stack_amount)
+                    dot['end_frame'] = frame + (kwargs.get('duration', 0) * self.FPS)
                     dot['profile'] = full_profile
+                    dot['tag'] = kwargs.get('tag', stack_name)
                 else:
                     target.active_dots[stack_name] = {
-                        'end_frame': frame + (skill.kwargs.get('duration', 0) * self.FPS),
-                        'multiplier': skill.kwargs['multiplier'], 
+                        'end_frame': frame + (kwargs.get('duration', 0) * self.FPS),
+                        'multiplier': kwargs.get('multiplier', kwargs.get('value', 0)), 
                         'profile': full_profile,
-                        'count': 1, 'max_stack': max_stack, 'element': caster.element
+                        'count': min(max_stack, stack_amount), 'max_stack': max_stack, 'element': caster.element,
+                        'tag': kwargs.get('tag', stack_name),
+                        'start_frame': frame,
+                        'next_tick': frame + (kwargs.get('interval', 1.0) * self.FPS),
+                        'interval': kwargs.get('interval', 1.0) * self.FPS
                     }
                 self.log(f"[DoT] Applied/Stacked {stack_name} on Enemy (via {target.name})", target_name=target.name)
 
             elif skill.effect_type == 'dot':
-                raw_profile = skill.kwargs.get('profile', {})
-                mult = skill.kwargs.get('multiplier', 0)
-                if not mult and 'multiplier_list' in skill.kwargs:
-                     mult = skill.kwargs['multiplier_list'][0]
+                profile_kwargs = kwargs.copy()
+                raw_profile = profile_kwargs.pop('profile', {})
+                if isinstance(raw_profile, dict):
+                    profile_kwargs.update(raw_profile)
+                mult = kwargs.get('value', 0)
+                if mult == 0:
+                    mult = kwargs.get('multiplier', 0)
 
-                full_profile = DamageProfile.create(**raw_profile)
-                duration_sec = skill.kwargs.get('duration', 0)
-                interval = skill.kwargs.get('interval', 1.0)
-                tag = skill.kwargs.get('tag')
-                is_extend = skill.kwargs.get('is_extend', False)
+                full_profile = DamageProfile.create(**profile_kwargs)
+                duration_sec = kwargs.get('duration', 0)
+                interval = kwargs.get('interval', 1.0)
+                tag = kwargs.get('tag')
+                is_extend = kwargs.get('is_extend', False)
                 key = tag if tag else skill.name
+                dot_count = int(kwargs.get('dot_count', 1))
+                copy_dot_name = kwargs.get('copy_dot_count')
+                if copy_dot_name:
+                    source_dot = caster.active_dots.get(copy_dot_name)
+                    if source_dot and source_dot.get('end_frame', -1) >= frame:
+                        dot_count = int(source_dot.get('count', 0))
+                    else:
+                        dot_count = 0
+                    if dot_count <= 0:
+                        self.log(f"[DoT] Skipped {skill.name}; source DoT '{copy_dot_name}' has no active stacks", target_name=target.name)
+                        continue
 
                 if is_extend and tag and key in target.active_dots:
                     dot = target.active_dots[key]
@@ -721,8 +906,8 @@ class SkillEngineMixin:
                         'source': skill.name,
                         'multiplier': mult,
                         'profile': full_profile,
-                        'count': 1, 
-                        'max_stack': 1, 
+                        'count': dot_count,
+                        'max_stack': max(int(kwargs.get('max_stack', dot_count)), dot_count),
                         'element': caster.element,
                         'start_frame': frame,
                         'end_frame': frame + (duration_sec * self.FPS),
@@ -732,16 +917,34 @@ class SkillEngineMixin:
                     }
                     self.log(f"[DoT] Applied {skill.name} ({tag}) on {target.name}", target_name=target.name)
 
+            elif skill.effect_type in ['remove_dot', 'remove_dot_by_tag']:
+                tag = kwargs.get('tag') or kwargs.get('stack_name')
+                if tag:
+                    removed = []
+                    for dot_name, dot in list(target.active_dots.items()):
+                        if dot_name == tag or dot.get('tag') == tag:
+                            del target.active_dots[dot_name]
+                            removed.append(dot_name)
+                    if removed:
+                        self.log(f"[DoT Remove] Removed {removed} from {target.name}", target_name=caster.name)
+
             elif skill.effect_type == 'damage':
                 if kwargs.get('damage_type') == 'ignore_def':
                     kwargs['is_ignore_def'] = True
-                if 'is_skill_damage' not in kwargs:
-                    kwargs['is_skill_damage'] = True
-                    
-                profile = DamageProfile.create(**kwargs)
+                profile_kwargs = kwargs.copy()
+                raw_profile = profile_kwargs.pop('profile', {})
+                if isinstance(raw_profile, dict):
+                    profile_kwargs.update(raw_profile)
+                if 'is_skill_damage' not in profile_kwargs:
+                    profile_kwargs['is_skill_damage'] = True
+
+                profile = DamageProfile.create(**profile_kwargs)
                 mult = kwargs.get('value', 0)
                 if mult == 0: mult = kwargs.get('multiplier', 1.0)
                 loops = int(kwargs.get('loop_count', 1))
+                if 'loop_count_from_stack' in kwargs:
+                    loop_stack_name = kwargs['loop_count_from_stack']
+                    loops = max(0, caster.buff_manager.get_stack_count(loop_stack_name, frame))
                 if 'copy_stack_count' in kwargs:
                     stack_name = kwargs['copy_stack_count']
                     stack_count = caster.buff_manager.get_stack_count(stack_name, frame)
@@ -770,6 +973,54 @@ class SkillEngineMixin:
                 caster.total_damage += skill_dmg
                 if skill.name in caster.damage_breakdown: caster.damage_breakdown[skill.name] += skill_dmg
                 else: caster.damage_breakdown[skill.name] = skill_dmg
+                total_dmg += skill_dmg
+
+            elif skill.effect_type == 'delayed_snapshot_damage':
+                duration_sec = kwargs.get('duration', 0)
+                exec_frame = frame + int(duration_sec * self.FPS)
+                snapshot_atk = caster.get_current_atk(frame)
+                delayed_kwargs = kwargs.copy()
+                delayed_kwargs['snapshot_atk'] = snapshot_atk
+                delayed_kwargs.pop('duration', None)
+
+                act_skill = Skill(
+                    name=f"Delayed_{skill.name}",
+                    trigger_type="manual",
+                    trigger_value=0,
+                    effect_type="snapshot_damage",
+                    **delayed_kwargs
+                )
+                act_skill.target = skill.target
+                act_skill.owner_name = caster.name
+                self.scheduled_actions.append({'frame': exec_frame, 'skill': act_skill, 'caster': caster})
+                self.log(
+                    f"[Snapshot] Scheduled {skill.name} at {exec_frame / self.FPS:.2f}s "
+                    f"(ATK:{snapshot_atk:.0f}, Delay:{duration_sec}s)",
+                    target_name=caster.name
+                )
+
+            elif skill.effect_type == 'snapshot_damage':
+                snapshot_atk = kwargs.get('snapshot_atk', caster.get_current_atk(frame))
+                mult = kwargs.get('value', 0)
+                if mult == 0:
+                    mult = kwargs.get('multiplier', 1.0)
+                split_buff = caster.buff_manager.get_total_value('split_dmg_buff', frame)
+                use_split = kwargs.get('is_split', True)
+                split_layer = 1.0 + split_buff if use_split else 1.0
+                skill_dmg = snapshot_atk * mult * split_layer
+
+                self.log(
+                    f"[Snapshot Dmg] 時間:{frame/60:>6.2f}s | 名前:{skill.name:<25} | "
+                    f"Dmg:{skill_dmg:10,.0f} | SnapshotATK:{snapshot_atk:.0f} | "
+                    f"Mult:{mult:.4f} | SplitBuff:{split_buff:.4f}",
+                    target_name=caster.name
+                )
+
+                caster.total_damage += skill_dmg
+                if skill.name in caster.damage_breakdown:
+                    caster.damage_breakdown[skill.name] += skill_dmg
+                else:
+                    caster.damage_breakdown[skill.name] = skill_dmg
                 total_dmg += skill_dmg
 
             elif skill.effect_type == 'delayed_action':

@@ -1,0 +1,157 @@
+{
+  "name": "フローラ",
+  "weapon_type": "MG",
+  "burst_stage": "2",
+  "element": "Electric",
+  "class": "Supporter",
+  "squad": "ボタニックガーデン",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.5,
+    "damage_rate": 0.0557,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: ペチュニア (持続回復)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "regenerate",
+      "target": "allies",
+      "target_condition": {
+        "formation": "self_and_adjacent",
+        "alive": true
+      },
+      "kwargs": {
+        "value": 0.01,
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "max_hp",
+        "interval": 1.0,
+        "duration": 99999,
+        "description": "戦闘開始時、自分と両隣にスキル発動者の最終最大HP1%回復を1秒間隔で付与"
+      }
+    },
+    {
+      "name": "S1: ペチュニア (受けるHP回復量UP)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "allies",
+      "target_condition": {
+        "formation": "self_and_adjacent",
+        "alive": true
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "heal_effectiveness_buff",
+        "stack_name": "flora_petunia_heal_effect",
+        "max_stack": 5,
+        "stack_amount": 1,
+        "value_list": [0.0236, 0.0255, 0.0273, 0.0291, 0.0309, 0.0327, 0.0346, 0.0364, 0.0382, 0.04],
+        "duration": 99999,
+        "tag": "flora_petunia",
+        "description": "戦闘開始時、自分と両隣に受けるHP回復量UPを5スタックで付与"
+      }
+    },
+    {
+      "name": "S1: ペチュニア (電撃コードのスタック増加)",
+      "trigger_type": "shot_count",
+      "trigger_value": 100,
+      "effect_type": "increase_current_stack_count",
+      "target": "allies",
+      "target_condition": {
+        "element": "Electric",
+        "alive": true
+      },
+      "kwargs": {
+        "value": 1,
+        "ignore_tags": ["debuff", "negative_buff"],
+        "description": "通常攻撃100回ごとに、電撃コードの味方全体のスタック可能バフを1増加"
+      }
+    },
+    {
+      "name": "S2: アイリス (バリア)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "any_target_condition_enter": {
+          "formation": "adjacent",
+          "hp_ratio_max": 0.9,
+          "alive": true
+        }
+      },
+      "effect_type": "shield",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "value_list": [0.0604, 0.065, 0.0696, 0.0743, 0.0789, 0.0836, 0.0882, 0.0929, 0.0975, 0.1022],
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "max_hp",
+        "duration": 10.0,
+        "tag": "flora_iris_shield",
+        "description": "両隣の味方のうち1機がHP90%以下になった時、味方全体にバリアを付与"
+      }
+    },
+    {
+      "name": "S2: アイリス (防御力無視ダメージUP)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "any_target_condition_enter": {
+          "formation": "adjacent",
+          "hp_ratio_min": 1.0,
+          "alive": true
+        },
+        "condition_enter_skip_initial": true
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "ignore_def_dmg_buff",
+        "value_list": [0.183, 0.1971, 0.2112, 0.2252, 0.2393, 0.2534, 0.2675, 0.2816, 0.2956, 0.3097],
+        "duration": 5.0,
+        "tag": "flora_iris_ignore_def_dmg",
+        "description": "両隣の味方のうち1機のHPが最大になった時、味方全体に防御力無視ダメージUPを付与"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 秘密の花園",
+    "trigger_type": "manual",
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "allies",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "heal",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 4,
+          "value_list": [0.0617, 0.0665, 0.0712, 0.076, 0.0807, 0.0855, 0.0902, 0.095, 0.0997, 0.1045],
+          "scale_by_caster_stats": true,
+          "stat_type": "finally",
+          "target_stat": "max_hp",
+          "description": "味方全体にスキル発動者の最終最大HPに応じた回復"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 5,
+          "buff_type": "ignore_def_dmg_buff",
+          "value_list": [0.2505, 0.2698, 0.289, 0.3083, 0.3276, 0.3468, 0.3661, 0.3854, 0.4047, 0.4239],
+          "duration": 10.0,
+          "tag": "flora_secret_garden_ignore_def_dmg",
+          "description": "味方全体に防御力無視ダメージUPを付与"
+        }
+      }
+    ]
+  }
+}

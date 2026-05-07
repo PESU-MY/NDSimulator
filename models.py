@@ -34,6 +34,7 @@ class WeaponConfig:
         self.hit_size = data.get('hit_size', default_hit_sizes.get(self.weapon_class, 5))
         
         self.is_pierce = data.get('is_pierce', False)
+        self.is_ignore_def = data.get('is_ignore_def', data.get('ignore_def', False))
 
         # ▼▼▼ 追加: 爆発・付着フラグの読み込み ▼▼▼
         self.is_explosive = data.get('is_explosive', False)
@@ -90,7 +91,10 @@ class DamageProfile:
             'is_skill_damage': False,
             'enable_core_hit': False,
             # ▼▼▼ 追加: 特殊スキルダメージフラグ ▼▼▼
-            'is_special_skill_damage': False
+            'is_special_skill_damage': False,
+            # ▼▼▼ 追加: 順番攻撃（シーケンシャル）フラグ ▼▼▼
+            'is_sequential': False
+            # ▲▲▲ 追加ここまで ▲▲▲
         }
         if kwargs:
             profile.update(kwargs)
