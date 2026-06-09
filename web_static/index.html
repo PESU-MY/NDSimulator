@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NIKKE Simulator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>NIKKE Simulator</h1>
+        <p id="catalogStatus">読み込み中</p>
+      </div>
+      <div class="run-actions">
+        <a class="top-link" href="/batch">一括比較</a>
+        <button id="runAllButton" class="secondary-button" type="button">全編成実行</button>
+        <button id="runButton" class="primary-button" type="button">選択編成を実行</button>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section class="library-pane">
+        <div class="pane-head">
+          <h2>キャラ一覧</h2>
+          <input id="searchInput" type="search" placeholder="名前 / 武器 / バースト">
+        </div>
+        <div class="filter-row">
+          <button class="filter-button active" type="button" data-filter="all">全て</button>
+          <button class="filter-button" type="button" data-filter="1">B1</button>
+          <button class="filter-button" type="button" data-filter="2">B2</button>
+          <button class="filter-button" type="button" data-filter="3">B3</button>
+          <button class="filter-button" type="button" data-filter="dummy">ダミー</button>
+          <select id="weaponFilter" class="catalog-filter" data-filter-key="weaponType" title="武器種で絞り込み">
+            <option value="">武器種</option>
+          </select>
+          <select id="elementFilter" class="catalog-filter" data-filter-key="element" title="属性で絞り込み">
+            <option value="">属性</option>
+          </select>
+          <select id="squadFilter" class="catalog-filter" data-filter-key="squad" title="企業で絞り込み">
+            <option value="">企業</option>
+          </select>
+          <select id="classFilter" class="catalog-filter" data-filter-key="class" title="型で絞り込み">
+            <option value="">型</option>
+          </select>
+        </div>
+        <div id="characterList" class="character-list"></div>
+      </section>
+
+      <section class="setup-pane">
+        <div class="pane-head">
+          <h2>編成</h2>
+          <div class="formation-actions">
+            <button id="addFormationButton" class="icon-button" type="button" title="編成を追加">+</button>
+            <button id="copyFormationButton" class="ghost-button" type="button">コピー</button>
+            <button id="clearFormationButton" class="ghost-button" type="button">クリア</button>
+          </div>
+        </div>
+        <div id="formationTabs" class="formation-tabs"></div>
+        <div id="formationSlots" class="formation-grid"></div>
+
+        <div class="options-band">
+          <h2>設定</h2>
+          <div class="option-grid">
+            <label>スキルLv<input id="skillLevel" type="number" min="1" max="10" value="10"></label>
+            <label>敵コード
+              <select id="enemyElement">
+                <option value="None">None</option>
+                <option value="Fire">Fire</option>
+                <option value="Water">Water</option>
+                <option value="Electric">Electric</option>
+                <option value="Wind">Wind</option>
+                <option value="Iron">Iron</option>
+              </select>
+            </label>
+            <label>敵コア<input id="enemyCoreSize" type="number" step="0.1" value="3.0"></label>
+            <label>敵サイズ<input id="enemySize" type="number" step="0.1" value="100"></label>
+            <label>敵数<input id="enemyCount" type="number" min="1" step="1" value="1"></label>
+            <label>バースト溜め仮定時間（秒）<input id="burstChargeTime" type="number" min="0" step="0.1" value="5.0"></label>
+            <label>クラスト
+              <select id="crustOperationMode">
+                <option value="">None</option>
+                <option value="maillard">Maillard</option>
+                <option value="blanching">Blanching</option>
+              </select>
+            </label>
+            <label class="check-label"><input id="partBreakMode" type="checkbox"> 部位破壊</label>
+            <label class="check-label"><input id="specialMode" type="checkbox"> Special</label>
+          </div>
+          <div class="additional-buffs">
+            <div class="additional-buffs-head">
+              <h3>追加バフ</h3>
+              <div class="buff-add-controls">
+                <select id="additionalBuffType">
+                  <option value="cooldown_reduction">CT短縮</option>
+                  <option value="max_ammo_rate">装弾数バフ</option>
+                  <option value="reload_speed_rate">リロード速度バフ</option>
+                  <option value="elemental_buff">有利コードダメージバフ</option>
+                </select>
+                <button id="addBuffButton" class="icon-button" type="button" title="追加バフを追加">+</button>
+              </div>
+            </div>
+            <div id="additionalBuffList" class="additional-buff-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="results-pane">
+        <div class="pane-head">
+          <h2>結果</h2>
+          <span id="runStatus" class="status-pill">待機</span>
+        </div>
+        <div id="summary" class="summary-grid">
+          <div><span>総ダメージ</span><strong>-</strong></div>
+          <div><span>消費弾数</span><strong>-</strong></div>
+          <div><span>実行時間</span><strong>-</strong></div>
+        </div>
+        <div id="rotationSummary" class="rotation-summary"></div>
+        <div id="resultRows" class="result-list"></div>
+      </section>
+    </main>
+
+    <div id="detailModal" class="modal" hidden>
+      <div class="modal-backdrop" data-close-detail></div>
+      <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+        <header class="detail-head">
+          <div>
+            <h2 id="detailTitle">詳細</h2>
+            <p id="detailSubtitle"></p>
+          </div>
+          <button id="closeDetailButton" class="icon-button" type="button" title="閉じる">×</button>
+        </header>
+        <div class="detail-body">
+          <section>
+            <h3>180秒ダメージ</h3>
+            <canvas id="damageChart" width="920" height="280"></canvas>
+          </section>
+          <section>
+            <h3>ダメージ内訳</h3>
+            <div id="damageSummary" class="damage-summary"></div>
+          </section>
+          <section>
+            <h3>バースト発動</h3>
+            <div id="burstTimeline" class="event-timeline"></div>
+          </section>
+          <section>
+            <h3>バフタイムライン</h3>
+            <div id="buffTimeline" class="buff-timeline"></div>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
