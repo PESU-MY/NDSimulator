@@ -35,6 +35,7 @@ class WeaponConfig:
         
         self.is_pierce = data.get('is_pierce', False)
         self.is_ignore_def = data.get('is_ignore_def', data.get('ignore_def', False))
+        self.ignore_def_if_self_stack = data.get('ignore_def_if_self_stack')
 
         # ▼▼▼ 追加: 爆発・付着フラグの読み込み ▼▼▼
         self.is_explosive = data.get('is_explosive', False)
@@ -93,7 +94,8 @@ class DamageProfile:
             # ▼▼▼ 追加: 特殊スキルダメージフラグ ▼▼▼
             'is_special_skill_damage': False,
             # ▼▼▼ 追加: 順番攻撃（シーケンシャル）フラグ ▼▼▼
-            'is_sequential': False
+            'is_sequential': False,
+            'is_enemy_wide_burst': False
             # ▲▲▲ 追加ここまで ▲▲▲
         }
         if kwargs:
@@ -121,6 +123,18 @@ class Skill:
         
         self.current_usage_count = 0
         self.owner_name = None
+
+        self.skill_id = kwargs.get('skill_id', name)
+        self.use_individual_cooldown = kwargs.get('use_individual_cooldown', False)
+        self.individual_cooldown_time = kwargs.get(
+            'individual_cooldown_time',
+            kwargs.get('cooldown_interval', trigger_value)
+        )
+        self.initial_cooldown_time = kwargs.get(
+            'initial_cooldown_time',
+            trigger_value if trigger_type == 'time_interval' else 0
+        )
+        self.next_available_frame = kwargs.get('next_available_frame', None)
         
         # --- 追加: 同一フレームでの多重発動防止用 ---
         self.last_used_frame = -1

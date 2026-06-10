@@ -147,12 +147,32 @@ def create_dummy_character(name, burst_stage, weapon_type="AR", skills=None):
     skill_list = skills if skills else []
     return Character(name, wc, skill_list, base_atk=1, base_hp=1, element="Electric", burst_stage=burst_stage, is_dummy=False)
 
+def apply_crust_operation_mode(simulator, mode):
+    simulator.crust_maillard_mode = mode == "maillard"
+    simulator.crust_blanching_mode = mode == "blanching"
+
+    for char in simulator.characters:
+        if char.name != "クラスト":
+            continue
+
+        if mode == "maillard":
+            char.weapon.charge_time = 1 / simulator.FPS
+            char.weapon.charge_mult = 1.0
+        elif mode == "blanching":
+            char.weapon.charge_time = 2.0
+            char.weapon.charge_mult = 2.5
+
 
 # === メイン処理 ===
 
 start = time.perf_counter() #計測開始
 
 if not os.path.exists('characters'): os.makedirs('characters')
+
+# クラスト用の簡易操作モード: None / "maillard" / "blanching"
+# maillard: 非フルチャージ3回運用の近似として1Fチャージ・通常倍率
+# blanching: フルチャージ1秒維持運用の近似として2秒チャージ
+CRUST_OPERATION_MODE = None
 
 dummy_ct_skill = Skill(
     name="Dummy B1: CT Reduction",
@@ -187,11 +207,11 @@ dummy_ammo_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/ミハラ：ボンディングチェーン.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/紅蓮.json', skill_level=10)
 burst3_nikke_2 = create_character_from_json('characters/シンデレラ.json', skill_level=10)
-burst2_nikke = create_character_from_json('characters/フローラ.json', skill_level=10)
+burst2_nikke = create_character_from_json('characters/ナユタ.json', skill_level=10)
 burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
-burst1_nikke = create_character_from_json('characters/ルージュ.json', skill_level=10)
+burst1_nikke = create_character_from_json('characters/ミランダ_宝物.json', skill_level=10)
 saitotu = create_character_from_json('characters/チャイム.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
 
@@ -204,12 +224,12 @@ dummy_b3_2 = create_dummy_character("Dummy_B3_2", 3, "SG", skills=[dummy_ammo_sk
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [dummy_b1,burst1_nikke,  dummy_b2, dummy_b3, dummy_b3_2]
+all_characters = [burst1_nikke, burst2_nikke, dummy_b3, dummy_b3_2, dummy_b1]
 
 # 4. バーストローテーション
 rotation = [
     [burst1_nikke],
-    [dummy_b2],
+    [burst2_nikke],
     [dummy_b3,dummy_b3_2] 
 ]
 
@@ -226,6 +246,7 @@ sim = NikkeSimulator(
 )
 # 汎用フラグの設定例
 sim.special_mode = False 
+apply_crust_operation_mode(sim, CRUST_OPERATION_MODE)
 # 6. 実行
 print("シミュレーションを開始します...")
 results = sim.run()

@@ -8,7 +8,7 @@
 [ルート要素へのマッピング]
 - name        : 「キャラ名:」の値
 - weapon_type : 「武器種:」の値（AR, SMG, SG, MG, SR, RL）
-- burst_stage : 「バースト:」の値（文字列として "1", "2", "3"）
+- burst_stage : 「バースト:」の値（文字列として "1", "2", "3", "∀"）
 - element     : 「属性:」の英語名
                 （鉄甲→Iron, 電撃→Electric, 水冷→Water, 灼熱→Fire, 風圧→Wind）
 - class       : 「型:」の英語名

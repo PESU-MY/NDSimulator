@@ -35,7 +35,12 @@ function selectionKey(selection) {
 }
 
 function cloneSelection(selection) {
-  return selection ? { kind: selection.kind, file: selection.file, id: selection.id } : null;
+  if (!selection) return null;
+  const cloned = { kind: selection.kind, file: selection.file, id: selection.id };
+  if (selection.kind === "character" && selection.statusSettings) {
+    cloned.statusSettings = StatusCalc.normalizeIndividualStatusSettings(selection.statusSettings);
+  }
+  return cloned;
 }
 
 function selectionFromItem(item) {
@@ -94,11 +99,73 @@ function cloneAdditionalBuff(buff) {
   };
 }
 
-function defaultStagesForItem(item) {
-  const stage = String(item?.burstStage || "");
-  if (stage === "1" || stage === "2" || stage === "3") return [stage];
-  if (stage === "∀" || stage === "ALL" || stage === "*" || stage === "all") return ["3"];
-  return [];
+function inputValue(id, fallback = "") {
+  const element = document.getElementById(id);
+  return element ? element.value : fallback;
+}
+
+function inputChecked(id) {
+  const element = document.getElementById(id);
+  return element ? element.checked : false;
+}
+
+function collectStatusSettings() {
+  const individualDefaults = StatusCalc.defaultIndividualStatusSettings();
+  const equipmentDefaults = individualDefaults.equipment;
+  return {
+    enabled: true,
+    level: inputValue("statusLevel", 400),
+    limitBreak: inputValue("statusLimitBreak", individualDefaults.limitBreak),
+    bondLevel: inputValue("statusBondLevel", individualDefaults.bondLevel),
+    commonResearchLevel: inputValue("commonResearchLevel", 0),
+    classResearchLevels: {
+      Attacker: inputValue("classResearchAttacker", 0),
+      Defender: inputValue("classResearchDefender", 0),
+      Supporter: inputValue("classResearchSupporter", 0)
+    },
+    companyResearchLevels: {
+      Elysion: inputValue("companyResearchElysion", 0),
+      Missilis: inputValue("companyResearchMissilis", 0),
+      Tetra: inputValue("companyResearchTetra", 0),
+      Pilgrim: inputValue("companyResearchPilgrim", 0),
+      Abnormal: inputValue("companyResearchAbnormal", 0)
+    },
+    collectionRarity: inputValue("collectionRarity", individualDefaults.collectionRarity),
+    collectionLevel: inputValue("collectionLevel", individualDefaults.collectionLevel),
+    cubeLevel: inputValue("cubeLevel", individualDefaults.cubeLevel),
+    equipment: {
+      head: { tier: inputValue("gearHeadTier", equipmentDefaults.head.tier), level: inputValue("gearHeadLevel", equipmentDefaults.head.level) },
+      body: { tier: inputValue("gearBodyTier", equipmentDefaults.body.tier), level: inputValue("gearBodyLevel", equipmentDefaults.body.level) },
+      arms: { tier: inputValue("gearArmsTier", equipmentDefaults.arms.tier), level: inputValue("gearArmsLevel", equipmentDefaults.arms.level) },
+      legs: { tier: inputValue("gearLegsTier", equipmentDefaults.legs.tier), level: inputValue("gearLegsLevel", equipmentDefaults.legs.level) }
+    }
+  };
+}
+
+function stageMatchesItem(item, requestedStage) {
+  const itemStage = String(item?.burstStage || "");
+  const requested = String(requestedStage);
+  if (itemStage === requested) return true;
+  return itemStage === "∀" || itemStage === "ALL" || itemStage === "*" || itemStage === "all";
+}
+
+function basicRotationForSlots(slots) {
+  const rotation = { 1: [], 2: [], 3: [] };
+  const firstForStage = (stage) => {
+    return slots.findIndex((selection) => stageMatchesItem(findCatalogItem(selection), stage));
+  };
+
+  const b1 = firstForStage("1");
+  const b2 = firstForStage("2");
+  if (b1 >= 0) rotation[1].push(b1);
+  if (b2 >= 0) rotation[2].push(b2);
+
+  slots.forEach((selection, slotIndex) => {
+    if (rotation[3].length < 2 && stageMatchesItem(findCatalogItem(selection), "3")) {
+      rotation[3].push(slotIndex);
+    }
+  });
+  return rotation;
 }
 
 function splitFormationLine(line) {
@@ -339,23 +406,35 @@ function collectOptions() {
     partBreakMode: document.getElementById("partBreakMode").checked,
     specialMode: document.getElementById("specialMode").checked,
     summaryOnly: true,
+    statusSettings: collectStatusSettings(),
     additionalBuffs: state.additionalBuffs.map(cloneAdditionalBuff)
   };
 }
 
+function selectionWithComputedStats(selection, commonStatusSettings) {
+  const cloned = cloneSelection(selection);
+  if (!cloned || cloned.kind !== "character") return cloned;
+
+  const item = findCatalogItem(cloned);
+  const computedStats = StatusCalc.calculate(item, commonStatusSettings, cloned.statusSettings);
+  cloned.statusSettings = {
+    ...(cloned.statusSettings ? StatusCalc.normalizeIndividualStatusSettings(cloned.statusSettings) : {}),
+    computedStats
+  };
+  return cloned;
+}
+
 function collectPayload(formation) {
-  const rotation = { 1: [], 2: [], 3: [] };
-  formation.slots.forEach((selection, slotIndex) => {
-    const item = findCatalogItem(selection);
-    defaultStagesForItem(item).forEach((stage) => {
-      rotation[stage].push(slotIndex);
-    });
-  });
+  const rotation = basicRotationForSlots(formation.slots);
+  const statusSettings = collectStatusSettings();
 
   return {
-    formation: formation.slots.map(cloneSelection),
+    formation: formation.slots.map((selection) => selectionWithComputedStats(selection, statusSettings)),
     rotation,
-    options: collectOptions()
+    options: {
+      ...collectOptions(),
+      statusSettings
+    }
   };
 }
 
@@ -368,6 +447,33 @@ async function postSimulation(formation) {
   const data = await response.json();
   if (!response.ok || data.status !== "ok") {
     throw new Error(data.error || "シミュレーションに失敗しました");
+  }
+  return data;
+}
+
+function collectBatchEntry(formation) {
+  const payload = collectPayload(formation);
+  return {
+    id: formation.id,
+    index: formation.index,
+    name: formation.name,
+    formation: payload.formation,
+    rotation: payload.rotation
+  };
+}
+
+async function postBatchSimulation(formations) {
+  const response = await fetch("/api/simulate-batch", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      entries: formations.map(collectBatchEntry),
+      options: collectOptions()
+    })
+  });
+  const data = await response.json();
+  if (!response.ok || data.status !== "ok") {
+    throw new Error(data.error || "一括シミュレーションに失敗しました");
   }
   return data;
 }
@@ -542,24 +648,30 @@ async function runAllFormations() {
 
   const button = document.getElementById("runAllButton");
   button.disabled = true;
+  setRunStatus(`${state.formations.length}編成 実行中`);
 
-  let errorCount = 0;
   try {
-    for (let index = 0; index < state.formations.length; index += 1) {
-      const formation = state.formations[index];
-      setRunStatus(`${index + 1}/${state.formations.length} 実行中`);
-      try {
-        formation.result = await postSimulation(formation);
-        formation.error = "";
-        formation.dirty = false;
-      } catch (error) {
-        formation.error = error.message;
+    const batchResult = await postBatchSimulation(state.formations);
+    const resultMap = new Map(batchResult.results.map((entry) => [entry.id, entry]));
+    let errorCount = 0;
+    state.formations.forEach((formation) => {
+      const entry = resultMap.get(formation.id);
+      if (!entry) return;
+      if (entry.error) {
+        formation.error = entry.error;
         formation.result = null;
         errorCount += 1;
+      } else {
+        formation.result = entry.data;
+        formation.error = "";
+        formation.dirty = false;
       }
-      renderResults();
-    }
+    });
     setRunStatus(errorCount ? "一部エラー" : "完了", Boolean(errorCount));
+    renderResults();
+  } catch (error) {
+    setRunStatus("エラー", true);
+    renderParseMessages([error.message]);
   } finally {
     button.disabled = false;
   }
@@ -588,6 +700,7 @@ async function loadFormationFile(file) {
 async function loadCatalog() {
   const response = await fetch("/api/characters");
   const data = await response.json();
+  StatusCalc.setData(data.statusData);
   state.catalog = [...data.dummies, ...data.characters];
   buildCatalogIndexes();
   populateBulkCharacterSelect();

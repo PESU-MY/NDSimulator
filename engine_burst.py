@@ -55,6 +55,8 @@ class BurstEngineMixin:
                 
                 if target_char:
                     char = target_char
+                    used_stage = str(stage_idx + 1)
+                    char.current_burst_stage = used_stage
                     # ▼▼▼ 追加: バースト使用車を参加者リストに登録 ▼▼▼
                     if not hasattr(self, 'current_burst_participants'):
                         self.current_burst_participants = set()
@@ -91,7 +93,7 @@ class BurstEngineMixin:
                         self.log(f"[Burst CD] Max CD Reduced by {reduction_val:.1f}s (Base:{base_cd}s -> Final:{final_cd}s)", target_name=char.name)
                     # ▲▲▲ 修正ここまで ▲▲▲
                     
-                    self.log(f"[Burst] {char.name} used Burst Stage {self.burst_state.split('_')[1]}", target_name="System")
+                    self.log(f"[Burst] {char.name} used Burst Stage {used_stage}", target_name="System")
                     self.log(f"[Burst] Activate!", target_name=char.name)
                     
                     if self.burst_state == "BURST_3":
@@ -101,6 +103,7 @@ class BurstEngineMixin:
                         self.process_trigger_global('on_burst_enter', frame) 
                     
                     char.process_trigger('on_use_burst_skill', 0, frame, is_full_burst, self)
+                    char.current_burst_stage = None
                     
                     # 状態遷移
                     if getattr(self, 'reenter_burst_target', None):

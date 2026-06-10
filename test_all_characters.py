@@ -8,6 +8,9 @@ from pathlib import Path
 from simulator import Character, NikkeSimulator, Skill, WeaponConfig
 
 
+UNIVERSAL_BURST_STAGES = {"∀", "ALL", "all", "*"}
+
+
 def create_character_from_json(char_file_path, skill_level=10):
     char_file_path = Path(char_file_path)
     with char_file_path.open("r", encoding="utf-8") as f:
@@ -187,9 +190,10 @@ def get_burst_cooldown(character):
 
 
 def make_party_and_rotation(target):
-    target_stage = str(target.burst_stage)
+    raw_target_stage = str(target.burst_stage)
+    target_stage = "3" if raw_target_stage in UNIVERSAL_BURST_STAGES else raw_target_stage
     if target_stage not in ["1", "2", "3"]:
-        raise ValueError(f"Unsupported burst_stage: {target_stage}")
+        raise ValueError(f"Unsupported burst_stage: {raw_target_stage}")
 
     dummy_b1 = create_dummy_character("Dummy_B1", "1", "SMG", skills=[create_dummy_ct_skill()])
     dummy_b2 = create_dummy_character("Dummy_B2", "2", "SMG")
@@ -239,6 +243,9 @@ def make_party_and_rotation(target):
             party = [dummy_b1, dummy_b2, target, dummy_b3_rotation, dummy_b3_filler]
             rotation = [[dummy_b1], [dummy_b2], [target, dummy_b3_rotation]]
         policy = f"{cooldown:g}s: default stage rotation"
+
+    if raw_target_stage in UNIVERSAL_BURST_STAGES:
+        policy = f"{policy} (universal burst tested as stage {target_stage})"
 
     return party, rotation, cooldown, policy
 

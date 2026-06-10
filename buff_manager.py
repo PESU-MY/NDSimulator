@@ -136,7 +136,7 @@ class BuffManager:
             if delta > 0:
                 # スタック更新時は時間をリセット（延長）する
                 if s_data['end_frame'] > frame: # 期限切れでなければ
-                    original_duration = s_data['end_frame'] - s_data['start_frame']
+                    original_duration = s_data['end_frame'] - s_data.get('start_frame', frame)
                     s_data['start_frame'] = frame
                     s_data['end_frame'] = frame + original_duration
                 

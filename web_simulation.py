@@ -6,13 +6,16 @@ import time
 from pathlib import Path
 
 from simulator import Character, NikkeSimulator, Skill, WeaponConfig
+from status_calculator import calculate_character_base_stats
 
 
 ROOT_DIR = Path(__file__).resolve().parent
 CHARACTER_DIR = ROOT_DIR / "characters"
 WEAPON_DIR = ROOT_DIR / "weapons"
+IMAGE_DIR = ROOT_DIR / "nikke_square_images"
 UNIVERSAL_BURST_STAGES = {"∀", "ALL", "all", "*"}
 DETAIL_SECONDS = 180
+JSON_CACHE = {}
 
 
 DUMMY_DEFINITIONS = {
@@ -102,6 +105,7 @@ BUFF_BUCKET_MAP = {
     "conversion_hp_to_atk": "攻撃力",
     "weapon_dmg_buff": "武器倍率",
     "crit_rate_buff": "クリティカル/コア",
+    "normal_attack_crit_rate_buff": "クリティカル/コア",
     "crit_dmg_buff": "クリティカル/コア",
     "core_dmg_buff": "クリティカル/コア",
     "core_hit_rate_fixed": "クリティカル/コア",
@@ -208,7 +212,7 @@ class TimelineNikkeSimulator(NikkeSimulator):
             self._close_all_buff_intervals(self.TOTAL_FRAMES)
             for f in self.log_handles.values():
                 f.close()
-            if hasattr(self, "hp_log_handle") and not self.hp_log_handle.closed:
+            if self.hp_log_handle is not None and not self.hp_log_handle.closed:
                 self.hp_log_handle.close()
 
         results = {}
@@ -332,8 +336,19 @@ class TimelineNikkeSimulator(NikkeSimulator):
 
 
 def _read_json(path):
+    stat = path.stat()
+    cache_key = str(path.resolve())
+    cached = JSON_CACHE.get(cache_key)
+    if cached and cached["mtime_ns"] == stat.st_mtime_ns:
+        return copy.deepcopy(cached["data"])
+
     with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
+        data = json.load(f)
+    JSON_CACHE[cache_key] = {
+        "mtime_ns": stat.st_mtime_ns,
+        "data": data,
+    }
+    return copy.deepcopy(data)
 
 
 def _character_path(file_name):
@@ -361,21 +376,136 @@ def _extract_burst_cooldown(char_data):
     return 20.0 if burst_stage in {"1", "2"} else 40.0
 
 
+def _catalog_image_url(*names):
+    for name in names:
+        if not name:
+            continue
+        image_path = IMAGE_DIR / f"{name}.png"
+        if image_path.exists():
+            return f"/images/{image_path.name}"
+    return ""
+
+
+STATUS_DIR = ROOT_DIR / "status"
+STATUS_CLASS_FILES = {
+    "Attacker": "火力型",
+    "Defender": "防御型",
+    "Supporter": "支援型",
+}
+STATUS_PART_FILES = {
+    "head": "頭",
+    "body": "胴",
+    "arms": "腕",
+    "legs": "足",
+}
+
+
+def _read_status_rows(path):
+    if not path.exists():
+        return []
+    rows = []
+    with path.open("r", encoding="utf-8-sig") as handle:
+        for raw_line in handle:
+            line = raw_line.strip()
+            if not line:
+                continue
+            rows.append([part.strip() for part in line.split(",")])
+    return rows
+
+
+def _status_number(value, default=0.0):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def _status_level_table(path):
+    table = []
+    for row in _read_status_rows(path):
+        if len(row) < 3:
+            continue
+        table.append(
+            {
+                "level": int(_status_number(row[0])),
+                "hp": _status_number(row[1]),
+                "atk": _status_number(row[2]),
+            }
+        )
+    return table
+
+
+def _status_tier_table(path):
+    table = []
+    for row in _read_status_rows(path):
+        if len(row) < 4:
+            continue
+        table.append(
+            {
+                "tier": row[0],
+                "level": int(_status_number(row[1])),
+                "hp": _status_number(row[2]),
+                "atk": _status_number(row[3]),
+            }
+        )
+    return table
+
+
+def _status_pair(path):
+    rows = _read_status_rows(path)
+    if not rows or len(rows[0]) < 2:
+        return {"hp": 0.0, "atk": 0.0}
+    return {"hp": _status_number(rows[0][0]), "atk": _status_number(rows[0][1])}
+
+
+def get_frontend_status_data():
+    classes = {}
+    for class_key, class_file_name in STATUS_CLASS_FILES.items():
+        classes[class_key] = {
+            "base": _status_level_table(STATUS_DIR / "基礎ステータス" / f"{class_file_name}.txt"),
+            "bond": _status_level_table(STATUS_DIR / "好感度補正" / f"{class_file_name}.txt"),
+            "equipment": {
+                part_key: _status_tier_table(
+                    STATUS_DIR / "装備ステータス" / f"{class_file_name}_{part_file_name}.txt"
+                )
+                for part_key, part_file_name in STATUS_PART_FILES.items()
+            },
+        }
+
+    return {
+        "classes": classes,
+        "limitBreakFixed": _status_pair(STATUS_DIR / "凸固定ステータス" / "凸固定ステータス.txt"),
+        "research": {
+            "class": _status_pair(STATUS_DIR / "研究レベル補正" / "クラス研究.txt"),
+            "company": _status_pair(STATUS_DIR / "研究レベル補正" / "企業研究.txt"),
+            "common": _status_pair(STATUS_DIR / "研究レベル補正" / "共通研究.txt"),
+        },
+        "collection": {
+            "R": _status_level_table(STATUS_DIR / "コレクションステータス" / "R.txt"),
+            "SR": _status_level_table(STATUS_DIR / "コレクションステータス" / "SR.txt"),
+        },
+        "cube": _status_level_table(STATUS_DIR / "キューブステータス" / "キューブステータス.txt"),
+    }
+
+
 def list_character_catalog():
     characters = []
     for path in sorted(CHARACTER_DIR.glob("*.json"), key=lambda p: p.name):
         try:
             data = _read_json(path)
+            char_name = data.get("name", path.stem)
             characters.append(
                 {
                     "kind": "character",
                     "file": path.name,
-                    "name": data.get("name", path.stem),
+                    "name": char_name,
+                    "imageUrl": _catalog_image_url(char_name, path.stem),
                     "burstStage": str(data.get("burst_stage", "3")),
                     "cooldownTime": _extract_burst_cooldown(data),
                     "weaponType": data.get("weapon_type", ""),
                     "element": data.get("element", "None"),
                     "class": data.get("class", "Attacker"),
+                    "company": data.get("company", ""),
                     "squad": data.get("squad", "Unknown"),
                 }
             )
@@ -385,11 +515,13 @@ def list_character_catalog():
                     "kind": "character",
                     "file": path.name,
                     "name": path.stem,
+                    "imageUrl": _catalog_image_url(path.stem),
                     "burstStage": "",
                     "cooldownTime": "",
                     "weaponType": "",
                     "element": "",
                     "class": "",
+                    "company": "",
                     "squad": "",
                     "error": f"{type(exc).__name__}: {exc}",
                 }
@@ -402,19 +534,35 @@ def list_character_catalog():
                 "kind": "dummy",
                 "id": dummy_id,
                 "name": definition["label"],
+                "imageUrl": "",
                 "burstStage": definition["burst_stage"],
                 "cooldownTime": 20.0 if definition["burst_stage"] in {"1", "2"} else 40.0,
                 "weaponType": definition["weapon_type"],
                 "element": "Electric",
                 "class": "Dummy",
+                "company": "Dummy",
                 "squad": "Dummy",
             }
         )
 
-    return {"characters": characters, "dummies": dummies}
+    return {"characters": characters, "dummies": dummies, "statusData": get_frontend_status_data()}
 
 
-def create_character_from_json(file_name, skill_level=10):
+def _computed_stats_from_settings(status_settings):
+    if not isinstance(status_settings, dict):
+        return None
+    computed = status_settings.get("computedStats") or status_settings.get("statOverrides")
+    if not isinstance(computed, dict):
+        return None
+
+    atk = computed.get("baseAtk", computed.get("base_atk"))
+    hp = computed.get("baseHp", computed.get("base_hp"))
+    if atk is None or hp is None:
+        return None
+    return {"base_atk": float(atk), "base_hp": float(hp)}
+
+
+def create_character_from_json(file_name, skill_level=10, status_settings=None):
     char_file_path = _character_path(file_name)
     char_data = _read_json(char_file_path)
 
@@ -425,6 +573,12 @@ def create_character_from_json(file_name, skill_level=10):
     char_class = char_data.get("class", "Attacker")
     burst_stage = str(char_data.get("burst_stage", "3"))
     squad = char_data.get("squad", "Unknown")
+    company = (
+        char_data.get("company")
+        or char_data.get("manufacturer")
+        or char_data.get("manufacturer_name")
+        or squad
+    )
 
     weapon_file_path = WEAPON_DIR / f"{weapon_type_str}_standard.json"
     if weapon_file_path.exists():
@@ -461,6 +615,15 @@ def create_character_from_json(file_name, skill_level=10):
         base_atk = stats["base_atk"]
     if "base_hp" in stats:
         base_hp = stats["base_hp"]
+
+    computed_stats = _computed_stats_from_settings(status_settings)
+    if computed_stats:
+        base_atk = computed_stats["base_atk"]
+        base_hp = computed_stats["base_hp"]
+    elif isinstance(status_settings, dict) and status_settings.get("enabled"):
+        calculated_stats = calculate_character_base_stats(char_class, company, status_settings)
+        base_atk = calculated_stats["base_atk"]
+        base_hp = calculated_stats["base_hp"]
 
     def parse_skill_data(s_data):
         init_kwargs = copy.deepcopy(s_data.get("kwargs", {}))
@@ -641,7 +804,7 @@ def apply_additional_buffs(characters, buff_requests):
         if skill is None:
             continue
         skill.owner_name = caster.name
-        caster.skills.append(skill)
+        caster.add_skill(skill)
 
 
 def apply_crust_operation_mode(simulator, mode):
@@ -660,12 +823,33 @@ def apply_crust_operation_mode(simulator, mode):
             char.weapon.charge_mult = 2.5
 
 
-def _create_selected_character(selection, skill_level):
+def _merge_status_settings(common_settings, individual_settings):
+    merged = copy.deepcopy(common_settings) if isinstance(common_settings, dict) else {}
+    if not isinstance(individual_settings, dict):
+        return merged
+
+    for key, value in individual_settings.items():
+        if isinstance(value, dict) and isinstance(merged.get(key), dict):
+            merged[key].update(copy.deepcopy(value))
+        else:
+            merged[key] = copy.deepcopy(value)
+    return merged
+
+
+def _create_selected_character(selection, skill_level, status_settings=None):
     if not selection:
         return None
     kind = selection.get("kind")
     if kind == "character":
-        return create_character_from_json(selection.get("file", ""), skill_level=skill_level)
+        effective_status_settings = _merge_status_settings(
+            status_settings,
+            selection.get("statusSettings", {}),
+        )
+        return create_character_from_json(
+            selection.get("file", ""),
+            skill_level=skill_level,
+            status_settings=effective_status_settings,
+        )
     if kind == "dummy":
         return create_dummy_from_id(selection.get("id", ""))
     raise ValueError(f"Unsupported formation selection: {kind}")
@@ -725,6 +909,7 @@ def run_web_simulation(payload):
     options = payload.get("options", {})
     include_details = not bool(options.get("summaryOnly", False))
     skill_level = max(1, min(10, _int_option(options, "skillLevel", 10)))
+    status_settings = options.get("statusSettings", {})
 
     formation = payload.get("formation", [])
     if not formation:
@@ -734,7 +919,7 @@ def run_web_simulation(payload):
     slot_map = {}
     seen_names = set()
     for slot_index, selection in enumerate(formation):
-        char = _create_selected_character(selection, skill_level)
+        char = _create_selected_character(selection, skill_level, status_settings=status_settings)
         if char is None:
             continue
         if char.name in seen_names:
@@ -761,6 +946,7 @@ def run_web_simulation(payload):
         part_break_mode=bool(options.get("partBreakMode", False)),
         burst_charge_time=_float_option(options, "burstChargeTime", 5.0),
         enemy_count=_int_option(options, "enemyCount", 1),
+        enable_logs=bool(options.get("enableLogs", False)),
     )
     sim.special_mode = bool(options.get("specialMode", False))
     apply_crust_operation_mode(sim, options.get("crustOperationMode") or None)
@@ -790,6 +976,8 @@ def run_web_simulation(payload):
             {
                 "name": char.name,
                 "burstStage": str(char.burst_stage),
+                "baseAtk": float(char.base_atk),
+                "baseHp": float(char.base_hp),
                 "totalDamage": float(result.get("total_damage", 0)),
                 "breakdown": breakdown,
                 "damageSeries": (
@@ -814,4 +1002,54 @@ def run_web_simulation(payload):
         "totalAllyAmmoConsumed": int(getattr(sim, "total_ally_ammo_consumed", 0)),
         "rotation": rotation_summary,
         "results": result_rows,
+    }
+
+
+def run_web_batch_simulation(payload):
+    started = time.perf_counter()
+    shared_options = payload.get("options", {})
+    entries = payload.get("entries", [])
+    if not isinstance(entries, list) or not entries:
+        raise ValueError("一括実行する編成がありません")
+
+    results = []
+    for index, entry in enumerate(entries):
+        name = entry.get("name") or f"編成{index + 1}"
+        sim_payload = {
+            "formation": entry.get("formation", []),
+            "rotation": entry.get("rotation", {}),
+            "options": copy.deepcopy(shared_options),
+        }
+        try:
+            data = run_web_simulation(sim_payload)
+            results.append(
+                {
+                    "id": entry.get("id"),
+                    "index": entry.get("index", index),
+                    "name": name,
+                    "data": data,
+                }
+            )
+        except Exception as exc:
+            results.append(
+                {
+                    "id": entry.get("id"),
+                    "index": entry.get("index", index),
+                    "name": name,
+                    "error": f"{type(exc).__name__}: {exc}",
+                }
+            )
+
+    results.sort(
+        key=lambda row: (
+            row.get("data") is None,
+            -float(row.get("data", {}).get("totalPartyDamage", 0)),
+            int(row.get("index", 0)),
+        )
+    )
+
+    return {
+        "status": "ok",
+        "elapsedSeconds": time.perf_counter() - started,
+        "results": results,
     }

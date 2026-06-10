@@ -22,6 +22,7 @@ class CharacterActionMixin:
         self.weapon = self.original_weapon
         self.is_weapon_changed = False
         self.weapon_change_end_frame = 0
+        self.weapon_change_revert_on_ammo_empty = True
         self.update_max_ammo(frame)
         if self.weapon_change_ammo_specified and should_reset:
             self.current_ammo = self.current_max_ammo
@@ -50,16 +51,26 @@ class CharacterActionMixin:
             nonlocal damage_this_frame
             self.total_shots += 1
             self.current_ammo -= 1
+            if hasattr(simulator, 'record_ammo_consumed'):
+                damage_this_frame += simulator.record_ammo_consumed(self, 1, frame, is_full_burst)
             
             force_fb = getattr(self.weapon, 'force_full_burst', False)
             if isinstance(self.weapon, dict): force_fb = self.weapon.get('force_full_burst', False)
             
+            is_ignore_def = getattr(self.weapon, 'is_ignore_def', False)
+            ignore_def_condition = getattr(self.weapon, 'ignore_def_if_self_stack', None)
+            if isinstance(ignore_def_condition, dict):
+                stack_name = ignore_def_condition.get('stack_name')
+                min_stack = int(ignore_def_condition.get('min_stack', 1))
+                if stack_name and self.buff_manager.get_stack_count(stack_name, frame) >= min_stack:
+                    is_ignore_def = True
+
             prof = DamageProfile.create(
                 is_weapon_attack=True, 
                 is_charge_attack=(self.weapon.type in ["RL", "SR", "CHARGE"]), 
                 charge_mult=self.weapon.charge_mult if self.weapon.type in ["RL", "SR", "CHARGE"] else 1.0, 
                 force_full_burst=force_fb, is_pierce=self.weapon.is_pierce,
-                is_ignore_def=getattr(self.weapon, 'is_ignore_def', False),
+                is_ignore_def=is_ignore_def,
                 is_explosive=getattr(self.weapon, 'is_explosive', False),
                 is_sticky=getattr(self.weapon, 'is_sticky', False)
             )
@@ -112,14 +123,14 @@ class CharacterActionMixin:
             if not hasattr(self, 'cumulative_non_core_hits'): self.cumulative_non_core_hits = 0
             self.cumulative_non_core_hits += non_core_hit_count
             
-            self.total_damage += total_shot_dmg
-            self.damage_breakdown['Weapon Attack'] += total_shot_dmg
+            self.add_damage('Weapon Attack', total_shot_dmg, hit_count=1, source_type='通常攻撃')
             damage_this_frame += total_shot_dmg
             
             self.buff_manager.decrement_shot_buffs()
             
-            buff_debug_str = self.buff_manager.get_active_buffs_debug(frame)
-            simulator.log(f"[Shoot] 時間:{frame/60:>6.2f}s | 弾数:{self.current_ammo:>3}/{self.current_max_ammo:<3} | Pellets:{current_pellets:>2} | Dmg:{total_shot_dmg:10,.0f} | Buffs: {buff_debug_str}", target_name=self.name)
+            if getattr(simulator, "enable_logs", True):
+                buff_debug_str = self.buff_manager.get_active_buffs_debug(frame)
+                simulator.log(f"[Shoot] 時間:{frame/60:>6.2f}s | 弾数:{self.current_ammo:>3}/{self.current_max_ammo:<3} | Pellets:{current_pellets:>2} | Dmg:{total_shot_dmg:10,.0f} | Buffs: {buff_debug_str}", target_name=self.name)
             
             damage_this_frame += self.process_trigger('shot_count', self.total_shots, frame, is_full_burst, simulator)
             damage_this_frame += self.process_trigger('ammo_empty', self.current_ammo, frame, is_full_burst, simulator)
@@ -168,6 +179,8 @@ class CharacterActionMixin:
                 # トリガー 'charging_time' を発火
                 # JSONで "trigger_value": 0.2 とすれば、0.2秒経過するたびに発動します
                 damage_this_frame += self.process_trigger('charging_time', self.cumulative_charge_time, frame, is_full_burst, simulator, delta=dt)
+                if self.state != "CHARGING":
+                    return damage_this_frame
                 # ▲▲▲ 追加ここまで ▲▲▲
 
                 # チャージ中にバフや固定化が変わっても、現在の蓄積時間は維持したまま
@@ -185,7 +198,7 @@ class CharacterActionMixin:
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration:
                     self.state_timer = 0
-                    if self.is_weapon_changed and self.current_ammo <= 0: self.revert_weapon(frame)
+                    if self.is_weapon_changed and self.current_ammo <= 0 and self.weapon_change_revert_on_ammo_empty: self.revert_weapon(frame)
                     else: self.state = "RELOADING" if self.current_ammo <= 0 else "READY"
             elif self.state == "RELOADING":
                 if self.state_timer == 0:
@@ -229,7 +242,7 @@ class CharacterActionMixin:
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration: 
                     self.state_timer = 0
-                    if self.is_weapon_changed and self.current_ammo <= 0: self.revert_weapon(frame)
+                    if self.is_weapon_changed and self.current_ammo <= 0 and self.weapon_change_revert_on_ammo_empty: self.revert_weapon(frame)
                     else: self.state = "RELOADING"
             elif self.state == "RELOADING":
                 if self.state_timer == 0:
@@ -264,7 +277,7 @@ class CharacterActionMixin:
                 self.state_timer += 1
                 if self.state_timer >= self.current_action_duration:
                     self.state_timer=0
-                    if self.is_weapon_changed and self.current_ammo <= 0: self.revert_weapon(frame)
+                    if self.is_weapon_changed and self.current_ammo <= 0 and self.weapon_change_revert_on_ammo_empty: self.revert_weapon(frame)
                     else: self.state = "RELOADING"
             elif self.state == "RELOADING":
                 if self.state_timer == 0: self.current_action_duration = self.get_buffed_frames('reload', self.weapon.reload_frames, frame)

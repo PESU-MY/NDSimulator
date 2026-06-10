@@ -3,11 +3,125 @@ from utils import round_half_up
 import random
 
 class SkillEngineMixin:
+    def _skill_cooldown_frames(self, skill):
+        cooldown_sec = getattr(skill, 'individual_cooldown_time', None)
+        if cooldown_sec is None:
+            cooldown_sec = getattr(skill, 'trigger_value', 0)
+        try:
+            cooldown_sec = float(cooldown_sec)
+        except (TypeError, ValueError):
+            cooldown_sec = 0.0
+        return max(1, int(round(cooldown_sec * self.FPS)))
+
+    def _initial_skill_cooldown_frames(self, skill):
+        initial_sec = getattr(skill, 'initial_cooldown_time', None)
+        if initial_sec is None:
+            initial_sec = getattr(skill, 'trigger_value', 0)
+        try:
+            initial_sec = float(initial_sec)
+        except (TypeError, ValueError):
+            initial_sec = 0.0
+        return max(0, int(round(initial_sec * self.FPS)))
+
+    def is_individual_cooldown_ready(self, skill, frame):
+        if not getattr(skill, 'use_individual_cooldown', False):
+            return True
+        if getattr(skill, 'next_available_frame', None) is None:
+            skill.next_available_frame = self._initial_skill_cooldown_frames(skill)
+        return frame >= skill.next_available_frame
+
+    def start_individual_cooldown(self, skill, frame):
+        if not getattr(skill, 'use_individual_cooldown', False):
+            return
+        old_frame = getattr(skill, 'next_available_frame', None)
+        skill.next_available_frame = frame + self._skill_cooldown_frames(skill)
+        message = f"[Skill CT] {skill.name}: next {skill.next_available_frame / self.FPS:.2f}s"
+        if old_frame is not None:
+            message += f" (prev:{old_frame / self.FPS:.2f}s)"
+        self.log(message, target_name=getattr(skill, 'owner_name', None) or "System")
+
+    def _find_individual_cooldown_skills(self, character, kwargs):
+        target_id = kwargs.get('target_skill_id') or kwargs.get('skill_id')
+        target_name = kwargs.get('target_skill_name') or kwargs.get('skill_name')
+        target_trigger_type = kwargs.get('target_trigger_type')
+        matched = []
+
+        for skill in character.skills:
+            if target_id and getattr(skill, 'skill_id', None) != target_id:
+                continue
+            if target_name and skill.name != target_name:
+                continue
+            if target_trigger_type and skill.trigger_type != target_trigger_type:
+                continue
+            if not target_id and not target_name and not target_trigger_type:
+                continue
+            if getattr(skill, 'use_individual_cooldown', False):
+                matched.append(skill)
+        return matched
+
+    def reduce_individual_skill_cooldown(self, character, kwargs, frame):
+        raw_value = float(kwargs.get('value', 0) or 0)
+        if raw_value <= 0:
+            return 0
+
+        matched = self._find_individual_cooldown_skills(character, kwargs)
+        for target_skill in matched:
+            if getattr(target_skill, 'next_available_frame', None) is None:
+                target_skill.next_available_frame = self._initial_skill_cooldown_frames(target_skill)
+
+            if kwargs.get('value_mode') in ['cooldown_ratio', 'cooldown_percent']:
+                reduce_sec = (self._skill_cooldown_frames(target_skill) / self.FPS) * raw_value
+            else:
+                reduce_sec = raw_value
+
+            reduce_frames = int(round(reduce_sec * self.FPS))
+            old_frame = target_skill.next_available_frame
+            target_skill.next_available_frame = max(frame, old_frame - reduce_frames)
+            self.log(
+                f"[Skill CT Reduce] {target_skill.name}: -{reduce_sec:.2f}s "
+                f"({old_frame / self.FPS:.2f}s -> {target_skill.next_available_frame / self.FPS:.2f}s)",
+                target_name=character.name
+            )
+        return len(matched)
+
+    def _effective_burst_stage(self, character):
+        active_stage = getattr(character, 'current_burst_stage', None)
+        if active_stage is not None:
+            return str(active_stage)
+        return str(character.burst_stage)
+
     def _formation_index(self, character):
         try:
             return self.characters.index(character)
         except (AttributeError, ValueError):
             return None
+
+    def _move_character_between_burst_rotations(self, character, old_stage, new_stage):
+        if not hasattr(self, 'burst_rotation'):
+            return
+        if str(old_stage) == str(new_stage):
+            return
+
+        stage_map = {'1': 0, '2': 1, '3': 2}
+        new_idx = stage_map.get(str(new_stage))
+        if new_idx is None:
+            return
+
+        was_in_rotation = False
+        for idx, rotation_group in enumerate(self.burst_rotation):
+            original_len = len(rotation_group)
+            self.burst_rotation[idx] = [char for char in rotation_group if char is not character]
+            if len(self.burst_rotation[idx]) != original_len:
+                was_in_rotation = True
+
+            if hasattr(self, 'burst_indices') and idx < len(self.burst_indices):
+                if self.burst_rotation[idx]:
+                    self.burst_indices[idx] %= len(self.burst_rotation[idx])
+                else:
+                    self.burst_indices[idx] = 0
+
+        if was_in_rotation and character not in self.burst_rotation[new_idx]:
+            self.burst_rotation[new_idx].append(character)
 
     def _check_formation_condition(self, formation, caster, target):
         caster_idx = self._formation_index(caster)
@@ -98,7 +212,8 @@ class SkillEngineMixin:
                 return False
         if 'element' in condition and target.element != condition['element']: return False
         if 'weapon_type' in condition and target.weapon.weapon_class != condition['weapon_type']: return False
-        if 'burst_stage' in condition and str(target.burst_stage) != str(condition['burst_stage']): return False
+        if 'burst_stage' in condition and self._effective_burst_stage(target) != str(condition['burst_stage']): return False
+        if 'base_burst_stage' in condition and str(getattr(target, 'base_burst_stage', target.burst_stage)) != str(condition['base_burst_stage']): return False
         
         if "is_current_burst_participant" in condition:
             required = condition["is_current_burst_participant"]
@@ -252,10 +367,37 @@ class SkillEngineMixin:
                     if not (min_v <= count <= max_v):
                         return False
 
+            if ("hp_ratio_min" in skill.condition or "hp_ratio_max" in skill.condition) and caster:
+                max_hp = caster.get_current_max_hp(frame)
+                if max_hp <= 0:
+                    return False
+                current_ratio = caster.current_hp / max_hp
+                if "hp_ratio_min" in skill.condition and current_ratio < skill.condition["hp_ratio_min"]:
+                    return False
+                if "hp_ratio_max" in skill.condition and current_ratio > skill.condition["hp_ratio_max"]:
+                    return False
+
             if "is_full_burst" in skill.condition:
                 required_state = skill.condition["is_full_burst"]
                 is_fb_now = bool(is_full_burst)
                 if is_fb_now != required_state:
+                    return False
+
+            if "enemy_count_min" in skill.condition:
+                if getattr(self, "enemy_count", 1) < int(skill.condition["enemy_count_min"]):
+                    return False
+
+            if "enemy_count_max" in skill.condition:
+                if getattr(self, "enemy_count", 1) > int(skill.condition["enemy_count_max"]):
+                    return False
+
+            if "self_burst_stage" in skill.condition and caster:
+                expected_stages = skill.condition["self_burst_stage"]
+                if isinstance(expected_stages, (list, tuple, set)):
+                    expected_stages = [str(stage) for stage in expected_stages]
+                else:
+                    expected_stages = [str(expected_stages)]
+                if self._effective_burst_stage(caster) not in expected_stages:
                     return False
             
             if "simulation_flag" in skill.condition:
@@ -346,8 +488,8 @@ class SkillEngineMixin:
                 for char in self.characters:
                     if char.base_hp <= 0: continue
                     if exclude_self and char == caster: continue
-                    
-                    if str(char.burst_stage) == target_stage:
+
+                    if self._effective_burst_stage(char) == target_stage:
                         found = True
                         break
                 if not found: return False
@@ -360,8 +502,34 @@ class SkillEngineMixin:
                 for char in self.characters:
                     if char.base_hp <= 0: continue
                     if exclude_self and char == caster: continue
-                    
-                    if str(char.burst_stage) == target_stage:
+
+                    if self._effective_burst_stage(char) == target_stage:
+                        found = True
+                        break
+                if found: return False
+
+            if "has_ally_base_burst_stage" in skill.condition:
+                target_stage = str(skill.condition["has_ally_base_burst_stage"])
+                exclude_self = skill.condition.get("exclude_self", True)
+                found = False
+                for char in self.characters:
+                    if char.base_hp <= 0: continue
+                    if exclude_self and char == caster: continue
+
+                    if str(getattr(char, 'base_burst_stage', char.burst_stage)) == target_stage:
+                        found = True
+                        break
+                if not found: return False
+
+            if "not_has_ally_base_burst_stage" in skill.condition:
+                target_stage = str(skill.condition["not_has_ally_base_burst_stage"])
+                exclude_self = skill.condition.get("exclude_self", True)
+                found = False
+                for char in self.characters:
+                    if char.base_hp <= 0: continue
+                    if exclude_self and char == caster: continue
+
+                    if str(getattr(char, 'base_burst_stage', char.burst_stage)) == target_stage:
                         found = True
                         break
                 if found: return False
@@ -408,6 +576,7 @@ class SkillEngineMixin:
         # この行がないと、回数がカウントされず、max_trigger_countが機能しません
         skill.current_usage_count += 1
         # ▲▲▲▲▲ 追加ここまで ▲▲▲▲▲
+        self.start_individual_cooldown(skill, frame)
         
         total_dmg = 0
         kwargs = skill.kwargs.copy()
@@ -479,8 +648,19 @@ class SkillEngineMixin:
                 if self.check_target_condition(skill.target_condition, caster, char, frame): 
                     candidates.append(char)
 
+            if skill.target_condition and skill.target_condition.get('type') == 'first_from_left':
+                count = skill.target_condition.get('count', 1)
+                targets = candidates[:count]
+                self.log(f"[Target] Selected First {count} From Left: {[t.name for t in targets]}", target_name=caster.name)
+
+            elif skill.target_condition and skill.target_condition.get('type') == 'lowest_hp_ratio':
+                count = skill.target_condition.get('count', 1)
+                candidates.sort(key=lambda c: (c.current_hp / c.get_current_max_hp(frame)) if c.get_current_max_hp(frame) > 0 else 999)
+                targets = candidates[:count]
+                self.log(f"[Target] Selected Lowest {count} HP Ratio: {[t.name for t in targets]}", target_name=caster.name)
+
             # ▼▼▼ 追加: 元のチャージ時間が長い順 (highest_base_charge_time) ▼▼▼
-            if skill.target_condition and skill.target_condition.get('type') == 'highest_base_charge_time':
+            elif skill.target_condition and skill.target_condition.get('type') == 'highest_base_charge_time':
                 count = skill.target_condition.get('count', 1)
                 # 武器の基礎チャージ時間 (charge_time) を参照して降順ソート
                 # チャージしない武器は 0 として扱われるため、SR/RL等が優先されます
@@ -495,6 +675,12 @@ class SkillEngineMixin:
                 targets = candidates[:count]
                 target_names = [t.name for t in targets]
                 self.log(f"[Target] Selected Top {count} ATK: {target_names}", target_name=caster.name)
+            elif skill.target_condition and skill.target_condition.get('type') == 'lowest_atk':
+                count = skill.target_condition.get('count', 1)
+                candidates.sort(key=lambda c: c.get_current_atk(frame))
+                targets = candidates[:count]
+                target_names = [t.name for t in targets]
+                self.log(f"[Target] Selected Lowest {count} ATK: {target_names}", target_name=caster.name)
             elif skill.target_condition and skill.target_condition.get('type') == 'lowest_hp':
                 count = skill.target_condition.get('count', 1)
                 candidates = []
@@ -504,6 +690,16 @@ class SkillEngineMixin:
                 candidates.sort(key=lambda c: c.base_hp)
                 targets = candidates[:count]
                 self.log(f"[Target] Selected Lowest {count} HP: {[t.name for t in targets]}", target_name=caster.name)
+            elif skill.target_condition and skill.target_condition.get('type') == 'lowest_current_hp':
+                count = skill.target_condition.get('count', 1)
+                candidates.sort(key=lambda c: getattr(c, 'current_hp', 0))
+                targets = candidates[:count]
+                self.log(f"[Target] Selected Lowest {count} Current HP: {[t.name for t in targets]}", target_name=caster.name)
+            elif skill.target_condition and skill.target_condition.get('type') == 'highest_base_hp':
+                count = skill.target_condition.get('count', 1)
+                candidates.sort(key=lambda c: c.base_hp, reverse=True)
+                targets = candidates[:count]
+                self.log(f"[Target] Selected Highest {count} Base HP: {[t.name for t in targets]}", target_name=caster.name)
             else:
                 targets = candidates
 
@@ -534,6 +730,7 @@ class SkillEngineMixin:
             for target in targets:
                 old_stage = target.burst_stage
                 target.burst_stage = new_stage
+                self._move_character_between_burst_rotations(target, old_stage, new_stage)
                 self.log(f"[Burst Change] {target.name} burst stage changed: {old_stage} -> {new_stage}", target_name=caster.name)
             return 0
         # ▲▲▲ 追加ここまで ▲▲▲
@@ -564,10 +761,44 @@ class SkillEngineMixin:
         if skill.effect_type == 'cooldown_reduction':
             reduce_sec = kwargs.get('value', 0)
             reduce_frames = reduce_sec * self.FPS
-            for char in self.characters:
+            cooldown_targets = targets if targets else ([caster] if skill.target == 'self' and caster else self.characters)
+            for char in cooldown_targets:
                 if char.current_cooldown > 0: char.current_cooldown = max(0, char.current_cooldown - reduce_frames)
             if reduce_sec > 0:
                 self.log(f"[CT Reduce] Reduced cooldowns by {reduce_sec:.2f}s (Source: {caster.name})", target_name="System")
+            return 0
+
+        if skill.effect_type == 'reduce_skill_cooldown':
+            cooldown_targets = targets if targets else ([caster] if skill.target == 'self' and caster else self.characters)
+            total_matched = 0
+            for char in cooldown_targets:
+                total_matched += self.reduce_individual_skill_cooldown(char, kwargs, frame)
+            if total_matched == 0:
+                self.log(f"[Skill CT Reduce] No matching individual cooldown skill for {skill.name}", target_name=caster.name)
+            return 0
+
+        if skill.effect_type == 'burst_gauge_charge':
+            raw_value = kwargs.get('value', kwargs.get('rate', 0))
+            charge_ratio = float(raw_value or 0)
+            if charge_ratio > 1.0:
+                charge_ratio /= 100.0
+            charge_ratio = max(0.0, charge_ratio)
+            required_frames = self.burst_charge_time * self.FPS
+            charge_frames = charge_ratio * required_frames
+
+            if self.burst_state == "GEN" and required_frames > 0:
+                prev_timer = self.burst_timer
+                self.burst_timer = min(required_frames, self.burst_timer + charge_frames)
+                self.log(
+                    f"[Burst Gauge] Charged {charge_ratio * 100:.2f}% "
+                    f"({prev_timer / self.FPS:.2f}s -> {self.burst_timer / self.FPS:.2f}s)",
+                    target_name=caster.name
+                )
+            else:
+                self.log(
+                    f"[Burst Gauge] Ignored {charge_ratio * 100:.2f}% charge while state={self.burst_state}",
+                    target_name=caster.name
+                )
             return 0
         
         if skill.effect_type == 'decrease_debuff_stack_count':
@@ -705,6 +936,7 @@ class SkillEngineMixin:
                 # ▼▼▼ 追加: フラグの取得 ▼▼▼
                 disable_inc = kwargs.get('disable_stack_increase', False)
                 allow_tags = kwargs.get('allow_tags') # ← 取得
+                buff_source = kwargs.get('source_name', skill.name)
                 # ▲▲▲ 追加ここまで ▲▲▲
 
                 is_debuff = False
@@ -724,6 +956,8 @@ class SkillEngineMixin:
                 if is_extend and tag:
                     if hasattr(manager, 'extend_buff') and manager.extend_buff(tag, dur, frame):
                         self.log(f"[Buff Extend] Extended '{tag}' on {target.name}", target_name=target.name)
+                        if skill.target != 'enemy':
+                            target.process_trigger('buff_applied', b_type, frame, is_full_burst, self)
                         continue
 
                 if not is_extend:
@@ -735,7 +969,7 @@ class SkillEngineMixin:
                         old_max_hp = target.get_current_max_hp(frame)
 
                     manager.add_buff(
-                        b_type, val, dur, frame, source=skill.name,
+                        b_type, val, dur, frame, source=buff_source,
                         stack_name=stack_name,
                         max_stack=max_stack, tag=tag,
                         shot_duration=shot_dur, remove_on_reload=rem_reload,
@@ -753,6 +987,9 @@ class SkillEngineMixin:
                             target.process_trigger('stack_count', stack_name, frame, is_full_burst, self, delta=new_count - prev_count)
                     else:
                         self.log(f"[Buff] Applied {skill.name} ({b_type}: {val}) to {t_str}", target_name=caster.name)
+
+                    if skill.target != 'enemy':
+                        target.process_trigger('buff_applied', b_type, frame, is_full_burst, self)
 
                     if old_max_hp is not None:
                         new_max_hp = target.get_current_max_hp(frame)
@@ -797,6 +1034,13 @@ class SkillEngineMixin:
                 val = int(kwargs.get('value', 0))
                 target.current_ammo = max(0, min(target.current_max_ammo, val))
                 self.log(f"[Ammo] {target.name} ammo set to {target.current_ammo}", target_name=target.name)
+
+            elif skill.effect_type == 'force_reload':
+                target.current_ammo = max(0, min(target.current_max_ammo, target.current_ammo))
+                target.state = "RELOADING"
+                target.state_timer = 0
+                target.current_action_duration = 0
+                self.log(f"[Action] Force reload triggered for {target.name}", target_name=target.name)
 
             elif skill.effect_type == 'convert_hp_to_atk':
                 rate = skill.kwargs.get('value', 0)
@@ -967,13 +1211,50 @@ class SkillEngineMixin:
                     # ▲▲▲ 修正ここまで ▲▲▲
                     skill_dmg += d
                 
-                buff_debug = caster.buff_manager.get_active_buffs_debug(frame)
-                self.log(f"[Skill Dmg] 時間:{frame/60:>6.2f}s | 名前:{skill.name:<25} | Dmg:{skill_dmg:10,.0f} | Hits:{loops} | Buffs:{buff_debug}", target_name=caster.name)
+                if getattr(self, "enable_logs", True):
+                    buff_debug = caster.buff_manager.get_active_buffs_debug(frame)
+                    self.log(f"[Skill Dmg] 時間:{frame/60:>6.2f}s | 名前:{skill.name:<25} | Dmg:{skill_dmg:10,.0f} | Hits:{loops} | Buffs:{buff_debug}", target_name=caster.name)
                 
-                caster.total_damage += skill_dmg
-                if skill.name in caster.damage_breakdown: caster.damage_breakdown[skill.name] += skill_dmg
-                else: caster.damage_breakdown[skill.name] = skill_dmg
+                caster.add_damage(skill.name, skill_dmg, hit_count=max(0, loops), source_type='スキル')
                 total_dmg += skill_dmg
+
+            elif skill.effect_type == 'periodic_damage':
+                duration_sec = float(kwargs.get('duration', 0))
+                interval_sec = float(kwargs.get('interval', 1.0))
+                if duration_sec <= 0 or interval_sec <= 0:
+                    continue
+
+                interval_frames = max(1, int(round(interval_sec * self.FPS)))
+                duration_frames = max(0, int(round(duration_sec * self.FPS)))
+                tick_count = duration_frames // interval_frames
+
+                damage_kwargs = kwargs.copy()
+                damage_kwargs.pop('duration', None)
+                damage_kwargs.pop('interval', None)
+                damage_kwargs.pop('description', None)
+                damage_kwargs['loop_count'] = int(damage_kwargs.get('loop_count', 1))
+
+                for tick_idx in range(1, tick_count + 1):
+                    act_skill = Skill(
+                        name=f"{skill.name}_Tick",
+                        trigger_type="manual",
+                        trigger_value=0,
+                        effect_type="damage",
+                        **damage_kwargs
+                    )
+                    act_skill.target = skill.target
+                    act_skill.owner_name = caster.name
+                    self.scheduled_actions.append({
+                        'frame': frame + (tick_idx * interval_frames),
+                        'skill': act_skill,
+                        'caster': caster
+                    })
+
+                self.log(
+                    f"[Periodic] Scheduled {tick_count} hits for {skill.name} "
+                    f"(Interval:{interval_sec:.2f}s, Duration:{duration_sec:.2f}s)",
+                    target_name=caster.name
+                )
 
             elif skill.effect_type == 'delayed_snapshot_damage':
                 duration_sec = kwargs.get('duration', 0)
@@ -1016,11 +1297,7 @@ class SkillEngineMixin:
                     target_name=caster.name
                 )
 
-                caster.total_damage += skill_dmg
-                if skill.name in caster.damage_breakdown:
-                    caster.damage_breakdown[skill.name] += skill_dmg
-                else:
-                    caster.damage_breakdown[skill.name] = skill_dmg
+                caster.add_damage(skill.name, skill_dmg, hit_count=1, source_type='スキル')
                 total_dmg += skill_dmg
 
             elif skill.effect_type == 'delayed_action':
@@ -1098,6 +1375,10 @@ class SkillEngineMixin:
                 # ▲▲▲ 追加ここまで ▲▲▲
                 if new_weapon_data and target == caster:
                     target.is_weapon_changed = True
+                    target.weapon_change_revert_on_ammo_empty = kwargs.get(
+                        'revert_on_ammo_empty',
+                        new_weapon_data.get('revert_on_ammo_empty', True)
+                    )
                     if 'max_ammo' in new_weapon_data:
                         target.weapon_change_ammo_specified = True
                         target.weapon = WeaponConfig(new_weapon_data)

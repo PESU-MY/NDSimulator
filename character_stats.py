@@ -17,6 +17,7 @@ class CharacterStatsMixin:
         final_atk = self.get_current_atk(frame)
         
         # ▼▼▼ 追加: 固定値防御デバフの取得 ▼▼▼
+        def_debuff = 0
         def_debuff_fixed = 0
         # ▲▲▲ 追加ここまで ▲▲▲
 
@@ -98,6 +99,8 @@ class CharacterStatsMixin:
             
         # クリティカル判定
         crit_rate = profile['crit_rate'] + self.buff_manager.get_total_value('crit_rate_buff', frame)
+        if profile.get('is_weapon_attack', False):
+            crit_rate += self.buff_manager.get_total_value('normal_attack_crit_rate_buff', frame)
         is_crit_hit = False
         if random.random() < crit_rate or profile.get('force_critical', False):
             crit_dmg_buff = self.buff_manager.get_total_value('crit_dmg_buff', frame)
@@ -112,6 +115,11 @@ class CharacterStatsMixin:
         if profile['is_charge_attack']:
             charge_ratio_buff = self.buff_manager.get_total_value('charge_ratio_buff', frame)
             charge_dmg_buff = self.buff_manager.get_total_value('charge_dmg_buff', frame)
+            overflow_rate = self.buff_manager.get_total_value('charge_speed_overflow_charge_dmg_rate', frame)
+            if overflow_rate > 0:
+                charge_speed_rate = self.get_effective_speed_rate('charge', frame)
+                if charge_speed_rate > 1.0:
+                    charge_dmg_buff += (charge_speed_rate - 1.0) * overflow_rate
             layer_charge = (profile['charge_mult'] * (1.0 + charge_ratio_buff)) + charge_dmg_buff
             
         # 6. ダメージバフ計算 (バケット2)
@@ -149,9 +157,12 @@ class CharacterStatsMixin:
         is_sequential_buff = self.buff_manager.get_total_value('is_sequential', frame)
         if profile.get('is_sequential', False) or is_sequential_buff > 0:
             bucket_dmg += self.buff_manager.get_total_value('sequential_dmg_buff', frame)
-        
+
+        if profile.get('is_enemy_wide_burst', False):
+            bucket_dmg += self.buff_manager.get_total_value('enemy_wide_burst_dmg_buff', frame)
+
         layer_dmg = 1.0 + bucket_dmg
-        
+
         # 7. 被ダメージデバフ
         # ▼▼▼ 修正: self（攻撃者）の被ダメデバフを参照していたのを削除 ▼▼▼
         # 以前: taken_dmg_val = self.buff_manager.get_total_value('taken_dmg_debuff', frame)
@@ -169,7 +180,8 @@ class CharacterStatsMixin:
         
         layer_elem = 1.0
         advantage_map = { "Iron": "Electric", "Electric": "Water", "Water": "Fire", "Fire": "Wind", "Wind": "Iron" }
-        if advantage_map.get(self.element) == enemy_element:
+        forced_advantage = f"advantage_vs_{enemy_element}" in getattr(self, "special_flags", set())
+        if advantage_map.get(self.element) == enemy_element or forced_advantage:
             elem_buff = self.buff_manager.get_total_value('elemental_buff', frame)
             layer_elem += 0.10 + elem_buff
             
@@ -216,7 +228,32 @@ class CharacterStatsMixin:
         new_frame -= fixed_buff
         return max(1, int(round_half_up(new_frame)))
 
+    def get_effective_speed_rate(self, frame_type, frame):
+        ignore_tag = f"ignore_{frame_type}_speed_buffs"
+        ignore_buffs = self.buff_manager.get_buffs_by_tag(ignore_tag, frame)
+        if not ignore_buffs:
+            return self.buff_manager.get_total_value(f'{frame_type}_speed_rate', frame)
+
+        allowed_tags = set()
+        for buff in ignore_buffs:
+            tags = buff.get('allow_tags')
+            if tags:
+                if isinstance(tags, list):
+                    allowed_tags.update(tags)
+                else:
+                    allowed_tags.add(tags)
+
+        if not allowed_tags:
+            return 0.0
+        return self.buff_manager.get_total_value_with_filter(f'{frame_type}_speed_rate', frame, allowed_tags)
+
     def get_buffed_frames(self, frame_type, original_frame, frame):
+        if frame_type == 'charge':
+            fixed_charge_times = self.buff_manager.get_active_buffs('charge_time_fixed', frame)
+            if fixed_charge_times:
+                fixed_seconds = min(fixed_charge_times)
+                return max(1, int(round_half_up(fixed_seconds * 60)))
+
         # バフ無効化のチェック
         if frame_type == 'reload' and getattr(self.weapon, 'disable_reload_buffs', False): return int(original_frame)
         if frame_type == 'charge' and self.weapon.disable_charge_buffs: return int(original_frame)

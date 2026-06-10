@@ -3,7 +3,14 @@ import random
 class CharacterSkillMixin:
     def process_trigger(self, trigger_type, val, frame, is_full_burst, simulator, delta=0):
         triggered_skills = []
-        for skill in self.skills:
+        skills_by_trigger = getattr(self, "skills_by_trigger", None)
+        if skills_by_trigger is not None:
+            skills = skills_by_trigger.get(trigger_type)
+            if not skills:
+                return 0
+        else:
+            skills = self.skills
+        for skill in skills:
             if getattr(skill, 'last_used_frame', -1) == frame:
                 if trigger_type not in ['pellet_hit', 'critical_hit', 'core_hit', 'non_core_hit']:
                     continue
@@ -19,13 +26,33 @@ class CharacterSkillMixin:
                         continue
                     current_count = self.buff_manager.get_stack_count(target_stack, frame)
                     prev_count = current_count - delta
-                    if prev_count < skill.trigger_value <= current_count:
+                    if skill.trigger_value <= 0:
+                        is_triggered = delta > 0
+                    elif prev_count < skill.trigger_value <= current_count:
                         is_triggered = True
+                elif trigger_type == 'buff_applied':
+                    target_buff_type = skill.kwargs.get('trigger_buff_type', skill.kwargs.get('buff_type'))
+                    if target_buff_type:
+                        if isinstance(target_buff_type, (list, tuple, set)):
+                            if val not in target_buff_type:
+                                continue
+                        elif val != target_buff_type:
+                            continue
+                    is_triggered = True
                 elif trigger_type == 'part_break': is_triggered = True
                 # ▼▼▼ 修正: trigger_value<=0 の除外対象に full_charge_count を追加 ▼▼▼
-                elif skill.trigger_value <= 0 and trigger_type in ['shot_count', 'full_charge_count', 'time_interval']: is_triggered = False 
+                elif skill.trigger_value <= 0 and trigger_type in ['shot_count', 'full_charge_count', 'time_interval', 'ally_ammo_consumed_count']: is_triggered = False 
                 # ▲▲▲ 修正ここまで ▲▲▲
                 elif trigger_type == 'shot_count' and val > 0 and val % skill.trigger_value == 0: is_triggered = True
+                elif trigger_type == 'ally_ammo_consumed_count':
+                    interval = int(skill.trigger_value or 0)
+                    if interval > 0 and val > 0:
+                        prev_count = (val - delta) // interval
+                        curr_count = val // interval
+                        count_diff = curr_count - prev_count
+                        if count_diff > 0:
+                            is_triggered = True
+                            trigger_count = count_diff
 
                 # ▼▼▼ 追加: フルチャージ攻撃回数トリガー ▼▼▼
                 elif trigger_type == 'full_charge_count' and val > 0 and val % skill.trigger_value == 0: is_triggered = True
@@ -41,7 +68,14 @@ class CharacterSkillMixin:
                         if count_diff > 0:
                             is_triggered = True
                             trigger_count = count_diff
-                elif trigger_type == 'time_interval' and val % (skill.trigger_value * simulator.FPS) == 0: is_triggered = True
+                elif trigger_type == 'time_interval':
+                    if getattr(skill, 'use_individual_cooldown', False):
+                        if simulator.is_individual_cooldown_ready(skill, frame):
+                            is_triggered = True
+                    else:
+                        interval_frames = int(skill.trigger_value * simulator.FPS)
+                        if interval_frames > 0 and val % interval_frames == 0:
+                            is_triggered = True
                 elif trigger_type == 'ammo_empty' and val == 0: is_triggered = True
                 elif trigger_type == 'on_burst_enter': is_triggered = True
                 # ▼▼▼ 追加: 新規バースト段階トリガーの判定 ▼▼▼

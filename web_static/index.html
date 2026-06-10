@@ -26,7 +26,7 @@
           <input id="searchInput" type="search" placeholder="名前 / 武器 / バースト">
         </div>
         <div class="filter-row">
-          <button class="filter-button active" type="button" data-filter="all">全て</button>
+          <button class="filter-button active" type="button" data-filter="all">すべて</button>
           <button class="filter-button" type="button" data-filter="1">B1</button>
           <button class="filter-button" type="button" data-filter="2">B2</button>
           <button class="filter-button" type="button" data-filter="3">B3</button>
@@ -37,7 +37,7 @@
           <select id="elementFilter" class="catalog-filter" data-filter-key="element" title="属性で絞り込み">
             <option value="">属性</option>
           </select>
-          <select id="squadFilter" class="catalog-filter" data-filter-key="squad" title="企業で絞り込み">
+          <select id="squadFilter" class="catalog-filter" data-filter-key="company" title="企業で絞り込み">
             <option value="">企業</option>
           </select>
           <select id="classFilter" class="catalog-filter" data-filter-key="class" title="型で絞り込み">
@@ -87,6 +87,34 @@
             <label class="check-label"><input id="partBreakMode" type="checkbox"> 部位破壊</label>
             <label class="check-label"><input id="specialMode" type="checkbox"> Special</label>
           </div>
+
+          <div class="status-settings">
+            <div class="status-settings-head">
+              <h3>詳細ステータス</h3>
+              <label class="check-label"><input id="statusEnabled" type="checkbox" checked disabled> 常時使用</label>
+            </div>
+            <div class="option-grid status-grid">
+              <label>レベル<input id="statusLevel" type="number" min="1" max="1300" step="1" value="400"></label>
+              <label>共通研究<input id="commonResearchLevel" type="number" min="0" step="1" value="0"></label>
+            </div>
+            <div class="research-grid">
+              <div>
+                <h4>クラス研究</h4>
+                <label>火力型<input id="classResearchAttacker" type="number" min="0" step="1" value="0"></label>
+                <label>防御型<input id="classResearchDefender" type="number" min="0" step="1" value="0"></label>
+                <label>支援型<input id="classResearchSupporter" type="number" min="0" step="1" value="0"></label>
+              </div>
+              <div>
+                <h4>企業研究</h4>
+                <label>エリシオン<input id="companyResearchElysion" type="number" min="0" step="1" value="0"></label>
+                <label>ミシリス<input id="companyResearchMissilis" type="number" min="0" step="1" value="0"></label>
+                <label>テトラ<input id="companyResearchTetra" type="number" min="0" step="1" value="0"></label>
+                <label>ピルグリム<input id="companyResearchPilgrim" type="number" min="0" step="1" value="0"></label>
+                <label>アブノーマル<input id="companyResearchAbnormal" type="number" min="0" step="1" value="0"></label>
+              </div>
+            </div>
+          </div>
+
           <div class="additional-buffs">
             <div class="additional-buffs-head">
               <h3>追加バフ</h3>
@@ -128,7 +156,7 @@
             <h2 id="detailTitle">詳細</h2>
             <p id="detailSubtitle"></p>
           </div>
-          <button id="closeDetailButton" class="icon-button" type="button" title="閉じる">×</button>
+          <button id="closeDetailButton" class="icon-button" type="button" title="閉じる">x</button>
         </header>
         <div class="detail-body">
           <section>
@@ -151,6 +179,7 @@
       </section>
     </div>
 
+    <script src="/static/status_calc.js"></script>
     <script src="/static/app.js"></script>
   </body>
 </html>

@@ -25,6 +25,7 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
                 pass
         
         self.skills = list(unique_skills.values())
+        self.rebuild_skill_index()
         # ▲▲▲ 修正ここまで ▲▲▲
         
        
@@ -39,6 +40,8 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
 
         self.element = element
         self.burst_stage = str(burst_stage)
+        self.base_burst_stage = str(burst_stage)
+        self.current_burst_stage = None
         self.character_class = character_class
         # ▼▼▼ 追加: 部隊情報 ▼▼▼
         self.squad = squad
@@ -73,6 +76,8 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.cumulative_full_charge_count = 0
         # ▲▲▲ 追加ここまで ▲▲▲
         self.damage_breakdown = {'Weapon Attack': 0}
+        self.damage_hit_counts = {'Weapon Attack': 0}
+        self.damage_source_types = {'Weapon Attack': '通常攻撃'}
         
         self.active_dots = {}
         self.special_flags = set()
@@ -92,6 +97,8 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         def register_breakdown(skill_obj):
             if skill_obj.effect_type in ['damage', 'dot']:
                 self.damage_breakdown[skill_obj.name] = 0
+                self.damage_hit_counts[skill_obj.name] = 0
+                self.damage_source_types[skill_obj.name] = 'DoT' if skill_obj.effect_type == 'dot' else 'スキル'
             if skill_obj.effect_type == 'cumulative_stages':
                 for stage in skill_obj.stages:
                     if isinstance(stage, Skill): register_breakdown(stage)
@@ -110,8 +117,31 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.is_weapon_changed = False
         self.weapon_change_end_frame = 0
         self.weapon_change_ammo_specified = False
+        self.weapon_change_revert_on_ammo_empty = True
 
     # ▼▼▼ 修正: healメソッド (引数 is_distributed を追加) ▼▼▼
+    def rebuild_skill_index(self):
+        self.skills_by_trigger = {}
+        for skill in self.skills:
+            self.skills_by_trigger.setdefault(skill.trigger_type, []).append(skill)
+
+    def add_skill(self, skill):
+        self.skills.append(skill)
+        self.skills_by_trigger.setdefault(skill.trigger_type, []).append(skill)
+
+    def add_damage(self, source_name, amount, hit_count=1, source_type=None):
+        if amount == 0:
+            return
+        source_name = source_name or 'Unknown'
+        self.total_damage += amount
+        self.damage_breakdown[source_name] = self.damage_breakdown.get(source_name, 0) + amount
+        if hit_count > 0:
+            self.damage_hit_counts[source_name] = self.damage_hit_counts.get(source_name, 0) + int(hit_count)
+        if source_type:
+            self.damage_source_types[source_name] = source_type
+        elif source_name not in self.damage_source_types:
+            self.damage_source_types[source_name] = 'スキル'
+
     def heal(self, amount, source_name, frame, simulator, is_distributed=False):
         # 1. 回復分配ロジック (Distribution Logic)
         # 自身が分配バフを持っており、かつこれが「分配後の回復」でない場合に発動

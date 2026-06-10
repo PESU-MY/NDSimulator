@@ -1,4 +1,4 @@
-const DETAIL_SECONDS = 180;
+﻿const DETAIL_SECONDS = 180;
 
 const state = {
   activeSlot: 0,
@@ -7,7 +7,7 @@ const state = {
   catalogFilters: {
     weaponType: "",
     element: "",
-    squad: "",
+    company: "",
     class: ""
   },
   catalog: [],
@@ -28,7 +28,7 @@ const defaults = [
 ];
 
 const additionalBuffTypes = [
-  { type: "cooldown_reduction", label: "CT短縮", defaultValue: 5, unit: "秒" },
+  { type: "cooldown_reduction", label: "CT短縮", defaultValue: 5, unit: "sec" },
   { type: "max_ammo_rate", label: "装弾数バフ", defaultValue: 100, unit: "%" },
   { type: "reload_speed_rate", label: "リロード速度バフ", defaultValue: 100, unit: "%" },
   { type: "elemental_buff", label: "有利コードダメージバフ", defaultValue: 10, unit: "%" }
@@ -38,13 +38,19 @@ function yenNumber(value) {
   return new Intl.NumberFormat("ja-JP", { maximumFractionDigits: 0 }).format(value || 0);
 }
 
+function statNumber(value) {
+  const numericValue = Number(value);
+  if (!Number.isFinite(numericValue) || numericValue <= 0) return "-";
+  return yenNumber(numericValue);
+}
+
 function smallNumber(value) {
   return new Intl.NumberFormat("ja-JP", { maximumFractionDigits: 2 }).format(value || 0);
 }
 
 function stageLabel(stage) {
   if (!stage) return "-";
-  if (stage === "∀") return "ALL";
+  if (stage === "∀" || stage === "ALL" || stage === "*" || stage === "all") return "ALL";
   return `B${stage}`;
 }
 
@@ -67,6 +73,33 @@ function findCatalogItem(selection) {
   return state.catalog.find((item) => selectionEquals(item, selection)) || null;
 }
 
+function iconInitial(item) {
+  if (!item?.name) return "-";
+  return item.name.replace(/^Dummy\s*/i, "D").slice(0, 2);
+}
+
+function createCharacterIcon(item, className = "character-icon") {
+  const wrap = document.createElement("div");
+  wrap.className = `${className}${item?.imageUrl ? "" : " fallback"}`;
+
+  if (item?.imageUrl) {
+    const img = document.createElement("img");
+    img.src = item.imageUrl;
+    img.alt = item.name;
+    img.loading = "lazy";
+    img.addEventListener("error", () => {
+      wrap.classList.add("fallback");
+      wrap.textContent = iconInitial(item);
+      img.remove();
+    });
+    wrap.appendChild(img);
+  } else {
+    wrap.textContent = iconInitial(item);
+  }
+
+  return wrap;
+}
+
 function additionalBuffDefinition(type) {
   return additionalBuffTypes.find((buff) => buff.type === type) || additionalBuffTypes[0];
 }
@@ -80,31 +113,195 @@ function cloneAdditionalBuff(buff) {
   };
 }
 
-function defaultStagesForItem(item) {
-  const stage = String(item?.burstStage || "");
-  if (stage === "1" || stage === "2" || stage === "3") return new Set([stage]);
-  if (stage === "∀" || stage === "ALL" || stage === "*" || stage === "all") return new Set(["3"]);
-  return new Set();
+function defaultEquipmentSettings() {
+  return StatusCalc.defaultEquipmentSettings();
+}
+
+function defaultIndividualStatusSettings() {
+  return StatusCalc.defaultIndividualStatusSettings();
+}
+
+function normalizeIndividualStatusSettings(settings) {
+  const defaults = defaultIndividualStatusSettings();
+  const source = settings && typeof settings === "object" ? settings : {};
+  const equipment = source.equipment && typeof source.equipment === "object" ? source.equipment : {};
+  return {
+    ...defaults,
+    ...source,
+    equipment: {
+      head: { ...defaults.equipment.head, ...(equipment.head || {}) },
+      body: { ...defaults.equipment.body, ...(equipment.body || {}) },
+      arms: { ...defaults.equipment.arms, ...(equipment.arms || {}) },
+      legs: { ...defaults.equipment.legs, ...(equipment.legs || {}) }
+    }
+  };
+}
+
+function selectionFromItem(item) {
+  if (!item) return null;
+  const selection = { kind: item.kind, file: item.file, id: item.id };
+  if (item.kind === "character") {
+    selection.statusSettings = defaultIndividualStatusSettings();
+  }
+  return selection;
+}
+
+function inputValue(id, fallback = "") {
+  const element = document.getElementById(id);
+  return element ? element.value : fallback;
+}
+
+function inputChecked(id) {
+  const element = document.getElementById(id);
+  return element ? element.checked : false;
+}
+
+function collectStatusSettings() {
+  return {
+    enabled: true,
+    level: inputValue("statusLevel", 400),
+    commonResearchLevel: inputValue("commonResearchLevel", 0),
+    classResearchLevels: {
+      Attacker: inputValue("classResearchAttacker", 0),
+      Defender: inputValue("classResearchDefender", 0),
+      Supporter: inputValue("classResearchSupporter", 0)
+    },
+    companyResearchLevels: {
+      Elysion: inputValue("companyResearchElysion", 0),
+      Missilis: inputValue("companyResearchMissilis", 0),
+      Tetra: inputValue("companyResearchTetra", 0),
+      Pilgrim: inputValue("companyResearchPilgrim", 0),
+      Abnormal: inputValue("companyResearchAbnormal", 0)
+    }
+  };
+}
+
+function calculateSlotStats(selection) {
+  if (!selection || selection.kind !== "character") return null;
+  return StatusCalc.calculate(
+    findCatalogItem(selection),
+    collectStatusSettings(),
+    selection.statusSettings
+  );
+}
+
+function selectionWithComputedStats(selection, commonStatusSettings) {
+  const cloned = cloneSelection(selection);
+  if (!cloned || cloned.kind !== "character") return cloned;
+
+  const item = findCatalogItem(cloned);
+  const computedStats = StatusCalc.calculate(item, commonStatusSettings, cloned.statusSettings);
+  cloned.statusSettings = {
+    ...normalizeIndividualStatusSettings(cloned.statusSettings),
+    computedStats
+  };
+  return cloned;
+}
+
+function stageMatchesItem(item, requestedStage) {
+  const itemStage = String(item?.burstStage || "");
+  const requested = String(requestedStage);
+  if (itemStage === requested) return true;
+  return itemStage === "∀" || itemStage === "ALL" || itemStage === "*" || itemStage === "all";
+}
+
+function emptyRotation() {
+  return { 1: [], 2: [], 3: [] };
+}
+
+function normalizeRotation(rotation) {
+  const normalized = emptyRotation();
+  if (!rotation) return normalized;
+
+  if (Array.isArray(rotation)) {
+    rotation.forEach((stageSet, slotIndex) => {
+      if (!stageSet) return;
+      const stages = stageSet instanceof Set ? Array.from(stageSet) : Array.from(stageSet || []);
+      stages.forEach((stage) => {
+        const key = String(stage);
+        if (normalized[key]) normalized[key].push(slotIndex);
+      });
+    });
+    return normalized;
+  }
+
+  ["1", "2", "3"].forEach((stage) => {
+    const values = Array.isArray(rotation[stage]) ? rotation[stage] : [];
+    normalized[stage] = values.map((value) => Number(value)).filter((value) => Number.isInteger(value));
+  });
+  return normalized;
+}
+
+function basicRotationForFormation(formation) {
+  const rotation = emptyRotation();
+  const firstForStage = (stage) => {
+    return formation.slots.findIndex((selection) => stageMatchesItem(findCatalogItem(selection), stage));
+  };
+
+  const b1 = firstForStage("1");
+  const b2 = firstForStage("2");
+  if (b1 >= 0) rotation[1].push(b1);
+  if (b2 >= 0) rotation[2].push(b2);
+
+  formation.slots.forEach((selection, index) => {
+    if (rotation[3].length < 2 && stageMatchesItem(findCatalogItem(selection), "3")) {
+      rotation[3].push(index);
+    }
+  });
+  return rotation;
+}
+
+function setBasicRotation(formation) {
+  formation.rotation = basicRotationForFormation(formation);
+  formation.rotationDetailed = false;
+}
+
+function cleanDetailedRotation(formation) {
+  const current = normalizeRotation(formation.rotation);
+  ["1", "2", "3"].forEach((stage) => {
+    current[stage] = current[stage].filter((slotIndex) => {
+      return stageMatchesItem(findCatalogItem(formation.slots[slotIndex]), stage);
+    });
+  });
+  formation.rotation = current;
+}
+
+function rotationSequenceLabel(formation, stage) {
+  const sequence = normalizeRotation(formation.rotation)[stage] || [];
+  if (!sequence.length) return "-";
+  return sequence.map((slotIndex) => {
+    const item = findCatalogItem(formation.slots[slotIndex]);
+    return item ? `${slotIndex + 1}.${item.name}` : `${slotIndex + 1}.Empty`;
+  }).join(" -> ");
 }
 
 function createFormation(name) {
   return {
     name,
     slots: [null, null, null, null, null],
-    rotation: [new Set(["1"]), new Set(["2"]), new Set(["3"]), new Set(["3"]), new Set()],
+    rotation: emptyRotation(),
+    rotationDetailed: false,
+    statusOpenSlot: null,
     result: null
   };
 }
 
 function cloneSelection(selection) {
-  return selection ? { kind: selection.kind, file: selection.file, id: selection.id } : null;
+  if (!selection) return null;
+  const cloned = { kind: selection.kind, file: selection.file, id: selection.id };
+  if (selection.kind === "character") {
+    cloned.statusSettings = normalizeIndividualStatusSettings(selection.statusSettings);
+  }
+  return cloned;
 }
 
 function cloneFormation(source, name) {
   return {
     name,
     slots: source.slots.map(cloneSelection),
-    rotation: source.rotation.map((stageSet) => new Set(stageSet)),
+    rotation: normalizeRotation(source.rotation),
+    rotationDetailed: !!source.rotationDetailed,
+    statusOpenSlot: source.statusOpenSlot,
     result: null
   };
 }
@@ -116,9 +313,9 @@ function activeFormationState() {
 function applyDefaultSlots(formation) {
   defaults.forEach((selection, index) => {
     const item = selection ? findCatalogItem(selection) : null;
-    formation.slots[index] = item ? { kind: item.kind, file: item.file, id: item.id } : null;
-    formation.rotation[index] = item ? defaultStagesForItem(item) : new Set();
+    formation.slots[index] = selectionFromItem(item);
   });
+  setBasicRotation(formation);
 }
 
 function resetActiveFormation() {
@@ -131,7 +328,7 @@ function resetActiveFormation() {
 }
 
 function addFormation() {
-  const formation = createFormation(`編成${state.formations.length + 1}`);
+  const formation = createFormation(`Formation ${state.formations.length + 1}`);
   applyDefaultSlots(formation);
   state.formations.push(formation);
   state.activeFormation = state.formations.length - 1;
@@ -143,7 +340,7 @@ function addFormation() {
 function copyActiveFormation() {
   const source = activeFormationState();
   if (!source) return;
-  const formation = cloneFormation(source, `${source.name} コピー`);
+  const formation = cloneFormation(source, `${source.name} Copy`);
   state.formations.push(formation);
   state.activeFormation = state.formations.length - 1;
   state.activeSlot = 0;
@@ -153,9 +350,11 @@ function copyActiveFormation() {
 
 function setFormation(slotIndex, item) {
   const formation = activeFormationState();
-  formation.slots[slotIndex] = item ? { kind: item.kind, file: item.file, id: item.id } : null;
-  formation.rotation[slotIndex] = item ? defaultStagesForItem(item) : new Set();
+  formation.slots[slotIndex] = selectionFromItem(item);
+  if (formation.rotationDetailed) cleanDetailedRotation(formation);
+  else setBasicRotation(formation);
   formation.result = null;
+  formation.statusOpenSlot = item?.kind === "character" ? slotIndex : null;
   state.activeSlot = Math.min(4, slotIndex + 1);
   renderFormationTabs();
   renderFormation();
@@ -199,6 +398,7 @@ function filteredCatalog() {
       item.file,
       item.weaponType,
       item.element,
+      item.company,
       item.class,
       item.squad,
       item.burstStage
@@ -233,22 +433,18 @@ function renderCatalog() {
     button.type = "button";
     button.className = "character-item";
     button.dataset.key = itemKey(item);
+    button.title = `${item.name} / ${item.weaponType || "-"} / ${item.element || "-"}`;
 
-    const main = document.createElement("div");
+    const icon = createCharacterIcon(item);
     const name = document.createElement("div");
     name.className = "character-name";
     name.textContent = item.name;
-    const meta = document.createElement("div");
-    meta.className = "character-meta";
-    const cooldown = item.cooldownTime === "" ? "-" : `${smallNumber(item.cooldownTime)}s`;
-    meta.textContent = `${item.weaponType || "-"} / ${item.element || "-"} / CT ${cooldown}`;
-    main.append(name, meta);
 
     const badge = document.createElement("span");
     badge.className = "stage-badge";
     badge.textContent = stageLabel(String(item.burstStage || ""));
 
-    button.append(main, badge);
+    button.append(icon, name, badge);
     button.addEventListener("click", () => setFormation(state.activeSlot, item));
     list.appendChild(button);
   });
@@ -274,15 +470,184 @@ function renderFormationTabs() {
   });
 }
 
+function markFormationDirty(formation) {
+  formation.result = null;
+  renderFormationTabs();
+}
+
+function refreshSlotMeta(formation, slotIndex) {
+  const slot = document.querySelector(`.slot[data-slot-index="${slotIndex}"]`);
+  const meta = slot?.querySelector(".slot-meta");
+  if (!meta) return;
+
+  const selection = formation.slots[slotIndex];
+  const item = findCatalogItem(selection);
+  const calculatedStats = item?.kind === "character" ? calculateSlotStats(selection) : null;
+  meta.textContent = item
+    ? calculatedStats
+      ? `ATK ${statNumber(calculatedStats.baseAtk)} / HP ${statNumber(calculatedStats.baseHp)}`
+      : `${stageLabel(String(item.burstStage || ""))} / ${item.weaponType || "-"} / ${item.class || "-"}`
+    : "Select";
+}
+
+function setSlotStatusValue(formation, slotIndex, key, value) {
+  const selection = formation.slots[slotIndex];
+  if (!selection || selection.kind !== "character") return;
+  selection.statusSettings = normalizeIndividualStatusSettings(selection.statusSettings);
+  selection.statusSettings[key] = value;
+  markFormationDirty(formation);
+  refreshSlotMeta(formation, slotIndex);
+}
+
+function setSlotEquipmentValue(formation, slotIndex, part, key, value) {
+  const selection = formation.slots[slotIndex];
+  if (!selection || selection.kind !== "character") return;
+  selection.statusSettings = normalizeIndividualStatusSettings(selection.statusSettings);
+  selection.statusSettings.equipment[part][key] = value;
+  markFormationDirty(formation);
+  refreshSlotMeta(formation, slotIndex);
+}
+
+function createNumberField(labelText, value, options, onInput) {
+  const label = document.createElement("label");
+  label.textContent = labelText;
+  const input = document.createElement("input");
+  input.type = "number";
+  input.min = String(options.min ?? 0);
+  if (options.max !== undefined) input.max = String(options.max);
+  input.step = String(options.step ?? 1);
+  input.value = value;
+  input.addEventListener("input", () => onInput(input.value));
+  label.appendChild(input);
+  return label;
+}
+
+function createSelectField(labelText, value, values, onChange) {
+  const label = document.createElement("label");
+  label.textContent = labelText;
+  const select = document.createElement("select");
+  values.forEach((optionValue) => {
+    const option = document.createElement("option");
+    option.value = String(optionValue);
+    option.textContent = String(optionValue);
+    option.selected = String(optionValue) === String(value);
+    select.appendChild(option);
+  });
+  select.addEventListener("change", () => onChange(select.value));
+  label.appendChild(select);
+  return label;
+}
+
+function createCollectionField(settings, formation, slotIndex) {
+  const label = document.createElement("label");
+  label.textContent = "Collection";
+  const select = document.createElement("select");
+  [
+    ["", "None"],
+    ["R", "R"],
+    ["SR", "SR"]
+  ].forEach(([value, text]) => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = text;
+    option.selected = value === String(settings.collectionRarity || "");
+    select.appendChild(option);
+  });
+  select.addEventListener("change", () => setSlotStatusValue(formation, slotIndex, "collectionRarity", select.value));
+  label.appendChild(select);
+  return label;
+}
+
+function createEquipmentField(labelText, part, settings, formation, slotIndex) {
+  const label = document.createElement("label");
+  label.textContent = labelText;
+
+  const tier = document.createElement("select");
+  ["T9", "T10"].forEach((value) => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = value;
+    option.selected = value === String(settings.equipment[part].tier || "T9");
+    tier.appendChild(option);
+  });
+  tier.addEventListener("change", () => setSlotEquipmentValue(formation, slotIndex, part, "tier", tier.value));
+
+  const level = document.createElement("input");
+  level.type = "number";
+  level.min = "0";
+  level.max = "5";
+  level.step = "1";
+  level.value = settings.equipment[part].level;
+  level.addEventListener("input", () => setSlotEquipmentValue(formation, slotIndex, part, "level", level.value));
+
+  label.append(tier, level);
+  return label;
+}
+
+function createSlotStatusPanel(formation, slotIndex, item) {
+  const selection = formation.slots[slotIndex];
+  selection.statusSettings = normalizeIndividualStatusSettings(selection.statusSettings);
+  const settings = selection.statusSettings;
+
+  const panel = document.createElement("div");
+  panel.className = "slot-status-panel";
+  panel.addEventListener("click", (event) => event.stopPropagation());
+
+  const head = document.createElement("div");
+  head.className = "slot-status-head";
+  const title = document.createElement("strong");
+  title.textContent = item.name;
+  const close = document.createElement("button");
+  close.type = "button";
+  close.textContent = "Close";
+  close.addEventListener("click", () => {
+    formation.statusOpenSlot = null;
+    renderFormation();
+  });
+  head.append(title, close);
+
+  const grid = document.createElement("div");
+  grid.className = "slot-status-grid";
+  grid.append(
+    createNumberField("Limit", settings.limitBreak, { min: 0, max: 10 }, (value) => setSlotStatusValue(formation, slotIndex, "limitBreak", value)),
+    createSelectField("Bond", settings.bondLevel, [0, 10, 20, 30, 40], (value) => setSlotStatusValue(formation, slotIndex, "bondLevel", value)),
+    createCollectionField(settings, formation, slotIndex),
+    createNumberField("Collection Lv", settings.collectionLevel, { min: 0, max: 15 }, (value) => setSlotStatusValue(formation, slotIndex, "collectionLevel", value)),
+    createNumberField("Cube Lv", settings.cubeLevel, { min: 0, max: 15 }, (value) => setSlotStatusValue(formation, slotIndex, "cubeLevel", value))
+  );
+
+  const equipment = document.createElement("div");
+  equipment.className = "slot-equipment-grid";
+  equipment.append(
+    createEquipmentField("Head", "head", settings, formation, slotIndex),
+    createEquipmentField("Body", "body", settings, formation, slotIndex),
+    createEquipmentField("Arms", "arms", settings, formation, slotIndex),
+    createEquipmentField("Legs", "legs", settings, formation, slotIndex)
+  );
+
+  panel.append(head, grid, equipment);
+  return panel;
+}
+
+function resultForSlot(formation, item) {
+  if (!formation.result || !item) return null;
+  return (formation.result.results || []).find((row) => row.name === item.name) || null;
+}
+
 function renderFormation() {
   const formation = activeFormationState();
   const slots = document.getElementById("formationSlots");
   slots.innerHTML = "";
 
+  const slotRow = document.createElement("div");
+  slotRow.className = "formation-slot-row";
+
   formation.slots.forEach((selection, index) => {
     const item = findCatalogItem(selection);
     const slot = document.createElement("div");
     slot.className = `slot${index === state.activeSlot ? " active" : ""}`;
+    slot.dataset.slotIndex = String(index);
+    slot.title = item ? item.name : `${index + 1}番目`;
 
     const main = document.createElement("div");
     main.className = "slot-main";
@@ -303,58 +668,196 @@ function renderFormation() {
     idx.className = "slot-index";
     idx.textContent = String(index + 1);
 
+    const icon = createCharacterIcon(item, "slot-icon");
+    icon.title = item?.kind === "character" ? "Status settings" : "";
+    icon.addEventListener("click", (event) => {
+      if (item?.kind !== "character") return;
+      event.stopPropagation();
+      state.activeSlot = index;
+      formation.statusOpenSlot = formation.statusOpenSlot === index ? null : index;
+      renderFormation();
+    });
     const body = document.createElement("div");
+    body.className = "slot-body";
     const name = document.createElement("div");
     name.className = item ? "slot-name" : "slot-empty";
-    name.textContent = item ? item.name : "未設定";
+    name.textContent = item ? item.name : "Empty";
     const meta = document.createElement("div");
     meta.className = "slot-meta";
+    const result = resultForSlot(formation, item);
+    const calculatedStats = item?.kind === "character" ? calculateSlotStats(selection) : null;
     meta.textContent = item
-      ? `${stageLabel(String(item.burstStage || ""))} / ${item.weaponType || "-"} / ${item.class || "-"}`
-      : "クリックして選択先にする";
+      ? result
+        ? `ATK ${statNumber(result.baseAtk)} / HP ${statNumber(result.baseHp)}`
+        : calculatedStats
+          ? `ATK ${statNumber(calculatedStats.baseAtk)} / HP ${statNumber(calculatedStats.baseHp)}`
+          : `${stageLabel(String(item.burstStage || ""))} / ${item.weaponType || "-"} / ${item.class || "-"}`
+      : "Select";
     body.append(name, meta);
 
     const remove = document.createElement("button");
     remove.type = "button";
     remove.className = "slot-remove";
-    remove.textContent = "外す";
+    remove.textContent = "x";
+    remove.title = "Remove";
     remove.disabled = !item;
     remove.addEventListener("click", (event) => {
       event.stopPropagation();
       formation.slots[index] = null;
-      formation.rotation[index] = new Set();
+      if (formation.rotationDetailed) cleanDetailedRotation(formation);
+      else setBasicRotation(formation);
       formation.result = null;
       renderFormationTabs();
       renderFormation();
     });
 
-    main.append(idx, body, remove);
+    main.append(idx, icon, body, remove);
+    slot.append(main);
+    if (formation.statusOpenSlot === index && item?.kind === "character") {
+      slot.appendChild(createSlotStatusPanel(formation, index, item));
+    }
+    slotRow.appendChild(slot);
+  });
 
-    const controls = document.createElement("div");
-    controls.className = "rotation-controls";
-    const label = document.createElement("span");
-    label.textContent = "バースト";
-    controls.appendChild(label);
+  const rotationPanel = document.createElement("div");
+  rotationPanel.className = "formation-rotation-panel";
+
+  const rotationTitle = document.createElement("button");
+  rotationTitle.type = "button";
+  rotationTitle.className = "rotation-title";
+  rotationTitle.setAttribute("aria-expanded", formation.rotationDetailed ? "true" : "false");
+  rotationTitle.addEventListener("click", () => {
+    if (!formation.rotationDetailed) {
+      formation.rotation = normalizeRotation(formation.rotation);
+      formation.rotationDetailed = true;
+      renderFormation();
+    }
+  });
+
+  const rotationTitleText = document.createElement("span");
+  rotationTitleText.textContent = "Burst order";
+  const rotationMode = document.createElement("strong");
+  rotationMode.textContent = formation.rotationDetailed ? "Detail" : "Basic";
+  rotationTitle.append(rotationTitleText, rotationMode);
+  rotationPanel.appendChild(rotationTitle);
+
+  if (!formation.rotationDetailed) {
+    const summary = document.createElement("div");
+    summary.className = "rotation-basic-summary";
+    ["1", "2", "3"].forEach((stage) => {
+      const line = document.createElement("div");
+      const label = document.createElement("strong");
+      label.textContent = `B${stage}`;
+      const sequence = document.createElement("span");
+      sequence.textContent = rotationSequenceLabel(formation, stage);
+      line.append(label, sequence);
+      summary.appendChild(line);
+    });
+    rotationPanel.appendChild(summary);
+  } else {
+    const tools = document.createElement("div");
+    tools.className = "rotation-tools";
+    const reset = document.createElement("button");
+    reset.type = "button";
+    reset.className = "ghost-button";
+    reset.textContent = "Reset basic";
+    reset.addEventListener("click", () => {
+      setBasicRotation(formation);
+      formation.result = null;
+      renderFormationTabs();
+      renderFormation();
+    });
+    tools.appendChild(reset);
+    rotationPanel.appendChild(tools);
 
     ["1", "2", "3"].forEach((stage) => {
-      const wrap = document.createElement("label");
-      const checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-      checkbox.checked = formation.rotation[index].has(stage);
-      checkbox.disabled = !item;
-      checkbox.addEventListener("change", () => {
-        if (checkbox.checked) formation.rotation[index].add(stage);
-        else formation.rotation[index].delete(stage);
+      const controls = document.createElement("div");
+      controls.className = "rotation-controls detailed";
+
+      const head = document.createElement("div");
+      head.className = "rotation-stage-head";
+      const stageBadge = document.createElement("strong");
+      stageBadge.textContent = `B${stage}`;
+      const hint = document.createElement("span");
+      hint.textContent = "Click to append";
+      head.append(stageBadge, hint);
+
+      const sequence = document.createElement("div");
+      sequence.className = "rotation-sequence";
+      const rotation = normalizeRotation(formation.rotation);
+      (rotation[stage] || []).forEach((slotIndex, orderIndex) => {
+        const item = findCatalogItem(formation.slots[slotIndex]);
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = "rotation-chip";
+        chip.title = "Remove this entry";
+        const icon = createCharacterIcon(item, "rotation-icon");
+        const text = document.createElement("span");
+        text.textContent = item ? `${orderIndex + 1}. ${item.name}` : `${orderIndex + 1}. Empty`;
+        chip.append(icon, text);
+        chip.addEventListener("click", () => {
+          formation.rotation = normalizeRotation(formation.rotation);
+          formation.rotation[stage].splice(orderIndex, 1);
+          formation.result = null;
+          renderFormationTabs();
+          renderFormation();
+        });
+        sequence.appendChild(chip);
+      });
+      if (!(rotation[stage] || []).length) {
+        const empty = document.createElement("span");
+        empty.className = "rotation-empty";
+        empty.textContent = "Empty";
+        sequence.appendChild(empty);
+      }
+
+      const candidates = document.createElement("div");
+      candidates.className = "rotation-candidates";
+      formation.slots.forEach((selection, slotIndex) => {
+        const item = findCatalogItem(selection);
+        if (!stageMatchesItem(item, stage)) return;
+        const add = document.createElement("button");
+        add.type = "button";
+        add.className = "rotation-add";
+        add.title = `${item.name}をB${stage}に追加`;
+        const icon = createCharacterIcon(item, "rotation-icon");
+        const text = document.createElement("span");
+        text.textContent = `${slotIndex + 1}. ${item.name}`;
+        add.append(icon, text);
+        add.addEventListener("click", () => {
+          formation.rotation = normalizeRotation(formation.rotation);
+          formation.rotation[stage].push(slotIndex);
+          formation.result = null;
+          renderFormationTabs();
+          renderFormation();
+        });
+        candidates.appendChild(add);
+      });
+      if (!candidates.children.length) {
+        const empty = document.createElement("span");
+        empty.className = "rotation-empty";
+        empty.textContent = `No B${stage} candidates`;
+        candidates.appendChild(empty);
+      }
+
+      const clear = document.createElement("button");
+      clear.type = "button";
+      clear.className = "rotation-clear";
+      clear.textContent = "Clear";
+      clear.addEventListener("click", () => {
+        formation.rotation = normalizeRotation(formation.rotation);
+        formation.rotation[stage] = [];
         formation.result = null;
         renderFormationTabs();
+        renderFormation();
       });
-      wrap.append(checkbox, document.createTextNode(`B${stage}`));
-      controls.appendChild(wrap);
-    });
 
-    slot.append(main, controls);
-    slots.appendChild(slot);
-  });
+      controls.append(head, sequence, candidates, clear);
+      rotationPanel.appendChild(controls);
+    });
+  }
+
+  slots.append(slotRow, rotationPanel);
 }
 
 function renderAdditionalBuffs() {
@@ -366,7 +869,7 @@ function renderAdditionalBuffs() {
   if (!state.additionalBuffs.length) {
     const empty = document.createElement("div");
     empty.className = "additional-buff-empty";
-    empty.textContent = "追加バフはありません";
+    empty.textContent = "No additional buffs";
     list.appendChild(empty);
     return;
   }
@@ -379,7 +882,7 @@ function renderAdditionalBuffs() {
     const enabled = document.createElement("input");
     enabled.type = "checkbox";
     enabled.checked = buff.enabled;
-    enabled.title = "発動";
+    enabled.title = "Enabled";
     enabled.addEventListener("change", () => {
       state.additionalBuffs[index].enabled = enabled.checked;
     });
@@ -404,7 +907,7 @@ function renderAdditionalBuffs() {
     value.className = "buff-value";
     value.type = "number";
     value.min = "0";
-    value.step = definition.unit === "秒" ? "0.1" : "1";
+    value.step = definition.unit === "sec" ? "0.1" : "1";
     value.value = buff.value;
     value.addEventListener("input", () => {
       state.additionalBuffs[index].value = value.value;
@@ -417,8 +920,8 @@ function renderAdditionalBuffs() {
     const remove = document.createElement("button");
     remove.type = "button";
     remove.className = "buff-remove";
-    remove.title = "削除";
-    remove.textContent = "×";
+    remove.title = "Remove";
+    remove.textContent = "x";
     remove.addEventListener("click", () => {
       state.additionalBuffs.splice(index, 1);
       renderAdditionalBuffs();
@@ -441,17 +944,16 @@ function addAdditionalBuff() {
 }
 
 function collectPayloadForFormation(formation) {
-  const rotation = { 1: [], 2: [], 3: [] };
-  formation.rotation.forEach((stageSet, slotIndex) => {
-    ["1", "2", "3"].forEach((stage) => {
-      if (stageSet.has(stage) && formation.slots[slotIndex]) {
-        rotation[stage].push(slotIndex);
-      }
+  const rotation = normalizeRotation(formation.rotation);
+  const statusSettings = collectStatusSettings();
+  ["1", "2", "3"].forEach((stage) => {
+    rotation[stage] = rotation[stage].filter((slotIndex) => {
+      return formation.slots[slotIndex] && stageMatchesItem(findCatalogItem(formation.slots[slotIndex]), stage);
     });
   });
 
   return {
-    formation: formation.slots,
+    formation: formation.slots.map((selection) => selectionWithComputedStats(selection, statusSettings)),
     rotation,
     options: {
       skillLevel: document.getElementById("skillLevel").value,
@@ -463,6 +965,7 @@ function collectPayloadForFormation(formation) {
       crustOperationMode: document.getElementById("crustOperationMode").value,
       partBreakMode: document.getElementById("partBreakMode").checked,
       specialMode: document.getElementById("specialMode").checked,
+      statusSettings,
       additionalBuffs: state.additionalBuffs.map(cloneAdditionalBuff)
     }
   };
@@ -495,7 +998,7 @@ function renderResults(entries) {
   rotation.innerHTML = "";
   okEntries.forEach((entry) => {
     const div = document.createElement("div");
-    const parts = Object.entries(entry.data.rotation).map(([stage, names]) => `B${stage}: ${names.join(" → ")}`);
+    const parts = Object.entries(entry.data.rotation).map(([stage, names]) => `B${stage}: ${names.join(" 竊・")}`);
     div.textContent = `${entry.name} / ${parts.join(" / ")}`;
     rotation.appendChild(div);
   });
@@ -506,7 +1009,7 @@ function renderResults(entries) {
   if (!entries.length) {
     const empty = document.createElement("div");
     empty.className = "message";
-    empty.textContent = "まだ結果がありません";
+    empty.textContent = "No results";
     rows.appendChild(empty);
     return;
   }
@@ -515,8 +1018,8 @@ function renderResults(entries) {
     const title = document.createElement("div");
     title.className = "formation-result-title";
     title.textContent = entry.error
-      ? `${entry.name} / エラー`
-      : `${entry.name} / 総ダメージ ${yenNumber(entry.data.totalPartyDamage)}`;
+      ? `${entry.name} / Error`
+      : `${entry.name} / Total ${yenNumber(entry.data.totalPartyDamage)}`;
     rows.appendChild(title);
 
     if (entry.error) {
@@ -536,22 +1039,28 @@ function renderResults(entries) {
 
         const head = document.createElement("div");
         head.className = "result-head";
+        const nameBlock = document.createElement("div");
+        nameBlock.className = "result-name-block";
         const name = document.createElement("strong");
         name.textContent = row.name;
+        const stats = document.createElement("span");
+        stats.className = "result-stat-line";
+        stats.textContent = `ATK ${statNumber(row.baseAtk)} / HP ${statNumber(row.baseHp)}`;
+        nameBlock.append(name, stats);
         const damage = document.createElement("button");
         damage.type = "button";
         damage.className = "damage-button";
         damage.textContent = yenNumber(row.totalDamage);
-        damage.title = "詳細を表示";
+        damage.title = "Show details";
         damage.addEventListener("click", () => openDetail(entry, row));
-        head.append(name, damage);
+        head.append(nameBlock, damage);
 
         const breakdown = document.createElement("div");
         breakdown.className = "breakdown";
         if (!row.breakdown.length) {
           const empty = document.createElement("div");
           empty.className = "breakdown-row";
-          empty.textContent = "ダメージなし";
+          empty.textContent = "No damage";
           breakdown.appendChild(empty);
         } else {
           row.breakdown.forEach((sourceEntry) => {
@@ -563,7 +1072,7 @@ function renderResults(entries) {
             const count = Number(sourceEntry.count || 0);
             const average = Number(sourceEntry.averageDamage || 0);
             value.textContent = count
-              ? `${yenNumber(sourceEntry.damage)} / ${count}回 / 平均 ${yenNumber(average)}`
+              ? `${yenNumber(sourceEntry.damage)} / ${count} hits / avg ${yenNumber(average)}`
               : yenNumber(sourceEntry.damage);
             line.append(source, value);
             breakdown.appendChild(line);
@@ -584,7 +1093,7 @@ async function postSimulation(formation) {
   });
   const data = await response.json();
   if (!response.ok || data.status !== "ok") {
-    throw new Error(data.error || "シミュレーションに失敗しました");
+    throw new Error(data.error || "Simulation failed");
   }
   return data;
 }
@@ -594,7 +1103,7 @@ async function runSimulation(runAll = false) {
   const runAllButton = document.getElementById("runAllButton");
   runButton.disabled = true;
   runAllButton.disabled = true;
-  setRunStatus("実行中");
+  setRunStatus("Running");
   document.getElementById("resultRows").innerHTML = "";
 
   const targets = runAll
@@ -604,7 +1113,7 @@ async function runSimulation(runAll = false) {
 
   try {
     for (const target of targets) {
-      setRunStatus(`${target.formation.name} 実行中`);
+      setRunStatus(`${target.formation.name} running`);
       try {
         const data = await postSimulation(target.formation);
         target.formation.result = data;
@@ -616,7 +1125,7 @@ async function runSimulation(runAll = false) {
       renderFormationTabs();
       renderResults(entries);
     }
-    setRunStatus(entries.some((entry) => entry.error) ? "一部エラー" : "完了", entries.some((entry) => entry.error));
+    setRunStatus(entries.some((entry) => entry.error) ? "Partial error" : "Done", entries.some((entry) => entry.error));
   } finally {
     runButton.disabled = false;
     runAllButton.disabled = false;
@@ -635,7 +1144,7 @@ function formatBuffValue(value, effect) {
 function openDetail(entry, row) {
   const modal = document.getElementById("detailModal");
   document.getElementById("detailTitle").textContent = `${entry.name} / ${row.name}`;
-  document.getElementById("detailSubtitle").textContent = `総ダメージ ${yenNumber(row.totalDamage)} / B${row.burstStage}`;
+  document.getElementById("detailSubtitle").textContent = `Total ${yenNumber(row.totalDamage)} / B${row.burstStage}`;
   modal.hidden = false;
   drawDamageChart(row.damageSeries || []);
   renderDamageSummary(row.breakdown || []);
@@ -710,10 +1219,10 @@ function drawDamageChart(series) {
   ctx.stroke();
 
   ctx.fillStyle = "#172322";
-  ctx.fillText("秒", width - 22, height - 12);
-  ctx.fillText(`秒間最大 ${yenNumber(maxPerSecond)}`, pad.left, 14);
+  ctx.fillText("sec", width - 28, height - 12);
+  ctx.fillText(`Max/s ${yenNumber(maxPerSecond)}`, pad.left, 14);
   ctx.fillStyle = "#ad5b13";
-  ctx.fillText(`累計 ${yenNumber(maxCumulative)}`, width - 160, 14);
+  ctx.fillText(`Total ${yenNumber(maxCumulative)}`, width - 160, 14);
 }
 
 function renderDamageSummary(breakdown) {
@@ -723,7 +1232,7 @@ function renderDamageSummary(breakdown) {
   if (!breakdown.length) {
     const empty = document.createElement("div");
     empty.className = "detail-empty";
-    empty.textContent = "ダメージ内訳はありません";
+    empty.textContent = "No damage breakdown";
     container.appendChild(empty);
     return;
   }
@@ -732,7 +1241,7 @@ function renderDamageSummary(breakdown) {
   table.className = "damage-summary-table";
   const thead = document.createElement("thead");
   const headRow = document.createElement("tr");
-  ["種別", "ダメージ", "回数", "1回あたり"].forEach((label) => {
+  ["Source", "Damage", "Count", "Average"].forEach((label) => {
     const th = document.createElement("th");
     th.textContent = label;
     headRow.appendChild(th);
@@ -749,7 +1258,7 @@ function renderDamageSummary(breakdown) {
       const source = document.createElement("td");
       const type = document.createElement("span");
       type.className = "damage-source-type";
-      type.textContent = entry.sourceType || "スキル";
+      type.textContent = entry.sourceType || "Skill";
       const name = document.createElement("strong");
       name.textContent = entry.source;
       source.append(type, name);
@@ -757,7 +1266,7 @@ function renderDamageSummary(breakdown) {
       const damage = document.createElement("td");
       damage.textContent = yenNumber(entry.damage);
       const count = document.createElement("td");
-      count.textContent = `${Number(entry.count || 0)}回`;
+      count.textContent = `${Number(entry.count || 0)} hits`;
       const average = document.createElement("td");
       average.textContent = yenNumber(entry.averageDamage);
 
@@ -775,7 +1284,7 @@ function renderBurstTimeline(events) {
   if (!events.length) {
     const empty = document.createElement("div");
     empty.className = "detail-empty";
-    empty.textContent = "バースト発動はありません";
+    empty.textContent = "No burst events";
     container.appendChild(empty);
     return;
   }
@@ -809,7 +1318,7 @@ function renderBuffTimeline(intervals) {
 
   const groups = new Map();
   intervals.forEach((interval) => {
-    const bucket = interval.bucket || "その他バフ";
+    const bucket = interval.bucket || "Other";
     const key = [
       bucket,
       interval.name,
@@ -832,19 +1341,7 @@ function renderBuffTimeline(intervals) {
     groups.get(key).intervals.push(interval);
   });
 
-  const bucketOrder = [
-    "攻撃力",
-    "武器倍率",
-    "クリティカル/コア",
-    "チャージ",
-    "ダメージバフ",
-    "被ダメージ",
-    "分配/有利コード/特殊",
-    "行動/弾管理",
-    "耐久/回復",
-    "状態/フラグ",
-    "その他バフ"
-  ];
+  const bucketOrder = [];
   const bucketRank = (bucket) => {
     const index = bucketOrder.indexOf(bucket);
     return index === -1 ? bucketOrder.length : index;
@@ -908,6 +1405,7 @@ function renderBuffTimeline(intervals) {
 async function loadCatalog() {
   const response = await fetch("/api/characters");
   const data = await response.json();
+  StatusCalc.setData(data.statusData);
   state.catalog = [...data.dummies, ...data.characters];
   state.formations = [createFormation("編成1")];
   applyDefaultSlots(state.formations[0]);

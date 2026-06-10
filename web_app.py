@@ -6,7 +6,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-from web_simulation import ROOT_DIR, list_character_catalog, run_web_simulation
+from web_simulation import IMAGE_DIR, ROOT_DIR, list_character_catalog, run_web_batch_simulation, run_web_simulation
 
 
 STATIC_DIR = ROOT_DIR / "web_static"
@@ -41,21 +41,29 @@ class SimulatorWebHandler(BaseHTTPRequestHandler):
             self._send_static(STATIC_DIR / relative)
             return
 
+        if path.startswith("/images/"):
+            relative = unquote(path.removeprefix("/images/"))
+            self._send_file(IMAGE_DIR / relative, IMAGE_DIR)
+            return
+
         self._send_json(404, {"status": "error", "error": "Not found"})
 
     def do_POST(self):
         parsed = urlparse(self.path)
-        if parsed.path != "/api/simulate":
+        if parsed.path not in {"/api/simulate", "/api/simulate-batch"}:
             self._send_json(404, {"status": "error", "error": "Not found"})
             return
 
         try:
             content_length = int(self.headers.get("Content-Length", "0"))
-            if content_length > 1024 * 1024:
+            if content_length > 2 * 1024 * 1024:
                 raise ValueError("Request body is too large")
             body = self.rfile.read(content_length).decode("utf-8")
             payload = json.loads(body) if body else {}
-            result = run_web_simulation(payload)
+            if parsed.path == "/api/simulate-batch":
+                result = run_web_batch_simulation(payload)
+            else:
+                result = run_web_simulation(payload)
             self._send_json(200, result)
         except Exception as exc:
             self._send_json(
@@ -78,9 +86,12 @@ class SimulatorWebHandler(BaseHTTPRequestHandler):
         self.wfile.write(data)
 
     def _send_static(self, path):
+        self._send_file(path, STATIC_DIR)
+
+    def _send_file(self, path, root):
         path = path.resolve()
-        static_root = STATIC_DIR.resolve()
-        if path != static_root and static_root not in path.parents:
+        safe_root = root.resolve()
+        if path != safe_root and safe_root not in path.parents:
             self._send_json(403, {"status": "error", "error": "Forbidden"})
             return
         if not path.exists() or not path.is_file():
@@ -91,6 +102,7 @@ class SimulatorWebHandler(BaseHTTPRequestHandler):
         content_type = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
         self.send_response(200)
         self.send_header("Content-Type", content_type)
+        self.send_header("Cache-Control", "no-store")
         self.send_header("Content-Length", str(len(content)))
         self.end_headers()
         self.wfile.write(content)

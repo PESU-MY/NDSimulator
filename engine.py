@@ -10,7 +10,7 @@ from engine_burst import BurstEngineMixin
 # --- シミュレーターエンジン (統括) ---
 
 class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
-    def __init__(self, characters, burst_rotation, enemy_element="None", enemy_core_size=3.0, enemy_size=5.0, part_break_mode=False, burst_charge_time=5.0, log_file_path="simulation_log.txt"):
+    def __init__(self, characters, burst_rotation, enemy_element="None", enemy_core_size=3.0, enemy_size=5.0, part_break_mode=False, burst_charge_time=5.0, log_file_path="simulation_log.txt", enemy_count=1, enable_logs=True):
         self.FPS = 60
         self.TOTAL_FRAMES = 180 * self.FPS
         # ▼▼▼ 修正: キャラクターリストの強制重複排除 ▼▼▼
@@ -33,6 +33,9 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
         self.enemy_size = enemy_size
         self.part_break_mode = part_break_mode
         self.burst_charge_time = burst_charge_time
+        self.enemy_count = enemy_count
+        self.total_ally_ammo_consumed = 0
+        self.enable_logs = enable_logs
         
         # 敵へのデバフ(全員で共有)
         self.enemy_debuffs = BuffManager()
@@ -40,23 +43,25 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
         # 1フレーム内で実行されたスキルのIDを記録するセット (多重発動防止用)
         self.executed_skill_ids = set()
         
-        self.log_dir = "logs"
-        if os.path.exists(self.log_dir):
-            shutil.rmtree(self.log_dir) # 古いログを掃除
-        os.makedirs(self.log_dir)
-        
         self.log_handles = {}
-        self.log_handles["System"] = open(os.path.join(self.log_dir, "System.txt"), 'w', encoding='utf-8')
+        self.hp_log_handle = None
+        if self.enable_logs:
+            self.log_dir = "logs"
+            if os.path.exists(self.log_dir):
+                shutil.rmtree(self.log_dir) # 古いログを掃除
+            os.makedirs(self.log_dir)
 
-        # ▼▼▼ 追加: HPログ用のファイル作成 ▼▼▼
-        self.hp_log_handle = open(os.path.join(self.log_dir, "hp_log.csv"), 'w', encoding='utf-8')
-        # CSVヘッダー書き込み
-        self.hp_log_handle.write("Time(s),Character,CurrentHP,MaxHP,Ratio(%)\n")
-        # ▲▲▲ 追加ここまで ▲▲▲
-        
-        for char in self.characters:
-            safe_name = "".join([c for c in char.name if c.isalnum() or c in (' ', '_', '-', '.')])
-            self.log_handles[char.name] = open(os.path.join(self.log_dir, f"{safe_name}.txt"), 'w', encoding='utf-8')
+            self.log_handles["System"] = open(os.path.join(self.log_dir, "System.txt"), 'w', encoding='utf-8')
+
+            # ▼▼▼ 追加: HPログ用のファイル作成 ▼▼▼
+            self.hp_log_handle = open(os.path.join(self.log_dir, "hp_log.csv"), 'w', encoding='utf-8')
+            # CSVヘッダー書き込み
+            self.hp_log_handle.write("Time(s),Character,CurrentHP,MaxHP,Ratio(%)\n")
+            # ▲▲▲ 追加ここまで ▲▲▲
+
+            for char in self.characters:
+                safe_name = "".join([c for c in char.name if c.isalnum() or c in (' ', '_', '-', '.')])
+                self.log_handles[char.name] = open(os.path.join(self.log_dir, f"{safe_name}.txt"), 'w', encoding='utf-8')
             
         self.log("=== Simulation Start ===", target_name="System")
         for c in self.characters:
@@ -68,7 +73,27 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
         
         self.scheduled_actions = []
 
+    def record_ammo_consumed(self, character, amount, frame, is_full_burst):
+        amount = int(amount)
+        if amount <= 0:
+            return 0
+
+        self.total_ally_ammo_consumed += amount
+        total_dmg = 0
+        for char in self.characters:
+            total_dmg += char.process_trigger(
+                'ally_ammo_consumed_count',
+                self.total_ally_ammo_consumed,
+                frame,
+                is_full_burst,
+                self,
+                delta=amount
+            )
+        return total_dmg
+
     def log(self, message, target_name="System"):
+        if not self.enable_logs:
+            return
         if target_name in self.log_handles:
             self.log_handles[target_name].write(message + '\n')
         else:
@@ -97,7 +122,7 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
         # ▲▲▲ 追加ここまで ▲▲▲
 
         # ▼▼▼ 追加: HPログ出力 (1秒ごとに記録) ▼▼▼
-        if frame % 60 == 0:
+        if self.enable_logs and frame % 60 == 0:
             for char in self.characters:
                 # 最大HP計算 (stats.pyのメソッドが必要)
                 max_hp = char.get_current_max_hp(frame)
@@ -142,9 +167,9 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
                         
                         self.log(f"[DoT] 時間:{frame/60:>6.2f}s | Source:{name} | Dmg:{dmg:10,.0f} | Stacks:{dot.get('count', 1)}", target_name=char.name)
 
+                        char.add_damage(name, dmg, hit_count=1, source_type='DoT')
                         damage_dot += dmg
                     else: del char.active_dots[name]
-                char.total_damage += damage_dot
             
             char.process_trigger('time_interval', frame, frame, is_full_burst, self)
 
@@ -162,6 +187,8 @@ class NikkeSimulator(SkillEngineMixin, BurstEngineMixin):
         finally:
             for f in self.log_handles.values():
                 f.close()
+            if self.hp_log_handle is not None and not self.hp_log_handle.closed:
+                self.hp_log_handle.close()
         
         results = {}
         for char in self.characters:
