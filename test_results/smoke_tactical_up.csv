@@ -1,0 +1,4 @@
+﻿file,name,burst_stage,cooldown_time,rotation_policy,target_damage,party_damage,status,error
+ウンファ：タクティカル・アップ.json,ウンファ：タクティカル・アップ,2,20.0,20s: target replaces same-stage dummy,42288464.84384238,42301743.52579238,OK,
+エマ：タクティカル・アップ.json,エマ：タクティカル・アップ,1,20.0,20s: target replaces same-stage dummy,25371537.986844186,80131950.10635214,OK,
+ベスティー：タクティカル・アップ.json,ベスティー：タクティカル・アップ,3,40.0,40s: target and same-stage dummy rotate,33788661.25146004,33799844.75146004,OK,

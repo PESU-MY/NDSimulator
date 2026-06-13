@@ -1,0 +1,2 @@
+﻿file,name,burst_stage,cooldown_time,rotation_policy,target_damage,party_damage,status,error
+チャイム.json,チャイム,2,20.0,20s: target replaces same-stage dummy,6690323.425499754,6698915.425499754,OK,

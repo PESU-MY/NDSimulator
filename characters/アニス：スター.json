@@ -1,0 +1,532 @@
+{
+  "name": "アニス：スター",
+  "weapon_type": "RL",
+  "burst_stage": "1",
+  "element": "Electric",
+  "class": "Defender",
+  "manufacturer": "テトラ",
+  "company": "テトラ",
+  "squad": "カウンターズ",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.0,
+    "windup_frames": 0,
+    "winddown_frames": 0
+  },
+  "skills": [
+    {
+      "name": "S1: スターフォール (ゲージ速度)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "burst_gauge_charge_speed",
+        "value_list": [
+          0.0354,
+          0.0381,
+          0.0409,
+          0.0436,
+          0.0463,
+          0.0491,
+          0.0518,
+          0.0545,
+          0.0572,
+          0.06
+        ],
+        "duration": 99999,
+        "description": "バーストゲージチャージ速度UP。現状の固定時間ゲージ生成には未反映"
+      }
+    },
+    {
+      "name": "S1: スターフォール (私だけの星/開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "condition": {
+        "not_has_ally_base_burst_stage": "1",
+        "exclude_self": true
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "anis_everyone_star"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [
+              0.2364,
+              0.2546,
+              0.2728,
+              0.2909,
+              0.3091,
+              0.3273,
+              0.3455,
+              0.3637,
+              0.3819,
+              0.4001
+            ],
+            "duration": 99999,
+            "source_name": "S1: スターフォール (私だけの星)",
+            "tag": "anis_private_star"
+          }
+        },
+        {
+          "effect_type": "cooldown_reduction",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "value_list": [
+              5.34,
+              5.58,
+              5.82,
+              6.05,
+              6.29,
+              6.53,
+              6.77,
+              7.0,
+              7.24,
+              7.48
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: スターフォール (私だけの星/FB終了)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "condition": {
+        "not_has_ally_base_burst_stage": "1",
+        "exclude_self": true
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "anis_everyone_star"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [
+              0.2364,
+              0.2546,
+              0.2728,
+              0.2909,
+              0.3091,
+              0.3273,
+              0.3455,
+              0.3637,
+              0.3819,
+              0.4001
+            ],
+            "duration": 99999,
+            "source_name": "S1: スターフォール (私だけの星)",
+            "tag": "anis_private_star"
+          }
+        },
+        {
+          "effect_type": "cooldown_reduction",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "value_list": [
+              5.34,
+              5.58,
+              5.82,
+              6.05,
+              6.29,
+              6.53,
+              6.77,
+              7.0,
+              7.24,
+              7.48
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: スターフォール (みんなの星/開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "condition": {
+        "has_ally_base_burst_stage": "1",
+        "exclude_self": true
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "anis_private_star"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "value": 1,
+            "duration": 99999,
+            "source_name": "S1: スターフォール (みんなの星)",
+            "tag": "anis_everyone_star",
+            "description": "みんなの星状態。バースト再突入1段階の条件として保持"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: スターフォール (みんなの星/FB終了)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "condition": {
+        "has_ally_base_burst_stage": "1",
+        "exclude_self": true
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "anis_private_star"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "value": 1,
+            "duration": 99999,
+            "source_name": "S1: スターフォール (みんなの星)",
+            "tag": "anis_everyone_star"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: スターフォール (フルチャージ追加ダメージ)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 4,
+        "multiplier_list": [
+          0.71,
+          0.7646,
+          0.8192,
+          0.8738,
+          0.9284,
+          0.983,
+          1.0376,
+          1.0922,
+          1.1468,
+          1.2013
+        ],
+        "is_skill_damage": true
+      }
+    },
+    {
+      "name": "S2: スターダスト (私だけの星/攻撃力)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "anis_private_star"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "stat_type": "base",
+        "target_stat": "atk",
+        "value_list": [
+          0.2068,
+          0.2228,
+          0.2387,
+          0.2546,
+          0.2705,
+          0.2864,
+          0.3023,
+          0.3182,
+          0.3342,
+          0.3501
+        ],
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: スターダスト (みんなの星/回復)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "anis_everyone_star"
+      },
+      "effect_type": "heal",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 6,
+        "value_list": [
+          0.0074,
+          0.008,
+          0.0085,
+          0.0091,
+          0.0097,
+          0.0103,
+          0.0108,
+          0.0114,
+          0.012,
+          0.0126
+        ],
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "max_hp"
+      }
+    },
+    {
+      "name": "S2: スターダスト (爆発ダメージ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 7,
+        "buff_type": "explosive_dmg_buff",
+        "value_list": [
+          0.5438,
+          0.5856,
+          0.6274,
+          0.6693,
+          0.7111,
+          0.7529,
+          0.7948,
+          0.8366,
+          0.8784,
+          0.9203
+        ],
+        "duration": 10,
+        "description": "本来は自分と自分より最終防御力が低い味方。防御力順が未実装のため味方全体近似"
+      }
+    },
+    {
+      "name": "S2: スターダスト (攻撃ダメージ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 8,
+        "buff_type": "atk_dmg_buff",
+        "value_list": [
+          0.2009,
+          0.2163,
+          0.2318,
+          0.2479,
+          0.2627,
+          0.2789,
+          0.2936,
+          0.3091,
+          0.3245,
+          0.34
+        ],
+        "duration": 10
+      }
+    },
+    {
+      "name": "Burst補助: みんなの星バースト再突入",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "anis_everyone_star"
+      },
+      "effect_type": "reenter_burst_stage",
+      "target": "self",
+      "kwargs": {
+        "value": 1
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: スターアニス",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "periodic_damage",
+        "target": "enemy",
+        "kwargs": {
+          "effect_no": 9,
+          "multiplier_list": [
+            0.2364,
+            0.2546,
+            0.2728,
+            0.291,
+            0.3091,
+            0.3273,
+            0.3455,
+            0.3637,
+            0.3819,
+            0.4001
+          ],
+          "interval": 0.25,
+          "duration": 10,
+          "is_skill_damage": true,
+          "enable_core_hit": true,
+          "description": "シューティングスターの0.25秒間隔10秒攻撃。40回のダメージイベントを予約して処理"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "charge_time_fixed",
+          "value": 0.7,
+          "duration": 10,
+          "source_name": "Burst: スターアニス (チャージ時間固定)",
+          "tag": "anis_shooting_star_charge_fixed",
+          "description": "チャージ時間を0.7秒に固定。武器変更ではなく通常攻撃のチャージ時間のみを固定する"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 10,
+          "buff_type": "explosion_range_buff",
+          "value_list": [
+            0.5909,
+            0.6363,
+            0.6818,
+            0.7273,
+            0.7727,
+            0.8182,
+            0.8636,
+            0.9091,
+            0.9545,
+            1.0
+          ],
+          "duration": 10,
+          "description": "爆発範囲UP。現状はダメージ計算に未反映"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 11,
+          "buff_type": "def_buff",
+          "value_list": [
+            0.3244,
+            0.3495,
+            0.3746,
+            0.3996,
+            0.4247,
+            0.4498,
+            0.4749,
+            0.4999,
+            0.525,
+            0.5501
+          ],
+          "duration": 10,
+          "description": "防御力UP。味方被ダメージ計算は未対応"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "anis_private_star"
+        },
+        "kwargs": {
+          "effect_no": 12,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [
+            0.208,
+            0.224,
+            0.24,
+            0.256,
+            0.272,
+            0.288,
+            0.304,
+            0.32,
+            0.336,
+            0.352
+          ],
+          "duration": 10
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "condition": {
+          "self_has_tag": "anis_everyone_star"
+        },
+        "kwargs": {
+          "effect_no": 13,
+          "buff_type": "max_hp_fixed",
+          "scale_by_caster_stats": true,
+          "stat_type": "finally",
+          "target_stat": "max_hp",
+          "value_list": [
+            0.0887,
+            0.0956,
+            0.1024,
+            0.1092,
+            0.116,
+            0.1229,
+            0.1297,
+            0.1365,
+            0.1434,
+            0.1502
+          ],
+          "duration": 10,
+          "update_current_hp": true
+        }
+      }
+    ]
+  }
+}

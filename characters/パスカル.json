@@ -1,0 +1,83 @@
+{
+  "weapon_type": "RL",
+  "weapon_class": "RL",
+  "type": "CHARGE",
+  "element": "Iron",
+  "class": "Supporter",
+  "burst_stage": "1",
+  "manufacturer": "アブノーマル",
+  "company": "アブノーマル",
+  "squad": "ヨルハ",
+  "name": "パスカル",
+  "conversion_notes": [
+    "最終防御力が最も高い味方の選択は現在の味方防御力ソートがないため最大HPソートで近似"
+  ],
+  "skills": [
+    {
+      "name": "S1: データ取得 (通常攻撃10回)",
+      "trigger_type": "shot_count",
+      "trigger_value": 10,
+      "effect_type": "heal",
+      "target": "allies",
+      "kwargs": {
+        "scale_by": "caster_max_hp",
+        "description": "最終防御力が最も高い味方1機。現状は最大HPが最も高い味方で近似",
+        "effect_no": 1,
+        "heal_ratio_list": [
+          0.1616
+        ]
+      },
+      "target_condition": {
+        "count": 1,
+        "type": "highest_base_hp"
+      }
+    },
+    {
+      "name": "S2: シグナル送信 (バーストI突入)",
+      "trigger_type": "on_burst_1_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "heal_effectiveness_buff",
+        "effect_no": 2,
+        "value_list": [
+          0.223
+        ],
+        "duration": 10,
+        "tag": "pascal_heal_effect"
+      },
+      "target_condition": {
+        "count": 3,
+        "type": "lowest_current_hp"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 戦術支援",
+    "cooldown_time": 40.0,
+    "trigger_type": "on_burst",
+    "trigger_value": 0,
+    "effect_type": "heal",
+    "target": "allies",
+    "kwargs": {
+      "scale_by": "caster_max_hp",
+      "effect_no": 3,
+      "heal_ratio_list": [
+        0.4889
+      ]
+    },
+    "target_condition": {
+      "count": 3,
+      "type": "lowest_current_hp"
+    }
+  },
+  "stats": {
+    "charge_mult": 2.5,
+    "charge_time": 1.0,
+    "reload_time": 2.5,
+    "damage_rate": 0.75,
+    "is_explosive": true,
+    "max_ammo": 6
+  }
+}

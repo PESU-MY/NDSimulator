@@ -1,0 +1,324 @@
+{
+  "name": "ブレッディ",
+  "weapon_type": "SR",
+  "burst_stage": "3",
+  "element": "Water",
+  "class": "Attacker",
+  "company": "テトラ",
+  "squad": "クッキングオイル",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: ロンリーグルメ (フルバースト攻撃力UP)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [
+          0.4137,
+          0.4455,
+          0.4773,
+          0.5091,
+          0.541,
+          0.5728,
+          0.6046,
+          0.6364,
+          0.6683,
+          0.7001
+        ],
+        "duration": 10,
+        "tag": "bready_full_burst_atk",
+        "description": "フルバーストタイム発動時、自分に攻撃力UP"
+      }
+    },
+    {
+      "name": "S1: ロンリーグルメ (やみつきの味)",
+      "trigger_type": "buff_applied",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_buff_type": "dot_dmg_buff",
+        "trigger_all_stages": true,
+        "description": "持続ダメージ増加効果が適用された時、オススメの味を解除し、やみつきの味を付与"
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "bready_recommended_taste"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "charge_speed_rate",
+            "value": -0.2,
+            "duration": 50,
+            "tag": "bready_addictive_taste",
+            "description": "やみつきの味: チャージ速度20%DOWN。解除不可は状態タグとして保持"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: ロンリーグルメ (オススメの味)",
+      "trigger_type": "buff_applied",
+      "trigger_value": 0,
+      "condition": {
+        "self_not_has_tag": "bready_addictive_taste"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_buff_type": "split_dmg_buff",
+        "trigger_all_stages": true,
+        "description": "分配ダメージ増加効果が適用された時、持続ダメージ増加状態でなければやみつきの味を解除し、オススメの味を付与"
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "bready_addictive_taste"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "charge_speed_rate",
+            "value": -0.2,
+            "duration": 50,
+            "tag": "bready_recommended_taste",
+            "description": "オススメの味: チャージ速度20%DOWN。解除不可は状態タグとして保持"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: フェイバリット・キャンディー (やみつきの味)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 3,
+      "condition": {
+        "self_has_tag": "bready_addictive_taste"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "debuff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "taken_dmg_debuff",
+            "value_list": [
+              0.0602,
+              0.0649,
+              0.0695,
+              0.0741,
+              0.0788,
+              0.0834,
+              0.0881,
+              0.0927,
+              0.0973,
+              0.102
+            ],
+            "duration": 5,
+            "tag": [
+              "bready_taken_dmg",
+              "debuff"
+            ],
+            "description": "フルチャージ攻撃3回命中時、やみつきの味状態なら対象の受けるダメージUP"
+          }
+        },
+        {
+          "effect_type": "dot",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "multiplier_list": [
+              0.8866,
+              0.9548,
+              1.023,
+              1.0912,
+              1.1594,
+              1.2276,
+              1.2958,
+              1.364,
+              1.4322,
+              1.5004
+            ],
+            "duration": 5,
+            "interval": 1,
+            "tag": "bready_aftertaste_dot",
+            "is_dot": true,
+            "is_skill_damage": true,
+            "description": "あと味: 最終攻撃力基準の持続ダメージ"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: フェイバリット・キャンディー (オススメの味)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "bready_recommended_taste"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [
+              0.3546,
+              0.3819,
+              0.4092,
+              0.4365,
+              0.4637,
+              0.491,
+              0.5183,
+              0.5456,
+              0.5729,
+              0.6001
+            ],
+            "duration": 5,
+            "tag": "bready_recommended_atk_dmg",
+            "description": "フルチャージ攻撃命中時、オススメの味状態なら自分に攻撃ダメージUP"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "multiplier_list": [
+              1.5663,
+              1.6868,
+              1.8073,
+              1.9278,
+              2.0482,
+              2.1687,
+              2.2892,
+              2.4097,
+              2.5302,
+              2.6507
+            ],
+            "is_split": true,
+            "is_skill_damage": true,
+            "description": "フルチャージ攻撃命中時、オススメの味状態なら敵全体に分配ダメージ。単体敵として処理"
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: ニューフレーバー",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 6,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [
+            0.3556,
+            0.383,
+            0.4104,
+            0.4377,
+            0.4651,
+            0.4924,
+            0.5198,
+            0.5472,
+            0.5745,
+            0.6019
+          ],
+          "duration": 10,
+          "tag": "bready_burst_atk_dmg",
+          "description": "自分に攻撃ダメージUP"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "bready_addictive_taste"
+        },
+        "kwargs": {
+          "effect_no": 7,
+          "buff_type": "dot_dmg_buff",
+          "value_list": [
+            2.067,
+            2.226,
+            2.385,
+            2.544,
+            2.703,
+            2.862,
+            3.021,
+            3.18,
+            3.339,
+            3.498
+          ],
+          "duration": 10,
+          "tag": "bready_aftertaste_boost",
+          "description": "やみつきの味状態ならあと味効果UP。現行計算では持続ダメージ増加として処理"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "bready_recommended_taste"
+        },
+        "kwargs": {
+          "effect_no": 8,
+          "buff_type": "atk_buff_rate",
+          "value_list": [
+            0.4141,
+            0.446,
+            0.4779,
+            0.5097,
+            0.5416,
+            0.5734,
+            0.6053,
+            0.6372,
+            0.669,
+            0.7009
+          ],
+          "duration": 10,
+          "tag": "bready_burst_atk",
+          "description": "オススメの味状態なら自分に攻撃力UP"
+        }
+      }
+    ]
+  }
+}

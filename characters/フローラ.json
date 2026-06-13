@@ -4,6 +4,7 @@
   "burst_stage": "2",
   "element": "Electric",
   "class": "Supporter",
+  "company": "ミシリス",
   "squad": "ボタニックガーデン",
   "stats": {
     "max_ammo": 300,
@@ -48,7 +49,18 @@
         "stack_name": "flora_petunia_heal_effect",
         "max_stack": 5,
         "stack_amount": 1,
-        "value_list": [0.0236, 0.0255, 0.0273, 0.0291, 0.0309, 0.0327, 0.0346, 0.0364, 0.0382, 0.04],
+        "value_list": [
+          0.0236,
+          0.0255,
+          0.0273,
+          0.0291,
+          0.0309,
+          0.0327,
+          0.0346,
+          0.0364,
+          0.0382,
+          0.04
+        ],
         "duration": 99999,
         "tag": "flora_petunia",
         "description": "戦闘開始時、自分と両隣に受けるHP回復量UPを5スタックで付与"
@@ -66,7 +78,10 @@
       },
       "kwargs": {
         "value": 1,
-        "ignore_tags": ["debuff", "negative_buff"],
+        "ignore_tags": [
+          "debuff",
+          "negative_buff"
+        ],
         "description": "通常攻撃100回ごとに、電撃コードの味方全体のスタック可能バフを1増加"
       }
     },
@@ -85,7 +100,18 @@
       "target": "allies",
       "kwargs": {
         "effect_no": 2,
-        "value_list": [0.0604, 0.065, 0.0696, 0.0743, 0.0789, 0.0836, 0.0882, 0.0929, 0.0975, 0.1022],
+        "value_list": [
+          0.0604,
+          0.065,
+          0.0696,
+          0.0743,
+          0.0789,
+          0.0836,
+          0.0882,
+          0.0929,
+          0.0975,
+          0.1022
+        ],
         "scale_by_caster_stats": true,
         "stat_type": "finally",
         "target_stat": "max_hp",
@@ -111,7 +137,18 @@
       "kwargs": {
         "effect_no": 3,
         "buff_type": "ignore_def_dmg_buff",
-        "value_list": [0.183, 0.1971, 0.2112, 0.2252, 0.2393, 0.2534, 0.2675, 0.2816, 0.2956, 0.3097],
+        "value_list": [
+          0.183,
+          0.1971,
+          0.2112,
+          0.2252,
+          0.2393,
+          0.2534,
+          0.2675,
+          0.2816,
+          0.2956,
+          0.3097
+        ],
         "duration": 5.0,
         "tag": "flora_iris_ignore_def_dmg",
         "description": "両隣の味方のうち1機のHPが最大になった時、味方全体に防御力無視ダメージUPを付与"
@@ -133,7 +170,18 @@
         "target": "allies",
         "kwargs": {
           "effect_no": 4,
-          "value_list": [0.0617, 0.0665, 0.0712, 0.076, 0.0807, 0.0855, 0.0902, 0.095, 0.0997, 0.1045],
+          "value_list": [
+            0.0617,
+            0.0665,
+            0.0712,
+            0.076,
+            0.0807,
+            0.0855,
+            0.0902,
+            0.095,
+            0.0997,
+            0.1045
+          ],
           "scale_by_caster_stats": true,
           "stat_type": "finally",
           "target_stat": "max_hp",
@@ -146,7 +194,18 @@
         "kwargs": {
           "effect_no": 5,
           "buff_type": "ignore_def_dmg_buff",
-          "value_list": [0.2505, 0.2698, 0.289, 0.3083, 0.3276, 0.3468, 0.3661, 0.3854, 0.4047, 0.4239],
+          "value_list": [
+            0.2505,
+            0.2698,
+            0.289,
+            0.3083,
+            0.3276,
+            0.3468,
+            0.3661,
+            0.3854,
+            0.4047,
+            0.4239
+          ],
           "duration": 10.0,
           "tag": "flora_secret_garden_ignore_def_dmg",
           "description": "味方全体に防御力無視ダメージUPを付与"

@@ -13,9 +13,39 @@ ROOT_DIR = Path(__file__).resolve().parent
 CHARACTER_DIR = ROOT_DIR / "characters"
 WEAPON_DIR = ROOT_DIR / "weapons"
 IMAGE_DIR = ROOT_DIR / "nikke_square_images"
+ICON_DIR = ROOT_DIR / "icon"
+OVERLOAD_ICON_DIR = ROOT_DIR / "icon" / "オーバーロード"
+CUBE_SKILL_DIR = ROOT_DIR / "test" / "キューブ"
+CUBE_ICON_DIR = ICON_DIR / "キューブ"
 UNIVERSAL_BURST_STAGES = {"∀", "ALL", "all", "*"}
 DETAIL_SECONDS = 180
 JSON_CACHE = {}
+
+OVERLOAD_OPTION_BUFF_TYPES = {
+    "攻撃力": "atk_buff_rate",
+    "命中率": "hit_rate_buff",
+    "最大装弾数": "max_ammo_rate",
+    "クリティカル率": "crit_rate_buff",
+    "クリティカルダメージ": "crit_dmg_buff",
+    "有利コード": "elemental_buff",
+    "チャージ速度": "charge_speed_rate",
+    "チャージダメージ": "charge_dmg_buff",
+}
+
+CUBE_BUFF_TYPES = {
+    "HP": "max_hp_rate",
+    "チャージダメージ": "charge_dmg_buff",
+    "チャージ速度": "charge_speed_rate",
+    "パーツダメージ": "part_dmg_buff",
+    "リロード速度": "reload_speed_rate",
+    "命中率": "hit_rate_buff",
+    "貫通ダメージ": "pierce_dmg_buff",
+    "防御無視ダメージ": "ignore_def_dmg_buff",
+}
+
+CUBE_ICON_ALIASES = {
+    "命中率": "命中",
+}
 
 
 DUMMY_DEFINITIONS = {
@@ -160,9 +190,13 @@ class TimelineNikkeSimulator(NikkeSimulator):
         super().__init__(*args, **kwargs)
         self._current_frame = 0
         self.damage_series = {char.name: [0.0 for _ in range(DETAIL_SECONDS)] for char in self.characters}
+        self.ammo_history = {char.name: [] for char in self.characters}
+        self.damage_events = {char.name: [] for char in self.characters}
         self.burst_events = {char.name: [] for char in self.characters}
         self.buff_timeline = {char.name: [] for char in self.characters}
         self._open_buff_intervals = {char.name: {} for char in self.characters}
+        for char in self.characters:
+            char.damage_event_recorder = self._record_damage_event
 
     def log(self, message, target_name="System"):
         super().log(message, target_name=target_name)
@@ -193,6 +227,7 @@ class TimelineNikkeSimulator(NikkeSimulator):
                 self.damage_series[char.name][second_index] += float(delta)
 
         if frame % self.FPS == 0:
+            self._record_ammo_snapshot(frame)
             self._record_buff_snapshot(frame)
 
     def run(self):
@@ -204,6 +239,7 @@ class TimelineNikkeSimulator(NikkeSimulator):
                 delta = char.total_damage - before_damage.get(char.name, 0)
                 if delta:
                     self.damage_series[char.name][0] += float(delta)
+            self._record_ammo_snapshot(0)
             self._record_buff_snapshot(0)
 
             for frame in range(1, self.TOTAL_FRAMES + 1):
@@ -222,6 +258,35 @@ class TimelineNikkeSimulator(NikkeSimulator):
                 "breakdown": char.damage_breakdown,
             }
         return results
+
+    def _record_damage_event(self, char, source_name, amount, hit_count=1, source_type=None):
+        if char.name not in self.damage_events:
+            return
+        source_text = str(source_type or char.damage_source_types.get(source_name, ""))
+        category = "normal" if source_name == "Weapon Attack" or "通常" in source_text else "skill"
+        self.damage_events[char.name].append(
+            {
+                "time": round(self._current_frame / self.FPS, 3),
+                "frame": int(self._current_frame),
+                "source": str(source_name),
+                "sourceType": source_text or ("通常攻撃" if category == "normal" else "スキル"),
+                "category": category,
+                "damage": float(amount),
+                "hitCount": int(hit_count or 0),
+            }
+        )
+
+    def _record_ammo_snapshot(self, frame):
+        now = round(frame / self.FPS, 3)
+        for char in self.characters:
+            self.ammo_history[char.name].append(
+                {
+                    "time": now,
+                    "frame": int(frame),
+                    "ammo": int(max(0, getattr(char, "current_ammo", 0))),
+                    "maxAmmo": int(max(0, getattr(char, "current_max_ammo", 0))),
+                }
+            )
 
     def _record_buff_snapshot(self, frame):
         now = round(frame / self.FPS, 3)
@@ -271,7 +336,11 @@ class TimelineNikkeSimulator(NikkeSimulator):
                 return ", ".join(str(t) for t in tag)
             return "" if tag is None else str(tag)
 
-        def add_aggregate(kind, name, effect, value, start_frame, end_frame, tag="", count=1):
+        def add_aggregate(kind, name, effect, value, start_frame, end_frame, tag="", count=1, shot_life=0):
+            if end_frame <= start_frame and shot_life > 0:
+                expected_end = self.TOTAL_FRAMES
+            else:
+                expected_end = end_frame
             key = (
                 kind,
                 name,
@@ -290,7 +359,7 @@ class TimelineNikkeSimulator(NikkeSimulator):
                     "count": int(count),
                     "tag": tag,
                     "start": round(start_frame / self.FPS, 3),
-                    "expectedEnd": round(min(end_frame, self.TOTAL_FRAMES) / self.FPS, 3),
+                    "expectedEnd": round(min(expected_end, self.TOTAL_FRAMES) / self.FPS, 3),
                 }
             else:
                 aggregates[key]["value"] += float(value)
@@ -309,6 +378,7 @@ class TimelineNikkeSimulator(NikkeSimulator):
                     buff.get("start_frame", frame),
                     buff.get("end_frame", self.TOTAL_FRAMES),
                     tag_text(buff.get("tag")),
+                    shot_life=buff.get("shot_life", 0),
                 )
 
         for stack_name, stack in char.buff_manager.active_stacks.items():
@@ -327,6 +397,7 @@ class TimelineNikkeSimulator(NikkeSimulator):
                 stack.get("end_frame", self.TOTAL_FRAMES),
                 tag_text(stack.get("tag")),
                 count=count,
+                shot_life=stack.get("shot_life", 0),
             )
 
         for key, entry in aggregates.items():
@@ -420,6 +491,13 @@ def _status_number(value, default=0.0):
         return default
 
 
+def _status_percent_number(value, default=0.0):
+    text = str(value or "").strip()
+    if text.endswith("%"):
+        text = text[:-1]
+    return _status_number(text, default)
+
+
 def _status_level_table(path):
     table = []
     for row in _read_status_rows(path):
@@ -458,6 +536,98 @@ def _status_pair(path):
     return {"hp": _status_number(rows[0][0]), "atk": _status_number(rows[0][1])}
 
 
+def _overload_option_tables():
+    root = STATUS_DIR / "オーバーロードオプション効果量"
+    tables = {}
+    if not root.exists():
+        return tables
+    for path in sorted(root.glob("*.txt"), key=lambda item: item.stem):
+        ranks = []
+        for row in _read_status_rows(path):
+            if len(row) < 2:
+                continue
+            percent = _status_percent_number(row[1])
+            ranks.append(
+                {
+                    "rank": int(_status_number(row[0])),
+                    "percent": percent,
+                    "value": percent / 100.0,
+                }
+            )
+        tables[path.stem] = ranks
+    return tables
+
+
+def _overload_icon_url(class_file_name, part_file_name):
+    image_path = OVERLOAD_ICON_DIR / f"{class_file_name}_{part_file_name}.webp"
+    if image_path.exists():
+        return f"/overload-icons/{image_path.name}"
+    return ""
+
+
+def _overload_icon_data():
+    return {
+        class_key: {
+            part_key: _overload_icon_url(class_file_name, part_file_name)
+            for part_key, part_file_name in STATUS_PART_FILES.items()
+        }
+        for class_key, class_file_name in STATUS_CLASS_FILES.items()
+    }
+
+def _cube_icon_url(cube_name):
+    candidates = [cube_name, CUBE_ICON_ALIASES.get(cube_name, "")]
+    for name in candidates:
+        if not name:
+            continue
+        image_path = CUBE_ICON_DIR / f"{name}.png"
+        if image_path.exists():
+            return f"/icons/キューブ/{image_path.name}"
+    return ""
+
+
+def _cube_format_values(path):
+    if not path.exists():
+        return {}
+    text = path.read_text(encoding="utf-8-sig")
+    values = {}
+    for effect_no, raw_values in re.findall(r"\[効果(\d+)\]:\s*\[([^\]]*)\]", text):
+        parsed = []
+        for value in raw_values.split(","):
+            value = value.strip()
+            if value:
+                parsed.append(_status_percent_number(value))
+        values[int(effect_no)] = parsed
+    return values
+
+
+def _cube_skill_tables():
+    tables = {}
+    if not CUBE_SKILL_DIR.exists():
+        return tables
+    for path in sorted(CUBE_SKILL_DIR.glob("*_format.txt"), key=lambda item: item.stem):
+        cube_name = path.stem.removesuffix("_format")
+        values = _cube_format_values(path)
+        if not values:
+            continue
+        tables[cube_name] = {
+            "name": cube_name,
+            "iconUrl": _cube_icon_url(cube_name),
+            "effect1": values.get(1, []),
+            "effect2": values.get(2, []),
+        }
+    return tables
+
+
+def _cube_skill_catalog():
+    return [
+        {
+            "name": table["name"],
+            "iconUrl": table.get("iconUrl", ""),
+        }
+        for table in _cube_skill_tables().values()
+    ]
+
+
 def get_frontend_status_data():
     classes = {}
     for class_key, class_file_name in STATUS_CLASS_FILES.items():
@@ -472,7 +642,7 @@ def get_frontend_status_data():
             },
         }
 
-    return {
+    data = {
         "classes": classes,
         "limitBreakFixed": _status_pair(STATUS_DIR / "凸固定ステータス" / "凸固定ステータス.txt"),
         "research": {
@@ -486,6 +656,12 @@ def get_frontend_status_data():
         },
         "cube": _status_level_table(STATUS_DIR / "キューブステータス" / "キューブステータス.txt"),
     }
+    data["overload"] = {
+        "options": _overload_option_tables(),
+        "icons": _overload_icon_data(),
+    }
+    data["cubeSkills"] = _cube_skill_catalog()
+    return data
 
 
 def list_character_catalog():
@@ -560,6 +736,144 @@ def _computed_stats_from_settings(status_settings):
     if atk is None or hp is None:
         return None
     return {"base_atk": float(atk), "base_hp": float(hp)}
+
+
+def _overload_rank_value(option_name, rank):
+    try:
+        rank = int(rank)
+    except (TypeError, ValueError):
+        return None
+    if rank <= 0:
+        return None
+
+    for row in _overload_option_tables().get(option_name, []):
+        if int(row.get("rank", 0)) == rank:
+            return float(row.get("value", 0.0))
+    return None
+
+
+def _iter_overload_options(status_settings):
+    if not isinstance(status_settings, dict):
+        return
+    overload = status_settings.get("overload")
+    if not isinstance(overload, dict):
+        return
+
+    for part_key in STATUS_PART_FILES:
+        entries = overload.get(part_key, [])
+        if isinstance(entries, dict):
+            entries = entries.get("options", [])
+        if not isinstance(entries, list):
+            continue
+        for option_index, entry in enumerate(entries[:3]):
+            if not isinstance(entry, dict):
+                continue
+            option_name = str(entry.get("type") or entry.get("option") or "").strip()
+            if not option_name:
+                continue
+            yield part_key, option_index + 1, option_name, entry.get("rank")
+
+
+def apply_overload_options(character, status_settings):
+    for part_key, option_index, option_name, rank in _iter_overload_options(status_settings) or []:
+        buff_type = OVERLOAD_OPTION_BUFF_TYPES.get(option_name)
+        value = _overload_rank_value(option_name, rank)
+        if not buff_type or value is None or value <= 0:
+            continue
+
+        part_label = STATUS_PART_FILES.get(part_key, part_key)
+        source_name = f"オバロOP: {part_label}{option_index} {option_name} R{int(rank)}"
+        skill = Skill(
+            name=source_name,
+            trigger_type="on_start",
+            trigger_value=0,
+            effect_type="buff",
+            target="self",
+            buff_type=buff_type,
+            value=value,
+            duration=999,
+            tag=f"overload_{part_key}_{option_index}_{option_name}_{int(rank)}",
+            source_name=source_name,
+        )
+        skill.owner_name = character.name
+        character.add_skill(skill)
+
+def _cube_level_value(values, level):
+    try:
+        level = int(level)
+    except (TypeError, ValueError):
+        return 0.0
+    if level <= 0 or not values:
+        return 0.0
+    index = max(0, min(len(values) - 1, level - 1))
+    return float(values[index])
+
+
+def apply_cube_skill(character, status_settings):
+    if not isinstance(status_settings, dict):
+        return
+    cube_name = str(status_settings.get("cubeType") or status_settings.get("cube") or "").strip()
+    cube_level = status_settings.get("cubeLevel", 0)
+    if not cube_name:
+        return
+
+    table = _cube_skill_tables().get(cube_name)
+    if not table:
+        return
+
+    effect1 = _cube_level_value(table.get("effect1", []), cube_level)
+    effect2 = _cube_level_value(table.get("effect2", []), cube_level)
+
+    if cube_name == "弾丸チャージ":
+        amount = int(round(effect1))
+        if amount > 0:
+            skill = Skill(
+                name=f"キューブ: {cube_name} (10発射撃)",
+                trigger_type="shot_count",
+                trigger_value=10,
+                effect_type="refill_ammo_fixed",
+                target="self",
+                value=amount,
+                source_name=f"キューブ: {cube_name}",
+            )
+            skill.owner_name = character.name
+            character.add_skill(skill)
+    else:
+        buff_type = CUBE_BUFF_TYPES.get(cube_name)
+        if buff_type and effect1 > 0:
+            kwargs = {
+                "name": f"キューブ: {cube_name} (固有)",
+                "trigger_type": "on_start",
+                "trigger_value": 0,
+                "effect_type": "buff",
+                "target": "self",
+                "buff_type": buff_type,
+                "value": effect1 / 100.0,
+                "duration": 999,
+                "tag": f"cube_{cube_name}_main",
+                "source_name": f"キューブ: {cube_name}",
+            }
+            if buff_type == "max_hp_rate":
+                kwargs["update_current_hp"] = True
+            skill = Skill(**kwargs)
+            skill.owner_name = character.name
+            character.add_skill(skill)
+
+    if effect2 > 0:
+        skill = Skill(
+            name=f"キューブ: {cube_name} (有利コード)",
+            trigger_type="on_start",
+            trigger_value=0,
+            effect_type="buff",
+            target="self",
+            buff_type="elemental_buff",
+            value=effect2 / 100.0,
+            duration=999,
+            tag=f"cube_{cube_name}_elemental",
+            source_name=f"キューブ: {cube_name} 有利コード",
+        )
+        skill.owner_name = character.name
+        character.add_skill(skill)
 
 
 def create_character_from_json(file_name, skill_level=10, status_settings=None):
@@ -693,7 +1007,7 @@ def create_character_from_json(file_name, skill_level=10, status_settings=None):
             burst_skill.trigger_type = "on_use_burst_skill"
         skills.append(burst_skill)
 
-    return Character(
+    character = Character(
         char_name,
         weapon_config,
         skills,
@@ -704,6 +1018,9 @@ def create_character_from_json(file_name, skill_level=10, status_settings=None):
         char_class,
         squad=squad,
     )
+    apply_overload_options(character, status_settings)
+    apply_cube_skill(character, status_settings)
+    return character
 
 
 def create_dummy_ct_skill():
@@ -855,7 +1172,26 @@ def _create_selected_character(selection, skill_level, status_settings=None):
     raise ValueError(f"Unsupported formation selection: {kind}")
 
 
-def _auto_stage_for_char(char):
+def _is_rapi_red_hood(char):
+    return getattr(char, "name", "") == "ラピ：レッドフード"
+
+
+def _has_other_base_burst_stage(characters, current_char, stage):
+    target_stage = str(stage)
+    for char in characters:
+        if char is current_char:
+            continue
+        if getattr(char, "base_hp", 0) <= 0:
+            continue
+        if str(getattr(char, "base_burst_stage", char.burst_stage)) == target_stage:
+            return True
+    return False
+
+
+def _auto_stage_for_char(char, characters=None):
+    if _is_rapi_red_hood(char) and characters is not None:
+        return "3" if _has_other_base_burst_stage(characters, char, "1") else "1"
+
     stage = str(char.burst_stage)
     if stage in UNIVERSAL_BURST_STAGES:
         return "3"
@@ -883,8 +1219,9 @@ def _build_rotation(rotation_request, slot_map):
 
 def _auto_rotation(slot_map):
     rotation = {"1": [], "2": [], "3": []}
+    characters = list(slot_map.values())
     for slot_index, char in slot_map.items():
-        stage = _auto_stage_for_char(char)
+        stage = _auto_stage_for_char(char, characters)
         if stage:
             rotation[stage].append(slot_index)
     return rotation
@@ -984,6 +1321,8 @@ def run_web_simulation(payload):
                     sim.damage_series.get(char.name, [0.0 for _ in range(DETAIL_SECONDS)])
                     if include_details else []
                 ),
+                "ammoHistory": sim.ammo_history.get(char.name, []) if include_details else [],
+                "damageEvents": sim.damage_events.get(char.name, []) if include_details else [],
                 "buffTimeline": sim.buff_timeline.get(char.name, []) if include_details else [],
                 "burstEvents": sim.burst_events.get(char.name, []) if include_details else [],
             }
@@ -1015,10 +1354,13 @@ def run_web_batch_simulation(payload):
     results = []
     for index, entry in enumerate(entries):
         name = entry.get("name") or f"編成{index + 1}"
+        entry_options = copy.deepcopy(shared_options)
+        if isinstance(entry.get("options"), dict):
+            entry_options.update(copy.deepcopy(entry.get("options", {})))
         sim_payload = {
             "formation": entry.get("formation", []),
             "rotation": entry.get("rotation", {}),
-            "options": copy.deepcopy(shared_options),
+            "options": entry_options,
         }
         try:
             data = run_web_simulation(sim_payload)

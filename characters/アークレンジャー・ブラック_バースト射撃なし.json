@@ -1,0 +1,316 @@
+{
+  "name": "アークレンジャー・ブラック_バースト射撃なし",
+  "weapon_type": "AR",
+  "element": "Wind",
+  "class": "Attacker",
+  "company": "テトラ",
+  "squad": "女神戦隊アークレンジャー",
+  "burst_stage": "3",
+  "conversion_notes": [
+    "変動値リストが空のため、format記載値を固定値として設定しています。",
+    "「パーツを破壊した時」は指定に従い、special_mode有効時に1秒ごと発動するtime_interval近似にしています。",
+    "変身解除はバッテリー0%条件ですが、現状JSONのみではスタック0到達時の即時タグ解除が難しいため、変身開始時のバッテリー量に応じた持続時間で近似しています。",
+    "変身状態適用中に敵が出現した時のDoT再付与は、敵出現トリガーがないため未対応です。変身適用時のDoTのみ実装しています。",
+    "この派生JSONでは、バースト発動時に10秒間の強制リロードを入れ、バースト中に通常射撃しない挙動を再現しています。"
+  ],
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "core_damage_rate": 2.5
+  },
+  "skills": [
+    {
+      "name": "S1: 変身！アークレンジャー・ブラック！ (戦闘開始/パーツダメージ)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "part_dmg_buff",
+        "value": 0.2,
+        "duration": 99999,
+        "tag": "arb_part_damage",
+        "description": "戦闘開始時、自分にパーツダメージ20%UP"
+      }
+    },
+    {
+      "name": "S1: 変身！アークレンジャー・ブラック！ (パーツ破壊近似/バッテリー)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "simulation_flag": "special_mode"
+      },
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 99999,
+        "stack_name": "arb_battery",
+        "stack_amount": 50,
+        "max_stack": 100,
+        "tag": "arb_battery",
+        "description": "自分を含む味方の誰かがパーツを破壊した時、バッテリー50%チャージ。special_mode時は1秒ごとに発動"
+      }
+    },
+    {
+      "name": "S1: 変身！アークレンジャー・ブラック！ (バッテリー100/変身)",
+      "trigger_type": "stack_count",
+      "trigger_value": 100,
+      "condition": {
+        "self_stack_min": 100,
+        "stack_name": "arb_battery"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_stack_name": "arb_battery",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 20,
+            "tag": "arb_transformed",
+            "description": "変身状態。バッテリー100%から0.2秒ごとに1%消費する20秒近似"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "value": 1.5619,
+            "duration": 20,
+            "tag": "arb_transformed",
+            "description": "変身中、攻撃力156.19%UP"
+          }
+        },
+        {
+          "effect_type": "dot",
+          "target": "enemy",
+          "kwargs": {
+            "tag": "arb_black_collider",
+            "interval": 1.0,
+            "multiplier": 0.4587,
+            "duration": 20,
+            "is_dot": true,
+            "description": "変身状態が適用された時、敵全体にアークブラックコレダー。単体敵として処理"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 変身！アークレンジャー・ブラック！ (変身中/バッテリー消費)",
+      "trigger_type": "time_interval",
+      "trigger_value": 0.2,
+      "condition": {
+        "self_has_tag": "arb_transformed",
+        "self_stack_min": 1,
+        "stack_name": "arb_battery"
+      },
+      "effect_type": "increase_current_stack_count",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "arb_battery",
+        "value": -1,
+        "description": "変身中、0.2秒ごとにバッテリー1%消費"
+      }
+    },
+    {
+      "name": "S1: 変身！アークレンジャー・ブラック！ (通常攻撃30回/DoT強化)",
+      "trigger_type": "shot_count",
+      "trigger_value": 30,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dot_dmg_buff",
+        "value": 0.596,
+        "duration": 5,
+        "tag": "arb_s1_dot_damage",
+        "description": "通常攻撃で30回攻撃した時、自分に持続ダメージ59.6%UP"
+      }
+    },
+    {
+      "name": "S2: 激震！アークブラックコレダー！ (FB発動/風圧AR持続ダメージ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "element": "Wind",
+        "weapon_type": "AR"
+      },
+      "kwargs": {
+        "buff_type": "dot_dmg_buff",
+        "value": 0.775,
+        "duration": 10,
+        "tag": "arb_wind_ar_dot_damage",
+        "description": "フルバーストタイム発動時、風圧コードのアサルトライフルの味方全体に持続ダメージ77.5%UP"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 必殺！アークブラックメテオ！",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "set_current_ammo",
+        "target": "self",
+        "kwargs": {
+          "value": 0,
+          "description": "バースト発動時、10秒間射撃しないため弾数を0にする"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "reload_speed_fixed",
+          "value": -540,
+          "value_mode": "frames",
+          "duration": 10,
+          "remove_on_reload": true,
+          "tag": [
+            "arb_burst_reload_lock",
+            "arb_burst_reload_fixed"
+          ],
+          "description": "バースト中の強制リロードを10秒に固定する"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 10,
+          "remove_on_reload": true,
+          "tag": [
+            "arb_burst_reload_lock",
+            "ignore_reload_speed_buffs"
+          ],
+          "allow_tags": [
+            "arb_burst_reload_fixed"
+          ],
+          "description": "バースト中の強制リロードでは、10秒固定用のリロード固定値のみ適用する"
+        }
+      },
+      {
+        "effect_type": "force_reload",
+        "target": "self",
+        "kwargs": {
+          "description": "バースト発動時、10秒間の強制リロード"
+        }
+      },
+      {
+        "effect_type": "stack_buff",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "arb_transformed"
+        },
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 0,
+          "duration": 99999,
+          "stack_name": "arb_battery",
+          "stack_amount": 50,
+          "max_stack": 100,
+          "tag": "arb_battery",
+          "description": "自分が変身状態なら、バッテリー50%UP"
+        }
+      },
+      {
+        "effect_type": "set_stack",
+        "target": "self",
+        "condition": {
+          "self_not_has_tag": "arb_transformed"
+        },
+        "kwargs": {
+          "stack_name": "arb_battery",
+          "value": 50,
+          "description": "変身状態でなければ、緊急チャージ後にバッテリー50%消費した状態として扱う"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_not_has_tag": "arb_transformed"
+        },
+        "kwargs": {
+          "buff_type": "atk_buff_rate",
+          "value": 1.5619,
+          "duration": 10,
+          "tag": "arb_transformed",
+          "description": "バーストによる緊急変身中、攻撃力156.19%UP"
+        }
+      },
+      {
+        "effect_type": "dot",
+        "target": "enemy",
+        "condition": {
+          "self_not_has_tag": "arb_transformed"
+        },
+        "kwargs": {
+          "tag": "arb_black_collider",
+          "interval": 1.0,
+          "multiplier": 0.4587,
+          "duration": 10,
+          "is_dot": true,
+          "description": "バーストによる緊急変身時のアークブラックコレダー。単体敵として処理"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_not_has_tag": "arb_transformed"
+        },
+        "kwargs": {
+          "buff_type": "dummy_buff",
+          "value": 1,
+          "duration": 10,
+          "tag": "arb_transformed",
+          "description": "バーストによる緊急変身。バッテリー50%相当の10秒近似"
+        }
+      },
+      {
+        "effect_type": "dot",
+        "target": "enemy",
+        "kwargs": {
+          "tag": "arb_black_meteor",
+          "interval": 1.0,
+          "multiplier": 2.6669,
+          "duration": 10,
+          "is_dot": true,
+          "force_full_burst": true,
+          "description": "最終最大HPが最も高い敵1機に持続ダメージ。単体敵として処理"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dot_dmg_buff",
+          "value": 1.3583,
+          "duration": 10,
+          "tag": "arb_burst_dot_damage",
+          "description": "自分に持続ダメージ135.83%UP"
+        }
+      }
+    ]
+  }
+}

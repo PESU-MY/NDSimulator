@@ -1,0 +1,287 @@
+{
+  "weapon_type": "AR",
+  "weapon_class": "AR",
+  "type": "NORMAL",
+  "element": "Water",
+  "class": "Attacker",
+  "burst_stage": "3",
+  "manufacturer": "エリシオン",
+  "company": "エリシオン",
+  "squad": "トライアングル",
+  "name": "プリバティ_宝物",
+  "treasure": true,
+  "base_character": "プリバティ",
+  "conversion_notes": [
+    "ターゲット指定状態はバーストの敵デバフtag=target_designatedとして扱い、S2追加ダメージはそのデバフ中のみ発動",
+    "効果値は宝物formatの変動値リストへ更新",
+    "敵攻撃力ダウンとスタンは現状の与ダメージ計算には影響しない"
+  ],
+  "skills": [
+    {
+      "name": "S1: EXマガジン (フルバースト開始)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "atk_buff_rate",
+            "effect_no": 1,
+            "value_list": [
+              0.1877,
+              0.193,
+              0.1984,
+              0.2038,
+              0.2092,
+              0.2146,
+              0.22,
+              0.2254,
+              0.2308,
+              0.2361
+            ],
+            "duration": 10,
+            "tag": "privaty_treasure_atk"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "effect_no": 2,
+            "value_list": [
+              0.2288,
+              0.2602,
+              0.2916,
+              0.323,
+              0.3545,
+              0.3859,
+              0.4173,
+              0.4488,
+              0.4802,
+              0.5116
+            ],
+            "duration": 10,
+            "tag": "privaty_treasure_reload"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "max_ammo_rate",
+            "value": -0.5066,
+            "duration": 10,
+            "tag": "privaty_treasure_ammo_down"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "atk_dmg_buff",
+            "effect_no": 3,
+            "value_list": [
+              0.1191,
+              0.1283,
+              0.1374,
+              0.1466,
+              0.1558,
+              0.1649,
+              0.1741,
+              0.1833,
+              0.1924,
+              0.2016
+            ],
+            "duration": 10,
+            "tag": "privaty_treasure_atk_dmg"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: LDアサルト (弾切れ)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "buff_type": "taken_dmg_debuff",
+            "effect_no": 4,
+            "value_list": [
+              0.0592,
+              0.0637,
+              0.0683,
+              0.0728,
+              0.0774,
+              0.0819,
+              0.0865,
+              0.091,
+              0.0956,
+              0.1001
+            ],
+            "duration": 10,
+            "tag": "privaty_treasure_taken_dmg"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "multiplier_list": [
+              1.5137,
+              1.6301,
+              1.7466,
+              1.863,
+              1.9795,
+              2.0959,
+              2.2124,
+              2.3288,
+              2.4453,
+              2.5617
+            ]
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "description": "ターゲット指定状態の敵への追加ダメージ。バーストで付与したtarget_designated中のみ発動",
+            "effect_no": 6,
+            "multiplier_list": [
+              9.9686,
+              10.7354,
+              11.5022,
+              12.2691,
+              13.0359,
+              13.8027,
+              14.5695,
+              15.3364,
+              16.1032,
+              16.87
+            ]
+          },
+          "condition": {
+            "has_tag": "target_designated"
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: AKミサイル",
+    "cooldown_time": 40.0,
+    "trigger_type": "on_burst",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "elemental_buff",
+          "effect_no": 7,
+          "value_list": [
+            0.7682,
+            0.8273,
+            0.8864,
+            0.9455,
+            1.0046,
+            1.0636,
+            1.1227,
+            1.1818,
+            1.2409,
+            1.3
+          ],
+          "duration": 10,
+          "tag": "privaty_treasure_element"
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "is_enemy_wide_burst": true,
+          "description": "敵全体バースト",
+          "effect_no": 8,
+          "multiplier_list": [
+            8.3179,
+            8.9577,
+            9.5976,
+            10.2374,
+            10.8772,
+            11.5171,
+            12.1569,
+            12.7967,
+            13.4366,
+            14.0764
+          ]
+        }
+      },
+      {
+        "effect_type": "stun",
+        "target": "enemy",
+        "kwargs": {
+          "duration": 3,
+          "tag": "privaty_treasure_stun"
+        }
+      },
+      {
+        "effect_type": "stun",
+        "target": "self",
+        "kwargs": {
+          "duration": 2,
+          "tag": "stun",
+          "description": "バースト後、自身を2秒間気絶"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "enemy",
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "effect_no": 9,
+          "value_list": [
+            0.0296,
+            0.0319,
+            0.0342,
+            0.0365,
+            0.0388,
+            0.041,
+            0.0433,
+            0.0456,
+            0.0479,
+            0.0502
+          ],
+          "duration": 10,
+          "tag": "target_designated",
+          "description": "ターゲット指定状態: 攻撃力ダウン。S2追加ダメージ条件にも使用"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "reload_time": 1.0,
+    "damage_rate": 0.1365,
+    "max_ammo": 60,
+    "core_damage_rate": 2.0
+  }
+}

@@ -4,6 +4,7 @@
   "weapon_type": "SR",
   "element": "Electric",
   "class": "Attacker",
+  "company": "ミシリス",
   "squad": "School Circle",
   "stats": {
     "max_ammo": 6,
@@ -47,7 +48,7 @@
         "effect_no": 2,
         "multiplier_list": [0.5901, 0.6254, 0.6608, 0.6961, 0.7315, 0.7668, 0.8021, 0.8375, 0.8728, 0.9081],
         "is_skill_damage": true,
-        "is_ignore_def": true
+        "is_ignore_def": true,
         "stack_name": "Near Feather",
         "intervals": {
           "6": 18,

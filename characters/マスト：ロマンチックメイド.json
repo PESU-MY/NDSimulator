@@ -4,6 +4,7 @@
   "weapon_type": "MG",
   "element": "Water",
   "class": "Supporter",
+  "company": "エリシオン",
   "squad": "イージス",
   "stats": {
     "max_ammo": 300,
@@ -18,7 +19,9 @@
       "trigger_value": 0,
       "effect_type": "cumulative_stages",
       "target": "self",
-      "kwargs": { "trigger_all_stages": true },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
       "stages": [
         {
           "effect_type": "stack_buff",
@@ -26,7 +29,18 @@
           "kwargs": {
             "buff_type": "hit_rate_buff",
             "effect_no": 1,
-            "value_list": [-0.3592, -0.3415, -0.3238, -0.3062, -0.2885, -0.2708, -0.2531, -0.2354, -0.2177, -0.20],
+            "value_list": [
+              -0.3592,
+              -0.3415,
+              -0.3238,
+              -0.3062,
+              -0.2885,
+              -0.2708,
+              -0.2531,
+              -0.2354,
+              -0.2177,
+              -0.2
+            ],
             "stack_name": "horoyoi",
             "tag": "debuff",
             "max_stack": 3,
@@ -37,14 +51,25 @@
         {
           "effect_type": "buff",
           "target": "allies",
-          "condition": { 
+          "condition": {
             "stack_name": "horoyoi",
             "self_stack_min": 1
           },
           "kwargs": {
             "buff_type": "crit_rate_buff",
             "effect_no": 2,
-            "value_list": [0.1185, 0.1276, 0.1367, 0.1458, 0.1549, 0.164, 0.1732, 0.1823, 0.1914, 0.2005],
+            "value_list": [
+              0.1185,
+              0.1276,
+              0.1367,
+              0.1458,
+              0.1549,
+              0.164,
+              0.1732,
+              0.1823,
+              0.1914,
+              0.2005
+            ],
             "duration": 99999,
             "tag": "horoyoi_aura",
             "description": "ほろ酔い連動：クリ率UP"
@@ -53,7 +78,7 @@
         {
           "effect_type": "buff",
           "target": "allies",
-          "condition": { 
+          "condition": {
             "stack_name": "horoyoi",
             "self_stack_min": 1
           },
@@ -62,7 +87,18 @@
             "target_stat": "atk",
             "buff_type": "atk_buff_fixed",
             "effect_no": 3,
-            "value_list": [0.2069, 0.2228, 0.2387, 0.2546, 0.2706, 0.2865, 0.3024, 0.3183, 0.3342, 0.3502],
+            "value_list": [
+              0.2069,
+              0.2228,
+              0.2387,
+              0.2546,
+              0.2706,
+              0.2865,
+              0.3024,
+              0.3183,
+              0.3342,
+              0.3502
+            ],
             "duration": 99999,
             "tag": "horoyoi_aura",
             "description": "ほろ酔い連動：攻撃力UP"
@@ -74,13 +110,15 @@
       "name": "S2: パイレーツスピリット (Start)",
       "trigger_type": "on_burst_3_enter",
       "trigger_value": 0,
-      "condition": { 
+      "condition": {
         "stack_name": "horoyoi",
         "self_stack_min": 1
       },
       "effect_type": "cumulative_stages",
       "target": "allies",
-      "kwargs": { "trigger_all_stages": true },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
       "stages": [
         {
           "effect_type": "buff",
@@ -88,7 +126,18 @@
           "kwargs": {
             "buff_type": "split_dmg_buff",
             "effect_no": 4,
-            "value_list": [0.0888, 0.0956, 0.1024, 0.1093, 0.1161, 0.1229, 0.1298, 0.1366, 0.1434, 0.1503],
+            "value_list": [
+              0.0888,
+              0.0956,
+              0.1024,
+              0.1093,
+              0.1161,
+              0.1229,
+              0.1298,
+              0.1366,
+              0.1434,
+              0.1503
+            ],
             "duration": 10.0,
             "copy_stack_count": "horoyoi",
             "description": "分配ダメージUP：ほろ酔いスタック数比例"
@@ -100,7 +149,18 @@
           "kwargs": {
             "buff_type": "reload_speed_rate",
             "effect_no": 5,
-            "value_list": [0.0873, 0.0943, 0.1013, 0.1083, 0.1153, 0.1224, 0.1294, 0.1364, 0.1434, 0.1504],
+            "value_list": [
+              0.0873,
+              0.0943,
+              0.1013,
+              0.1083,
+              0.1153,
+              0.1224,
+              0.1294,
+              0.1364,
+              0.1434,
+              0.1504
+            ],
             "duration": 10.0,
             "copy_stack_count": "horoyoi",
             "description": "リロード速度UP：ほろ酔いスタック数比例"
@@ -112,22 +172,28 @@
       "name": "S2: パイレーツスピリット (End)",
       "trigger_type": "on_burst_end",
       "trigger_value": 0,
-      "condition": { 
+      "condition": {
         "stack_name": "horoyoi",
         "self_stack_min": 3
       },
       "effect_type": "cumulative_stages",
       "target": "self",
-      "kwargs": { "trigger_all_stages": true },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
       "stages": [
         {
-          "effect_type": "buff", 
+          "effect_type": "buff",
           "target": "self",
-          "remove_tags": ["horoyoi_aura"],
-          "kwargs": { 
-            "value": 0, 
+          "remove_tags": [
+            "horoyoi_aura"
+          ],
+          "kwargs": {
+            "value": 0,
             "duration": 0,
-            "remove_stacks": ["horoyoi"] 
+            "remove_stacks": [
+              "horoyoi"
+            ]
           },
           "description": "スタック解除"
         },
@@ -149,7 +215,9 @@
       "effect_type": "cumulative_stages",
       "target": "allies",
       "cooldown": 40.0,
-      "kwargs": { "trigger_all_stages": true },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
       "stages": [
         {
           "effect_type": "buff",
@@ -157,7 +225,18 @@
           "kwargs": {
             "buff_type": "crit_dmg_buff",
             "effect_no": 6,
-            "value_list": [0.2351, 0.2534, 0.2718, 0.2902, 0.3086, 0.3269, 0.3453, 0.3637, 0.382, 0.4004],
+            "value_list": [
+              0.2351,
+              0.2534,
+              0.2718,
+              0.2902,
+              0.3086,
+              0.3269,
+              0.3453,
+              0.3637,
+              0.382,
+              0.4004
+            ],
             "duration": 10.0
           }
         },
@@ -167,14 +246,25 @@
           "kwargs": {
             "buff_type": "atk_damage_buff",
             "effect_no": 7,
-            "value_list": [0.0889, 0.0957, 0.1026, 0.1094, 0.1162, 0.1231, 0.1299, 0.1368, 0.1436, 0.1504],
+            "value_list": [
+              0.0889,
+              0.0957,
+              0.1026,
+              0.1094,
+              0.1162,
+              0.1231,
+              0.1299,
+              0.1368,
+              0.1436,
+              0.1504
+            ],
             "duration": 10.0
           }
         },
         {
           "effect_type": "buff",
           "target": "allies",
-          "condition": { 
+          "condition": {
             "stack_name": "horoyoi",
             "self_stack_min": 1
           },
@@ -183,7 +273,18 @@
             "target_stat": "atk",
             "buff_type": "atk_buff_fixed",
             "effect_no": 8,
-            "value_list": [0.1185, 0.1276, 0.1368, 0.1459, 0.155, 0.1641, 0.1732, 0.1824, 0.1915, 0.2006],
+            "value_list": [
+              0.1185,
+              0.1276,
+              0.1368,
+              0.1459,
+              0.155,
+              0.1641,
+              0.1732,
+              0.1824,
+              0.1915,
+              0.2006
+            ],
             "duration": 10.0,
             "copy_stack_count": "horoyoi",
             "description": "攻撃力UP：ほろ酔いスタック数比例"

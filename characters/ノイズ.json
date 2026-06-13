@@ -4,12 +4,13 @@
   "burst_stage": "1",
   "element": "Electric",
   "class": "Supporter",
+  "company": "テトラ",
   "squad": "プリマドンナ",
   "stats": {
     "max_ammo": 6,
-    "reload_time": 2.00,
+    "reload_time": 2.0,
     "damage_rate": 0.613,
-    "core_damage_rate": 2.00
+    "core_damage_rate": 2.0
   },
   "skills": [
     {
@@ -21,7 +22,18 @@
       "kwargs": {
         "effect_no": 1,
         "buff_type": "dummy_buff",
-        "value_list": [0.0586, 0.064, 0.0693, 0.0746, 0.08, 0.0853, 0.0906, 0.0959, 0.1013, 0.1066],
+        "value_list": [
+          0.0586,
+          0.064,
+          0.0693,
+          0.0746,
+          0.08,
+          0.0853,
+          0.0906,
+          0.0959,
+          0.1013,
+          0.1066
+        ],
         "duration": 20,
         "description": "被弾20回で味方全体被ダメ軽減 (dummy)"
       }
@@ -49,7 +61,18 @@
         "effect_no": 2,
         "buff_type": "max_hp_rate",
         "update_current_hp": true,
-        "value_list": [0.1754, 0.1835, 0.1916, 0.1998, 0.2079, 0.216, 0.2242, 0.2323, 0.2404, 0.2486],
+        "value_list": [
+          0.1754,
+          0.1835,
+          0.1916,
+          0.1998,
+          0.2079,
+          0.216,
+          0.2242,
+          0.2323,
+          0.2404,
+          0.2486
+        ],
         "duration": 1.8
       }
     },
@@ -72,7 +95,18 @@
             "scale_by_caster_stats": true,
             "target_stat": "max_hp",
             "stat_type": "finally",
-            "value_list": [0.0136, 0.0148, 0.016, 0.0173, 0.0185, 0.0198, 0.021, 0.0222, 0.0235, 0.0247],
+            "value_list": [
+              0.0136,
+              0.0148,
+              0.016,
+              0.0173,
+              0.0185,
+              0.0198,
+              0.021,
+              0.0222,
+              0.0235,
+              0.0247
+            ],
             "duration": 10,
             "description": "持続回復 (1秒間隔)"
           }
@@ -84,7 +118,18 @@
             "effect_no": 4,
             "buff_type": "max_hp_rate",
             "update_current_hp": true,
-            "value_list": [0.2722, 0.297, 0.3217, 0.3465, 0.3712, 0.396, 0.4207, 0.4455, 0.4702, 0.495],
+            "value_list": [
+              0.2722,
+              0.297,
+              0.3217,
+              0.3465,
+              0.3712,
+              0.396,
+              0.4207,
+              0.4455,
+              0.4702,
+              0.495
+            ],
             "duration": 10
           }
         }

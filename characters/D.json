@@ -4,6 +4,7 @@
   "weapon_type": "SMG",
   "element": "Wind",
   "class": "Attacker",
+  "company": "エリシオン",
   "squad": "Siege Perilous",
   "stats": {
     "max_ammo": 120,
@@ -69,8 +70,7 @@
         "effect_type": "damage",
         "kwargs": {
           "effect_no" : 7,
-          "multiplier_list": [1.3852, 1.7049, 2.0246, 2.3443, 2.664, 2.9836, 3.3033, 3.623, 3.9427, 4.2624],
-          
+          "multiplier_list": [1.3852, 1.7049, 2.0246, 2.3443, 2.664, 2.9836, 3.3033, 3.623, 3.9427, 4.2624]
         }
       },
       {

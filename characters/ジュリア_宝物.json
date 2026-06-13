@@ -1,0 +1,287 @@
+{
+  "name": "ジュリア_宝物",
+  "weapon_type": "AR",
+  "burst_stage": "3",
+  "element": "Iron",
+  "class": "Attacker",
+  "company": "ミシリス",
+  "squad": "マスターハンド",
+  "treasure": true,
+  "base_character": "ジュリア",
+  "stats": {
+    "max_ammo": 60,
+    "reload_time": 1.2,
+    "damage_rate": 0.1407,
+    "core_damage_rate": 2.0
+  },
+  "conversion_notes": [
+    "通常版ジュリア.jsonの構造に準拠し、宝物強化後の条件と効果量を反映。",
+    "マルカートがクリティカル命中した時の効果6は、直前の追加ダメージのクリティカル判定を条件化できないため未反映。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: デクレッシェンド",
+      "trigger_type": "time_interval",
+      "trigger_value": 20.0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "crit_rate_buff",
+            "value_list": [
+              0.1538,
+              0.1657,
+              0.1775,
+              0.1893,
+              0.2012,
+              0.213,
+              0.2248,
+              0.2367,
+              0.2485,
+              0.2604
+            ],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [
+              0.1181,
+              0.1272,
+              0.1363,
+              0.1454,
+              0.1545,
+              0.1636,
+              0.1727,
+              0.1818,
+              0.1909,
+              0.2
+            ],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "normal_attack_crit_rate_buff",
+            "value_list": [
+              0.2136,
+              0.23,
+              0.2465,
+              0.2629,
+              0.2794,
+              0.2958,
+              0.3123,
+              0.3287,
+              0.3452,
+              0.3616
+            ],
+            "duration": 10,
+            "description": "通常攻撃限定クリティカル確率アップ"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 1: デクレッシェンド (戦闘開始時)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "戦闘開始時、自分にスキル1強制使用"
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "crit_rate_buff",
+            "value_list": [
+              0.1538,
+              0.1657,
+              0.1775,
+              0.1893,
+              0.2012,
+              0.213,
+              0.2248,
+              0.2367,
+              0.2485,
+              0.2604
+            ],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [
+              0.1181,
+              0.1272,
+              0.1363,
+              0.1454,
+              0.1545,
+              0.1636,
+              0.1727,
+              0.1818,
+              0.1909,
+              0.2
+            ],
+            "duration": 10
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "normal_attack_crit_rate_buff",
+            "value_list": [
+              0.2136,
+              0.23,
+              0.2465,
+              0.2629,
+              0.2794,
+              0.2958,
+              0.3123,
+              0.3287,
+              0.3452,
+              0.3616
+            ],
+            "duration": 10,
+            "description": "通常攻撃限定クリティカル確率アップ"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: クレッシェンド",
+      "trigger_type": "critical_hit",
+      "trigger_value": 6,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "crit_dmg_buff",
+        "stack_name": "クレッシェンド",
+        "max_stack": 5,
+        "value_list": [
+          0.1465,
+          0.1578,
+          0.169,
+          0.1803,
+          0.1916,
+          0.2029,
+          0.2141,
+          0.2254,
+          0.2367,
+          0.2479
+        ],
+        "duration": 15,
+        "description": "通常攻撃が6回クリティカル命中した時、クレッシェンドをスタック"
+      }
+    },
+    {
+      "name": "Skill 2: クレッシェンド (マルカート)",
+      "trigger_type": "critical_hit",
+      "trigger_value": 8,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 5,
+        "multiplier_list": [
+          0.52,
+          0.56,
+          0.6,
+          0.64,
+          0.68,
+          0.72,
+          0.76,
+          0.8,
+          0.84,
+          0.88
+        ],
+        "description": "通常攻撃が8回クリティカル命中した時、マルカート追加ダメージ"
+      }
+    },
+    {
+      "name": "バースト: クライマックス",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [
+              3.2175,
+              3.465,
+              3.7125,
+              3.96,
+              4.2075,
+              4.455,
+              4.7025,
+              4.95,
+              5.1975,
+              5.445
+            ],
+            "loop_count": 5,
+            "is_sequential": true,
+            "description": "ランダムな敵に5回順番に攻撃。単一ターゲット環境では同一対象として処理"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "condition": {
+            "self_stack_min": 5,
+            "stack_name": "クレッシェンド"
+          },
+          "kwargs": {
+            "effect_no": 8,
+            "multiplier_list": [
+              3.2175,
+              3.465,
+              3.7125,
+              3.96,
+              4.2075,
+              4.455,
+              4.7025,
+              4.95,
+              5.1975,
+              5.445
+            ],
+            "loop_count": 5,
+            "is_sequential": true,
+            "description": "クレッシェンドのフルスタック状態なら同じ敵に追加ダメージ"
+          }
+        }
+      ]
+    }
+  ]
+}

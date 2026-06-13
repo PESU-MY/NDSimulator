@@ -1,0 +1,356 @@
+﻿file,name,burst_stage,cooldown_time,rotation_policy,target_damage,party_damage,status,error
+2B.json,2B,3,40.0,40s: target and same-stage dummy rotate,37805061.60516017,37816240.10516017,OK,
+A2.json,,,,,0,0,ERROR,"JSONDecodeError: Expecting property name enclosed in double quotes: line 62 column 11 (char 1622)
+Traceback (most recent call last):
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 325, in main
+    row = run_one_character(char_file, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 254, in run_one_character
+    target = create_character_from_json(char_file, skill_level=args.skill_level)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 17, in create_character_from_json
+    char_data = json.load(f)
+                ^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 62 column 11 (char 1622)
+"
+D.json,,,,,0,0,ERROR,"JSONDecodeError: Expecting property name enclosed in double quotes: line 74 column 9 (char 1971)
+Traceback (most recent call last):
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 325, in main
+    row = run_one_character(char_file, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 254, in run_one_character
+    target = create_character_from_json(char_file, skill_level=args.skill_level)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 17, in create_character_from_json
+    char_data = json.load(f)
+                ^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 74 column 9 (char 1971)
+"
+D_キラーワイフ.json,,,,,0,0,ERROR,"JSONDecodeError: Expecting property name enclosed in double quotes: line 89 column 9 (char 2335)
+Traceback (most recent call last):
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 325, in main
+    row = run_one_character(char_file, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 254, in run_one_character
+    target = create_character_from_json(char_file, skill_level=args.skill_level)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 17, in create_character_from_json
+    char_data = json.load(f)
+                ^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 89 column 9 (char 2335)
+"
+I-DOLL・オーシャン.json,I-DOLL・オーシャン,1,20.0,20s: target replaces same-stage dummy,8369524.899450039,8379967.399450039,OK,
+I-DOLL・サン.json,I-DOLL・サン,3,40.0,40s: target and same-stage dummy rotate,11884057.634100104,11895264.634100104,OK,
+I-DOLL・フラワー.json,,,,,0,0,ERROR,"TypeError: can't multiply sequence by non-int of type 'float'
+Traceback (most recent call last):
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 325, in main
+    row = run_one_character(char_file, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 269, in run_one_character
+    results = sim.run()
+              ^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\engine.py"", line 181, in run
+    self.tick(frame)
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\engine.py"", line 100, in tick
+    self.tick_burst_state(frame)
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\engine_burst.py"", line 105, in tick_burst_state
+    char.process_trigger('on_use_burst_skill', 0, frame, is_full_burst, self)
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\character_skill.py"", line 127, in process_trigger
+    total_dmg += simulator.apply_skill(skill, self, frame, is_full_burst)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\engine_skills.py"", line 1104, in apply_skill
+    d, _, _ = caster.calculate_strict_damage(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\character_stats.py"", line 60, in calculate_strict_damage
+    layer_weapon = mult * (1.0 + weapon_buff)
+                   ~~~~~^~~~~~~~~~~~~~~~~~~~~
+TypeError: can't multiply sequence by non-int of type 'float'
+"
+K.json,K,3,40.0,40s: target and same-stage dummy rotate,32737532.137782432,32748996.62688243,OK,
+N102.json,N102,1,20.0,20s: target replaces same-stage dummy,10716619.19115555,10728843.67644387,OK,
+たきな.json,たきな,2,20.0,20s: target replaces same-stage dummy,29762814.847109918,29774402.308509916,OK,
+アイン.json,,,,,0,0,ERROR,"JSONDecodeError: Expecting ',' delimiter: line 51 column 9 (char 1318)
+Traceback (most recent call last):
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 325, in main
+    row = run_one_character(char_file, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 254, in run_one_character
+    target = create_character_from_json(char_file, skill_level=args.skill_level)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 17, in create_character_from_json
+    char_data = json.load(f)
+                ^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 51 column 9 (char 1318)
+"
+アスカ.json,アスカ,3,40.0,40s: target and same-stage dummy rotate,54745193.425475426,54756413.425475426,OK,
+アスカ_WILLE.json,アスカ：WILLE,3,40.0,40s: target and same-stage dummy rotate,88394290.12622191,88406141.73772192,OK,
+アドミ.json,アドミ,2,20.0,20s: target replaces same-stage dummy,10754561.526801962,10766269.564601963,OK,
+アニス.json,アニス,2,20.0,20s: target replaces same-stage dummy,8885998.982000021,8897018.482000021,OK,
+アニス：スター.json,アニス：スター,1,20.0,20s: target replaces same-stage dummy,62236870.74459913,176413239.81766438,OK,
+アニス：スパークリングサマー.json,Anis: Sparkling Summer,3,40.0,40s: target and same-stage dummy rotate,33040564.13926697,33051764.13926697,OK,
+アビスタ.json,アビスタ,1,20.0,20s: target replaces same-stage dummy,18045292.47950042,18053859.97950042,OK,
+アリア.json,アリア,2,40.0,40s: target and same-stage dummy rotate,19378320.4695005,19388790.2738005,OK,
+アリス.json,アリス,3,40.0,40s: target and same-stage dummy rotate,30669087.205128707,30680254.205128707,OK,
+アリス_ワンダーランドバニー.json,アリス：ワンダーランドバニー,1,40.0,40s: target and same-stage dummy rotate,10201305.800399926,10212040.800399926,OK,
+アルカナ.json,,,,,0,0,ERROR,"JSONDecodeError: Expecting property name enclosed in double quotes: line 178 column 9 (char 4735)
+Traceback (most recent call last):
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 325, in main
+    row = run_one_character(char_file, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 254, in run_one_character
+    target = create_character_from_json(char_file, skill_level=args.skill_level)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 17, in create_character_from_json
+    char_data = json.load(f)
+                ^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 178 column 9 (char 4735)
+"
+アルカナ：フォーチュンメイト.json,アルカナ：フォーチュンメイト,2,20.0,20s: target replaces same-stage dummy,56117689.538920194,168105209.3018905,OK,
+アンカー.json,アンカー,1,20.0,20s: target replaces same-stage dummy,7512766.541000009,7523228.041000009,OK,
+アンカー：イノセントメイド.json,アンカー：イノセントメイド,2,40.0,40s: target and same-stage dummy rotate,11472292.21690337,77765335.4721533,OK,
+イサベル.json,イサベル,3,40.0,40s: target and same-stage dummy rotate,22873209.802970722,22884577.204770718,OK,
+イヴ.json,イヴ,3,40.0,40s: target and same-stage dummy rotate,59692922.838224195,59705259.838224195,OK,
+ウンファ.json,ウンファ,2,20.0,20s: target replaces same-stage dummy,13391985.80015857,13403198.30015857,OK,
+ウンファ：タクティカル・アップ.json,ウンファ：タクティカル・アップ,2,20.0,20s: target replaces same-stage dummy,42421654.95954388,42434887.28049388,OK,
+エイダ.json,エイダ,3,40.0,40s: target and same-stage dummy rotate,65892650.010000065,81044601.00999996,OK,
+エクシア.json,エクシア,1,20.0,20s: target replaces same-stage dummy,11420411.680620804,11430890.180620804,OK,
+エヌ：ミラクルフェアリー.json,エヌ : ミラクルフェアリー,2,60.0,60s: default stage rotation,8065285.442500002,8076724.926900001,OK,
+エピネル.json,エピネル,3,40.0,40s: target and same-stage dummy rotate,13515303.305952203,13526519.305952203,OK,
+エマ.json,エマ,1,40.0,40s: target and same-stage dummy rotate,16075798.045449687,16085958.545449687,OK,
+エマ：タクティカル・アップ.json,エマ：タクティカル・アップ,1,20.0,20s: target replaces same-stage dummy,25390658.520276587,79855046.08612919,OK,
+エミリア.json,エミリア,3,40.0,40s: target and same-stage dummy rotate,26959647.582355835,26970805.582355835,OK,
+エレグ.json,エレグ,2,20.0,20s: target replaces same-stage dummy,23112236.134308785,23123249.634308785,OK,
+エレグ：ブーム・アンド・ショック.json,エレグ：ブーム・アンド・ショック,3,40.0,40s: target and same-stage dummy rotate,49802359.432211585,49813549.432211585,OK,
+エーテル.json,,,,,0,0,ERROR,"JSONDecodeError: Expecting property name enclosed in double quotes: line 53 column 11 (char 1335)
+Traceback (most recent call last):
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 325, in main
+    row = run_one_character(char_file, args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 254, in run_one_character
+    target = create_character_from_json(char_file, skill_level=args.skill_level)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\memor\Documents\プログラム\シミュレーター\test_all_characters.py"", line 17, in create_character_from_json
+    char_data = json.load(f)
+                ^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py"", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 53 column 11 (char 1335)
+"
+エード.json,エード,2,20.0,20s: target replaces same-stage dummy,10712270.451965217,40448088.63801519,OK,
+エード：エージェントバニー.json,エード：エージェントバニー,2,20.0,20s: target replaces same-stage dummy,21462890.235683773,71470345.40505975,OK,
+キリ.json,キリ,3,40.0,40s: target and same-stage dummy rotate,8995895.301249988,9007141.301249988,OK,
+キロ.json,キロ,3,40.0,40s: target and same-stage dummy rotate,20151554.906946037,20162747.906946037,OK,
+ギルティ.json,ギルティ,2,20.0,20s: target replaces same-stage dummy,22007346.021715578,22018350.021715578,OK,
+ギロチン.json,ギロチン,3,40.0,40s: target and same-stage dummy rotate,30631612.739118945,30642865.739118945,OK,
+ギロチン：ウィンタースレイヤー.json,ギロチン：ウィンタースレイヤー,3,40.0,40s: target and same-stage dummy rotate,48734333.360382244,48745499.860382244,OK,
+クエンシー.json,クエンシー,2,20.0,20s: target replaces same-stage dummy,9916438.053706145,9927886.094163144,OK,
+クエンシー：エスケープクイーン.json,クエンシー：エスケープクイーン,3,40.0,40s: target and same-stage dummy rotate,62491528.3280713,62502705.3280713,OK,
+クラウン.json,クラウン,2,20.0,20s: target replaces same-stage dummy,41991983.34201029,132290099.34080565,OK,
+クラスト.json,クラスト,2,20.0,20s: target replaces same-stage dummy,10311810.294499991,10324442.394499991,OK,
+クルミ.json,クルミ,1,20.0,20s: target replaces same-stage dummy,12535285.96345195,12546893.62155195,OK,
+クレア.json,クレア,1,40.0,40s: target and same-stage dummy rotate,8146917.886249993,8157042.386249993,OK,
+クレイ.json,クレイ,2,40.0,40s: target and same-stage dummy rotate,11881997.25437375,44695749.85227424,OK,
+クロウ.json,クロウ,3,40.0,40s: target and same-stage dummy rotate,10173620.83150007,10184832.33150007,OK,
+グレイブ.json,グレイブ,2,20.0,20s: target replaces same-stage dummy,49047138.39124476,49062058.347244754,OK,
+ココア.json,ココア,1,20.0,20s: target replaces same-stage dummy,9800772.553000014,9811257.053000014,OK,
+サクラ.json,サクラ,1,40.0,40s: target and same-stage dummy rotate,9925944.35976,28502940.045759846,OK,
+サクラ：ブルーム・イン・サマー.json,サクラ：ブルーム・イン・サマー,3,40.0,40s: target and same-stage dummy rotate,39857183.875173815,39868355.875173815,OK,
+シグナル.json,シグナル,2,20.0,20s: target replaces same-stage dummy,10891436.780400045,10902462.780400045,OK,
+シュガー.json,シュガー,3,40.0,40s: target and same-stage dummy rotate,27191658.75479996,27203026.25479996,OK,
+シン.json,シン,2,20.0,20s: target replaces same-stage dummy,7786505.490399946,7797554.990399946,OK,
+シンデレラ.json,シンデレラ,3,40.0,40s: target and same-stage dummy rotate,98715488.94091652,98726660.94091652,OK,
+ジャッカル.json,ジャッカル,1,20.0,20s: target replaces same-stage dummy,8069256.709500018,8079693.209500018,OK,
+ジュリア.json,ジュリア,3,40.0,40s: target and same-stage dummy rotate,15525881.370189795,15537087.370189795,OK,
+ジル.json,ジル,3,40.0,40s: target and same-stage dummy rotate,58731991.47487537,58743227.47487537,OK,
+スノーホワイト.json,スノーホワイト,3,40.0,40s: target and same-stage dummy rotate,32069180.64831259,32080385.14831259,OK,
+スノーホワイト：イノセントデイズ.json,スノーホワイト：イノセントデイズ,3,40.0,40s: target and same-stage dummy rotate,27430942.99642562,27442104.49642562,OK,
+スノーホワイト：ヘビーアームズ.json,スノーホワイト：ヘビーアームズ,3,40.0,40s: target and same-stage dummy rotate,132484246.37993823,132495984.83093822,OK,
+センチ.json,センチ,2,20.0,20s: target replaces same-stage dummy,8345800.158500013,8356791.158500013,OK,
+ソラ.json,ソラ,1,40.0,40s: target and same-stage dummy rotate,8261203.307499993,8271368.807499993,OK,
+ソリン.json,ソリン,3,40.0,40s: target and same-stage dummy rotate,26622724.861667726,26633968.861667726,OK,
+ソリン：フロストチケット.json,ソリン：フロストチケット,1,40.0,40s: target and same-stage dummy rotate,13848234.292750008,13858353.792750008,OK,
+ソルジャーE.G..json,ソルジャーE.G.,3,40.0,40s: target and same-stage dummy rotate,13918238.808616929,13929431.308616929,OK,
+ソルジャーF.A.json,ソルジャーF.A.,2,20.0,20s: target replaces same-stage dummy,12442323.682949992,12453345.182949992,OK,
+ソルジャーO.W.json,ソルジャーO.W.,1,20.0,20s: target replaces same-stage dummy,15508257.336000605,15518742.836000605,OK,
+ソーダ.json,ソーダ,1,20.0,20s: target replaces same-stage dummy,20830075.83085046,20840576.83085046,OK,
+ソーダ：トゥインクルバニー.json,ソーダ：トゥインクルバニー,3,40.0,40s: target and same-stage dummy rotate,46652304.66522813,46664098.231528126,OK,
+チャイム.json,チャイム,2,20.0,20s: target replaces same-stage dummy,6658394.885999763,6667078.885999763,OK,
+ツバイ.json,ツバイ,1,20.0,20s: target replaces same-stage dummy,7861553.524172928,7872221.024172928,OK,
+ティア.json,ティア,1,40.0,40s: target and same-stage dummy rotate,7301067.206250127,7312368.780850128,OK,
+ディーゼル.json,ディーゼル,2,20.0,20s: target replaces same-stage dummy,21418495.68599771,21429528.68599771,OK,
+ディーゼル：ウィンタースイーツ.json,ディーゼル：ウィンタースイーツ,3,40.0,40s: target and same-stage dummy rotate,77277221.5479855,77289467.40303549,OK,
+デルタ.json,デルタ,2,40.0,40s: target and same-stage dummy rotate,7439333.943124997,7449478.443124997,OK,
+デルタ：ニンジャシーフ.json,デルタ：ニンジャシーフ,2,40.0,40s: target and same-stage dummy rotate,14506932.799648942,23959239.29964886,OK,
+トリナ.json,トリナ,2,20.0,20s: target replaces same-stage dummy,12428913.653263258,12441623.305763258,OK,
+トーブ.json,トーブ,1,20.0,20s: target replaces same-stage dummy,9894515.820821999,93167989.97134563,OK,
+ドラー.json,ドラー,2,20.0,20s: target replaces same-stage dummy,13812712.402230693,13825056.672192214,OK,
+ドレイク.json,ドレイク,3,40.0,40s: target and same-stage dummy rotate,24416984.200064845,24429273.99431485,OK,
+ドロシー.json,ドロシー,1,20.0,20s: target replaces same-stage dummy,31821764.796249684,31832404.296249684,OK,
+ドロシー：セレンディピティ.json,ドロシー：セレンディピティ,3,40.0,40s: target and same-stage dummy rotate,92974201.1490989,92985403.1490989,OK,
+ナガ.json,ナガ,2,20.0,20s: target replaces same-stage dummy,17277701.60542712,45296719.03290867,OK,
+ナユタ.json,ナユタ,2,20.0,20s: target replaces same-stage dummy,91255751.13847482,186379317.5297078,OK,
+ニヒリスター.json,ニヒリスター,2,20.0,20s: target replaces same-stage dummy,14215487.045699963,14226545.545699963,OK,
+ネオン.json,ネオン,1,20.0,20s: target replaces same-stage dummy,16658548.756849997,16669024.756849997,OK,
+ネオン：ビジョン・アイ.json,ネオン：ビジョン・アイ,3,40.0,40s: target and same-stage dummy rotate,75642051.96141753,75653230.96141753,OK,
+ネオン：ブルーオーシャン.json,ネオン：ブルーオーシャン,3,40.0,40s: target and same-stage dummy rotate,23699823.480898734,23711040.480898734,OK,
+ネロ.json,ネロ,2,20.0,20s: target replaces same-stage dummy,9158317.769649778,9169351.269649778,OK,
+ネヴェ.json,ネヴェ,3,40.0,40s: target and same-stage dummy rotate,23351728.323924005,23362894.323924005,OK,
+ノア.json,ノア,2,40.0,40s: target and same-stage dummy rotate,6718618.913999997,6728753.413999997,OK,
+ノイズ.json,ノイズ,1,40.0,40s: target and same-stage dummy rotate,8277529.796249993,8287676.796249993,OK,
+ノベル.json,ノベル,2,20.0,20s: target replaces same-stage dummy,7756143.029249849,7767153.529249849,OK,
+ノワール.json,ノワール,3,40.0,40s: target and same-stage dummy rotate,23352120.39792385,64668724.133924276,OK,
+ハラン.json,ハラン,3,40.0,40s: target and same-stage dummy rotate,14670877.852350017,14682062.852350017,OK,
+バイパー.json,バイパー,2,20.0,20s: target replaces same-stage dummy,23287572.00024036,23298753.07164036,OK,
+パスカル.json,パスカル,1,40.0,40s: target and same-stage dummy rotate,0.0,10192.5,OK,
+パワー.json,パワー,3,40.0,40s: target and same-stage dummy rotate,19381487.26325997,19392681.26325997,OK,
+ビスケット.json,ビスケット,2,40.0,40s: target and same-stage dummy rotate,9356671.519051991,9366974.519051991,OK,
+フォルクヴァン.json,フォルクヴァン,2,40.0,40s: target and same-stage dummy rotate,6694009.600600034,6704157.600600034,OK,
+フローラ.json,フローラ,2,40.0,40s: target and same-stage dummy rotate,16079951.845099634,16090044.345099634,OK,
+ブラン.json,ブラン,2,60.0,60s: default stage rotation,6330172.689750031,6339563.189750031,OK,
+ブリッド.json,ブリッド,3,40.0,40s: target and same-stage dummy rotate,21619442.068609066,21630625.568609066,OK,
+ブリッド：サイレントトラック.json,ブリッド：サイレントトラック,2,20.0,20s: target replaces same-stage dummy,22973841.283249978,137385604.75585234,OK,
+ブレッディ.json,ブレッディ,3,40.0,40s: target and same-stage dummy rotate,22450796.762011167,22461963.762011167,OK,
+プリカ.json,プリカ,2,40.0,40s: target and same-stage dummy rotate,13376082.339439908,63347937.49393512,OK,
+プリバティ.json,プリバティ,3,40.0,40s: target and same-stage dummy rotate,14110436.212965332,14123225.472265333,OK,
+プリバティ：アンカインド・メイド.json,プリバティ：アンカインド・メイド,3,40.0,40s: target and same-stage dummy rotate,29389832.55676727,29401032.05676727,OK,
+プリム.json,プリム,1,20.0,20s: target replaces same-stage dummy,9947593.76325,9958036.26325,OK,
+プロダクト08.json,プロダクト08,1,20.0,20s: target replaces same-stage dummy,11167049.894328922,11178672.81942892,OK,
+プロダクト12.json,プロダクト12,3,40.0,40s: target and same-stage dummy rotate,27999995.263711687,28011231.263711687,OK,
+プロダクト23.json,プロダクト23,2,20.0,20s: target replaces same-stage dummy,18579150.017999977,18590195.517999977,OK,
+ヘルム.json,ヘルム,3,40.0,40s: target and same-stage dummy rotate,15485919.207006011,15498218.431756012,OK,
+ヘルム：アクアマリン.json,ヘルム：アクアマリン,2,20.0,20s: target replaces same-stage dummy,16851272.26350034,16862316.26350034,OK,
+ベイ.json,ベイ,2,40.0,40s: target and same-stage dummy rotate,6522657.916250007,6532769.416250007,OK,
+ベスティー.json,ベスティー,3,40.0,40s: target and same-stage dummy rotate,13460190.84823791,13470738.84823791,OK,
+ベスティー：タクティカル・アップ.json,ベスティー：タクティカル・アップ,3,40.0,40s: target and same-stage dummy rotate,33559062.062358044,33570285.562358044,OK,
+ベルベット.json,ベルベット,2,20.0,20s: target replaces same-stage dummy,11540083.310848996,69312016.05974297,OK,
+ベロータ.json,ベロータ,2,20.0,20s: target replaces same-stage dummy,11740114.507499985,11751164.007499985,OK,
+ペッパー.json,ペッパー,1,20.0,20s: target replaces same-stage dummy,19408712.49459998,19419159.49459998,OK,
+ボリューム.json,ボリューム,1,20.0,20s: target replaces same-stage dummy,10565867.656879177,10576944.409579176,OK,
+ポリ.json,ポリ,2,40.0,40s: target and same-stage dummy rotate,13450873.125935715,13463259.260035714,OK,
+マキマ.json,マキマ,2,20.0,20s: target replaces same-stage dummy,7046389.687050078,7057413.187050078,OK,
+マクスウェル.json,マクスウェル,3,40.0,40s: target and same-stage dummy rotate,16293890.306495976,16306047.879995976,OK,
+マスト.json,マスト,2,20.0,20s: target replaces same-stage dummy,9768550.463125786,9780095.421625786,OK,
+マスト：ロマンチックメイド.json,マスト：ロマンチックメイド,2,40.0,40s: target and same-stage dummy rotate,22089836.045444477,137274929.0967211,OK,
+マナ.json,マナ,3,40.0,40s: target and same-stage dummy rotate,40512852.53013064,40524064.03013064,OK,
+マリ.json,マリ,2,20.0,20s: target replaces same-stage dummy,22996681.20816119,68577963.0196571,OK,
+マルチャーナ.json,マルチャーナ,2,20.0,20s: target replaces same-stage dummy,15114775.640250009,15125835.140250009,OK,
+ミカ.json,ミカ,1,20.0,20s: target replaces same-stage dummy,9075442.855049992,9085897.855049992,OK,
+ミカ：スノーバディ.json,ミカ：スノーバディ,1,20.0,20s: target replaces same-stage dummy,12108388.659617083,38527323.51001726,OK,
+ミサト.json,ミサト,1,40.0,40s: target and same-stage dummy rotate,7924318.330499881,7934455.330499881,OK,
+ミハラ.json,ミハラ,3,40.0,40s: target and same-stage dummy rotate,14749212.507687058,14759786.507687058,OK,
+ミハラ：ボンディングチェーン.json,ミハラ：ボンディングチェーン,3,40.0,40s: target and same-stage dummy rotate,77063426.41375281,77074644.91375281,OK,
+ミランダ.json,ミランダ,1,20.0,20s: target replaces same-stage dummy,10663155.352277983,10674676.773969581,OK,
+ミルク.json,ミルク,1,40.0,40s: target and same-stage dummy rotate,13261656.42389739,13272278.83498898,OK,
+ミルク：ブルーミングバニー.json,ミルク：ブルーミングバニー,3,40.0,40s: target and same-stage dummy rotate,65614172.85817054,65625376.85817054,OK,
+ミント.json,ミント,2,20.0,20s: target replaces same-stage dummy,11537660.584804587,11551844.192883087,OK,
+メアリー.json,メアリー,1,40.0,40s: target and same-stage dummy rotate,13818180.769250011,13828326.769250011,OK,
+メアリー：ベイゴッデス.json,メアリー：ベイゴッデス,1,20.0,20s: target replaces same-stage dummy,10050846.445202062,10061329.945202062,OK,
+メイデン.json,メイデン,3,40.0,40s: target and same-stage dummy rotate,32217057.281899516,32228231.281899516,OK,
+メイデン：アイスローズ.json,メイデン：アイスローズ,3,40.0,40s: target and same-stage dummy rotate,43059983.72707285,72310427.75807309,OK,
+モダニア.json,モダニア,3,40.0,40s: target and same-stage dummy rotate,51280276.02512175,51291822.52512175,OK,
+モラン.json,モラン,1,40.0,40s: target and same-stage dummy rotate,9359401.585100008,9369516.085100008,OK,
+モリー.json,モリー,2,20.0,20s: target replaces same-stage dummy,7308165.159749953,7319196.159749953,OK,
+ヤン.json,ヤン,1,20.0,20s: target replaces same-stage dummy,10374655.697746892,10385441.399596892,OK,
+ユニ.json,ユニ,2,20.0,20s: target replaces same-stage dummy,8479661.27855001,8490732.27855001,OK,
+ユルハ.json,ユルハ,3,40.0,40s: target and same-stage dummy rotate,14474578.069468109,14486897.695718108,OK,
+ライ.json,ライ,1,20.0,20s: target replaces same-stage dummy,6793810.721250008,6804282.721250008,OK,
+ラピ.json,ラピ,3,40.0,40s: target and same-stage dummy rotate,16393555.752173511,16404777.252173511,OK,
+ラピ：レッドフード.json,ラピ：レッドフード,3,40.0,40s: target and same-stage dummy rotate,98377680.21389033,98388932.21389033,OK,
+ラプラス.json,ラプラス,3,40.0,40s: target and same-stage dummy rotate,18331131.235200122,18342361.235200122,OK,
+ラプンツェル.json,ラプンツェル,1,60.0,60s: default stage rotation,8248845.247499995,8258026.247499995,OK,
+ラプンツェル：ピュアグレイス.json,ラプンツェル：ピュアグレイス,1,20.0,20s: target replaces same-stage dummy,8577495.278144801,8588911.7155448,OK,
+ラム.json,ラム,1,40.0,40s: target and same-stage dummy rotate,7419846.167999996,7429976.667999996,OK,
+リター.json,Liter,1,20.0,20s: target replaces same-stage dummy,10023130.330339024,10035098.510339024,OK,
+リトルマーメイド.json,リトルマーメイド,1,20.0,20s: target replaces same-stage dummy,38588713.09757321,38602560.29688669,OK,
+リバーレリオ.json,リバーレリオ,3,40.0,40s: target and same-stage dummy rotate,147660223.9440834,147671393.4440834,OK,
+リリー.json,リリー,2,40.0,40s: target and same-stage dummy rotate,7753457.4974998515,7763610.4974998515,OK,
+ルドミラ.json,ルドミラ,1,20.0,20s: target replaces same-stage dummy,7478803.777899997,7489294.777899997,OK,
+ルドミラ：ウィンターオーナー.json,ルドミラ：ウィンターオーナー,3,40.0,40s: target and same-stage dummy rotate,62535695.52423489,62548133.63023489,OK,
+ルピー.json,ルピー,2,20.0,20s: target replaces same-stage dummy,20461615.76863863,20473373.52263863,OK,
+ルピー：ウィンターショッパー.json,ルピー：ウィンターショッパー,1,20.0,20s: target replaces same-stage dummy,6117110.044500052,6125947.544500052,OK,
+ルマニ.json,ルマニ,1,20.0,20s: target replaces same-stage dummy,7327147.427660385,7338231.786410385,OK,
+ルージュ.json,ルージュ,1,20.0,20s: target replaces same-stage dummy,11414318.601194426,37410108.054444574,OK,
+レイ.json,レイ,3,40.0,40s: target and same-stage dummy rotate,40180345.58745618,40191534.58745618,OK,
+レイ_仮称.json,レイ（仮称）,3,40.0,40s: target and same-stage dummy rotate,46496834.51269829,70770657.06589858,OK,
+レイヴン.json,Raven,3,40.0,40s: target and same-stage dummy rotate,85908657.47267966,85919891.47267966,OK,
+レオナ.json,レオナ,2,20.0,20s: target replaces same-stage dummy,17576383.61454212,17589126.094942123,OK,
+レッドフード.json,レッドフード,∀,40.0,40s: target and same-stage dummy rotate (universal burst tested as stage 3),47409391.49328486,47420631.99328486,OK,
+レム.json,レム,2,20.0,20s: target replaces same-stage dummy,22420056.35020312,22431112.35020312,OK,
+レーベル.json,レーベル,1,20.0,20s: target replaces same-stage dummy,13614219.62376835,175143477.15656167,OK,
+ロザンナ.json,ロザンナ,1,40.0,40s: target and same-stage dummy rotate,23238245.412001092,23248367.912001092,OK,
+ロザンナ：シックオーシャン.json,ロザンナ：シックオーシャン,2,20.0,20s: target replaces same-stage dummy,13193160.090260148,13206817.059110148,OK,
+千束.json,千束,3,40.0,40s: target and same-stage dummy rotate,59403155.90251523,59414376.90251523,OK,
+姫野.json,姫野,2,20.0,20s: target replaces same-stage dummy,11142315.163197068,11153418.163197068,OK,
+紅蓮.json,紅蓮,3,40.0,40s: target and same-stage dummy rotate,19414113.04980908,19425332.04980908,OK,
+紅蓮：ブラックシャドウ.json,紅蓮：ブラックシャドウ,3,40.0,40s: target and same-stage dummy rotate,69726440.61221842,69737617.61221842,OK,
+鈴原サクラ.json,サクラ,1,40.0,40s: target and same-stage dummy rotate,7773304.967999868,7783481.467999868,OK,

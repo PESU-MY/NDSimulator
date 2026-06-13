@@ -1,0 +1,343 @@
+{
+  "name": "ベルベット",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Wind",
+  "class": "Supporter",
+  "manufacturer": "テトラ",
+  "company": "テトラ",
+  "squad": "メイド・フォー・ユー",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: イタズラな手 (弾丸泥棒/開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 99999,
+        "stack_name": "velvet_bullet_pouch",
+        "stack_amount": 6000,
+        "max_stack": 6000,
+        "tag": "velvet_bullet_pouch",
+        "description": "敵残弾数減少は敵の弾薬管理がないため未反映。自分の弾丸ポーチのみ管理"
+      }
+    },
+    {
+      "name": "S1: イタズラな手 (弾丸泥棒/B2突入)",
+      "trigger_type": "on_burst_2_enter",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 99999,
+        "stack_name": "velvet_bullet_pouch",
+        "stack_amount": 6000,
+        "max_stack": 6000,
+        "tag": "velvet_bullet_pouch"
+      }
+    },
+    {
+      "name": "S1: イタズラな手 (非FB/消費100)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "condition": {
+        "is_full_burst": false,
+        "self_stack_min": 100,
+        "stack_name": "velvet_bullet_pouch"
+      },
+      "effect_type": "increase_current_stack_count",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "velvet_bullet_pouch",
+        "value": -100,
+        "record_as_ally_ammo_consumed": true
+      }
+    },
+    {
+      "name": "S1: イタズラな手 (非FB/攻撃力)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "condition": {
+        "is_full_burst": false,
+        "self_stack_min": 100,
+        "stack_name": "velvet_bullet_pouch"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "atk_buff_rate",
+        "value_list": [
+          0.1802,
+          0.1941,
+          0.208,
+          0.2218,
+          0.2357,
+          0.2496,
+          0.2634,
+          0.2773,
+          0.2912,
+          0.305
+        ],
+        "duration": 3
+      }
+    },
+    {
+      "name": "S1: イタズラな手 (非FB/攻撃ダメージ)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "condition": {
+        "is_full_burst": false,
+        "self_stack_min": 100,
+        "stack_name": "velvet_bullet_pouch"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "atk_dmg_buff",
+        "value_list": [
+          0.1802,
+          0.1941,
+          0.208,
+          0.2218,
+          0.2357,
+          0.2496,
+          0.2634,
+          0.2773,
+          0.2912,
+          0.305
+        ],
+        "duration": 3
+      }
+    },
+    {
+      "name": "S2: 愛の弾丸 (FBフルチャージ/消費300)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "condition": {
+        "is_full_burst": true,
+        "self_stack_min": 300,
+        "stack_name": "velvet_bullet_pouch"
+      },
+      "effect_type": "increase_current_stack_count",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "velvet_bullet_pouch",
+        "value": -300,
+        "record_as_ally_ammo_consumed": true
+      }
+    },
+    {
+      "name": "S2: 愛の弾丸 (FBフルチャージ/味方攻撃力)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "condition": {
+        "is_full_burst": true,
+        "self_stack_min": 300,
+        "stack_name": "velvet_bullet_pouch"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "stat_type": "base",
+        "target_stat": "atk",
+        "value_list": [
+          0.1489,
+          0.1603,
+          0.1718,
+          0.1832,
+          0.1947,
+          0.2061,
+          0.2176,
+          0.229,
+          0.2405,
+          0.252
+        ],
+        "duration": 3
+      }
+    },
+    {
+      "name": "S2: 愛の弾丸 (FBフルチャージ/チャージダメージ)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "condition": {
+        "is_full_burst": true,
+        "self_stack_min": 300,
+        "stack_name": "velvet_bullet_pouch"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "charge_dmg_buff",
+        "value_list": [
+          0.5956,
+          0.6414,
+          0.6872,
+          0.7331,
+          0.7789,
+          0.8247,
+          0.8705,
+          0.9163,
+          0.9622,
+          1.008
+        ],
+        "duration": 3
+      }
+    },
+    {
+      "name": "S2: 愛の弾丸 (FB50命中/消費300)",
+      "trigger_type": "pellet_hit",
+      "trigger_value": 50,
+      "condition": {
+        "is_full_burst": true,
+        "self_stack_min": 300,
+        "stack_name": "velvet_bullet_pouch"
+      },
+      "effect_type": "increase_current_stack_count",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "velvet_bullet_pouch",
+        "value": -300,
+        "record_as_ally_ammo_consumed": true
+      }
+    },
+    {
+      "name": "S2: 愛の弾丸 (FB50命中/攻撃ダメージ)",
+      "trigger_type": "pellet_hit",
+      "trigger_value": 50,
+      "condition": {
+        "is_full_burst": true,
+        "self_stack_min": 300,
+        "stack_name": "velvet_bullet_pouch"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 6,
+        "buff_type": "atk_dmg_buff",
+        "value_list": [
+          0.0888,
+          0.0956,
+          0.1025,
+          0.1093,
+          0.1161,
+          0.123,
+          0.1298,
+          0.1366,
+          0.1435,
+          0.1503
+        ],
+        "duration": 5
+      }
+    },
+    {
+      "name": "S2: 愛の弾丸 (FB50命中/追加ダメージ)",
+      "trigger_type": "pellet_hit",
+      "trigger_value": 50,
+      "condition": {
+        "is_full_burst": true,
+        "self_stack_min": 300,
+        "stack_name": "velvet_bullet_pouch"
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 7,
+        "multiplier_list": [
+          2.369,
+          2.5513,
+          2.7335,
+          2.9157,
+          3.098,
+          3.2802,
+          3.4625,
+          3.6447,
+          3.8269,
+          4.0092
+        ],
+        "is_skill_damage": true
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 鮮やかな終幕",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "weapon_change",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 8,
+          "duration": 10,
+          "tag": "velvet_finale_weapon",
+          "weapon_data": {
+            "name": "鮮やかな終幕",
+            "fire_interval": 1,
+            "hit_size": 1,
+            "type": "RAPPID",
+            "multiplier_list": [
+              0.0414,
+              0.0445,
+              0.0477,
+              0.0509,
+              0.0541,
+              0.0573,
+              0.0605,
+              0.0637,
+              0.0668,
+              0.07
+            ],
+            "max_ammo": 999,
+            "windup_frames": 0,
+            "winddown_frames": 0
+          },
+          "description": "使用武器変更。詳細な弾数/挙動が不明なためSR維持で倍率のみ反映"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 9,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [
+            0.204,
+            0.2197,
+            0.2354,
+            0.251,
+            0.2667,
+            0.2824,
+            0.2981,
+            0.3138,
+            0.3295,
+            0.3452
+          ],
+          "duration": 10
+        }
+      }
+    ]
+  }
+}

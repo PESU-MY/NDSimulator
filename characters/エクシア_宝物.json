@@ -1,0 +1,204 @@
+{
+  "weapon_type": "SR",
+  "weapon_class": "SR",
+  "type": "CHARGE",
+  "element": "Electric",
+  "class": "Supporter",
+  "burst_stage": "1",
+  "manufacturer": "テトラ",
+  "company": "テトラ",
+  "squad": "プロトコール",
+  "name": "エクシア_宝物",
+  "treasure": true,
+  "base_character": "エクシア",
+  "conversion_notes": [
+    "最終防御力順の敵選択は単一ターゲット環境のためloop_countで近似",
+    "敵攻撃力ダウンは記録用dummy_effect",
+    "固定リロード速度は通常リロード速度バフで近似"
+  ],
+  "skills": [
+    {
+      "name": "S1: インヴェイジョン (ハッキングコード所持/弾切れ)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "effect_no": 1,
+            "value_list": [
+              0.1377
+            ],
+            "duration": 5,
+            "tag": "exia_treasure_atk_down",
+            "description": "敵の攻撃力13.77%ダウン。敵攻撃は現状のダメージ計算に影響しないため記録用"
+          },
+          "condition": {
+            "self_has_tag": "hacking_code"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "buff_type": "def_debuff",
+            "effect_no": 2,
+            "value_list": [
+              0.1377
+            ],
+            "duration": 5,
+            "tag": "exia_treasure_def_down"
+          },
+          "condition": {
+            "self_has_tag": "hacking_code"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: インヴェイジョン (フルバースト開始)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "reload_speed_rate",
+        "effect_no": 1,
+        "value_list": [
+          0.95
+        ],
+        "duration": 10,
+        "tag": "exia_treasure_reload_speed",
+        "description": "リロード速度95%増加。説明上の固定リロード速度は通常バフとして近似"
+      }
+    },
+    {
+      "name": "S2: シークレットコード (フルチャージ命中)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "atk_buff_rate",
+        "stack_name": "secret_code",
+        "effect_no": 3,
+        "value_list": [
+          0.0648
+        ],
+        "duration": 5,
+        "tag": "hacking_code",
+        "description": "ハッキングコード収集: 攻撃力6.48%アップ、最大5スタック",
+        "max_stack": 5
+      }
+    },
+    {
+      "name": "S2: シークレットコード (ハッキングコード所持/弾切れ)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "buff_type": "atk_buff_fixed",
+        "effect_no": 4,
+        "value_list": [
+          0.0268
+        ],
+        "duration": 15,
+        "tag": "exia_treasure_electric_atk",
+        "scale_by_caster_stats": true,
+        "description": "電撃コードの味方の攻撃力を詠唱者基準で増加。電撃対象条件はtarget_conditionで処理"
+      },
+      "condition": {
+        "self_has_tag": "hacking_code"
+      },
+      "target_condition": {
+        "element": "Electric"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: パーティクルハッキング",
+    "cooldown_time": 20.0,
+    "trigger_type": "on_burst",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "loop_count": 10,
+          "description": "最終防御力が最も高い敵10機想定",
+          "effect_no": 5,
+          "multiplier_list": [
+            1.2232
+          ]
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "enemy",
+        "kwargs": {
+          "buff_type": "def_debuff",
+          "effect_no": 6,
+          "value_list": [
+            0.0271
+          ],
+          "duration": 5,
+          "tag": "exia_treasure_burst_def_down"
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "loop_count": 10,
+          "description": "ハッキングコード5スタック時の追加ダメージ",
+          "effect_no": 7,
+          "multiplier_list": [
+            1.2232
+          ]
+        },
+        "condition": {
+          "self_stack_min": 5,
+          "stack_name": "hacking_code"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "enemy",
+        "kwargs": {
+          "buff_type": "taken_dmg_debuff",
+          "effect_no": 8,
+          "value_list": [
+            0.1218
+          ],
+          "duration": 10,
+          "tag": "exia_treasure_taken_dmg"
+        },
+        "condition": {
+          "self_stack_min": 5,
+          "stack_name": "hacking_code"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "charge_mult": 2.5,
+    "charge_time": 1.0,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "max_ammo": 6
+  }
+}

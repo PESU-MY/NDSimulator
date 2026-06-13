@@ -1,0 +1,623 @@
+{
+  "name": "クラスト",
+  "weapon_type": "RL",
+  "burst_stage": "2",
+  "element": "Water",
+  "class": "Supporter",
+  "company": "テトラ",
+  "squad": "クッキングオイル",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.0,
+    "charge_time": 1.0,
+    "charge_mult": 2.5
+  },
+  "skills": [
+    {
+      "name": "S1: グリル・アンド・ボイル (メイラード延長)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "crust_maillard"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "tag": "crust_maillard",
+        "duration_list": [
+          1.48,
+          1.59,
+          1.71,
+          1.82,
+          1.93,
+          2.05,
+          2.16,
+          2.28,
+          2.39,
+          2.5
+        ],
+        "is_extend": true,
+        "description": "フルチャージ攻撃時、メイラード状態なら味方全体のメイラード持続時間を延長"
+      }
+    },
+    {
+      "name": "S1: グリル・アンド・ボイル (ブランチング延長)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "crust_blanching"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "tag": "crust_blanching",
+        "duration_list": [
+          1.48,
+          1.59,
+          1.71,
+          1.82,
+          1.93,
+          2.05,
+          2.16,
+          2.28,
+          2.39,
+          2.5
+        ],
+        "is_extend": true,
+        "description": "フルチャージ攻撃時、ブランチング状態なら味方全体のブランチング持続時間を延長"
+      }
+    },
+    {
+      "name": "S1: グリル・アンド・ボイル (メイラード開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "condition": {
+        "simulation_flag": "crust_maillard_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "メイラード運用の近似。実操作では非フルチャージ攻撃3回で発動"
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "crust_blanching"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "atk_buff_fixed",
+            "value_list": [
+              0.059,
+              0.0636,
+              0.0681,
+              0.0727,
+              0.0772,
+              0.0818,
+              0.0863,
+              0.0909,
+              0.0954,
+              0.1
+            ],
+            "duration": 10,
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "stat_type": "base",
+            "tag": "crust_maillard",
+            "description": "メイラード: スキル発動者基準の攻撃力UP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: グリル・アンド・ボイル (メイラード維持)",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.1,
+      "condition": {
+        "simulation_flag": "crust_maillard_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "メイラード運用を維持するための近似再付与"
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "crust_blanching"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "atk_buff_fixed",
+            "value_list": [
+              0.059,
+              0.0636,
+              0.0681,
+              0.0727,
+              0.0772,
+              0.0818,
+              0.0863,
+              0.0909,
+              0.0954,
+              0.1
+            ],
+            "duration": 10,
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "stat_type": "base",
+            "tag": "crust_maillard",
+            "description": "メイラード: スキル発動者基準の攻撃力UP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: グリル・アンド・ボイル (ブランチング開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "condition": {
+        "simulation_flag": "crust_blanching_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "ブランチング運用の近似。実操作ではフルチャージ状態を1秒以上3回維持して発動"
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "crust_maillard"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "value_list": [
+              0.059,
+              0.0636,
+              0.0681,
+              0.0727,
+              0.0772,
+              0.0818,
+              0.0863,
+              0.0909,
+              0.0954,
+              0.1
+            ],
+            "duration": 10,
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "stat_type": "base",
+            "tag": "crust_blanching",
+            "description": "ブランチング: スキル発動者基準の攻撃力UP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: グリル・アンド・ボイル (ブランチング維持)",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.1,
+      "condition": {
+        "simulation_flag": "crust_blanching_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "ブランチング運用を維持するための近似再付与"
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "kwargs": {
+            "tag": "crust_maillard"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "atk_buff_fixed",
+            "value_list": [
+              0.059,
+              0.0636,
+              0.0681,
+              0.0727,
+              0.0772,
+              0.0818,
+              0.0863,
+              0.0909,
+              0.0954,
+              0.1
+            ],
+            "duration": 10,
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "stat_type": "base",
+            "tag": "crust_blanching",
+            "description": "ブランチング: スキル発動者基準の攻撃力UP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: たっぷりクッキング (メイラード開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "condition": {
+        "simulation_flag": "crust_maillard_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "not_has_tag": "crust_cooking"
+      },
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "メイラード運用時のたっぷりクッキング近似"
+      },
+      "stages": [
+        {
+          "effect_type": "cleanse_debuff",
+          "target": "allies",
+          "kwargs": {
+            "value": 1,
+            "tag": "debuff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "def_buff",
+            "value_list": [
+              0.0591,
+              0.0636,
+              0.0682,
+              0.0727,
+              0.0773,
+              0.0818,
+              0.0864,
+              0.0909,
+              0.0955,
+              0.1
+            ],
+            "duration": 10,
+            "tag": "crust_cooking",
+            "description": "たっぷりクッキング: 防御力UP。味方被ダメージ計算は未対応のため状態保持"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: たっぷりクッキング (メイラード維持)",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.1,
+      "condition": {
+        "simulation_flag": "crust_maillard_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "not_has_tag": "crust_cooking"
+      },
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "メイラード運用時のたっぷりクッキング近似再付与"
+      },
+      "stages": [
+        {
+          "effect_type": "cleanse_debuff",
+          "target": "allies",
+          "kwargs": {
+            "value": 1,
+            "tag": "debuff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "def_buff",
+            "value_list": [
+              0.0591,
+              0.0636,
+              0.0682,
+              0.0727,
+              0.0773,
+              0.0818,
+              0.0864,
+              0.0909,
+              0.0955,
+              0.1
+            ],
+            "duration": 10,
+            "tag": "crust_cooking",
+            "description": "たっぷりクッキング: 防御力UP。味方被ダメージ計算は未対応のため状態保持"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: たっぷりクッキング (ブランチング開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "condition": {
+        "simulation_flag": "crust_blanching_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "not_has_tag": "crust_cooking"
+      },
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "ブランチング運用時のたっぷりクッキング近似"
+      },
+      "stages": [
+        {
+          "effect_type": "cleanse_debuff",
+          "target": "allies",
+          "kwargs": {
+            "value": 1,
+            "tag": "debuff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "def_buff",
+            "value_list": [
+              0.0591,
+              0.0636,
+              0.0682,
+              0.0727,
+              0.0773,
+              0.0818,
+              0.0864,
+              0.0909,
+              0.0955,
+              0.1
+            ],
+            "duration": 10,
+            "tag": "crust_cooking",
+            "description": "たっぷりクッキング: 防御力UP。味方被ダメージ計算は未対応のため状態保持"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: たっぷりクッキング (ブランチング維持)",
+      "trigger_type": "time_interval",
+      "trigger_value": 10.1,
+      "condition": {
+        "simulation_flag": "crust_blanching_mode"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "not_has_tag": "crust_cooking"
+      },
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "ブランチング運用時のたっぷりクッキング近似再付与"
+      },
+      "stages": [
+        {
+          "effect_type": "cleanse_debuff",
+          "target": "allies",
+          "kwargs": {
+            "value": 1,
+            "tag": "debuff"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "def_buff",
+            "value_list": [
+              0.0591,
+              0.0636,
+              0.0682,
+              0.0727,
+              0.0773,
+              0.0818,
+              0.0864,
+              0.0909,
+              0.0955,
+              0.1
+            ],
+            "duration": 10,
+            "tag": "crust_cooking",
+            "description": "たっぷりクッキング: 防御力UP。味方被ダメージ計算は未対応のため状態保持"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: たっぷりクッキング (FB攻撃力UP/メイラード)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "has_tag": "crust_maillard"
+      },
+      "kwargs": {
+        "effect_no": 7,
+        "buff_type": "atk_buff_fixed",
+        "value_list": [
+          0.1181,
+          0.1272,
+          0.1363,
+          0.1454,
+          0.1545,
+          0.1636,
+          0.1727,
+          0.1818,
+          0.1909,
+          0.2
+        ],
+        "duration": 10,
+        "scale_by_caster_stats": true,
+        "target_stat": "atk",
+        "stat_type": "base",
+        "tag": "crust_full_burst_atk",
+        "description": "フルバーストタイム発動時、メイラード状態の対象に攻撃力UP"
+      }
+    },
+    {
+      "name": "S2: たっぷりクッキング (FB攻撃力UP/ブランチング)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "has_tag": "crust_blanching"
+      },
+      "kwargs": {
+        "effect_no": 7,
+        "buff_type": "atk_buff_fixed",
+        "value_list": [
+          0.1181,
+          0.1272,
+          0.1363,
+          0.1454,
+          0.1545,
+          0.1636,
+          0.1727,
+          0.1818,
+          0.1909,
+          0.2
+        ],
+        "duration": 10,
+        "scale_by_caster_stats": true,
+        "target_stat": "atk",
+        "stat_type": "base",
+        "tag": "crust_full_burst_atk",
+        "description": "フルバーストタイム発動時、ブランチング状態の対象に攻撃力UP"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: トゥルー・フレーバー",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 8,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [
+            0.1181,
+            0.1272,
+            0.1363,
+            0.1454,
+            0.1545,
+            0.1636,
+            0.1727,
+            0.1818,
+            0.1909,
+            0.2
+          ],
+          "duration": 10,
+          "tag": "crust_burst_atk_dmg",
+          "description": "味方全体に攻撃ダメージUP"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "condition": {
+          "self_has_tag": "crust_maillard"
+        },
+        "kwargs": {
+          "effect_no": 9,
+          "buff_type": "split_dmg_buff",
+          "value_list": [
+            0.3545,
+            0.3818,
+            0.4091,
+            0.4364,
+            0.4637,
+            0.4909,
+            0.5182,
+            0.5455,
+            0.5728,
+            0.6
+          ],
+          "duration": 10,
+          "tag": "crust_burst_split_dmg",
+          "description": "メイラード状態なら味方全体に分配ダメージUP"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "condition": {
+          "self_has_tag": "crust_blanching"
+        },
+        "kwargs": {
+          "effect_no": 10,
+          "buff_type": "dot_dmg_buff",
+          "value_list": [
+            0.0591,
+            0.0636,
+            0.0682,
+            0.0727,
+            0.0773,
+            0.0818,
+            0.0864,
+            0.0909,
+            0.0955,
+            0.1
+          ],
+          "duration": 10,
+          "tag": "crust_burst_dot_dmg",
+          "description": "ブランチング状態なら味方全体に持続ダメージUP"
+        }
+      }
+    ]
+  }
+}

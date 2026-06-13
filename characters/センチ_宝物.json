@@ -1,0 +1,218 @@
+{
+  "name": "センチ_宝物",
+  "weapon_type": "RL",
+  "burst_stage": "2",
+  "element": "Iron",
+  "class": "Defender",
+  "company": "ミシリス",
+  "squad": "マイティツールズ",
+  "treasure": true,
+  "base_character": "センチ",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 0.5,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.0,
+    "charge_mult": 2.5,
+    "charge_time": 1.0,
+    "is_explosive": true
+  },
+  "conversion_notes": [
+    "通常版センチ.jsonの構造に準拠し、宝物強化後の条件と効果量を反映。",
+    "スキル2のクールタイム短縮は個別CT管理で次回発動予定を前倒し。",
+    "自分が展開したバリア破壊時の回復は、現状バリア破壊トリガーがないためdummyトリガーとして未発動。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: 補修工事 (戦闘開始時)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "shield",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 3,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [
+          0.035,
+          0.0389,
+          0.0428,
+          0.0467,
+          0.0506,
+          0.0544,
+          0.0583,
+          0.0622,
+          0.0661,
+          0.07
+        ],
+        "duration": 5,
+        "tag": "centi_treasure_barrier",
+        "description": "戦闘開始時、スキル2を強制使用"
+      }
+    },
+    {
+      "name": "Skill 1: 補修工事 (フルチャージ命中)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "reduce_skill_cooldown",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "target_skill_id": "centi_treasure_skill2",
+        "value_mode": "cooldown_ratio",
+        "description": "スキル2のクールタイム短縮",
+        "value_list": [
+          0.0458,
+          0.0509,
+          0.056,
+          0.0611,
+          0.0662,
+          0.0712,
+          0.0763,
+          0.0814,
+          0.0865,
+          0.0916
+        ]
+      }
+    },
+    {
+      "name": "Skill 1: 補修工事 (バリア破壊時)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "heal",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [
+          0.0573,
+          0.0617,
+          0.0661,
+          0.0705,
+          0.0749,
+          0.0794,
+          0.0838,
+          0.0882,
+          0.0926,
+          0.097
+        ],
+        "description": "自分が展開したバリア破壊時、味方全体を回復。現状は未発動"
+      }
+    },
+    {
+      "name": "Skill 2: 現場検討",
+      "skill_id": "centi_treasure_skill2",
+      "trigger_type": "time_interval",
+      "trigger_value": 9.0,
+      "effect_type": "shield",
+      "target": "allies",
+      "kwargs": {
+        "use_individual_cooldown": true,
+        "individual_cooldown_time": 9.0,
+        "initial_cooldown_time": 9.0,
+        "effect_no": 3,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [
+          0.035,
+          0.0389,
+          0.0428,
+          0.0467,
+          0.0506,
+          0.0544,
+          0.0583,
+          0.0622,
+          0.0661,
+          0.07
+        ],
+        "duration": 5,
+        "tag": "centi_treasure_barrier",
+        "description": "味方全体にスキル発動者の最終最大HP基準のバリア"
+      }
+    },
+    {
+      "name": "バースト: 着工開始",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [
+              0.7273,
+              0.8081,
+              0.8889,
+              0.9697,
+              1.0506,
+              1.1314,
+              1.2122,
+              1.293,
+              1.3738,
+              1.4546
+            ],
+            "loop_count": 5,
+            "description": "残りHPが最も低い敵5機にダメージ。単一ターゲット環境では5回ダメージとして処理"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "def_debuff",
+            "value_list": [
+              0.0727,
+              0.0808,
+              0.0888,
+              0.0969,
+              0.105,
+              0.1131,
+              0.1212,
+              0.1293,
+              0.1373,
+              0.1454
+            ],
+            "duration": 10,
+            "tag": "centi_treasure_def_down",
+            "description": "防御力ダウン"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "max_hp_rate",
+            "value_list": [
+              0.0295,
+              0.0318,
+              0.0341,
+              0.0363,
+              0.0386,
+              0.0409,
+              0.0432,
+              0.0454,
+              0.0477,
+              0.05
+            ],
+            "duration": 10,
+            "tag": "centi_treasure_max_hp",
+            "update_current_hp": true,
+            "description": "自分に最大HPアップ"
+          }
+        }
+      ]
+    }
+  ]
+}

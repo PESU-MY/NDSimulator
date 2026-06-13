@@ -4,12 +4,13 @@
   "burst_stage": "2",
   "element": "Fire",
   "class": "Defender",
+  "company": "テトラ",
   "squad": "リワインド",
   "stats": {
     "max_ammo": 6,
-    "reload_time": 2.00,
+    "reload_time": 2.0,
     "damage_rate": 0.613,
-    "core_damage_rate": 2.00
+    "core_damage_rate": 2.0
   },
   "skills": [
     {
@@ -38,7 +39,18 @@
           "kwargs": {
             "effect_no": 1,
             "buff_type": "dummy_buff",
-            "value_list": [0.0557, 0.0608, 0.0658, 0.0709, 0.076, 0.0811, 0.0861, 0.0912, 0.0963, 0.1013],
+            "value_list": [
+              0.0557,
+              0.0608,
+              0.0658,
+              0.0709,
+              0.076,
+              0.0811,
+              0.0861,
+              0.0912,
+              0.0963,
+              0.1013
+            ],
             "duration": 99999,
             "description": "防御力UP (dummy)"
           }
@@ -67,7 +79,18 @@
       "kwargs": {
         "effect_no": 2,
         "buff_type": "dummy_buff",
-        "value_list": [0.0158, 0.0172, 0.0187, 0.0201, 0.0216, 0.023, 0.0244, 0.0259, 0.0273, 0.0288],
+        "value_list": [
+          0.0158,
+          0.0172,
+          0.0187,
+          0.0201,
+          0.0216,
+          0.023,
+          0.0244,
+          0.0259,
+          0.0273,
+          0.0288
+        ],
         "duration": 5,
         "description": "遮蔽物HP持続回復 (dummy)"
       }
@@ -88,7 +111,18 @@
           "kwargs": {
             "effect_no": 3,
             "buff_type": "dummy_buff",
-            "value_list": [0.099, 0.108, 0.117, 0.126, 0.135, 0.144, 0.153, 0.162, 0.171, 0.18],
+            "value_list": [
+              0.099,
+              0.108,
+              0.117,
+              0.126,
+              0.135,
+              0.144,
+              0.153,
+              0.162,
+              0.171,
+              0.18
+            ],
             "duration": 20,
             "description": "遮蔽物最大HP上昇 (dummy)"
           }
@@ -99,7 +133,18 @@
           "kwargs": {
             "effect_no": 4,
             "buff_type": "dummy_buff",
-            "value_list": [0.0487, 0.0532, 0.0576, 0.062, 0.0665, 0.0709, 0.0753, 0.0798, 0.0842, 0.0887],
+            "value_list": [
+              0.0487,
+              0.0532,
+              0.0576,
+              0.062,
+              0.0665,
+              0.0709,
+              0.0753,
+              0.0798,
+              0.0842,
+              0.0887
+            ],
             "duration": 10,
             "description": "受けるダメージダウン (dummy)"
           }

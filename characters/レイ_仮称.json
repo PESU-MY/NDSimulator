@@ -4,10 +4,11 @@
   "weapon_type": "AR",
   "element": "Wind",
   "class": "Attacker",
+  "company": "アブノーマル",
   "squad": "NERV",
   "stats": {
     "max_ammo": 60,
-    "reload_time": 1.50,
+    "reload_time": 1.5,
     "damage_rate": 0.1471
   },
   "skills": [
@@ -29,17 +30,28 @@
           "target": "enemy",
           "kwargs": {
             "effect_no": 1,
-            "multiplier_list": [3.4901, 3.7586, 4.0271, 4.2955, 4.564, 4.8325, 5.101, 5.3694, 5.6379, 5.9064],
+            "multiplier_list": [
+              3.4901,
+              3.7586,
+              4.0271,
+              4.2955,
+              4.564,
+              4.8325,
+              5.101,
+              5.3694,
+              5.6379,
+              5.9064
+            ],
             "is_skill_damage": true
           }
         },
         {
-        "effect_type": "increase_current_stack_count",
-        "target": "enemy",
-        "kwargs": {
-          "stack_name": "AntiATField",
-          "value": 10
-        }
+          "effect_type": "increase_current_stack_count",
+          "target": "enemy",
+          "kwargs": {
+            "stack_name": "AntiATField",
+            "value": 10
+          }
         }
       ]
     },
@@ -54,7 +66,18 @@
       },
       "kwargs": {
         "effect_no": 2,
-        "multiplier_list": [1.6922, 1.8223, 1.9525, 2.0827, 2.2128, 2.343, 2.4732, 2.6033, 2.7335, 2.8637],
+        "multiplier_list": [
+          1.6922,
+          1.8223,
+          1.9525,
+          2.0827,
+          2.2128,
+          2.343,
+          2.4732,
+          2.6033,
+          2.7335,
+          2.8637
+        ],
         "is_skill_damage": true
       }
     },
@@ -69,9 +92,20 @@
       },
       "kwargs": {
         "effect_no": 3,
-        "buff_type": "atk_buff_fixed", 
+        "buff_type": "atk_buff_fixed",
         "scale_by_caster_stats": true,
-        "value_list": [0.104, 0.112, 0.12, 0.128, 0.136, 0.144, 0.152, 0.16, 0.168, 0.176],
+        "value_list": [
+          0.104,
+          0.112,
+          0.12,
+          0.128,
+          0.136,
+          0.144,
+          0.152,
+          0.16,
+          0.168,
+          0.176
+        ],
         "duration": 9.0
       }
     },
@@ -101,7 +135,18 @@
         "effect_no": 4,
         "buff_type": "atk_buff_fixed",
         "scale_by_caster_stats": true,
-        "value_list": [0.0686, 0.0739, 0.0792, 0.0844, 0.0897, 0.095, 0.1003, 0.1056, 0.1108, 0.1161],
+        "value_list": [
+          0.0686,
+          0.0739,
+          0.0792,
+          0.0844,
+          0.0897,
+          0.095,
+          0.1003,
+          0.1056,
+          0.1108,
+          0.1161
+        ],
         "duration": 10.0
       }
     },
@@ -132,7 +177,18 @@
           "kwargs": {
             "effect_no": 5,
             "buff_type": "atk_dmg_buff",
-            "value_list": [0.2121, 0.2284, 0.2448, 0.2611, 0.2774, 0.2937, 0.31, 0.3264, 0.3427, 0.359],
+            "value_list": [
+              0.2121,
+              0.2284,
+              0.2448,
+              0.2611,
+              0.2774,
+              0.2937,
+              0.31,
+              0.3264,
+              0.3427,
+              0.359
+            ],
             "duration": 10.0
           }
         },
@@ -143,7 +199,18 @@
             "effect_no": 6,
             "buff_type": "atk_buff_fixed",
             "scale_by_caster_stats": true,
-            "value_list": [0.3744, 0.4032, 0.432, 0.4608, 0.4896, 0.5184, 0.5472, 0.576, 0.6048, 0.6336],
+            "value_list": [
+              0.3744,
+              0.4032,
+              0.432,
+              0.4608,
+              0.4896,
+              0.5184,
+              0.5472,
+              0.576,
+              0.6048,
+              0.6336
+            ],
             "duration": 10.0
           }
         },
@@ -152,7 +219,18 @@
           "target": "enemy",
           "kwargs": {
             "effect_no": 7,
-            "multiplier_list": [6.5454, 6.9184, 7.2913, 7.6643, 8.0372, 8.4102, 8.7832, 9.1561, 9.5291, 9.902],
+            "multiplier_list": [
+              6.5454,
+              6.9184,
+              7.2913,
+              7.6643,
+              8.0372,
+              8.4102,
+              8.7832,
+              9.1561,
+              9.5291,
+              9.902
+            ],
             "is_skill_damage": true
           }
         }

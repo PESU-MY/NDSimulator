@@ -1,0 +1,293 @@
+{
+  "name": "バイパー_宝物",
+  "weapon_type": "SG",
+  "burst_stage": "2",
+  "element": "Water",
+  "class": "Attacker",
+  "company": "テトラ",
+  "squad": "エキゾチック",
+  "treasure": true,
+  "base_character": "バイパー",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 0.56,
+    "damage_rate": 2.204,
+    "core_damage_rate": 2.0
+  },
+  "conversion_notes": [
+    "通常版バイパー.jsonの構造に準拠し、宝物強化後の条件と効果量を反映。",
+    "ターゲット出現時は戦闘開始時に近似。",
+    "愛嬌状態の直接攻撃による解除、無敵の被ダメージ無効は未対応。",
+    "バーストの対象はターゲットであることを前提に処理。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: スネークセンス (ターゲット出現)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "ターゲット出現時。現状は戦闘開始時に近似"
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "atk_buff_rate",
+            "value_list": [
+              0.1299,
+              0.1443,
+              0.1588,
+              0.1732,
+              0.1876,
+              0.2021,
+              0.2165,
+              0.231,
+              0.2454,
+              0.2598
+            ],
+            "duration": 10,
+            "tag": "viper_treasure_target_atk"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "hit_rate_buff",
+            "value_list": [
+              0.0556,
+              0.0618,
+              0.068,
+              0.0742,
+              0.0804,
+              0.0866,
+              0.0928,
+              0.099,
+              0.1051,
+              0.1113
+            ],
+            "duration": 10,
+            "tag": "viper_treasure_target_hit"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 1: スネークセンス (愛嬌状態で攻撃)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "viper_treasure_charm"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "dot_dmg_buff",
+            "value_list": [
+              0.026,
+              0.028,
+              0.03,
+              0.032,
+              0.034,
+              0.036,
+              0.038,
+              0.04,
+              0.042,
+              0.044
+            ],
+            "duration": 10,
+            "stack_name": "viper_treasure_dot_stack",
+            "max_stack": 10,
+            "tag": "viper_treasure_dot_stack"
+          }
+        },
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "hit_rate_buff",
+            "value_list": [
+              0.0109,
+              0.0117,
+              0.0126,
+              0.0134,
+              0.0142,
+              0.0151,
+              0.0159,
+              0.0167,
+              0.0176,
+              0.0184
+            ],
+            "duration": 10,
+            "stack_name": "viper_treasure_hit_stack",
+            "max_stack": 10,
+            "tag": "viper_treasure_hit_stack"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: スネークスケール (常時)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "hit_rate_buff",
+        "value_list": [
+          0.1098,
+          0.122,
+          0.1342,
+          0.1464,
+          0.1586,
+          0.1708,
+          0.183,
+          0.1952,
+          0.2074,
+          0.2196
+        ],
+        "duration": 1.1,
+        "tag": "viper_treasure_passive_hit"
+      }
+    },
+    {
+      "name": "Skill 2: スネークスケール (FB時)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "description": "愛嬌。単一攻撃対象から除外。直接攻撃を受けた時の解除は未対応",
+            "value": 1,
+            "duration": 10,
+            "tag": "viper_treasure_charm"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "description": "無敵。被ダメージ計算がないため記録用",
+            "value": 1,
+            "duration": 1,
+            "tag": "viper_treasure_invincible"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: スネークスケール (バースト使用時)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "reenter_burst_stage",
+      "target": "self",
+      "kwargs": {
+        "value": 2,
+        "description": "バースト再突入2段階"
+      }
+    },
+    {
+      "name": "バースト: スネークバイト",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 6,
+            "multiplier_list": [
+              6.084,
+              6.552,
+              7.02,
+              7.488,
+              7.956,
+              8.424,
+              8.892,
+              9.36,
+              9.828,
+              10.296
+            ],
+            "description": "指定した敵対象1機にダメージ。対象はターゲット前提"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "def_debuff",
+            "value_list": [
+              0.0991,
+              0.1102,
+              0.1212,
+              0.1322,
+              0.1432,
+              0.1542,
+              0.1653,
+              0.1763,
+              0.1873,
+              0.1983
+            ],
+            "duration": 10,
+            "tag": "viper_treasure_target_def_down",
+            "description": "対象がターゲットなら防御ダウン。敵はターゲット前提"
+          }
+        },
+        {
+          "effect_type": "dot",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 8,
+            "multiplier_list": [
+              0.6224,
+              0.6702,
+              0.7181,
+              0.7659,
+              0.8138,
+              0.8616,
+              0.9095,
+              0.9573,
+              1.0052,
+              1.053
+            ],
+            "duration": 10,
+            "interval": 1,
+            "tag": "viper_treasure_poison",
+            "description": "対象がターゲットなら持続ダメージ。敵はターゲット前提"
+          }
+        }
+      ]
+    }
+  ]
+}

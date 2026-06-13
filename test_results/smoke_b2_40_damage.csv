@@ -1,0 +1,2 @@
+﻿file,name,burst_stage,cooldown_time,rotation_policy,target_damage,party_damage,status,error
+クレイ.json,クレイ,2,40.0,40s: target and same-stage dummy rotate,11909556.981448565,44744698.653849065,OK,

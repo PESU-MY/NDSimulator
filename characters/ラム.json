@@ -4,12 +4,13 @@
   "burst_stage": "1",
   "element": "Wind",
   "class": "Defender",
+  "company": "アブノーマル",
   "squad": "エミリア陣営",
   "stats": {
     "max_ammo": 6,
-    "reload_time": 2.00,
+    "reload_time": 2.0,
     "damage_rate": 0.6904,
-    "core_damage_rate": 2.00
+    "core_damage_rate": 2.0
   },
   "skills": [
     {
@@ -21,7 +22,18 @@
       "kwargs": {
         "effect_no": 1,
         "buff_type": "dummy_buff",
-        "value_list": [0.0377, 0.0423, 0.047, 0.0516, 0.0563, 0.0609, 0.0656, 0.0702, 0.0749, 0.0795],
+        "value_list": [
+          0.0377,
+          0.0423,
+          0.047,
+          0.0516,
+          0.0563,
+          0.0609,
+          0.0656,
+          0.0702,
+          0.0749,
+          0.0795
+        ],
         "duration": 5,
         "description": "攻撃力ダウン (dummy)"
       }
@@ -50,7 +62,18 @@
         "effect_no": 2,
         "buff_type": "max_hp_rate",
         "update_current_hp": false,
-        "value_list": [0.2036, 0.2262, 0.2488, 0.2715, 0.2941, 0.3167, 0.3393, 0.362, 0.3846, 0.4072],
+        "value_list": [
+          0.2036,
+          0.2262,
+          0.2488,
+          0.2715,
+          0.2941,
+          0.3167,
+          0.3393,
+          0.362,
+          0.3846,
+          0.4072
+        ],
         "duration": 10,
         "description": "最大HPのみ上昇 (現在HP更新なし)"
       }
@@ -71,7 +94,18 @@
         "scale_by_caster_stats": true,
         "target_stat": "def",
         "stat_type": "finally",
-        "value_list": [0.0567, 0.063, 0.0693, 0.0756, 0.0819, 0.0882, 0.0945, 0.1008, 0.1071, 0.1134],
+        "value_list": [
+          0.0567,
+          0.063,
+          0.0693,
+          0.0756,
+          0.0819,
+          0.0882,
+          0.0945,
+          0.1008,
+          0.1071,
+          0.1134
+        ],
         "duration": 5,
         "description": "防御力UP (dummy)"
       }
@@ -87,7 +121,18 @@
         "effect_no": 4,
         "scale_by_caster_stats": true,
         "target_stat": "max_hp",
-        "value_list": [0.0504, 0.056, 0.0616, 0.0672, 0.0728, 0.0784, 0.084, 0.0896, 0.0952, 0.1008],
+        "value_list": [
+          0.0504,
+          0.056,
+          0.0616,
+          0.0672,
+          0.0728,
+          0.0784,
+          0.084,
+          0.0896,
+          0.0952,
+          0.1008
+        ],
         "duration": 10,
         "description": "発動者の最大HP基準でバリア"
       }

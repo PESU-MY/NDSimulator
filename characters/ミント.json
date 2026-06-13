@@ -1,0 +1,379 @@
+{
+  "name": "ミント",
+  "weapon_type": "RL",
+  "burst_stage": "2",
+  "element": "Iron",
+  "class": "Supporter",
+  "manufacturer": "テトラ",
+  "company": "テトラ",
+  "squad": "T.T. STAR",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: ミュージック、スタート！ (ボーカル)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "stage_part_vocal"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "stat_type": "base",
+        "target_stat": "atk",
+        "value_list": [
+          0.2501,
+          0.2723,
+          0.2945,
+          0.3168,
+          0.339,
+          0.3612,
+          0.3835,
+          0.4057,
+          0.4279,
+          0.4502
+        ],
+        "duration": 3,
+        "tag": "mint_vocal_effect"
+      }
+    },
+    {
+      "name": "S1: ミュージック、スタート！ (ダンス)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "stage_part_dance"
+      },
+      "effect_type": "regenerate",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "value_list": [
+          0.0106,
+          0.0114,
+          0.0122,
+          0.013,
+          0.0139,
+          0.0147,
+          0.0155,
+          0.0163,
+          0.0171,
+          0.018
+        ],
+        "duration": 3,
+        "interval": 1,
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "max_hp",
+        "tag": "mint_dance_effect"
+      }
+    },
+    {
+      "name": "S2: 素敵なステージでした！ (B3突入/パート消去)",
+      "trigger_type": "on_burst_3_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_not_has_tag": "singalong"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "stage_part_vocal"
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "stage_part_dance"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 素敵なステージでした！ (B3突入/クリ率)",
+      "trigger_type": "on_burst_3_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "stage_part_vocal"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "crit_rate_buff",
+        "value_list": [
+          0.1139,
+          0.1234,
+          0.1329,
+          0.1424,
+          0.1519,
+          0.1614,
+          0.1709,
+          0.1804,
+          0.1899,
+          0.1994
+        ],
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: 素敵なステージでした！ (B3突入/爆発)",
+      "trigger_type": "on_burst_3_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "stage_part_vocal"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "explosive_dmg_buff",
+        "value_list": [
+          0.2955,
+          0.3182,
+          0.3409,
+          0.3636,
+          0.3863,
+          0.4091,
+          0.4318,
+          0.4545,
+          0.4772,
+          0.5
+        ],
+        "duration": 10
+      }
+    },
+    {
+      "name": "S2: 素敵なステージでした！ (B3突入/貫通)",
+      "trigger_type": "on_burst_3_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "stage_part_vocal"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "pierce_dmg_buff",
+        "value_list": [
+          0.1934,
+          0.2082,
+          0.2231,
+          0.2379,
+          0.2528,
+          0.2677,
+          0.2826,
+          0.2974,
+          0.3123,
+          0.3272
+        ],
+        "duration": 10
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: みんな一緒に～！",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "allies",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "stage_part_dance"
+        },
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 0.1,
+          "tag": "mint_switch_to_vocal",
+          "description": "Mint part switch marker: vocal"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_not_has_tag": "stage_part_dance"
+        },
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 0.1,
+          "tag": "mint_switch_to_dance",
+          "description": "Mint part switch marker: dance"
+        }
+      },
+      {
+        "effect_type": "remove_buff_by_tag",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "mint_switch_to_vocal"
+        },
+        "kwargs": {
+          "tag": "stage_part_vocal"
+        }
+      },
+      {
+        "effect_type": "remove_buff_by_tag",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "mint_switch_to_vocal"
+        },
+        "kwargs": {
+          "tag": "stage_part_dance"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "mint_switch_to_vocal"
+        },
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 99999,
+          "tag": "stage_part_vocal",
+          "description": "ステージパート: ボーカル"
+        }
+      },
+      {
+        "effect_type": "remove_buff_by_tag",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "mint_switch_to_dance"
+        },
+        "kwargs": {
+          "tag": "stage_part_vocal"
+        }
+      },
+      {
+        "effect_type": "remove_buff_by_tag",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "mint_switch_to_dance"
+        },
+        "kwargs": {
+          "tag": "stage_part_dance"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_has_tag": "mint_switch_to_dance"
+        },
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 99999,
+          "tag": "stage_part_dance",
+          "description": "ステージパート: ダンス"
+        }
+      },
+      {
+        "effect_type": "remove_buff_by_tag",
+        "target": "self",
+        "kwargs": {
+          "tag": "mint_switch_to_vocal"
+        }
+      },
+      {
+        "effect_type": "remove_buff_by_tag",
+        "target": "self",
+        "kwargs": {
+          "tag": "mint_switch_to_dance"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 6,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [
+            0.1667,
+            0.1816,
+            0.1964,
+            0.2112,
+            0.226,
+            0.2409,
+            0.2557,
+            0.2705,
+            0.2853,
+            0.3002
+          ],
+          "duration": 10,
+          "tag": "singalong"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 7,
+          "buff_type": "max_ammo_rate",
+          "value_list": [
+            0.2364,
+            0.2545,
+            0.2727,
+            0.2909,
+            0.3091,
+            0.3272,
+            0.3454,
+            0.3636,
+            0.3818,
+            0.4
+          ],
+          "duration": 10,
+          "tag": "singalong"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 8,
+          "buff_type": "crit_dmg_buff",
+          "value_list": [
+            0.2502,
+            0.2725,
+            0.2947,
+            0.317,
+            0.3392,
+            0.3615,
+            0.3837,
+            0.406,
+            0.4282,
+            0.4505
+          ],
+          "duration": 10,
+          "tag": "singalong"
+        }
+      }
+    ]
+  }
+}

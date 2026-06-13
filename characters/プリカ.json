@@ -1,0 +1,352 @@
+{
+  "name": "プリカ",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Water",
+  "class": "Supporter",
+  "manufacturer": "テトラ",
+  "company": "テトラ",
+  "squad": "T.T. STAR",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0,
+    "charge_time": 1.0,
+    "charge_mult": 2.5
+  },
+  "conversion_notes": [
+    "ミントとの同時編成を前提に、ステージパートとパフォーマンスはミント側のタグを参照。",
+    "シンガロング適用時トリガーは、ミントのシンガロング攻撃ダメージバフ適用時のbuff_appliedで近似。",
+    "パフォーマンス維持時間延長はbuffのtag延長で近似。持続回復の終了時間延長は未対応。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: ステージを始めよう (フルチャージ)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "explosive_dmg_buff",
+            "value_list": [
+              0.1182,
+              0.1273,
+              0.1364,
+              0.1455,
+              0.1546,
+              0.1636,
+              0.1727,
+              0.1818,
+              0.1909,
+              0.2
+            ],
+            "duration": 3,
+            "tag": "prika_explosive_dmg"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "pierce_dmg_buff",
+            "value_list": [
+              0.0773,
+              0.0833,
+              0.0892,
+              0.0952,
+              0.1011,
+              0.1071,
+              0.113,
+              0.119,
+              0.1249,
+              0.1309
+            ],
+            "duration": 3,
+            "tag": "prika_pierce_dmg"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "atk_buff_fixed",
+            "scale_by_caster_stats": true,
+            "target_stat": "atk",
+            "stat_type": "base",
+            "value_list": [
+              0.1111,
+              0.121,
+              0.1309,
+              0.1407,
+              0.1506,
+              0.1605,
+              0.1704,
+              0.1802,
+              0.1901,
+              0.2
+            ],
+            "duration": 3,
+            "tag": "prika_charge_atk"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 1: ステージを始めよう (ミント/パフォーマンス中)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "any_target_condition": {
+          "name": "ミント",
+          "has_tag": "performance"
+        }
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "ミントがパフォーマンス状態の時に限り発動"
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "heal_effectiveness_buff",
+            "value_list": [
+              0.295,
+              0.3177,
+              0.3404,
+              0.3631,
+              0.3858,
+              0.4084,
+              0.4311,
+              0.4538,
+              0.4765,
+              0.4992
+            ],
+            "duration": 1.1,
+            "tag": "prika_performance_heal_effect"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "is_pierce",
+            "value": 1,
+            "duration": 1.1,
+            "tag": "prika_performance_pierce",
+            "description": "貫通特化"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: もう1曲！ (フルバースト開始)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "max_hp_rate",
+        "value_list": [
+          0.118,
+          0.1271,
+          0.1362,
+          0.1453,
+          0.1544,
+          0.1634,
+          0.1725,
+          0.1816,
+          0.1907,
+          0.1998
+        ],
+        "duration": 10,
+        "tag": "prika_fb_max_hp",
+        "update_current_hp": true
+      }
+    },
+    {
+      "name": "Skill 2: もう1曲！ (アンコール)",
+      "trigger_type": "buff_applied",
+      "trigger_value": 0,
+      "condition": {
+        "any_target_condition": {
+          "name": "ミント",
+          "has_tag": "performance"
+        }
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "trigger_buff_type": "atk_dmg_buff",
+        "description": "ミントのシンガロング適用時かつミントがパフォーマンス状態ならアンコール"
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "target_condition": {
+            "name": "ミント"
+          },
+          "kwargs": {
+            "tag": "stage_part_dance"
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "allies",
+          "target_condition": {
+            "name": "ミント"
+          },
+          "kwargs": {
+            "tag": "stage_part_vocal"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "name": "ミント"
+          },
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "value": 1,
+            "duration": 99999,
+            "tag": "stage_part_vocal",
+            "description": "シンガロングのスキル発動者にステージパート：ボーカルを付与"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "value": 1,
+            "duration": 21,
+            "tag": "performance",
+            "is_extend": true,
+            "description": "味方全体のパフォーマンス維持時間を21秒延長。持続回復の延長は未対応"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [
+              0.1429,
+              0.1548,
+              0.1667,
+              0.1786,
+              0.1905,
+              0.2025,
+              0.2144,
+              0.2263,
+              0.2382,
+              0.2501
+            ],
+            "duration": 10,
+            "tag": "prika_encore_atk_dmg"
+          }
+        },
+        {
+          "effect_type": "cooldown_reduction",
+          "target": "self",
+          "kwargs": {
+            "value": -21.0,
+            "description": "自分のバーストスキルクールタイム21秒増加"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: 最高のステージを見せてやる！",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "value": 1,
+            "duration": 25,
+            "tag": "performance",
+            "description": "パフォーマンス"
+          }
+        },
+        {
+          "effect_type": "regenerate",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 7,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [
+              0.0179,
+              0.0193,
+              0.0207,
+              0.0221,
+              0.0235,
+              0.0248,
+              0.0262,
+              0.0276,
+              0.029,
+              0.0304
+            ],
+            "duration": 25,
+            "interval": 1,
+            "tag": "performance",
+            "description": "パフォーマンス中の持続回復"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 8,
+            "buff_type": "charge_dmg_buff",
+            "value_list": [
+              0.1388,
+              0.1512,
+              0.1635,
+              0.1759,
+              0.1882,
+              0.2006,
+              0.2129,
+              0.2253,
+              0.2376,
+              0.25
+            ],
+            "duration": 25,
+            "tag": "performance",
+            "description": "パフォーマンス中のチャージダメージUP"
+          }
+        }
+      ]
+    }
+  ]
+}

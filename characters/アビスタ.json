@@ -1,0 +1,227 @@
+{
+  "name": "アビスタ",
+  "weapon_type": "MG",
+  "burst_stage": "1",
+  "element": "Electric",
+  "class": "Supporter",
+  "manufacturer": "エリシオン",
+  "company": "エリシオン",
+  "squad": "オーバーシアー",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.5,
+    "damage_rate": 0.0557,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: アフターショー (アイドル攻撃力)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 1,
+        "exclude_self": true
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "stat_type": "base",
+        "target_stat": "atk",
+        "value_list": [
+          0.4742,
+          0.5107,
+          0.5472,
+          0.5837,
+          0.6202,
+          0.6566,
+          0.6931,
+          0.7296,
+          0.7661,
+          0.8026
+        ],
+        "duration": 99999,
+        "tag": "avista_after_show",
+        "description": "自分のアイドル対象が不明なため、自分を除く最終攻撃力上位1機で近似。フルバースト発動時に解除"
+      }
+    },
+    {
+      "name": "S1: アフターショー (自己持続回復)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "regenerate",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "value_list": [
+          0.0208,
+          0.0224,
+          0.024,
+          0.0256,
+          0.0272,
+          0.0288,
+          0.0304,
+          0.032,
+          0.0336,
+          0.0352
+        ],
+        "duration": 10,
+        "interval": 1,
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "max_hp"
+      }
+    },
+    {
+      "name": "S1: アフターショー (スターゲイザー解除)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "remove_buff_by_tag",
+      "target": "self",
+      "kwargs": {
+        "tag": "avista_stargazer"
+      }
+    },
+    {
+      "name": "S1: アフターショー (アフターショー解除)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "remove_buff_by_tag",
+      "target": "allies",
+      "kwargs": {
+        "tag": "avista_after_show"
+      }
+    },
+    {
+      "name": "S2: アフターグロウ (HP消費)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "avista_stargazer"
+      },
+      "effect_type": "lose_hp",
+      "target": "self",
+      "target_condition": {
+        "hp_ratio_min": 0.25
+      },
+      "kwargs": {
+        "value": 0.2
+      }
+    },
+    {
+      "name": "S2: アフターグロウ (爆発ダメージ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "avista_stargazer"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 1,
+        "exclude_self": true
+      },
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "explosive_dmg_buff",
+        "value_list": [
+          0.2371,
+          0.2554,
+          0.2736,
+          0.2918,
+          0.3101,
+          0.3283,
+          0.3466,
+          0.3648,
+          0.383,
+          0.4013
+        ],
+        "duration": 99999,
+        "description": "自分のアイドル対象が不明なため、自分を除く最終攻撃力上位1機で近似"
+      }
+    },
+    {
+      "name": "S2: アフターグロウ (攻撃ダメージ)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "avista_stargazer"
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 1,
+        "exclude_self": true
+      },
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "atk_dmg_buff",
+        "value_list": [
+          0.2371,
+          0.2554,
+          0.2736,
+          0.2918,
+          0.3101,
+          0.3283,
+          0.3466,
+          0.3648,
+          0.383,
+          0.4013
+        ],
+        "duration": 99999,
+        "description": "自分のアイドル対象が不明なため、自分を除く最終攻撃力上位1機で近似"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: スターゲイザー",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "reenter_burst_stage",
+        "target": "self",
+        "kwargs": {
+          "value": 1
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 5,
+          "buff_type": "max_hp_fixed",
+          "scale_by_caster_stats": true,
+          "stat_type": "finally",
+          "target_stat": "max_hp",
+          "value_list": [
+            0.156,
+            0.168,
+            0.18,
+            0.192,
+            0.204,
+            0.216,
+            0.228,
+            0.24,
+            0.252,
+            0.264
+          ],
+          "duration": 99999,
+          "update_current_hp": true,
+          "tag": "avista_stargazer"
+        }
+      }
+    ]
+  }
+}

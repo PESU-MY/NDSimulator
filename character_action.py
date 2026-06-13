@@ -23,6 +23,7 @@ class CharacterActionMixin:
         self.is_weapon_changed = False
         self.weapon_change_end_frame = 0
         self.weapon_change_revert_on_ammo_empty = True
+        self.weapon_change_infinite_ammo = False
         self.update_max_ammo(frame)
         if self.weapon_change_ammo_specified and should_reset:
             self.current_ammo = self.current_max_ammo
@@ -126,7 +127,8 @@ class CharacterActionMixin:
             self.add_damage('Weapon Attack', total_shot_dmg, hit_count=1, source_type='通常攻撃')
             damage_this_frame += total_shot_dmg
             
-            self.buff_manager.decrement_shot_buffs()
+            if not getattr(self, 'weapon_change_infinite_ammo', False):
+                self.buff_manager.decrement_shot_buffs()
             
             if getattr(simulator, "enable_logs", True):
                 buff_debug_str = self.buff_manager.get_active_buffs_debug(frame)

@@ -1,0 +1,3 @@
+﻿file,name,burst_stage,cooldown_time,rotation_policy,target_damage,party_damage,status,error
+ドロシー.json,ドロシー,1,20.0,20s: target replaces same-stage dummy,31776940.194999646,31787568.194999646,OK,
+ドロシー：セレンディピティ.json,ドロシー：セレンディピティ,3,40.0,40s: target and same-stage dummy rotate,93359549.55612476,93370782.05612476,OK,

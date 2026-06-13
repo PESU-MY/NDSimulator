@@ -4,12 +4,13 @@
   "burst_stage": "1",
   "element": "Water",
   "class": "Supporter",
+  "company": "テトラ",
   "squad": "セラフィム",
   "stats": {
     "max_ammo": 9,
-    "reload_time": 1.50,
+    "reload_time": 1.5,
     "damage_rate": 2.015,
-    "core_damage_rate": 2.00
+    "core_damage_rate": 2.0
   },
   "skills": [
     {
@@ -27,7 +28,18 @@
         "scale_by_caster_stats": true,
         "target_stat": "max_hp",
         "stat_type": "finally",
-        "value_list": [0.0462, 0.0504, 0.0546, 0.0588, 0.063, 0.0672, 0.0714, 0.0756, 0.0798, 0.084],
+        "value_list": [
+          0.0462,
+          0.0504,
+          0.0546,
+          0.0588,
+          0.063,
+          0.0672,
+          0.0714,
+          0.0756,
+          0.0798,
+          0.084
+        ],
         "description": "HP割合が低い味方1機を回復"
       }
     },
@@ -40,7 +52,18 @@
       "kwargs": {
         "effect_no": 2,
         "buff_type": "heal_effectiveness_buff",
-        "value_list": [0.1308, 0.1427, 0.1545, 0.1664, 0.1783, 0.1902, 0.2021, 0.214, 0.2259, 0.2378],
+        "value_list": [
+          0.1308,
+          0.1427,
+          0.1545,
+          0.1664,
+          0.1783,
+          0.1902,
+          0.2021,
+          0.214,
+          0.2259,
+          0.2378
+        ],
         "duration": 15,
         "description": "受けるHP回復量UP"
       }
@@ -63,7 +86,18 @@
             "scale_by_caster_stats": true,
             "target_stat": "max_hp",
             "stat_type": "finally",
-            "value_list": [0.2178, 0.2376, 0.2574, 0.2772, 0.297, 0.3168, 0.3366, 0.3564, 0.3762, 0.396],
+            "value_list": [
+              0.2178,
+              0.2376,
+              0.2574,
+              0.2772,
+              0.297,
+              0.3168,
+              0.3366,
+              0.3564,
+              0.3762,
+              0.396
+            ],
             "description": "発動者の最大HP基準で回復"
           }
         },
@@ -76,7 +110,18 @@
           "kwargs": {
             "effect_no": 4,
             "buff_type": "dummy",
-            "value_list": [0.1089, 0.1188, 0.1287, 0.1386, 0.1485, 0.1584, 0.1683, 0.1782, 0.1881, 0.198],
+            "value_list": [
+              0.1089,
+              0.1188,
+              0.1287,
+              0.1386,
+              0.1485,
+              0.1584,
+              0.1683,
+              0.1782,
+              0.1881,
+              0.198
+            ],
             "duration": 10,
             "description": "自分HP50%以上で防御力UP"
           }

@@ -1,0 +1,339 @@
+{
+  "name": "レッドフード",
+  "weapon_type": "SR",
+  "burst_stage": "∀",
+  "element": "Iron",
+  "class": "Attacker",
+  "company": "ピルグリム",
+  "squad": "ゴッデス",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: グレアリングアイズ (通常攻撃)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "charge_speed_rate",
+        "value_list": [
+          0.0228,
+          0.0245,
+          0.0262,
+          0.0279,
+          0.0296,
+          0.0313,
+          0.033,
+          0.0347,
+          0.0364,
+          0.0381
+        ],
+        "duration": 5,
+        "stack_name": "redhood_glaring_eyes",
+        "max_stack": 10,
+        "stack_amount": 1,
+        "tag": "redhood_charge_speed_stack",
+        "description": "通常攻撃をした時、自分にチャージ速度バフを1スタック付与"
+      }
+    },
+    {
+      "name": "S1: グレアリングアイズ (超過変換)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "charge_speed_overflow_charge_dmg_rate",
+        "value": 2.4,
+        "duration": 99999,
+        "tag": "redhood_charge_speed_overflow",
+        "description": "チャージ速度100%超過分を240%のチャージダメージバフへ変換"
+      }
+    },
+    {
+      "name": "S2: ワイルドトゥース (貫通特化)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "is_pierce",
+        "value": 1,
+        "duration": 99999,
+        "description": "戦闘開始時、自分に貫通特化を付与"
+      }
+    },
+    {
+      "name": "Burst Support: ビーストケージCT短縮",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "condition": {
+        "self_burst_stage": "1"
+      },
+      "max_trigger_count": 1,
+      "effect_type": "cooldown_reduction",
+      "target": "self",
+      "kwargs": {
+        "value": 40.0,
+        "description": "バーストIで使用時、自分の現在CTを40秒短縮。戦闘中1回"
+      }
+    },
+    {
+      "name": "Burst Support: ハウリングエンドCT短縮",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "condition": {
+        "self_burst_stage": "2"
+      },
+      "max_trigger_count": 1,
+      "effect_type": "cooldown_reduction",
+      "target": "self",
+      "kwargs": {
+        "value": 40.0,
+        "description": "バーストIIで使用時、自分の現在CTを40秒短縮。戦闘中1回"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: レッドウルフ",
+    "trigger_type": "on_use_burst_skill",
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "1"
+        },
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 10,
+          "tag": "redhood_beast_cage",
+          "description": "バーストIで使用時、ビーストケージ状態"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "condition": {
+          "self_burst_stage": "1"
+        },
+        "kwargs": {
+          "effect_no": 2,
+          "buff_type": "def_buff",
+          "value_list": [
+            0.3168,
+            0.3379,
+            0.359,
+            0.3801,
+            0.4012,
+            0.4224,
+            0.4435,
+            0.4646,
+            0.4857,
+            0.5068
+          ],
+          "duration": 10,
+          "description": "ビーストケージ適用時、味方全体に防御力バフ。現状は被弾計算がないため状態管理"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "condition": {
+          "self_burst_stage": "1"
+        },
+        "kwargs": {
+          "effect_no": 5,
+          "buff_type": "atk_buff_fixed",
+          "value_list": [
+            0.4847,
+            0.517,
+            0.5493,
+            0.5816,
+            0.6139,
+            0.6462,
+            0.6785,
+            0.7108,
+            0.7432,
+            0.7755
+          ],
+          "duration": 10,
+          "scale_by_caster_stats": true,
+          "stat_type": "base",
+          "target_stat": "atk",
+          "description": "バーストIで使用時、味方全体にスキル発動者基準の攻撃力バフ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "2"
+        },
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 10,
+          "tag": [
+            "redhood_howling_end",
+            "taunt"
+          ],
+          "description": "バーストIIで使用時、ハウリングエンド状態とヘイトを付与"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "2"
+        },
+        "kwargs": {
+          "effect_no": 6,
+          "buff_type": "heal_effectiveness_buff",
+          "value_list": [
+            0.468,
+            0.4992,
+            0.5304,
+            0.5616,
+            0.5928,
+            0.624,
+            0.6552,
+            0.6864,
+            0.7176,
+            0.7488
+          ],
+          "duration": 10,
+          "description": "バーストIIで使用時、自分に受けるHP回復量バフ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "2"
+        },
+        "kwargs": {
+          "effect_no": 3,
+          "buff_type": "drain",
+          "value_list": [
+            0.144,
+            0.1536,
+            0.1632,
+            0.1728,
+            0.1824,
+            0.192,
+            0.2016,
+            0.2112,
+            0.2208,
+            0.2304
+          ],
+          "duration": 10,
+          "description": "ハウリングエンド適用時、自分に攻撃ダメージ吸収"
+        }
+      },
+      {
+        "effect_type": "weapon_change",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "3"
+        },
+        "kwargs": {
+          "duration": 10,
+          "revert_on_ammo_empty": false,
+          "tag": "redhood_red_wolf",
+          "weapon_data": {
+            "name": "Red Hood Red Wolf",
+            "type": "CHARGE",
+            "weapon_class": "SR",
+            "effect_no": 7,
+            "multiplier_list": [
+              0.3702,
+              0.3863,
+              0.4023,
+              0.4184,
+              0.4344,
+              0.4505,
+              0.4665,
+              0.4826,
+              0.4986,
+              0.5146
+            ],
+            "max_ammo": 999,
+            "reload_frames": 120,
+            "windup_frames": 12,
+            "winddown_frames": 5,
+            "charge_time": 1.0,
+            "charge_mult": 2.5,
+            "hit_size": 1,
+            "is_pierce": true,
+            "description": "バーストIIIで使用時、10秒間使用武器変更"
+          }
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "3"
+        },
+        "kwargs": {
+          "buff_type": "pierce_range_buff",
+          "value": 1.0,
+          "duration": 10,
+          "description": "バーストIIIで使用時、貫通範囲100%拡張。現状は状態管理"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "3"
+        },
+        "kwargs": {
+          "buff_type": "charge_speed_rate",
+          "value": 1.008,
+          "duration": 10,
+          "description": "バーストIIIで使用時、チャージ速度100.8%バフ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "3"
+        },
+        "kwargs": {
+          "effect_no": 4,
+          "buff_type": "atk_buff_rate",
+          "value_list": [
+            0.4464,
+            0.4761,
+            0.5059,
+            0.5356,
+            0.5654,
+            0.5952,
+            0.6249,
+            0.6547,
+            0.6844,
+            0.7142
+          ],
+          "duration": 10,
+          "description": "レッドウルフ発動時、自分に攻撃力バフ"
+        }
+      }
+    ]
+  }
+}

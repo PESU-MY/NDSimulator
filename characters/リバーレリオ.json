@@ -1,0 +1,245 @@
+{
+  "name": "リバーレリオ",
+  "weapon_type": "SR",
+  "burst_stage": "3",
+  "element": "Wind",
+  "class": "Attacker",
+  "company": "ピルグリム",
+  "squad": "ヘレティック",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0,
+    "charge_time": 1.5,
+    "windup_frames": 0,
+    "winddown_frames": 0
+  },
+  "skills": [
+    {
+      "name": "S1: 静かな深淵 (FB発動時/自分)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [
+          0.9454,
+          1.0182,
+          1.0909,
+          1.1636,
+          1.2364,
+          1.3091,
+          1.3818,
+          1.4546,
+          1.5273,
+          1.6
+        ],
+        "duration": 3,
+        "description": "フルバースト発動時、自分に攻撃力バフ"
+      }
+    },
+    {
+      "name": "S1: 静かな深淵 (フルチャージコア)",
+      "trigger_type": "core_hit",
+      "trigger_value": 1,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "atk_dmg_buff",
+        "value_list": [
+          0.1231,
+          0.1326,
+          0.142,
+          0.1515,
+          0.161,
+          0.1704,
+          0.1799,
+          0.1894,
+          0.1989,
+          0.2083
+        ],
+        "duration": 60,
+        "description": "フルチャージ攻撃がコアに命中した時、自分に攻撃ダメージバフ。SRの通常攻撃をフルチャージ扱いとして判定"
+      }
+    },
+    {
+      "name": "S1: 静かな深淵 (フルチャージ命中)",
+      "trigger_type": "pellet_hit",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 3,
+        "multiplier_list": [
+          0.2393,
+          0.2577,
+          0.2761,
+          0.2946,
+          0.313,
+          0.3314,
+          0.3498,
+          0.3682,
+          0.3866,
+          0.405
+        ],
+        "loop_count": 5,
+        "is_skill_damage": true,
+        "description": "フルチャージ攻撃命中時、対象に追加ダメージを5回発動。敵はターゲット前提"
+      }
+    },
+    {
+      "name": "S1: 静かな深淵 (FB発動時/B3低攻撃力)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "lowest_atk",
+        "count": 1,
+        "base_burst_stage": "3"
+      },
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "charge_speed_fixed",
+        "value_list": [
+          0.0752,
+          0.081,
+          0.0868,
+          0.0926,
+          0.0984,
+          0.1042,
+          0.11,
+          0.1158,
+          0.1216,
+          0.1274
+        ],
+        "value_mode": "caster_charge_frame_ratio",
+        "duration": 10,
+        "tag": "liberalio_special_charge",
+        "description": "フルバースト発動時、基本バーストIIIで最終攻撃力が一番低い味方1機に特別扱いのチャージ速度バフ"
+      }
+    },
+    {
+      "name": "S2: 奇妙な海流 (ターゲット命中)",
+      "trigger_type": "pellet_hit",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [
+              1.365,
+              1.47,
+              1.575,
+              1.68,
+              1.785,
+              1.89,
+              1.995,
+              2.1,
+              2.205,
+              2.31
+            ],
+            "duration": 99999,
+            "tag": "liberalio_raging_current",
+            "description": "対象がターゲットなら、激流として自分に攻撃ダメージバフ。敵はターゲット前提"
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "liberalio_slow_current",
+            "description": "激流発動時に緩流を解除"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 奇妙な海流 (チャージ速度効果無効)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 1,
+        "duration": 99999,
+        "tag": "ignore_charge_speed_buffs",
+        "allow_tags": [
+          "liberalio_special_charge",
+          "special_charge_speed_effect"
+        ],
+        "description": "通常のチャージ速度増加/減少効果を無効化。allow_tagsに含まれるタグ付きの特殊チャージ速度効果だけは許可"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 水底の世界",
+    "trigger_type": "on_use_burst_skill",
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 6,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [
+            0.2954,
+            0.3182,
+            0.3409,
+            0.3636,
+            0.3864,
+            0.4091,
+            0.4318,
+            0.4545,
+            0.4773,
+            0.5
+          ],
+          "duration": 10,
+          "description": "自分に攻撃ダメージバフ"
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "effect_no": 7,
+          "multiplier_list": [
+            5.4659,
+            5.8863,
+            6.3068,
+            6.7272,
+            7.1477,
+            7.5682,
+            7.9886,
+            8.4091,
+            8.8295,
+            9.25
+          ],
+          "is_skill_damage": true,
+          "is_enemy_wide_burst": true,
+          "force_full_burst": true,
+          "description": "敵全体への追加ダメージ。敵全体バースト扱い、フルバースト補正を強制適用"
+        }
+      }
+    ]
+  }
+}

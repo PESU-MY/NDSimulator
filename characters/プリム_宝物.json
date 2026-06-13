@@ -1,0 +1,237 @@
+{
+  "name": "プリム_宝物",
+  "weapon_type": "SR",
+  "burst_stage": "1",
+  "element": "Iron",
+  "class": "Supporter",
+  "company": "テトラ",
+  "squad": "カフェ・スウィーティー",
+  "treasure": true,
+  "base_character": "プリム",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 1.5,
+    "damage_rate": 0.6595,
+    "core_damage_rate": 2.0,
+    "charge_time": 1.0,
+    "charge_mult": 2.5
+  },
+  "conversion_notes": [
+    "通常版プリム.jsonの構造に準拠し、宝物強化後の条件と効果量を反映。",
+    "敵側の眠い5スタック条件は厳密判定できないため、フルチャージ攻撃6回命中で起きた状態を付与する近似。",
+    "最終防御力が最も高い敵10機は、単体ターゲット環境では10回ダメージとして処理。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: …眠い (フルチャージ命中)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "stack_buff",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "def_debuff",
+        "value_list": [
+          0.0253,
+          0.0269,
+          0.0286,
+          0.0302,
+          0.0318,
+          0.0335,
+          0.0351,
+          0.0367,
+          0.0384,
+          0.04
+        ],
+        "duration": 10,
+        "stack_name": "prim_treasure_sleepy",
+        "max_stack": 5,
+        "tag": "prim_treasure_sleepy",
+        "description": "眠い：対象に防御力ダウン。5スタックまで"
+      }
+    },
+    {
+      "name": "Skill 1: …眠い (フルチャージ6回/眠いフルスタック近似)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 6,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_buff",
+        "value": 1,
+        "duration": 10,
+        "tag": [
+          "prim_treasure_awake",
+          "ignore_def_active"
+        ],
+        "description": "起きた：通常攻撃を防御力無視ダメージとして適用。敵の眠い5スタック条件はフルチャージ6回で近似"
+      }
+    },
+    {
+      "name": "Skill 2: …あ (フルチャージ)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "max_hp_rate",
+            "update_current_hp": true,
+            "value_list": [
+              0.036,
+              0.0388,
+              0.0415,
+              0.0443,
+              0.0471,
+              0.0498,
+              0.0526,
+              0.0554,
+              0.0582,
+              0.0609
+            ],
+            "duration": 4,
+            "tag": "prim_treasure_s2_max_hp"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "condition": {
+            "self_has_tag": "ignore_def_active"
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "ignore_def_dmg_buff",
+            "value_list": [
+              0.2117,
+              0.2195,
+              0.2272,
+              0.235,
+              0.2428,
+              0.2505,
+              0.2583,
+              0.2661,
+              0.2738,
+              0.2816
+            ],
+            "duration": 5,
+            "tag": "prim_treasure_s2_ignore_def_dmg",
+            "description": "自分が起きた状態なら味方全体に防御力無視ダメージUP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: …メンドイ",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [
+              0.6007,
+              0.6469,
+              0.6931,
+              0.7393,
+              0.7856,
+              0.8318,
+              0.878,
+              0.9242,
+              0.9704,
+              1.0166
+            ],
+            "loop_count": 10,
+            "description": "最終防御力が最も高い敵10機にダメージ。単体ターゲット環境では10回ダメージとして処理"
+          }
+        },
+        {
+          "effect_type": "debuff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "def_debuff",
+            "value_list": [
+              0.0583,
+              0.0627,
+              0.0672,
+              0.0717,
+              0.0762,
+              0.0807,
+              0.0852,
+              0.0897,
+              0.0941,
+              0.0986
+            ],
+            "duration": 10,
+            "tag": "prim_treasure_burst_def_down",
+            "description": "防御力ダウン"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "max_hp_rate",
+            "update_current_hp": true,
+            "value_list": [
+              0.1788,
+              0.1925,
+              0.2063,
+              0.22,
+              0.2338,
+              0.2476,
+              0.2613,
+              0.2751,
+              0.2888,
+              0.3026
+            ],
+            "duration": 4,
+            "tag": "prim_treasure_burst_max_hp"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "condition": {
+            "self_has_tag": "ignore_def_active"
+          },
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "ignore_def_dmg_buff",
+            "value_list": [
+              0.3644,
+              0.3794,
+              0.3945,
+              0.4095,
+              0.4245,
+              0.4396,
+              0.4546,
+              0.4696,
+              0.4847,
+              0.4997
+            ],
+            "duration": 10,
+            "tag": "prim_treasure_burst_ignore_def_dmg",
+            "description": "自分が起きた状態なら味方全体に防御力無視ダメージUP"
+          }
+        }
+      ]
+    }
+  ]
+}

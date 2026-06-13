@@ -1,0 +1,200 @@
+{
+  "name": "ミルク_宝物",
+  "weapon_type": "SR",
+  "burst_stage": "1",
+  "element": "Water",
+  "class": "Attacker",
+  "company": "テトラ",
+  "squad": "カフェ・スウィーティー",
+  "treasure": true,
+  "base_character": "ミルク",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0,
+    "charge_time": 1.0,
+    "charge_mult": 2.5
+  },
+  "conversion_notes": [
+    "通常版ミルク.jsonの構造に準拠し、宝物強化後の条件と効果量を反映。",
+    "HP80%以上条件は現在HP/最大HPで判定。",
+    "最終防御力が最も高い敵1機は単体ターゲット前提で処理。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: 負けず嫌い (20秒ごと)",
+      "trigger_type": "time_interval",
+      "trigger_value": 20.0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "highest_atk",
+        "count": 3
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [
+          0.1751,
+          0.191,
+          0.2069,
+          0.2228,
+          0.2387,
+          0.2546,
+          0.2706,
+          0.2865,
+          0.3024,
+          0.3183
+        ],
+        "duration": 10,
+        "tag": "milk_treasure_top_atk"
+      }
+    },
+    {
+      "name": "Skill 1: 負けず嫌い (戦闘開始/CT短縮)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "burst_cooldown_reduction",
+        "value": 20.0,
+        "duration": 99999,
+        "tag": "milk_treasure_burst_cd",
+        "description": "自分のバーストスキルクールタイム20秒短縮"
+      }
+    },
+    {
+      "name": "Skill 2: ミルクドーピング (HP80%以上)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "hp_ratio_min": 0.8
+      },
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "crit_dmg_buff",
+        "value_list": [
+          0.0612,
+          0.0668,
+          0.0723,
+          0.0779,
+          0.0835,
+          0.089,
+          0.0946,
+          0.1002,
+          0.1057,
+          0.1113
+        ],
+        "duration": 1.1,
+        "tag": "milk_treasure_hp80_crit",
+        "description": "自分のHPが80%以上の時のみ維持"
+      }
+    },
+    {
+      "name": "Skill 2: ミルクドーピング (フルチャージ10回)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 10,
+      "effect_type": "cooldown_reduction",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 3,
+        "value_list": [
+          1.67,
+          1.8,
+          1.93,
+          2.06,
+          2.19,
+          2.31,
+          2.44,
+          2.57,
+          2.7,
+          2.83
+        ],
+        "description": "味方全体のバーストスキルクールタイム短縮"
+      }
+    },
+    {
+      "name": "バースト: 勝利に向かって",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 4,
+            "multiplier_list": [
+              2.0204,
+              2.204,
+              2.3877,
+              2.5714,
+              2.7551,
+              2.9387,
+              3.1224,
+              3.3061,
+              3.4897,
+              3.6734
+            ],
+            "force_full_burst": true,
+            "description": "最終防御力が最も高い敵1機へのバーストスキルダメージ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "drain",
+            "value_list": [
+              0.0888,
+              0.0969,
+              0.105,
+              0.1131,
+              0.1212,
+              0.1293,
+              0.1373,
+              0.1454,
+              0.1535,
+              0.1616
+            ],
+            "duration": 10,
+            "tag": "milk_treasure_drain",
+            "description": "攻撃ダメージのn%回復"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "heal_effectiveness_buff",
+            "value_list": [
+              0.4461,
+              0.4804,
+              0.5147,
+              0.5491,
+              0.5834,
+              0.6177,
+              0.652,
+              0.6864,
+              0.7207,
+              0.755
+            ],
+            "duration": 10,
+            "tag": "milk_treasure_heal_effect",
+            "description": "受けるHP回復量UP"
+          }
+        }
+      ]
+    }
+  ]
+}

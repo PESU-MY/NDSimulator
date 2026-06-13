@@ -1,0 +1,761 @@
+{
+  "name": "ラピ：レッドフード",
+  "weapon_type": "MG",
+  "burst_stage": "3",
+  "element": "Fire",
+  "class": "Attacker",
+  "company": "エリシオン",
+  "squad": "カウンターズ",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.5,
+    "damage_rate": 0.0557,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: 戦況把握 (戦闘補助ON/開始時)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "condition": {
+        "not_has_ally_base_burst_stage": "1",
+        "exclude_self": true
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "value": 1,
+            "duration": 99999,
+            "tag": "rrh_combat_assist",
+            "description": "基本バーストIの味方がいない場合、戦闘補助状態"
+          }
+        },
+        {
+          "effect_type": "change_burst_stage",
+          "target": "self",
+          "kwargs": {
+            "value": "1",
+            "description": "戦闘補助: バーストIに変更"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 戦況把握 (戦闘補助ON/FB終了後)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "condition": {
+        "not_has_ally_base_burst_stage": "1",
+        "exclude_self": true
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "value": 1,
+            "duration": 99999,
+            "tag": "rrh_combat_assist",
+            "description": "基本バーストIの味方がいない場合、戦闘補助状態"
+          }
+        },
+        {
+          "effect_type": "change_burst_stage",
+          "target": "self",
+          "kwargs": {
+            "value": "1",
+            "description": "戦闘補助: バーストIに変更"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 戦況把握 (戦闘補助解除/開始時)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "condition": {
+        "has_ally_base_burst_stage": "1",
+        "exclude_self": true
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "rrh_combat_assist",
+            "description": "基本バーストIの味方がいる場合、戦闘補助解除"
+          }
+        },
+        {
+          "effect_type": "change_burst_stage",
+          "target": "self",
+          "kwargs": {
+            "value": "3",
+            "description": "戦闘補助解除: バーストIIIに戻す"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 戦況把握 (戦闘補助解除/FB終了後)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "condition": {
+        "has_ally_base_burst_stage": "1",
+        "exclude_self": true
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "rrh_combat_assist",
+            "description": "基本バーストIの味方がいる場合、戦闘補助解除"
+          }
+        },
+        {
+          "effect_type": "change_burst_stage",
+          "target": "self",
+          "kwargs": {
+            "value": "3",
+            "description": "戦闘補助解除: バーストIIIに戻す"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 戦況把握 (戦闘補助中/FB発動時)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "rrh_combat_assist"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "cooldown_reduction",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "value_list": [
+              5.34,
+              5.58,
+              5.82,
+              6.05,
+              6.29,
+              6.53,
+              6.77,
+              7.0,
+              7.24,
+              7.48
+            ],
+            "description": "戦闘補助状態なら、フルバースト発動時に味方全体の現在CTを短縮"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [
+              0.0501,
+              0.0535,
+              0.0568,
+              0.0601,
+              0.0635,
+              0.0668,
+              0.0702,
+              0.0735,
+              0.0769,
+              0.0802
+            ],
+            "duration": 10,
+            "description": "戦闘補助状態なら、味方全体に攻撃ダメージバフ"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S1: 戦況把握 (通常状態/FB発動時)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_not_has_tag": "rrh_combat_assist"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "atk_buff_rate",
+            "value_list": [
+              0.594,
+              0.6336,
+              0.6732,
+              0.7128,
+              0.7524,
+              0.792,
+              0.8316,
+              0.8712,
+              0.9108,
+              0.9504
+            ],
+            "duration": 10,
+            "description": "通常状態なら、自分に攻撃力バフ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "part_dmg_buff",
+            "value_list": [
+              0.3,
+              0.32,
+              0.34,
+              0.36,
+              0.38,
+              0.4,
+              0.42,
+              0.44,
+              0.46,
+              0.48
+            ],
+            "duration": 10,
+            "description": "通常状態なら、自分に阻止部位の攻撃ダメージバフ"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 粘着榴弾 (常時効果)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "activate_flag",
+          "target": "self",
+          "kwargs": {
+            "flag_name": "advantage_vs_Electric",
+            "description": "電撃コードの敵に有利コードのダメージを適用"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "sticky_dmg_buff",
+            "value_list": [
+              0.942,
+              1.0048,
+              1.0676,
+              1.1304,
+              1.1932,
+              1.256,
+              1.3188,
+              1.3816,
+              1.4444,
+              1.5072
+            ],
+            "duration": 99999,
+            "description": "発射体付着ダメージバフ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "explosive_dmg_buff",
+            "value_list": [
+              0.5944,
+              0.6402,
+              0.6859,
+              0.7316,
+              0.7774,
+              0.8231,
+              0.8688,
+              0.9146,
+              0.9603,
+              1.006
+            ],
+            "duration": 99999,
+            "description": "発射体爆発ダメージバフ"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 粘着榴弾 (120回/FB外)",
+      "trigger_type": "shot_count",
+      "trigger_value": 120,
+      "condition": {
+        "is_full_burst": false,
+        "self_not_has_tag": "rrh_sticky_trigger_reduced"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "rrh_sticky_grenade",
+            "tag": "rrh_sticky_grenade_stack",
+            "value": 0,
+            "stack_amount": 1,
+            "max_stack": 99,
+            "duration": 99999,
+            "disable_stack_increase": true,
+            "description": "フルバースト外で付着した粘着榴弾。FB突入時に爆発"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [
+              0.4971,
+              0.5398,
+              0.5825,
+              0.6251,
+              0.6678,
+              0.7105,
+              0.7531,
+              0.7958,
+              0.8385,
+              0.8811
+            ],
+            "is_sticky": true,
+            "enable_core_hit": true,
+            "is_skill_damage": true,
+            "description": "付着ダメージ。発射体付着ダメージバフ対象、コアヒット可"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 粘着榴弾 (60回/FB外)",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "condition": {
+        "is_full_burst": false,
+        "self_has_tag": "rrh_sticky_trigger_reduced"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "stack_name": "rrh_sticky_grenade",
+            "tag": "rrh_sticky_grenade_stack",
+            "value": 0,
+            "stack_amount": 1,
+            "max_stack": 99,
+            "duration": 99999,
+            "disable_stack_increase": true,
+            "description": "バーストIII効果中、60回攻撃ごとに付着した粘着榴弾。FB突入時に爆発"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [
+              0.4971,
+              0.5398,
+              0.5825,
+              0.6251,
+              0.6678,
+              0.7105,
+              0.7531,
+              0.7958,
+              0.8385,
+              0.8811
+            ],
+            "is_sticky": true,
+            "enable_core_hit": true,
+            "is_skill_damage": true,
+            "description": "付着ダメージ。発射体付着ダメージバフ対象、コアヒット可"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 粘着榴弾 (120回/FB中)",
+      "trigger_type": "shot_count",
+      "trigger_value": 120,
+      "condition": {
+        "is_full_burst": true,
+        "self_not_has_tag": "rrh_sticky_trigger_reduced"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [
+              0.4971,
+              0.5398,
+              0.5825,
+              0.6251,
+              0.6678,
+              0.7105,
+              0.7531,
+              0.7958,
+              0.8385,
+              0.8811
+            ],
+            "is_sticky": true,
+            "enable_core_hit": true,
+            "is_skill_damage": true,
+            "description": "FB中の付着ダメージ。コアヒット可"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 8,
+            "multiplier_list": [
+              0.4971,
+              0.5398,
+              0.5825,
+              0.6251,
+              0.6678,
+              0.7105,
+              0.7531,
+              0.7958,
+              0.8385,
+              0.8811
+            ],
+            "is_explosive": true,
+            "is_skill_damage": true,
+            "description": "FB中に付着した粘着榴弾は即時爆発として近似"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 粘着榴弾 (60回/FB中)",
+      "trigger_type": "shot_count",
+      "trigger_value": 60,
+      "condition": {
+        "is_full_burst": true,
+        "self_has_tag": "rrh_sticky_trigger_reduced"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [
+              0.4971,
+              0.5398,
+              0.5825,
+              0.6251,
+              0.6678,
+              0.7105,
+              0.7531,
+              0.7958,
+              0.8385,
+              0.8811
+            ],
+            "is_sticky": true,
+            "enable_core_hit": true,
+            "is_skill_damage": true,
+            "description": "FB中の付着ダメージ。コアヒット可"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 8,
+            "multiplier_list": [
+              0.4971,
+              0.5398,
+              0.5825,
+              0.6251,
+              0.6678,
+              0.7105,
+              0.7531,
+              0.7958,
+              0.8385,
+              0.8811
+            ],
+            "is_explosive": true,
+            "is_skill_damage": true,
+            "description": "FB中に付着した粘着榴弾は即時爆発として近似"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 粘着榴弾 (FB突入時の起爆)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_stack_min": 1,
+        "stack_name": "rrh_sticky_grenade"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 8,
+            "multiplier_list": [
+              0.4971,
+              0.5398,
+              0.5825,
+              0.6251,
+              0.6678,
+              0.7105,
+              0.7531,
+              0.7958,
+              0.8385,
+              0.8811
+            ],
+            "copy_stack_count": "rrh_sticky_grenade",
+            "is_explosive": true,
+            "is_skill_damage": true,
+            "force_full_burst": true,
+            "description": "FB外で付着した粘着榴弾の蓄積数ぶんをFB突入時に爆発"
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "rrh_sticky_grenade_stack",
+            "description": "起爆後、蓄積した粘着榴弾を削除"
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 継承される力",
+    "trigger_type": "on_use_burst_skill",
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "cooldown_reduction",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "1"
+        },
+        "kwargs": {
+          "value": 20.0,
+          "description": "バーストIで使用した時、自分の現在CTを20秒短縮"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "1"
+        },
+        "kwargs": {
+          "effect_no": 9,
+          "buff_type": "explosion_range_buff",
+          "value_list": [
+            0.6288,
+            0.6708,
+            0.7127,
+            0.7546,
+            0.7965,
+            0.8385,
+            0.8804,
+            0.9223,
+            0.9642,
+            1.0062
+          ],
+          "duration": 10,
+          "description": "バーストIで使用した時、爆発範囲バフ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "condition": {
+          "self_burst_stage": "1"
+        },
+        "kwargs": {
+          "effect_no": 10,
+          "buff_type": "atk_buff_fixed",
+          "value_list": [
+            0.1116,
+            0.1192,
+            0.1268,
+            0.1344,
+            0.142,
+            0.1496,
+            0.1572,
+            0.1648,
+            0.1724,
+            0.1801
+          ],
+          "duration": 10,
+          "scale_by_caster_stats": true,
+          "stat_type": "base",
+          "target_stat": "atk",
+          "description": "バーストIで使用した時、スキル発動者基準の攻撃力バフ"
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "condition": {
+          "self_burst_stage": "3"
+        },
+        "kwargs": {
+          "effect_no": 11,
+          "multiplier_list": [
+            15.12,
+            16.56,
+            18.0,
+            19.44,
+            20.88,
+            22.32,
+            23.76,
+            25.2,
+            26.64,
+            28.08
+          ],
+          "is_skill_damage": true,
+          "force_full_burst": true,
+          "description": "バーストIIIで使用した時、照準線に最も近い敵1機への追加ダメージ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "3"
+        },
+        "kwargs": {
+          "effect_no": 12,
+          "buff_type": "explosion_range_buff",
+          "value_list": [
+            0.6288,
+            0.6708,
+            0.7127,
+            0.7546,
+            0.7965,
+            0.8385,
+            0.8804,
+            0.9223,
+            0.9642,
+            1.0062
+          ],
+          "duration": 10,
+          "description": "バーストIIIで使用した時、爆発範囲バフ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_burst_stage": "3"
+        },
+        "kwargs": {
+          "effect_no": 13,
+          "buff_type": "sticky_dmg_buff",
+          "value_list": [
+            2.16,
+            2.388,
+            2.616,
+            2.844,
+            3.072,
+            3.3,
+            3.528,
+            3.756,
+            3.984,
+            4.212
+          ],
+          "duration": 10,
+          "tag": "rrh_sticky_trigger_reduced",
+          "description": "バーストIIIで使用した時、発射体付着ダメージバフと粘着榴弾の発動条件60回化"
+        }
+      }
+    ]
+  }
+}

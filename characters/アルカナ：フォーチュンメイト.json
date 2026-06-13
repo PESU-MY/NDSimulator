@@ -1,0 +1,284 @@
+{
+  "name": "アルカナ：フォーチュンメイト",
+  "weapon_type": "SG",
+  "burst_stage": "2",
+  "element": "Fire",
+  "class": "Attacker",
+  "manufacturer": "エリシオン",
+  "company": "エリシオン",
+  "squad": "ベストセラー",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 2.33,
+    "damage_rate": 2.228,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: 重ねるアルバム (FB終了/SG攻撃力)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "weapon_type": "SG"
+      },
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_fixed",
+        "scale_by_caster_stats": true,
+        "stat_type": "base",
+        "target_stat": "atk",
+        "value_list": [
+          0.0686,
+          0.0754,
+          0.0822,
+          0.0891,
+          0.0959,
+          0.1027,
+          0.1096,
+          0.1164,
+          0.1232,
+          0.13
+        ],
+        "duration": 15,
+        "copy_stack_count": "afm_important_memory",
+        "description": "大切な思い出スタック数ぶん攻撃力UP"
+      }
+    },
+    {
+      "name": "S1: 重ねるアルバム (幸せな思い出適用時/青春の記録)",
+      "trigger_type": "buff_applied",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "trigger_buff_type": "pellet_count_add",
+        "buff_type": "weapon_dmg_buff",
+        "value": 0.1,
+        "duration": 99999,
+        "stack_name": "afm_youth_record",
+        "stack_amount": 3,
+        "max_stack": 3,
+        "tag": "afm_youth_record",
+        "description": "幸せな思い出の適用検知は pellet_count_add 適用で近似"
+      }
+    },
+    {
+      "name": "S1: 重ねるアルバム (思い出系解除)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "afm_memory_making"
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "afm_youth_record"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 記憶と思い出 (2回/弾丸チャージ)",
+      "trigger_type": "shot_count",
+      "trigger_value": 2,
+      "condition": {
+        "self_has_tag": "afm_memory_making"
+      },
+      "effect_type": "refill_ammo_fixed",
+      "target": "self",
+      "kwargs": {
+        "value": 6,
+        "description": "思い出作り中の攻撃回数別効果。現状は全体射撃回数の2回ごと近似で、思い出作り解除時リセットは未対応"
+      }
+    },
+    {
+      "name": "S2: 記憶と思い出 (4回/幸せな思い出)",
+      "trigger_type": "shot_count",
+      "trigger_value": 4,
+      "condition": {
+        "self_has_tag": "afm_memory_making"
+      },
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "pellet_count_add",
+        "value": 1,
+        "duration": 99999,
+        "stack_name": "afm_happy_memory",
+        "stack_amount": 3,
+        "max_stack": 3,
+        "tag": "afm_happy_memory",
+        "description": "幸せな思い出: ペレット数UPを3スタック付与"
+      }
+    },
+    {
+      "name": "S2: 記憶と思い出 (6回/大切な思い出)",
+      "trigger_type": "shot_count",
+      "trigger_value": 6,
+      "condition": {
+        "self_has_tag": "afm_memory_making"
+      },
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "atk_buff_rate",
+        "value_list": [
+          0.0147,
+          0.0159,
+          0.017,
+          0.0181,
+          0.0193,
+          0.0204,
+          0.0215,
+          0.0227,
+          0.0238,
+          0.0249
+        ],
+        "duration": 99999,
+        "stack_name": "afm_important_memory",
+        "stack_amount": 3,
+        "max_stack": 3,
+        "tag": "afm_important_memory"
+      }
+    },
+    {
+      "name": "S2: 記憶と思い出 (バースト時/SG攻撃ダメージ)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "weapon_type": "SG",
+        "exclude_self": true
+      },
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "atk_dmg_buff",
+        "value_list": [
+          0.3112,
+          0.3377,
+          0.3642,
+          0.3908,
+          0.4173,
+          0.4438,
+          0.4704,
+          0.4969,
+          0.5234,
+          0.55
+        ],
+        "duration": 10
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 輝く青春",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 99999,
+          "tag": "afm_memory_making",
+          "description": "思い出作り状態"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 4,
+          "buff_type": "crit_rate_buff",
+          "value_list": [
+            0.1187,
+            0.1278,
+            0.137,
+            0.1461,
+            0.1552,
+            0.1644,
+            0.1735,
+            0.1827,
+            0.1918,
+            0.2009
+          ],
+          "duration": 99999,
+          "tag": "afm_memory_making_crit"
+        }
+      },
+      {
+        "effect_type": "refill_ammo_fixed",
+        "target": "self",
+        "kwargs": {
+          "value": 2
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 5,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [
+            0.1772,
+            0.1908,
+            0.2044,
+            0.2181,
+            0.2317,
+            0.2453,
+            0.259,
+            0.2726,
+            0.2862,
+            0.2999
+          ],
+          "duration": 99999,
+          "tag": "afm_memory_making_atk_dmg"
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "effect_no": 6,
+          "multiplier_list": [
+            3.276,
+            3.528,
+            3.78,
+            4.032,
+            4.284,
+            4.536,
+            4.788,
+            5.04,
+            5.292,
+            5.544
+          ],
+          "is_skill_damage": true,
+          "is_enemy_wide_burst": true,
+          "description": "敵全体へのバーストスキルダメージ。敵1体環境では単体として計算"
+        }
+      }
+    ]
+  }
+}

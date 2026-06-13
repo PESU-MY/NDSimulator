@@ -1,0 +1,267 @@
+{
+  "weapon_type": "SG",
+  "weapon_class": "SG",
+  "type": "NORMAL",
+  "element": "Electric",
+  "class": "Supporter",
+  "burst_stage": "1",
+  "manufacturer": "エリシオン",
+  "company": "エリシオン",
+  "squad": "スクールサークル",
+  "name": "ツバイ_宝物",
+  "treasure": true,
+  "base_character": "ツバイ",
+  "conversion_notes": [
+    "元ツバイJSONの武器変更構造に準拠し、宝物formatの効果値へ差し替え",
+    "フルバースト中通常攻撃時の貫通ダメージスタックと、貫通学習中のクリ率スタックは宝物追加効果として反映"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: 貫通力計算式 (1発)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "pierce_dmg_buff",
+        "value_list": [
+          0.1189,
+          0.1281,
+          0.1372,
+          0.1464,
+          0.1555,
+          0.1647,
+          0.1738,
+          0.183,
+          0.1921,
+          0.2013
+        ],
+        "shot_duration": 1,
+        "duration": 0,
+        "description": "貫通ダメージUP (1発維持)"
+      }
+    },
+    {
+      "name": "Skill 1: 貫通力計算式 (持続)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "pierce_dmg_buff",
+        "value_list": [
+          0.0594,
+          0.064,
+          0.0686,
+          0.0732,
+          0.0777,
+          0.0823,
+          0.0869,
+          0.0915,
+          0.096,
+          0.1006
+        ],
+        "duration": 10,
+        "description": "貫通ダメージUP (10秒維持)"
+      }
+    },
+    {
+      "name": "Skill 1: 貫通力計算式 (FB中通常攻撃)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "stack_buff",
+      "target": "allies",
+      "condition": {
+        "is_full_burst": true
+      },
+      "kwargs": {
+        "effect_no": 3,
+        "stack_name": "pierce_shot_stack",
+        "buff_type": "pierce_dmg_buff",
+        "value_list": [
+          0.1476,
+          0.159,
+          0.1703,
+          0.1817,
+          0.1931,
+          0.2044,
+          0.2158,
+          0.2272,
+          0.2385,
+          0.2499
+        ],
+        "shot_duration": 1,
+        "duration": 0,
+        "max_stack": 3,
+        "tag": "zwei_treasure_pierce_shot",
+        "description": "フルバースト中、通常攻撃ごとに貫通ダメージUPを最大3スタック"
+      }
+    },
+    {
+      "name": "Skill 2: 構造分析 (遮蔽回復)",
+      "trigger_type": "shot_count",
+      "trigger_value": 5,
+      "effect_type": "cover_heal",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 4,
+        "value_list": [
+          0.0438,
+          0.0473,
+          0.0508,
+          0.0543,
+          0.0578,
+          0.0613,
+          0.0648,
+          0.0683,
+          0.0717,
+          0.0752
+        ],
+        "description": "遮蔽物HP回復"
+      }
+    },
+    {
+      "name": "Skill 2: 構造分析 (クリ率)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "crit_rate_buff",
+        "value_list": [
+          0.1101,
+          0.1186,
+          0.127,
+          0.1355,
+          0.144,
+          0.1525,
+          0.1609,
+          0.1694,
+          0.1779,
+          0.1863
+        ],
+        "duration": 10
+      }
+    },
+    {
+      "name": "Skill 2: 構造分析 (貫通学習中クリ率)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "stack_buff",
+      "target": "allies",
+      "condition": {
+        "self_has_tag": "pierce_textbook"
+      },
+      "kwargs": {
+        "effect_no": 6,
+        "stack_name": "pierce_textbook_crit_stack",
+        "buff_type": "crit_rate_buff",
+        "value_list": [
+          0.0886,
+          0.0954,
+          0.1022,
+          0.1091,
+          0.1159,
+          0.1227,
+          0.1295,
+          0.1364,
+          0.1432,
+          0.15
+        ],
+        "duration": 5,
+        "max_stack": 3,
+        "tag": "zwei_treasure_pierce_textbook_crit"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "バースト: 過充電方程式",
+    "cooldown_time": 20.0,
+    "trigger_type": "on_burst",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "weapon_change",
+        "target": "self",
+        "kwargs": {
+          "duration": 0,
+          "shot_duration": 1,
+          "weapon_data": {
+            "name": "Zwei Treasure Burst",
+            "type": "CHARGE",
+            "effect_no": 7,
+            "multiplier_list": [
+              0.2995,
+              0.3226,
+              0.3456,
+              0.3686,
+              0.3917,
+              0.4147,
+              0.4378,
+              0.4608,
+              0.4838,
+              0.5069
+            ],
+            "max_ammo": 1,
+            "reload_frames": 0,
+            "windup_frames": 12,
+            "winddown_frames": 10,
+            "charge_time": 1.2,
+            "charge_mult": 3.0,
+            "hit_size": 1,
+            "is_pierce": true,
+            "description": "使用武器変更(最大装弾数1発、チャージ1.2秒、300%フルチャージ、貫通特化)"
+          }
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 10,
+          "tag": "pierce_textbook",
+          "description": "貫通学習状態"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 8,
+          "buff_type": "pierce_dmg_buff",
+          "value_list": [
+            0.1479,
+            0.1593,
+            0.1707,
+            0.182,
+            0.1934,
+            0.2048,
+            0.2162,
+            0.2275,
+            0.2389,
+            0.2503
+          ],
+          "duration": 10,
+          "tag": "zwei_treasure_burst_pierce_dmg"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "reload_time": 1.5,
+    "damage_rate": 1.0075,
+    "pellets_per_shot": 10,
+    "max_ammo": 9,
+    "core_damage_rate": 2.0
+  }
+}

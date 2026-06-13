@@ -1,0 +1,301 @@
+{
+  "name": "メイデン：アイスローズ",
+  "weapon_type": "RL",
+  "burst_stage": "3",
+  "element": "Electric",
+  "class": "Defender",
+  "company": "エリシオン",
+  "squad": "エクスターナー",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: メディテーション (B1突入/MP0)",
+      "trigger_type": "on_burst_1_enter",
+      "trigger_value": 0,
+      "condition": {
+        "stack_name": "mir_mp",
+        "stack_max": 0
+      },
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 1,
+        "duration": 99999,
+        "stack_name": "mir_mp",
+        "max_stack": 12,
+        "stack_amount": 1,
+        "tag": "mir_mp",
+        "description": "バーストI突入時、MPが0ならMPを1回復"
+      }
+    },
+    {
+      "name": "S1: メディテーション (FB発動/MP1以上)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "condition": {
+        "self_stack_min": 1,
+        "stack_name": "mir_mp"
+      },
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 1,
+        "duration": 99999,
+        "stack_name": "mir_mp",
+        "max_stack": 12,
+        "stack_amount": 1,
+        "tag": "mir_mp",
+        "description": "フルバースト発動時、MPが1以上ならMPを1チャージ"
+      }
+    },
+    {
+      "name": "S1: メディテーション (フルチャージ6回)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 6,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "max_hp_rate",
+        "value_list": [
+          0.0374,
+          0.0403,
+          0.0432,
+          0.0461,
+          0.049,
+          0.0519,
+          0.0547,
+          0.0576,
+          0.0605,
+          0.0634
+        ],
+        "duration": 15,
+        "stack_name": "mir_meditation_hp",
+        "max_stack": 10,
+        "stack_amount": 1,
+        "tag": "mir_meditation_hp",
+        "description": "フルチャージ攻撃6回ごとに、自分に最大HPのみ上昇を1スタック付与"
+      }
+    },
+    {
+      "name": "S2: ブレス・ユー (MPチャージ時)",
+      "trigger_type": "stack_count",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_stack_name": "mir_mp",
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Electric",
+            "exclude_self": true
+          },
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "elemental_buff",
+            "value_list": [
+              0.242,
+              0.2606,
+              0.2791,
+              0.2977,
+              0.3162,
+              0.3348,
+              0.3533,
+              0.3719,
+              0.3904,
+              0.409
+            ],
+            "duration": 10,
+            "description": "MPチャージ時、自分を除く電撃コードの味方全体に有利コード攻撃ダメージバフ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "element": "Electric",
+            "exclude_self": true
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "atk_buff_fixed",
+            "value_list": [
+              0.1235,
+              0.133,
+              0.1425,
+              0.152,
+              0.1615,
+              0.171,
+              0.1805,
+              0.19,
+              0.1995,
+              0.209
+            ],
+            "duration": 10,
+            "scale_by_caster_stats": true,
+            "stat_type": "base",
+            "target_stat": "atk",
+            "description": "MPチャージ時、自分を除く電撃コードの味方全体にスキル発動者基準の攻撃力バフ"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: ブレス・ユー (フルチャージ攻撃)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 6,
+        "multiplier_list": [
+          3.2358,
+          3.4848,
+          3.7337,
+          3.9826,
+          4.2316,
+          4.4805,
+          4.7294,
+          4.9784,
+          5.2273,
+          5.4762
+        ],
+        "is_skill_damage": true,
+        "description": "フルチャージ攻撃1回ごとに、照準線に最も近い敵1機へ追加ダメージ"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: ダイヤモンドダスト",
+    "trigger_type": "on_use_burst_skill",
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_stack_min": 1,
+          "stack_name": "mir_mp"
+        },
+        "kwargs": {
+          "buff_type": "atk_buff_fixed",
+          "value": 0.1,
+          "duration": 0,
+          "scale_by_caster_stats": true,
+          "stat_type": "finally",
+          "target_stat": "max_hp",
+          "tag": "mir_burst_hp_to_atk_temp",
+          "description": "バーストダメージ計算用: スキル発動者の最終最大HP10%を攻撃力に一時加算"
+        }
+      },
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "condition": {
+          "self_stack_min": 1,
+          "stack_name": "mir_mp"
+        },
+        "kwargs": {
+          "effect_no": 7,
+          "multiplier_list": [
+            8.112,
+            8.736,
+            9.36,
+            9.984,
+            10.608,
+            11.232,
+            11.856,
+            12.48,
+            13.104,
+            13.728
+          ],
+          "loop_count_from_stack": "mir_mp",
+          "is_skill_damage": true,
+          "force_full_burst": true,
+          "description": "所持MP数分の連続攻撃。攻撃力には最終最大HP10%を一時加算"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_stack_min": 1,
+          "stack_name": "mir_mp"
+        },
+        "kwargs": {
+          "effect_no": 4,
+          "buff_type": "elemental_buff",
+          "value_list": [
+            0.1872,
+            0.2016,
+            0.216,
+            0.2304,
+            0.2448,
+            0.2592,
+            0.2736,
+            0.288,
+            0.3024,
+            0.3168
+          ],
+          "duration": 10,
+          "description": "MP使用後、自分に有利コード攻撃ダメージバフ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "condition": {
+          "self_stack_min": 1,
+          "stack_name": "mir_mp"
+        },
+        "kwargs": {
+          "effect_no": 5,
+          "buff_type": "atk_buff_fixed",
+          "value_list": [
+            0.0189,
+            0.0203,
+            0.0218,
+            0.0232,
+            0.0247,
+            0.0262,
+            0.0276,
+            0.0291,
+            0.0305,
+            0.032
+          ],
+          "duration": 10,
+          "scale_by_caster_stats": true,
+          "stat_type": "finally",
+          "target_stat": "max_hp",
+          "description": "MP使用後、自分にスキル発動者の最終最大HP基準の攻撃力バフ"
+        }
+      },
+      {
+        "effect_type": "set_stack",
+        "target": "self",
+        "kwargs": {
+          "stack_name": "mir_mp",
+          "value": 0,
+          "description": "バーストスキル使用後、蓄積したMPをすべて消滅"
+        }
+      }
+    ]
+  }
+}

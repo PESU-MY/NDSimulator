@@ -1,0 +1,396 @@
+{
+  "name": "トリナ",
+  "weapon_type": "RL",
+  "burst_stage": "2",
+  "element": "Electric",
+  "class": "Supporter",
+  "company": "ミシリス",
+  "squad": "ボタニックガーデン",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 0.83,
+    "damage_rate": 0.6859,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: ネイチャーズグレイス (FB終了時)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "regenerate",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "value_list": [
+          0.024,
+          0.0258,
+          0.0277,
+          0.0295,
+          0.0314,
+          0.0332,
+          0.0351,
+          0.0369,
+          0.0388,
+          0.0406
+        ],
+        "duration": 5,
+        "interval": 1,
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "max_hp",
+        "description": "フルバースト終了時、味方全体にスキル発動者の最終最大HP基準の持続回復"
+      }
+    },
+    {
+      "name": "S1: ネイチャーズグレイス (HP30%以下)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "effect_type": "heal",
+      "target": "allies",
+      "target_condition": {
+        "type": "lowest_hp_ratio",
+        "count": 2,
+        "hp_ratio_max": 0.3
+      },
+      "kwargs": {
+        "effect_no": 2,
+        "value_list": [
+          0.012,
+          0.0129,
+          0.0138,
+          0.0148,
+          0.0157,
+          0.0166,
+          0.0175,
+          0.0185,
+          0.0194,
+          0.0203
+        ],
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "max_hp",
+        "description": "フルチャージ攻撃時、HP割合が低い味方2機のうちHP30%以下の対象を回復"
+      }
+    },
+    {
+      "name": "S1: ネイチャーズグレイス (HP50%以下)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "effect_type": "heal",
+      "target": "allies",
+      "target_condition": {
+        "type": "lowest_hp_ratio",
+        "count": 2,
+        "hp_ratio_max": 0.5
+      },
+      "kwargs": {
+        "effect_no": 3,
+        "value_list": [
+          0.0103,
+          0.0109,
+          0.0115,
+          0.0121,
+          0.0127,
+          0.0133,
+          0.0139,
+          0.0145,
+          0.0151,
+          0.0157
+        ],
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "max_hp",
+        "description": "フルチャージ攻撃時、HP割合が低い味方2機のうちHP50%以下の対象を回復"
+      }
+    },
+    {
+      "name": "S2: ピースフルツリー (電撃AR最大HP)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "element": "Electric",
+        "weapon_type": "AR"
+      },
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "max_hp_fixed",
+        "value_list": [
+          0.2657,
+          0.2862,
+          0.3066,
+          0.3271,
+          0.3475,
+          0.368,
+          0.3884,
+          0.4089,
+          0.4293,
+          0.4498
+        ],
+        "duration": 99999,
+        "scale_by_caster_stats": true,
+        "stat_type": "finally",
+        "target_stat": "max_hp",
+        "description": "戦闘開始時、電撃コードのARを使用する味方全体に最大HPのみ上昇"
+      }
+    },
+    {
+      "name": "S2: ピースフルツリー (左端電撃AR無敵)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "target_condition": {
+        "type": "first_from_left",
+        "count": 1,
+        "element": "Electric",
+        "weapon_type": "AR"
+      },
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 1,
+        "duration": 2,
+        "tag": "invincible",
+        "description": "部隊の左から最初に見つかる電撃コードARの味方1機に無敵。現状は受ダメージ処理がないため状態タグとして管理"
+      }
+    },
+    {
+      "name": "S2: ピースフルツリー (バースト使用時/左端電撃AR)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "type": "first_from_left",
+        "count": 1,
+        "element": "Electric",
+        "weapon_type": "AR"
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "first_from_left",
+            "count": 1,
+            "element": "Electric",
+            "weapon_type": "AR"
+          },
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "atk_dmg_buff",
+            "value_list": [
+              0.5564,
+              0.5992,
+              0.642,
+              0.6848,
+              0.7276,
+              0.7704,
+              0.8132,
+              0.856,
+              0.8987,
+              0.9415
+            ],
+            "duration": 10,
+            "description": "バースト使用時、左から最初の電撃AR味方に攻撃ダメージバフ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "first_from_left",
+            "count": 1,
+            "element": "Electric",
+            "weapon_type": "AR"
+          },
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "reload_speed_rate",
+            "value_list": [
+              0.3003,
+              0.3234,
+              0.3465,
+              0.3696,
+              0.3927,
+              0.4158,
+              0.4389,
+              0.462,
+              0.4851,
+              0.5082
+            ],
+            "duration": 10,
+            "description": "バースト使用時、左から最初の電撃AR味方にリロード速度バフ"
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: マザリーフォレスト",
+    "trigger_type": "on_use_burst_skill",
+    "cooldown_time": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 7,
+          "buff_type": "max_hp_fixed",
+          "value_list": [
+            0.119,
+            0.1282,
+            0.1373,
+            0.1465,
+            0.1556,
+            0.1648,
+            0.174,
+            0.1831,
+            0.1923,
+            0.2014
+          ],
+          "duration": 10,
+          "scale_by_caster_stats": true,
+          "stat_type": "finally",
+          "target_stat": "max_hp",
+          "description": "味方全体にスキル発動者基準の最大HPのみ上昇"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "kwargs": {
+          "effect_no": 8,
+          "buff_type": "atk_dmg_buff",
+          "value_list": [
+            0.1235,
+            0.133,
+            0.1425,
+            0.152,
+            0.1615,
+            0.171,
+            0.1805,
+            0.19,
+            0.1995,
+            0.209
+          ],
+          "duration": 10,
+          "description": "味方全体に攻撃ダメージバフ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "condition": {
+          "enemy_count_max": 1
+        },
+        "kwargs": {
+          "effect_no": 9,
+          "buff_type": "enemy_wide_burst_dmg_buff",
+          "value_list": [
+            2.574,
+            2.772,
+            2.97,
+            3.168,
+            3.366,
+            3.564,
+            3.762,
+            3.96,
+            4.158,
+            4.356
+          ],
+          "duration": 5,
+          "tag": "trina_rooting",
+          "description": "根張り: 敵全体バーストダメージバフ。現状の単体敵設定ではこちらが発動"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "condition": {
+          "enemy_count_min": 2
+        },
+        "kwargs": {
+          "effect_no": 10,
+          "buff_type": "enemy_wide_burst_dmg_buff",
+          "value_list": [
+            0.3809,
+            0.4102,
+            0.4395,
+            0.4688,
+            0.4981,
+            0.5274,
+            0.5567,
+            0.586,
+            0.6153,
+            0.6446
+          ],
+          "duration": 5,
+          "tag": "trina_root_rot",
+          "description": "根腐れ: 敵2機以上の場合の敵全体バーストダメージバフ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "target_condition": {
+          "element": "Electric",
+          "weapon_type": "AR"
+        },
+        "kwargs": {
+          "effect_no": 11,
+          "buff_type": "hit_rate_buff",
+          "value_list": [
+            0.2676,
+            0.2882,
+            0.3088,
+            0.3294,
+            0.35,
+            0.3706,
+            0.3912,
+            0.4118,
+            0.4324,
+            0.453
+          ],
+          "duration": 10,
+          "description": "電撃コードARの味方全体に命中率バフ"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "allies",
+        "target_condition": {
+          "element": "Electric",
+          "weapon_type": "AR"
+        },
+        "kwargs": {
+          "effect_no": 12,
+          "buff_type": "max_ammo_fixed",
+          "value_list": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+          ],
+          "duration": 10,
+          "description": "電撃コードARの味方全体に最大装弾数固定値バフ"
+        }
+      }
+    ]
+  }
+}

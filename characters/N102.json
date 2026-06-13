@@ -4,6 +4,7 @@
   "weapon_type": "RL",
   "element": "Water",
   "class": "Supporter",
+  "company": "ミシリス",
   "squad": "リコール＆リリーズ",
   "stats": {
     "max_ammo": 6,
@@ -26,7 +27,7 @@
         {
           "effect_type": "buff",
           "kwargs": {
-            "buff_type": "max_ammo_fixed", 
+            "buff_type": "max_ammo_fixed",
             "value": 3,
             "duration": 10.0
           },
@@ -41,10 +42,21 @@
           "kwargs": {
             "buff_type": "crit_dmg_buff",
             "effect_no": 1,
-            "value_list": [0.0245, 0.0333, 0.042, 0.0508, 0.0596, 0.0683, 0.0771, 0.0859, 0.0946, 0.1034],
+            "value_list": [
+              0.0245,
+              0.0333,
+              0.042,
+              0.0508,
+              0.0596,
+              0.0683,
+              0.0771,
+              0.0859,
+              0.0946,
+              0.1034
+            ],
             "duration": 10
           },
-          "target": "allies" 
+          "target": "allies"
         }
       ]
     },
@@ -57,7 +69,18 @@
       "kwargs": {
         "buff_type": "charge_dmg_buff",
         "effect_no": 2,
-        "value_list": [0.113, 0.1292, 0.1453, 0.1615, 0.1776, 0.1938, 0.21, 0.2261, 0.2423, 0.2584],
+        "value_list": [
+          0.113,
+          0.1292,
+          0.1453,
+          0.1615,
+          0.1776,
+          0.1938,
+          0.21,
+          0.2261,
+          0.2423,
+          0.2584
+        ],
         "duration": 5.0
       },
       "stages": []
@@ -72,7 +95,18 @@
     "kwargs": {
       "buff_type": "atk_buff_rate",
       "effect_no": 3,
-      "value_list": [0.1131, 0.1293, 0.1454, 0.1616, 0.1777, 0.1939, 0.2101, 0.2262, 0.2424, 0.2586],
+      "value_list": [
+        0.1131,
+        0.1293,
+        0.1454,
+        0.1616,
+        0.1777,
+        0.1939,
+        0.2101,
+        0.2262,
+        0.2424,
+        0.2586
+      ],
       "duration": 10.0
     },
     "stages": [],

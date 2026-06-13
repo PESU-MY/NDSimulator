@@ -1,0 +1,253 @@
+{
+  "name": "ディーゼル_宝物",
+  "weapon_type": "MG",
+  "burst_stage": "2",
+  "element": "Wind",
+  "class": "Defender",
+  "company": "エリシオン",
+  "squad": "インフィニティレール",
+  "treasure": true,
+  "base_character": "ディーゼル",
+  "stats": {
+    "max_ammo": 300,
+    "reload_time": 2.16,
+    "damage_rate": 0.0538,
+    "core_damage_rate": 2.0
+  },
+  "conversion_notes": [
+    "通常版ディーゼル.jsonの構造に準拠し、宝物強化後の条件と効果量を反映。",
+    "攻撃を受けた時の回復は被弾トリガーがないため未発動。",
+    "ヘイト状態はtauntタグで近似。",
+    "通常攻撃命中回数はpellet_hitで管理。",
+    "最終攻撃力が最も高い敵5機は、単体ターゲット環境では5回ダメージとして処理。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: イチゴの香りの誘惑 (FB開始)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "def_buff",
+        "value_list": [
+          0.1512,
+          0.1632,
+          0.1752,
+          0.1872,
+          0.1992,
+          0.2112,
+          0.2232,
+          0.2352,
+          0.2472,
+          0.2592
+        ],
+        "duration": 10,
+        "tag": "diesel_treasure_def",
+        "description": "フルバーストタイム発動時、自分に防御力UP"
+      }
+    },
+    {
+      "name": "Skill 1: イチゴの香りの誘惑 (ヘイト/被撃時)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "condition": {
+        "self_has_tag": "taunt"
+      },
+      "effect_type": "heal",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [
+          0.0756,
+          0.0816,
+          0.0876,
+          0.0936,
+          0.0996,
+          0.1056,
+          0.1116,
+          0.1176,
+          0.1236,
+          0.1296
+        ],
+        "description": "ヘイト状態で攻撃を受けた時、自分を回復。被弾トリガーがないため未発動"
+      }
+    },
+    {
+      "name": "Skill 1: イチゴの香りの誘惑 (ヘイト/150回命中)",
+      "trigger_type": "pellet_hit",
+      "trigger_value": 150,
+      "condition": {
+        "self_has_tag": "taunt"
+      },
+      "effect_type": "increase_current_stack_count",
+      "target": "self",
+      "kwargs": {
+        "value": 1,
+        "description": "ヘイト状態で通常攻撃150回命中時、現在有効なスタック可能バフのスタック量+1"
+      }
+    },
+    {
+      "name": "Skill 2: イチゴキャンディのパワー (70回命中)",
+      "trigger_type": "pellet_hit",
+      "trigger_value": 70,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "max_ammo_rate",
+        "stack_name": "diesel_treasure_strawberry_candy",
+        "max_stack": 10,
+        "value_list": [
+          0.2835,
+          0.315,
+          0.3465,
+          0.378,
+          0.4095,
+          0.441,
+          0.4725,
+          0.504,
+          0.5355,
+          0.567
+        ],
+        "duration": 10,
+        "tag": "diesel_treasure_strawberry_candy",
+        "description": "イチゴキャンディ：最大装弾数UP。10スタックまで"
+      }
+    },
+    {
+      "name": "Skill 2: イチゴキャンディのパワー (フルスタック)",
+      "trigger_type": "stack_count",
+      "trigger_value": 10,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "trigger_stack_name": "diesel_treasure_strawberry_candy",
+        "description": "イチゴキャンディがフルスタックになった時、スタック解除後に味方全体を支援"
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff",
+          "target": "self",
+          "kwargs": {
+            "tag": "diesel_treasure_strawberry_candy"
+          }
+        },
+        {
+          "effect_type": "ammo_charge",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 4,
+            "value_list": [
+              0.4331,
+              0.4812,
+              0.5293,
+              0.5775,
+              0.6256,
+              0.6737,
+              0.7218,
+              0.77,
+              0.8181,
+              0.8662
+            ],
+            "description": "味方全体に弾丸チャージ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 5,
+            "buff_type": "pierce_dmg_buff",
+            "value_list": [
+              0.177,
+              0.1907,
+              0.2043,
+              0.218,
+              0.2317,
+              0.2453,
+              0.259,
+              0.2727,
+              0.2863,
+              0.3
+            ],
+            "duration": 10,
+            "tag": "diesel_treasure_pierce_dmg"
+          }
+        }
+      ]
+    },
+    {
+      "name": "バースト: ストロベリーショック",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 20.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 6,
+            "multiplier_list": [
+              1.5419,
+              1.7036,
+              1.8652,
+              2.0268,
+              2.1885,
+              2.3501,
+              2.5117,
+              2.6734,
+              2.835,
+              2.9966
+            ],
+            "loop_count": 5,
+            "description": "最終攻撃力が最も高い敵5機にダメージ。単体ターゲット環境では5回ダメージとして処理"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "max_hp_rate",
+            "value_list": [
+              0.6572,
+              0.6953,
+              0.7335,
+              0.7716,
+              0.8098,
+              0.8479,
+              0.8861,
+              0.9242,
+              0.9624,
+              1.0005
+            ],
+            "duration": 10,
+            "tag": "diesel_treasure_max_hp_only",
+            "description": "最大HPのみUP。現在HP同期は行わない"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 10,
+            "tag": "taunt",
+            "description": "ヘイト：敵全体を挑発"
+          }
+        }
+      ]
+    }
+  ]
+}

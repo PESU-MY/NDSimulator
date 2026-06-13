@@ -4,12 +4,13 @@
   "burst_stage": "2",
   "element": "Fire",
   "class": "Supporter",
+  "company": "ピルグリム",
   "squad": "オールドテイルズ",
   "stats": {
     "max_ammo": 60,
-    "reload_time": 2.00,
+    "reload_time": 2.0,
     "damage_rate": 0.1791,
-    "core_damage_rate": 2.00
+    "core_damage_rate": 2.0
   },
   "skills": [
     {
@@ -81,7 +82,18 @@
           "kwargs": {
             "effect_no": 1,
             "buff_type": "dummy_buff",
-            "value_list": [0.2302, 0.2479, 0.2656, 0.2833, 0.301, 0.3187, 0.3364, 0.3542, 0.3719, 0.3896],
+            "value_list": [
+              0.2302,
+              0.2479,
+              0.2656,
+              0.2833,
+              0.301,
+              0.3187,
+              0.3364,
+              0.3542,
+              0.3719,
+              0.3896
+            ],
             "duration": 1.1
           }
         },
@@ -91,7 +103,18 @@
           "kwargs": {
             "effect_no": 2,
             "buff_type": "pierce_dmg_buff",
-            "value_list": [0.286, 0.308, 0.33, 0.352, 0.374, 0.396, 0.418, 0.44, 0.462, 0.484],
+            "value_list": [
+              0.286,
+              0.308,
+              0.33,
+              0.352,
+              0.374,
+              0.396,
+              0.418,
+              0.44,
+              0.462,
+              0.484
+            ],
             "duration": 1.1
           }
         }
@@ -107,7 +130,18 @@
         "effect_no": 3,
         "buff_type": "atk_buff_rate",
         "tag": "過熱I",
-        "value_list": [0.0915, 0.0985, 0.1056, 0.1126, 0.1196, 0.1267, 0.1337, 0.1407, 0.1478, 0.1548],
+        "value_list": [
+          0.0915,
+          0.0985,
+          0.1056,
+          0.1126,
+          0.1196,
+          0.1267,
+          0.1337,
+          0.1407,
+          0.1478,
+          0.1548
+        ],
         "duration": 999,
         "remove_on_reload": true
       }
@@ -117,40 +151,61 @@
       "trigger_type": "shot_count",
       "trigger_value": 30,
       "condition": {
-        "self_has_tag":"perfect_calculation"
+        "self_has_tag": "perfect_calculation"
       },
       "effect_type": "cumulative_stages",
-      "stages":[
+      "stages": [
         {
-        "condition": {
-        "self_has_tag": "過熱I" 
-        },
-        "effect_type": "buff",
-        "target": "self",
-        "kwargs": {
+          "condition": {
+            "self_has_tag": "過熱I"
+          },
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
             "effect_no": 4,
             "buff_type": "atk_buff_rate",
-            "value_list": [0.1221, 0.1314, 0.1409, 0.1503, 0.1597, 0.169, 0.1784, 0.1879, 0.1972, 0.2066],
+            "value_list": [
+              0.1221,
+              0.1314,
+              0.1409,
+              0.1503,
+              0.1597,
+              0.169,
+              0.1784,
+              0.1879,
+              0.1972,
+              0.2066
+            ],
             "duration": 999,
-        "remove_on_reload": true
-        }
-      },
-      {
-        "condition": {
-        "self_has_tag": "過熱I" 
+            "remove_on_reload": true
+          }
         },
-        "effect_type": "buff",
-        "target": "self",
-        "kwargs": {
+        {
+          "condition": {
+            "self_has_tag": "過熱I"
+          },
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
             "effect_no": 5,
             "buff_type": "atk_dmg_buff",
-            "value_list": [0.182, 0.196, 0.21, 0.224, 0.238, 0.252, 0.266, 0.28, 0.294, 0.308],
+            "value_list": [
+              0.182,
+              0.196,
+              0.21,
+              0.224,
+              0.238,
+              0.252,
+              0.266,
+              0.28,
+              0.294,
+              0.308
+            ],
             "duration": 999,
-        "remove_on_reload": true
+            "remove_on_reload": true
+          }
         }
-      }
       ]
-      
     },
     {
       "name": "バースト: インペリアル・レギオン",
@@ -203,7 +258,18 @@
           "kwargs": {
             "effect_no": 6,
             "buff_type": "pierce_dmg_buff",
-            "value_list": [0.312, 0.336, 0.36, 0.384, 0.408, 0.432, 0.456, 0.48, 0.504, 0.528],
+            "value_list": [
+              0.312,
+              0.336,
+              0.36,
+              0.384,
+              0.408,
+              0.432,
+              0.456,
+              0.48,
+              0.504,
+              0.528
+            ],
             "duration": 10
           }
         },
@@ -213,7 +279,18 @@
           "kwargs": {
             "effect_no": 7,
             "buff_type": "crit_rate_buff",
-            "value_list": [0.5324, 0.5679, 0.6034, 0.6389, 0.6744, 0.7099, 0.7454, 0.7809, 0.8164, 0.8519],
+            "value_list": [
+              0.5324,
+              0.5679,
+              0.6034,
+              0.6389,
+              0.6744,
+              0.7099,
+              0.7454,
+              0.7809,
+              0.8164,
+              0.8519
+            ],
             "duration": 10
           }
         },
@@ -223,7 +300,18 @@
           "kwargs": {
             "effect_no": 8,
             "buff_type": "atk_dmg_buff",
-            "value_list": [0.2848, 0.3067, 0.3286, 0.3505, 0.3725, 0.3944, 0.4163, 0.4382, 0.4601, 0.482],
+            "value_list": [
+              0.2848,
+              0.3067,
+              0.3286,
+              0.3505,
+              0.3725,
+              0.3944,
+              0.4163,
+              0.4382,
+              0.4601,
+              0.482
+            ],
             "duration": 10
           }
         },
@@ -233,7 +321,18 @@
           "kwargs": {
             "effect_no": 9,
             "buff_type": "pierce_dmg_buff",
-            "value_list": [0.2363, 0.2544, 0.2726, 0.2908, 0.309, 0.3272, 0.3453, 0.3635, 0.3817, 0.3998],
+            "value_list": [
+              0.2363,
+              0.2544,
+              0.2726,
+              0.2908,
+              0.309,
+              0.3272,
+              0.3453,
+              0.3635,
+              0.3817,
+              0.3998
+            ],
             "duration": 10
           }
         },

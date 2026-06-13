@@ -1,0 +1,236 @@
+{
+  "name": "たきな",
+  "weapon_type": "SR",
+  "burst_stage": "2",
+  "element": "Iron",
+  "class": "Supporter",
+  "manufacturer": "アブノーマル",
+  "company": "アブノーマル",
+  "squad": "喫茶リコリコ",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0
+  },
+  "skills": [
+    {
+      "name": "S1: 戦闘補正 (戦闘開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [
+          0.4729,
+          0.5093,
+          0.5457,
+          0.5821,
+          0.6185,
+          0.6549,
+          0.6912,
+          0.7276,
+          0.764,
+          0.8004
+        ],
+        "duration": 5
+      }
+    },
+    {
+      "name": "S1: 戦闘補正 (FB終了)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [
+          0.4729,
+          0.5093,
+          0.5457,
+          0.5821,
+          0.6185,
+          0.6549,
+          0.6912,
+          0.7276,
+          0.764,
+          0.8004
+        ],
+        "duration": 5
+      }
+    },
+    {
+      "name": "S1: 戦闘補正 (FB発動)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "ignore_def_dmg_buff",
+        "value_list": [
+          0.2071,
+          0.223,
+          0.239,
+          0.2549,
+          0.2708,
+          0.2868,
+          0.3027,
+          0.3186,
+          0.3346,
+          0.3505
+        ],
+        "duration": 15
+      }
+    },
+    {
+      "name": "S2: 戦場支配 (発動条件不明)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "enemy",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "スキル説明に発動タイミングがないため無効化。敵全体の受けるダメージUP/気絶、味方全体の防御力無視ダメージUP"
+      },
+      "stages": [
+        {
+          "effect_type": "debuff",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "taken_dmg_debuff",
+            "value_list": [
+              0.0596,
+              0.0642,
+              0.0688,
+              0.0733,
+              0.0779,
+              0.0825,
+              0.0871,
+              0.0917,
+              0.0963,
+              0.1009
+            ],
+            "duration": 5
+          }
+        },
+        {
+          "effect_type": "stun",
+          "target": "enemy",
+          "kwargs": {
+            "duration": 2,
+            "tag": "takina_battlefield_control_stun"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 4,
+            "buff_type": "ignore_def_dmg_buff",
+            "value_list": [
+              0.8301,
+              0.894,
+              0.9579,
+              1.0217,
+              1.0856,
+              1.1494,
+              1.2133,
+              1.2772,
+              1.341,
+              1.4049
+            ],
+            "duration": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "Burst追加: 命中時受けるダメージUP",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "condition": {
+        "self_has_tag": "takina_suppression_weapon"
+      },
+      "effect_type": "debuff",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 6,
+        "buff_type": "taken_dmg_debuff",
+        "value_list": [
+          0.0356,
+          0.0384,
+          0.0411,
+          0.0439,
+          0.0466,
+          0.0494,
+          0.0521,
+          0.0549,
+          0.0576,
+          0.0604
+        ],
+        "duration": 5,
+        "description": "使用武器変更中の通常攻撃命中時を、射撃時発動として近似"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 制圧開始",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 20.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "weapon_change",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 5,
+          "duration": 10,
+          "tag": "takina_suppression_weapon",
+          "weapon_data": {
+            "name": "制圧開始",
+            "weapon_type": "SR",
+            "weapon_class": "SR",
+            "type": "CHARGE",
+            "multiplier_list": [
+              1.1856,
+              1.2768,
+              1.368,
+              1.4592,
+              1.5504,
+              1.6416,
+              1.7328,
+              1.824,
+              1.9152,
+              2.0064
+            ],
+            "reload_frames": 120,
+            "windup_frames": 12,
+            "winddown_frames": 10,
+            "charge_time": 1.0,
+            "charge_mult": 2.5
+          }
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "is_ignore_def",
+          "value": 1,
+          "duration": 10,
+          "tag": "takina_ignore_def_attack"
+        }
+      }
+    ]
+  }
+}

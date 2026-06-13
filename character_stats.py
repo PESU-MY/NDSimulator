@@ -300,6 +300,8 @@ class CharacterStatsMixin:
             fixed = 0
             if frame_type in ['reload', 'charge']:
                 fixed = self.buff_manager.get_total_value_with_filter(f'{frame_type}_speed_fixed', frame, allowed_tags)
+                if frame_type == 'charge':
+                    fixed += self.buff_manager.get_total_value_with_filter('charge_time_cut', frame, allowed_tags) * 60
 
             if rate <= -1.0: rate = -0.99
             
@@ -317,6 +319,8 @@ class CharacterStatsMixin:
         fixed = 0
         if frame_type in ['reload', 'charge']:
             fixed = self.buff_manager.get_total_value(f'{frame_type}_speed_fixed', frame)
+            if frame_type == 'charge':
+                fixed += self.buff_manager.get_total_value('charge_time_cut', frame) * 60
         
         if frame_type == 'attack':
             return self.calculate_reduced_frame_attack(original_frame, rate, fixed)

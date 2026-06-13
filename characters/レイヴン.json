@@ -1,9 +1,10 @@
 {
-  "name": "Raven",
+  "name": "レイヴン",
   "burst_stage": "3",
   "weapon_type": "RL",
   "element": "Iron",
   "class": "Attacker",
+  "company": "アブノーマル",
   "squad": "Matis",
   "stats": {
     "base_atk": 25554,
@@ -22,8 +23,19 @@
       "effect_type": "stack_dot",
       "target": "enemy",
       "kwargs": {
-        "effect_no" : 1, 
-        "multiplier_list": [0.4045, 0.4356, 0.4667, 0.4978, 0.529, 0.5601, 0.5912, 0.6223, 0.6534, 0.6846],
+        "effect_no": 1,
+        "multiplier_list": [
+          0.4045,
+          0.4356,
+          0.4667,
+          0.4978,
+          0.529,
+          0.5601,
+          0.5912,
+          0.6223,
+          0.6534,
+          0.6846
+        ],
         "duration": 5,
         "interval": 1,
         "stack_name": "Raven_DoT",
@@ -40,8 +52,19 @@
       "target": "self",
       "kwargs": {
         "buff_type": "atk_buff_rate",
-        "effect_no" : 2, 
-        "value_list": [0.2808, 0.3024, 0.324, 0.3456, 0.3672, 0.3888, 0.4104, 0.432, 0.4536, 0.4752],
+        "effect_no": 2,
+        "value_list": [
+          0.2808,
+          0.3024,
+          0.324,
+          0.3456,
+          0.3672,
+          0.3888,
+          0.4104,
+          0.432,
+          0.4536,
+          0.4752
+        ],
         "duration": 10
       }
     },
@@ -53,8 +76,19 @@
       "target": "self",
       "kwargs": {
         "buff_type": "part_dmg_buff",
-        "effect_no" : 3, 
-        "value_list": [0.1248, 0.1344, 0.144, 0.1536, 0.1632, 0.1728, 0.1824, 0.192, 0.2016, 0.2112],
+        "effect_no": 3,
+        "value_list": [
+          0.1248,
+          0.1344,
+          0.144,
+          0.1536,
+          0.1632,
+          0.1728,
+          0.1824,
+          0.192,
+          0.2016,
+          0.2112
+        ],
         "duration": 9999,
         "tag": "sharp_senses"
       }
@@ -67,8 +101,19 @@
       "target": "self",
       "kwargs": {
         "buff_type": "part_dmg_buff",
-        "effect_no" : 4, 
-        "value_list": [0.1248, 0.1344, 0.144, 0.1536, 0.1632, 0.1728, 0.1824, 0.192, 0.2016, 0.2112],
+        "effect_no": 4,
+        "value_list": [
+          0.1248,
+          0.1344,
+          0.144,
+          0.1536,
+          0.1632,
+          0.1728,
+          0.1824,
+          0.192,
+          0.2016,
+          0.2112
+        ],
         "duration": 5,
         "tag": "sharp_senses"
       }
@@ -82,11 +127,24 @@
       },
       "effect_type": "buff",
       "target": "self",
-      "remove_tags": ["sharp_senses"],
+      "remove_tags": [
+        "sharp_senses"
+      ],
       "kwargs": {
         "buff_type": "dot_dmg_buff",
-        "effect_no" : 5, 
-        "value_list": [0.2796, 0.3011, 0.3226, 0.3441, 0.3656, 0.3872, 0.4087, 0.4302, 0.4517, 0.4732],
+        "effect_no": 5,
+        "value_list": [
+          0.2796,
+          0.3011,
+          0.3226,
+          0.3441,
+          0.3656,
+          0.3872,
+          0.4087,
+          0.4302,
+          0.4517,
+          0.4732
+        ],
         "duration": 15,
         "tag": "focused_fire"
       }
@@ -102,21 +160,45 @@
     "stages": [
       {
         "effect_type": "damage",
-        "effect_no" : 6, 
-        "multiplier_list": [2.909, 3.1328, 3.3566, 3.5804, 3.8041, 4.0279, 4.2517, 4.4755, 4.6992, 4.923],
-        "force_full_burst": true, 
+        "effect_no": 6,
+        "multiplier_list": [
+          2.909,
+          3.1328,
+          3.3566,
+          3.5804,
+          3.8041,
+          4.0279,
+          4.2517,
+          4.4755,
+          4.6992,
+          4.923
+        ],
+        "force_full_burst": true,
         "is_elemental": true
       },
       {
         "effect_type": "buff",
         "target": "self",
-        "remove_tags": ["focused_fire"],
+        "remove_tags": [
+          "focused_fire"
+        ],
         "kwargs": {
-            "buff_type": "dot_dmg_buff",
-            "effect_no" : 7, 
-            "value_list": [0.5285, 0.5691, 0.6098, 0.6504, 0.6911, 0.7318, 0.7724, 0.8131, 0.8537, 0.8944],
-            "duration": 10,
-            "tag": "an_mode"
+          "buff_type": "dot_dmg_buff",
+          "effect_no": 7,
+          "value_list": [
+            0.5285,
+            0.5691,
+            0.6098,
+            0.6504,
+            0.6911,
+            0.7318,
+            0.7724,
+            0.8131,
+            0.8537,
+            0.8944
+          ],
+          "duration": 10,
+          "tag": "an_mode"
         }
       }
     ]

@@ -3,6 +3,7 @@
 const state = {
   activeSlot: 0,
   activeFormation: 0,
+  libraryHidden: false,
   filter: "all",
   catalogFilters: {
     weaponType: "",
@@ -11,6 +12,7 @@ const state = {
     class: ""
   },
   catalog: [],
+  statusData: null,
   formations: [],
   results: [],
   additionalBuffs: [
@@ -33,6 +35,65 @@ const additionalBuffTypes = [
   { type: "reload_speed_rate", label: "リロード速度バフ", defaultValue: 100, unit: "%" },
   { type: "elemental_buff", label: "有利コードダメージバフ", defaultValue: 10, unit: "%" }
 ];
+
+const statusPartKeys = ["head", "body", "arms", "legs"];
+const statusPartLabels = {
+  head: "頭",
+  body: "胴",
+  arms: "腕",
+  legs: "足"
+};
+const statusClassAliases = {
+  Attacker: "Attacker",
+  "火力型": "Attacker",
+  Defender: "Defender",
+  "防御型": "Defender",
+  Supporter: "Supporter",
+  "支援型": "Supporter"
+};
+
+const filterIconMaps = {
+  weaponType: {
+    AR: "/icons/武器種/ICON_AR_small.png",
+    SMG: "/icons/武器種/ICON_SMG_small.png",
+    SG: "/icons/武器種/ICON_SG_small.png",
+    SR: "/icons/武器種/ICON_SR_small.png",
+    RL: "/icons/武器種/ICON_RL_small.png",
+    MG: "/icons/武器種/ICON_MG_small.png"
+  },
+  element: {
+    Fire: "/icons/属性/灼熱.png",
+    "灼熱": "/icons/属性/灼熱.png",
+    Water: "/icons/属性/水冷.png",
+    "水冷": "/icons/属性/水冷.png",
+    Electric: "/icons/属性/電撃.png",
+    "電撃": "/icons/属性/電撃.png",
+    Wind: "/icons/属性/風圧.png",
+    "風圧": "/icons/属性/風圧.png",
+    Iron: "/icons/属性/鉄甲.png",
+    "鉄甲": "/icons/属性/鉄甲.png"
+  },
+  company: {
+    Elysion: "/icons/企業/elysion_small.png",
+    "エリシオン": "/icons/企業/elysion_small.png",
+    Missilis: "/icons/企業/missilis_small.png",
+    "ミシリス": "/icons/企業/missilis_small.png",
+    Tetra: "/icons/企業/tetraline_small.png",
+    "テトラ": "/icons/企業/tetraline_small.png",
+    Pilgrim: "/icons/企業/pilgrim_small.png",
+    "ピルグリム": "/icons/企業/pilgrim_small.png",
+    Abnormal: "/icons/企業/abnormal_small.png",
+    "アブノーマル": "/icons/企業/abnormal_small.png"
+  },
+  class: {
+    Attacker: "/icons/型/Attacker.png",
+    "火力型": "/icons/型/Attacker.png",
+    Defender: "/icons/型/Defender.png",
+    "防御型": "/icons/型/Defender.png",
+    Supporter: "/icons/型/Supporter.png",
+    "支援型": "/icons/型/Supporter.png"
+  }
+};
 
 function yenNumber(value) {
   return new Intl.NumberFormat("ja-JP", { maximumFractionDigits: 0 }).format(value || 0);
@@ -125,6 +186,7 @@ function normalizeIndividualStatusSettings(settings) {
   const defaults = defaultIndividualStatusSettings();
   const source = settings && typeof settings === "object" ? settings : {};
   const equipment = source.equipment && typeof source.equipment === "object" ? source.equipment : {};
+  const overload = source.overload && typeof source.overload === "object" ? source.overload : {};
   return {
     ...defaults,
     ...source,
@@ -133,8 +195,32 @@ function normalizeIndividualStatusSettings(settings) {
       body: { ...defaults.equipment.body, ...(equipment.body || {}) },
       arms: { ...defaults.equipment.arms, ...(equipment.arms || {}) },
       legs: { ...defaults.equipment.legs, ...(equipment.legs || {}) }
+    },
+    overload: {
+      head: normalizeOverloadPartSettings(overload.head),
+      body: normalizeOverloadPartSettings(overload.body),
+      arms: normalizeOverloadPartSettings(overload.arms),
+      legs: normalizeOverloadPartSettings(overload.legs)
     }
   };
+}
+
+function normalizeOverloadPartSettings(partSettings) {
+  const defaults = [
+    { type: "", rank: 0 },
+    { type: "", rank: 0 },
+    { type: "", rank: 0 }
+  ];
+  const source = Array.isArray(partSettings) ? partSettings : [];
+  return defaults.map((entryDefaults, index) => {
+    const entry = source[index] && typeof source[index] === "object" ? source[index] : {};
+    return {
+      ...entryDefaults,
+      ...entry,
+      type: String(entry.type || entry.option || ""),
+      rank: Number.isFinite(Number(entry.rank)) ? Number(entry.rank) : 0
+    };
+  });
 }
 
 function selectionFromItem(item) {
@@ -156,6 +242,18 @@ function inputChecked(id) {
   return element ? element.checked : false;
 }
 
+function setInputValue(id, value) {
+  const element = document.getElementById(id);
+  if (!element || value === undefined || value === null) return;
+  element.value = value;
+}
+
+function setInputChecked(id, value) {
+  const element = document.getElementById(id);
+  if (!element) return;
+  element.checked = !!value;
+}
+
 function collectStatusSettings() {
   return {
     enabled: true,
@@ -174,6 +272,58 @@ function collectStatusSettings() {
       Abnormal: inputValue("companyResearchAbnormal", 0)
     }
   };
+}
+
+function applyStatusSettings(settings) {
+  if (!settings || typeof settings !== "object") return;
+  setInputValue("statusLevel", settings.level);
+  setInputValue("commonResearchLevel", settings.commonResearchLevel);
+
+  const classLevels = settings.classResearchLevels || {};
+  setInputValue("classResearchAttacker", classLevels.Attacker);
+  setInputValue("classResearchDefender", classLevels.Defender);
+  setInputValue("classResearchSupporter", classLevels.Supporter);
+
+  const companyLevels = settings.companyResearchLevels || {};
+  setInputValue("companyResearchElysion", companyLevels.Elysion);
+  setInputValue("companyResearchMissilis", companyLevels.Missilis);
+  setInputValue("companyResearchTetra", companyLevels.Tetra);
+  setInputValue("companyResearchPilgrim", companyLevels.Pilgrim);
+  setInputValue("companyResearchAbnormal", companyLevels.Abnormal);
+}
+
+function collectSharedSettings() {
+  return {
+    skillLevel: inputValue("skillLevel", 10),
+    enemyElement: inputValue("enemyElement", "None"),
+    enemyCoreSize: inputValue("enemyCoreSize", 3.0),
+    enemySize: inputValue("enemySize", 1),
+    enemyCount: inputValue("enemyCount", 1),
+    burstChargeTime: inputValue("burstChargeTime", 5.0),
+    crustOperationMode: inputValue("crustOperationMode", "None"),
+    partBreakMode: inputChecked("partBreakMode"),
+    specialMode: inputChecked("specialMode"),
+    statusSettings: collectStatusSettings(),
+    additionalBuffs: state.additionalBuffs.map(cloneAdditionalBuff)
+  };
+}
+
+function applySharedSettings(settings) {
+  if (!settings || typeof settings !== "object") return;
+  setInputValue("skillLevel", settings.skillLevel);
+  setInputValue("enemyElement", settings.enemyElement);
+  setInputValue("enemyCoreSize", settings.enemyCoreSize);
+  setInputValue("enemySize", settings.enemySize);
+  setInputValue("enemyCount", settings.enemyCount);
+  setInputValue("burstChargeTime", settings.burstChargeTime);
+  setInputValue("crustOperationMode", settings.crustOperationMode);
+  setInputChecked("partBreakMode", settings.partBreakMode);
+  setInputChecked("specialMode", settings.specialMode);
+  applyStatusSettings(settings.statusSettings);
+  if (Array.isArray(settings.additionalBuffs)) {
+    state.additionalBuffs = settings.additionalBuffs.map(cloneAdditionalBuff);
+    renderAdditionalBuffs();
+  }
 }
 
 function calculateSlotStats(selection) {
@@ -203,6 +353,36 @@ function stageMatchesItem(item, requestedStage) {
   const requested = String(requestedStage);
   if (itemStage === requested) return true;
   return itemStage === "∀" || itemStage === "ALL" || itemStage === "*" || itemStage === "all";
+}
+
+function isRapiRedHoodItem(item) {
+  return item?.name === "ラピ：レッドフード" || item?.file === "ラピ：レッドフード.json";
+}
+
+function hasOtherBaseBurstStage(slots, currentSlotIndex, requestedStage) {
+  return slots.some((selection, slotIndex) => {
+    if (!selection || slotIndex === currentSlotIndex) return false;
+    const item = findCatalogItem(selection);
+    return String(item?.burstStage || "") === String(requestedStage);
+  });
+}
+
+function effectiveBurstStageForSelection(selection, slotIndex, slots) {
+  const item = findCatalogItem(selection);
+  if (!item) return "";
+  if (isRapiRedHoodItem(item)) {
+    return hasOtherBaseBurstStage(slots, slotIndex, "1") ? "3" : "1";
+  }
+  return String(item.burstStage || "");
+}
+
+function stageMatchesSelection(selection, requestedStage, slotIndex, slots) {
+  const item = findCatalogItem(selection);
+  if (!item) return false;
+  const effectiveStage = effectiveBurstStageForSelection(selection, slotIndex, slots);
+  const requested = String(requestedStage);
+  if (effectiveStage === requested) return true;
+  return effectiveStage === "∀" || effectiveStage === "ALL" || effectiveStage === "*" || effectiveStage === "all";
 }
 
 function emptyRotation() {
@@ -235,7 +415,9 @@ function normalizeRotation(rotation) {
 function basicRotationForFormation(formation) {
   const rotation = emptyRotation();
   const firstForStage = (stage) => {
-    return formation.slots.findIndex((selection) => stageMatchesItem(findCatalogItem(selection), stage));
+    return formation.slots.findIndex((selection, slotIndex) => {
+      return stageMatchesSelection(selection, stage, slotIndex, formation.slots);
+    });
   };
 
   const b1 = firstForStage("1");
@@ -244,7 +426,7 @@ function basicRotationForFormation(formation) {
   if (b2 >= 0) rotation[2].push(b2);
 
   formation.slots.forEach((selection, index) => {
-    if (rotation[3].length < 2 && stageMatchesItem(findCatalogItem(selection), "3")) {
+    if (rotation[3].length < 2 && stageMatchesSelection(selection, "3", index, formation.slots)) {
       rotation[3].push(index);
     }
   });
@@ -260,7 +442,7 @@ function cleanDetailedRotation(formation) {
   const current = normalizeRotation(formation.rotation);
   ["1", "2", "3"].forEach((stage) => {
     current[stage] = current[stage].filter((slotIndex) => {
-      return stageMatchesItem(findCatalogItem(formation.slots[slotIndex]), stage);
+      return stageMatchesSelection(formation.slots[slotIndex], stage, slotIndex, formation.slots);
     });
   });
   formation.rotation = current;
@@ -282,6 +464,7 @@ function createFormation(name) {
     rotation: emptyRotation(),
     rotationDetailed: false,
     statusOpenSlot: null,
+    statusPanelMode: "equipment",
     result: null
   };
 }
@@ -302,8 +485,141 @@ function cloneFormation(source, name) {
     rotation: normalizeRotation(source.rotation),
     rotationDetailed: !!source.rotationDetailed,
     statusOpenSlot: source.statusOpenSlot,
+    statusPanelMode: source.statusPanelMode || "equipment",
     result: null
   };
+}
+
+function cleanStatusSettingsForExport(settings) {
+  const normalized = normalizeIndividualStatusSettings(settings);
+  delete normalized.computedStats;
+  return normalized;
+}
+
+function serializeSelection(selection) {
+  if (!selection) return null;
+  const item = findCatalogItem(selection);
+  const serialized = selection.kind === "dummy"
+    ? { kind: "dummy", id: selection.id, name: item?.name || selection.id }
+    : { kind: "character", file: selection.file, name: item?.name || selection.file };
+  if (selection.kind === "character") {
+    serialized.statusSettings = cleanStatusSettingsForExport(selection.statusSettings);
+  }
+  return serialized;
+}
+
+function serializeFormation(formation) {
+  return {
+    name: formation.name,
+    slots: formation.slots.map(serializeSelection),
+    rotation: normalizeRotation(formation.rotation),
+    rotationDetailed: !!formation.rotationDetailed,
+    statusPanelMode: formation.statusPanelMode || "equipment"
+  };
+}
+
+function findCatalogItemForImport(selection) {
+  if (!selection || typeof selection !== "object") return null;
+  const kind = selection.kind || (selection.file ? "character" : selection.id ? "dummy" : "");
+  if (kind === "dummy") {
+    return state.catalog.find((item) => item.kind === "dummy" && item.id === selection.id) || null;
+  }
+  if (kind === "character") {
+    return state.catalog.find((item) => item.kind === "character" && item.file === selection.file) ||
+      state.catalog.find((item) => item.kind === "character" && item.name === selection.name) ||
+      null;
+  }
+  return null;
+}
+
+function importSelection(selection) {
+  const item = findCatalogItemForImport(selection);
+  if (!item) return null;
+  const imported = selectionFromItem(item);
+  if (item.kind === "character") {
+    imported.statusSettings = cleanStatusSettingsForExport(selection.statusSettings);
+  }
+  return imported;
+}
+
+function importFormation(rawFormation, index) {
+  const formation = createFormation(String(rawFormation?.name || `Formation ${index + 1}`));
+  const rawSlots = Array.isArray(rawFormation?.slots) ? rawFormation.slots : [];
+  formation.slots = Array.from({ length: 5 }, (_, slotIndex) => importSelection(rawSlots[slotIndex]));
+  formation.rotation = normalizeRotation(rawFormation?.rotation);
+  formation.rotationDetailed = !!rawFormation?.rotationDetailed;
+  formation.statusPanelMode = rawFormation?.statusPanelMode === "overload" ? "overload" : "equipment";
+  formation.statusOpenSlot = null;
+  formation.result = null;
+
+  if (formation.rotationDetailed) {
+    cleanDetailedRotation(formation);
+  } else {
+    setBasicRotation(formation);
+  }
+  return formation;
+}
+
+function collectExportData() {
+  return {
+    schema: "nikke-simulator-formations-v1",
+    exportedAt: new Date().toISOString(),
+    activeFormation: state.activeFormation,
+    settings: collectSharedSettings(),
+    formations: state.formations.map(serializeFormation)
+  };
+}
+
+function filenameTimestamp() {
+  return new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
+}
+
+function exportFormations() {
+  const data = collectExportData();
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `nikke_formations_${filenameTimestamp()}.json`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+  setRunStatus("Exported");
+}
+
+function importedFormationList(data) {
+  if (Array.isArray(data)) return data;
+  if (Array.isArray(data?.formations)) return data.formations;
+  if (data?.formation) return [data.formation];
+  if (Array.isArray(data?.slots)) return [data];
+  return [];
+}
+
+function applyImportedData(data) {
+  const imported = importedFormationList(data);
+  if (!imported.length) {
+    throw new Error("編成データが見つかりません");
+  }
+
+  const formations = imported.map(importFormation);
+  state.formations = formations.length ? formations : [createFormation("編成1")];
+  if (!formations.length) applyDefaultSlots(state.formations[0]);
+  state.activeFormation = Math.max(0, Math.min(Number(data?.activeFormation) || 0, state.formations.length - 1));
+  state.activeSlot = 0;
+  state.results = [];
+  applySharedSettings(data?.settings || data?.options);
+  renderFormationTabs();
+  renderFormation();
+  renderResults([]);
+  setRunStatus(`Imported ${state.formations.length}`);
+}
+
+async function importFormationsFromFile(file) {
+  if (!file) return;
+  const text = await file.text();
+  const data = JSON.parse(text);
+  applyImportedData(data);
 }
 
 function activeFormationState() {
@@ -348,29 +664,97 @@ function copyActiveFormation() {
   renderFormation();
 }
 
+function deleteActiveFormation() {
+  if (!state.formations.length) return;
+  state.formations.splice(state.activeFormation, 1);
+  if (!state.formations.length) {
+    const formation = createFormation("編成1");
+    applyDefaultSlots(formation);
+    state.formations.push(formation);
+  }
+  state.activeFormation = Math.max(0, Math.min(state.activeFormation, state.formations.length - 1));
+  state.activeSlot = 0;
+  state.results = [];
+  renderFormationTabs();
+  renderFormation();
+  renderResults([]);
+}
+
+function toggleLibraryPane() {
+  state.libraryHidden = !state.libraryHidden;
+  document.body.classList.toggle("library-collapsed", state.libraryHidden);
+  const label = state.libraryHidden ? "一覧を表示" : "一覧を隠す";
+  document.getElementById("toggleLibraryButton").textContent = label;
+  document.getElementById("toggleLibraryWideButton").textContent = label;
+}
+
+function openStatusPanelMode(mode) {
+  const formation = activeFormationState();
+  if (!formation) return;
+  formation.statusPanelMode = mode;
+  formation.statusOpenSlot = null;
+  renderFormation();
+}
+
+function updateStatusPanelButtons() {
+  const mode = activeFormationState()?.statusPanelMode || "";
+  const equipmentButton = document.getElementById("openEquipmentStatusButton");
+  const overloadButton = document.getElementById("openOverloadStatusButton");
+  if (equipmentButton) equipmentButton.classList.toggle("active", mode === "equipment");
+  if (overloadButton) overloadButton.classList.toggle("active", mode === "overload");
+}
+
 function setFormation(slotIndex, item) {
   const formation = activeFormationState();
   formation.slots[slotIndex] = selectionFromItem(item);
   if (formation.rotationDetailed) cleanDetailedRotation(formation);
   else setBasicRotation(formation);
   formation.result = null;
-  formation.statusOpenSlot = item?.kind === "character" ? slotIndex : null;
+  formation.statusOpenSlot = null;
+  formation.statusPanelMode = formation.statusPanelMode || "equipment";
   state.activeSlot = Math.min(4, slotIndex + 1);
   renderFormationTabs();
   renderFormation();
 }
 
-function populateCatalogFilters() {
-  document.querySelectorAll(".catalog-filter").forEach((select) => {
-    const key = select.dataset.filterKey;
-    const current = state.catalogFilters[key] || "";
-    const defaultLabel = select.options[0]?.textContent || "";
-    select.innerHTML = "";
+function filterIconUrl(key, value) {
+  return filterIconMaps[key]?.[String(value || "")] || "";
+}
 
-    const allOption = document.createElement("option");
-    allOption.value = "";
-    allOption.textContent = defaultLabel;
-    select.appendChild(allOption);
+function createCatalogFilterButton(container, key, value, labelText, iconUrl = "") {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = `catalog-filter-icon${String(state.catalogFilters[key] || "") === String(value) ? " active" : ""}`;
+  button.title = labelText;
+  button.dataset.value = String(value);
+  if (iconUrl) {
+    const img = document.createElement("img");
+    img.src = iconUrl;
+    img.alt = labelText;
+    button.appendChild(img);
+  } else {
+    button.textContent = labelText;
+  }
+  button.addEventListener("click", () => {
+    state.catalogFilters[key] = String(state.catalogFilters[key] || "") === String(value) ? "" : String(value);
+    populateCatalogFilters();
+    renderCatalog();
+  });
+  container.appendChild(button);
+}
+
+function populateCatalogFilters() {
+  document.querySelectorAll(".catalog-filter").forEach((container) => {
+    const key = container.dataset.filterKey;
+    const label = container.dataset.filterLabel || key;
+    container.innerHTML = "";
+
+    const title = document.createElement("span");
+    title.className = "catalog-filter-label";
+    title.textContent = label;
+    container.appendChild(title);
+
+    createCatalogFilterButton(container, key, "", "すべて");
 
     const values = Array.from(
       new Set(
@@ -381,17 +765,13 @@ function populateCatalogFilters() {
     ).sort((a, b) => String(a).localeCompare(String(b), "ja", { numeric: true, sensitivity: "base" }));
 
     values.forEach((value) => {
-      const option = document.createElement("option");
-      option.value = value;
-      option.textContent = value;
-      option.selected = value === current;
-      select.appendChild(option);
+      createCatalogFilterButton(container, key, value, String(value), filterIconUrl(key, value));
     });
   });
 }
 
 function filteredCatalog() {
-  const query = normalizeText(document.getElementById("searchInput").value);
+  const query = normalizeText(inputValue("searchInput", ""));
   return state.catalog.filter((item) => {
     const haystack = normalizeText([
       item.name,
@@ -468,6 +848,21 @@ function renderFormationTabs() {
     });
     tabs.appendChild(button);
   });
+  updateFormationNameInput();
+}
+
+function updateFormationNameInput() {
+  const input = document.getElementById("formationNameInput");
+  if (!input) return;
+  input.value = activeFormationState()?.name || "";
+}
+
+function renameActiveFormation(value) {
+  const formation = activeFormationState();
+  if (!formation) return;
+  formation.name = String(value || "").trim() || `編成${state.activeFormation + 1}`;
+  formation.result = null;
+  renderFormationTabs();
 }
 
 function markFormationDirty(formation) {
@@ -506,6 +901,68 @@ function setSlotEquipmentValue(formation, slotIndex, part, key, value) {
   selection.statusSettings.equipment[part][key] = value;
   markFormationDirty(formation);
   refreshSlotMeta(formation, slotIndex);
+}
+
+function maxStatusPresetSettings(settings) {
+  const normalized = normalizeIndividualStatusSettings(settings);
+  normalized.collectionRarity = "SR";
+  normalized.collectionLevel = 15;
+  normalized.cubeLevel = 15;
+  statusPartKeys.forEach((part) => {
+    normalized.equipment[part] = { tier: "T10", level: 5 };
+  });
+  return normalized;
+}
+
+function applyMaxStatusPresetToActiveFormation() {
+  const formation = activeFormationState();
+  if (!formation) return;
+  let applied = 0;
+  formation.slots.forEach((selection) => {
+    if (!selection || selection.kind !== "character") return;
+    selection.statusSettings = maxStatusPresetSettings(selection.statusSettings);
+    applied += 1;
+  });
+  if (!applied) return;
+  formation.statusPanelMode = "equipment";
+  formation.result = null;
+  setRunStatus("強化プリセット適用");
+  renderFormationTabs();
+  renderFormation();
+}
+
+function overloadOptionNames() {
+  return Object.keys(state.statusData?.overload?.options || {});
+}
+
+function overloadRanks(optionName) {
+  return state.statusData?.overload?.options?.[optionName] || [];
+}
+
+function defaultOverloadRank(optionName) {
+  const ranks = overloadRanks(optionName);
+  return Number((ranks.find((rank) => Number(rank.rank) === 11) || ranks[0] || {}).rank || 0);
+}
+
+function classKeyForItem(item) {
+  return statusClassAliases[String(item?.class || "")] || "Attacker";
+}
+
+function overloadIconUrl(item, part) {
+  const classKey = classKeyForItem(item);
+  return state.statusData?.overload?.icons?.[classKey]?.[part] || "";
+}
+
+function setSlotOverloadValue(formation, slotIndex, part, optionIndex, key, value) {
+  const selection = formation.slots[slotIndex];
+  if (!selection || selection.kind !== "character") return;
+  selection.statusSettings = normalizeIndividualStatusSettings(selection.statusSettings);
+  const entry = selection.statusSettings.overload[part][optionIndex];
+  entry[key] = key === "rank" ? Number(value) : value;
+  if (key === "type") {
+    entry.rank = value ? defaultOverloadRank(value) : 0;
+  }
+  markFormationDirty(formation);
 }
 
 function createNumberField(labelText, value, options, onInput) {
@@ -558,6 +1015,56 @@ function createCollectionField(settings, formation, slotIndex) {
   return label;
 }
 
+function cubeDefinitions() {
+  return Array.isArray(state.statusData?.cubeSkills) ? state.statusData.cubeSkills : [];
+}
+
+function cubeDefinition(name) {
+  return cubeDefinitions().find((cube) => cube.name === name) || null;
+}
+
+function createCubeField(settings, formation, slotIndex) {
+  const wrap = document.createElement("label");
+  wrap.className = "cube-field";
+  wrap.textContent = "Cube";
+
+  const row = document.createElement("div");
+  row.className = "cube-field-row";
+
+  const icon = document.createElement("span");
+  icon.className = "cube-icon";
+  const selected = cubeDefinition(String(settings.cubeType || ""));
+  if (selected?.iconUrl) {
+    const img = document.createElement("img");
+    img.src = selected.iconUrl;
+    img.alt = selected.name;
+    icon.appendChild(img);
+  } else {
+    icon.textContent = "-";
+  }
+
+  const select = document.createElement("select");
+  const none = document.createElement("option");
+  none.value = "";
+  none.textContent = "None";
+  select.appendChild(none);
+  cubeDefinitions().forEach((cube) => {
+    const option = document.createElement("option");
+    option.value = cube.name;
+    option.textContent = cube.name;
+    option.selected = cube.name === String(settings.cubeType || "");
+    select.appendChild(option);
+  });
+  select.addEventListener("change", () => {
+    setSlotStatusValue(formation, slotIndex, "cubeType", select.value);
+    renderFormation();
+  });
+
+  row.append(icon, select);
+  wrap.appendChild(row);
+  return wrap;
+}
+
 function createEquipmentField(labelText, part, settings, formation, slotIndex) {
   const label = document.createElement("label");
   label.textContent = labelText;
@@ -584,27 +1091,8 @@ function createEquipmentField(labelText, part, settings, formation, slotIndex) {
   return label;
 }
 
-function createSlotStatusPanel(formation, slotIndex, item) {
-  const selection = formation.slots[slotIndex];
-  selection.statusSettings = normalizeIndividualStatusSettings(selection.statusSettings);
-  const settings = selection.statusSettings;
-
-  const panel = document.createElement("div");
-  panel.className = "slot-status-panel";
-  panel.addEventListener("click", (event) => event.stopPropagation());
-
-  const head = document.createElement("div");
-  head.className = "slot-status-head";
-  const title = document.createElement("strong");
-  title.textContent = item.name;
-  const close = document.createElement("button");
-  close.type = "button";
-  close.textContent = "Close";
-  close.addEventListener("click", () => {
-    formation.statusOpenSlot = null;
-    renderFormation();
-  });
-  head.append(title, close);
+function createSlotEquipmentStatusPanel(formation, slotIndex, settings) {
+  const fragment = document.createDocumentFragment();
 
   const grid = document.createElement("div");
   grid.className = "slot-status-grid";
@@ -613,6 +1101,7 @@ function createSlotStatusPanel(formation, slotIndex, item) {
     createSelectField("Bond", settings.bondLevel, [0, 10, 20, 30, 40], (value) => setSlotStatusValue(formation, slotIndex, "bondLevel", value)),
     createCollectionField(settings, formation, slotIndex),
     createNumberField("Collection Lv", settings.collectionLevel, { min: 0, max: 15 }, (value) => setSlotStatusValue(formation, slotIndex, "collectionLevel", value)),
+    createCubeField(settings, formation, slotIndex),
     createNumberField("Cube Lv", settings.cubeLevel, { min: 0, max: 15 }, (value) => setSlotStatusValue(formation, slotIndex, "cubeLevel", value))
   );
 
@@ -625,7 +1114,110 @@ function createSlotStatusPanel(formation, slotIndex, item) {
     createEquipmentField("Legs", "legs", settings, formation, slotIndex)
   );
 
-  panel.append(head, grid, equipment);
+  fragment.append(grid, equipment);
+  return fragment;
+}
+
+function createOverloadOptionRow(formation, slotIndex, part, optionIndex, entry) {
+  const row = document.createElement("div");
+  row.className = "overload-option-row";
+
+  const optionSelect = document.createElement("select");
+  const none = document.createElement("option");
+  none.value = "";
+  none.textContent = "None";
+  optionSelect.appendChild(none);
+  overloadOptionNames().forEach((name) => {
+    const option = document.createElement("option");
+    option.value = name;
+    option.textContent = name;
+    option.selected = name === String(entry.type || "");
+    optionSelect.appendChild(option);
+  });
+  optionSelect.addEventListener("change", () => {
+    setSlotOverloadValue(formation, slotIndex, part, optionIndex, "type", optionSelect.value);
+    renderFormation();
+  });
+
+  const rankSelect = document.createElement("select");
+  const emptyRank = document.createElement("option");
+  emptyRank.value = "0";
+  emptyRank.textContent = "-";
+  rankSelect.appendChild(emptyRank);
+  overloadRanks(entry.type).forEach((rank) => {
+    const option = document.createElement("option");
+    option.value = String(rank.rank);
+    option.textContent = `R${rank.rank} ${smallNumber(rank.percent)}%`;
+    option.selected = String(rank.rank) === String(entry.rank || 0);
+    rankSelect.appendChild(option);
+  });
+  rankSelect.disabled = !entry.type;
+  rankSelect.addEventListener("change", () => {
+    setSlotOverloadValue(formation, slotIndex, part, optionIndex, "rank", rankSelect.value);
+    renderFormation();
+  });
+
+  row.append(optionSelect, rankSelect);
+  return row;
+}
+
+function createSlotOverloadPanel(formation, slotIndex, item, settings) {
+  const grid = document.createElement("div");
+  grid.className = "slot-overload-grid";
+
+  statusPartKeys.forEach((part) => {
+    const partCard = document.createElement("div");
+    partCard.className = "slot-overload-part";
+
+    const head = document.createElement("div");
+    head.className = "overload-part-head";
+    const icon = document.createElement("div");
+    icon.className = "overload-icon";
+    const iconUrl = overloadIconUrl(item, part);
+    if (iconUrl) {
+      const img = document.createElement("img");
+      img.src = iconUrl;
+      img.alt = `${statusPartLabels[part]} icon`;
+      icon.appendChild(img);
+    } else {
+      icon.textContent = statusPartLabels[part];
+    }
+    const label = document.createElement("strong");
+    label.textContent = statusPartLabels[part];
+    head.append(icon, label);
+    partCard.appendChild(head);
+
+    const entries = settings.overload[part] || normalizeOverloadPartSettings();
+    entries.forEach((entry, optionIndex) => {
+      partCard.appendChild(createOverloadOptionRow(formation, slotIndex, part, optionIndex, entry));
+    });
+    grid.appendChild(partCard);
+  });
+
+  return grid;
+}
+
+function createSlotStatusPanel(formation, slotIndex, item, mode = "equipment") {
+  const selection = formation.slots[slotIndex];
+  selection.statusSettings = normalizeIndividualStatusSettings(selection.statusSettings);
+  const settings = selection.statusSettings;
+
+  const panel = document.createElement("div");
+  panel.className = "slot-status-panel";
+  panel.addEventListener("click", (event) => event.stopPropagation());
+
+  const head = document.createElement("div");
+  head.className = "slot-status-head";
+  const title = document.createElement("strong");
+  title.textContent = `${item.name} / ${mode === "overload" ? "オバロOP" : "装備ステータス"}`;
+  head.append(title);
+
+  panel.append(head);
+  panel.appendChild(
+    mode === "overload"
+      ? createSlotOverloadPanel(formation, slotIndex, item, settings)
+      : createSlotEquipmentStatusPanel(formation, slotIndex, settings)
+  );
   return panel;
 }
 
@@ -636,6 +1228,7 @@ function resultForSlot(formation, item) {
 
 function renderFormation() {
   const formation = activeFormationState();
+  updateStatusPanelButtons();
   const slots = document.getElementById("formationSlots");
   slots.innerHTML = "";
 
@@ -669,12 +1262,10 @@ function renderFormation() {
     idx.textContent = String(index + 1);
 
     const icon = createCharacterIcon(item, "slot-icon");
-    icon.title = item?.kind === "character" ? "Status settings" : "";
+    icon.title = item?.kind === "character" ? "Select slot" : "";
     icon.addEventListener("click", (event) => {
-      if (item?.kind !== "character") return;
       event.stopPropagation();
       state.activeSlot = index;
-      formation.statusOpenSlot = formation.statusOpenSlot === index ? null : index;
       renderFormation();
     });
     const body = document.createElement("div");
@@ -713,8 +1304,10 @@ function renderFormation() {
 
     main.append(idx, icon, body, remove);
     slot.append(main);
-    if (formation.statusOpenSlot === index && item?.kind === "character") {
-      slot.appendChild(createSlotStatusPanel(formation, index, item));
+    const statusMode = formation.statusPanelMode || "equipment";
+    const shouldShowStatus = item?.kind === "character";
+    if (shouldShowStatus) {
+      slot.appendChild(createSlotStatusPanel(formation, index, item, statusMode));
     }
     slotRow.appendChild(slot);
   });
@@ -815,7 +1408,7 @@ function renderFormation() {
       candidates.className = "rotation-candidates";
       formation.slots.forEach((selection, slotIndex) => {
         const item = findCatalogItem(selection);
-        if (!stageMatchesItem(item, stage)) return;
+        if (!stageMatchesSelection(selection, stage, slotIndex, formation.slots)) return;
         const add = document.createElement("button");
         add.type = "button";
         add.className = "rotation-add";
@@ -933,7 +1526,7 @@ function renderAdditionalBuffs() {
 }
 
 function addAdditionalBuff() {
-  const type = document.getElementById("additionalBuffType").value;
+  const type = inputValue("additionalBuffType", additionalBuffTypes[0].type);
   const definition = additionalBuffDefinition(type);
   state.additionalBuffs.push({
     type: definition.type,
@@ -945,29 +1538,18 @@ function addAdditionalBuff() {
 
 function collectPayloadForFormation(formation) {
   const rotation = normalizeRotation(formation.rotation);
-  const statusSettings = collectStatusSettings();
+  const sharedSettings = collectSharedSettings();
+  const statusSettings = sharedSettings.statusSettings;
   ["1", "2", "3"].forEach((stage) => {
     rotation[stage] = rotation[stage].filter((slotIndex) => {
-      return formation.slots[slotIndex] && stageMatchesItem(findCatalogItem(formation.slots[slotIndex]), stage);
+      return formation.slots[slotIndex] && stageMatchesSelection(formation.slots[slotIndex], stage, slotIndex, formation.slots);
     });
   });
 
   return {
     formation: formation.slots.map((selection) => selectionWithComputedStats(selection, statusSettings)),
     rotation,
-    options: {
-      skillLevel: document.getElementById("skillLevel").value,
-      enemyElement: document.getElementById("enemyElement").value,
-      enemyCoreSize: document.getElementById("enemyCoreSize").value,
-      enemySize: document.getElementById("enemySize").value,
-      enemyCount: document.getElementById("enemyCount").value,
-      burstChargeTime: document.getElementById("burstChargeTime").value,
-      crustOperationMode: document.getElementById("crustOperationMode").value,
-      partBreakMode: document.getElementById("partBreakMode").checked,
-      specialMode: document.getElementById("specialMode").checked,
-      statusSettings,
-      additionalBuffs: state.additionalBuffs.map(cloneAdditionalBuff)
-    }
+    options: sharedSettings
   };
 }
 
@@ -1085,6 +1667,209 @@ function renderResults(entries) {
   });
 }
 
+function resultEntryTotal(entry) {
+  return Number(entry?.data?.totalPartyDamage || 0);
+}
+
+function resultItemForRow(entry, row) {
+  const formation = state.formations[entry.index];
+  const selection = formation?.slots.find((slotSelection) => {
+    return findCatalogItem(slotSelection)?.name === row.name;
+  });
+  return findCatalogItem(selection) || state.catalog.find((item) => item.name === row.name) || null;
+}
+
+function renderResultModalFormation(entry, index, grandTotal) {
+  const card = document.createElement("article");
+  card.className = "normal-result-formation";
+
+  const head = document.createElement("div");
+  head.className = "normal-result-formation-head";
+
+  const rank = document.createElement("span");
+  rank.className = "b3-rank";
+  rank.textContent = entry.data && !entry.error ? `#${index + 1}` : "-";
+
+  const icons = document.createElement("div");
+  icons.className = "b3-modal-formation-icons";
+  const formation = state.formations[entry.index];
+  (formation?.slots || []).forEach((selection) => {
+    icons.appendChild(createCharacterIcon(findCatalogItem(selection), "b3-result-thumb"));
+  });
+
+  const title = document.createElement("div");
+  title.className = "b3-modal-result-name";
+  const name = document.createElement("strong");
+  name.textContent = entry.name;
+  const sub = document.createElement("span");
+  sub.textContent = entry.error ? "Error" : `編成全体 ${yenNumber(resultEntryTotal(entry))}`;
+  title.append(name, sub);
+
+  const total = document.createElement("strong");
+  total.className = "b3-result-damage";
+  if (entry.error) {
+    total.textContent = entry.error;
+    total.style.setProperty("--score", "0%");
+  } else {
+    const value = resultEntryTotal(entry);
+    const ratio = grandTotal > 0 ? value / grandTotal : 0;
+    total.style.setProperty("--score", `${ratio * 100}%`);
+    total.textContent = yenNumber(value);
+  }
+
+  head.append(rank, icons, title, total);
+  card.appendChild(head);
+
+  if (entry.error || !entry.data) {
+    return card;
+  }
+
+  const list = document.createElement("div");
+  list.className = "normal-result-character-list";
+  const topCharacterDamage = entry.data.results.reduce((maxValue, row) => Math.max(maxValue, Number(row.totalDamage || 0)), 0);
+  entry.data.results.forEach((row) => {
+    const item = resultItemForRow(entry, row);
+    const line = document.createElement("div");
+    line.className = "normal-result-character-row";
+
+    const nameBlock = document.createElement("div");
+    nameBlock.className = "b3-modal-result-name";
+    const characterName = document.createElement("strong");
+    characterName.textContent = row.name;
+    const stats = document.createElement("span");
+    stats.textContent = `ATK ${statNumber(row.baseAtk)} / HP ${statNumber(row.baseHp)}`;
+    nameBlock.append(characterName, stats);
+
+    const damage = document.createElement("strong");
+    damage.className = "b3-result-damage";
+    const value = Number(row.totalDamage || 0);
+    const ratio = topCharacterDamage > 0 ? value / topCharacterDamage : 0;
+    damage.style.setProperty("--score", `${ratio * 100}%`);
+    damage.textContent = yenNumber(value);
+
+    line.append(createCharacterIcon(item, "b3-result-thumb"), nameBlock, damage);
+    list.appendChild(line);
+  });
+  card.appendChild(list);
+  return card;
+}
+
+function setResultModalPage(scroller, pageIndex) {
+  const pages = Array.from(scroller.querySelectorAll(".normal-result-page"));
+  if (!pages.length) return;
+  const clamped = Math.max(0, Math.min(pageIndex, pages.length - 1));
+  pages[clamped].scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+}
+
+function updateResultModalPager(container, scroller) {
+  const pages = Array.from(scroller.querySelectorAll(".normal-result-page"));
+  if (!pages.length) return;
+  const pageWidth = Math.max(1, scroller.clientWidth);
+  const current = Math.max(0, Math.min(pages.length - 1, Math.round(scroller.scrollLeft / pageWidth)));
+
+  container.querySelectorAll(".normal-result-page-dot").forEach((button, index) => {
+    button.classList.toggle("active", index === current);
+    button.setAttribute("aria-current", index === current ? "page" : "false");
+  });
+
+  const pageText = container.querySelector("[data-result-page-text]");
+  if (pageText) pageText.textContent = `${current + 1} / ${pages.length}`;
+
+  const prev = container.querySelector("[data-result-page-prev]");
+  const next = container.querySelector("[data-result-page-next]");
+  if (prev) prev.disabled = current === 0;
+  if (next) next.disabled = current === pages.length - 1;
+}
+
+function renderResultModalPages(container, ranked, totalDamage) {
+  container.innerHTML = "";
+
+  if (!ranked.length) {
+    const empty = document.createElement("div");
+    empty.className = "message";
+    empty.textContent = "結果がありません";
+    container.appendChild(empty);
+    return;
+  }
+
+  const pager = document.createElement("div");
+  pager.className = "normal-result-pager";
+
+  const prev = document.createElement("button");
+  prev.type = "button";
+  prev.className = "ghost-button normal-result-page-arrow";
+  prev.textContent = "<";
+  prev.dataset.resultPagePrev = "true";
+
+  const pageText = document.createElement("span");
+  pageText.className = "normal-result-page-text";
+  pageText.dataset.resultPageText = "true";
+
+  const next = document.createElement("button");
+  next.type = "button";
+  next.className = "ghost-button normal-result-page-arrow";
+  next.textContent = ">";
+  next.dataset.resultPageNext = "true";
+
+  pager.append(prev, pageText, next);
+
+  const scroller = document.createElement("div");
+  scroller.className = "normal-result-page-scroller";
+  ranked.forEach((entry, index) => {
+    const page = document.createElement("section");
+    page.className = "normal-result-page";
+    page.setAttribute("aria-label", `${entry.name} result`);
+    page.appendChild(renderResultModalFormation(entry, index, totalDamage));
+    scroller.appendChild(page);
+  });
+
+  const dots = document.createElement("div");
+  dots.className = "normal-result-page-dots";
+  ranked.forEach((entry, index) => {
+    const dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "normal-result-page-dot";
+    dot.title = entry.name;
+    dot.textContent = String(index + 1);
+    dot.addEventListener("click", () => setResultModalPage(scroller, index));
+    dots.appendChild(dot);
+  });
+
+  prev.addEventListener("click", () => {
+    const current = Math.round(scroller.scrollLeft / Math.max(1, scroller.clientWidth));
+    setResultModalPage(scroller, current - 1);
+  });
+  next.addEventListener("click", () => {
+    const current = Math.round(scroller.scrollLeft / Math.max(1, scroller.clientWidth));
+    setResultModalPage(scroller, current + 1);
+  });
+  scroller.addEventListener("scroll", () => updateResultModalPager(container, scroller), { passive: true });
+  window.setTimeout(() => updateResultModalPager(container, scroller), 0);
+
+  container.append(pager, scroller, dots);
+}
+
+function showResultModal(entries = state.results) {
+  const modal = document.getElementById("resultModal");
+  const rows = document.getElementById("resultModalRows");
+  const okEntries = entries.filter((entry) => entry.data && !entry.error);
+  const totalDamage = okEntries.reduce((sum, entry) => sum + resultEntryTotal(entry), 0);
+  const ranked = entries
+    .slice()
+    .sort((a, b) => resultEntryTotal(b) - resultEntryTotal(a));
+
+  document.getElementById("resultModalTitle").textContent = "シミュレーション結果";
+  document.getElementById("resultModalSummary").textContent =
+    `${okEntries.length} / ${entries.length}件成功 / トータルダメージ ${okEntries.length ? yenNumber(totalDamage) : "-"}`;
+  renderResultModalPages(rows, ranked, totalDamage);
+
+  modal.hidden = false;
+}
+
+function closeResultModal() {
+  document.getElementById("resultModal").hidden = true;
+}
+
 async function postSimulation(formation) {
   const response = await fetch("/api/simulate", {
     method: "POST",
@@ -1126,6 +1911,7 @@ async function runSimulation(runAll = false) {
       renderResults(entries);
     }
     setRunStatus(entries.some((entry) => entry.error) ? "Partial error" : "Done", entries.some((entry) => entry.error));
+    showResultModal(entries);
   } finally {
     runButton.disabled = false;
     runAllButton.disabled = false;
@@ -1147,6 +1933,8 @@ function openDetail(entry, row) {
   document.getElementById("detailSubtitle").textContent = `Total ${yenNumber(row.totalDamage)} / B${row.burstStage}`;
   modal.hidden = false;
   drawDamageChart(row.damageSeries || []);
+  drawAmmoChart(row.ammoHistory || []);
+  drawAttackEventChart(row.damageEvents || []);
   renderDamageSummary(row.breakdown || []);
   renderBurstTimeline(row.burstEvents || []);
   renderBuffTimeline(row.buffTimeline || []);
@@ -1156,14 +1944,55 @@ function closeDetail() {
   document.getElementById("detailModal").hidden = true;
 }
 
-function drawDamageChart(series) {
-  const canvas = document.getElementById("damageChart");
-  const ctx = canvas.getContext("2d");
-  const width = canvas.width;
-  const height = canvas.height;
-  const pad = { left: 58, right: 18, top: 18, bottom: 36 };
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+function svgElement(name, attrs = {}, text = "") {
+  const element = document.createElementNS(SVG_NS, name);
+  Object.entries(attrs).forEach(([key, value]) => {
+    if (value !== undefined && value !== null) element.setAttribute(key, String(value));
+  });
+  if (text !== "") element.textContent = text;
+  return element;
+}
+
+function prepareSvgChart(id, width, height, emptyMessage = "") {
+  const svg = document.getElementById(id);
+  svg.replaceChildren();
+  svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+  svg.setAttribute("preserveAspectRatio", "none");
+  svg.appendChild(svgElement("rect", { x: 0, y: 0, width, height, fill: "#ffffff" }));
+  if (emptyMessage) {
+    svg.appendChild(svgElement("text", { x: 18, y: 28, fill: "#60706d", "font-size": 13 }, emptyMessage));
+  }
+  return svg;
+}
+
+function drawSvgTimelineGrid(svg, width, height, pad, ySteps = 4) {
   const plotW = width - pad.left - pad.right;
   const plotH = height - pad.top - pad.bottom;
+  const grid = svgElement("g", { stroke: "#d8e0df", "stroke-width": 1 });
+  const labels = svgElement("g", { fill: "#60706d", "font-size": 12, "font-family": "sans-serif" });
+
+  for (let i = 0; i <= 6; i += 1) {
+    const x = pad.left + (plotW * i) / 6;
+    grid.appendChild(svgElement("line", { x1: x, y1: pad.top, x2: x, y2: pad.top + plotH }));
+    labels.appendChild(svgElement("text", { x: x - 8, y: height - 12 }, String(i * 30)));
+  }
+
+  for (let i = 0; i <= ySteps; i += 1) {
+    const y = pad.top + (plotH * i) / ySteps;
+    grid.appendChild(svgElement("line", { x1: pad.left, y1: y, x2: pad.left + plotW, y2: y }));
+  }
+
+  labels.appendChild(svgElement("text", { x: width - 28, y: height - 12 }, "sec"));
+  svg.append(grid, labels);
+  return { plotW, plotH };
+}
+
+function drawDamageChart(series) {
+  const width = 920;
+  const height = 280;
+  const pad = { left: 58, right: 18, top: 18, bottom: 36 };
   const values = Array.from({ length: DETAIL_SECONDS }, (_, index) => Number(series[index] || 0));
   const cumulative = [];
   values.reduce((sum, value, index) => {
@@ -1172,57 +2001,147 @@ function drawDamageChart(series) {
   }, 0);
   const maxPerSecond = Math.max(1, ...values);
   const maxCumulative = Math.max(1, ...cumulative);
+  const svg = prepareSvgChart("damageChart", width, height);
+  const { plotW, plotH } = drawSvgTimelineGrid(svg, width, height, pad, 4);
 
-  ctx.clearRect(0, 0, width, height);
-  ctx.fillStyle = "#ffffff";
-  ctx.fillRect(0, 0, width, height);
-
-  ctx.strokeStyle = "#d8e0df";
-  ctx.lineWidth = 1;
-  ctx.font = "12px sans-serif";
-  ctx.fillStyle = "#60706d";
-
-  for (let i = 0; i <= 6; i += 1) {
-    const x = pad.left + (plotW * i) / 6;
-    ctx.beginPath();
-    ctx.moveTo(x, pad.top);
-    ctx.lineTo(x, pad.top + plotH);
-    ctx.stroke();
-    ctx.fillText(String(i * 30), x - 8, height - 12);
-  }
-
-  for (let i = 0; i <= 4; i += 1) {
-    const y = pad.top + (plotH * i) / 4;
-    ctx.beginPath();
-    ctx.moveTo(pad.left, y);
-    ctx.lineTo(pad.left + plotW, y);
-    ctx.stroke();
-  }
-
+  const bars = svgElement("g", { fill: "rgba(11, 107, 100, 0.38)" });
   const barW = Math.max(1, plotW / DETAIL_SECONDS);
-  ctx.fillStyle = "rgba(11, 107, 100, 0.38)";
   values.forEach((value, index) => {
     const x = pad.left + index * barW;
     const barH = (value / maxPerSecond) * plotH;
-    ctx.fillRect(x, pad.top + plotH - barH, Math.max(1, barW - 1), barH);
+    bars.appendChild(svgElement("rect", {
+      x,
+      y: pad.top + plotH - barH,
+      width: Math.max(1, barW - 1),
+      height: barH
+    }));
   });
+  svg.appendChild(bars);
 
-  ctx.strokeStyle = "#ad5b13";
-  ctx.lineWidth = 2;
-  ctx.beginPath();
-  cumulative.forEach((value, index) => {
-    const x = pad.left + (index / (DETAIL_SECONDS - 1)) * plotW;
-    const y = pad.top + plotH - (value / maxCumulative) * plotH;
-    if (index === 0) ctx.moveTo(x, y);
-    else ctx.lineTo(x, y);
+  const cumulativePoints = cumulative
+    .map((value, index) => {
+      const x = pad.left + (index / (DETAIL_SECONDS - 1)) * plotW;
+      const y = pad.top + plotH - (value / maxCumulative) * plotH;
+      return `${x.toFixed(2)},${y.toFixed(2)}`;
+    })
+    .join(" ");
+  svg.appendChild(svgElement("polyline", {
+    points: cumulativePoints,
+    fill: "none",
+    stroke: "#ad5b13",
+    "stroke-width": 2
+  }));
+
+  svg.appendChild(svgElement("text", { x: pad.left, y: 14, fill: "#172322", "font-size": 12 }, `Max/s ${yenNumber(maxPerSecond)}`));
+  svg.appendChild(svgElement("text", { x: width - 160, y: 14, fill: "#ad5b13", "font-size": 12 }, `Total ${yenNumber(maxCumulative)}`));
+}
+
+function drawAmmoChart(history) {
+  const width = 920;
+  const height = 220;
+  const pad = { left: 58, right: 18, top: 18, bottom: 34 };
+  const entries = (history || [])
+    .map((entry) => ({
+      time: Number(entry.time),
+      ammo: Number(entry.ammo),
+      maxAmmo: Number(entry.maxAmmo)
+    }))
+    .filter((entry) => Number.isFinite(entry.time));
+
+  if (!entries.length) {
+    prepareSvgChart("ammoChart", width, height, "No ammo history");
+    return;
+  }
+
+  const maxAmmo = Math.max(1, ...entries.map((entry) => entry.maxAmmo || entry.ammo || 0));
+  const svg = prepareSvgChart("ammoChart", width, height);
+  const { plotW, plotH } = drawSvgTimelineGrid(svg, width, height, pad, 4);
+
+  const point = (entry, value) => {
+    const x = pad.left + (Math.min(DETAIL_SECONDS, Math.max(0, entry.time)) / DETAIL_SECONDS) * plotW;
+    const y = pad.top + plotH - (Math.max(0, value) / maxAmmo) * plotH;
+    return `${x.toFixed(2)},${y.toFixed(2)}`;
+  };
+
+  svg.appendChild(svgElement("polyline", {
+    points: entries.map((entry) => point(entry, entry.maxAmmo)).join(" "),
+    fill: "none",
+    stroke: "#8aa39f",
+    "stroke-width": 1.5,
+    "stroke-dasharray": "5 4"
+  }));
+  svg.appendChild(svgElement("polyline", {
+    points: entries.map((entry) => point(entry, entry.ammo)).join(" "),
+    fill: "none",
+    stroke: "#0b6b64",
+    "stroke-width": 2
+  }));
+
+  svg.appendChild(svgElement("text", { x: pad.left, y: 14, fill: "#172322", "font-size": 12 }, `Max ${yenNumber(maxAmmo)}`));
+  svg.appendChild(svgElement("line", { x1: width - 186, y1: 10, x2: width - 174, y2: 10, stroke: "#0b6b64", "stroke-width": 3 }));
+  svg.appendChild(svgElement("text", { x: width - 168, y: 14, fill: "#0b6b64", "font-size": 12 }, "Current ammo"));
+  svg.appendChild(svgElement("line", { x1: width - 92, y1: 10, x2: width - 80, y2: 10, stroke: "#8aa39f", "stroke-width": 3 }));
+  svg.appendChild(svgElement("text", { x: width - 74, y: 14, fill: "#8aa39f", "font-size": 12 }, "Max"));
+}
+
+function drawAttackEventChart(events) {
+  const width = 920;
+  const height = 280;
+  const pad = { left: 70, right: 18, top: 20, bottom: 36 };
+  const entries = (events || [])
+    .map((entry) => ({
+      time: Number(entry.time),
+      damage: Number(entry.damage),
+      source: entry.source || "",
+      sourceType: entry.sourceType || "",
+      category: entry.category || "skill"
+    }))
+    .filter((entry) => Number.isFinite(entry.time) && Number.isFinite(entry.damage) && entry.damage > 0);
+
+  if (!entries.length) {
+    prepareSvgChart("attackEventChart", width, height, "No attack events");
+    return;
+  }
+
+  const maxDamage = Math.max(1, ...entries.map((entry) => entry.damage));
+  const normalCount = entries.filter((entry) => entry.category === "normal").length;
+  const skillCount = entries.length - normalCount;
+  const svg = prepareSvgChart("attackEventChart", width, height);
+  const { plotW, plotH } = drawSvgTimelineGrid(svg, width, height, pad, 4);
+
+  const axisLabels = svgElement("g", { fill: "#60706d", "font-size": 11, "font-family": "sans-serif" });
+  for (let i = 0; i <= 4; i += 1) {
+    const value = (maxDamage * (4 - i)) / 4;
+    const y = pad.top + (plotH * i) / 4;
+    axisLabels.appendChild(svgElement("text", { x: 6, y: y + 4 }, yenNumber(value)));
+  }
+  svg.appendChild(axisLabels);
+
+  const points = svgElement("g");
+  entries.forEach((entry) => {
+    const x = pad.left + (Math.min(DETAIL_SECONDS, Math.max(0, entry.time)) / DETAIL_SECONDS) * plotW;
+    const y = pad.top + plotH - (entry.damage / maxDamage) * plotH;
+    const isNormal = entry.category === "normal";
+    const circle = svgElement("circle", {
+      cx: x,
+      cy: y,
+      r: isNormal ? 2.6 : 3.4,
+      fill: isNormal ? "rgba(11, 107, 100, 0.68)" : "rgba(173, 91, 19, 0.72)"
+    });
+    circle.appendChild(svgElement(
+      "title",
+      {},
+      `${smallNumber(entry.time)}s / ${entry.sourceType || entry.category} / ${entry.source} / ${yenNumber(entry.damage)}`
+    ));
+    points.appendChild(circle);
   });
-  ctx.stroke();
+  svg.appendChild(points);
 
-  ctx.fillStyle = "#172322";
-  ctx.fillText("sec", width - 28, height - 12);
-  ctx.fillText(`Max/s ${yenNumber(maxPerSecond)}`, pad.left, 14);
-  ctx.fillStyle = "#ad5b13";
-  ctx.fillText(`Total ${yenNumber(maxCumulative)}`, width - 160, 14);
+  svg.appendChild(svgElement("text", { x: pad.left, y: 14, fill: "#172322", "font-size": 12 }, `Max ${yenNumber(maxDamage)}`));
+  svg.appendChild(svgElement("circle", { cx: width - 190, cy: 11, r: 4, fill: "#0b6b64" }));
+  svg.appendChild(svgElement("text", { x: width - 180, y: 14, fill: "#0b6b64", "font-size": 12 }, `Normal ${yenNumber(normalCount)}`));
+  svg.appendChild(svgElement("circle", { cx: width - 92, cy: 11, r: 4, fill: "#ad5b13" }));
+  svg.appendChild(svgElement("text", { x: width - 82, y: 14, fill: "#ad5b13", "font-size": 12 }, `Skill ${yenNumber(skillCount)}`));
 }
 
 function renderDamageSummary(breakdown) {
@@ -1406,6 +2325,7 @@ async function loadCatalog() {
   const response = await fetch("/api/characters");
   const data = await response.json();
   StatusCalc.setData(data.statusData);
+  state.statusData = data.statusData || null;
   state.catalog = [...data.dummies, ...data.characters];
   state.formations = [createFormation("編成1")];
   applyDefaultSlots(state.formations[0]);
@@ -1419,23 +2339,40 @@ async function loadCatalog() {
 
 function bindEvents() {
   document.getElementById("searchInput").addEventListener("input", renderCatalog);
-  document.querySelectorAll(".catalog-filter").forEach((select) => {
-    select.addEventListener("change", (event) => {
-      const key = event.target.dataset.filterKey;
-      state.catalogFilters[key] = event.target.value;
-      renderCatalog();
-    });
-  });
+  document.getElementById("formationNameInput").addEventListener("input", (event) => renameActiveFormation(event.target.value));
+  document.getElementById("toggleLibraryButton").addEventListener("click", toggleLibraryPane);
+  document.getElementById("toggleLibraryWideButton").addEventListener("click", toggleLibraryPane);
   document.getElementById("runButton").addEventListener("click", () => runSimulation(false));
   document.getElementById("runAllButton").addEventListener("click", () => runSimulation(true));
   document.getElementById("addFormationButton").addEventListener("click", addFormation);
   document.getElementById("copyFormationButton").addEventListener("click", copyActiveFormation);
+  document.getElementById("deleteFormationButton").addEventListener("click", deleteActiveFormation);
+  document.getElementById("openEquipmentStatusButton").addEventListener("click", () => openStatusPanelMode("equipment"));
+  document.getElementById("openOverloadStatusButton").addEventListener("click", () => openStatusPanelMode("overload"));
+  document.getElementById("applyMaxStatusPresetButton").addEventListener("click", applyMaxStatusPresetToActiveFormation);
   document.getElementById("clearFormationButton").addEventListener("click", resetActiveFormation);
+  document.getElementById("exportFormationsButton").addEventListener("click", exportFormations);
+  document.getElementById("importFormationsButton").addEventListener("click", () => {
+    document.getElementById("importFormationsInput").click();
+  });
+  document.getElementById("importFormationsInput").addEventListener("change", async (event) => {
+    try {
+      await importFormationsFromFile(event.target.files?.[0]);
+    } catch (error) {
+      setRunStatus(error.message, true);
+    } finally {
+      event.target.value = "";
+    }
+  });
   document.getElementById("addBuffButton").addEventListener("click", addAdditionalBuff);
+  document.getElementById("closeResultModalButton").addEventListener("click", closeResultModal);
   document.getElementById("closeDetailButton").addEventListener("click", closeDetail);
   document.querySelector("[data-close-detail]").addEventListener("click", closeDetail);
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeDetail();
+    if (event.key === "Escape") {
+      closeDetail();
+      closeResultModal();
+    }
   });
   document.querySelectorAll(".filter-button").forEach((button) => {
     button.addEventListener("click", () => {

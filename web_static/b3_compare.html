@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B3 Single Compare - NIKKE Simulator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>B3単体比較</h1>
+        <p id="catalogStatus">読み込み中</p>
+      </div>
+      <div class="run-actions">
+        <a class="top-link" href="/">通常</a>
+        <a class="top-link" href="/batch">一括比較</a>
+        <button id="runButton" class="primary-button" type="button">比較を実行</button>
+      </div>
+    </header>
+
+    <main class="b3-shell">
+      <section class="b3-library-pane">
+        <div class="pane-head">
+          <h2>比較対象</h2>
+          <input id="searchInput" type="search" placeholder="名前 / 武器 / 属性">
+        </div>
+        <div class="filter-row">
+          <select id="weaponFilter" class="catalog-filter" data-filter-key="weaponType">
+            <option value="">武器種</option>
+          </select>
+          <select id="elementFilter" class="catalog-filter" data-filter-key="element">
+            <option value="">属性</option>
+          </select>
+          <select id="companyFilter" class="catalog-filter" data-filter-key="company">
+            <option value="">企業</option>
+          </select>
+          <select id="classFilter" class="catalog-filter" data-filter-key="class">
+            <option value="">型</option>
+          </select>
+          <button id="selectVisibleButton" class="ghost-button" type="button">表示中を選択</button>
+          <button id="clearVisibleButton" class="ghost-button" type="button">表示中を解除</button>
+        </div>
+        <div id="candidateList" class="b3-candidate-list"></div>
+      </section>
+
+      <section class="b3-formation-pane">
+        <div class="pane-head">
+          <h2>比較編成</h2>
+          <span id="formationCount" class="status-pill">0件</span>
+        </div>
+
+        <div class="b3-manual-add">
+          <select id="manualCharacterSelect"></select>
+          <button id="manualAddButton" class="ghost-button" type="button">手動追加</button>
+        </div>
+
+        <div class="b3-bulk-replace">
+          <select id="bulkSlotSelect">
+            <option value="0">1枠目 Dummy B1</option>
+            <option value="1">2枠目 Dummy B2</option>
+            <option value="3">4枠目 Dummy B3</option>
+            <option value="4">5枠目 Dummy B3 2</option>
+          </select>
+          <select id="bulkMemberSelect"></select>
+          <button id="bulkReplaceButton" class="ghost-button" type="button">一括置換</button>
+        </div>
+
+        <div class="b3-compare-title">
+          <label>比較タイトル<input id="comparisonTitle" type="text" value="B3 Compare"></label>
+        </div>
+
+        <div class="options-band b3-options">
+          <h2>共通設定</h2>
+          <div class="option-grid">
+            <label>スキルLv<input id="skillLevel" type="number" min="1" max="10" value="10"></label>
+            <label>敵コード
+              <select id="enemyElement">
+                <option value="None">None</option>
+                <option value="Fire">Fire</option>
+                <option value="Water">Water</option>
+                <option value="Electric">Electric</option>
+                <option value="Wind">Wind</option>
+                <option value="Iron">Iron</option>
+              </select>
+            </label>
+            <label>敵コア倍率<input id="enemyCoreSize" type="number" step="0.1" value="3.0"></label>
+            <label>敵サイズ<input id="enemySize" type="number" step="0.1" value="100"></label>
+            <label>敵数<input id="enemyCount" type="number" min="1" step="1" value="1"></label>
+            <label>バースト溜め仮定時間<input id="burstChargeTime" type="number" min="0" step="0.1" value="5.0"></label>
+            <label class="check-label"><input id="partBreakMode" type="checkbox"> 部位破壊</label>
+            <label class="check-label"><input id="specialMode" type="checkbox"> Special</label>
+          </div>
+          <div class="option-grid status-grid">
+            <label>Lv<input id="statusLevel" type="number" min="1" max="1300" step="1" value="400"></label>
+            <label>共通研究<input id="commonResearchLevel" type="number" min="0" step="1" value="0"></label>
+            <label>火力研究<input id="classResearchAttacker" type="number" min="0" step="1" value="0"></label>
+            <label>防御研究<input id="classResearchDefender" type="number" min="0" step="1" value="0"></label>
+            <label>支援研究<input id="classResearchSupporter" type="number" min="0" step="1" value="0"></label>
+            <label>エリシオン研究<input id="companyResearchElysion" type="number" min="0" step="1" value="0"></label>
+            <label>ミシリス研究<input id="companyResearchMissilis" type="number" min="0" step="1" value="0"></label>
+            <label>テトラ研究<input id="companyResearchTetra" type="number" min="0" step="1" value="0"></label>
+            <label>ピルグリム研究<input id="companyResearchPilgrim" type="number" min="0" step="1" value="0"></label>
+            <label>アブノーマル研究<input id="companyResearchAbnormal" type="number" min="0" step="1" value="0"></label>
+          </div>
+          <div class="b3-global-buffs">
+            <h3>全体常時バフ</h3>
+            <div id="globalBuffList" class="b3-buff-list"></div>
+          </div>
+        </div>
+
+        <div id="formationRows" class="b3-formation-list"></div>
+      </section>
+
+      <section class="b3-results-pane">
+        <div class="pane-head">
+          <h2>結果</h2>
+          <span id="runStatus" class="status-pill">待機</span>
+        </div>
+        <div id="b3Summary" class="summary-grid">
+          <div><span>編成数</span><strong>-</strong></div>
+          <div><span>成功</span><strong>-</strong></div>
+          <div><span>最高ダメージ</span><strong>-</strong></div>
+        </div>
+        <div id="resultRows" class="b3-result-list"></div>
+      </section>
+    </main>
+
+    <div id="resultModal" class="b3-result-modal" hidden>
+      <section class="b3-result-modal-panel" role="dialog" aria-modal="true" aria-labelledby="resultModalTitle">
+        <header class="b3-result-modal-head">
+          <div>
+            <h2 id="resultModalTitle">B3単体比較結果</h2>
+            <p id="resultModalSummary"></p>
+          </div>
+          <button id="closeResultModalButton" class="icon-button" type="button" title="閉じる">x</button>
+        </header>
+        <div id="resultModalRows" class="b3-result-modal-list"></div>
+      </section>
+    </div>
+
+    <script src="/static/status_calc.js"></script>
+    <script src="/static/b3_compare.js"></script>
+  </body>
+</html>

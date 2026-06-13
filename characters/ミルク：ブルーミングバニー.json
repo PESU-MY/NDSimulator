@@ -1,0 +1,331 @@
+{
+  "name": "ミルク：ブルーミングバニー",
+  "weapon_type": "SR",
+  "burst_stage": "3",
+  "element": "Iron",
+  "class": "Attacker",
+  "company": "テトラ",
+  "squad": "カフェ・スウィーティー",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0,
+    "charge_time": 1.0,
+    "charge_mult": 2.5
+  },
+  "skills": [
+    {
+      "name": "S1: やせ我慢 (貫通特化)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "is_pierce",
+        "value": 1,
+        "duration": 6,
+        "tag": "mbb_pierce_specialization",
+        "description": "フルチャージ攻撃時、自分に貫通特化"
+      }
+    },
+    {
+      "name": "S1: やせ我慢 (羞恥心用チャージ維持/開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "condition": {
+        "self_not_has_tag": "mbb_shame_immunity"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "charge_speed_rate",
+        "value": -0.5,
+        "duration": 99999,
+        "tag": "mbb_shame_charge_hold",
+        "description": "羞恥心/羞恥心免疫でなければ、1.0秒フルチャージ+0.5秒維持のためにチャージ時間を1.5秒相当にする"
+      }
+    },
+    {
+      "name": "S1: やせ我慢 (羞恥心用チャージ維持/再適用)",
+      "trigger_type": "time_interval",
+      "trigger_value": 0.5,
+      "condition": {
+        "self_not_has_tag": "mbb_shame_charge_hold"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "charge_speed_rate",
+        "value": -0.5,
+        "duration": 99999,
+        "tag": "mbb_shame_charge_hold",
+        "description": "羞恥心/羞恥心免疫でなければ、1.5秒チャージ運用を再適用"
+      }
+    },
+    {
+      "name": "S1: やせ我慢 (羞恥心)",
+      "trigger_type": "charging_time",
+      "trigger_value": 1.5,
+      "condition": {
+        "self_not_has_tag": "mbb_shame_immunity"
+      },
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true,
+        "description": "フルチャージ1.0秒+維持0.5秒の近似。羞恥心/羞恥心免疫でなければ発動"
+      },
+      "stages": [
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "kwargs": {
+            "tag": "mbb_shame_charge_hold",
+            "description": "羞恥心発動後は通常チャージに戻す"
+          }
+        },
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 1,
+            "multiplier_list": [
+              1.7136,
+              1.8455,
+              1.9773,
+              2.1091,
+              2.2409,
+              2.3728,
+              2.5046,
+              2.6364,
+              2.7682,
+              2.9
+            ],
+            "is_split": true,
+            "is_skill_damage": true,
+            "description": "羞恥心発動時、敵全体に分配ダメージ。単体敵として処理"
+          }
+        },
+        {
+          "effect_type": "set_current_ammo",
+          "target": "self",
+          "kwargs": {
+            "value": 0,
+            "description": "残弾数100%減少"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "reload_speed_rate",
+            "value": -0.5,
+            "duration": 10,
+            "remove_on_reload": true,
+            "tag": [
+              "mbb_shame",
+              "mbb_shame_reload_lock"
+            ],
+            "description": "リロード速度50%低下。リロード1回で解除"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "value": 1,
+            "duration": 10,
+            "remove_on_reload": true,
+            "tag": [
+              "mbb_shame",
+              "mbb_shame_reload_fixed",
+              "ignore_reload_speed_buffs"
+            ],
+            "allow_tags": [
+              "mbb_shame_reload_lock"
+            ],
+            "description": "羞恥心強制リロード中は、指定したリロード速度低下のみを適用"
+          }
+        },
+        {
+          "effect_type": "force_reload",
+          "target": "self",
+          "kwargs": {
+            "description": "強制リロード"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 2,
+            "buff_type": "atk_buff_rate",
+            "value_list": [
+              0.7014,
+              0.7553,
+              0.8093,
+              0.8633,
+              0.9172,
+              0.9712,
+              1.0251,
+              1.0791,
+              1.133,
+              1.187
+            ],
+            "duration": 40,
+            "tag": [
+              "mbb_shame",
+              "mbb_shame_atk"
+            ],
+            "description": "羞恥心: 自分に攻撃力UP"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "pierce_dmg_buff",
+            "value_list": [
+              0.3823,
+              0.4117,
+              0.4411,
+              0.4705,
+              0.5,
+              0.5294,
+              0.5588,
+              0.5882,
+              0.6176,
+              0.647
+            ],
+            "duration": 40,
+            "tag": [
+              "mbb_shame",
+              "mbb_shame_pierce_dmg"
+            ],
+            "description": "羞恥心状態の時のみ、自分に貫通ダメージUP"
+          }
+        }
+      ]
+    },
+    {
+      "name": "S2: 怒り爆発 (何見てんだよお前ら！！)",
+      "trigger_type": "time_interval",
+      "trigger_value": 2,
+      "condition": {
+        "self_has_tag": "mbb_watch_me"
+      },
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 4,
+        "multiplier_list": [
+          2.6455,
+          2.849,
+          3.0525,
+          3.256,
+          3.4595,
+          3.663,
+          3.8665,
+          4.07,
+          4.2735,
+          4.477
+        ],
+        "is_split": true,
+        "is_skill_damage": true,
+        "description": "何見てんだよお前ら！！状態の時、2秒ごとに敵全体へ分配ダメージ。単体敵として処理"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 恥ずかしさ大爆発",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "remove_buff_by_tag",
+        "target": "self",
+        "kwargs": {
+          "tag": "mbb_shame_charge_hold",
+          "description": "羞恥心免疫中は羞恥心用の1.5秒チャージ維持を解除"
+        }
+      },
+      {
+        "effect_type": "remove_buff_by_tag",
+        "target": "self",
+        "kwargs": {
+          "tag": "mbb_shame",
+          "description": "羞恥心免疫付与時、現在かかっている羞恥心を強制解除"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "buff_type": "dummy_effect",
+          "value": 1,
+          "duration": 10,
+          "tag": [
+            "mbb_watch_me",
+            "mbb_shame_immunity"
+          ],
+          "description": "何見てんだよお前ら！！: 羞恥心免疫"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 5,
+          "buff_type": "pierce_dmg_buff",
+          "value_list": [
+            0.6951,
+            0.7486,
+            0.802,
+            0.8555,
+            0.909,
+            0.9625,
+            1.0159,
+            1.0694,
+            1.1229,
+            1.1764
+          ],
+          "duration": 10,
+          "tag": "mbb_burst_pierce_dmg",
+          "description": "何見てんだよお前ら！！: 貫通ダメージUP"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 6,
+          "buff_type": "atk_buff_rate",
+          "value_list": [
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2.0,
+            2.1,
+            2.2
+          ],
+          "duration": 10,
+          "tag": "mbb_burst_atk",
+          "description": "何見てんだよお前ら！！: 攻撃力UP"
+        }
+      }
+    ]
+  }
+}

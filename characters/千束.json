@@ -1,0 +1,227 @@
+{
+  "name": "千束",
+  "weapon_type": "SMG",
+  "burst_stage": "3",
+  "element": "Iron",
+  "class": "Attacker",
+  "manufacturer": "アブノーマル",
+  "company": "アブノーマル",
+  "squad": "喫茶リコリコ",
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.0,
+    "damage_rate": 0.1012,
+    "core_damage_rate": 2.5
+  },
+  "skills": [
+    {
+      "name": "S1: 超感覚 (初期チャージ)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 99999,
+        "stack_name": "chisato_supersense",
+        "stack_amount": 100,
+        "max_stack": 100,
+        "tag": "chisato_supersense"
+      }
+    },
+    {
+      "name": "S1: 超感覚 (100%/無敵)",
+      "trigger_type": "stack_count",
+      "trigger_value": 100,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "trigger_stack_name": "chisato_supersense",
+        "buff_type": "dummy_effect",
+        "value": 1,
+        "duration": 2,
+        "tag": "invincible",
+        "description": "射撃予測: 無敵。味方被ダメージ計算は未対応"
+      }
+    },
+    {
+      "name": "S1: 超感覚 (70%以上/攻撃力)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_stack_min": 70,
+        "stack_name": "chisato_supersense"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [
+          0.3172,
+          0.3416,
+          0.3661,
+          0.3905,
+          0.4149,
+          0.4393,
+          0.4637,
+          0.4881,
+          0.5125,
+          0.5369
+        ],
+        "duration": 1.1,
+        "tag": "chisato_supersense_atk"
+      }
+    },
+    {
+      "name": "S1: 超感覚 (55%以上/防御力無視ダメージ)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_stack_min": 55,
+        "stack_name": "chisato_supersense"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "ignore_def_dmg_buff",
+        "value_list": [
+          0.2873,
+          0.3094,
+          0.3315,
+          0.3536,
+          0.3757,
+          0.3978,
+          0.4199,
+          0.442,
+          0.4641,
+          0.4862
+        ],
+        "duration": 1.1,
+        "tag": "chisato_supersense_ignore_def"
+      }
+    },
+    {
+      "name": "S1: 超感覚 (25%以上/命中率)",
+      "trigger_type": "time_interval",
+      "trigger_value": 1.0,
+      "condition": {
+        "self_stack_min": 25,
+        "stack_name": "chisato_supersense"
+      },
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "buff_type": "hit_rate_buff",
+        "value_list": [
+          0.1322,
+          0.1423,
+          0.1525,
+          0.1627,
+          0.1728,
+          0.183,
+          0.1932,
+          0.2033,
+          0.2135,
+          0.2237
+        ],
+        "duration": 1.1,
+        "tag": "chisato_supersense_hit"
+      }
+    },
+    {
+      "name": "S1: 超感覚 (2秒ごと消費)",
+      "trigger_type": "time_interval",
+      "trigger_value": 2.0,
+      "effect_type": "increase_current_stack_count",
+      "target": "self",
+      "kwargs": {
+        "stack_name": "chisato_supersense",
+        "value": -1,
+        "description": "超感覚1%減少。スタック管理の都合上0未満にはならない"
+      }
+    },
+    {
+      "name": "S2: 装甲貫通射撃 (バースト時)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "is_ignore_def",
+        "value": 1,
+        "duration": 10,
+        "tag": "chisato_ignore_def_attack"
+      }
+    },
+    {
+      "name": "S2: 装甲貫通射撃 (48命中)",
+      "trigger_type": "pellet_hit",
+      "trigger_value": 48,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 4,
+        "multiplier_list": [
+          2.7901,
+          3.0048,
+          3.2194,
+          3.434,
+          3.6487,
+          3.8633,
+          4.0779,
+          4.2925,
+          4.5072,
+          4.7218
+        ],
+        "is_ignore_def": true,
+        "is_skill_damage": true
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: 緊急チャージ",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "set_stack",
+        "target": "self",
+        "kwargs": {
+          "stack_name": "chisato_supersense",
+          "value": 100
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 5,
+          "buff_type": "atk_buff_rate",
+          "value_list": [
+            0.4323,
+            0.4656,
+            0.4988,
+            0.5321,
+            0.5653,
+            0.5986,
+            0.6318,
+            0.6651,
+            0.6984,
+            0.7316
+          ],
+          "duration": 10
+        }
+      }
+    ]
+  }
+}

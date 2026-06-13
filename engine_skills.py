@@ -84,6 +84,47 @@ class SkillEngineMixin:
             )
         return len(matched)
 
+    def _convert_timed_speed_value(self, buff_type, value, kwargs, caster, target):
+        mode = (
+            kwargs.get('value_mode')
+            or kwargs.get('value_unit')
+            or kwargs.get('charge_speed_value_mode')
+        )
+        try:
+            numeric = float(value or 0)
+        except (TypeError, ValueError):
+            return value
+
+        if not mode:
+            return numeric
+
+        mode = str(mode)
+        if buff_type in ['charge_speed_fixed', 'reload_speed_fixed']:
+            if mode in ['frames', 'frame']:
+                return numeric
+            if mode in ['seconds', 'second', 'sec']:
+                return numeric * self.FPS
+            if mode in ['target_charge_frame_ratio', 'target_charge_frames_percent', 'target_base_charge_ratio']:
+                base_frames = getattr(target.weapon, 'charge_time', 0) * self.FPS if target else 0
+                return base_frames * numeric
+            if mode in ['caster_charge_frame_ratio', 'caster_charge_frames_percent', 'caster_base_charge_ratio']:
+                base_frames = getattr(caster.weapon, 'charge_time', 0) * self.FPS if caster else 0
+                return base_frames * numeric
+
+        if buff_type == 'charge_time_cut':
+            if mode in ['seconds', 'second', 'sec']:
+                return numeric
+            if mode in ['frames', 'frame']:
+                return numeric / self.FPS
+            if mode in ['target_charge_frame_ratio', 'target_charge_frames_percent', 'target_base_charge_ratio']:
+                base_seconds = getattr(target.weapon, 'charge_time', 0) if target else 0
+                return base_seconds * numeric
+            if mode in ['caster_charge_frame_ratio', 'caster_charge_frames_percent', 'caster_base_charge_ratio']:
+                base_seconds = getattr(caster.weapon, 'charge_time', 0) if caster else 0
+                return base_seconds * numeric
+
+        return numeric
+
     def _effective_burst_stage(self, character):
         active_stage = getattr(character, 'current_burst_stage', None)
         if active_stage is not None:
@@ -245,15 +286,26 @@ class SkillEngineMixin:
             if stack_name:
                 count = target.buff_manager.get_stack_count(stack_name, frame)
                 min_v = condition.get("stack_min", -999)
-                max_v = condition.get("stack_max", 999)
+                max_v = condition.get("stack_max", float("inf"))
                 if not (min_v <= count <= max_v): return False
         
-        if "self_stack_min" in condition:
+        if "self_stack_min" in condition or "self_stack_max" in condition:
             stack_name = condition.get("stack_name")
             if stack_name:
                 count = caster.buff_manager.get_stack_count(stack_name, frame)
-                min_v = condition["self_stack_min"]
-                if count < min_v: return False
+                min_v = condition.get("self_stack_min", -999)
+                max_v = condition.get("self_stack_max", float("inf"))
+                if not (min_v <= count <= max_v): return False
+
+        if "self_stack_conditions" in condition:
+            for stack_condition in condition["self_stack_conditions"]:
+                stack_name = stack_condition.get("stack_name")
+                if not stack_name:
+                    continue
+                count = caster.buff_manager.get_stack_count(stack_name, frame)
+                min_v = stack_condition.get("min", -999)
+                max_v = stack_condition.get("max", float("inf"))
+                if not (min_v <= count <= max_v): return False
 
         if "has_barrier" in condition:
             shield_val = target.buff_manager.get_total_value('shield', frame)
@@ -351,11 +403,24 @@ class SkillEngineMixin:
                 if self.enemy_element != skill.condition["enemy_element"]:
                     return False
             
-            if "self_stack_min" in skill.condition and caster:
+            if ("self_stack_min" in skill.condition or "self_stack_max" in skill.condition) and caster:
                 stack_name = skill.condition.get("stack_name")
                 if stack_name:
                     count = caster.buff_manager.get_stack_count(stack_name, frame)
-                    if count < skill.condition["self_stack_min"]:
+                    min_v = skill.condition.get("self_stack_min", -999)
+                    max_v = skill.condition.get("self_stack_max", float("inf"))
+                    if not (min_v <= count <= max_v):
+                        return False
+
+            if "self_stack_conditions" in skill.condition and caster:
+                for stack_condition in skill.condition["self_stack_conditions"]:
+                    stack_name = stack_condition.get("stack_name")
+                    if not stack_name:
+                        continue
+                    count = caster.buff_manager.get_stack_count(stack_name, frame)
+                    min_v = stack_condition.get("min", -999)
+                    max_v = stack_condition.get("max", float("inf"))
+                    if not (min_v <= count <= max_v):
                         return False
 
             if ("stack_min" in skill.condition or "stack_max" in skill.condition) and caster:
@@ -363,7 +428,7 @@ class SkillEngineMixin:
                 if stack_name:
                     count = caster.buff_manager.get_stack_count(stack_name, frame)
                     min_v = skill.condition.get("stack_min", -999)
-                    max_v = skill.condition.get("stack_max", 999)
+                    max_v = skill.condition.get("stack_max", float("inf"))
                     if not (min_v <= count <= max_v):
                         return False
 
@@ -778,27 +843,11 @@ class SkillEngineMixin:
             return 0
 
         if skill.effect_type == 'burst_gauge_charge':
-            raw_value = kwargs.get('value', kwargs.get('rate', 0))
-            charge_ratio = float(raw_value or 0)
-            if charge_ratio > 1.0:
-                charge_ratio /= 100.0
-            charge_ratio = max(0.0, charge_ratio)
-            required_frames = self.burst_charge_time * self.FPS
-            charge_frames = charge_ratio * required_frames
-
-            if self.burst_state == "GEN" and required_frames > 0:
-                prev_timer = self.burst_timer
-                self.burst_timer = min(required_frames, self.burst_timer + charge_frames)
-                self.log(
-                    f"[Burst Gauge] Charged {charge_ratio * 100:.2f}% "
-                    f"({prev_timer / self.FPS:.2f}s -> {self.burst_timer / self.FPS:.2f}s)",
-                    target_name=caster.name
-                )
-            else:
-                self.log(
-                    f"[Burst Gauge] Ignored {charge_ratio * 100:.2f}% charge while state={self.burst_state}",
-                    target_name=caster.name
-                )
+            self.log(
+                "[Burst Gauge] Ignored burst_gauge_charge because burst fill time "
+                "is controlled only by burst_charge_time.",
+                target_name=caster.name
+            )
             return 0
         
         if skill.effect_type == 'decrease_debuff_stack_count':
@@ -967,9 +1016,10 @@ class SkillEngineMixin:
                     old_max_hp = None
                     if kwargs.get('update_current_hp', False) and b_type in ['max_hp_rate', 'max_hp_fixed'] and skill.target != 'enemy':
                         old_max_hp = target.get_current_max_hp(frame)
+                    applied_val = self._convert_timed_speed_value(b_type, val, kwargs, caster, target)
 
                     manager.add_buff(
-                        b_type, val, dur, frame, source=buff_source,
+                        b_type, applied_val, dur, frame, source=buff_source,
                         stack_name=stack_name,
                         max_stack=max_stack, tag=tag,
                         shot_duration=shot_dur, remove_on_reload=rem_reload,
@@ -986,7 +1036,7 @@ class SkillEngineMixin:
                         if skill.target != 'enemy' and new_count > prev_count:
                             target.process_trigger('stack_count', stack_name, frame, is_full_burst, self, delta=new_count - prev_count)
                     else:
-                        self.log(f"[Buff] Applied {skill.name} ({b_type}: {val}) to {t_str}", target_name=caster.name)
+                        self.log(f"[Buff] Applied {skill.name} ({b_type}: {applied_val}) to {t_str}", target_name=caster.name)
 
                     if skill.target != 'enemy':
                         target.process_trigger('buff_applied', b_type, frame, is_full_burst, self)
@@ -1329,6 +1379,8 @@ class SkillEngineMixin:
             elif skill.effect_type == 'increase_current_stack_count':
                 delta = int(kwargs.get('value', 1))
                 ignore_tags = kwargs.get('ignore_tags', ["debuff", "negative_buff"])
+                record_as_ally_ammo = bool(kwargs.get('record_as_ally_ammo_consumed', False))
+                ammo_consumed_amount = int(kwargs.get('ammo_consumed_amount', abs(delta)))
                 target_stack = kwargs.get('stack_name') # ★追加: 名前を取得
                 
                 for target in targets:
@@ -1345,6 +1397,8 @@ class SkillEngineMixin:
 
                     if count > 0:
                         self.log(f"[Stack Inc] {target.name}: Increased '{target_stack}' by {delta}", target_name=caster.name)
+                        if delta < 0 and record_as_ally_ammo and hasattr(self, 'record_ammo_consumed'):
+                            total_dmg += self.record_ammo_consumed(target, ammo_consumed_amount, frame, is_full_burst)
             
             elif skill.effect_type == 'stun':
                 duration = kwargs.get('duration', 0) * self.FPS
@@ -1374,7 +1428,32 @@ class SkillEngineMixin:
                 tags = kwargs.get('tag')
                 # ▲▲▲ 追加ここまで ▲▲▲
                 if new_weapon_data and target == caster:
+                    new_weapon_data = new_weapon_data.copy()
+                    max_ammo_from_stack = new_weapon_data.pop('max_ammo_from_stack', None)
+                    if max_ammo_from_stack:
+                        stack_name = max_ammo_from_stack.get('stack_name')
+                        multiplier = max_ammo_from_stack.get('multiplier', 1)
+                        min_ammo = int(max_ammo_from_stack.get('min', 0))
+                        max_ammo = max_ammo_from_stack.get('max')
+                        stack_count = target.buff_manager.get_stack_count(stack_name, frame) if stack_name else 0
+                        resolved_ammo = int(stack_count * multiplier)
+                        if max_ammo is not None:
+                            resolved_ammo = min(int(max_ammo), resolved_ammo)
+                        new_weapon_data['max_ammo'] = max(min_ammo, resolved_ammo)
+                        self.log(
+                            f"[Weapon Change] Resolved max_ammo from stack '{stack_name}': "
+                            f"{stack_count} -> {new_weapon_data['max_ammo']}",
+                            target_name=target.name
+                        )
                     target.is_weapon_changed = True
+                    target.weapon_change_infinite_ammo = bool(
+                        kwargs.get('装弾数無限')
+                        or kwargs.get('infinite_ammo')
+                        or kwargs.get('ammo_infinite')
+                        or new_weapon_data.get('装弾数無限')
+                        or new_weapon_data.get('infinite_ammo')
+                        or new_weapon_data.get('ammo_infinite')
+                    )
                     target.weapon_change_revert_on_ammo_empty = kwargs.get(
                         'revert_on_ammo_empty',
                         new_weapon_data.get('revert_on_ammo_empty', True)

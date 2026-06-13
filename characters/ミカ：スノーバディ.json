@@ -4,12 +4,13 @@
   "burst_stage": "1",
   "element": "Iron",
   "class": "Supporter",
+  "company": "テトラ",
   "squad": "リトルキャノン",
   "stats": {
     "max_ammo": 120,
-    "reload_time": 2.00,
+    "reload_time": 2.0,
     "damage_rate": 0.117,
-    "core_damage_rate": 2.50
+    "core_damage_rate": 2.5
   },
   "skills": [
     {
@@ -23,7 +24,18 @@
         "buff_type": "dummy_buff",
         "stack_name": "TidyUp",
         "max_stack": 10,
-        "value_list": [0.011, 0.012, 0.013, 0.014, 0.015, 0.016, 0.017, 0.018, 0.019, 0.02],
+        "value_list": [
+          0.011,
+          0.012,
+          0.013,
+          0.014,
+          0.015,
+          0.016,
+          0.017,
+          0.018,
+          0.019,
+          0.02
+        ],
         "duration": 15,
         "description": "整理整頓：受けるダメージ低下 (dummy)"
       }
@@ -41,7 +53,18 @@
       "kwargs": {
         "effect_no": 2,
         "buff_type": "max_ammo_buff",
-        "value_list": [0.22, 0.24, 0.26, 0.28, 0.30, 0.32, 0.34, 0.36, 0.38, 0.40],
+        "value_list": [
+          0.22,
+          0.24,
+          0.26,
+          0.28,
+          0.3,
+          0.32,
+          0.34,
+          0.36,
+          0.38,
+          0.4
+        ],
         "duration": 15,
         "description": "フルスタック時、最大装弾数UP (持続)"
       }
@@ -54,7 +77,18 @@
       "target": "allies",
       "kwargs": {
         "effect_no": 3,
-        "trigger_value_list": [220, 212, 204, 196, 189, 181, 173, 165, 157, 150],
+        "trigger_value_list": [
+          220,
+          212,
+          204,
+          196,
+          189,
+          181,
+          173,
+          165,
+          157,
+          150
+        ],
         "value": 1,
         "target_buff_type": "stack_buff",
         "description": "スタック量1個増加"
@@ -69,7 +103,18 @@
       "kwargs": {
         "effect_no": 4,
         "buff_type": "dummy_buff",
-        "value_list": [1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0],
+        "value_list": [
+          1.2,
+          1.4,
+          1.6,
+          1.8,
+          2.0,
+          2.2,
+          2.4,
+          2.6,
+          2.8,
+          3.0
+        ],
         "duration": 99999,
         "description": "バーストゲージチャージ速度UP (dummy)"
       }
@@ -100,7 +145,18 @@
             "buff_type": "atk_buff_fixed",
             "scale_by_caster_stats": true,
             "target_stat": "atk",
-            "value_list": [0.2359, 0.2541, 0.2722, 0.2904, 0.3085, 0.3267, 0.3449, 0.363, 0.3812, 0.3993],
+            "value_list": [
+              0.2359,
+              0.2541,
+              0.2722,
+              0.2904,
+              0.3085,
+              0.3267,
+              0.3449,
+              0.363,
+              0.3812,
+              0.3993
+            ],
             "duration": 5,
             "description": "発動者攻撃力基準で攻撃力UP"
           }

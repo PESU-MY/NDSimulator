@@ -22,6 +22,7 @@
   };
 
   const PART_KEYS = ["head", "body", "arms", "legs"];
+  const OVERLOAD_SLOT_COUNT = 3;
 
   let statusData = null;
 
@@ -43,14 +44,52 @@
     };
   }
 
+  function defaultOverloadPartSettings() {
+    return Array.from({ length: OVERLOAD_SLOT_COUNT }, () => ({ type: "", rank: 0 }));
+  }
+
+  function defaultOverloadSettings() {
+    return {
+      head: defaultOverloadPartSettings(),
+      body: defaultOverloadPartSettings(),
+      arms: defaultOverloadPartSettings(),
+      legs: defaultOverloadPartSettings()
+    };
+  }
+
+  function normalizeOverloadPartSettings(partSettings) {
+    const source = Array.isArray(partSettings) ? partSettings : [];
+    return defaultOverloadPartSettings().map((defaults, index) => {
+      const entry = source[index] && typeof source[index] === "object" ? source[index] : {};
+      return {
+        ...defaults,
+        ...entry,
+        type: String(entry.type || entry.option || ""),
+        rank: numberValue(entry.rank, 0)
+      };
+    });
+  }
+
+  function normalizeOverloadSettings(settings) {
+    const source = settings && typeof settings === "object" ? settings : {};
+    return {
+      head: normalizeOverloadPartSettings(source.head),
+      body: normalizeOverloadPartSettings(source.body),
+      arms: normalizeOverloadPartSettings(source.arms),
+      legs: normalizeOverloadPartSettings(source.legs)
+    };
+  }
+
   function defaultIndividualStatusSettings() {
     return {
       limitBreak: 10,
       bondLevel: 30,
       collectionRarity: "",
       collectionLevel: 0,
+      cubeType: "",
       cubeLevel: 0,
-      equipment: defaultEquipmentSettings()
+      equipment: defaultEquipmentSettings(),
+      overload: defaultOverloadSettings()
     };
   }
 
@@ -58,6 +97,7 @@
     const defaults = defaultIndividualStatusSettings();
     const source = settings && typeof settings === "object" ? settings : {};
     const equipment = source.equipment && typeof source.equipment === "object" ? source.equipment : {};
+    const overload = source.overload && typeof source.overload === "object" ? source.overload : {};
     return {
       ...defaults,
       ...source,
@@ -66,7 +106,8 @@
         body: { ...defaults.equipment.body, ...(equipment.body || {}) },
         arms: { ...defaults.equipment.arms, ...(equipment.arms || {}) },
         legs: { ...defaults.equipment.legs, ...(equipment.legs || {}) }
-      }
+      },
+      overload: normalizeOverloadSettings(overload)
     };
   }
 
@@ -78,6 +119,7 @@
       : {};
     const commonEquipment = common.equipment && typeof common.equipment === "object" ? common.equipment : {};
     const individualEquipment = individual.equipment && typeof individual.equipment === "object" ? individual.equipment : {};
+    const individualOverload = individual.overload && typeof individual.overload === "object" ? individual.overload : {};
     return {
       ...defaults,
       ...common,
@@ -88,7 +130,8 @@
         body: { ...defaults.equipment.body, ...(commonEquipment.body || {}), ...(individualEquipment.body || {}) },
         arms: { ...defaults.equipment.arms, ...(commonEquipment.arms || {}), ...(individualEquipment.arms || {}) },
         legs: { ...defaults.equipment.legs, ...(commonEquipment.legs || {}), ...(individualEquipment.legs || {}) }
-      }
+      },
+      overload: normalizeOverloadSettings(individualOverload)
     };
   }
 
@@ -199,6 +242,7 @@
     setData,
     calculate,
     defaultEquipmentSettings,
+    defaultOverloadSettings,
     defaultIndividualStatusSettings,
     normalizeIndividualStatusSettings,
     mergeStatusSettings

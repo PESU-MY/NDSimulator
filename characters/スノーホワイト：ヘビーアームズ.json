@@ -4,6 +4,7 @@
   "burst_stage": "3",
   "element": "Water",
   "class": "Attacker",
+  "company": "ピルグリム",
   "squad": "",
   "stats": {
     "max_ammo": 6,
@@ -23,7 +24,9 @@
         "value": 1,
         "duration": 99999,
         "tag": "ignore_charge_speed_buffs",
-        "allow_tags": ["swha_full_active_mode"],
+        "allow_tags": [
+          "swha_full_active_mode"
+        ],
         "description": "チャージ時間1.2秒に固定。フルアクティブ中の固定化だけは許可"
       }
     },

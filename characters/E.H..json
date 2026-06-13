@@ -1,0 +1,286 @@
+{
+  "name": "E.H.",
+  "weapon_type": "SMG",
+  "element": "Wind",
+  "class": "Attacker",
+  "company": "エリシオン",
+  "squad": "エキゾチック",
+  "burst_stage": "3",
+  "conversion_notes": [
+    "発射体破壊・敵撃破を直接扱うトリガーが現状ないため、該当する廃品回収はdummy定義に留めています。",
+    "パーツ破壊による廃品回収はpart_breakトリガーで定義しています。Web側のパーツ破壊モード有効時のみ発動します。",
+    "バースト武器の最大装弾数はmax_ammo_from_stackで自家製弾倉スタック数を参照します。"
+  ],
+  "stats": {
+    "max_ammo": 120,
+    "reload_time": 1.0,
+    "damage_rate": 0.1012,
+    "core_damage_rate": 2.5
+  },
+  "skills": [
+    {
+      "name": "S2: ジャンクハンティング (戦闘開始/廃品)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 99999,
+        "stack_name": "eh_scrap",
+        "stack_amount": 10,
+        "max_stack": 10,
+        "tag": "eh_scrap",
+        "description": "戦闘開始時、廃品10個"
+      }
+    },
+    {
+      "name": "S2: ジャンクハンティング (戦闘開始/有利コード)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "elemental_buff",
+        "value_list": [
+          0.0967,
+          0.1041,
+          0.1116,
+          0.119,
+          0.1264,
+          0.1339,
+          0.1413,
+          0.1488,
+          0.1562,
+          0.1636
+        ],
+        "duration": 15,
+        "tag": "eh_junk_hunting_elemental",
+        "description": "廃品回収時の有利コード攻撃ダメージUP。戦闘開始時の廃品10個回収に対応"
+      }
+    },
+    {
+      "name": "S2: ジャンクハンティング (パーツ破壊/廃品)",
+      "trigger_type": "part_break",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 99999,
+        "stack_name": "eh_scrap",
+        "stack_amount": 5,
+        "max_stack": 10,
+        "tag": "eh_scrap",
+        "description": "自分を含む味方の誰かがパーツを破壊した時、廃品5個"
+      }
+    },
+    {
+      "name": "S2: ジャンクハンティング (パーツ破壊/有利コード)",
+      "trigger_type": "part_break",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "buff_type": "elemental_buff",
+        "value_list": [
+          0.0967,
+          0.1041,
+          0.1116,
+          0.119,
+          0.1264,
+          0.1339,
+          0.1413,
+          0.1488,
+          0.1562,
+          0.1636
+        ],
+        "duration": 15,
+        "tag": "eh_junk_hunting_elemental",
+        "description": "廃品回収時の有利コード攻撃ダメージUP。パーツ破壊による回収に対応"
+      }
+    },
+    {
+      "name": "S2: ジャンクハンティング (発射体破壊/未対応)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 99999,
+        "stack_name": "eh_scrap",
+        "stack_amount": 1,
+        "max_stack": 10,
+        "tag": "eh_scrap",
+        "description": "破壊可能な発射体破壊時、廃品1個。現状トリガー未実装のためdummy"
+      }
+    },
+    {
+      "name": "S2: ジャンクハンティング (敵撃破/未対応)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_effect",
+        "value": 0,
+        "duration": 99999,
+        "stack_name": "eh_scrap",
+        "stack_amount": 2,
+        "max_stack": 10,
+        "tag": "eh_scrap",
+        "description": "敵撃破時、廃品2個。現状トリガー未実装のためdummy"
+      }
+    },
+    {
+      "name": "S1: ホームメイドマガジン (廃品10/弾倉製造)",
+      "trigger_type": "stack_count",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "condition": {
+        "self_stack_conditions": [
+          {
+            "stack_name": "eh_scrap",
+            "min": 10
+          },
+          {
+            "stack_name": "eh_homemade_magazine",
+            "max": 3
+          }
+        ]
+      },
+      "kwargs": {
+        "trigger_all_stages": true,
+        "trigger_stack_name": "eh_scrap"
+      },
+      "stages": [
+        {
+          "effect_type": "set_stack",
+          "target": "self",
+          "kwargs": {
+            "stack_name": "eh_scrap",
+            "value": 0,
+            "description": "廃品数リセット"
+          }
+        },
+        {
+          "effect_type": "stack_buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_effect",
+            "value": 0,
+            "duration": 99999,
+            "stack_name": "eh_homemade_magazine",
+            "stack_amount": 1,
+            "max_stack": 4,
+            "tag": "eh_homemade_magazine",
+            "description": "自家製弾倉1本増加"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "atk_buff_rate",
+            "value_list": [
+              0.0443,
+              0.0477,
+              0.0511,
+              0.0545,
+              0.058,
+              0.0614,
+              0.0648,
+              0.0682,
+              0.0716,
+              0.075
+            ],
+            "copy_stack_count": "eh_homemade_magazine",
+            "duration": 99999,
+            "tag": "eh_homemade_magazine_atk",
+            "description": "攻撃力UP。効果量×自家製弾倉数"
+          }
+        }
+      ]
+    }
+  ],
+  "burst_skill": {
+    "name": "Burst: イン・トゥ・ザ・ヘブン",
+    "trigger_type": "on_use_burst_skill",
+    "trigger_value": 0,
+    "cooldown_time": 40.0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "weapon_change",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 3,
+          "duration": 10,
+          "tag": "eh_into_the_heaven_weapon",
+          "weapon_data": {
+            "name": "イン・トゥ・ザ・ヘブン",
+            "weapon_type": "SMG",
+            "weapon_class": "SMG",
+            "type": "CHARGE",
+            "charge_time": 0.4,
+            "charge_mult": 2.5,
+            "multiplier_list": [
+              0.3602,
+              0.388,
+              0.4157,
+              0.4435,
+              0.4712,
+              0.499,
+              0.5267,
+              0.5545,
+              0.5822,
+              0.61
+            ],
+            "max_ammo_from_stack": {
+              "stack_name": "eh_homemade_magazine",
+              "multiplier": 1,
+              "min": 0,
+              "max": 4
+            },
+            "revert_on_ammo_empty": true
+          },
+          "description": "使用武器変更。最大装弾数は1発×自家製弾倉数"
+        }
+      },
+      {
+        "effect_type": "buff",
+        "target": "self",
+        "kwargs": {
+          "effect_no": 4,
+          "buff_type": "atk_buff_rate",
+          "value_list": [
+            2.5412,
+            2.7367,
+            2.9322,
+            3.1276,
+            3.3231,
+            3.5186,
+            3.7141,
+            3.9096,
+            4.105,
+            4.3005
+          ],
+          "duration": 10,
+          "tag": "eh_into_the_heaven_atk"
+        }
+      }
+    ]
+  }
+}

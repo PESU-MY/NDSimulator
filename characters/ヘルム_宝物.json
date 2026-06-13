@@ -1,0 +1,261 @@
+{
+  "name": "ヘルム_宝物",
+  "weapon_type": "SR",
+  "burst_stage": "3",
+  "element": "Water",
+  "class": "Attacker",
+  "company": "エリシオン",
+  "squad": "イージス",
+  "treasure": true,
+  "base_character": "ヘルム",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.6904,
+    "core_damage_rate": 2.0,
+    "charge_time": 1.0,
+    "charge_mult": 2.5
+  },
+  "conversion_notes": [
+    "通常版ヘルム.jsonの構造に準拠し、宝物強化後の条件と効果量を反映。",
+    "阻止部位の攻撃ダメージUPはpart_dmg_buffとして保持。部位ダメージ判定が立つ攻撃でのみ有効。",
+    "バーストゲージチャージは固定ローテーション下では影響が限定的。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: 陣頭指揮 (最後の弾丸命中)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "normal_attack_crit_rate_buff",
+        "value_list": [
+          0.0865,
+          0.0931,
+          0.0998,
+          0.1064,
+          0.1131,
+          0.1198,
+          0.1264,
+          0.1331,
+          0.1397,
+          0.1464
+        ],
+        "duration": 5,
+        "tag": "helm_treasure_normal_attack_crit",
+        "description": "通常攻撃のクリティカル確率UP"
+      }
+    },
+    {
+      "name": "Skill 1: 陣頭指揮 (フルチャージ)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "heal",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 2,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [
+              0.0034,
+              0.0037,
+              0.004,
+              0.0042,
+              0.0045,
+              0.0048,
+              0.0051,
+              0.0053,
+              0.0056,
+              0.0059
+            ],
+            "description": "味方全体に発動者の最終最大HP比例で回復"
+          }
+        },
+        {
+          "effect_type": "burst_gauge_charge",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 3,
+            "value_list": [
+              0.0846,
+              0.0911,
+              0.0976,
+              0.1041,
+              0.1106,
+              0.1171,
+              0.1236,
+              0.1301,
+              0.1366,
+              0.1431
+            ],
+            "description": "バーストゲージをチャージ"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: 砲門開放 (阻止部位ダメージ)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 4,
+        "buff_type": "dummy_buff",
+        "value_list": [
+          0.0182,
+          0.0196,
+          0.021,
+          0.0224,
+          0.0238,
+          0.0252,
+          0.0266,
+          0.028,
+          0.0294,
+          0.0308
+        ],
+        "duration": 99999,
+        "tag": "helm_treasure_part_dmg",
+        "description": "阻止部位の攻撃ダメージUP"
+      }
+    },
+    {
+      "name": "Skill 2: 砲門開放 (フルバースト開始)",
+      "trigger_type": "on_burst_enter",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 5,
+        "buff_type": "atk_dmg_buff",
+        "value_list": [
+          0.1647,
+          0.1774,
+          0.19,
+          0.2027,
+          0.2154,
+          0.228,
+          0.2407,
+          0.2534,
+          0.266,
+          0.2787
+        ],
+        "duration": 10,
+        "tag": "helm_treasure_fb_atk_dmg"
+      }
+    },
+    {
+      "name": "Skill 2: 砲門開放 (フルチャージ命中)",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 6,
+        "multiplier_list": [
+          1.0576,
+          1.139,
+          1.2203,
+          1.3017,
+          1.383,
+          1.4644,
+          1.5457,
+          1.6271,
+          1.7084,
+          1.7898
+        ],
+        "description": "フルチャージ攻撃命中時、対象に追加ダメージ"
+      }
+    },
+    {
+      "name": "バースト: イージスキャノン",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "damage",
+          "target": "enemy",
+          "kwargs": {
+            "effect_no": 7,
+            "multiplier_list": [
+              48.672,
+              52.416,
+              56.16,
+              59.904,
+              63.648,
+              67.392,
+              71.136,
+              74.88,
+              78.624,
+              82.368
+            ],
+            "force_full_burst": true,
+            "description": "最終攻撃力が最も高い敵1機へのバーストスキルダメージ"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 8,
+            "buff_type": "drain",
+            "value_list": [
+              0.3217,
+              0.3465,
+              0.3712,
+              0.396,
+              0.4207,
+              0.4455,
+              0.4702,
+              0.495,
+              0.5197,
+              0.5445
+            ],
+            "duration": 10,
+            "tag": "helm_treasure_drain",
+            "description": "攻撃ダメージのn%回復"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 9,
+            "buff_type": "charge_dmg_buff",
+            "value_list": [
+              0.936,
+              1.008,
+              1.08,
+              1.152,
+              1.224,
+              1.296,
+              1.368,
+              1.44,
+              1.512,
+              1.584
+            ],
+            "duration": 0,
+            "shot_duration": 10,
+            "tag": "helm_treasure_charge_dmg_10shots",
+            "description": "チャージダメージ倍率UP。10発間維持"
+          }
+        }
+      ]
+    }
+  ]
+}

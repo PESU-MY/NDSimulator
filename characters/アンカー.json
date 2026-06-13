@@ -4,10 +4,11 @@
   "burst_stage": "1",
   "element": "Wind",
   "class": "Defender",
+  "company": "エリシオン",
   "squad": "イージス",
   "stats": {
     "max_ammo": 6,
-    "reload_time": 2.00,
+    "reload_time": 2.0,
     "damage_rate": 0.613,
     "hit_size": 1,
     "charge_time": 1.0,
@@ -38,7 +39,18 @@
           "kwargs": {
             "effect_no": 1,
             "buff_type": "dummy_effect",
-            "value_list": [0.1042, 0.1191, 0.1339, 0.1488, 0.1637, 0.1786, 0.1935, 0.2084, 0.2233, 0.2382],
+            "value_list": [
+              0.1042,
+              0.1191,
+              0.1339,
+              0.1488,
+              0.1637,
+              0.1786,
+              0.1935,
+              0.2084,
+              0.2233,
+              0.2382
+            ],
             "duration": 5
           }
         }
@@ -56,7 +68,18 @@
             "effect_no": 2,
             "buff_type": "dummy_effect",
             "description": "発射体へのダメージバフ",
-            "value_list": [0.112, 0.128, 0.144, 0.16, 0.176, 0.192, 0.208, 0.224, 0.24, 0.256],
+            "value_list": [
+              0.112,
+              0.128,
+              0.144,
+              0.16,
+              0.176,
+              0.192,
+              0.208,
+              0.224,
+              0.24,
+              0.256
+            ],
             "duration": 99999
           }
         }
@@ -70,10 +93,20 @@
     "cooldown_time": 20.0,
     "effect_type": "damage",
     "target": "enemy",
-    
     "kwargs": {
-        "effect_no": 3,
-        "multiplier_list": [1.332, 1.5222, 1.7125, 1.9028, 2.0931, 2.2834, 2.4737, 2.664, 2.8542, 3.0445]
+      "effect_no": 3,
+      "multiplier_list": [
+        1.332,
+        1.5222,
+        1.7125,
+        1.9028,
+        2.0931,
+        2.2834,
+        2.4737,
+        2.664,
+        2.8542,
+        3.0445
+      ]
     }
   }
 }

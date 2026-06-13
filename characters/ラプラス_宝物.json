@@ -1,0 +1,201 @@
+{
+  "weapon_type": "RL",
+  "weapon_class": "RL",
+  "type": "CHARGE",
+  "element": "Iron",
+  "class": "Attacker",
+  "burst_stage": "3",
+  "manufacturer": "ミシリス",
+  "company": "ミシリス",
+  "squad": "メティス",
+  "name": "ラプラス_宝物",
+  "treasure": true,
+  "base_character": "ラプラス",
+  "conversion_notes": [
+    "元ラプラスJSONのweapon_change + shot_count追加ダメージ構造に準拠し、宝物formatの効果値へ差し替え",
+    "追加効果2はweapon_data.ignore_def_if_self_stackで、HeroVisionフルスタック時に通常射撃のみ防御力無視として扱う",
+    "阻止部位命中トリガーは元JSON同様dummyのまま"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: ヒーロービジョン",
+      "trigger_type": "full_charge_count",
+      "trigger_value": 1,
+      "effect_type": "stack_buff",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "dummy_buff",
+        "stack_name": "HeroVision",
+        "max_stack": 5,
+        "value_list": [
+          0.0211,
+          0.0227,
+          0.0243,
+          0.026,
+          0.0276,
+          0.0292,
+          0.0308,
+          0.0325,
+          0.0341,
+          0.0357
+        ],
+        "duration": 5,
+        "description": "爆発範囲UP (dummy/スタック管理用)"
+      }
+    },
+    {
+      "name": "Skill 2: ヒーローボンバー (最後の弾丸)",
+      "trigger_type": "ammo_empty",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 2,
+        "multiplier_list": [
+          0.7826,
+          0.8428,
+          0.903,
+          0.9632,
+          1.0234,
+          1.0837,
+          1.1439,
+          1.2041,
+          1.2643,
+          1.3245
+        ],
+        "description": "最後の弾丸命中時、追加ダメージ"
+      }
+    },
+    {
+      "name": "Skill 2: ヒーローボンバー (パーツ命中)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "damage",
+      "target": "enemy",
+      "kwargs": {
+        "effect_no": 3,
+        "multiplier_list": [
+          0.0873,
+          0.094,
+          0.1008,
+          0.1075,
+          0.1142,
+          0.1209,
+          0.1276,
+          0.1344,
+          0.1411,
+          0.1478
+        ],
+        "description": "パーツ命中時、本体に追加ダメージ (未実装のためdummy)"
+      }
+    },
+    {
+      "name": "バースト: ラプラスバスター (追加ダメージ)",
+      "trigger_type": "shot_count",
+      "trigger_value": 1,
+      "effect_type": "damage",
+      "target": "enemy",
+      "condition": {
+        "self_has_tag": "ラプラスバスター",
+        "self_stack_min": 5,
+        "stack_name": "HeroVision"
+      },
+      "kwargs": {
+        "effect_no": 6,
+        "multiplier_list": [
+          0.0703,
+          0.0757,
+          0.0811,
+          0.0865,
+          0.0919,
+          0.0973,
+          0.1027,
+          0.1081,
+          0.1136,
+          0.119
+        ],
+        "ignore_def": true,
+        "description": "フルスタック時、攻撃ごとに防御無視追加ダメージ"
+      }
+    }
+  ],
+  "burst_skill": {
+    "name": "バースト: ラプラスバスター",
+    "cooldown_time": 40.0,
+    "trigger_type": "on_burst",
+    "trigger_value": 0,
+    "effect_type": "cumulative_stages",
+    "target": "self",
+    "kwargs": {
+      "trigger_all_stages": true
+    },
+    "stages": [
+      {
+        "effect_type": "damage",
+        "target": "enemy",
+        "kwargs": {
+          "effect_no": 4,
+          "multiplier_list": [
+            8.602,
+            9.2637,
+            9.9254,
+            10.5871,
+            11.2488,
+            11.9104,
+            12.5721,
+            13.2338,
+            13.8955,
+            14.5572
+          ],
+          "description": "初回ダメージ"
+        }
+      },
+      {
+        "effect_type": "weapon_change",
+        "target": "self",
+        "kwargs": {
+          "tag": "ラプラスバスター",
+          "duration": 10,
+          "weapon_data": {
+            "name": "Laplace Treasure Burst",
+            "type": "RAPID",
+            "effect_no": 5,
+            "multiplier_list": [
+              0.1311,
+              0.1412,
+              0.1513,
+              0.1614,
+              0.1715,
+              0.1816,
+              0.1917,
+              0.2018,
+              0.2119,
+              0.222
+            ],
+            "max_ammo": 999,
+            "fire_interval": 3,
+            "hit_size": 1,
+            "windup_frames": 0,
+            "winddown_frames": 0,
+            "is_pierce": true,
+            "ignore_def_if_self_stack": {
+              "stack_name": "HeroVision",
+              "min_stack": 5
+            },
+            "description": "使用武器変更。HeroVisionフルスタック時は通常ダメージを防御力無視として適用"
+          }
+        }
+      }
+    ]
+  },
+  "stats": {
+    "charge_mult": 2.5,
+    "charge_time": 1.0,
+    "reload_time": 2.33,
+    "damage_rate": 0.6311,
+    "is_explosive": true,
+    "max_ammo": 6,
+    "core_damage_rate": 2.0
+  }
+}

@@ -4,12 +4,13 @@
   "burst_stage": "3",
   "element": "Water",
   "class": "Attacker",
+  "company": "エリシオン",
   "squad": "トライアングル",
   "stats": {
     "max_ammo": 60,
-    "reload_time": 1.00,
+    "reload_time": 1.0,
     "damage_rate": 0.1365,
-    "core_damage_rate": 2.00
+    "core_damage_rate": 2.0
   },
   "skills": [
     {
@@ -28,7 +29,18 @@
           "kwargs": {
             "effect_no": 1,
             "buff_type": "atk_buff_rate",
-            "value_list": [0.1877, 0.193, 0.1984, 0.2038, 0.2092, 0.2146, 0.22, 0.2254, 0.2308, 0.2361],
+            "value_list": [
+              0.1877,
+              0.193,
+              0.1984,
+              0.2038,
+              0.2092,
+              0.2146,
+              0.22,
+              0.2254,
+              0.2308,
+              0.2361
+            ],
             "duration": 10
           }
         },
@@ -38,7 +50,18 @@
           "kwargs": {
             "effect_no": 2,
             "buff_type": "reload_speed_buff",
-            "value_list": [0.2288, 0.2602, 0.2916, 0.323, 0.3545, 0.3859, 0.4173, 0.4488, 0.4802, 0.5116],
+            "value_list": [
+              0.2288,
+              0.2602,
+              0.2916,
+              0.323,
+              0.3545,
+              0.3859,
+              0.4173,
+              0.4488,
+              0.4802,
+              0.5116
+            ],
             "duration": 10
           }
         },
@@ -69,7 +92,18 @@
           "target": "enemy",
           "kwargs": {
             "effect_no": 3,
-            "multiplier_list": [0.507, 0.546, 0.585, 0.624, 0.663, 0.702, 0.7409, 0.7799, 0.819, 0.8579],
+            "multiplier_list": [
+              0.507,
+              0.546,
+              0.585,
+              0.624,
+              0.663,
+              0.702,
+              0.7409,
+              0.7799,
+              0.819,
+              0.8579
+            ],
             "description": "最後の弾丸命中時、追加ダメージ"
           }
         },
@@ -81,7 +115,18 @@
           "target": "enemy",
           "kwargs": {
             "effect_no": 4,
-            "multiplier_list": [6.435, 6.93, 7.425, 7.92, 8.415, 8.91, 9.405, 9.9, 10.395, 10.89],
+            "multiplier_list": [
+              6.435,
+              6.93,
+              7.425,
+              7.92,
+              8.415,
+              8.91,
+              9.405,
+              9.9,
+              10.395,
+              10.89
+            ],
             "description": "対象が気絶状態なら、さらに追加ダメージ"
           }
         }
@@ -102,7 +147,27 @@
           "target": "enemy",
           "kwargs": {
             "effect_no": 5,
-            "multiplier_list": [2.7056, 2.9137, 3.1218, 3.33, 3.5381, 3.7462, 3.9543, 4.1625, 4.3706, 4.5787]
+            "multiplier_list": [
+              2.7056,
+              2.9137,
+              3.1218,
+              3.33,
+              3.5381,
+              3.7462,
+              3.9543,
+              4.1625,
+              4.3706,
+              4.5787
+            ]
+          }
+        },
+        {
+          "effect_type": "stun",
+          "target": "self",
+          "kwargs": {
+            "duration": 2,
+            "tag": "stun",
+            "description": "バースト後、自身を2秒間気絶"
           }
         },
         {
@@ -113,7 +178,7 @@
           "target": "self",
           "kwargs": {
             "buff_type": "dummy",
-            "tag" : "気絶",
+            "tag": "気絶",
             "value": 1,
             "duration": 3,
             "description": "気絶 (dummy)"

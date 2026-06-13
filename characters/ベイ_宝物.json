@@ -1,0 +1,249 @@
+{
+  "name": "ベイ_宝物",
+  "weapon_type": "RL",
+  "burst_stage": "2",
+  "element": "Fire",
+  "class": "Defender",
+  "company": "テトラ",
+  "squad": "リワインド",
+  "treasure": true,
+  "base_character": "ベイ",
+  "stats": {
+    "max_ammo": 6,
+    "reload_time": 2.0,
+    "damage_rate": 0.613,
+    "core_damage_rate": 2.0,
+    "charge_time": 1.0,
+    "charge_mult": 2.5,
+    "is_explosive": true
+  },
+  "conversion_notes": [
+    "通常版ベイ.jsonの構造に準拠し、宝物強化後の条件と効果量を反映。",
+    "受けるダメージ偏差分配、遮蔽物破壊判定、遮蔽物復活、遮蔽物最大HP、受けるダメージ低下は現状ほぼ記録用。",
+    "遮蔽物HP持続回復は1秒間隔の継続処理が未対応のため、フルバースト終了時の遮蔽物HP回復として近似。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: ユーキャンドゥーイット (バースト使用時)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 99999,
+            "tag": "bay_treasure_damage_distribution",
+            "description": "受けるダメージ偏差分配。被ダメージ計算がないため記録用"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 1,
+            "buff_type": "def_buff",
+            "value_list": [
+              0.0557,
+              0.0608,
+              0.0658,
+              0.0709,
+              0.076,
+              0.0811,
+              0.0861,
+              0.0912,
+              0.0963,
+              0.1013
+            ],
+            "duration": 99999,
+            "tag": "bay_treasure_def",
+            "description": "スキル発動者基準の防御力UP。防御ステータス計算上はdef_buffとして近似"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 1: ユーキャンドゥーイット (フルチャージ)",
+      "trigger_type": "full_charge",
+      "trigger_value": 0,
+      "effect_type": "heal",
+      "target": "allies",
+      "target_condition": {
+        "exclude_self": true
+      },
+      "kwargs": {
+        "effect_no": 2,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [
+          0.0236,
+          0.0254,
+          0.0272,
+          0.0291,
+          0.0309,
+          0.0327,
+          0.0345,
+          0.0364,
+          0.0382,
+          0.04
+        ],
+        "description": "自分を除く味方全体に、発動者の最終最大HP比例で回復"
+      }
+    },
+    {
+      "name": "Skill 2: チアアップトゥギャザー (バースト使用時)",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "buff",
+      "target": "self",
+      "kwargs": {
+        "buff_type": "dummy_buff",
+        "value": 1,
+        "duration": 99999,
+        "tag": "bay_treasure_cover_damage_distribution",
+        "description": "自分の遮蔽物に受けるダメージ偏差分配。被ダメージ計算がないため記録用"
+      }
+    },
+    {
+      "name": "Skill 2: チアアップトゥギャザー (FB終了)",
+      "trigger_type": "on_burst_end",
+      "trigger_value": 0,
+      "effect_type": "cover_heal",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 3,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [
+          0.0158,
+          0.0172,
+          0.0187,
+          0.0201,
+          0.0216,
+          0.023,
+          0.0244,
+          0.0259,
+          0.0273,
+          0.0288
+        ],
+        "description": "本来は1秒間隔で5秒間の遮蔽物HP持続回復。現状はFB終了時の1回回復で近似"
+      }
+    },
+    {
+      "name": "Skill 2: チアアップトゥギャザー (B1突入/遮蔽物破壊時)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "heal",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [
+          0.1182,
+          0.1273,
+          0.1364,
+          0.1455,
+          0.1546,
+          0.1636,
+          0.1727,
+          0.1818,
+          0.1909,
+          0.2
+        ],
+        "description": "バースト1段階突入時に遮蔽物が破壊されている場合の回復。遮蔽物破壊判定がないため未発動"
+      }
+    },
+    {
+      "name": "バースト: ファーストウィナー",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "cover_heal",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 5,
+            "value_list": [
+              0.1181,
+              0.1272,
+              0.1363,
+              0.1454,
+              0.1545,
+              0.1636,
+              0.1727,
+              0.1818,
+              0.1909,
+              0.2
+            ],
+            "description": "遮蔽物破壊時の遮蔽物復活。遮蔽物破壊判定がないため遮蔽物HP回復で近似"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "cover_max_hp_rate",
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "base",
+            "value_list": [
+              0.099,
+              0.108,
+              0.117,
+              0.126,
+              0.135,
+              0.144,
+              0.153,
+              0.162,
+              0.171,
+              0.18
+            ],
+            "duration": 20,
+            "tag": "bay_treasure_cover_max_hp",
+            "description": "発動者の最大HPに比例した遮蔽物最大HPUP。遮蔽物最大HP計算は記録用"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 7,
+            "buff_type": "taken_dmg_down",
+            "value_list": [
+              0.0487,
+              0.0532,
+              0.0576,
+              0.062,
+              0.0665,
+              0.0709,
+              0.0753,
+              0.0798,
+              0.0842,
+              0.0887
+            ],
+            "duration": 10,
+            "tag": "bay_treasure_taken_dmg_down",
+            "description": "受けるダメージDOWN。被ダメージ計算がないため記録用"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -149,10 +149,40 @@ function stageMatchesItem(item, requestedStage) {
   return itemStage === "∀" || itemStage === "ALL" || itemStage === "*" || itemStage === "all";
 }
 
+function isRapiRedHoodItem(item) {
+  return item?.name === "ラピ：レッドフード" || item?.file === "ラピ：レッドフード.json";
+}
+
+function hasOtherBaseBurstStage(slots, currentSlotIndex, requestedStage) {
+  return slots.some((selection, slotIndex) => {
+    if (!selection || slotIndex === currentSlotIndex) return false;
+    const item = findCatalogItem(selection);
+    return String(item?.burstStage || "") === String(requestedStage);
+  });
+}
+
+function effectiveBurstStageForSelection(selection, slotIndex, slots) {
+  const item = findCatalogItem(selection);
+  if (!item) return "";
+  if (isRapiRedHoodItem(item)) {
+    return hasOtherBaseBurstStage(slots, slotIndex, "1") ? "3" : "1";
+  }
+  return String(item.burstStage || "");
+}
+
+function stageMatchesSelection(selection, requestedStage, slotIndex, slots) {
+  const item = findCatalogItem(selection);
+  if (!item) return false;
+  const effectiveStage = effectiveBurstStageForSelection(selection, slotIndex, slots);
+  const requested = String(requestedStage);
+  if (effectiveStage === requested) return true;
+  return effectiveStage === "∀" || effectiveStage === "ALL" || effectiveStage === "*" || effectiveStage === "all";
+}
+
 function basicRotationForSlots(slots) {
   const rotation = { 1: [], 2: [], 3: [] };
   const firstForStage = (stage) => {
-    return slots.findIndex((selection) => stageMatchesItem(findCatalogItem(selection), stage));
+    return slots.findIndex((selection, slotIndex) => stageMatchesSelection(selection, stage, slotIndex, slots));
   };
 
   const b1 = firstForStage("1");
@@ -161,7 +191,7 @@ function basicRotationForSlots(slots) {
   if (b2 >= 0) rotation[2].push(b2);
 
   slots.forEach((selection, slotIndex) => {
-    if (rotation[3].length < 2 && stageMatchesItem(findCatalogItem(selection), "3")) {
+    if (rotation[3].length < 2 && stageMatchesSelection(selection, "3", slotIndex, slots)) {
       rotation[3].push(slotIndex);
     }
   });
@@ -217,7 +247,7 @@ function cleanFormationBody(line) {
 }
 
 function parseFormationText() {
-  const text = document.getElementById("formationText").value;
+  const text = inputValue("formationText", "");
   const messages = [];
   const formations = [];
 
@@ -385,7 +415,7 @@ function renderAdditionalBuffs() {
 }
 
 function addAdditionalBuff() {
-  const definition = additionalBuffDefinition(document.getElementById("additionalBuffType").value);
+  const definition = additionalBuffDefinition(inputValue("additionalBuffType", additionalBuffTypes[0].type));
   state.additionalBuffs.push({
     type: definition.type,
     enabled: true,
@@ -396,15 +426,15 @@ function addAdditionalBuff() {
 
 function collectOptions() {
   return {
-    skillLevel: document.getElementById("skillLevel").value,
-    enemyElement: document.getElementById("enemyElement").value,
-    enemyCoreSize: document.getElementById("enemyCoreSize").value,
-    enemySize: document.getElementById("enemySize").value,
-    enemyCount: document.getElementById("enemyCount").value,
-    burstChargeTime: document.getElementById("burstChargeTime").value,
-    crustOperationMode: document.getElementById("crustOperationMode").value,
-    partBreakMode: document.getElementById("partBreakMode").checked,
-    specialMode: document.getElementById("specialMode").checked,
+    skillLevel: inputValue("skillLevel", 10),
+    enemyElement: inputValue("enemyElement", "None"),
+    enemyCoreSize: inputValue("enemyCoreSize", 3.0),
+    enemySize: inputValue("enemySize", 1),
+    enemyCount: inputValue("enemyCount", 1),
+    burstChargeTime: inputValue("burstChargeTime", 5.0),
+    crustOperationMode: inputValue("crustOperationMode", "None"),
+    partBreakMode: inputChecked("partBreakMode"),
+    specialMode: inputChecked("specialMode"),
     summaryOnly: true,
     statusSettings: collectStatusSettings(),
     additionalBuffs: state.additionalBuffs.map(cloneAdditionalBuff)
@@ -678,8 +708,8 @@ async function runAllFormations() {
 }
 
 function applyBulkReplace() {
-  const slotIndex = Number(document.getElementById("bulkSlot").value);
-  const item = state.catalogByKey.get(document.getElementById("bulkCharacter").value) || null;
+  const slotIndex = Number(inputValue("bulkSlot", -1));
+  const item = state.catalogByKey.get(inputValue("bulkCharacter", "")) || null;
   if (!Number.isInteger(slotIndex) || slotIndex < 0 || slotIndex > 4 || !item) return;
 
   state.formations.forEach((formation) => {
@@ -693,7 +723,8 @@ function applyBulkReplace() {
 async function loadFormationFile(file) {
   if (!file) return;
   const text = await file.text();
-  document.getElementById("formationText").value = text;
+  const textarea = document.getElementById("formationText");
+  if (textarea) textarea.value = text;
   parseFormationText();
 }
 

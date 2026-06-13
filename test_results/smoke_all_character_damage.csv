@@ -1,0 +1,2 @@
+﻿file,name,burst_stage,cooldown_time,rotation_policy,target_damage,party_damage,status,error
+2B.json,2B,3,40.0,40s: target and same-stage dummy rotate,36223123.87877719,36233247.87877719,OK,

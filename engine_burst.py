@@ -97,10 +97,7 @@ class BurstEngineMixin:
                     self.log(f"[Burst] Activate!", target_name=char.name)
                     
                     if self.burst_state == "BURST_3":
-                        self.last_burst_char_name = char.name 
-                        char.process_trigger('on_burst_3_enter', 0, frame, is_full_burst, self)
-                        self.process_trigger_global('on_burst_3_enter', frame)
-                        self.process_trigger_global('on_burst_enter', frame) 
+                        self.last_burst_char_name = char.name
                     
                     char.process_trigger('on_use_burst_skill', 0, frame, is_full_burst, self)
                     char.current_burst_stage = None
@@ -118,11 +115,15 @@ class BurstEngineMixin:
                             # ▲▲▲ 追加ここまで ▲▲▲
                         elif self.burst_state == "BURST_2": 
                             self.burst_state = "BURST_3"
+                            self.process_trigger_global('on_burst_3_enter', frame)
                         elif self.burst_state == "BURST_3":
                             self.burst_state = "FULL"
                             self.burst_timer = 0
                             # ... (フルバースト処理) ...
                             base_duration = 10.0
+                            self.current_full_burst_duration_frames = int(base_duration * self.FPS)
+                            self.burst_end_frame = frame + self.current_full_burst_duration_frames
+                            self.process_trigger_global('on_burst_enter', frame)
                             current_duration = max(0.0, base_duration - getattr(self, 'full_burst_reduction', 0.0))
                             self.current_full_burst_duration_frames = int(current_duration * self.FPS)
                             if self.full_burst_reduction > 0:

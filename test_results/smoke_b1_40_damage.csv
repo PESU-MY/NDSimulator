@@ -1,0 +1,2 @@
+﻿file,name,burst_stage,cooldown_time,rotation_policy,target_damage,party_damage,status,error
+クレア.json,クレア,1,40.0,40s: target and same-stage dummy rotate,8163244.37499999,8173383.37499999,OK,

@@ -118,6 +118,7 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
         self.weapon_change_end_frame = 0
         self.weapon_change_ammo_specified = False
         self.weapon_change_revert_on_ammo_empty = True
+        self.weapon_change_infinite_ammo = False
 
     # ▼▼▼ 修正: healメソッド (引数 is_distributed を追加) ▼▼▼
     def rebuild_skill_index(self):
@@ -141,6 +142,10 @@ class Character(CharacterStatsMixin, CharacterSkillMixin, CharacterActionMixin):
             self.damage_source_types[source_name] = source_type
         elif source_name not in self.damage_source_types:
             self.damage_source_types[source_name] = 'スキル'
+
+        recorder = getattr(self, "damage_event_recorder", None)
+        if recorder:
+            recorder(self, source_name, amount, hit_count, source_type or self.damage_source_types.get(source_name))
 
     def heal(self, amount, source_name, frame, simulator, is_distributed=False):
         # 1. 回復分配ロジック (Distribution Logic)

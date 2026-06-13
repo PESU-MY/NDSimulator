@@ -1,0 +1,294 @@
+{
+  "name": "ポリ_宝物",
+  "weapon_type": "SG",
+  "burst_stage": "2",
+  "element": "Water",
+  "class": "Defender",
+  "company": "エリシオン",
+  "squad": "A.C.P.U.",
+  "treasure": true,
+  "base_character": "ポリ",
+  "stats": {
+    "max_ammo": 9,
+    "reload_time": 1.5,
+    "damage_rate": 2.015,
+    "core_damage_rate": 2.0
+  },
+  "conversion_notes": [
+    "通常版ポリ.jsonの構造に準拠し、宝物強化後の条件と効果量を反映。",
+    "ポリスバッジ終了時トリガー、共有バリア、不屈、被ダメージ均等分配は未対応または記録用。",
+    "共有バリアは味方全体への通常バリアとして近似。"
+  ],
+  "skills": [
+    {
+      "name": "Skill 1: ブレイブコール (通常攻撃5回)",
+      "trigger_type": "shot_count",
+      "trigger_value": 5,
+      "effect_type": "buff",
+      "target": "allies",
+      "kwargs": {
+        "effect_no": 1,
+        "buff_type": "atk_buff_rate",
+        "value_list": [
+          0.0273,
+          0.0303,
+          0.0333,
+          0.0364,
+          0.0394,
+          0.0425,
+          0.0455,
+          0.0485,
+          0.0516,
+          0.0546
+        ],
+        "duration": 10,
+        "tag": "poli_treasure_s1_atk"
+      }
+    },
+    {
+      "name": "Skill 1: ブレイブコール (戦闘開始)",
+      "trigger_type": "on_start",
+      "trigger_value": 0,
+      "effect_type": "shield",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 2,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [
+          0.5909,
+          0.6364,
+          0.6818,
+          0.7273,
+          0.7727,
+          0.8182,
+          0.8636,
+          0.9091,
+          0.9545,
+          1.0
+        ],
+        "duration": 10,
+        "tag": "police_badge",
+        "description": "ポリスバッジ：スキル発動者の最終最大HP比例のバリア"
+      }
+    },
+    {
+      "name": "Skill 2: ドッグセラピー (自分)",
+      "trigger_type": "time_interval",
+      "trigger_value": 20.0,
+      "effect_type": "cumulative_stages",
+      "target": "self",
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "def_buff",
+            "value_list": [
+              0.1175,
+              0.1306,
+              0.1436,
+              0.1567,
+              0.1697,
+              0.1828,
+              0.1959,
+              0.2089,
+              0.222,
+              0.2351
+            ],
+            "duration": 10,
+            "tag": "poli_treasure_def_self"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 10,
+            "tag": "poli_treasure_damage_distribution_self",
+            "description": "受けるダメージ均等分配。被ダメージ計算がないため記録用"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: ドッグセラピー (味方)",
+      "trigger_type": "time_interval",
+      "trigger_value": 20.0,
+      "effect_type": "cumulative_stages",
+      "target": "allies",
+      "target_condition": {
+        "type": "lowest_current_hp",
+        "count": 2,
+        "exclude_self": true
+      },
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "lowest_current_hp",
+            "count": 2,
+            "exclude_self": true
+          },
+          "kwargs": {
+            "effect_no": 3,
+            "buff_type": "def_buff",
+            "value_list": [
+              0.1175,
+              0.1306,
+              0.1436,
+              0.1567,
+              0.1697,
+              0.1828,
+              0.1959,
+              0.2089,
+              0.222,
+              0.2351
+            ],
+            "duration": 10,
+            "tag": "poli_treasure_def_ally"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "target_condition": {
+            "type": "lowest_current_hp",
+            "count": 2,
+            "exclude_self": true
+          },
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 10,
+            "tag": "poli_treasure_damage_distribution_ally",
+            "description": "受けるダメージ均等分配。被ダメージ計算がないため記録用"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Skill 2: ドッグセラピー (ポリスバッジ終了時)",
+      "trigger_type": "dummy",
+      "trigger_value": 0,
+      "effect_type": "regenerate",
+      "target": "self",
+      "kwargs": {
+        "effect_no": 4,
+        "scale_by_caster_stats": true,
+        "target_stat": "max_hp",
+        "stat_type": "finally",
+        "value_list": [
+          0.0295,
+          0.0318,
+          0.0341,
+          0.0363,
+          0.0386,
+          0.0409,
+          0.0432,
+          0.0454,
+          0.0477,
+          0.05
+        ],
+        "duration": 5,
+        "interval": 1,
+        "description": "ポリスバッジ状態終了時の持続回復。終了時トリガーがないため未発動"
+      }
+    },
+    {
+      "name": "バースト: ポリスライン",
+      "trigger_type": "on_use_burst_skill",
+      "trigger_value": 0,
+      "effect_type": "cumulative_stages",
+      "cooldown_time": 40.0,
+      "kwargs": {
+        "trigger_all_stages": true
+      },
+      "stages": [
+        {
+          "effect_type": "buff",
+          "target": "self",
+          "condition": {
+            "self_has_tag": "police_badge"
+          },
+          "kwargs": {
+            "buff_type": "dummy_buff",
+            "value": 1,
+            "duration": 5,
+            "tag": "poli_treasure_indomitable",
+            "description": "ポリスバッジ状態なら不屈。被ダメージ計算がないため記録用"
+          }
+        },
+        {
+          "effect_type": "remove_buff_by_tag",
+          "target": "self",
+          "condition": {
+            "self_has_tag": "police_badge"
+          },
+          "kwargs": {
+            "tag": "police_badge",
+            "description": "ポリスバッジ解除"
+          }
+        },
+        {
+          "effect_type": "shield",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 5,
+            "scale_by_caster_stats": true,
+            "target_stat": "max_hp",
+            "stat_type": "finally",
+            "value_list": [
+              0.2363,
+              0.2545,
+              0.2727,
+              0.2909,
+              0.3091,
+              0.3272,
+              0.3454,
+              0.3636,
+              0.3818,
+              0.4
+            ],
+            "duration": 10,
+            "tag": "poli_treasure_shared_shield",
+            "description": "味方共用バリア。通常バリアとして近似"
+          }
+        },
+        {
+          "effect_type": "buff",
+          "target": "allies",
+          "kwargs": {
+            "effect_no": 6,
+            "buff_type": "atk_buff_rate",
+            "value_list": [
+              0.2227,
+              0.2475,
+              0.2722,
+              0.297,
+              0.3217,
+              0.3465,
+              0.3712,
+              0.396,
+              0.4207,
+              0.4455
+            ],
+            "duration": 10,
+            "tag": "poli_treasure_burst_atk"
+          }
+        }
+      ]
+    }
+  ]
+}

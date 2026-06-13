@@ -4,6 +4,7 @@
   "burst_stage": "2",
   "element": "Electric",
   "class": "Attacker",
+  "company": "テトラ",
   "squad": "リトルキャノン",
   "stats": {
     "max_ammo": 6,

@@ -6,10 +6,19 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-from web_simulation import IMAGE_DIR, ROOT_DIR, list_character_catalog, run_web_batch_simulation, run_web_simulation
+from web_simulation import (
+    IMAGE_DIR,
+    ICON_DIR,
+    OVERLOAD_ICON_DIR,
+    ROOT_DIR,
+    list_character_catalog,
+    run_web_batch_simulation,
+    run_web_simulation,
+)
 
 
 STATIC_DIR = ROOT_DIR / "web_static"
+mimetypes.add_type("image/webp", ".webp")
 
 
 def safe_print(message):
@@ -36,6 +45,10 @@ class SimulatorWebHandler(BaseHTTPRequestHandler):
             self._send_static(STATIC_DIR / "batch.html")
             return
 
+        if path in {"/b3", "/b3/"}:
+            self._send_static(STATIC_DIR / "b3_compare.html")
+            return
+
         if path.startswith("/static/"):
             relative = unquote(path.removeprefix("/static/"))
             self._send_static(STATIC_DIR / relative)
@@ -44,6 +57,16 @@ class SimulatorWebHandler(BaseHTTPRequestHandler):
         if path.startswith("/images/"):
             relative = unquote(path.removeprefix("/images/"))
             self._send_file(IMAGE_DIR / relative, IMAGE_DIR)
+            return
+
+        if path.startswith("/overload-icons/"):
+            relative = unquote(path.removeprefix("/overload-icons/"))
+            self._send_file(OVERLOAD_ICON_DIR / relative, OVERLOAD_ICON_DIR)
+            return
+
+        if path.startswith("/icons/"):
+            relative = unquote(path.removeprefix("/icons/"))
+            self._send_file(ICON_DIR / relative, ICON_DIR)
             return
 
         self._send_json(404, {"status": "error", "error": "Not found"})

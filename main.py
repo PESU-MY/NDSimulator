@@ -207,11 +207,11 @@ dummy_ammo_skill = Skill(
 
 # 1. キャラクターの読み込み
 print(">>> キャラクター読み込み開始")
-burst3_nikke = create_character_from_json('characters/紅蓮.json', skill_level=10)
-burst3_nikke_2 = create_character_from_json('characters/シンデレラ.json', skill_level=10)
-burst2_nikke = create_character_from_json('characters/ナユタ.json', skill_level=10)
-burst2_nikke_2 = create_character_from_json('characters/アンカー：イノセントメイド.json', skill_level=10)
-burst1_nikke = create_character_from_json('characters/ミランダ_宝物.json', skill_level=10)
+burst3_nikke = create_character_from_json('characters/シンデレラ.json', skill_level=10)
+burst3_nikke_2 = create_character_from_json('characters/ネオン：ビジョン・アイ.json', skill_level=10)
+burst2_nikke = create_character_from_json('characters/プリカ.json', skill_level=10)
+burst2_nikke_2 = create_character_from_json('characters/ミント.json', skill_level=10)
+burst1_nikke = create_character_from_json('characters/ボリューム.json', skill_level=10)
 saitotu = create_character_from_json('characters/チャイム.json', skill_level=10)
 print(">>> キャラクター読み込み完了\n")
 
@@ -224,13 +224,13 @@ dummy_b3_2 = create_dummy_character("Dummy_B3_2", 3, "SG", skills=[dummy_ammo_sk
 
 # 3. 編成リスト作成 
 # 例: 2B単独テスト + ダミー
-all_characters = [burst1_nikke, burst2_nikke, dummy_b3, dummy_b3_2, dummy_b1]
+all_characters = [burst1_nikke, burst2_nikke, burst3_nikke_2, burst3_nikke, burst2_nikke_2]
 
 # 4. バーストローテーション
 rotation = [
     [burst1_nikke],
-    [burst2_nikke],
-    [dummy_b3,dummy_b3_2] 
+    [burst2_nikke,burst2_nikke_2],
+    [burst3_nikke_2,burst3_nikke] 
 ]
 
 

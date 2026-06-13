@@ -4,12 +4,13 @@
   "burst_stage": "2",
   "element": "Wind",
   "class": "Defender",
+  "company": "エリシオン",
   "squad": "スカウティング",
   "stats": {
     "max_ammo": 6,
-    "reload_time": 1.50,
+    "reload_time": 1.5,
     "damage_rate": 0.6595,
-    "core_damage_rate": 2.00
+    "core_damage_rate": 2.0
   },
   "skills": [
     {
@@ -22,7 +23,18 @@
         "effect_no": 1,
         "buff_type": "max_hp_rate",
         "update_current_hp": true,
-        "value_list": [0.0315, 0.0378, 0.0441, 0.0504, 0.0567, 0.063, 0.0693, 0.0756, 0.0818, 0.0882],
+        "value_list": [
+          0.0315,
+          0.0378,
+          0.0441,
+          0.0504,
+          0.0567,
+          0.063,
+          0.0693,
+          0.0756,
+          0.0818,
+          0.0882
+        ],
         "duration": 10
       }
     },
@@ -36,7 +48,18 @@
         "effect_no": 2,
         "buff_type": "dummy_buff",
         "description": "防御力n%▲ (dummy)",
-        "value_list": [0.1836, 0.2204, 0.2571, 0.2938, 0.3306, 0.3673, 0.404, 0.4408, 0.4775, 0.5142],
+        "value_list": [
+          0.1836,
+          0.2204,
+          0.2571,
+          0.2938,
+          0.3306,
+          0.3673,
+          0.404,
+          0.4408,
+          0.4775,
+          0.5142
+        ],
         "duration": 20
       }
     },
@@ -51,7 +74,18 @@
         "effect_no": 3,
         "buff_type": "dummy_buff",
         "description": "デコイ(HPn%)＆挑発 (dummy)",
-        "value_list": [0.4106, 0.4668, 0.5231, 0.5793, 0.6356, 0.6918, 0.7481, 0.8043, 0.8606, 0.9168],
+        "value_list": [
+          0.4106,
+          0.4668,
+          0.5231,
+          0.5793,
+          0.6356,
+          0.6918,
+          0.7481,
+          0.8043,
+          0.8606,
+          0.9168
+        ],
         "duration": 10
       }
     }

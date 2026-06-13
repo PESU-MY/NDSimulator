@@ -82,8 +82,8 @@ MG立ち上げ速度UP            : mg_warmup_speed
 強制リロード                : force_reload (effect_typeとして指定)
                               ※ 対象を即座にRELOADINGへ移行。チャージ中に発動した場合は発射せず中断する。
 バーストゲージチャージ      : burst_gauge_charge (effect_typeとして指定)
-                              ※ kwargs: { "value": 0.37 } で現在のゲージ生成時間を37%分進める。
-                              ※ burst_state が GEN の時のみ反映。フルバースト中などは無視される。
+                              ※ JSON上のスキル表現としては残している。
+                              ※ 現在はバースト溜め時間を「バースト溜め仮定時間（秒）」で固定管理するため、ロジック上はゲージを進めない。
 [クールタイム]
 バーストCT短縮 (最大値)     : burst_cooldown_reduction
                               ※ バースト発動時の基準クールタイム(20s/40s)から、このバフの合計値(秒)を引く
@@ -372,6 +372,8 @@ sticky_dmg_buff         : 発射体付着ダメージを増加させる（攻撃
 【Skill Attributes (kwargs以外)】
 max_trigger_count       : (int) 戦闘中、この回数までしか発動しない。trigger_typeに関わらず制限される。
 revert_on_ammo_empty    : (bool) weapon_changeのkwargs。falseなら弾切れでは元武器に戻らず、duration終了まで維持する。
+装弾数無限              : (bool) weapon_changeのkwargs。trueなら武器変更中の通常攻撃ではshot_durationを消費しない。
+                          `infinite_ammo` / `ammo_infinite` でも同じ意味として扱う。
 
 【Burst Stage】
 ∀                       : どのバースト段階のローテーションにも入れられる。発動中はローテーション上の段階を self_burst_stage 判定に使う。

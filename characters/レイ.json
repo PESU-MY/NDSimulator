@@ -4,6 +4,7 @@
   "burst_stage": "3",
   "element": "Fire",
   "class": "Attacker",
+  "company": "アブノーマル",
   "squad": "NERV",
   "stats": {
     "max_ammo": 300,

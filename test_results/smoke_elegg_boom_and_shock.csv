@@ -1,0 +1,2 @@
+﻿file,name,burst_stage,cooldown_time,rotation_policy,target_damage,party_damage,status,error
+エレグ：ブーム・アンド・ショック.json,エレグ：ブーム・アンド・ショック,3,40.0,40s: target and same-stage dummy rotate,44075557.2401028,44086747.2401028,OK,
